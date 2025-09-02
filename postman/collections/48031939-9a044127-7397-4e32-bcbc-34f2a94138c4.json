@@ -143,7 +143,7 @@
 							"// ---------------- Proxy baseline (materiály + obaly + road + use) ----------------",
 							"const mats = res.materials || [];",
 							"const packArr = res.packaging || [];",
-							"const PACK_MAP = { cardboard_box:\"pack_cardboard\", paper_mailer:\"pack_paper_mailer\", polybag_ldpe:\"pack_polybag_ldpe\" };",
+							"const PACK_MAP = { cardboard_box:\"pack_cardboard\", paper_mailer:\"pack_paper_mailer\", polybag_ldpe:\"pack_polybag_ldpe\", pack_card: \"pack_cardboard\" };",
 							"const normPack = code => (code?.startsWith(\"pack_\") ? code : (PACK_MAP[code] || code));",
 							"",
 							"function proxyGWPmat(code){ return ef(\"EF_GWP_\"+code, 0); }                  // e.g., EF_GWP_wool_virgin",
