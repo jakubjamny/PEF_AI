@@ -483,6 +483,18 @@
 					"script": {
 						"id": "1616902f-6cac-4a14-88ac-0eed82a7fb6e",
 						"exec": [
+							"// Load use-phase dataset JSON from repo (if URL provided)",
+							"(function(){",
+							"  const url = pm.environment.get('USE_PHASE_DATASET_URL');",
+							"  if (!url) return;",
+							"  pm.sendRequest({ url, method: 'GET' }, (err, resp) => {",
+							"    if (!err && resp.code>=200 && resp.code<300) {",
+							"      // prefer JSON, fall back to text",
+							"      try { pm.environment.set('USE_PHASE_DATASET_JSON', JSON.stringify(resp.json())); }",
+							"      catch(_) { pm.environment.set('USE_PHASE_DATASET_JSON', resp.text()); }",
+							"    }",
+							"  });",
+							"})();",
 							""
 						],
 						"type": "text/javascript",
