@@ -1,6 +1,8 @@
-code,stage,variant,ilcd_file,fu_amount,fu_unit,note
-wash_30,wash,30,WASHING_30C_APPAREL.xml,1,cycle,per 1 washing cycle at 30 °C
-wash_40,wash,40,WASHING_40C_APPAREL.xml,1,cycle,per 1 washing cycle at 40 °C
-wash_60,wash,60,WASHING_60C_APPAREL.xml,1,cycle,per 1 washing cycle at 60 °C
-dry_tumble,dry,tumble,DRYING_TUMBLE_APPAREL.xml,1,cycle,per 1 tumble-dry cycle
-iron_min,iron,minute,IRONING_PER_MINUTE.xml,1,min,per 1 minute of ironing
+key,process_type,temp_c,region,ef_uuid,fu_amount,fu_unit,ilcd_file,notes
+wash_hand,wash,,EU,25b97e74-0fc8-5092-ac30-8452c6d1ecbe,1,kg,ef_25b97e74.xml,"Handwashing"
+wash_30,wash,30,EU,27f9009b-8fd1-5cae-ad4f-115dd1f44d71,1,kg,ef_27f9009b.xml,"Washing, 30°, average"
+wash_40,wash,40,EU,ae46be13-3830-5af9-9e21-875793e94c88,1,kg,ef_ae46be13.xml,"Washing, 40°, average"
+wash_60,wash,60,EU,2baf17e3-2fff-5b3f-bceb-dd9718cf96e4,1,kg,ef_2baf17e3.xml,"Washing, 60°, average"
+wash_dryclean,wash,,EU,64a29c62-7bed-5c8b-9aa3-761864dc435a,1,kg,ef_64a29c62.xml,"Dry cleaning"
+dry_tumble,dry,,EU,90d4e7cb-842b-5ff3-8788-7f999c27889f,1,kg,ef_90d4e7cb.xml,"Tumble drying"
+iron_min,iron,,EU,c5459a8f-21e8-53fc-987c-eed7f5debf43,1,min,ef_c5459a8f.xml,"Ironing, average, 1 minute"
