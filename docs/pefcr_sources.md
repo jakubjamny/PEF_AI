@@ -72,3 +72,8 @@ Tento dokument popisuje, z jakých tabulek PEFCR A&F v3.1 čerpáme defaulty pro
 - Pokud dataset chybí pro danou subkategorii/teplotu, skript padá na **env fallback**:
   - `PEF_USE_ENERGY_KWH_PER_WASH`, `PEF_USE_WATER_L_PER_WASH`,
   - `PEF_USE_ENERGY_KWH_PER_TUMBLE_DRY`, `PEF_USE_IRON_KWH_PER_MIN`.
+## End-of-life (EoL) – textile (minimal CC+WU)
+
+- Použité parametry: `EOL_*` proměnné (podíly recyklace/spalování/skládkování, výtěžnost recyklace, energetický kredit za spalování, procesní zátěže a WU).
+- Zdroje: PEFCR A&F v3.1 – kapitola EoL pro textil + Annex VII (defaultní datasetové odkazy pro recyklační a EoL procesy).
+- Implementace: R3 dopočítá příspěvek/kredit EoL a zapíše detaily do `eol_cff` a `estimation_audit`.
