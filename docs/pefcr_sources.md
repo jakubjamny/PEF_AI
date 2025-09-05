@@ -54,3 +54,21 @@ Tento soubor popisuje, z jakých tabulek PEFCR A&F v3.1 čerpáme defaulty pro u
 ## Poznámky
 - Při **blendech** PEFCR doporučuje řídit se materiálem s nejvyšším podílem; pokud není zřejmý, použít „All materials“. :contentReference[oaicite:6]{index=6}
 - U **footwear** má PEFCR odlišné zacházení (my defaultně nepřepisujeme — zůstává stávající env logika). :contentReference[oaicite:7]{index=7}
+
+# PEFCR A&F v3.1 — Use phase defaults (Tables 39–42)
+
+Tento dokument popisuje, z jakých tabulek PEFCR A&F v3.1 čerpáme defaulty pro use-phase a jak se mapují na proměnné v pipeline.
+
+## Zdroje (PEFCR v3.1)
+- **Table 39** – Default washing types & temperatures (kap. 6.4.1, p. 165–166).
+- **Table 40** – Number of uses between washes (kap. 6.4.1, p. 167).
+- **Table 41** – Drying shares per sub-category (kap. 6.4.2, p. 168).
+- **Table 42** – Ironing & steaming data (kap. 6.4.3, p. 168).
+- **Annex VII (XLSX)** – Default datasets (energy/water per wash by temperature, tumble kWh/cycle, iron kWh/min).
+
+## Mapování → proměnné a dataset
+- `PEF_USE_MODE = dataset|parametric` — přepíná, zda se berou hodnoty z datasetu (JSON) nebo z env.
+- `USE_PHASE_DATASET_JSON` — JSON s defaulty (viz `data/ef31/use_phase_datasets_v31.json`).
+- Pokud dataset chybí pro danou subkategorii/teplotu, skript padá na **env fallback**:
+  - `PEF_USE_ENERGY_KWH_PER_WASH`, `PEF_USE_WATER_L_PER_WASH`,
+  - `PEF_USE_ENERGY_KWH_PER_TUMBLE_DRY`, `PEF_USE_IRON_KWH_PER_MIN`.
