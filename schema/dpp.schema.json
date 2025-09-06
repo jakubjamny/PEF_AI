@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "product": {
+      "type": "object",
+      "properties": {
+        "classification": {
+          "type": "object",
+          "properties": {
+            "cn": { "type": ["string","null"], "pattern": "^\\d{8}$" },
+            "category_code": { "type": ["string","null"] }
+          }
+        }
+      }
+    }
+  }
+}
