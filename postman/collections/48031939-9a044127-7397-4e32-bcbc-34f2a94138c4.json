@@ -270,7 +270,7 @@
 							"              + wu_use_proxy).toFixed(3);",
 							"",
 							"let ilcd_mat_cov=0, ilcd_pack_cov=0, ilcd_mat_fallback=0, ilcd_pack_fallback=0;",
-							"/ === Apply PEFCR use-phase defaults (Tables 39–42) ===",
+							"//=== Apply PEFCR use-phase defaults (Tables 39–42) ===",
 							"const APPLY_PEFCR = String(getEnv(\"PEFCR_USE_PHASE_APPLY\",\"true\")).toLowerCase()===\"true\";",
 							"if (APPLY_PEFCR) {",
 							"  const catRaw = String(get(res,\"product.category\")||\"\").toLowerCase();",
