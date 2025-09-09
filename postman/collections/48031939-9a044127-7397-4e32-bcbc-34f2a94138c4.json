@@ -2435,7 +2435,7 @@
 							"  const exBlocks = xml.match(/<exchange[\\s\\S]*?<\\/exchange>/gi) || [];",
 							"  for (const block of exBlocks){",
 							"    const uuid = (block.match(/referenceToFlowDataSet[^>]*refObjectId=[\"']([^\"']+)[\"']/i)||[])[1] || \"\";",
-							"    aconst amount = (block.match(/<meanAmount[^>]*>([^<]+)<\\/meanAmount>/i)||[])[1] ||",
+							"    const amount = (block.match(/<meanAmount[^>]*>([^<]+)<\\/meanAmount>/i)||[])[1] ||",
 							"                   (block.match(/<resultingAmount[^>]*>([^<]+)<\\/resultingAmount>/i)||[])[1] || \"0\";",
 							"    const unit = (block.match(/<meanAmount[^>]*unit=[\"']([^\"']+)[\"']/i)||[])[1] ||",
 							"                 (block.match(/<unit[^>]*>([^<]+)<\\/unit>/i)||[])[1] || \"\";",
