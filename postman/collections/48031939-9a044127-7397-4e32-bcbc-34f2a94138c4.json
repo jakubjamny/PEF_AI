@@ -2924,6 +2924,10 @@
 							"// Tests",
 							"pm.test(\"Extract stored\", ()=> pm.expect(pm.environment.get(\"extracted_raw\")).to.be.a(\"string\"));",
 							"pm.test(\"Questions ready\", ()=> pm.expect(JSON.parse(pm.environment.get(\"questions\")||\"[]\")).to.be.an(\"array\"));",
+							"const cc = JSON.parse(pm.environment.get('ef31_cf_cc_idx')||'{}');",
+							"const wu = JSON.parse(pm.environment.get('ef31_cf_wu_idx')||'{}');",
+							"console.log('CF CC entries:', Object.keys(cc).length);",
+							"console.log('CF WU entries:', Object.keys(wu).length);",
 							""
 						],
 						"type": "text/javascript",
