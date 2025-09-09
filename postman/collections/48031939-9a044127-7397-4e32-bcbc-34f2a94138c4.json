@@ -712,7 +712,7 @@
 							"    const dist  = Number(t.distance_km||0);",
 							"    const util  = (t.utilisation_ratio===\"\"||t.utilisation_ratio==null)? 1 : Number(t.utilisation_ratio);",
 							"    const share = Math.max(0, Math.min(1, Number(t.share_mass_fraction||1)));",
-							"    const massForThisLegKg = (massForTransportKg || 0) * share;",
+							"    const massForThisLegKg = (massForTransportKgBase || 0) * (share || 1);",
 							"",
 							"    // tkm = tuny * km / utilisation_ratio",
 							"    const tkm = (dist>0 && massForThisLegKg>0) ? ((massForThisLegKg/1000) * dist / (util>0?util:1)) : 0;",
