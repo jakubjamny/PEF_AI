@@ -3221,6 +3221,102 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "https://postman-echo.com/get",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d05bc870-77a2-4c0c-b02f-0a3f0ce49c72",
+						"exec": [
+							"// === Build EF31 flow-map skeleton from packaging ILCD ===",
+							"function tryJ(s){ try{ return JSON.parse(s); }catch(_){ return null; } }",
+							"const owner  = pm.environment.get(\"GITHUB_OWNER\")  || \"jakubjamny\";",
+							"const repo   = pm.environment.get(\"GITHUB_REPO\")   || \"PEF_AI\";",
+							"const branch = pm.environment.get(\"GITHUB_BRANCH\") || \"feature/ef31-pefcr\";",
+							"const token  = pm.environment.get(\"GITHUB_TOKEN\")  || \"\";",
+							"const authH  = token ? { key:\"Authorization\", value:`token ${token}` } : null;",
+							"const raw = p => `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${p}`;",
+							"function fetchText(p){ return new Promise((res,rej)=>pm.sendRequest({url:raw(p),method:\"GET\",header:authH?[authH]:[]},(e,r)=>e?rej(e):res(r.text()))) }",
+							"function csvQ(s){ const out=[], L=(s||\"\").replace(/\\r/g,\"\").split(\"\\n\"); if(!L.length) return out;",
+							"  const pl=l=>{const a=[];let c=\"\",q=false; for(let i=0;i<l.length;i++){const ch=l[i],nx=l[i+1];",
+							"    if(ch=='\"'){ if(q&&nx=='\"'){c+='\"';i++;continue;} q=!q; continue; }",
+							"    if(ch==',' && !q){ a.push(c); c=\"\"; continue; } c+=ch; } a.push(c); return a;};",
+							"  const head=pl(L.shift()).map(x=>x.trim()); for(const ln of L){ if(!ln) continue; const cols=pl(ln); const o={}; head.forEach((k,i)=>o[k]=(cols[i]??\"\").trim()); out.push(o);} return out;}",
+							"function exXML(xml){",
+							"  const out=[]; const mG=xml.match(/<geography[\\s\\S]*?<shortname[^>]*>([^<]+)<\\/shortname>/i);",
+							"  const pLoc=mG?(mG[1]||'').trim():\"\"; const ex=xml.match(/<exchange[\\s\\S]*?<\\/exchange>/gi)||[];",
+							"  for(const b of ex){",
+							"    const u=(b.match(/referenceToFlowDataSet[^>]*refObjectId=[\"']([^\"']+)[\"']/i)||[])[1]||\"\";",
+							"    if(u) out.push({flow_uuid:String(u)});",
+							"  } return out;",
+							"}",
+							"async function findProcXmlByUUID(uuid){",
+							"  const short=String(uuid).slice(0,8).toLowerCase();",
+							"  const names=[`ef_${short}.xml`,`${uuid}.xml`,`${short}.xml`];",
+							"  const dirs=[\"data/ilcd/processes/packaging\",\"data/ilcd/processes/packiging\",\"data/ilcd/processes\"];",
+							"  for(const d of dirs){ for(const n of names){ const p=`${d}/${n}`; try{ const x=await fetchText(p); return {xml:x,file:p}; }catch(_){}} }",
+							"  throw new Error(\"missing ILCD process \"+uuid);",
+							"}",
+							"(async ()=>{",
+							"  // 1) načti mapu obalů",
+							"  const packMapCsv = await fetchText(\"knowledge/pack_lci_map.csv\");",
+							"  const rows = csvQ(packMapCsv).filter(r=>r.uuid && r.key);",
+							"  // 2) sesbírej všechny flow UUID z procesů",
+							"  const used = new Map(); // from_uuid -> {count, examples:[key...]}",
+							"  for(const r of rows){",
+							"    try{",
+							"      const {xml} = await findProcXmlByUUID(r.uuid);",
+							"      const exs = exXML(xml);",
+							"      for(const e of exs){",
+							"        const cur = used.get(e.flow_uuid) || {count:0, examples:new Set()};",
+							"        cur.count++; cur.examples.add(r.key);",
+							"        used.set(e.flow_uuid, cur);",
+							"      }",
+							"    }catch(e){ console.warn(\"proc miss\", r.key, r.uuid); }",
+							"  }",
+							"  // 3) CSV skeleton",
+							"  const lines = [\"from_uuid,to_uuid,comment\"];",
+							"  [...used.entries()].sort((a,b)=>b[1].count-a[1].count).forEach(([u,meta])=>{",
+							"    const eg = [...meta.examples].slice(0,3).join(\"|\");",
+							"    lines.push(`${u},,count=${meta.count}; seen_in=${eg}`);",
+							"  });",
+							"  const csvOut = lines.join(\"\\n\");",
+							"  pm.environment.set(\"ef31_flow_map_skeleton\", csvOut);",
+							"  pm.visualizer.set(`<style>body{font-family:system-ui;max-width:1000px;margin:24px auto}</style><h3>ef31_flow_map.csv — skeleton</h3><pre>{{x}}</pre>`, {x: csvOut});",
+							"  console.log(\"Unique flows:\", used.size);",
+							"})();",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "48031939-51b3a94e-a442-4776-8a7d-59282eaf0394",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/get",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"variable": [
