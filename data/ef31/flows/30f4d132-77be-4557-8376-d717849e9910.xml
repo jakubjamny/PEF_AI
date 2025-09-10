@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?><processDataSet xmlns="http://lca.jrc.it/ILCD/Process" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:ext="http://eplca.jrc.ec.europa.eu/ILCD/Extensions/2017" xmlns:ns5="thinkstepio" xmlns:ns6="ext" xmlns:thinkstepio="http://conversion.thinkstep.com/ILCD/ThinkstepIo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" locations="../ILCDLocations.xml" metaDataOnly="false" version="1.1" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+  <processInformation>
+    <dataSetInformation>
+      <common:UUID>30f4d132-77be-4557-8376-d717849e9910</common:UUID>
+      <name>
+        <baseName xml:lang="en">Agricultural Tractor 37-74 kW, emmision class 1-5, 1 hour operation</baseName>
+        <treatmentStandardsRoutes xml:lang="en">diesel driven, emmission class 1-5, agricultural tractor</treatmentStandardsRoutes>
+        <mixAndLocationTypes xml:lang="en">consumption mix, to consumer</mixAndLocationTypes>
+        <functionalUnitFlowProperties xml:lang="en">37-74 kW</functionalUnitFlowProperties>
+      </name>
+      <classificationInformation>
+        <common:classification>
+          <common:class level="0">Transport services</common:class>
+          <common:class level="1">Road</common:class>
+        </common:classification>
+      </classificationInformation>
+      <common:generalComment xml:lang="en">The data set covers all relevant technologies with a high overall data quality. The inventory is mainly based on literature data.</common:generalComment>
+    </dataSetInformation>
+    <quantitativeReference type="Reference flow(s)">
+      <referenceToReferenceFlow>7</referenceToReferenceFlow>
+    </quantitativeReference>
+    <time>
+      <common:referenceYear>2020</common:referenceYear>
+      <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+      <common:timeRepresentativenessDescription xml:lang="en">annual average</common:timeRepresentativenessDescription>
+    </time>
+    <geography>
+      <locationOfOperationSupplyOrProduction location="GLO">
+        <descriptionOfRestrictions xml:lang="en">The data set represents a global and unified applied technology.The data set can be adapted to the country / region specific situation by using the applicable data sets with the country / region specific conditions.</descriptionOfRestrictions>
+      </locationOfOperationSupplyOrProduction>
+    </geography>
+    <technology>
+      <technologyDescriptionAndIncludedProcesses xml:lang="en">The process "universal tractor" had been set up in order to model the general exhaust-gas characteristics of the tractors used in the agricultural processes. By known (to fill in) engine power, engine speed and fuel consumption the exhaust-gas values per working time of the machine per ha can be calculated. The system boundary does not comprise the diesel provision, but the emissions from diesel burning in tractor.  The tractor specific consumption and emission data (HC, NOx, CO and CO2 emissions) have been especially elaborated by FAT (Swiss Federal Research Station for Agricultural Economics and Engineering) in order to calculate ecobalances of agricultural production processes. The underlying waste gas model of FAT is based on 109 single measurements with over 162,000 data sets and a gate time of 450 hours in trial operation. The data source for the modelling of benzpyrene and dust (particles into air) is Borken et al.&#13;
+According to literature data [DLG powermix] [Kraftstoffverbrauch in der Land- und Forstwirtschaft], the specific diesel consumption is set to 300 g/kWh.</technologyDescriptionAndIncludedProcesses>
+      <technologicalApplicability xml:lang="en">Provision of a standard technical process according to the applied technology.</technologicalApplicability>
+      <referenceToTechnologyFlowDiagrammOrPicture refObjectId="c733e7fb-98e1-484e-8789-0aba26aee5ae" type="source data set" uri="../sources/c733e7fb-98e1-484e-8789-0aba26aee5ae.xml" version="30.00.000">
+        <common:shortDescription xml:lang="en">renewables_co_diagram.jpg</common:shortDescription>
+      </referenceToTechnologyFlowDiagrammOrPicture>
+      <referenceToTechnologyFlowDiagrammOrPicture refObjectId="fed9666f-948c-4a5d-8295-f8c47876ae37" type="source data set" uri="../sources/fed9666f-948c-4a5d-8295-f8c47876ae37.xml" version="30.00.000">
+        <common:shortDescription xml:lang="en">renewables_nox_diagram.jpg</common:shortDescription>
+      </referenceToTechnologyFlowDiagrammOrPicture>
+      <referenceToTechnologyFlowDiagrammOrPicture refObjectId="b40ae9e7-f564-42ae-98bd-96336e4f0a6c" type="source data set" uri="../sources/b40ae9e7-f564-42ae-98bd-96336e4f0a6c.xml" version="30.00.000">
+        <common:shortDescription xml:lang="en">renewables_hc_diagram.jpg</common:shortDescription>
+      </referenceToTechnologyFlowDiagrammOrPicture>
+    </technology>
+    <mathematicalRelations>
+      <modelDescription xml:lang="en">The open parameters in this processes enable the user to adjust the model to their individual circumstances. The description of the parameters is given alongside the parameters in the comments section.&#13;
+&#13;
+For mathematical model details concerning the implementation of the CCF formula see: &#13;
+http://www.gabi-software.com/fileadmin/GaBi_Databases/PEF_CFF_model_description.pdf</modelDescription>
+      <variableParameter name="Anteil_CO2_bio">
+        <meanValue>0.05</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[-] share of biogenic C in fuel</comment>
+      </variableParameter>
+      <variableParameter name="CO_1">
+        <formula>2.2 * power * load</formula>
+        <meanValue>65.12</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] CO emmission per hour; Stage 1</comment>
+      </variableParameter>
+      <variableParameter name="CO_2">
+        <formula>2.2 * power * load</formula>
+        <meanValue>65.12</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] CO emmission per hour; Stage 2</comment>
+      </variableParameter>
+      <variableParameter name="CO_3a">
+        <formula>2.2 * power * load</formula>
+        <meanValue>65.12</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] CO emmission per hour; Stage 3a</comment>
+      </variableParameter>
+      <variableParameter name="CO_3b">
+        <formula>3 * power * load</formula>
+        <meanValue>88.8</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] CO emmission per hour; Stage 3b</comment>
+      </variableParameter>
+      <variableParameter name="CO_4">
+        <formula>3 * power * load</formula>
+        <meanValue>88.8</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] CO emmission per hour; Stage 4</comment>
+      </variableParameter>
+      <variableParameter name="CO_5">
+        <formula>3 * power * load</formula>
+        <meanValue>88.8</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] CO emmission per hour; Stage 5</comment>
+      </variableParameter>
+      <variableParameter name="CO_tot">
+        <formula>CO_1 * share_1 + CO_2 * share_2 + CO_3a * share_3a + CO_3b * share_3b + CO_4 * share_4 + CO_5 * share_5</formula>
+        <meanValue>68.6128</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] CO emmission per hour weighted</comment>
+      </variableParameter>
+      <variableParameter name="CO2">
+        <formula>3.18 * Diesel</formula>
+        <meanValue>28.2384</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[kg/h] CO2 emission per hour</comment>
+      </variableParameter>
+      <variableParameter name="CO2_biogen">
+        <formula>CO2 * (Anteil_CO2_bio)</formula>
+        <meanValue>1.41192</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[kg/h] CO2 (biogenic) emission per hour</comment>
+      </variableParameter>
+      <variableParameter name="CO2_fossil">
+        <formula>CO2 * (1 - Anteil_CO2_bio)</formula>
+        <meanValue>26.82648</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[kg/h] CO2 (fossil) emission per hour</comment>
+      </variableParameter>
+      <variableParameter name="Diesel">
+        <formula>(300 * power * load) / 1000</formula>
+        <meanValue>8.88</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[kg/h] Diesel Consumption</comment>
+      </variableParameter>
+      <variableParameter name="HC_1">
+        <formula>0.6 * power * load</formula>
+        <meanValue>17.76</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] HC emmission per hour; Stage 1</comment>
+      </variableParameter>
+      <variableParameter name="HC_2">
+        <formula>0.4 * power * load</formula>
+        <meanValue>11.84</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] HC emmission per hour; Stage 2</comment>
+      </variableParameter>
+      <variableParameter name="HC_3a">
+        <formula>0.4 * power * load</formula>
+        <meanValue>11.84</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] HC emmission per hour; Stage 3a</comment>
+      </variableParameter>
+      <variableParameter name="HC_3b">
+        <formula>0.28 * power * load</formula>
+        <meanValue>8.288</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] HC emmission per hour; Stage 3b</comment>
+      </variableParameter>
+      <variableParameter name="HC_4">
+        <formula>0.28 * power * load</formula>
+        <meanValue>8.288</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] HC emmission per hour; Stage 4</comment>
+      </variableParameter>
+      <variableParameter name="HC_5">
+        <formula>0.28 * power * load</formula>
+        <meanValue>8.288</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] HC emmission per hour; Stage 5</comment>
+      </variableParameter>
+      <variableParameter name="HC_tot">
+        <formula>HC_1 * share_1 + HC_2 * share_2 + HC_3a * share_3a + HC_3b * share_3b + HC_4 * share_4 + HC_5 * share_5</formula>
+        <meanValue>12.53856</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] HC emmission per hour weighted</comment>
+      </variableParameter>
+      <variableParameter name="hours">
+        <meanValue>10000.0</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[h] Operating hours over tractor's lifetime [range 5000 -10000 h]</comment>
+      </variableParameter>
+      <variableParameter name="load">
+        <meanValue>0.4</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[-] load factor default = 0,3</comment>
+      </variableParameter>
+      <variableParameter name="N2O_tot">
+        <formula>0.035 * power * load</formula>
+        <meanValue>1.036</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] N2O emmission per hour</comment>
+      </variableParameter>
+      <variableParameter name="NH3_tot">
+        <formula>0.002 * power * load</formula>
+        <meanValue>0.0592</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] NH3 emmission per hour</comment>
+      </variableParameter>
+      <variableParameter name="NOx_1">
+        <formula>7.7 * power * load</formula>
+        <meanValue>227.92</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] NOx emission per hour; Stage 1</comment>
+      </variableParameter>
+      <variableParameter name="NOx_2">
+        <formula>5.5 * power * load</formula>
+        <meanValue>162.8</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] NOx emission per hour; Stage 2</comment>
+      </variableParameter>
+      <variableParameter name="NOx_3a">
+        <formula>3.8 * power * load</formula>
+        <meanValue>112.48</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] NOx emission per hour; Stage 3a</comment>
+      </variableParameter>
+      <variableParameter name="NOx_3b">
+        <formula>5.1 * power * load</formula>
+        <meanValue>150.96</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] NOx emission per hour; Stage 3b</comment>
+      </variableParameter>
+      <variableParameter name="NOx_4">
+        <formula>4.05 * power * load</formula>
+        <meanValue>119.88</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] NOx emission per hour; Stage 4</comment>
+      </variableParameter>
+      <variableParameter name="NOx_5">
+        <formula>2.1 * power * load</formula>
+        <meanValue>62.16</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] NOx emission per hour; Stage 5</comment>
+      </variableParameter>
+      <variableParameter name="NOx_tot">
+        <formula>NOx_1 * share_1 + NOx_2 * share_2 + NOx_3a * share_3a + NOx_3b * share_3b + NOx_4 * share_4 + NOx_5 * share_5</formula>
+        <meanValue>166.4556</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] NOx emission per hour weigted</comment>
+      </variableParameter>
+      <variableParameter name="PM_1">
+        <formula>0.35 * power * load</formula>
+        <meanValue>10.36</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] PM emmission per hour; Stage 1</comment>
+      </variableParameter>
+      <variableParameter name="PM_2">
+        <formula>0.22 * power * load</formula>
+        <meanValue>6.512</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] PM emmission per hour; Stage 2</comment>
+      </variableParameter>
+      <variableParameter name="PM_3a">
+        <formula>0.22 * power * load</formula>
+        <meanValue>6.512</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] PM emmission per hour; Stage 3a</comment>
+      </variableParameter>
+      <variableParameter name="PM_3b">
+        <formula>0.025 * power * load</formula>
+        <meanValue>0.74</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] PM emmission per hour; Stage 3b</comment>
+      </variableParameter>
+      <variableParameter name="PM_4">
+        <formula>0.025 * power * load</formula>
+        <meanValue>0.74</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] PM emmission per hour; Stage 4</comment>
+      </variableParameter>
+      <variableParameter name="PM_5">
+        <formula>0.015 * power * load</formula>
+        <meanValue>0.444</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] PM emmission per hour; Stage 5</comment>
+      </variableParameter>
+      <variableParameter name="PM_tot">
+        <formula>PM_1 * share_1 + PM_2 * share_2 + PM_3a * share_3a + PM_3b * share_3b + PM_4 * share_4 + PM_5 * share_5</formula>
+        <meanValue>6.5268</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[g/h] PM emmission per hour weighted</comment>
+      </variableParameter>
+      <variableParameter name="Power">
+        <meanValue>74.0</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">Typical power range 37kW to 74kW</comment>
+      </variableParameter>
+      <variableParameter name="share_1">
+        <meanValue>0.17</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[-] share of stage 1 vehicles</comment>
+      </variableParameter>
+      <variableParameter name="share_2">
+        <meanValue>0.67</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[-] share of stage 2 vehicles</comment>
+      </variableParameter>
+      <variableParameter name="share_3a">
+        <meanValue>0.05</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[-] share of stage 3a vehicles</comment>
+      </variableParameter>
+      <variableParameter name="share_3b">
+        <meanValue>0.03</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[-] share of stage 3b vehicles</comment>
+      </variableParameter>
+      <variableParameter name="share_4">
+        <meanValue>0.05</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[-] share of stage 4 vehicles</comment>
+      </variableParameter>
+      <variableParameter name="share_5">
+        <meanValue>0.04</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[-] share of stage 5 vehicles</comment>
+      </variableParameter>
+      <variableParameter name="tractor">
+        <formula>1 / hours</formula>
+        <meanValue>1.0E-4</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[pcs/h] pieces of  tractor allocated per hour</comment>
+      </variableParameter>
+    </mathematicalRelations>
+  </processInformation>
+  <modellingAndValidation>
+    <LCIMethodAndAllocation>
+      <typeOfDataSet>Unit process, single operation</typeOfDataSet>
+      <LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+      <deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+      <LCIMethodApproaches>Not applicable</LCIMethodApproaches>
+      <deviationsFromLCIMethodApproaches xml:lang="en">None</deviationsFromLCIMethodApproaches>
+      <modellingConstants xml:lang="en">Direct land use change: GHG emissions from direct LUC allocated to good/service for 20 years after the LUC occurs.
+Carbon  storage  and  delayed  emissions:  credits  associated  with  temporary  (carbon) storage or delayed emissions are not considered in the calculation of the EF for the default impact categories.
+Emissions off-setting: not included
+Fossil and biogenic carbon emissions and removals: removals and emissions are modelled as follows: All  GHG  emissions  from  fossil  fuels  (including  peat  and  limestone)  are modelled consistently with the ILCD list of elementary flows. In the case that the emissions refer to the molecules CO2 and CH4, they are modelled as ‘carbon dioxide (fossil)’ and ‘methane (fossil)’. Biogenic   uptake   and   emissions   are modelled   separately. For land use change, all carbon emissions and uptakes are inventoried separately for each of the elementary flows. Soil carbon accumulation (uptake) via improved agricultural management is excluded from the model.</modellingConstants>
+      <deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+      <referenceToLCAMethodDetails refObjectId="1a453aa5-4e46-468f-b441-17fb02054ac3" type="source data set" uri="../sources/1a453aa5-4e46-468f-b441-17fb02054ac3.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">GaBi Refinery Modelling Principles</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="f2b512cd-43b2-4260-9882-eebc06731274" type="source data set" uri="../sources/f2b512cd-43b2-4260-9882-eebc06731274.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">GaBi Modelling Principles</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="2f4e6329-f31d-44dc-8933-f4e6608590f5" type="source data set" uri="../sources/2f4e6329-f31d-44dc-8933-f4e6608590f5.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">GaBi Water Modelling Principles</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="69cb87e8-2532-455d-b7d3-18eced579e8f" type="source data set" uri="../sources/69cb87e8-2532-455d-b7d3-18eced579e8f.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">GaBi Agriculture Model Documentation</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="57a2608f-18fc-454f-998a-1657376a4322" type="source data set" uri="../sources/57a2608f-18fc-454f-998a-1657376a4322.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">GaBi Land Use Change Model Documentation</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="3c6b1a84-fc51-463c-a66f-eaacfde2cb2f" type="source data set" uri="../sources/3c6b1a84-fc51-463c-a66f-eaacfde2cb2f.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">GaBi Energy Modelling Principles</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="afc1ce43-e800-494b-aad4-46b9e8ea74da" type="source data set" uri="../sources/afc1ce43-e800-494b-aad4-46b9e8ea74da.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">Suggestions for updating the PEF method 2019</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="14dbc7d1-3ff2-4bda-8ff4-6805278f5d7c" type="source data set" uri="../sources/14dbc7d1-3ff2-4bda-8ff4-6805278f5d7c.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">Guide for EF compliant data sets</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="4e2eaf14-1b54-4d3f-95dd-ef3bbbf49d32" type="source data set" uri="../sources/4e2eaf14-1b54-4d3f-95dd-ef3bbbf49d32.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">GaBi Agrarian Modelling Principles</common:shortDescription>
+      </referenceToLCAMethodDetails>
+    </LCIMethodAndAllocation>
+    <dataSourcesTreatmentAndRepresentativeness>
+      <dataCutOffAndCompletenessPrinciples xml:lang="en">A cut-off rule based on mass or energy flow or the level of environmental significance of max. 3% is applied and confirmed by the reviewer. An active cut-off within the system has not been applied, no data gaps are known and all elementary flows of environmental effect are included in the inventory.	&#13;
+&#13;
+Capital goods (including infrastructures) and their end of life are included unless the exclusion is clearly documented and conform with the cut-off principles.&#13;
+&#13;
+System boundaries include all known processes linked to the product supply chain.</dataCutOffAndCompletenessPrinciples>
+      <deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+      <dataSelectionAndCombinationPrinciples xml:lang="en"> LCI modeling is fully consistent.&#13;
+Energy and transport datasets from the PEF energy and transports tender are consistently used.</dataSelectionAndCombinationPrinciples>
+      <deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+      <dataTreatmentAndExtrapolationsPrinciples xml:lang="en">For details please see the document "GaBi Databases Modelling Principles"</dataTreatmentAndExtrapolationsPrinciples>
+      <deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+      <referenceToDataSource refObjectId="d273be73-5fbd-11db-b0de-0800200c9a66" type="source data set" uri="../sources/d273be73-5fbd-11db-b0de-0800200c9a66.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">Basisdaten für ökologische Bilanzierungen, 1999</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="913bed73-c6d3-427a-b60a-bd68b2f5b4de" type="source data set" uri="../sources/913bed73-c6d3-427a-b60a-bd68b2f5b4de.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">DLG Powermix, DLG Testzentrum Technik und Betriebsmittel, onlinen 2020</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="be567e21-117b-4a3b-bc8b-e55a53e5f21f" type="source data set" uri="../sources/be567e21-117b-4a3b-bc8b-e55a53e5f21f.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">Kraftstoffverbrauch in der Land- und Forstwirtschaft</common:shortDescription>
+      </referenceToDataSource>
+      <percentageSupplyOrProductionCovered>95.0</percentageSupplyOrProductionCovered>
+      <uncertaintyAdjustments xml:lang="en">None</uncertaintyAdjustments>
+      <useAdviceForDataSet xml:lang="en">Notice: this data set supersedes the EF3.0-compliant version (see link under "preceding data set version" below calculated with the EF3.0). The life cycle inventory is not changed from the original EF3.0 data set. The LCIA results are calculated based on the EF3.1 methods which provide updated characterisation factors in the following impact categories: Climate Change, Ecotoxicity freshwater, Photochemical Ozone Formation, Acidification, Human Toxicity non-cancer, and Human Toxicity cancer. The review report and the data quality ratings refer to the original results. The data set has been updated by the European Commission on the basis of the original EF3.0 data set delivered by the data provider.&#13;
+&#13;
+Life Cycle Inventory (LCI) datasets to be used for implementing regular Product Environmental Footprint (PEF) studies and Organisation Environmental Footprint (OEF) studies exclusively under the specified Product groups and sectors as defined in the Product Environmental Footprint Category Rules (PEFCR) and Organisation Environmental Footprint Sectorial Rules (OEFSR) listed in https://ec.europa.eu/environment/eussd/smgp/ef_transition.htm
+The datasets are specifically designed for these methodological requirements (see above) and the related LCIA methods (listed below) recommended in EF.</useAdviceForDataSet>
+    </dataSourcesTreatmentAndRepresentativeness>
+    <completeness>
+      <completenessProductModel>All relevant flows quantified</completenessProductModel>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad66ce-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" version="03.00.014">
+        <common:shortDescription xml:lang="en">Water use</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6494-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" version="01.00.010">
+        <common:shortDescription xml:lang="en">Resource use, minerals and metals</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6110-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" version="01.00.010">
+        <common:shortDescription xml:lang="en">Resource use, fossils</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b5c610fe-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" version="02.01.000">
+        <common:shortDescription xml:lang="en">Photochemical ozone formation - human health</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b5c602c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" version="02.00.011">
+        <common:shortDescription xml:lang="en">EF-particulate matter</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b5c629d6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" version="02.00.012">
+        <common:shortDescription xml:lang="en">Ozone depletion</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6890-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" version="01.00.010">
+        <common:shortDescription xml:lang="en">Land use</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b5c632be-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" version="01.00.011">
+        <common:shortDescription xml:lang="en">Ionising radiation, human health</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="8c3141e9-1f15-43b5-bff2-182e49893a46" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Human toxicity, non-cancer_organics</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="9d1d43a2-e1aa-4c16-acd4-3dd8a6a2fb85" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Human toxicity, non-cancer_inorganics</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Human toxicity, non-cancer</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="503699e0-eca9-4089-8bf8-e0f49c93e578" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Human toxicity, cancer_organics</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="01500b74-7ffb-463e-9bd4-72f17c2263ff" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Human toxicity, cancer_inorganics</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="2299222a-bbd8-474f-9d4f-4dd1f18aea7c" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Human toxicity, cancer</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b5c614d2-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" version="01.02.009">
+        <common:shortDescription xml:lang="en">Eutrophication, terrestrial</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b53ec18f-7377-4ad3-86eb-cc3f4f276b2b" type="LCIA method data set" version="01.00.010">
+        <common:shortDescription xml:lang="en">Eutrophication, freshwater</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b5c619fa-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" version="02.00.010">
+        <common:shortDescription xml:lang="en">Eutrophication marine</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="fd530f00-9325-424a-92ef-aaac67922fd9" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Ecotoxicity, freshwater_organics</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="dacd48b5-4da5-49aa-aff4-cd5f5495c037" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Ecotoxicity, freshwater_inorganics</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="05316e7a-b254-4bea-9cf0-6bf33eb5c630" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Ecotoxicity, freshwater</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="14af9ca7-aa1d-4832-b1d9-ab05a06dcb12" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Climate change-Land use and land use change</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="7fce5b3a-66b8-4ce1-91e8-a925aee1f186" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Climate change-Fossil</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="706261af-a357-4cc0-a50a-f3033fcbd556" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Climate change-Biogenic</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="6209b35f-9447-40b5-b68c-a1099e3674a0" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Climate change</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b5c611c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" version="01.04.000">
+        <common:shortDescription xml:lang="en">Acidification</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <completenessElementaryFlows type="Climate change" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Ozone depletion" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Summer smog" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Eutrophication" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Acidification" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Human toxicity" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Freshwater ecotoxicity" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Seawater eco-toxicity" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Terrestric eco-toxicity" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Radioactivity" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Land use" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Non-renewable material resource depletion" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Renewable material resource consumption" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Non-renewable primary energy depletion" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Renewable primary energy consumption" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Particulate matter/respiratory inorganics" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Species depletion" value="No statement"/>
+      <completenessElementaryFlows type="Noise" value="No statement"/>
+    </completeness>
+    <validation>
+      <review type="Independent internal review">
+        <common:scope name="Raw data">
+          <common:method name="Validation of data sources"/>
+          <common:method name="Sample tests on calculations"/>
+          <common:method name="Cross-check with other source"/>
+          <common:method name="Expert judgement"/>
+        </common:scope>
+        <common:scope name="Unit process(es), single operation">
+          <common:method name="Validation of data sources"/>
+          <common:method name="Sample tests on calculations"/>
+          <common:method name="Energy balance"/>
+          <common:method name="Element balance"/>
+          <common:method name="Cross-check with other source"/>
+          <common:method name="Cross-check with other data set"/>
+          <common:method name="Expert judgement"/>
+          <common:method name="Mass balance"/>
+          <common:method name="Compliance with ISO 14040 to 14044"/>
+        </common:scope>
+        <common:scope name="Unit process(es), black box">
+          <common:method name="Validation of data sources"/>
+          <common:method name="Sample tests on calculations"/>
+          <common:method name="Energy balance"/>
+          <common:method name="Element balance"/>
+          <common:method name="Cross-check with other source"/>
+          <common:method name="Cross-check with other data set"/>
+          <common:method name="Expert judgement"/>
+          <common:method name="Mass balance"/>
+          <common:method name="Compliance with ISO 14040 to 14044"/>
+        </common:scope>
+        <common:scope name="LCI results or Partly terminated system">
+          <common:method name="Validation of data sources"/>
+          <common:method name="Sample tests on calculations"/>
+          <common:method name="Energy balance"/>
+          <common:method name="Element balance"/>
+          <common:method name="Cross-check with other source"/>
+          <common:method name="Cross-check with other data set"/>
+          <common:method name="Expert judgement"/>
+          <common:method name="Mass balance"/>
+          <common:method name="Compliance with ISO 14040 to 14044"/>
+        </common:scope>
+        <common:scope name="LCIA results">
+          <common:method name="Cross-check with other source"/>
+          <common:method name="Cross-check with other data set"/>
+          <common:method name="Expert judgement"/>
+        </common:scope>
+        <common:scope name="Documentation">
+          <common:method name="Expert judgement"/>
+          <common:method name="Compliance with ISO 14040 to 14044"/>
+        </common:scope>
+        <common:scope name="Life cycle inventory methods">
+          <common:method name="Compliance with ISO 14040 to 14044"/>
+        </common:scope>
+        <common:scope name="LCIA results calculation"/>
+        <common:scope name="Goal and scope definition"/>
+        <common:dataQualityIndicators>
+          <common:dataQualityIndicator ext:numericValue="3.00" name="Technological representativeness" value="Fair"/>
+          <common:dataQualityIndicator ext:numericValue="2.00" name="Time representativeness" value="Good"/>
+          <common:dataQualityIndicator ext:numericValue="3.00" name="Geographical representativeness" value="Fair"/>
+          <common:dataQualityIndicator name="Completeness" value="Not evaluated / unknown"/>
+          <common:dataQualityIndicator ext:numericValue="2.00" name="Precision" value="Good"/>
+          <common:dataQualityIndicator name="Methodological appropriateness and consistency" value="Not evaluated / unknown"/>
+          <common:dataQualityIndicator ext:numericValue="2.50" name="Overall quality" value="Good"/>
+        </common:dataQualityIndicators>
+        <common:reviewDetails xml:lang="en">The dataset is compliant to "Zampori L., Pant R.: Suggestions for updating the Product Environmental Footprint (PEF) method, 2019 and Fazio S., Zampori L., De Schryver A. et al.: Guide for EF compliant data sets, Version 2.0, 2020.&#13;
+In the PEF context the fields "Methodological appropriateness and consistency" and "completeness" are not evaluated by the review since their good quality is defined as mandatory.</common:reviewDetails>
+        <common:referenceToNameOfReviewerAndInstitution refObjectId="b3c3f6e6-510a-4a97-bf15-89fe1de5c8ba" type="contact data set" uri="../contacts/b3c3f6e6-510a-4a97-bf15-89fe1de5c8ba.xml" version="22.11.011">
+          <common:shortDescription xml:lang="en">Sphera Solutions GmbH, Dr. Michael Baumann</common:shortDescription>
+        </common:referenceToNameOfReviewerAndInstitution>
+        <common:referenceToNameOfReviewerAndInstitution refObjectId="79193b1f-952f-4a45-86fb-edaad5b9a6ff" type="contact data set" uri="../contacts/79193b1f-952f-4a45-86fb-edaad5b9a6ff.xml" version="22.11.011">
+          <common:shortDescription xml:lang="en">Sphera Solutions GmbH, Dr. Stefan Eckert</common:shortDescription>
+        </common:referenceToNameOfReviewerAndInstitution>
+        <common:otherReviewDetails xml:lang="en">Good overall quality (2,50) interpreted into "good quality" in the PEF quality validation scheme. The quality indicator for completeness was not requested to be quantified as a single DQI for all tenders. If a value “Not evaluated / unknown” completeness is given, this indicates that a single DQI was not explicitly requested but the completeness is still to be understood as very good.&#13;
+The Data Quality Indicator Results are conservative expert judgements, confirmed or - if necessary - corrected by the reviewers, based on their methodological as well as process understanding and considering semi-quantitatively the contribution of the DQIs of the used EF energy and transport datasets and of EF-related DQIs provided and reviewed within the GaBi databases. The overall DQIs of the datasets take into account primarily the quality and representativeness of the foreground technology information and that of the key upstream processes. If datasets are e.g. energy and transport intensive - or gain credits from energy recovery - the DQIs of the used EF energy and transport datasets influence the overall DQI significantly and have stronger been taken into account, via expert judgement. Analogous applies for other key background datasets. For the DQIs of the mentioned GaBi secondary datasets, similar DQIs had already been assigned to those datasets and were considered by the reviewers via expert judgement when assigning of the overall DQIs. In case of doubt, lower (i.e. lower quality) DQIs were assigned.</common:otherReviewDetails>
+        <common:referenceToCompleteReviewReport refObjectId="25113660-66f4-4132-8e3e-08233225a1e6" type="source data set" uri="../sources/25113660-66f4-4132-8e3e-08233225a1e6.xml" version="22.11.011">
+          <common:shortDescription xml:lang="en">GLO Agricultural Tractor 37-74 kW, emmision class 1-5, 1 hour operation [u-so]</common:shortDescription>
+        </common:referenceToCompleteReviewReport>
+      </review>
+    </validation>
+    <complianceDeclarations>
+      <compliance>
+        <common:referenceToComplianceSystem refObjectId="d92a1a12-2545-49e2-a585-55c259997756" type="source data set" uri="../sources/d92a1a12-2545-49e2-a585-55c259997756.xml" version="22.11.011">
+          <common:shortDescription xml:lang="en">ILCD Data Network - Entry-level</common:shortDescription>
+        </common:referenceToComplianceSystem>
+        <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+        <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+        <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+        <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+        <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+        <common:qualityCompliance>Not defined</common:qualityCompliance>
+      </compliance>
+      <compliance>
+        <common:referenceToComplianceSystem refObjectId="afc1ce43-e800-494b-aad4-46b9e8ea74da" type="source data set" uri="../sources/afc1ce43-e800-494b-aad4-46b9e8ea74da.xml" version="22.11.011">
+          <common:shortDescription xml:lang="en">Suggestions for updating the PEF method 2019</common:shortDescription>
+        </common:referenceToComplianceSystem>
+        <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+        <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+        <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+        <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+        <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+        <common:qualityCompliance>Fully compliant</common:qualityCompliance>
+      </compliance>
+      <compliance>
+        <common:referenceToComplianceSystem refObjectId="1ea48531-e397-4ca7-ac08-056e4fa11826" type="source data set" uri="../sources/1ea48531-e397-4ca7-ac08-056e4fa11826.xml" version="22.11.011">
+          <common:shortDescription xml:lang="en">ISO 14040 Environmental Management – Life Cycle Assessment – Principles and Framework, 2006</common:shortDescription>
+        </common:referenceToComplianceSystem>
+        <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+        <common:nomenclatureCompliance>Not defined</common:nomenclatureCompliance>
+        <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+        <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+        <common:documentationCompliance>Not defined</common:documentationCompliance>
+        <common:qualityCompliance>Not defined</common:qualityCompliance>
+      </compliance>
+      <compliance>
+        <common:referenceToComplianceSystem refObjectId="1adb438d-4a8b-4919-885e-0a66da3c0f2a" type="source data set" uri="../sources/1adb438d-4a8b-4919-885e-0a66da3c0f2a.xml" version="22.11.011">
+          <common:shortDescription xml:lang="en">ISO 14044:2006. Environmental Management – Life Cycle Assessment – Requirements and guidelines. </common:shortDescription>
+        </common:referenceToComplianceSystem>
+        <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+        <common:nomenclatureCompliance>Not defined</common:nomenclatureCompliance>
+        <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+        <common:reviewCompliance>Not defined</common:reviewCompliance>
+        <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+        <common:qualityCompliance>Not defined</common:qualityCompliance>
+      </compliance>
+      <compliance>
+        <common:referenceToComplianceSystem refObjectId="0eb2b770-2cb1-43cf-9fbc-215df36fe9f0" type="source data set" uri="../sources/0eb2b770-2cb1-43cf-9fbc-215df36fe9f0.xml" version="00.00.001">
+          <common:shortDescription xml:lang="en">Environmental Footprint 3.1</common:shortDescription>
+        </common:referenceToComplianceSystem>
+        <common:approvalOfOverallCompliance>Not defined</common:approvalOfOverallCompliance>
+        <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+        <common:methodologicalCompliance>Not defined</common:methodologicalCompliance>
+        <common:reviewCompliance>Not defined</common:reviewCompliance>
+        <common:documentationCompliance>Not defined</common:documentationCompliance>
+        <common:qualityCompliance>Not defined</common:qualityCompliance>
+      </compliance>
+    </complianceDeclarations>
+  </modellingAndValidation>
+  <administrativeInformation>
+    <common:commissionerAndGoal>
+      <common:referenceToCommissioner refObjectId="1c2f3702-e030-41d3-871c-69450426653b" type="contact data set" uri="../contacts/1c2f3702-e030-41d3-871c-69450426653b.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">European Commission, DG ENV B1</common:shortDescription>
+      </common:referenceToCommissioner>
+      <common:project xml:lang="en">Provision of product environmental footprint-compliant life cycle inventory datasets. Contract number N° 09.029901/2021/846457/SER/ENV.B.1</common:project>
+      <common:intendedApplications xml:lang="en">Life Cycle Inventory (LCI) datasets to be used in Product Environmental Footprint Category Rules (PEFCRs) and Organisation Environmental Footprint Sectoral Rules (OEFSRs) developed in the context of the Environmental Footprint transition phase launched by the Commission in 2018.</common:intendedApplications>
+    </common:commissionerAndGoal>
+    <dataGenerator>
+      <common:referenceToPersonOrEntityGeneratingTheDataSet refObjectId="d7fa0337-f279-430d-becf-7f3111a85010" type="contact data set" uri="../contacts/d7fa0337-f279-430d-becf-7f3111a85010.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">Sphera Solutions GmbH</common:shortDescription>
+      </common:referenceToPersonOrEntityGeneratingTheDataSet>
+    </dataGenerator>
+    <dataEntryBy>
+      <common:timeStamp>2022-12-02T10:25:04.561+01:00</common:timeStamp>
+      <common:referenceToDataSetFormat refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" type="source data set" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+      </common:referenceToDataSetFormat>
+      <common:referenceToPersonOrEntityEnteringTheData refObjectId="d7fa0337-f279-430d-becf-7f3111a85010" type="contact data set" uri="../contacts/d7fa0337-f279-430d-becf-7f3111a85010.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">Sphera Solutions GmbH</common:shortDescription>
+      </common:referenceToPersonOrEntityEnteringTheData>
+      <common:referenceToDataSetUseApproval refObjectId="be34bbb0-b054-11db-abbd-0800200c9a66" type="contact data set" uri="../contacts/be34bbb0-b054-11db-abbd-0800200c9a66.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">No official approval by producer or operator</common:shortDescription>
+      </common:referenceToDataSetUseApproval>
+    </dataEntryBy>
+    <publicationAndOwnership>
+      <common:dateOfLastRevision>2022-11-07T15:29:04.000</common:dateOfLastRevision>
+      <common:dataSetVersion>22.12.000</common:dataSetVersion>
+      <common:referenceToPrecedingDataSetVersion refObjectId="30f4d132-77be-4557-8376-d717849e9910" type="process data set" uri="../processes/30f4d132-77be-4557-8376-d717849e9910?version=22.11.011" version="22.11.011">
+        <common:shortDescription xml:lang="en">Agricultural Tractor 37-74 kW, emmision class 1-5, 1 hour operationdiesel driven, emmission class 1-5, agricultural tractorconsumption mix, to consumer37-74 kW</common:shortDescription>
+      </common:referenceToPrecedingDataSetVersion>
+      <common:permanentDataSetURI>http://lcdn.thinkstep.com/Node/showProcess.xhtml?uuid=30f4d132-77be-4557-8376-d717849e9910&amp;stock=EF_30pt2_all_datasets</common:permanentDataSetURI>
+      <common:workflowAndPublicationStatus>Data set finalised; entirely published</common:workflowAndPublicationStatus>
+      <common:referenceToOwnershipOfDataSet refObjectId="d7fa0337-f279-430d-becf-7f3111a85010" type="contact data set" uri="../contacts/d7fa0337-f279-430d-becf-7f3111a85010.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">Sphera Solutions GmbH</common:shortDescription>
+      </common:referenceToOwnershipOfDataSet>
+      <common:copyright>true</common:copyright>
+      <common:referenceToEntitiesWithExclusiveAccess refObjectId="8b3e08f0-740a-43b1-aa8d-bec56c5daf6e" type="contact data set" uri="../contacts/8b3e08f0-740a-43b1-aa8d-bec56c5daf6e.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">FINAL USER</common:shortDescription>
+      </common:referenceToEntitiesWithExclusiveAccess>
+      <common:licenseType>Free of charge for some user types or use types</common:licenseType>
+      <common:accessRestrictions xml:lang="en">Datasets can only be used in accordance with the terms and conditions of this EULA exclusively until 31st December 2024 (PERMITTED USE).</common:accessRestrictions>
+    </publicationAndOwnership>
+  </administrativeInformation>
+  <exchanges>
+    <exchange dataSetInternalID="0">
+      <referenceToFlowDataSet refObjectId="55a4c166-2eb6-43a3-9a13-2e4f2c4fee60" type="flow data set" uri="../flows/55a4c166-2eb6-43a3-9a13-2e4f2c4fee60.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">Diesel</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Input</exchangeDirection>
+      <referenceToVariable>Diesel</referenceToVariable>
+      <meanAmount>1.0</meanAmount>
+      <resultingAmount>8.88</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>valuable</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="1">
+      <referenceToFlowDataSet refObjectId="efa69527-5e73-4485-b95f-91fcbe097f3e" type="flow data set" uri="../flows/efa69527-5e73-4485-b95f-91fcbe097f3e.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">Truck (tractor &amp; trailer)</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Input</exchangeDirection>
+      <referenceToVariable>tractor</referenceToVariable>
+      <meanAmount>1.0</meanAmount>
+      <resultingAmount>1.0E-4</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>valuable</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="2">
+      <referenceToFlowDataSet refObjectId="0e99f41f-4c1e-4915-8fbd-b7a876935a0b" type="flow data set" uri="../flows/0e99f41f-4c1e-4915-8fbd-b7a876935a0b.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">Agricultural implement</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Input</exchangeDirection>
+      <meanAmount>1.0</meanAmount>
+      <resultingAmount>1.0</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>valuable</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="3">
+      <referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-a2a9-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-a2a9-0050c2490048.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">ammonia [Emissions to air, unspecified]</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <referenceToVariable>NH3_tot</referenceToVariable>
+      <meanAmount>0.001</meanAmount>
+      <resultingAmount>5.92E-5</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>none</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="4">
+      <referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9c15-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9c15-0050c2490048.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">carbon dioxide (biogenic) [Emissions to air, unspecified]</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <referenceToVariable>CO2_biogen</referenceToVariable>
+      <meanAmount>1.0</meanAmount>
+      <resultingAmount>1.41192</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>none</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="5">
+      <referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-94c3-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-94c3-0050c2490048.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">nitrous oxide [Emissions to air, unspecified]</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <referenceToVariable>N2O_tot</referenceToVariable>
+      <meanAmount>0.001</meanAmount>
+      <resultingAmount>0.001036</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>none</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="6">
+      <referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9293-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9293-0050c2490048.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">particles (PM2.5) [Emissions to air, unspecified]</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <referenceToVariable>PM_tot</referenceToVariable>
+      <meanAmount>0.001</meanAmount>
+      <resultingAmount>0.0065268</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>none</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="7">
+      <referenceToFlowDataSet refObjectId="0e99f41f-4c1e-4915-8fbd-b7a876935a0b" type="flow data set" uri="../flows/0e99f41f-4c1e-4915-8fbd-b7a876935a0b.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">Agricultural implement</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <meanAmount>1.0</meanAmount>
+      <resultingAmount>1.0</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>valuable</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="8">
+      <referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-a302-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-a302-0050c2490048.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">non-methane volatile organic compounds [Emissions to air, unspecified]</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <referenceToVariable>HC_tot</referenceToVariable>
+      <meanAmount>0.001</meanAmount>
+      <resultingAmount>0.01253856</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>none</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="9">
+      <referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-924e-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-924e-0050c2490048.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">carbon monoxide [Emissions to air, unspecified]</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <referenceToVariable>CO_tot</referenceToVariable>
+      <meanAmount>0.001</meanAmount>
+      <resultingAmount>0.0686128</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>none</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="10">
+      <referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">carbon dioxide (fossil) [Emissions to air, unspecified]</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <referenceToVariable>CO2_fossil</referenceToVariable>
+      <meanAmount>1.0</meanAmount>
+      <resultingAmount>26.82648</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>none</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="11">
+      <referenceToFlowDataSet refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" type="flow data set" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">nitrogen oxides [Emissions to air, unspecified]</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <referenceToVariable>NOx_tot</referenceToVariable>
+      <meanAmount>0.001</meanAmount>
+      <resultingAmount>0.1664556</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>none</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+  </exchanges>
+  <LCIAResults>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b5c611c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c611c6-def3-11e6-bf01-fe55135034f3.xml" version="01.04.000">
+        <common:shortDescription xml:lang="en">Acidification</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.123355928</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="6209b35f-9447-40b5-b68c-a1099e3674a0" type="LCIA method data set" uri="../lciamethods/6209b35f-9447-40b5-b68c-a1099e3674a0.xml" version="01.00.000">
+        <common:shortDescription xml:lang="en">Climate change</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>27.109308</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="05316e7a-b254-4bea-9cf0-6bf33eb5c630" type="LCIA method data set" uri="../lciamethods/05316e7a-b254-4bea-9cf0-6bf33eb5c630.xml" version="01.00.000">
+        <common:shortDescription xml:lang="en">Ecotoxicity, freshwater</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.1174424321264</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b53ec18f-7377-4ad3-86eb-cc3f4f276b2b" type="LCIA method data set" uri="../lciamethods/b53ec18f-7377-4ad3-86eb-cc3f4f276b2b.xml" version="01.00.010">
+        <common:shortDescription xml:lang="en">Eutrophication, freshwater</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b5c619fa-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c619fa-def3-11e6-bf01-fe55135034f3.xml" version="02.00.010">
+        <common:shortDescription xml:lang="en">Eutrophication marine</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0647566748</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b5c614d2-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c614d2-def3-11e6-bf01-fe55135034f3.xml" version="01.02.009">
+        <common:shortDescription xml:lang="en">Eutrophication, terrestrial</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.709898279997209</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="2299222a-bbd8-474f-9d4f-4dd1f18aea7c" type="LCIA method data set" uri="../lciamethods/2299222a-bbd8-474f-9d4f-4dd1f18aea7c.xml" version="01.01.000">
+        <common:shortDescription xml:lang="en">Human toxicity, cancer</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8" type="LCIA method data set" uri="../lciamethods/7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8.xml" version="01.00.000">
+        <common:shortDescription xml:lang="en">Human toxicity, non-cancer</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>7.9713062256E-10</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b5c632be-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c632be-def3-11e6-bf01-fe55135034f3.xml" version="01.00.011">
+        <common:shortDescription xml:lang="en">Ionising radiation, human health</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b2ad6890-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6890-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+        <common:shortDescription xml:lang="en">Land use</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b5c629d6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c629d6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.012">
+        <common:shortDescription xml:lang="en">Ozone depletion</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b5c602c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c602c6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.011">
+        <common:shortDescription xml:lang="en">EF-particulate Matter</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>1.8241943796E-6</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b5c610fe-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c610fe-def3-11e6-bf01-fe55135034f3.xml" version="02.01.000">
+        <common:shortDescription xml:lang="en">Photochemical ozone formation - human health</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.18212290368</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b2ad66ce-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad66ce-c78d-11e6-9d9d-cec0c932ce01.xml" version="03.00.014">
+        <common:shortDescription xml:lang="en">Water use</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b2ad6494-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6494-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+        <common:shortDescription xml:lang="en">Resource use, minerals and metals</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b2ad6110-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6110-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+        <common:shortDescription xml:lang="en">Resource use, fossils</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="0db6bc32-3f72-48b9-bdb3-617849c2752f" type="LCIA method data set" uri="../lciamethods/0db6bc32-3f72-48b9-bdb3-617849c2752f.xml" version="01.00.005">
+        <common:shortDescription xml:lang="en">Climate change-Biogenic</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="2105d3ac-c7c7-4c80-b202-7328c14c66e8" type="LCIA method data set" uri="../lciamethods/2105d3ac-c7c7-4c80-b202-7328c14c66e8.xml" version="01.00.008">
+        <common:shortDescription xml:lang="en">Climate change-Fossil</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>27.242930096</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="6f1b7d2a-eb2d-4b86-9b4d-2301b3186400" type="LCIA method data set" uri="../lciamethods/6f1b7d2a-eb2d-4b86-9b4d-2301b3186400.xml" version="01.00.005">
+        <common:shortDescription xml:lang="en">Climate change-Land use and land use change</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="9ee9886e-1430-4afe-ae1b-5580b76def07" type="LCIA method data set" uri="../lciamethods/9ee9886e-1430-4afe-ae1b-5580b76def07.xml" version="01.00.002">
+        <common:shortDescription xml:lang="en">Ecotoxicity, freshwater_inorganics</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0095243000624</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="7fe353ed-2aac-4c81-9045-2f0ed4ef855e" type="LCIA method data set" uri="../lciamethods/7fe353ed-2aac-4c81-9045-2f0ed4ef855e.xml" version="01.00.002">
+        <common:shortDescription xml:lang="en">Ecotoxicity, freshwater_metals</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="6800f5d3-7284-4ba3-8eb6-e3ab3ade7995" type="LCIA method data set" uri="../lciamethods/6800f5d3-7284-4ba3-8eb6-e3ab3ade7995.xml" version="01.00.002">
+        <common:shortDescription xml:lang="en">Ecotoxicity, freshwater_organics</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.107918132064</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="6c7a9d7d-4888-41ae-84bb-0d460ec52b80" type="LCIA method data set" uri="../lciamethods/6c7a9d7d-4888-41ae-84bb-0d460ec52b80.xml" version="01.00.003">
+        <common:shortDescription xml:lang="en">Human toxicity, cancer_inorganics</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="6453d675-cfd8-42c8-93e9-4ea34ab1b78e" type="LCIA method data set" uri="../lciamethods/6453d675-cfd8-42c8-93e9-4ea34ab1b78e.xml" version="01.00.003">
+        <common:shortDescription xml:lang="en">Human toxicity, cancer_metals</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="503699e0-eca9-4089-8bf8-e0f49c93e578" type="LCIA method data set" uri="../lciamethods/503699e0-eca9-4089-8bf8-e0f49c93e578.xml" version="01.00.003">
+        <common:shortDescription xml:lang="en">Human toxicity, cancer_organics</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b92648c3-e996-41ad-9dca-78c69932b779" type="LCIA method data set" uri="../lciamethods/b92648c3-e996-41ad-9dca-78c69932b779.xml" version="01.00.002">
+        <common:shortDescription xml:lang="en">Human toxicity, non-cancer_inorganics</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>7.40683027104E-8</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="dea1149d-d918-4b48-a3af-838b0a1e4ca1" type="LCIA method data set" uri="../lciamethods/dea1149d-d918-4b48-a3af-838b0a1e4ca1.xml" version="01.00.002">
+        <common:shortDescription xml:lang="en">Human toxicity, non-cancer_metals</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="216596d1-9539-4237-80ff-5eef712b0a71" type="LCIA method data set" uri="../lciamethods/216596d1-9539-4237-80ff-5eef712b0a71.xml" version="01.00.002">
+        <common:shortDescription xml:lang="en">Human toxicity, non-cancer_organics</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>7.9634551216E-10</meanAmount>
+    </LCIAResult>
+  </LCIAResults>
+</processDataSet>

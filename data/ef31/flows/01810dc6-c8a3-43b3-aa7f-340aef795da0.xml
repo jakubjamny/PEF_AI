@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/flow2html.xsl" type="text/xsl"?>
+<flowDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Flow" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Flow ../../schemas/ILCD_FlowDataSet.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <flowInformation>
+        <dataSetInformation>
+            <common:UUID>01810dc6-c8a3-43b3-aa7f-340aef795da0</common:UUID>
+            <name>
+                <baseName xml:lang="en">Polyethylene low density granulate (LDPE/PE-LD)</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0">Materials production</common:class>
+                    <common:class level="1">Plastics</common:class>
+                </common:classification>
+            </classificationInformation>
+            <CASNumber>009002-88-4</CASNumber>
+            <sumFormula>[C2H4]n</sumFormula>
+        </dataSetInformation>
+        <quantitativeReference>
+            <referenceToReferenceFlowProperty>0</referenceToReferenceFlowProperty>
+        </quantitativeReference>
+    </flowInformation>
+    <modellingAndValidation>
+        <LCIMethod>
+            <typeOfDataSet>Product flow</typeOfDataSet>
+        </LCIMethod>
+        <complianceDeclarations>
+            <compliance>
+                <common:referenceToComplianceSystem type="source data set" refObjectId="9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a" version="03.00.000" uri="../sources/9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a.xml">
+                    <common:shortDescription xml:lang="en">ILCD Data Network - compliance (non-Process)</common:shortDescription>
+                </common:referenceToComplianceSystem>
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+            </compliance>
+        </complianceDeclarations>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataEntryBy>
+            <common:timeStamp>2017-01-01T00:00:00.000</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="03.00.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+                <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dataSetVersion>31.00.000</common:dataSetVersion>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <flowProperties>
+        <flowProperty dataSetInternalID="0">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="93a60a56-a3c8-11da-a746-0800200b9a66" version="00.00.000" uri="../flowproperties/93a60a56-a3c8-11da-a746-0800200b9a66.xml">
+                <common:shortDescription xml:lang="en">Mass</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>1.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="1">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="93a60a56-a3c8-14da-a746-0800200c9a66" version="34.00.000" uri="../flowproperties/93a60a56-a3c8-14da-a746-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">Gross calorific value</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>47.3</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="2">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="93a60a56-a3c8-11da-a746-0800200c9a66" version="34.00.000" uri="../flowproperties/93a60a56-a3c8-11da-a746-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">Net calorific value</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>43.2994154578913</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="3">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="d77d039c-876e-4729-93e0-39c68acba376" version="34.00.000" uri="../flowproperties/d77d039c-876e-4729-93e0-39c68acba376.xml">
+                <common:shortDescription xml:lang="en">Thermoplaste unfilled (unspecified)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>1.0</meanValue>
+        </flowProperty>
+    </flowProperties>
+</flowDataSet>

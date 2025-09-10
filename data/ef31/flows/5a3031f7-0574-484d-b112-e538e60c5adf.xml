@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/flow2html.xsl" type="text/xsl"?>
+<flowDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Flow" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Flow ../../schemas/ILCD_FlowDataSet.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <flowInformation>
+        <dataSetInformation>
+            <common:UUID>5a3031f7-0574-484d-b112-e538e60c5adf</common:UUID>
+            <name>
+                <baseName xml:lang="en">Cable 3-core mains power 10A/13A 16AWG mPPE (60 g/m) D6.3</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0">Systems</common:class>
+                    <common:class level="1">Electrics and electronics</common:class>
+                </common:classification>
+            </classificationInformation>
+        </dataSetInformation>
+        <quantitativeReference>
+            <referenceToReferenceFlowProperty>0</referenceToReferenceFlowProperty>
+        </quantitativeReference>
+    </flowInformation>
+    <modellingAndValidation>
+        <LCIMethod>
+            <typeOfDataSet>Product flow</typeOfDataSet>
+        </LCIMethod>
+        <complianceDeclarations>
+            <compliance>
+                <common:referenceToComplianceSystem type="source data set" refObjectId="9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a" version="03.00.000" uri="../sources/9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a.xml">
+                    <common:shortDescription xml:lang="en">ILCD Data Network - compliance (non-Process)</common:shortDescription>
+                </common:referenceToComplianceSystem>
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+            </compliance>
+        </complianceDeclarations>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataEntryBy>
+            <common:timeStamp>2013-12-01T00:00:00.000</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="03.00.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+                <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dataSetVersion>31.00.000</common:dataSetVersion>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <flowProperties>
+        <flowProperty dataSetInternalID="0">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="092f53bf-805a-4cb4-bfdc-30f2bd9e8a6c" version="00.00.000" uri="../flowproperties/092f53bf-805a-4cb4-bfdc-30f2bd9e8a6c.xml">
+                <common:shortDescription xml:lang="en">Length</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>1.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="1">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="2d8d9d5e-1840-44d5-94ec-82ec0fd310bf" version="00.00.000" uri="../flowproperties/2d8d9d5e-1840-44d5-94ec-82ec0fd310bf.xml">
+                <common:shortDescription xml:lang="en">Polyphenylene ether (PPE) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.017004817344</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="2">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="e0cd344e-c22b-491f-9ab7-9f2c0233bf48" version="00.00.000" uri="../flowproperties/e0cd344e-c22b-491f-9ab7-9f2c0233bf48.xml">
+                <common:shortDescription xml:lang="en">Tricresyl phosphate (TCP) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.003000850128</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="3">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="93a60a56-a3c8-11da-a746-0800200b9a66" version="00.00.000" uri="../flowproperties/93a60a56-a3c8-11da-a746-0800200b9a66.xml">
+                <common:shortDescription xml:lang="en">Mass</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.06</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="4">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="bef018d4-21eb-4d8f-a49d-6751351dcda2" version="00.00.000" uri="../flowproperties/bef018d4-21eb-4d8f-a49d-6751351dcda2.xml">
+                <common:shortDescription xml:lang="en">Copper (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.027994332528</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="5">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="417b44eb-e350-4ea4-96eb-8cbac7d939e7" version="34.00.000" uri="../flowproperties/417b44eb-e350-4ea4-96eb-8cbac7d939e7.xml">
+                <common:shortDescription xml:lang="en">Copper (unspecified)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.027994332528</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="6">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="32767530-81a6-411b-964b-dd997a0bc158" version="34.00.000" uri="../flowproperties/32767530-81a6-411b-964b-dd997a0bc158.xml">
+                <common:shortDescription xml:lang="en">Thermoplastics filled (unspecified)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.020005667472</meanValue>
+        </flowProperty>
+    </flowProperties>
+</flowDataSet>

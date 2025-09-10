@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/flow2html.xsl" type="text/xsl"?>
+<flowDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Flow" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Flow ../../schemas/ILCD_FlowDataSet.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <flowInformation>
+        <dataSetInformation>
+            <common:UUID>c19d250d-0fcc-47b6-bde3-9ffdbbba6be0</common:UUID>
+            <name>
+                <baseName xml:lang="en">Quartz sand (0/2)</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0">Materials production</common:class>
+                    <common:class level="1">Other mineralic materials</common:class>
+                </common:classification>
+            </classificationInformation>
+            <CASNumber>014808-60-7</CASNumber>
+            <sumFormula>SiO2</sumFormula>
+            <common:generalComment xml:lang="en">Synonyms: Crystallized silicon dioxide, Silicon oxide, di- (sand)</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference>
+            <referenceToReferenceFlowProperty>0</referenceToReferenceFlowProperty>
+        </quantitativeReference>
+    </flowInformation>
+    <modellingAndValidation>
+        <LCIMethod>
+            <typeOfDataSet>Product flow</typeOfDataSet>
+        </LCIMethod>
+        <complianceDeclarations>
+            <compliance>
+                <common:referenceToComplianceSystem type="source data set" refObjectId="9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a" version="03.00.000" uri="../sources/9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a.xml">
+                    <common:shortDescription xml:lang="en">ILCD Data Network - compliance (non-Process)</common:shortDescription>
+                </common:referenceToComplianceSystem>
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+            </compliance>
+        </complianceDeclarations>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataEntryBy>
+            <common:timeStamp>2017-01-01T00:00:00.000</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="03.00.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+                <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dataSetVersion>31.00.000</common:dataSetVersion>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <flowProperties>
+        <flowProperty dataSetInternalID="0">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="93a60a56-a3c8-11da-a746-0800200b9a66" version="00.00.000" uri="../flowproperties/93a60a56-a3c8-11da-a746-0800200b9a66.xml">
+                <common:shortDescription xml:lang="en">Mass</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>1.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="1">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="6b2d044b-73e8-49e9-a6b9-3c0e1a950f2f" version="34.00.000" uri="../flowproperties/6b2d044b-73e8-49e9-a6b9-3c0e1a950f2f.xml">
+                <common:shortDescription xml:lang="en">Other materials and material compounds (unspecified)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>1.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="2">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="fe366c0f-a104-46a7-b70f-9e241e0128d1" version="34.00.000" uri="../flowproperties/fe366c0f-a104-46a7-b70f-9e241e0128d1.xml">
+                <common:shortDescription xml:lang="en">Electronics (unspecified)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>1.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="3">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="2d4a75bc-55c4-4816-b88e-f185b556672b" version="00.00.000" uri="../flowproperties/2d4a75bc-55c4-4816-b88e-f185b556672b.xml">
+                <common:shortDescription xml:lang="en">Silicon (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>1.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="4">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="b4c8b9c7-c943-4d84-a9a1-6e9a1126e8b9" version="00.00.000" uri="../flowproperties/b4c8b9c7-c943-4d84-a9a1-6e9a1126e8b9.xml">
+                <common:shortDescription xml:lang="en">Silicon in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>1.0</meanValue>
+        </flowProperty>
+    </flowProperties>
+</flowDataSet>

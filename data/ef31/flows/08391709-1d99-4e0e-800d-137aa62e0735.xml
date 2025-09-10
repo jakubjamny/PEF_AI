@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/flow2html.xsl" type="text/xsl"?>
+<flowDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Flow" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Flow ../../schemas/ILCD_FlowDataSet.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <flowInformation>
+        <dataSetInformation>
+            <common:UUID>08391709-1d99-4e0e-800d-137aa62e0735</common:UUID>
+            <name>
+                <baseName xml:lang="en">Biodegradable waste to landfill</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0">Wastes</common:class>
+                    <common:class level="1">Post consumer waste</common:class>
+                </common:classification>
+            </classificationInformation>
+        </dataSetInformation>
+        <quantitativeReference>
+            <referenceToReferenceFlowProperty>0</referenceToReferenceFlowProperty>
+        </quantitativeReference>
+    </flowInformation>
+    <modellingAndValidation>
+        <LCIMethod>
+            <typeOfDataSet>Waste flow</typeOfDataSet>
+        </LCIMethod>
+        <complianceDeclarations>
+            <compliance>
+                <common:referenceToComplianceSystem type="source data set" refObjectId="9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a" version="03.00.000" uri="../sources/9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a.xml">
+                    <common:shortDescription xml:lang="en">ILCD Data Network - compliance (non-Process)</common:shortDescription>
+                </common:referenceToComplianceSystem>
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+            </compliance>
+        </complianceDeclarations>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataEntryBy>
+            <common:timeStamp>2020-05-13T09:07:35.000</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="03.00.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+                <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dataSetVersion>40.00.000</common:dataSetVersion>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <flowProperties>
+        <flowProperty dataSetInternalID="0">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="93a60a56-a3c8-11da-a746-0800200b9a66" version="00.00.000" uri="../flowproperties/93a60a56-a3c8-11da-a746-0800200b9a66.xml">
+                <common:shortDescription xml:lang="en">Mass</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>1.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="1">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="88de7063-fd9e-47d2-b182-1960dbaec530" version="00.00.000" uri="../flowproperties/88de7063-fd9e-47d2-b182-1960dbaec530.xml">
+                <common:shortDescription xml:lang="en">C_total_wt</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.175</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="2">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="b305017e-da55-4a11-be5c-d235d4baf102" version="00.00.000" uri="../flowproperties/b305017e-da55-4a11-be5c-d235d4baf102.xml">
+                <common:shortDescription xml:lang="en">Water_wt</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.65</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="3">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="a1d0f976-5add-4eed-b378-fc6cef38b5a8" version="00.00.000" uri="../flowproperties/a1d0f976-5add-4eed-b378-fc6cef38b5a8.xml">
+                <common:shortDescription xml:lang="en">C_biogen_wt</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.175</meanValue>
+        </flowProperty>
+    </flowProperties>
+</flowDataSet>

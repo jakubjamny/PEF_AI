@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/flow2html.xsl" type="text/xsl"?>
+<flowDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Flow" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Flow ../../schemas/ILCD_FlowDataSet.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <flowInformation>
+        <dataSetInformation>
+            <common:UUID>d6abc04d-3747-4685-9e5e-3da9e362c783</common:UUID>
+            <name>
+                <baseName xml:lang="en">Nickel (99.95%; electrolyte nickel)</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0">Materials production</common:class>
+                    <common:class level="1">Metals and semimetals</common:class>
+                </common:classification>
+            </classificationInformation>
+            <CASNumber>007440-02-0</CASNumber>
+            <sumFormula>Ni</sumFormula>
+        </dataSetInformation>
+        <quantitativeReference>
+            <referenceToReferenceFlowProperty>0</referenceToReferenceFlowProperty>
+        </quantitativeReference>
+    </flowInformation>
+    <modellingAndValidation>
+        <LCIMethod>
+            <typeOfDataSet>Product flow</typeOfDataSet>
+        </LCIMethod>
+        <complianceDeclarations>
+            <compliance>
+                <common:referenceToComplianceSystem type="source data set" refObjectId="9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a" version="03.00.000" uri="../sources/9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a.xml">
+                    <common:shortDescription xml:lang="en">ILCD Data Network - compliance (non-Process)</common:shortDescription>
+                </common:referenceToComplianceSystem>
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+            </compliance>
+        </complianceDeclarations>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataEntryBy>
+            <common:timeStamp>2017-01-01T00:00:00.000</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="03.00.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+                <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dataSetVersion>31.00.000</common:dataSetVersion>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <flowProperties>
+        <flowProperty dataSetInternalID="0">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="93a60a56-a3c8-11da-a746-0800200b9a66" version="00.00.000" uri="../flowproperties/93a60a56-a3c8-11da-a746-0800200b9a66.xml">
+                <common:shortDescription xml:lang="en">Mass</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>1.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="1">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="bcf81c0a-9fe9-4b88-a25b-99e0dd64ddaa" version="00.00.000" uri="../flowproperties/bcf81c0a-9fe9-4b88-a25b-99e0dd64ddaa.xml">
+                <common:shortDescription xml:lang="en">Price</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>8.721</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="2">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="270da7ec-3e40-4fe6-a2f2-be411a20ccb4" version="34.00.000" uri="../flowproperties/270da7ec-3e40-4fe6-a2f2-be411a20ccb4.xml">
+                <common:shortDescription xml:lang="en">Nickel alloys (unspecified)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>1.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="3">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="fe366c0f-a104-46a7-b70f-9e241e0128d1" version="34.00.000" uri="../flowproperties/fe366c0f-a104-46a7-b70f-9e241e0128d1.xml">
+                <common:shortDescription xml:lang="en">Electronics (unspecified)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>1.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="4">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="d8c76afc-e95d-4526-bd1e-404c89e77ebc" version="00.00.000" uri="../flowproperties/d8c76afc-e95d-4526-bd1e-404c89e77ebc.xml">
+                <common:shortDescription xml:lang="en">Nickel (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>1.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="5">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="9d5cfb9b-5bb8-4863-b99a-f7a606795b05" version="00.00.000" uri="../flowproperties/9d5cfb9b-5bb8-4863-b99a-f7a606795b05.xml">
+                <common:shortDescription xml:lang="en">Nickel in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>1.0</meanValue>
+        </flowProperty>
+    </flowProperties>
+</flowDataSet>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/flow2html.xsl" type="text/xsl"?>
+<flowDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Flow" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Flow ../../schemas/ILCD_FlowDataSet.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <flowInformation>
+        <dataSetInformation>
+            <common:UUID>6588660a-214b-4716-9e2a-6add1989c459</common:UUID>
+            <name>
+                <baseName xml:lang="en">R 290 (propane)</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0">Materials production</common:class>
+                    <common:class level="1">Organic chemicals</common:class>
+                </common:classification>
+            </classificationInformation>
+            <CASNumber>000074-98-6</CASNumber>
+            <sumFormula>CH3-CH2-CH3</sumFormula>
+            <common:generalComment xml:lang="en">Refrigerant R 290</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference>
+            <referenceToReferenceFlowProperty>0</referenceToReferenceFlowProperty>
+        </quantitativeReference>
+    </flowInformation>
+    <modellingAndValidation>
+        <LCIMethod>
+            <typeOfDataSet>Product flow</typeOfDataSet>
+        </LCIMethod>
+        <complianceDeclarations>
+            <compliance>
+                <common:referenceToComplianceSystem type="source data set" refObjectId="9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a" version="03.00.000" uri="../sources/9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a.xml">
+                    <common:shortDescription xml:lang="en">ILCD Data Network - compliance (non-Process)</common:shortDescription>
+                </common:referenceToComplianceSystem>
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+            </compliance>
+        </complianceDeclarations>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataEntryBy>
+            <common:timeStamp>2022-11-24T17:49:09.000</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="03.00.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+                <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dataSetVersion>42.11.011</common:dataSetVersion>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <flowProperties>
+        <flowProperty dataSetInternalID="0">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="93a60a56-a3c8-11da-a746-0800200b9a66" version="20.21.001" uri="../flowproperties/93a60a56-a3c8-11da-a746-0800200b9a66.xml">
+                <common:shortDescription xml:lang="en">Mass</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>1.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="1">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="f138e814-c15d-42b0-8cd2-bdef72e6ac59" version="00.00.000" uri="../flowproperties/f138e814-c15d-42b0-8cd2-bdef72e6ac59.xml">
+                <common:shortDescription xml:lang="en">US market price 2002</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.143752067793333</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="2">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="6a9d622c-013e-42b7-9df3-b04e8fc169f6" version="00.00.000" uri="../flowproperties/6a9d622c-013e-42b7-9df3-b04e8fc169f6.xml">
+                <common:shortDescription xml:lang="en">Sigma Aldrich 2017</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.143752067793333</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="3">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="c4ee14f2-4c8d-4543-8567-86dfd9b36a3d" version="20.21.001" uri="../flowproperties/c4ee14f2-4c8d-4543-8567-86dfd9b36a3d.xml">
+                <common:shortDescription xml:lang="en">Market price US97</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.138335018290187</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="4">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="850638ac-bee8-476d-923a-ebddd10e76b7" version="20.21.001" uri="../flowproperties/850638ac-bee8-476d-923a-ebddd10e76b7.xml">
+                <common:shortDescription xml:lang="en">Standard volume</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.496993191193281</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="5">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="93a60a56-a3c8-14da-a746-0800200c9a66" version="20.22.002" uri="../flowproperties/93a60a56-a3c8-14da-a746-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">Gross calorific value</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>50.3921968528703</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="6">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="fc0bbe37-85c6-4aea-8319-6dc1a13322a8" version="20.21.001" uri="../flowproperties/fc0bbe37-85c6-4aea-8319-6dc1a13322a8.xml">
+                <common:shortDescription xml:lang="en">C3H8_Vol</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.497</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="7">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="93a60a56-a3c8-11da-a746-0800200c9a66" version="20.22.002" uri="../flowproperties/93a60a56-a3c8-11da-a746-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">Net calorific value</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>46.3784944177963</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="8">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="93a60a56-a3c8-22da-a746-0800200c9a66" version="20.21.001" uri="../flowproperties/93a60a56-a3c8-22da-a746-0800200c9a66.xml">
+                <common:shortDescription xml:lang="en">Volume</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.001970016</meanValue>
+        </flowProperty>
+    </flowProperties>
+</flowDataSet>

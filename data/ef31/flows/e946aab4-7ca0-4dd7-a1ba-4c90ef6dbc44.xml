@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/flow2html.xsl" type="text/xsl"?>
+<flowDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Flow" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Flow ../../schemas/ILCD_FlowDataSet.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <flowInformation>
+        <dataSetInformation>
+            <common:UUID>e946aab4-7ca0-4dd7-a1ba-4c90ef6dbc44</common:UUID>
+            <name>
+                <baseName xml:lang="en">Product (unspecified)</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0">Materials production</common:class>
+                    <common:class level="1">Other materials</common:class>
+                </common:classification>
+            </classificationInformation>
+        </dataSetInformation>
+        <quantitativeReference>
+            <referenceToReferenceFlowProperty>0</referenceToReferenceFlowProperty>
+        </quantitativeReference>
+    </flowInformation>
+    <modellingAndValidation>
+        <LCIMethod>
+            <typeOfDataSet>Product flow</typeOfDataSet>
+        </LCIMethod>
+        <complianceDeclarations>
+            <compliance>
+                <common:referenceToComplianceSystem type="source data set" refObjectId="9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a" version="03.00.000" uri="../sources/9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a.xml">
+                    <common:shortDescription xml:lang="en">ILCD Data Network - compliance (non-Process)</common:shortDescription>
+                </common:referenceToComplianceSystem>
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+            </compliance>
+        </complianceDeclarations>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataEntryBy>
+            <common:timeStamp>2016-01-01T00:00:00.000</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="03.00.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+                <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dataSetVersion>34.00.000</common:dataSetVersion>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <flowProperties>
+        <flowProperty dataSetInternalID="0">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="93a60a56-a3c8-11da-a746-0800200b9a66" version="00.00.000" uri="../flowproperties/93a60a56-a3c8-11da-a746-0800200b9a66.xml">
+                <common:shortDescription xml:lang="en">Mass</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>1.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="1">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="d937c32e-749a-4f63-a277-761ae47745eb" version="00.00.000" uri="../flowproperties/d937c32e-749a-4f63-a277-761ae47745eb.xml">
+                <common:shortDescription xml:lang="en">Nickeloxide (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="2">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="916b98aa-0eac-48df-899c-8c75da009bb4" version="00.00.000" uri="../flowproperties/916b98aa-0eac-48df-899c-8c75da009bb4.xml">
+                <common:shortDescription xml:lang="en">Cobaltoxide (Co3O4) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="3">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="df386f5d-a83b-46f3-baa5-f39532258680" version="00.00.000" uri="../flowproperties/df386f5d-a83b-46f3-baa5-f39532258680.xml">
+                <common:shortDescription xml:lang="en">Dotand (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="4">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="0c8ae116-8bde-454a-a42e-d1950fb07c05" version="00.00.000" uri="../flowproperties/0c8ae116-8bde-454a-a42e-d1950fb07c05.xml">
+                <common:shortDescription xml:lang="en">Polyurethane (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="5">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="7e9ee7c7-21fd-47fc-9c4f-aff3c9d4ea35" version="00.00.000" uri="../flowproperties/7e9ee7c7-21fd-47fc-9c4f-aff3c9d4ea35.xml">
+                <common:shortDescription xml:lang="en">Hausmannite (Mn2O3) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="6">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="40fae37e-9128-40d2-b567-023443685701" version="00.00.000" uri="../flowproperties/40fae37e-9128-40d2-b567-023443685701.xml">
+                <common:shortDescription xml:lang="en">Bariumtitanate (BaTiO3) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="7">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="b836cdbe-a2ea-4193-9d91-68ab4576db47" version="00.00.000" uri="../flowproperties/b836cdbe-a2ea-4193-9d91-68ab4576db47.xml">
+                <common:shortDescription xml:lang="en">Lead Titanate (PbTiO3) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="8">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="ee798b28-a9bc-45cd-90bd-f59ef7715f14" version="00.00.000" uri="../flowproperties/ee798b28-a9bc-45cd-90bd-f59ef7715f14.xml">
+                <common:shortDescription xml:lang="en">Strontiumtitanate (SrTiO3) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="9">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="0387d440-ad96-42de-890b-87cf20748a66" version="00.00.000" uri="../flowproperties/0387d440-ad96-42de-890b-87cf20748a66.xml">
+                <common:shortDescription xml:lang="en">Calciumtitanate (CaTiO3) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="10">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="62028e85-6dc0-4940-b0fc-710fc3f47378" version="00.00.000" uri="../flowproperties/62028e85-6dc0-4940-b0fc-710fc3f47378.xml">
+                <common:shortDescription xml:lang="en">Glass fibers (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="11">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="12d2d828-271b-4c40-9336-5af10b00d9da" version="00.00.000" uri="../flowproperties/12d2d828-271b-4c40-9336-5af10b00d9da.xml">
+                <common:shortDescription xml:lang="en">Zincoxide (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="12">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="5a9e455f-cf66-4a8f-bdf9-5fa713371e4d" version="00.00.000" uri="../flowproperties/5a9e455f-cf66-4a8f-bdf9-5fa713371e4d.xml">
+                <common:shortDescription xml:lang="en">Acrylic resin (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="13">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="ebdb8803-8d08-4907-bd2f-6e96a4ae046e" version="00.00.000" uri="../flowproperties/ebdb8803-8d08-4907-bd2f-6e96a4ae046e.xml">
+                <common:shortDescription xml:lang="en">Carbon black (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="14">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="4ff6786e-0215-4b39-9b4d-447a7648546c" version="00.00.000" uri="../flowproperties/4ff6786e-0215-4b39-9b4d-447a7648546c.xml">
+                <common:shortDescription xml:lang="en">Polyimide (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="15">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="a79bfe56-7f99-4c0e-b24e-524972214195" version="00.00.000" uri="../flowproperties/a79bfe56-7f99-4c0e-b24e-524972214195.xml">
+                <common:shortDescription xml:lang="en">Barium sulfate (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="16">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="183b81cd-b290-4d48-bc9d-b5ebf85a6aca" version="00.00.000" uri="../flowproperties/183b81cd-b290-4d48-bc9d-b5ebf85a6aca.xml">
+                <common:shortDescription xml:lang="en">Tungsten in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="17">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="f1b03d9f-7e58-4b22-8829-1f7fe4562cf4" version="00.00.000" uri="../flowproperties/f1b03d9f-7e58-4b22-8829-1f7fe4562cf4.xml">
+                <common:shortDescription xml:lang="en">Methylacrylate (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="18">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="07001e70-0004-4ba5-9f33-2ff83f97ddec" version="00.00.000" uri="../flowproperties/07001e70-0004-4ba5-9f33-2ff83f97ddec.xml">
+                <common:shortDescription xml:lang="en">Methanol (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="19">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="a8a8ed7a-ced8-423b-bcce-b972cb808035" version="00.00.000" uri="../flowproperties/a8a8ed7a-ced8-423b-bcce-b972cb808035.xml">
+                <common:shortDescription xml:lang="en">n-Methyl-2-pyrrolidone (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="20">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="6c034569-72df-4511-9247-2c0d56606db7" version="00.00.000" uri="../flowproperties/6c034569-72df-4511-9247-2c0d56606db7.xml">
+                <common:shortDescription xml:lang="en">Ethylene Glycol (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="21">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="4287200e-2dc7-4012-8000-21bf7102f9b1" version="00.00.000" uri="../flowproperties/4287200e-2dc7-4012-8000-21bf7102f9b1.xml">
+                <common:shortDescription xml:lang="en">Polypropylene (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="22">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="a9a5f3db-e0c6-4d3f-aed0-985e1a6dbabc" version="00.00.000" uri="../flowproperties/a9a5f3db-e0c6-4d3f-aed0-985e1a6dbabc.xml">
+                <common:shortDescription xml:lang="en">Polyethylene (PE) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="23">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="2d8d9d5e-1840-44d5-94ec-82ec0fd310bf" version="00.00.000" uri="../flowproperties/2d8d9d5e-1840-44d5-94ec-82ec0fd310bf.xml">
+                <common:shortDescription xml:lang="en">Polyphenylene ether (PPE) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="24">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="e0cd344e-c22b-491f-9ab7-9f2c0233bf48" version="00.00.000" uri="../flowproperties/e0cd344e-c22b-491f-9ab7-9f2c0233bf48.xml">
+                <common:shortDescription xml:lang="en">Tricresyl phosphate (TCP) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="25">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="5c73001f-9622-4cdb-8980-138a87f0ad14" version="00.00.000" uri="../flowproperties/5c73001f-9622-4cdb-8980-138a87f0ad14.xml">
+                <common:shortDescription xml:lang="en">Calcium carbonate (CaCO3) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="26">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="b3d79592-335e-4099-93a8-f83beed30774" version="00.00.000" uri="../flowproperties/b3d79592-335e-4099-93a8-f83beed30774.xml">
+                <common:shortDescription xml:lang="en">Calcium zinc stearate (Ca/Zn) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="27">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="9cee992b-41eb-472c-b74c-96dc15fc4141" version="00.00.000" uri="../flowproperties/9cee992b-41eb-472c-b74c-96dc15fc4141.xml">
+                <common:shortDescription xml:lang="en">Diisononyl phthalate (DINP) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="28">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="8566dd09-9e1d-4b4b-836d-1f7dee6bb156" version="00.00.000" uri="../flowproperties/8566dd09-9e1d-4b4b-836d-1f7dee6bb156.xml">
+                <common:shortDescription xml:lang="en">Indium (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="29">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="3acf9ec7-9b90-4088-8c5c-c5b85e689cd7" version="00.00.000" uri="../flowproperties/3acf9ec7-9b90-4088-8c5c-c5b85e689cd7.xml">
+                <common:shortDescription xml:lang="en">Zinc (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="30">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="f46ab534-5e95-40e2-95ae-7d8cb9dc96fd" version="00.00.000" uri="../flowproperties/f46ab534-5e95-40e2-95ae-7d8cb9dc96fd.xml">
+                <common:shortDescription xml:lang="en">Copper in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="31">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="18e98da0-6347-4118-a394-c05d874243bd" version="00.00.000" uri="../flowproperties/18e98da0-6347-4118-a394-c05d874243bd.xml">
+                <common:shortDescription xml:lang="en">Polyethylene terephthalate (PET) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="32">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="a1dd1234-1a4e-414b-a3f2-fa802ff78b3c" version="00.00.000" uri="../flowproperties/a1dd1234-1a4e-414b-a3f2-fa802ff78b3c.xml">
+                <common:shortDescription xml:lang="en">Tetrabromobisphenol A (TBBA) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="33">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="a8bd8e0c-f194-4155-953f-5b9b0ea10c30" version="00.00.000" uri="../flowproperties/a8bd8e0c-f194-4155-953f-5b9b0ea10c30.xml">
+                <common:shortDescription xml:lang="en">Silicone rubber (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="34">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="6b0f51aa-5dc7-4157-b6c6-94f4dc271ea9" version="00.00.000" uri="../flowproperties/6b0f51aa-5dc7-4157-b6c6-94f4dc271ea9.xml">
+                <common:shortDescription xml:lang="en">Polyphenylene sulfide (PPS) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="35">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="13c38086-aaa2-41cc-81d5-c7ea26937cb0" version="00.00.000" uri="../flowproperties/13c38086-aaa2-41cc-81d5-c7ea26937cb0.xml">
+                <common:shortDescription xml:lang="en">Colophony (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="36">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="65a514d2-1c99-4227-8553-2d2cefb62a34" version="00.00.000" uri="../flowproperties/65a514d2-1c99-4227-8553-2d2cefb62a34.xml">
+                <common:shortDescription xml:lang="en">Lead in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="37">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="67dc1cd1-3ba7-4252-bbf4-60533870d966" version="00.00.000" uri="../flowproperties/67dc1cd1-3ba7-4252-bbf4-60533870d966.xml">
+                <common:shortDescription xml:lang="en">Titanium dioxide (TiO2) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="38">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="262ec63e-6196-429f-93b9-c9c0d57f5691" version="00.00.000" uri="../flowproperties/262ec63e-6196-429f-93b9-c9c0d57f5691.xml">
+                <common:shortDescription xml:lang="en">Cobalt in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="39">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="3f2de172-1ab1-42bf-937a-32a6b0d25dfe" version="00.00.000" uri="../flowproperties/3f2de172-1ab1-42bf-937a-32a6b0d25dfe.xml">
+                <common:shortDescription xml:lang="en">Aluminum (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="40">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="804fc8e0-ec21-42e6-bc86-8c83c911633a" version="00.00.000" uri="../flowproperties/804fc8e0-ec21-42e6-bc86-8c83c911633a.xml">
+                <common:shortDescription xml:lang="en">Electrolyte (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="41">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="c11eb6de-8814-432d-b903-59135c7dce19" version="00.00.000" uri="../flowproperties/c11eb6de-8814-432d-b903-59135c7dce19.xml">
+                <common:shortDescription xml:lang="en">Polystyrene (PS) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="42">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="4bb48ce8-b4db-4390-b7e6-2e499e6c10e5" version="00.00.000" uri="../flowproperties/4bb48ce8-b4db-4390-b7e6-2e499e6c10e5.xml">
+                <common:shortDescription xml:lang="en">Lead (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="43">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="d2524a86-51d8-43f1-a196-2b38d2a79c7b" version="00.00.000" uri="../flowproperties/d2524a86-51d8-43f1-a196-2b38d2a79c7b.xml">
+                <common:shortDescription xml:lang="en">Silver in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="44">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="78af50f9-9e71-4439-a72d-2fb14209a874" version="00.00.000" uri="../flowproperties/78af50f9-9e71-4439-a72d-2fb14209a874.xml">
+                <common:shortDescription xml:lang="en">Phenol-Formaldehyde-Resin (PF) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="45">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="d8c76afc-e95d-4526-bd1e-404c89e77ebc" version="00.00.000" uri="../flowproperties/d8c76afc-e95d-4526-bd1e-404c89e77ebc.xml">
+                <common:shortDescription xml:lang="en">Nickel (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="46">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="38222108-8b6f-4549-848b-077ef5b79839" version="00.00.000" uri="../flowproperties/38222108-8b6f-4549-848b-077ef5b79839.xml">
+                <common:shortDescription xml:lang="en">Polyvinyl chloride (PVC) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="47">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="4b5ef3db-c549-4558-8e90-d6e40e99190d" version="00.00.000" uri="../flowproperties/4b5ef3db-c549-4558-8e90-d6e40e99190d.xml">
+                <common:shortDescription xml:lang="en">Unalloyed steel (Fe-C) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="48">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="df6cc8b4-3149-4571-877d-53ba67c3c9f4" version="00.00.000" uri="../flowproperties/df6cc8b4-3149-4571-877d-53ba67c3c9f4.xml">
+                <common:shortDescription xml:lang="en">Styrene-butadiene-rubber (SBR) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="49">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="64e87947-305c-458b-9a6f-8beb066a0174" version="00.00.000" uri="../flowproperties/64e87947-305c-458b-9a6f-8beb066a0174.xml">
+                <common:shortDescription xml:lang="en">Antimony oxide (Diantimony trioxide) (Sb2O3) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="50">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="d50ae3b7-ed12-45b4-a184-235f11210406" version="00.00.000" uri="../flowproperties/d50ae3b7-ed12-45b4-a184-235f11210406.xml">
+                <common:shortDescription xml:lang="en">Iron (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="51">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="6a51f7de-7492-45f3-96d3-685c154b5b82" version="00.00.000" uri="../flowproperties/6a51f7de-7492-45f3-96d3-685c154b5b82.xml">
+                <common:shortDescription xml:lang="en">Tin (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="52">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="cd8f60eb-f32b-4619-b719-5a654a65384d" version="00.00.000" uri="../flowproperties/cd8f60eb-f32b-4619-b719-5a654a65384d.xml">
+                <common:shortDescription xml:lang="en">Natural rubber (NR) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="53">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="89d31860-2d34-4652-8574-fc3d9cf83ebd" version="00.00.000" uri="../flowproperties/89d31860-2d34-4652-8574-fc3d9cf83ebd.xml">
+                <common:shortDescription xml:lang="en">Unsaturated polyester (UP) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="54">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="147b8dde-f36e-4694-857f-8bf1ca9b36a6" version="00.00.000" uri="../flowproperties/147b8dde-f36e-4694-857f-8bf1ca9b36a6.xml">
+                <common:shortDescription xml:lang="en">Polyamide 6 (PA6) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="55">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="1525f67c-d938-46fb-a2a1-9d521ac59e94" version="00.00.000" uri="../flowproperties/1525f67c-d938-46fb-a2a1-9d521ac59e94.xml">
+                <common:shortDescription xml:lang="en">Bismuth oxide (Bi2O3) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="56">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="c6e83461-8358-4720-873a-250ceef55633" version="00.00.000" uri="../flowproperties/c6e83461-8358-4720-873a-250ceef55633.xml">
+                <common:shortDescription xml:lang="en">Aluminum oxide (Al2O3) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="57">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="8abb8476-a831-4741-b0cc-d9b5c4aa0cc9" version="00.00.000" uri="../flowproperties/8abb8476-a831-4741-b0cc-d9b5c4aa0cc9.xml">
+                <common:shortDescription xml:lang="en">Tin in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="58">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="597b5a0c-853e-478d-b458-d99283f8d11d" version="00.00.000" uri="../flowproperties/597b5a0c-853e-478d-b458-d99283f8d11d.xml">
+                <common:shortDescription xml:lang="en">Ethylene-propylene-diene terpolymer (EPDM) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="59">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="ca77998e-3312-47ba-8d2f-377e777a3742" version="00.00.000" uri="../flowproperties/ca77998e-3312-47ba-8d2f-377e777a3742.xml">
+                <common:shortDescription xml:lang="en">Paper (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="60">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="8da1214e-a70f-47ba-a02a-e83d4c310fa8" version="00.00.000" uri="../flowproperties/8da1214e-a70f-47ba-a02a-e83d4c310fa8.xml">
+                <common:shortDescription xml:lang="en">Polyoxymethylene/Polyacetal (POM) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="61">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="e43d0778-5a14-47c1-b838-cafa5c0e26e2" version="00.00.000" uri="../flowproperties/e43d0778-5a14-47c1-b838-cafa5c0e26e2.xml">
+                <common:shortDescription xml:lang="en">Polytetrafluorethylene (PTFE) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="62">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="2d4a75bc-55c4-4816-b88e-f185b556672b" version="00.00.000" uri="../flowproperties/2d4a75bc-55c4-4816-b88e-f185b556672b.xml">
+                <common:shortDescription xml:lang="en">Silicon (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="63">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="a417de7f-4ae1-4820-b159-4570fb0f4364" version="00.00.000" uri="../flowproperties/a417de7f-4ae1-4820-b159-4570fb0f4364.xml">
+                <common:shortDescription xml:lang="en">Gold in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="64">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="9d5cfb9b-5bb8-4863-b99a-f7a606795b05" version="00.00.000" uri="../flowproperties/9d5cfb9b-5bb8-4863-b99a-f7a606795b05.xml">
+                <common:shortDescription xml:lang="en">Nickel in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="65">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="d6b3326a-bc7d-48a9-8c95-2de3e800ec64" version="00.00.000" uri="../flowproperties/d6b3326a-bc7d-48a9-8c95-2de3e800ec64.xml">
+                <common:shortDescription xml:lang="en">Silicone (Sl) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="66">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="45fc6d6c-529c-48ca-bc82-cda140e18c94" version="00.00.000" uri="../flowproperties/45fc6d6c-529c-48ca-bc82-cda140e18c94.xml">
+                <common:shortDescription xml:lang="en">Zinc in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="67">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="22eef182-e237-4903-a10e-5c78eb30b286" version="00.00.000" uri="../flowproperties/22eef182-e237-4903-a10e-5c78eb30b286.xml">
+                <common:shortDescription xml:lang="en">Beryllium in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="68">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="f9cf8ca4-ace3-4930-9f49-94ec1c43004e" version="00.00.000" uri="../flowproperties/f9cf8ca4-ace3-4930-9f49-94ec1c43004e.xml">
+                <common:shortDescription xml:lang="en">Silicon dioxide (SiO2) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="69">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="12557e8e-50e3-4937-ad2e-9fb9d3564a4f" version="00.00.000" uri="../flowproperties/12557e8e-50e3-4937-ad2e-9fb9d3564a4f.xml">
+                <common:shortDescription xml:lang="en">Manganese in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="70">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="2832ca6b-3826-49b0-ae17-cfae54772957" version="00.00.000" uri="../flowproperties/2832ca6b-3826-49b0-ae17-cfae54772957.xml">
+                <common:shortDescription xml:lang="en">Titanium (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="71">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="d1742b7e-bd27-4a07-abb5-bad3a26c9b63" version="00.00.000" uri="../flowproperties/d1742b7e-bd27-4a07-abb5-bad3a26c9b63.xml">
+                <common:shortDescription xml:lang="en">Gold (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="72">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="c64f97ae-0a5d-4a64-905f-71f03d626f51" version="00.00.000" uri="../flowproperties/c64f97ae-0a5d-4a64-905f-71f03d626f51.xml">
+                <common:shortDescription xml:lang="en">Tantalum (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="73">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="521686a6-dd9e-4a9a-bba3-cb5906da72f2" version="00.00.000" uri="../flowproperties/521686a6-dd9e-4a9a-bba3-cb5906da72f2.xml">
+                <common:shortDescription xml:lang="en">Ferrites (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="74">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="22b82252-87a1-4b4b-b921-9371dc4ebd81" version="00.00.000" uri="../flowproperties/22b82252-87a1-4b4b-b921-9371dc4ebd81.xml">
+                <common:shortDescription xml:lang="en">Palladium in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="75">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="10575d28-f200-4b61-a64a-ec1d3e4efcc5" version="00.00.000" uri="../flowproperties/10575d28-f200-4b61-a64a-ec1d3e4efcc5.xml">
+                <common:shortDescription xml:lang="en">Platinum in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="76">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="f54d918c-fa18-4bd2-8fc9-90298ea3f720" version="00.00.000" uri="../flowproperties/f54d918c-fa18-4bd2-8fc9-90298ea3f720.xml">
+                <common:shortDescription xml:lang="en">Nylon 6.6 (PA66) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="77">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="0738ea57-3ecc-4bd9-9634-db430a5f112a" version="00.00.000" uri="../flowproperties/0738ea57-3ecc-4bd9-9634-db430a5f112a.xml">
+                <common:shortDescription xml:lang="en">Epoxy resin (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="78">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="34908d80-4674-4bdf-82e0-00ec1e90ee48" version="00.00.000" uri="../flowproperties/34908d80-4674-4bdf-82e0-00ec1e90ee48.xml">
+                <common:shortDescription xml:lang="en">Chromium in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="79">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="ae230610-2c90-4bee-895c-5502d70f74ca" version="00.00.000" uri="../flowproperties/ae230610-2c90-4bee-895c-5502d70f74ca.xml">
+                <common:shortDescription xml:lang="en">Silver (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="80">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="a64733c4-2ec2-4bf0-98ac-404105b64d0b" version="00.00.000" uri="../flowproperties/a64733c4-2ec2-4bf0-98ac-404105b64d0b.xml">
+                <common:shortDescription xml:lang="en">Neodymium oxide (Nd2O3) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="81">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="16e0cc2a-941a-4cb7-9a72-e35257fa6f58" version="00.00.000" uri="../flowproperties/16e0cc2a-941a-4cb7-9a72-e35257fa6f58.xml">
+                <common:shortDescription xml:lang="en">Iron in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="82">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="8e1bac16-275d-4cbc-982d-e107b5cf70dd" version="00.00.000" uri="../flowproperties/8e1bac16-275d-4cbc-982d-e107b5cf70dd.xml">
+                <common:shortDescription xml:lang="en">Molybdenum (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="83">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="b1467e01-7f7f-4cc8-936a-b8d1627f7f58" version="00.00.000" uri="../flowproperties/b1467e01-7f7f-4cc8-936a-b8d1627f7f58.xml">
+                <common:shortDescription xml:lang="en">Lead glas (PbO) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="84">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="e7131c2a-5ec3-4d09-a7dc-56bca86c638e" version="00.00.000" uri="../flowproperties/e7131c2a-5ec3-4d09-a7dc-56bca86c638e.xml">
+                <common:shortDescription xml:lang="en">Plastic unspecified (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="85">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="b1e9a5bf-c5c7-4d30-b9c7-807f0e7622f7" version="00.00.000" uri="../flowproperties/b1e9a5bf-c5c7-4d30-b9c7-807f0e7622f7.xml">
+                <common:shortDescription xml:lang="en">ABS-polycarbonate blend (ABS+PC) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="86">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="740418f6-c3b2-4d7e-9a05-5c998f6a5ba5" version="00.00.000" uri="../flowproperties/740418f6-c3b2-4d7e-9a05-5c998f6a5ba5.xml">
+                <common:shortDescription xml:lang="en">Antimony in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="87">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="b4c8b9c7-c943-4d84-a9a1-6e9a1126e8b9" version="00.00.000" uri="../flowproperties/b4c8b9c7-c943-4d84-a9a1-6e9a1126e8b9.xml">
+                <common:shortDescription xml:lang="en">Silicon in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="88">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="bef018d4-21eb-4d8f-a49d-6751351dcda2" version="00.00.000" uri="../flowproperties/bef018d4-21eb-4d8f-a49d-6751351dcda2.xml">
+                <common:shortDescription xml:lang="en">Copper (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="89">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="5544c145-eb58-4de4-a57c-96834910ce26" version="00.00.000" uri="../flowproperties/5544c145-eb58-4de4-a57c-96834910ce26.xml">
+                <common:shortDescription xml:lang="en">Chromium (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="90">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="c3732b71-a585-4e1e-9507-7f68bdcee99c" version="00.00.000" uri="../flowproperties/c3732b71-a585-4e1e-9507-7f68bdcee99c.xml">
+                <common:shortDescription xml:lang="en">Polycarbonate (PC) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="91">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="b9570304-4912-4f03-858c-2d43d66309bf" version="00.00.000" uri="../flowproperties/b9570304-4912-4f03-858c-2d43d66309bf.xml">
+                <common:shortDescription xml:lang="en">Inorganic flame retardants (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="92">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="0d8997ab-43ec-4f8d-8e23-513d634344d7" version="00.00.000" uri="../flowproperties/0d8997ab-43ec-4f8d-8e23-513d634344d7.xml">
+                <common:shortDescription xml:lang="en">Polybutylene terephthalate (PBT) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="93">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="7ce4c506-5616-4f9c-8c6a-119665e18317" version="00.00.000" uri="../flowproperties/7ce4c506-5616-4f9c-8c6a-119665e18317.xml">
+                <common:shortDescription xml:lang="en">Glass (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>0.0</meanValue>
+        </flowProperty>
+    </flowProperties>
+</flowDataSet>

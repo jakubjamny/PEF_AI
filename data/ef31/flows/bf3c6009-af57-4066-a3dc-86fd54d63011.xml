@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/flow2html.xsl" type="text/xsl"?>
+<flowDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Flow" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Flow ../../schemas/ILCD_FlowDataSet.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <flowInformation>
+        <dataSetInformation>
+            <common:UUID>bf3c6009-af57-4066-a3dc-86fd54d63011</common:UUID>
+            <name>
+                <baseName xml:lang="en">LED THT 5mm (350mg) D5x7</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0">Systems</common:class>
+                    <common:class level="1">Electrics and electronics</common:class>
+                </common:classification>
+            </classificationInformation>
+        </dataSetInformation>
+        <quantitativeReference>
+            <referenceToReferenceFlowProperty>0</referenceToReferenceFlowProperty>
+        </quantitativeReference>
+    </flowInformation>
+    <modellingAndValidation>
+        <LCIMethod>
+            <typeOfDataSet>Product flow</typeOfDataSet>
+        </LCIMethod>
+        <complianceDeclarations>
+            <compliance>
+                <common:referenceToComplianceSystem type="source data set" refObjectId="9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a" version="03.00.000" uri="../sources/9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a.xml">
+                    <common:shortDescription xml:lang="en">ILCD Data Network - compliance (non-Process)</common:shortDescription>
+                </common:referenceToComplianceSystem>
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+            </compliance>
+        </complianceDeclarations>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataEntryBy>
+            <common:timeStamp>2012-10-31T23:00:00.000</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="03.00.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+                <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dataSetVersion>31.00.000</common:dataSetVersion>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <flowProperties>
+        <flowProperty dataSetInternalID="0">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="01846770-4cfe-4a25-8ad9-919d8d378345" version="00.00.000" uri="../flowproperties/01846770-4cfe-4a25-8ad9-919d8d378345.xml">
+                <common:shortDescription xml:lang="en">Number of pieces</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>1.0</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="1">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="93a60a56-a3c8-11da-a746-0800200b9a66" version="00.00.000" uri="../flowproperties/93a60a56-a3c8-11da-a746-0800200b9a66.xml">
+                <common:shortDescription xml:lang="en">Mass</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>3.5E-4</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="2">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="9d5cfb9b-5bb8-4863-b99a-f7a606795b05" version="00.00.000" uri="../flowproperties/9d5cfb9b-5bb8-4863-b99a-f7a606795b05.xml">
+                <common:shortDescription xml:lang="en">Nickel in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>1.08329E-4</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="3">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="d1742b7e-bd27-4a07-abb5-bad3a26c9b63" version="00.00.000" uri="../flowproperties/d1742b7e-bd27-4a07-abb5-bad3a26c9b63.xml">
+                <common:shortDescription xml:lang="en">Gold (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>5.51E-7</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="4">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="2d4a75bc-55c4-4816-b88e-f185b556672b" version="00.00.000" uri="../flowproperties/2d4a75bc-55c4-4816-b88e-f185b556672b.xml">
+                <common:shortDescription xml:lang="en">Silicon (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>5.95E-6</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="5">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="16e0cc2a-941a-4cb7-9a72-e35257fa6f58" version="00.00.000" uri="../flowproperties/16e0cc2a-941a-4cb7-9a72-e35257fa6f58.xml">
+                <common:shortDescription xml:lang="en">Iron in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>8.1E-5</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="6">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="262ec63e-6196-429f-93b9-c9c0d57f5691" version="00.00.000" uri="../flowproperties/262ec63e-6196-429f-93b9-c9c0d57f5691.xml">
+                <common:shortDescription xml:lang="en">Cobalt in alloy (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>3.27E-5</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="7">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="c3732b71-a585-4e1e-9507-7f68bdcee99c" version="00.00.000" uri="../flowproperties/c3732b71-a585-4e1e-9507-7f68bdcee99c.xml">
+                <common:shortDescription xml:lang="en">Polycarbonate (PC) (E)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>1.2145E-4</meanValue>
+        </flowProperty>
+        <flowProperty dataSetInternalID="8">
+            <referenceToFlowPropertyDataSet type="flow property data set" refObjectId="fe366c0f-a104-46a7-b70f-9e241e0128d1" version="34.00.000" uri="../flowproperties/fe366c0f-a104-46a7-b70f-9e241e0128d1.xml">
+                <common:shortDescription xml:lang="en">Electronics (unspecified)</common:shortDescription>
+            </referenceToFlowPropertyDataSet>
+            <meanValue>3.5E-4</meanValue>
+        </flowProperty>
+    </flowProperties>
+</flowDataSet>
