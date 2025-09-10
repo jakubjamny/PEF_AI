@@ -606,7 +606,7 @@
 							"",
 							"  // 1) mapy a inventáře z R2 + CSV z repo (fallback)",
 							"  const invWrapP = tryParseJSON(pm.environment.get(\"ilcd_inventory_packaging_json\")) || {};",
-							"  const packInv  = invWrapP.inventory || {};",
+							"  const packInv = invWrapP || {};  // přímý přístup, ne .inventory;",
 							"  const ccIdx    = tryParseJSON(pm.environment.get(\"ef31_cf_cc_idx\")) || {};",
 							"  const wuIdx    = tryParseJSON(pm.environment.get(\"ef31_cf_wu_idx\")) || {};",
 							"",
