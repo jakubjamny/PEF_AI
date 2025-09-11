@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?><processDataSet xmlns="http://lca.jrc.it/ILCD/Process" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:ext="http://eplca.jrc.ec.europa.eu/ILCD/Extensions/2017" xmlns:ns3="http://conversion.thinkstep.com/ILCD/ThinkstepIo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" locations="../ILCDLocations.xml" metaDataOnly="false" version="1.1" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+  <processInformation>
+    <dataSetInformation>
+      <common:UUID>606ba965-038d-40c6-ac34-7efe6867d717</common:UUID>
+      <name>
+        <baseName xml:lang="en">Residual grid mix</baseName>
+        <treatmentStandardsRoutes xml:lang="en">technology mix</treatmentStandardsRoutes>
+        <mixAndLocationTypes xml:lang="en">consumption mix, to consumer</mixAndLocationTypes>
+        <functionalUnitFlowProperties xml:lang="en">1kV - 60kV</functionalUnitFlowProperties>
+      </name>
+      <common:synonyms xml:lang="en">Residual power grid mix</common:synonyms>
+      <complementingProcesses>
+        <referenceToComplementingProcess refObjectId="3cb4d52f-ddea-4f02-9277-f56989d63ea1" type="process data set" uri="../processes/3cb4d52f-ddea-4f02-9277-f56989d63ea1.xml" version="10.00.200">
+          <common:shortDescription xml:lang="en">Electricity from fossil unspecified</common:shortDescription>
+        </referenceToComplementingProcess>
+        <referenceToComplementingProcess refObjectId="1554bdfc-2dde-4921-8130-d88c45c43067" type="process data set" uri="../processes/1554bdfc-2dde-4921-8130-d88c45c43067.xml" version="20.06.000">
+          <common:shortDescription xml:lang="en">Electricity from heavy fuel oil (HFO)</common:shortDescription>
+        </referenceToComplementingProcess>
+      </complementingProcesses>
+      <classificationInformation>
+        <common:classification>
+          <common:class level="0">Energy carriers and technologies</common:class>
+          <common:class level="1">Electricity</common:class>
+        </common:classification>
+      </classificationInformation>
+      <common:generalComment xml:lang="en">
+&#13;
+The data set represents the country or region specific residual electricity supply for final consumers, including electricity own consumption, transmission/distribution losses of low voltage electricity supply and electricity imports from neighbouring countries. The national energy carrier mixes used for electricity production, the power plant efficiency data, shares on direct to combined heat and power generation (CHP), as well as transmission/distribution losses and own consumption values are taken from official statistics (International Energy Agency, and US-EPA eGRID for USA regions) for the corresponding reference year. Detailed power plant models were used, which combine measured (e.g. NOx) with calculated emission values (e.g. heavy metals). The inventory is partly based on primary industry data, partly on secondary literature data.</common:generalComment>
+    </dataSetInformation>
+    <quantitativeReference type="Reference flow(s)">
+      <referenceToReferenceFlow>2</referenceToReferenceFlow>
+    </quantitativeReference>
+    <time>
+      <common:referenceYear>2013</common:referenceYear>
+      <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+      <common:timeRepresentativenessDescription xml:lang="en">Annual average, the most recent data source consistently available for all countries (IEA for 2012) has been used. The DQR of the dataset reflects the quality of the data at the time of release. The user of the dataset should revise the DQR at the moment of application.</common:timeRepresentativenessDescription>
+    </time>
+    <geography>
+      <locationOfOperationSupplyOrProduction location="MT">
+        <descriptionOfRestrictions xml:lang="en">The data set represents the residual grid mix including main activity producers and autoproducers as well as electricity imports/exports. Main technologies for firing, flue gas cleaning and electricity generation are considered according to the national or region specific situation.The geographical representativeness concerning the related country as well as its DQR is related to relevance of the contributors. Possible geographical variance of minor contributors below the cut-off criteria are not affecting the geographical representativeness of the overall process, but are positively affecting the completeness of the model.</descriptionOfRestrictions>
+      </locationOfOperationSupplyOrProduction>
+    </geography>
+    <technology>
+      <technologyDescriptionAndIncludedProcesses xml:lang="en">Foreground system:&#13;
+The residual mix is the grid attribute (emission, radioactive waste, etc.) average that is not allocated to a specific individual or end-consumer. If a consumer uses grid electricity without the cancelation of a Guarantee of Origin certificate (or other reliable tracking mechanism) than they are obligated to use the residual mix when calculating/reviewing their consumed electricity attributes (footprint).  Organizations that are part of the European E-Track program, like Reliable Disclosure Systems for Europe (www.reliable-disclosure.org) calculate the national residual mixes annually.&#13;
+Residual mix is used to determine the energy origin of untracked consumption, i.e. consumption, which has not been disclosed with explicit tracking instruments such as Guarantees of Origin. So if all electricity consumption was explicitly tracked to specific generation attributes, residual mix would not be needed. &#13;
+The electricity is either produced in energy carrier specific power plants and/or combined heat and power plants (CHP). Also considered are the national and regional specific technology standards of the power plants in regard to efficiency, firing technology, flue-gas desulphurisation, NOx removal and de-dusting. The electricity provided by non-combustible renewable energy sources also considers the national or regional situation, such as solar radiation (photovoltaic), annual full load hours (wind power), and share of hydro power stations by type (run-of-river, storage and pumped storage).&#13;
+The fossil power plant models combine emission data from literature with calculated values for non-measured emissions e.g. organics or heavy metals. For the emissions CO2, SO2, NOx, CO, CH4, N2O, NMVOC and particulate matter (PM) measured/calculated data are used, taken from national inventory reports, emission inventory data bases, utility companies and other sources. The calculation of other emissions within the models are based on energy carrier properties, transfer coefficients and power plant thermodynamics representing the applied flue gas treatment technologies and standards (flue gas desulphurisation, dust filter etc.). Combustion residues from solid fuels, such as gypsum, bottom ash or fly ash are assumed  to be reused e.g. in construction work. Waste treatment for these substances is therefore not considered. Radioactive emissions from ashes are not considered in the coal power plant model.&#13;
+The energy carrier supply considers the whole supply chain of the energy carrier from exploration, production, processing and transport of the fuels to the power plants. The supply chain is modelled in specific national / regional energy carrier consumption mixes (i.e. domestic production and imports), and considers national / regional average energy carrier properties (e.g. elemental composition and energy content).&#13;
+The residual grid mix includes imported electricity from neighbouring countries, transmission / distribution losses of low voltage electricity supply and the own use of electricity by energy producers (own consumption of power plants, and "other" own consumption e.g. due to pumped storage hydro power etc.). The logic of modelling the residual grid mix is represented in the flow diagram "Modelling of Electricity Consumption Mixes".&#13;
+&#13;
+The residual grid mixes data is extracted from the report “European Residual Mixes 2013” written in the frame of the RE-DISS II Project. For the use in an LCA dataset however, several issues had to be specified.&#13;
+handling of the “renewable unspecified” ratio and “fossil unspecified” ratio: In the table 1 of the RE-DISS report, electricity from “renewable unspecified” and “fossil unspecified” are mentioned.  In this dataset, the renewable unspecified ratio is modelled as the specific national renewable electricity production mix. Similarly, the fossil unspecified ratio is modelled as the specific national fossil electricity production mix. &#13;
+handling of technologies which are not available in a specific country:&#13;
+For the residual grid mix modelling, the country specific technologies are used. However, in some countries, the technology is not available since it is not directly installed in the country itself but listed as contributing to the residual grid mix. This is due to the import of electricity. In order to integrate this missing technology, the specific electricity production technology of the neighbor countries with which the considered country has electricity exchanges are considered. The share between the several countries is based on the contribution of each exporting country (where the technology is available) to the importing country.&#13;
+For example in Austria no electricity is produced from lignite but it is stated in the data that Austria consumes electricity from lignite. This electricity from lignite is imported from Czech Republic , Germany, Hungary, Italy and Slovenia with their relative share in the quantity of imported electricity.&#13;
+&#13;
+Background system:&#13;
+Electricity: Electricity is modelled according to the individual country-specific situations. The country-specific modelling is achieved on multiple levels. Firstly, individual energy carrier specific power plants and plants for renewable energy sources are modelled according to the current national electricity grid mix. Modelling the electricity consumption mix includes transmission / distribution losses and the own use by energy producers (own consumption of power plants and "other" own consumption e.g. due to pumped storage hydro power etc.), as well as imported electricity. Secondly, the national emission and efficiency standards of the power plants are modelled as well as the share of electricity plants and combined heat and power plants (CHP). Thirdly, the country-specific energy carrier supply (share of imports and / or domestic supply) including the country-specific energy carrier properties (e.g. element and energy content) are accounted for. Fourthly, the exploration, mining/production, processing and transport processes of the energy carrier supply chains are modelled according to the specific situation of each electricity producing country. The different production and processing techniques (emissions and efficiencies) in the different energy producing countries are considered, e.g. different crude oil production technologies or different flaring rates at the oil platforms.&#13;
+Thermal energy, process steam: The thermal energy and process steam supply is modelled according to the individual country-specific situation with regard to emission standards and considered energy carriers. The thermal energy and process steam are produced at heat plants. Efficiencies for thermal energy production are by definition 100% in relation to the corresponding energy carrier input. For process steam the efficiency ranges from 85%, 90% to 95%. The energy carriers used for the generation of thermal energy and process steam are modelled according to the specific import situation (see electricity above).&#13;
+Transports: All relevant and known transport processes are included. Ocean-going and inland ship transport as well as rail, truck and pipeline transport of bulk commodities are considered.&#13;
+Energy carriers: The energy carriers are modelled according to the specific supply situation (see electricity above).&#13;
+Refinery products: Diesel fuel, gasoline, technical gases, fuel oils, lubricants and residues such as bitumen are modelled with a parameterised country-specific refinery model. The refinery model represents the current national standard in refining techniques (e.g. emission level, internal energy consumption, etc.) as well as the individual country-specific product output spectrum, which can be quite different from country to country. The supply of crude oil is modelled, again, according to the country-specific situation with the respective properties of the resources.</technologyDescriptionAndIncludedProcesses>
+      <technologicalApplicability xml:lang="en">Supply of 1 kWh medium voltage (1kV - 60kV) electricity to final consumers.</technologicalApplicability>
+      <referenceToTechnologyFlowDiagrammOrPicture refObjectId="eb3a9beb-2541-40b8-80c6-21f2cb8a5843" type="source data set" uri="../sources/eb3a9beb-2541-40b8-80c6-21f2cb8a5843.xml">
+        <common:shortDescription xml:lang="en">Energy_residual grid mix table 1.JPG</common:shortDescription>
+      </referenceToTechnologyFlowDiagrammOrPicture>
+      <referenceToTechnologyFlowDiagrammOrPicture refObjectId="7cd7568a-cef3-4780-a4d1-7efd815a44bf" type="source data set" uri="../sources/7cd7568a-cef3-4780-a4d1-7efd815a44bf.xml">
+        <common:shortDescription xml:lang="en">Energy_residual grid mix table 2.JPG</common:shortDescription>
+      </referenceToTechnologyFlowDiagrammOrPicture>
+      <referenceToTechnologyFlowDiagrammOrPicture refObjectId="17ba3407-3a49-416d-80ea-0d25a1725a09" type="source data set" uri="../sources/17ba3407-3a49-416d-80ea-0d25a1725a09.xml" version="30.00.000">
+        <common:shortDescription xml:lang="en">Energy_residual grid mix picture.JPG</common:shortDescription>
+      </referenceToTechnologyFlowDiagrammOrPicture>
+      <referenceToTechnologyFlowDiagrammOrPicture refObjectId="8d86dd70-83e8-4de2-8550-15665dd11ca0" type="source data set" uri="../sources/8d86dd70-83e8-4de2-8550-15665dd11ca0.xml">
+        <common:shortDescription xml:lang="en">Energy_Residual unspecified table.JPG</common:shortDescription>
+      </referenceToTechnologyFlowDiagrammOrPicture>
+      <referenceToTechnologyFlowDiagrammOrPicture refObjectId="451760df-1df0-4f51-a132-1f4072651a9b" type="source data set" uri="../sources/451760df-1df0-4f51-a132-1f4072651a9b.xml" version="30.00.000">
+        <common:shortDescription xml:lang="en">Energy_Residual emission factors MT.JPG</common:shortDescription>
+      </referenceToTechnologyFlowDiagrammOrPicture>
+      <referenceToTechnologyFlowDiagrammOrPicture refObjectId="a044f8aa-b72d-4ea7-9240-d784c4459599" type="source data set" uri="../sources/a044f8aa-b72d-4ea7-9240-d784c4459599.xml" version="30.00.000">
+        <common:shortDescription xml:lang="en">Energy_PEF_residual grid mix MT.JPG</common:shortDescription>
+      </referenceToTechnologyFlowDiagrammOrPicture>
+    </technology>
+    <mathematicalRelations>
+      <modelDescription xml:lang="en">For mathematical model details concerning the implementation of the CCF formula see: &#13;
+http://www.gabi-software.com/fileadmin/GaBi_Databases/PEF_CFF_model_description.pdf</modelDescription>
+    </mathematicalRelations>
+  </processInformation>
+  <modellingAndValidation>
+    <LCIMethodAndAllocation>
+      <typeOfDataSet>Partly terminated system</typeOfDataSet>
+      <LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+      <deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+      <LCIMethodApproaches>Allocation - market value</LCIMethodApproaches>
+      <LCIMethodApproaches>Allocation - net calorific value</LCIMethodApproaches>
+      <LCIMethodApproaches>Allocation - exergetic content</LCIMethodApproaches>
+      <LCIMethodApproaches>Allocation - mass</LCIMethodApproaches>
+      <deviationsFromLCIMethodApproaches xml:lang="en">For the combined heat and power (CHP) production allocation by exergetic content is applied. Electricity and power plant by-products, i.e. gypsum, boiler ash and fly ash are allocated by market value due to no common physical properties. Within the refinery allocation by mass (refinery expenditures) and net calorific value (feedstocks, e.g.crude oil) is used. For the combined crude oil, natural gas and natural gas liquids (NGL) production allocation by net calorific value is applied.</deviationsFromLCIMethodApproaches>
+      <modellingConstants xml:lang="en">Direct land use change: GHG emissions from direct LUC allocated to good/service for 20 years after the LUC occurs.  &#13;
+Carbon  storage  and  delayed  emissions:  credits  associated  with  temporary  (carbon) storage or delayed emissions are not considered in the calculation of the EF for the default impact categories. &#13;
+Emissions off-setting: not included&#13;
+Fossil and biogenic carbon emissions and removals: removals and emissions are modelled as follows: All  GHG  emissions  from  fossil  fuels  (including  peat  and  limestone)  are modelled consistently with the ILCD list of elementary flows. In the case that the emissions refer to the molecules CO2 and CH4, they are modelled as ‘carbon dioxide (fossil)’ and ‘methane (fossil)’. Biogenic   uptake   and   emissions   are modelled   separately. For land use change, all carbon emissions and uptakes are inventoried separately for each of the elementary flows. Soil carbon accumulation (uptake) via improved agricultural management is excluded from the model.</modellingConstants>
+      <deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+      <referenceToLCAMethodDetails refObjectId="2bc1740f-3ad3-4f7a-9a47-2d89a28e6996" type="source data set" uri="../sources/2bc1740f-3ad3-4f7a-9a47-2d89a28e6996.xml" version="00.00.000">
+        <common:shortDescription xml:lang="en">PEF guide (2013/179/EU)</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="f2b512cd-43b2-4260-9882-eebc06731274" type="source data set" uri="../sources/f2b512cd-43b2-4260-9882-eebc06731274.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">GaBi Modelling Principles</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="2f4e6329-f31d-44dc-8933-f4e6608590f5" type="source data set" uri="../sources/2f4e6329-f31d-44dc-8933-f4e6608590f5.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">GaBi Water Modelling Principles</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="3c6b1a84-fc51-463c-a66f-eaacfde2cb2f" type="source data set" uri="../sources/3c6b1a84-fc51-463c-a66f-eaacfde2cb2f.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">GaBi Energy Modelling Principles</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="1a453aa5-4e46-468f-b441-17fb02054ac3" type="source data set" uri="../sources/1a453aa5-4e46-468f-b441-17fb02054ac3.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">GaBi Refinery Modelling Principles</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="69cb87e8-2532-455d-b7d3-18eced579e8f" type="source data set" uri="../sources/69cb87e8-2532-455d-b7d3-18eced579e8f.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">GaBi Agriculture Model Documentation</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="57a2608f-18fc-454f-998a-1657376a4322" type="source data set" uri="../sources/57a2608f-18fc-454f-998a-1657376a4322.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">GaBi Land Use Change Model Documentation</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="bb3e3630-543f-4210-97b0-2a239e40c0c0" type="source data set" uri="../sources/bb3e3630-543f-4210-97b0-2a239e40c0c0.xml" version="00.00.000">
+        <common:shortDescription xml:lang="en">Suggestions for updating the Organisation Environmental Footprint (OEF) method</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="e2ecfeb8-078c-4cee-9885-7135d35e4f10" type="source data set" uri="../sources/e2ecfeb8-078c-4cee-9885-7135d35e4f10.xml" version="00.00.000">
+        <common:shortDescription xml:lang="en">Guide for EF compliant data sets</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="4e2eaf14-1b54-4d3f-95dd-ef3bbbf49d32" type="source data set" uri="../sources/4e2eaf14-1b54-4d3f-95dd-ef3bbbf49d32.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">GaBi Agrarian Modelling Principles</common:shortDescription>
+      </referenceToLCAMethodDetails>
+    </LCIMethodAndAllocation>
+    <dataSourcesTreatmentAndRepresentativeness>
+      <dataCutOffAndCompletenessPrinciples xml:lang="en">A cut-off rule based on mass or energy flow or the level of environmental significance of max. 3% is applied and confirmed by the reviewer. An active cut-off within the system has not been applied, no data gaps are known and all elementary flows of environmental effect are included in the inventory.	&#13;
+&#13;
+Capital goods (including infrastructures) and their end of life are included unless the exclusion is clearly documented and conform with the cut-off principles.&#13;
+&#13;
+System boundaries include all known processes linked to the product supply chain.</dataCutOffAndCompletenessPrinciples>
+      <deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">The capital goods (power plant construction and EoL) are included.	&#13;
+End-of-Life of the PV-modules is not included in the LCA-model.		&#13;
+Waste is entering the Waste-to-Energy product system without any environmental burden (burdens are allocated to the primary life cycle of the product in which the waste is generated, e.g. burdens of packing material becoming waste are allocated to the product).</deviationsFromCutOffAndCompletenessPrinciples>
+      <dataSelectionAndCombinationPrinciples xml:lang="en">The data sources for the complete product system are sufficiently consistent: The electricity grid mix data are based on national statistics. The key emissions e.g. sulphur dioxide, nitrogen oxide, etc., of the power plants / combined heat and power (CHP) plants are based on measured operating data taken from national statistics. All other emissions from the power plants / combined heat and power plants (CHP) are based on literature data and / or calculated via energy carrier composition in combination with (literature-based) combustion models. Detailed power plant models are used, which combine measured (e.g. NOx) with calculated emission values (e.g. heavy metals). The data on the energy carrier supply chain are based on statistics with country / region-specific transport distances and energy carrier composition, as well as industry and literature data on the inventory of exploration, production and processing. Infrastructure data are from literature. Refinery data are also based on statistical data and measurements of major refineries as well as literature data.&#13;
+For electricity from non-combustional renewable energy sources, like wind, hydro, solar (photovoltaic) and geothermal, also specific LCA modells are used. LCI modelling is fully consistent.</dataSelectionAndCombinationPrinciples>
+      <deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+      <dataTreatmentAndExtrapolationsPrinciples xml:lang="en">Energy carrier specific power plants are modelled according to the national / regional firing and flue gas cleaning technology mix.Energy carrier specific power plants are modelled according to the national / regional conversion technology. Published data measured at representative power plants have been used to represent the country / region mix of power plant technologies. Also for electricity from non-combustional renewable energy sources, like wind, hydro, solar (photovoltaic) and geothermal, specific LCA modells are developed and used.</dataTreatmentAndExtrapolationsPrinciples>
+      <deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+      <referenceToDataSource refObjectId="e91455ef-e448-46d8-b843-d92acca905ec" type="source data set" uri="../sources/e91455ef-e448-46d8-b843-d92acca905ec.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Wind in power 2011 - European statistics</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="4f442072-4746-4e5c-8ce3-1b9a4ab56b4c" type="source data set" uri="../sources/4f442072-4746-4e5c-8ce3-1b9a4ab56b4c.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Wind - 2011 Annual Report</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="9566927b-b8d2-472c-8abd-f27811bd09ba" type="source data set" uri="../sources/9566927b-b8d2-472c-8abd-f27811bd09ba.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Statistical Yearbook 2011</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="29b23a15-4121-4868-a701-6e97e8b0beeb" type="source data set" uri="../sources/29b23a15-4121-4868-a701-6e97e8b0beeb.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Energy Balances of OECD Countries 2013</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="b3263665-1c77-429f-abd5-8eae24fd366c" type="source data set" uri="../sources/b3263665-1c77-429f-abd5-8eae24fd366c.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Energy Statistics of OECD Countries 2013</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="3bbcb2ff-b904-4888-96d2-296795714e75" type="source data set" uri="../sources/3bbcb2ff-b904-4888-96d2-296795714e75.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Energy Balances of Non-OECD Countries 2013</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="2a0602a1-0195-49e1-a827-a070dfa3e3b4" type="source data set" uri="../sources/2a0602a1-0195-49e1-a827-a070dfa3e3b4.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Energy Statistics of Non-OECD Countries 2013</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="ae981fe1-de50-4b52-b68a-b4303f36c61e" type="source data set" uri="../sources/ae981fe1-de50-4b52-b68a-b4303f36c61e.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">World Energy Statistics 2013</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="884811a5-7a0d-4f83-a43c-a2831ed42def" type="source data set" uri="../sources/884811a5-7a0d-4f83-a43c-a2831ed42def.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Electricity Information 2013</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="6de1e618-4960-4b0e-aa2c-7f561a1b6f03" type="source data set" uri="../sources/6de1e618-4960-4b0e-aa2c-7f561a1b6f03.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">K.Weissermel, H.- J. Arpe: Industrial organic chemistry</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="2b041bb8-adea-4fab-9e28-8abfe409033a" type="source data set" uri="../sources/2b041bb8-adea-4fab-9e28-8abfe409033a.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Copper development association: Overview of Recycled Copper</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="b2012fa6-b2f7-4151-b781-aadfaacf4136" type="source data set" uri="../sources/b2012fa6-b2f7-4151-b781-aadfaacf4136.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Smelter Tech: The Reverberatory Furnace </common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="9b8971e3-b693-49f0-a0ef-2353e4cfb60b" type="source data set" uri="../sources/9b8971e3-b693-49f0-a0ef-2353e4cfb60b.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Process for the production of a plasticized polyvinyl butyral for gluing a base onto a glazing</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="2ea4220d-0ba7-4351-b99b-545de2232365" type="source data set" uri="../sources/2ea4220d-0ba7-4351-b99b-545de2232365.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">LookChem: Manufacture of 1.12-Dodecanedioic Acid</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="4a1fd634-a5ff-4bd1-a08e-95750cda3a35" type="source data set" uri="../sources/4a1fd634-a5ff-4bd1-a08e-95750cda3a35.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Methods of making cyclododecatriene and</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="56c9aae6-4e0b-4b66-b898-d59cc485198b" type="source data set" uri="../sources/56c9aae6-4e0b-4b66-b898-d59cc485198b.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">EPA - Health and Environmental Effects Profile for 2-Chloro-1,3-Butadiene, 1984</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="7e35dd34-81c9-488b-9a69-2b525bfe2999" type="source data set" uri="../sources/7e35dd34-81c9-488b-9a69-2b525bfe2999.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Chlorpropanes, Chlorobutanes, and Chlorobutenes: Chapter in Ullmann's, 2011</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="d54f049a-2ece-4140-ac8d-caa694d1d1e9" type="source data set" uri="../sources/d54f049a-2ece-4140-ac8d-caa694d1d1e9.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Chloroprene  - Données technico-économiques sur les substances chimiques en France - 2006</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="47b981ff-8e4a-4973-8aab-d88611ff3a06" type="source data set" uri="../sources/47b981ff-8e4a-4973-8aab-d88611ff3a06.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Renewables Information 2011</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="c15bb54f-6caa-463c-8437-dae87d8c9ed5" type="source data set" uri="../sources/c15bb54f-6caa-463c-8437-dae87d8c9ed5.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Energy Balances of Non-OECD Countries 2011</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="8ed905d4-e486-426a-82c4-c472befde4a1" type="source data set" uri="../sources/8ed905d4-e486-426a-82c4-c472befde4a1.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Energy Statistics of Non-OECD Countries 2011</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="3ebd4e78-289a-4b3a-ba90-1071b2ea1a3e" type="source data set" uri="../sources/3ebd4e78-289a-4b3a-ba90-1071b2ea1a3e.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">eGrid2012 Version 1.0</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="8745ab16-2f78-4e99-b72f-908631f484d7" type="source data set" uri="../sources/8745ab16-2f78-4e99-b72f-908631f484d7.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Electricity Information 2011</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="acb3a6c1-d206-46ed-8b68-1067eb388a90" type="source data set" uri="../sources/acb3a6c1-d206-46ed-8b68-1067eb388a90.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Update of the Environmental Indicators and Energy Payback Time of CIS Modules in Europe, 2010</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="e831a684-0b46-4c3a-b754-009dd58883ae" type="source data set" uri="../sources/e831a684-0b46-4c3a-b754-009dd58883ae.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Sustainability Evaluation of Solar Energy Systems: LCA Analysis (LCA of Thin Film Technologies)</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="58b86392-5559-43b1-9d76-7e7a33134051" type="source data set" uri="../sources/58b86392-5559-43b1-9d76-7e7a33134051.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Life Cycle Inventories and Life Cycle Assessments of Photovoltaic Systems, 2011</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="6b29835e-9afe-410d-a650-c8eb7cedf7a3" type="source data set" uri="../sources/6b29835e-9afe-410d-a650-c8eb7cedf7a3.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Environmental Life Cycle Inventory of Crystalline Silicon Photovoltaic System Production, 2006</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="41603ac1-427a-4b74-a6d2-07124c811a06" type="source data set" uri="../sources/41603ac1-427a-4b74-a6d2-07124c811a06.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Update of environmental indicators and energy payback time of CdTe PV systems in Europe, 2011</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="db43ce49-69ff-436b-b2ba-0d711ee292d2" type="source data set" uri="../sources/db43ce49-69ff-436b-b2ba-0d711ee292d2.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Energy payback, life cycle CO2 emissions of the BOS in optimized 3.5 MW PV installation</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="83c23f89-16d9-4687-9fb5-b46e5632c594" type="source data set" uri="../sources/83c23f89-16d9-4687-9fb5-b46e5632c594.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Methodology Guidelines on Life Cycle Assessment of Photovoltaic Electricity, 2009</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="d19e0017-9ce6-41f6-80d8-1ddcba714d92" type="source data set" uri="../sources/d19e0017-9ce6-41f6-80d8-1ddcba714d92.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Annual European Union greenhouse gas inventory 1990 - 2008 and inventory report 2010</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="4d0b4cd8-ef1e-4b9f-9cc0-a15164f1f1c6" type="source data set" uri="../sources/4d0b4cd8-ef1e-4b9f-9cc0-a15164f1f1c6.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Air pollutant emissions in Finland 1990-2008 Informative Inventory report</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="63ab79ca-79b8-480a-93ff-23b6e10f3301" type="source data set" uri="../sources/63ab79ca-79b8-480a-93ff-23b6e10f3301.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Air pollutant emissions from stationary installations using bioenergy in the NLs BOLK Phase 2</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="4d9277ae-6882-4704-9da8-d864fe7035a6" type="source data set" uri="../sources/4d9277ae-6882-4704-9da8-d864fe7035a6.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">2da Comunicacion Nacional de la Republica Argentina</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="676b2a43-4d64-47d3-939d-17361afd74df" type="source data set" uri="../sources/676b2a43-4d64-47d3-939d-17361afd74df.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">2006 IPCC Guidelines for National Greenhouse Gas Inventories</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="d2743393-5fbd-11db-b0de-0800200c9a66" type="source data set" uri="../sources/d2743393-5fbd-11db-b0de-0800200c9a66.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">13. Verordnung zur Durchführung des Bundes-Immissionsschutzgesetzes</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="fdf1a71b-fde9-4939-b14e-164ff0f4d094" type="source data set" uri="../sources/fdf1a71b-fde9-4939-b14e-164ff0f4d094.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Auswertung PV-Leistung</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="c175a776-a82f-4739-a0cf-1ac02966df7a" type="source data set" uri="../sources/c175a776-a82f-4739-a0cf-1ac02966df7a.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Austria's National Inventory Report 2010</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="1f692183-8c45-4d9a-87d0-2cb0cdadaf9c" type="source data set" uri="../sources/1f692183-8c45-4d9a-87d0-2cb0cdadaf9c.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Austria's Informative Inventory Report (IIR) 2010</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="6b02aa13-02c4-4f89-b418-51c46249cd74" type="source data set" uri="../sources/6b02aa13-02c4-4f89-b418-51c46249cd74.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Australian National Greenhouse Accounts (NIR)</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="13f3c0d9-2cd1-40d6-a887-8132d168ce49" type="source data set" uri="../sources/13f3c0d9-2cd1-40d6-a887-8132d168ce49.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Australian electricity generation report 2008</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="af10f2b3-4618-47f0-bae4-57e2ba035a5b" type="source data set" uri="../sources/af10f2b3-4618-47f0-bae4-57e2ba035a5b.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Appendix H: Calorific Value, Price, and Emission Coefficients of Energy Kinds</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="b61ddd50-66c1-4b57-a62b-1b3eff1d5c88" type="source data set" uri="../sources/b61ddd50-66c1-4b57-a62b-1b3eff1d5c88.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Appendix 17 Thermal values and Emission factors energy.xls GWP conversion factors 2006</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="074971c8-93ee-41ec-b368-d04410a29499" type="source data set" uri="../sources/074971c8-93ee-41ec-b368-d04410a29499.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Anthropogenic Emissions from Energy Activities in India</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="45ebaf6b-1827-40ab-afc8-5cdf4adbe55f" type="source data set" uri="../sources/45ebaf6b-1827-40ab-afc8-5cdf4adbe55f.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Emission Estimation Technique Manual for Fossil Fuel Electric Power Generation Version 2.3</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="c400ff58-c292-41cf-9b9b-2ae4efe728be" type="source data set" uri="../sources/c400ff58-c292-41cf-9b9b-2ae4efe728be.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Emisiones atmosféricas de las centrales eléctricas en América del Norte</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="9049ae1c-8dc6-4452-bdda-9a0fd0dabef6" type="source data set" uri="../sources/9049ae1c-8dc6-4452-bdda-9a0fd0dabef6.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">EMEP/EEA air pollutant emission inventory guidebook - 2009</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="ed37667c-d18a-4745-bdc3-2d1907a758c5" type="source data set" uri="../sources/ed37667c-d18a-4745-bdc3-2d1907a758c5.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">EMEP/CORINAIR  Emission Inventory Guidebook - 2006</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="09f34c8b-3240-4a63-ab33-1aca513c5b0a" type="source data set" uri="../sources/09f34c8b-3240-4a63-ab33-1aca513c5b0a.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Electricity Gas Australia</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="8b23bb67-fbe3-48e4-9191-bdb52c8fbb28" type="source data set" uri="../sources/8b23bb67-fbe3-48e4-9191-bdb52c8fbb28.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Electric Power Industry 2009: Year in Review</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="f3323ac4-38f6-4bff-95b9-0cc97275e91e" type="source data set" uri="../sources/f3323ac4-38f6-4bff-95b9-0cc97275e91e.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Directive 2009/28/EC of the European Parliament and of the Council of 23 April 2009</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="c524c263-6f87-41a1-9998-10806f915e4f" type="source data set" uri="../sources/c524c263-6f87-41a1-9998-10806f915e4f.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Digest of United Kingdom Energy Statistics 2010</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="95fbb395-92f4-4993-b88d-5a4cd3ff5471" type="source data set" uri="../sources/95fbb395-92f4-4993-b88d-5a4cd3ff5471.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Denmark's National Inventory report 2010</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="3b917ad4-fb71-43b1-be0b-806537efbfeb" type="source data set" uri="../sources/3b917ad4-fb71-43b1-be0b-806537efbfeb.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Danish Emission inventories for stationary combustion plants</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="02564626-8de7-43b0-b671-8dfa43044be8" type="source data set" uri="../sources/02564626-8de7-43b0-b671-8dfa43044be8.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Compilation of Air Pollutant Emission Factors</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="5f5d9711-aa38-4ca5-9c43-0b6737d7c48b" type="source data set" uri="../sources/5f5d9711-aa38-4ca5-9c43-0b6737d7c48b.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Climate change - Immision Inventory</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="d7d8f94e-c30b-47f4-aadb-b64a0134cc33" type="source data set" uri="../sources/d7d8f94e-c30b-47f4-aadb-b64a0134cc33.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">BVT - Festlegung in ausgewählten industriellen Bereichen als Beitrag zur Erfüllung der Klimasch...</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="a719ff4c-3b16-4090-b9bc-aac600d7a690" type="source data set" uri="../sources/a719ff4c-3b16-4090-b9bc-aac600d7a690.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Brennstoffe und Verbrennungsrechnung, 2. Auflage</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="cf5a4784-0372-43d0-a814-a2b52132ff11" type="source data set" uri="../sources/cf5a4784-0372-43d0-a814-a2b52132ff11.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Brennstoffe und Verbrennungsrechnung</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="14a1e369-d2e8-4054-a4c9-c20f14be6195" type="source data set" uri="../sources/14a1e369-d2e8-4054-a4c9-c20f14be6195.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Belgium's Greenhouse Gas Inventory (1990-2008)</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="a5806d02-3a7d-4ebc-9edb-d82d4a254625" type="source data set" uri="../sources/a5806d02-3a7d-4ebc-9edb-d82d4a254625.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Greenhouse Gas Emissions in the Netherlands 1990-2008</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="952089a6-fdba-406f-ac7f-c0c3b2286a65" type="source data set" uri="../sources/952089a6-fdba-406f-ac7f-c0c3b2286a65.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Greenhouse Gas Emissions in Finland 1990-2008</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="d83bb703-1ab5-4306-b324-c6b61e0951a7" type="source data set" uri="../sources/d83bb703-1ab5-4306-b324-c6b61e0951a7.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Greenhouse Gas Emissions in Estonia 1990-2008</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="a2bb6096-1c77-46a8-8fe5-59b1b3590c83" type="source data set" uri="../sources/a2bb6096-1c77-46a8-8fe5-59b1b3590c83.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Greenhouse Gas Emission in Estonia</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="cd6f1cfc-f0f8-4270-aa6d-69bdec0e8a7d" type="source data set" uri="../sources/cd6f1cfc-f0f8-4270-aa6d-69bdec0e8a7d.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">GHG Inventories 2008 - Common Reporting Format (CRF)</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="4cf7f11b-29ea-482a-acc2-9014aef4e870" type="source data set" uri="../sources/4cf7f11b-29ea-482a-acc2-9014aef4e870.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Full fuel cycle greenhouse gas emission analysis for proposed Kwinana CCGT power station</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="580c3724-d564-4c28-bacd-297a8a10ef60" type="source data set" uri="../sources/580c3724-d564-4c28-bacd-297a8a10ef60.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Ermittlung und Evaluierung von Emissionsfaktoren für Feuerungsanlagen in Deutschland</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="8f9004d8-69bc-4bfb-ae2c-ec49304abc8d" type="source data set" uri="../sources/8f9004d8-69bc-4bfb-ae2c-ec49304abc8d.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Erarbeitung der Grundlagen für das BVT - Merkblatt Großfeuerungsanlagen</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="010e303b-7e52-4a01-b176-4ac26f4b7eac" type="source data set" uri="../sources/010e303b-7e52-4a01-b176-4ac26f4b7eac.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Environmental Report 2008</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="debe5c14-a3c5-4ae1-8f00-ac91dbdcc12d" type="source data set" uri="../sources/debe5c14-a3c5-4ae1-8f00-ac91dbdcc12d.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Energy Statistics  Imports Electricity</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="39c74932-1b36-41ed-9ed7-2e8fc678b95a" type="source data set" uri="../sources/39c74932-1b36-41ed-9ed7-2e8fc678b95a.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Energy Futures and Urban Air Pollution: Challenges for China and the United States</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="6961baea-190f-4bc4-9aed-c7231f20f128" type="source data set" uri="../sources/6961baea-190f-4bc4-9aed-c7231f20f128.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Energy Consumption, Energy Savings and Emission Analysis for Industrial Motors</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="1a433db5-054d-4795-adc2-1618b790eca2" type="source data set" uri="../sources/1a433db5-054d-4795-adc2-1618b790eca2.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Emissoes dos Gases Geradores do Efeito Estufa por Termel‚ctricas no Periodo 2000 a 2020</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="78626e1d-4507-4562-8c0d-18d84f8bcfe4" type="source data set" uri="../sources/78626e1d-4507-4562-8c0d-18d84f8bcfe4.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Emissionsschätzungen für SO2, NO2, NMVOC und NH3 in Deutschland 2000-2020</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="a648a855-48d6-4dfa-a65f-7ef376c077b0" type="source data set" uri="../sources/a648a855-48d6-4dfa-a65f-7ef376c077b0.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Emissionsfaktoren und Kohlenstoffgehalte</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="4300d477-7d2e-46ed-bcc4-226e1877565c" type="source data set" uri="../sources/4300d477-7d2e-46ed-bcc4-226e1877565c.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Emissions of greenhouse gases in Iceland from 1990 to 2008</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="37800c0d-0dbc-436e-99eb-d3790e3c8d1c" type="source data set" uri="../sources/37800c0d-0dbc-436e-99eb-d3790e3c8d1c.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Evaluation Criteria Investment Proposals (translated from hellenic)</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="308acd86-30a4-42c9-b68c-6ed6a2931877" type="source data set" uri="../sources/308acd86-30a4-42c9-b68c-6ed6a2931877.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Greenhouse Gas Emissions Inventory Reports of Spain 1990-2008</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="4560b4c3-bf00-470f-b5ed-140cc4d5a3e7" type="source data set" uri="../sources/4560b4c3-bf00-470f-b5ed-140cc4d5a3e7.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Life Cycle Inventory for Electricity Generation in China</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="d1047ccd-64b4-4f5e-b403-1887547c55d2" type="source data set" uri="../sources/d1047ccd-64b4-4f5e-b403-1887547c55d2.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Liechtenstein`s Greenhouse Gas Inventory Report 1990 -2008</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="2ce438a9-0284-4c06-aaab-9cd27962125d" type="source data set" uri="../sources/2ce438a9-0284-4c06-aaab-9cd27962125d.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Latvia's Informative Inventory 1990- 2008</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="7a9db98c-5b25-49b9-ace6-ea693b1e1f6d" type="source data set" uri="../sources/7a9db98c-5b25-49b9-ace6-ea693b1e1f6d.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Italian Greenhouse Gas Inventory 1990-2008</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="20b6f41e-6725-4deb-8d68-dd5cd3447cc0" type="source data set" uri="../sources/20b6f41e-6725-4deb-8d68-dd5cd3447cc0.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Ireland - Informative Inventory Report 2010</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="0508ea86-19b8-4557-ad52-10bc9f73452f" type="source data set" uri="../sources/0508ea86-19b8-4557-ad52-10bc9f73452f.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Inventory of the U.S. Greenhouse Gas Emissions and Sinks (1990 -2008)</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="72d46923-91d3-4d2e-8565-0c4be7e8f543" type="source data set" uri="../sources/72d46923-91d3-4d2e-8565-0c4be7e8f543.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Inventaire des emissions des grandes installations de combustion en France</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="f99161e2-1e5e-4d6a-8c9a-4164b8ee87b5" type="source data set" uri="../sources/f99161e2-1e5e-4d6a-8c9a-4164b8ee87b5.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Integrated Report 2010</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="1a8ea509-dbfd-4ba5-805c-e9ba64d6b0cb" type="source data set" uri="../sources/1a8ea509-dbfd-4ba5-805c-e9ba64d6b0cb.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Integrated Pollution Prevention and Control (IPPC) - Ref. Doc. on the BAT for Large Combustion Plant</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="e2e153a9-0d09-4447-a398-f9995717eee9" type="source data set" uri="../sources/e2e153a9-0d09-4447-a398-f9995717eee9.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Integrated Pollution Prevention and Control</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="6e2d42b4-545d-4450-b5c4-0963dc5a2e59" type="source data set" uri="../sources/6e2d42b4-545d-4450-b5c4-0963dc5a2e59.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Informative Inventory Report</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="8ddabeaf-59ca-45e0-b661-5c29be4427f6" type="source data set" uri="../sources/8ddabeaf-59ca-45e0-b661-5c29be4427f6.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">India's Initial National Communication to the United Nations Framework Convention on Climate Change</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="1a1829ef-6948-485d-b545-3b72db17264c" type="source data set" uri="../sources/1a1829ef-6948-485d-b545-3b72db17264c.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Organisation et methodes des inventaires nationaux des emission atmospheriques en France</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="bbc58da8-15bb-4025-90dc-64ae4caed98f" type="source data set" uri="../sources/bbc58da8-15bb-4025-90dc-64ae4caed98f.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">NIR pour la France au titre de la convention cadre des Nations Unies sur les changements climatiques</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="516c7b37-100e-4481-9f93-00ed916d4541" type="source data set" uri="../sources/516c7b37-100e-4481-9f93-00ed916d4541.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">New Zealand's Greenhouse Gas Inventory 1990 - 2007</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="ccdc8729-d723-4a89-a1a2-60b6cab0c0bb" type="source data set" uri="../sources/ccdc8729-d723-4a89-a1a2-60b6cab0c0bb.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">National Inventory Report for 1985-2008 - Hungary</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="15b19a42-6441-4394-bcda-2e49ff1e0fd4" type="source data set" uri="../sources/15b19a42-6441-4394-bcda-2e49ff1e0fd4.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">National Inventory Report 2010 Sweden</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="4b36b132-4a68-431c-bc8b-45d2f5f21fab" type="source data set" uri="../sources/4b36b132-4a68-431c-bc8b-45d2f5f21fab.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">National Inventory Report 2010 Norway</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="23897ee3-ae1e-4a7b-85ea-5c8906d89269" type="source data set" uri="../sources/23897ee3-ae1e-4a7b-85ea-5c8906d89269.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">National Inventory Report 2010 for Greenhouse Gas Emissions</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="95d3a90d-512b-4b85-8458-f6a859a33d5a" type="source data set" uri="../sources/95d3a90d-512b-4b85-8458-f6a859a33d5a.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">National Inventory Report 2010</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="ab9a284c-a89e-4f6a-b507-60e0c0b5b551" type="source data set" uri="../sources/ab9a284c-a89e-4f6a-b507-60e0c0b5b551.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">National Inventory Report 2010</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="8892c020-5266-4d9e-828f-cdf47015d2bb" type="source data set" uri="../sources/8892c020-5266-4d9e-828f-cdf47015d2bb.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">National Inventory Report</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="b73a174c-74ad-4949-ae92-8e6f321c46b2" type="source data set" uri="../sources/b73a174c-74ad-4949-ae92-8e6f321c46b2.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">National Greenhouse Gas Inventory Report of the Czech Republic, NIR</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="9eeb0e0e-b628-4562-afb5-ddc20f317972" type="source data set" uri="../sources/9eeb0e0e-b628-4562-afb5-ddc20f317972.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">National Greenhouse Gas Inventory Report of Japan</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="44b3c207-ff56-4f71-9045-165718811601" type="source data set" uri="../sources/44b3c207-ff56-4f71-9045-165718811601.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">National Greenhouse Gas Emission Inventory Report 2009 of the Republic of Lithuania</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="ff68e8d0-7dde-4614-ba27-cf5262b7859c" type="source data set" uri="../sources/ff68e8d0-7dde-4614-ba27-cf5262b7859c.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Luxembourg´s National Inventory Report 2010 (1990 -2008)</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="68dd4a61-7521-4dfc-91fe-13513bb38ca1" type="source data set" uri="../sources/68dd4a61-7521-4dfc-91fe-13513bb38ca1.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Lithuanians's Informative Inventory 2008</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="555d4c66-852f-4743-a1f6-5a47a5a7dc23" type="source data set" uri="../sources/555d4c66-852f-4743-a1f6-5a47a5a7dc23.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Switzerland's Greenhouse Gas Inventory 1990-2008</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="ef9503bc-edf6-4910-8e93-933446348e4f" type="source data set" uri="../sources/ef9503bc-edf6-4910-8e93-933446348e4f.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Sumas Energy 2 Generation Facility Air Quality Issue Summary</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="f711df00-97d3-47c4-b180-5594b3ebe201" type="source data set" uri="../sources/f711df00-97d3-47c4-b180-5594b3ebe201.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Submission under the UN Framework Convention on Climate Change and under the Kyoto Protocol 2010</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="975b5607-1824-4b62-b16d-cd44b9427522" type="source data set" uri="../sources/975b5607-1824-4b62-b16d-cd44b9427522.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Slovenia's National Inventory Report 2010</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="7ed2df76-c25a-428b-870f-bb116cc4ba12" type="source data set" uri="../sources/7ed2df76-c25a-428b-870f-bb116cc4ba12.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Slovak Republic National Inventory Report 2010</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="648eabe1-6171-481e-9385-0aa23ca08a9a" type="source data set" uri="../sources/648eabe1-6171-481e-9385-0aa23ca08a9a.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Romania's Greenhouse Gas Inventory 1989-2008</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="fef1f400-2e11-4dbe-88eb-459269290154" type="source data set" uri="../sources/fef1f400-2e11-4dbe-88eb-459269290154.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Romanian Informative Inventory 2008</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="f494c11e-737c-4b1b-a911-1d511177b5e3" type="source data set" uri="../sources/f494c11e-737c-4b1b-a911-1d511177b5e3.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Richtlinie 2009/28/EG des Europäischen Parlaments und des Rates vom 23. April 2009</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="b431a232-fe5b-41c5-87b0-94fdb402a733" type="source data set" uri="../sources/b431a232-fe5b-41c5-87b0-94fdb402a733.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Renewables 2010</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="e8f646de-4e1f-40ab-8294-46f81ad67fd1" type="source data set" uri="../sources/e8f646de-4e1f-40ab-8294-46f81ad67fd1.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Power Hungry: Reinventing The U.S. Electric Grid</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="15fec28d-cbbc-42a8-aed9-4140a217c74e" type="source data set" uri="../sources/15fec28d-cbbc-42a8-aed9-4140a217c74e.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Power Connections: Canadian Electricity Trade and Foreign Policy</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="a25eb4da-f802-4e7b-b8f9-5db9d9d59fc2" type="source data set" uri="../sources/a25eb4da-f802-4e7b-b8f9-5db9d9d59fc2.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Portuguese National Inventory Report on Grennhouse Gases, 1990-2008</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="0aadf465-cc80-4843-93aa-1d2fc5a16263" type="source data set" uri="../sources/0aadf465-cc80-4843-93aa-1d2fc5a16263.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Portuguese Informative Inventory 1990-2008</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="2e7f9df2-2d00-4ed3-a366-001dc03e43db" type="source data set" uri="../sources/2e7f9df2-2d00-4ed3-a366-001dc03e43db.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Poland's Informative Inventory 2010</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="71fd4cb6-d468-4dca-8b65-b5b35ad6f80c" type="source data set" uri="../sources/71fd4cb6-d468-4dca-8b65-b5b35ad6f80c.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Verhaltenes Lächeln auf langen Gesichtern</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="34a298be-4daa-457f-bd8f-075755d1d42d" type="source data set" uri="../sources/34a298be-4daa-457f-bd8f-075755d1d42d.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">UK Greenhouse gas inventory, 1990 to 2008</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="6c59444d-2cf1-426d-9df7-93e60364c955" type="source data set" uri="../sources/6c59444d-2cf1-426d-9df7-93e60364c955.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Turkey Greenhouse gas Inventory, 1990 to 2008</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="68570e54-3d75-4c1f-b88d-df2a66c2ba30" type="source data set" uri="../sources/68570e54-3d75-4c1f-b88d-df2a66c2ba30.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">The European Pollutant Release and Transfer Register</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="3b65ee48-c719-40f4-ab73-7f0383584712" type="source data set" uri="../sources/3b65ee48-c719-40f4-ab73-7f0383584712.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">The CEA Mercury program</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="cbede9c2-03b5-457c-a947-6e944f9d39fc" type="source data set" uri="../sources/cbede9c2-03b5-457c-a947-6e944f9d39fc.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Telefonische Recherche - Preis Kraftwerksnebenprodukte</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="0f4a3245-3bc0-49ee-8da0-42405554f541" type="source data set" uri="../sources/0f4a3245-3bc0-49ee-8da0-42405554f541.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Plant-by-Plant emissions of SO2, NOx and dust and energy input to large combustion plants covered...</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="eb7d5b55-fdb1-43c7-a958-e8f3336d3d5c" type="source data set" uri="../sources/eb7d5b55-fdb1-43c7-a958-e8f3336d3d5c.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Statistical Yearbook (UCTE) 2008</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="b9ade189-da0d-4bad-920c-f5d50097d59c" type="source data set" uri="../sources/b9ade189-da0d-4bad-920c-f5d50097d59c.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Electricity Information 2014</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="8e032585-a688-45bc-a874-2d6dc9803574" type="source data set" uri="../sources/8e032585-a688-45bc-a874-2d6dc9803574.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">World Energy Statistics 2014</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="ef95b02a-053a-40a1-8d65-56c7431e6f8a" type="source data set" uri="../sources/ef95b02a-053a-40a1-8d65-56c7431e6f8a.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Energy Statistics of Non-OECD Countries 2014</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="33ed2482-8713-4171-8806-790354db13cb" type="source data set" uri="../sources/33ed2482-8713-4171-8806-790354db13cb.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Energy Balances of Non-OECD Countries 2014</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="4c561102-019f-4e33-9dc8-ffff0e98fd0f" type="source data set" uri="../sources/4c561102-019f-4e33-9dc8-ffff0e98fd0f.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Energy Statistics of OECD Countries 2014</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="e245e9dc-8aa8-4bcb-a605-4cd154249a36" type="source data set" uri="../sources/e245e9dc-8aa8-4bcb-a605-4cd154249a36.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Energy Balances of OECD Countries 2014</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="856e5d1f-d02a-4756-92dd-5e87df6fc7fe" type="source data set" uri="../sources/856e5d1f-d02a-4756-92dd-5e87df6fc7fe.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Statistical Yearbook 2012</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="b459b1e9-ae5d-45d5-ad05-a7eb90f9a27e" type="source data set" uri="../sources/b459b1e9-ae5d-45d5-ad05-a7eb90f9a27e.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">IEA Wind - 2012 Annual report</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="e5b6f7d3-0e77-48f6-84fc-35c51d3f0d7e" type="source data set" uri="../sources/e5b6f7d3-0e77-48f6-84fc-35c51d3f0d7e.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Wind in power 2012 - European statistics </common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="896f8a87-5f13-47a2-a33f-9ab48189776e" type="source data set" uri="../sources/896f8a87-5f13-47a2-a33f-9ab48189776e.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">Reliable Disclosure in Europe: Status, Improvements and Perspectives</common:shortDescription>
+      </referenceToDataSource>
+      <referenceToDataSource refObjectId="0e3c13f0-f360-4805-aba5-23bf5514a582" type="source data set" uri="../sources/0e3c13f0-f360-4805-aba5-23bf5514a582.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">European Residual Mixes 2013</common:shortDescription>
+      </referenceToDataSource>
+      <percentageSupplyOrProductionCovered>95.0</percentageSupplyOrProductionCovered>
+      <uncertaintyAdjustments xml:lang="en">None</uncertaintyAdjustments>
+      <useAdviceForDataSet xml:lang="en">Notice: this data set supersedes the EF3.0-compliant version (see link under "preceding data set version" below calculated with the EF3.0). The life cycle inventory is not changed from the original EF3.0 data set. The LCIA results are calculated based on the EF3.1 methods which provide updated characterisation factors in the following impact categories: Climate Change, Ecotoxicity freshwater, Photochemical Ozone Formation, Acidification, Human Toxicity non-cancer, and Human Toxicity cancer. The review report and the data quality ratings refer to the original results. The data set has been updated by the European Commission on the basis of the original EF3.0 data set delivered by the data provider.&#13;&#13;Life Cycle Inventory (LCI) datasets to be used for implementing regular Product Environmental Footprint (PEF) studies and Organisation Environmental Footprint (OEF) studies exclusively under the specified Product groups and sectors as defined in the Product Environmental Footprint Category Rules (PEFCR) and Organisation Environmental Footprint Sectorial Rules (OEFSR) listed in http://ec.eiirona.eu/enviiOnment/eussd/smgp/PEFCR OEFSR en.htm and in accordance with the terms and conditions of this EULA exclusively until 31st December 2024 (PERMITTED USE).&#13;
+The datasets are specifically designed for these methodological requirements (see above) and the related LCIA methods (listed below) recommended in EF.&#13;
+For use outside this scope, see beforehand the license conditions at http://www.gabi-software.com/fileadmin/gabi/EULA_European_Commission_-_use_of_thinkstep_LCI_data.pdf</useAdviceForDataSet>
+    </dataSourcesTreatmentAndRepresentativeness>
+    <completeness>
+      <completenessProductModel>All relevant flows quantified</completenessProductModel>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad66ce-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" version="03.00.014">
+        <common:shortDescription xml:lang="en">EF 3.1 Water use</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6494-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" version="01.00.010">
+        <common:shortDescription xml:lang="en">EF 3.1 Resource use, minerals and metals</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6110-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" version="01.00.010">
+        <common:shortDescription xml:lang="en">EF 3.1 Resource use, fossils</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b5c610fe-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" version="02.01.000">
+        <common:shortDescription xml:lang="en">EF 3.1 Photochemical ozone formation - human health</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b5c602c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" version="02.00.011">
+        <common:shortDescription xml:lang="en">EF 3.1 EF-particulate matter</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b5c629d6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" version="02.00.012">
+        <common:shortDescription xml:lang="en">EF 3.1 Ozone depletion</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6890-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" version="01.00.010">
+        <common:shortDescription xml:lang="en">EF 3.1 Land use</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b5c632be-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" version="01.00.011">
+        <common:shortDescription xml:lang="en">EF 3.1 Ionising radiation, human health</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="8c3141e9-1f15-43b5-bff2-182e49893a46" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">EF 3.1 Human toxicity, non-cancer_organics</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="9d1d43a2-e1aa-4c16-acd4-3dd8a6a2fb85" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">EF 3.1 Human toxicity, non-cancer_inorganics</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">EF 3.1 Human toxicity, non-cancer</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="503699e0-eca9-4089-8bf8-e0f49c93e578" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">EF 3.1 Human toxicity, cancer_organics</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="01500b74-7ffb-463e-9bd4-72f17c2263ff" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">EF 3.1 Human toxicity, cancer_inorganics</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="2299222a-bbd8-474f-9d4f-4dd1f18aea7c" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">EF 3.1 Human toxicity, cancer</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b5c614d2-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" version="01.02.009">
+        <common:shortDescription xml:lang="en">EF 3.1 Eutrophication, terrestrial</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b53ec18f-7377-4ad3-86eb-cc3f4f276b2b" type="LCIA method data set" version="01.00.010">
+        <common:shortDescription xml:lang="en">EF 3.1 Eutrophication, freshwater</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b5c619fa-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" version="02.00.010">
+        <common:shortDescription xml:lang="en">EF 3.1 Eutrophication marine</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="fd530f00-9325-424a-92ef-aaac67922fd9" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">EF 3.1 Ecotoxicity, freshwater_organics</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="dacd48b5-4da5-49aa-aff4-cd5f5495c037" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">EF 3.1 Ecotoxicity, freshwater_inorganics</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="05316e7a-b254-4bea-9cf0-6bf33eb5c630" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">EF 3.1 Ecotoxicity, freshwater</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="14af9ca7-aa1d-4832-b1d9-ab05a06dcb12" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">EF 3.1 Climate change-Land use and land use change</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="7fce5b3a-66b8-4ce1-91e8-a925aee1f186" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">EF 3.1 Climate change-Fossil</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="706261af-a357-4cc0-a50a-f3033fcbd556" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">EF 3.1 Climate change-Biogenic</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="6209b35f-9447-40b5-b68c-a1099e3674a0" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">EF 3.1 Climate change</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b5c611c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" version="01.04.000">
+        <common:shortDescription xml:lang="en">EF 3.1 Acidification</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <completenessElementaryFlows type="Climate change" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Ozone depletion" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Summer smog" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Eutrophication" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Acidification" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Human toxicity" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Freshwater ecotoxicity" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Seawater eco-toxicity" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Terrestric eco-toxicity" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Radioactivity" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Land use" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Non-renewable material resource depletion" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Renewable material resource consumption" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Non-renewable primary energy depletion" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Renewable primary energy consumption" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Particulate matter/respiratory inorganics" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Species depletion" value="No statement"/>
+      <completenessElementaryFlows type="Noise" value="No statement"/>
+    </completeness>
+    <validation>
+      <review type="Independent review panel">
+        <common:scope name="Raw data"/>
+        <common:scope name="Unit process(es), single operation"/>
+        <common:scope name="Unit process(es), black box"/>
+        <common:scope name="LCI results or Partly terminated system"/>
+        <common:scope name="LCIA results"/>
+        <common:scope name="Documentation"/>
+        <common:scope name="Life cycle inventory methods"/>
+        <common:scope name="LCIA results calculation"/>
+        <common:scope name="Goal and scope definition"/>
+        <common:dataQualityIndicators>
+          <common:dataQualityIndicator ext:numericValue="1.00" name="Technological representativeness" value="Very good"/>
+          <common:dataQualityIndicator ext:numericValue="1.00" name="Time representativeness" value="Very good"/>
+          <common:dataQualityIndicator ext:numericValue="1.00" name="Geographical representativeness" value="Very good"/>
+          <common:dataQualityIndicator name="Completeness" value="Not applicable"/>
+          <common:dataQualityIndicator ext:numericValue="2.00" name="Precision" value="Good"/>
+          <common:dataQualityIndicator name="Methodological appropriateness and consistency" value="Not applicable"/>
+          <common:dataQualityIndicator name="Overall quality" value="Very good"/>
+        </common:dataQualityIndicators>
+        <common:reviewDetails xml:lang="en">The dataset is compliant to the 2019 JRC report “Suggestion for updating the PEF method”, the data guide “Guide for EF compliant data sets” and "ILCD Data Network - Entry-level".&#13;
+This dataset has the following DQRs:&#13;
+Technological representativeness: very good (1.0)&#13;
+Time representativeness: very good (1.0)&#13;
+Geographical representativeness: vey good (1.0)&#13;
+Precision: good (2.0)&#13;
+Very good overall quality (1.3)&#13;
+In the EF context the fields “Methodological appropriateness and consistency” and “Completeness” shall be set as “Not applicable”.&#13;
+The results are plausible, both for the impact category level results as well as for the most relevant elementary flows.  The data set documentation is reflecting what has been modelled and is appropriate in terms of content and level of detail. The system boundaries include all relevant processes and activity types from cradle to gate, the not covered activities and flows (cut-off due to data limitations for less relevant contributors) jointly contribute less than 3% to the overall environmental impacts. An active cut-off, i.e. by excluding available data, has not been found. The LCI modelling choices follow the PEF and OEF guides, such as allocation, consistency of included processes, and LCI methodology in general; further requirements of the PEF guide and the PEF and OEF guidance documents (version 6.3 of 2018) are equally observed. The pre-calculated LCIA results that are provided for the EF3.0 impact categories have been calculated in correspondence of the Input and Output elementary flows (including their geographical validity, e.g. country-specific water consumption) with the applied LCIA method(s). &#13;
+The DQR results are conservative expert judgements, confirmed or - if necessary - corrected by the reviewers, based on their methodological as well as process understanding and considering semi-quantitatively the contribution of the DQRs of the used EF energy and transport datasets and of EF-related DQRs provided and reviewed within the GaBi databases. The overall DQRs of the datasets consider primarily the quality and representativeness of the foreground technology information and that of the key upstream processes. If datasets are e.g. energy and transport intensive - or gain credits from energy recovery - the DQRs of the used EF energy and transport datasets influence the overall DQR significantly and have been taken into account via expert judgement. In case of doubt, lower (i.e. lower quality) DQRs were assigned.&#13;
+</common:reviewDetails>
+        <common:referenceToNameOfReviewerAndInstitution refObjectId="0dc85e5c-85a3-4887-a8a6-c626f4d4661a" type="contact data set" uri="../contacts/0dc85e5c-85a3-4887-a8a6-c626f4d4661a.xml" version="00.00.000">
+          <common:shortDescription xml:lang="en">Peter Shonfield (PhD)</common:shortDescription>
+        </common:referenceToNameOfReviewerAndInstitution>
+        <common:referenceToNameOfReviewerAndInstitution refObjectId="d2a7530e-3e5c-4306-a309-41756a2c5508" type="contact data set" uri="../contacts/d2a7530e-3e5c-4306-a309-41756a2c5508.xml" version="00.00.000">
+          <common:shortDescription xml:lang="en">Johannes Kreissig</common:shortDescription>
+        </common:referenceToNameOfReviewerAndInstitution>
+        <common:referenceToNameOfReviewerAndInstitution refObjectId="fc839b31-0dec-43b0-8376-0c40a4d2ffae" type="contact data set" uri="../contacts/fc839b31-0dec-43b0-8376-0c40a4d2ffae.xml" version="00.00.000">
+          <common:shortDescription xml:lang="en">Dr.-Ing. Wolfram Trinius</common:shortDescription>
+        </common:referenceToNameOfReviewerAndInstitution>
+        <common:otherReviewDetails xml:lang="en">The review procedure concerning EF 3.0 data is to be understood as additional review on top of the already existing independent panel review for EF 2.0, as far as updates are concerned. The review was undertaken as independent internal review for the update from EF 2.0 to EF 3.0; done by Peter Shonfield and Manfred Russ. Please see related EF 3.0 review details:&#13;
+http://www.gabi-software.com/fileadmin/GaBi_Databases/Internal_Review_Statement_for_EF_3-0.pdf</common:otherReviewDetails>
+        <common:referenceToCompleteReviewReport refObjectId="2fba8bbb-b051-4a6a-99ca-37556b130331" type="source data set" uri="../sources/2fba8bbb-b051-4a6a-99ca-37556b130331.xml" version="00.00.000">
+          <common:shortDescription xml:lang="en">MT Residual grid mix (EF 3.0)</common:shortDescription>
+        </common:referenceToCompleteReviewReport>
+      </review>
+    </validation>
+    <complianceDeclarations>
+      <compliance>
+        <common:referenceToComplianceSystem refObjectId="d92a1a12-2545-49e2-a585-55c259997756" type="source data set" uri="../sources/d92a1a12-2545-49e2-a585-55c259997756.xml" version="35.00.000">
+          <common:shortDescription xml:lang="en">ILCD Data Network - Entry-level</common:shortDescription>
+        </common:referenceToComplianceSystem>
+        <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+        <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+        <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+        <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+        <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+        <common:qualityCompliance>Not defined</common:qualityCompliance>
+      </compliance>
+      <compliance>
+        <common:referenceToComplianceSystem refObjectId="afc1ce43-e800-494b-aad4-46b9e8ea74da" type="source data set" uri="../sources/afc1ce43-e800-494b-aad4-46b9e8ea74da.xml" version="00.00.000">
+          <common:shortDescription xml:lang="en">Suggestions for updating the PEF method 2019</common:shortDescription>
+        </common:referenceToComplianceSystem>
+        <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+        <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+        <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+        <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+        <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+        <common:qualityCompliance>Fully compliant</common:qualityCompliance>
+      </compliance>
+      <compliance>
+        <common:referenceToComplianceSystem refObjectId="1ea48531-e397-4ca7-ac08-056e4fa11826" type="source data set" uri="../sources/1ea48531-e397-4ca7-ac08-056e4fa11826.xml" version="35.00.000">
+          <common:shortDescription xml:lang="en">ISO 14040 Environmental Management – Life Cycle Assessment – Principles and Framework, 2006</common:shortDescription>
+        </common:referenceToComplianceSystem>
+        <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+        <common:nomenclatureCompliance>Not defined</common:nomenclatureCompliance>
+        <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+        <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+        <common:documentationCompliance>Not defined</common:documentationCompliance>
+        <common:qualityCompliance>Not defined</common:qualityCompliance>
+      </compliance>
+      <compliance>
+        <common:referenceToComplianceSystem refObjectId="1adb438d-4a8b-4919-885e-0a66da3c0f2a" type="source data set" uri="../sources/1adb438d-4a8b-4919-885e-0a66da3c0f2a.xml" version="35.00.000">
+          <common:shortDescription xml:lang="en">ISO 14044:2006. Environmental Management – Life Cycle Assessment – Requirements and guidelines. </common:shortDescription>
+        </common:referenceToComplianceSystem>
+        <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+        <common:nomenclatureCompliance>Not defined</common:nomenclatureCompliance>
+        <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+        <common:reviewCompliance>Not defined</common:reviewCompliance>
+        <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+        <common:qualityCompliance>Not defined</common:qualityCompliance>
+      </compliance>
+      <compliance>
+        <common:referenceToComplianceSystem refObjectId="0eb2b770-2cb1-43cf-9fbc-215df36fe9f0" type="source data set" uri="../sources/0eb2b770-2cb1-43cf-9fbc-215df36fe9f0.xml" version="00.00.001">
+          <common:shortDescription xml:lang="en">Environmental Footprint 3.1</common:shortDescription>
+        </common:referenceToComplianceSystem>
+        <common:approvalOfOverallCompliance>Not defined</common:approvalOfOverallCompliance>
+        <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+        <common:methodologicalCompliance>Not defined</common:methodologicalCompliance>
+        <common:reviewCompliance>Not defined</common:reviewCompliance>
+        <common:documentationCompliance>Not defined</common:documentationCompliance>
+        <common:qualityCompliance>Not defined</common:qualityCompliance>
+      </compliance>
+    </complianceDeclarations>
+  </modellingAndValidation>
+  <administrativeInformation>
+    <common:commissionerAndGoal>
+      <common:referenceToCommissioner refObjectId="e0c82c5f-6b85-4d66-a84c-147d54abb889" type="contact data set" uri="../contacts/e0c82c5f-6b85-4d66-a84c-147d54abb889.xml" version="00.00.000">
+        <common:shortDescription xml:lang="en">European Commission, DG ENV B1</common:shortDescription>
+      </common:referenceToCommissioner>
+      <common:project xml:lang="en">Provision of product environmental footprint-compliant life cycle inventory datasets. Contract number 070201/2019/802697/SER/ENV.B.1</common:project>
+      <common:intendedApplications xml:lang="en">Life Cycle Inventory (LCI) datasets to be used in Product Environmental Footprint Category Rules (PEFCRs) and Organisation Environmental Footprint Sectoral Rules (OEFSRs) developed in the context of the Environmental Footprint transition phase launched by the Commission in 2018.</common:intendedApplications>
+    </common:commissionerAndGoal>
+    <dataGenerator>
+      <common:referenceToPersonOrEntityGeneratingTheDataSet refObjectId="d7fa0337-f279-430d-becf-7f3111a85010" type="contact data set" uri="../contacts/d7fa0337-f279-430d-becf-7f3111a85010.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">thinkstep</common:shortDescription>
+      </common:referenceToPersonOrEntityGeneratingTheDataSet>
+    </dataGenerator>
+    <dataEntryBy>
+      <common:timeStamp>2022-10-21T09:54:10.017+02:00</common:timeStamp>
+      <common:referenceToDataSetFormat refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" type="source data set" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+      </common:referenceToDataSetFormat>
+      <common:referenceToPersonOrEntityEnteringTheData refObjectId="d7fa0337-f279-430d-becf-7f3111a85010" type="contact data set" uri="../contacts/d7fa0337-f279-430d-becf-7f3111a85010.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">thinkstep</common:shortDescription>
+      </common:referenceToPersonOrEntityEnteringTheData>
+      <common:referenceToDataSetUseApproval refObjectId="be34bbb0-b054-11db-abbd-0800200c9a66" type="contact data set" uri="../contacts/be34bbb0-b054-11db-abbd-0800200c9a66.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">No official approval by producer or operator</common:shortDescription>
+      </common:referenceToDataSetUseApproval>
+    </dataEntryBy>
+    <publicationAndOwnership>
+      <common:dateOfLastRevision>2020-05-13T09:06:13.000</common:dateOfLastRevision>
+      <common:dataSetVersion>22.11.000</common:dataSetVersion>
+      <common:referenceToPrecedingDataSetVersion refObjectId="606ba965-038d-40c6-ac34-7efe6867d717" type="process data set" uri="https://lcdn.thinkstep.com/resource/processes/606ba965-038d-40c6-ac34-7efe6867d717?version=22.10.017" version="22.10.017">
+        <common:shortDescription xml:lang="en">Residual grid mixtechnology mixconsumption mix, to consumer1kV - 60kV</common:shortDescription>
+      </common:referenceToPrecedingDataSetVersion>
+      <common:permanentDataSetURI>http://lcdn.thinkstep.com/Node/showProcess.xhtml?uuid=606ba965-038d-40c6-ac34-7efe6867d717&amp;stock=EF3_0_official_data_energy_transport_packaging_EoL</common:permanentDataSetURI>
+      <common:workflowAndPublicationStatus>Data set finalised; entirely published</common:workflowAndPublicationStatus>
+      <common:referenceToOwnershipOfDataSet refObjectId="d7fa0337-f279-430d-becf-7f3111a85010" type="contact data set" uri="../contacts/d7fa0337-f279-430d-becf-7f3111a85010.xml" version="35.00.000">
+        <common:shortDescription xml:lang="en">thinkstep</common:shortDescription>
+      </common:referenceToOwnershipOfDataSet>
+      <common:copyright>true</common:copyright>
+      <common:referenceToEntitiesWithExclusiveAccess refObjectId="8b3e08f0-740a-43b1-aa8d-bec56c5daf6e" type="contact data set" uri="../contacts/8b3e08f0-740a-43b1-aa8d-bec56c5daf6e.xml" version="00.00.000">
+        <common:shortDescription xml:lang="en">FINAL USER</common:shortDescription>
+      </common:referenceToEntitiesWithExclusiveAccess>
+      <common:licenseType>Free of charge for some user types or use types</common:licenseType>
+      <common:accessRestrictions xml:lang="en">http://www.gabi-software.com/fileadmin/gabi/EULA_European_Commission_-_use_of_thinkstep_LCI_data.pdf</common:accessRestrictions>
+    </publicationAndOwnership>
+  </administrativeInformation>
+  <exchanges>
+    <exchange dataSetInternalID="0">
+      <referenceToFlowDataSet refObjectId="ec9bf456-9b0c-458e-bf48-b13930c6e36b" type="flow data set" uri="../flows/ec9bf456-9b0c-458e-bf48-b13930c6e36b.xml">
+        <common:shortDescription xml:lang="en">Electricity from heavy fuel oil</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Input</exchangeDirection>
+      <meanAmount>3.75407327984279</meanAmount>
+      <resultingAmount>3.75407327984279</resultingAmount>
+      <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+      <common:other>
+        <ns3:thinkstep>
+          <ns3:ioType>valuable</ns3:ioType>
+        </ns3:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="1">
+      <referenceToFlowDataSet refObjectId="73218c6c-c233-469b-b8b4-5d9e43728bd2" type="flow data set" uri="../flows/73218c6c-c233-469b-b8b4-5d9e43728bd2.xml">
+        <common:shortDescription xml:lang="en">Electricity from fossil unspecified</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Input</exchangeDirection>
+      <meanAmount>0.00865427337239493</meanAmount>
+      <resultingAmount>0.00865427337239493</resultingAmount>
+      <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+      <common:other>
+        <ns3:thinkstep>
+          <ns3:ioType>valuable</ns3:ioType>
+        </ns3:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="2">
+      <referenceToFlowDataSet refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" type="flow data set" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+        <common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <meanAmount>3.6</meanAmount>
+      <resultingAmount>3.6</resultingAmount>
+      <relativeStandardDeviation95In>0</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+      <common:other>
+        <ns3:thinkstep>
+          <ns3:ioType>valuable</ns3:ioType>
+        </ns3:thinkstep>
+      </common:other>
+    </exchange>
+  </exchanges>
+</processDataSet>
