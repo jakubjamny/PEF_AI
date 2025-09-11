@@ -1,0 +1,2011 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<processDataSet xmlns="http://lca.jrc.it/ILCD/Process" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:ext="http://eplca.jrc.ec.europa.eu/ILCD/Extensions/2017" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" locations="../ILCDLocations.xml" version="1.1" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>3310fbed-0b54-5527-8569-e7363648efa9</common:UUID>
+            <name>
+                <baseName>bleaching, conventional, elementary</baseName>
+                <treatmentStandardsRoutes>Pre-treatment</treatmentStandardsRoutes>
+                <mixAndLocationTypes>production mix, at plant</mixAndLocationTypes>
+                <functionalUnitFlowProperties>textile service</functionalUnitFlowProperties>
+            </name>
+            <identifierOfSubDataSet/>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0">Other Services</common:class>
+                    <common:class level="1">Other services</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment>Notice: this data set supersedes the EF3.0-compliant version (see link under "preceding data set version" below calculated with the EF3.0). The life cycle inventory is not changed from the original EF3.0 data set. The LCIA results are calculated based on the EF3.1 methods which provide updated characterisation factors in the following impact categories: Climate Change, Ecotoxicity freshwater, Photochemical Ozone Formation, Acidification, Human Toxicity non-cancer, and Human Toxicity cancer. The review report and the data quality ratings refer to the original results. The data set has been updated by the European Commission on the basis of the original EF3.0 data set delivered by the data provider.This sub-process has limited documentation only. For all detailed documentation of the full model to which this data set belongs (such as DQRs, review reports and other technical documentation), please see this process: bleaching, conventional - GLO [UUID: d60b0c47-7e87-5f3b-b1a1-33f2ddc29873]</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>0</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time>
+            <common:referenceYear>2018</common:referenceYear>
+            <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="GLO">
+                <descriptionOfRestrictions/>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses>This activity is modeled as a service, so no input of textile is considered. Electricity consumption and chemicals used (hydrogen per oxide, sodium hydroxide, and inorganic chemicals) are considered as inputs. Wastewater discharges as output. A separate dataset is taking care of wasterwater treatment. This activity correspond to weighted average of data from mills in India and Bangladesh. Uncertainty has been adjusted accordingly</technologyDescriptionAndIncludedProcesses>
+            <technologicalApplicability>na</technologicalApplicability>
+            <referenceToTechnologyFlowDiagrammOrPicture refObjectId="4562465a-92b8-5dc0-b302-692e4e067f38" type="source data set" uri="../sources/4562465a-92b8-5dc0-b302-692e4e067f38.xml" version="04.00.001">
+                <common:shortDescription>Diagram of data for chemicals EF3.0</common:shortDescription>
+            </referenceToTechnologyFlowDiagrammOrPicture>
+        </technology>
+        <mathematicalRelations>
+            <modelDescription/>
+        </mathematicalRelations>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, single operation</typeOfDataSet>
+            <LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+            <deviationsFromLCIMethodPrinciple>The background data uses: 
+- the \xe2\x80\x9cRecycled content cut-off\xe2\x80\x9d approach to allocate end-of-life by-products and secondary materials. This allocation is explained in the description of the recycled content system model (http://www.ecoinvent.org/database/system-models-in-ecoinvent-3/cut-off-system-model/allocation-cut-off-by-classification.html).
+OR
+- EF compliant data</deviationsFromLCIMethodPrinciple>
+            <LCIMethodApproaches>Allocation - market value</LCIMethodApproaches>
+            <deviationsFromLCIMethodApproaches>Background data: 
+- the \xe2\x80\x9cRecycled content cut-off\xe2\x80\x9d approach to allocate end-of-life by-products and secondary materials. This allocation is explained in the description of the recycled content system model (http://www.ecoinvent.org/database/system-models-in-ecoinvent-3/cut-off-system-model/allocation-cut-off-by-classification.html). The ecoinvent database mostly relies on “Allocation – market values” apart for few exceptions particularly in the energy sector. ecoinvent energy data is replaced with EF3.0 core data as per the EF guidelines version 2.0.
+OR
+- EF compliant data</deviationsFromLCIMethodApproaches>
+            <modellingConstants>All modelling constants follow the requirements listed in the Tender Specifications 070201/2020/SER/ENV.B1. Completeness: There are no intentional cut-offs in the inventory no matter how small their contribution to all the EF impact categories is. Eventual cut-offs are in compliance with the Guide for EF compliant data sets (JRC 2020), i.e. only if below the 3% cut-off rule. Water use: water use is modelled at country level using separate flows for water withdrawal, water release and water evaporation. Handling multi-functional processes: the following PEF multi- functionality decision hierarchy is applied for resolving all multi- functionality problems: (1) subdivision or system expansion; (2) allocation based on a relevant underlying physical relationship (substitution may apply here); (3) allocation based on some other relationship. Direct land use change: GHG emissions from direct LUC allocated to good/service for 20 years after the LUC occurs, with IPCC default values. Carbon storage and delayed emissions: credits associated with temporary (carbon) storage or delayed emissions up to 300 years are not be considered. Emissions off-setting: are not included. Capital goods (including infrastructures) and their End of life: they are included. System boundaries: system boundaries include all processes linked to the product supply chain (e.g. maintenance). Time period: emissions and removals are modelled as if released or removed at the beginning of the assessment method. Fossil and biogenic carbon emissions and removals: removals and emissions are modelled as follows: All GHG emissions from fossil fuels (including peat and limestone) are modelled consistently with the most updated ILCD list of elementary flows. The non-fossil (biogenic) carbon flows are modelled consistently with the most updated ILCD list of elementary flows.</modellingConstants>
+            <deviationsFromModellingConstants>None</deviationsFromModellingConstants>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <dataCutOffAndCompletenessPrinciples>There are no intentional cut-offs in the inventory no matter how small their contribution to all the EF impact categories is. Eventual cut-offs are in compliance with the Guide for EF compliant data sets (JRC 2020), i.e. only if below the 3% cut-off rule. The dataset dry mass and water balance has been checked to ensure the inventory is complete. Capital goods (e.g. infrastructure) and their end-of-life are included.</dataCutOffAndCompletenessPrinciples>
+            <deviationsFromCutOffAndCompletenessPrinciples>None</deviationsFromCutOffAndCompletenessPrinciples>
+            <dataSelectionAndCombinationPrinciples>These datasets include, in both their foreground and background data, links to EF3.0 compliant data.
+The relevant background data on energy, transport, and End of Life are from the LCDN data node (http://lcdn.thinkstep.com/Node/).
+All other background data in the supply of this product for which no EF3.0 process was available are from ecoinvent v3.7 database (www.ecoinvent.org) or other data sources.</dataSelectionAndCombinationPrinciples>
+            <deviationsFromSelectionAndCombinationPrinciples>None</deviationsFromSelectionAndCombinationPrinciples>
+            <dataTreatmentAndExtrapolationsPrinciples>Several data sources have been used to model the inventory.</dataTreatmentAndExtrapolationsPrinciples>
+            <deviationsFromTreatmentAndExtrapolationPrinciples>None</deviationsFromTreatmentAndExtrapolationPrinciples>
+            <referenceToDataSource refObjectId="d4fe7d8a-1f8c-591d-a31f-f58d2f888e3e" type="source data set" uri="../sources/d4fe7d8a-1f8c-591d-a31f-f58d2f888e3e.xml" version="01.00.000">
+                <common:shortDescription>Background Data for Representative products and organisations. EF 3.0 compliant (data stock)</common:shortDescription>
+            </referenceToDataSource>
+            <referenceToDataSource refObjectId="171c5d5d-882c-528c-9108-3eb44fa5b712" type="source data set" uri="../sources/171c5d5d-882c-528c-9108-3eb44fa5b712.xml" version="01.00.000">
+                <common:shortDescription>ecoinvent (2017) Data on the Production of Chemicals created for the EU Product Environmental Footprint (PEF) pilot phase implementation, www.ecoinvent.org, ecoinvent Association, Zurich, Switzerland</common:shortDescription>
+            </referenceToDataSource>
+            <referenceToDataSource refObjectId="0dac8519-d8b1-5edb-b022-b939a49f12bc" type="source data set" uri="../sources/0dac8519-d8b1-5edb-b022-b939a49f12bc.xml" version="01.00.000">
+                <common:shortDescription>Moreno Ruiz E., Valsasina L., FitzGerald D., Symeonidis A., Turner D., Müller J., Minas N., Bourgault G., Vadenbo C., Ioannidou D., Wernet, G., (2020). Documentation of changes implemented in ecoinvent database v3.7 &amp; v3.7.1. ecoinvent Association, Zürich, Switzerland.</common:shortDescription>
+            </referenceToDataSource>
+            <referenceToDataSource refObjectId="ab9f664c-f143-5372-a2ef-32d6d2bcee5d" type="source data set" uri="../sources/ab9f664c-f143-5372-a2ef-32d6d2bcee5d.xml" version="01.00.000">
+                <common:shortDescription>UNFCCC (2012) COMPONENT PROJECT ACTIVITIES DESIGN DOCUMENT (CPA-DD). Accessed online August 8th 2021: http://gec.jp/gec/jp/Activities/cdm-fs/2012/2012_cdmfs01_jPear_bangladesh_cpa-dd.pdf</common:shortDescription>
+            </referenceToDataSource>
+            <referenceToDataSource refObjectId="5b1b6d85-a226-5e17-bade-1ab14053ae6a" type="source data set" uri="../sources/5b1b6d85-a226-5e17-bade-1ab14053ae6a.xml" version="01.00.000">
+                <common:shortDescription>QDTONGDA (2021) Td638 Bunch Shaped Indigo Rope Dyeing Machine of Fast Dyeing Speed. Accessed online August 8th 2021: https://qdtongda.en.made-in-china.com/product/jyeQIDuEZXcl/China-Td638-Bunch-Shaped-Indigo-Rope-Dyeing-Machine-of-Fast-Dyeing-Speed.html</common:shortDescription>
+            </referenceToDataSource>
+            <annualSupplyOrProductionVolume/>
+            <samplingProcedure/>
+            <dataCollectionPeriod/>
+            <uncertaintyAdjustments>None</uncertaintyAdjustments>
+            <useAdviceForDataSet>This data set is a supporting sub-data set and must be used exclusively as sub-data set of its corresponding level-1 partly disaggregated data set (see “General comment” field for exact name and UUID).</useAdviceForDataSet>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <completeness>
+            <completenessProductModel>All relevant flows quantified</completenessProductModel>
+                  
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b53ec18f-7377-4ad3-86eb-cc3f4f276b2b" type="LCIA method data set" uri="../lciamethods/b53ec18f-7377-4ad3-86eb-cc3f4f276b2b.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication, freshwater</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c632be-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c632be-def3-11e6-bf01-fe55135034f3.xml" version="01.00.011">
+                <common:shortDescription xml:lang="en">Ionising radiation, human health</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad66ce-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad66ce-c78d-11e6-9d9d-cec0c932ce01.xml" version="03.00.014">
+                <common:shortDescription xml:lang="en">Water use</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c614d2-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c614d2-def3-11e6-bf01-fe55135034f3.xml" version="01.02.009">
+                <common:shortDescription xml:lang="en">Eutrophication, terrestrial</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="05316e7a-b254-4bea-9cf0-6bf33eb5c630" type="LCIA method data set" uri="../lciamethods/05316e7a-b254-4bea-9cf0-6bf33eb5c630.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Ecotoxicity, freshwater</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c602c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c602c6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.011">
+                <common:shortDescription xml:lang="en">EF-particulate Matter</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6890-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6890-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Land use</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c611c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c611c6-def3-11e6-bf01-fe55135034f3.xml" version="01.04.000">
+                <common:shortDescription xml:lang="en">Acidification</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6110-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6110-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, fossils</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="6209b35f-9447-40b5-b68c-a1099e3674a0" type="LCIA method data set" uri="../lciamethods/6209b35f-9447-40b5-b68c-a1099e3674a0.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Climate change</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6494-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6494-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, minerals and metals</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c629d6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c629d6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.012">
+                <common:shortDescription xml:lang="en">Ozone depletion</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="2299222a-bbd8-474f-9d4f-4dd1f18aea7c" type="LCIA method data set" uri="../lciamethods/2299222a-bbd8-474f-9d4f-4dd1f18aea7c.xml" version="01.01.000">
+                <common:shortDescription xml:lang="en">Human toxicity, cancer</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c619fa-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c619fa-def3-11e6-bf01-fe55135034f3.xml" version="02.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication marine</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8" type="LCIA method data set" uri="../lciamethods/7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Human toxicity, non-cancer</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c610fe-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c610fe-def3-11e6-bf01-fe55135034f3.xml" version="02.01.000">
+                <common:shortDescription xml:lang="en">Photochemical ozone formation - human health</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <completenessElementaryFlows type="Climate change" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Ozone depletion" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Summer smog" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Eutrophication" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Acidification" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Human toxicity" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Freshwater ecotoxicity" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Seawater eco-toxicity" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Terrestric eco-toxicity" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Radioactivity" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Land use" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Non-renewable material resource depletion" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Renewable material resource consumption" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Non-renewable primary energy depletion" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Renewable primary energy consumption" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Particulate matter/respiratory inorganics" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Species depletion" value="No statement"/>
+            <completenessElementaryFlows type="Noise" value="No statement"/>
+        </completeness>
+        <complianceDeclarations>
+            <compliance>
+                <common:referenceToComplianceSystem refObjectId="2f8a3ebd-befc-4ea9-a6de-34bb6d426d2f" type="source data set" uri="../sources/2f8a3ebd-befc-4ea9-a6de-34bb6d426d2f.xml" version="00.00.001">
+                    <common:shortDescription>Environmental Footprint non-primary supporting data set</common:shortDescription>
+                </common:referenceToComplianceSystem>
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+                <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+            </compliance>
+            <compliance>
+                <common:referenceToComplianceSystem refObjectId="0eb2b770-2cb1-43cf-9fbc-215df36fe9f0" type="source data set" uri="../sources/0eb2b770-2cb1-43cf-9fbc-215df36fe9f0.xml" version="00.00.001">
+                    <common:shortDescription>Environmental Footprint 3.1</common:shortDescription>
+                </common:referenceToComplianceSystem>
+                <common:approvalOfOverallCompliance>Not defined</common:approvalOfOverallCompliance>
+                <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+                <common:methodologicalCompliance>Not defined</common:methodologicalCompliance>
+                <common:reviewCompliance>Not defined</common:reviewCompliance>
+                <common:documentationCompliance>Not defined</common:documentationCompliance>
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+            </compliance>
+        </complianceDeclarations>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <common:commissionerAndGoal>
+            <common:referenceToCommissioner refObjectId="cf7f0f79-a312-4b28-89ea-32a589b87f58" type="contact data set" uri="../contacts/cf7f0f79-a312-4b28-89ea-32a589b87f58.xml" version="01.00.000">
+                <common:shortDescription>European Commission, DG ENV B1</common:shortDescription>
+            </common:referenceToCommissioner>
+            <common:project>Provision of process-based 3.0 Environmental Footprint-compliant life cycle inventory datasets - Apparel 1 - contract number 070201/2020/840291/SER/ENV.B.1</common:project>
+            <common:intendedApplications>Implementation of regular Product Environmental Footprint (PEF) studies and Organisation Environmental Footprint (OEF) studies exclusively under the specified Product groups and sectors as defined in the Product Environmental Footprint Category Rules (PEFCR) and Organisation Environmental Footprint Sectorial Rules (OEFSR) listed in http://ec.europa.eu/environment/eussd/smgp/PEFCR_OEFSR.htm</common:intendedApplications>
+        </common:commissionerAndGoal>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet refObjectId="5eb0c12a-870c-5af7-a300-de1ef99afc9f" type="contact data set" uri="../contacts/5eb0c12a-870c-5af7-a300-de1ef99afc9f.xml" version="01.00.000">
+                <common:shortDescription>CADIS</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2024-07-13T11:11:19.786+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" type="source data set" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml" version="03.00.000">
+                <common:shortDescription>ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData refObjectId="5eb0c12a-870c-5af7-a300-de1ef99afc9f" type="contact data set" uri="../contacts/5eb0c12a-870c-5af7-a300-de1ef99afc9f.xml" version="01.00.000">
+                <common:shortDescription>CADIS</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2020-09-02T14:36:46.214668+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>01.01.000</common:dataSetVersion>
+            <common:referenceToPrecedingDataSetVersion refObjectId="3310fbed-0b54-5527-8569-e7363648efa9" type="process data set" uri="../processes/3310fbed-0b54-5527-8569-e7363648efa9.xml?version=01.00.000" version="01.00.000">
+                <common:shortDescription xml:lang="en">bleaching, conventional, elementary</common:shortDescription>
+            </common:referenceToPrecedingDataSetVersion>
+            <common:permanentDataSetURI/>
+            <common:workflowAndPublicationStatus>Data set finalised; entirely published</common:workflowAndPublicationStatus>
+            <common:registrationNumber/>
+            <common:referenceToOwnershipOfDataSet refObjectId="cdbab85b-40b1-5a9c-8131-46d43471d900" type="contact data set" uri="../contacts/cdbab85b-40b1-5a9c-8131-46d43471d900.xml" version="01.00.000">
+                <common:shortDescription>PRé Sustainability B.V.</common:shortDescription>
+            </common:referenceToOwnershipOfDataSet>
+            <common:copyright>true</common:copyright>
+            <common:referenceToEntitiesWithExclusiveAccess refObjectId="8b3e08f0-740a-43b1-aa8d-bec56c5daf6e" type="contact data set" uri="../contacts/8b3e08f0-740a-43b1-aa8d-bec56c5daf6e.xml" version="29.00.000">
+                <common:shortDescription>Final user</common:shortDescription>
+            </common:referenceToEntitiesWithExclusiveAccess>
+            <common:licenseType>Free of charge for some user types or use types</common:licenseType>
+            <common:accessRestrictions>Free of charge for all final users implementing a regular Product Environmental Footprint (PEF) studies and Organisation Environmental Footprint (OEF) studies exclusively under the specified Product groups and sectors as defined in the Product Environmental Footprint Category Rules (PEFCR) and Organisation Environmental Footprint Sectorial Rules (OEFSR) listed in http://ec.europa.eu/environment/eussd/smgp/PEFCR_OEFSR.htm and in accordance with the terms and conditions of the EULA (available at https://ecoinvent.lca-data.com/) exclusively until 31st December 2024. Any use of this dataset or any derivative data not within the specific context of one of the PEF/OEF projects or after the end of 2024 is not permitted.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange dataSetInternalID="0">
+            <referenceToFlowDataSet refObjectId="d450f981-2a89-5e3e-a972-41f5cb9a29de" type="flow data set" uri=".../flows/d450f981-2a89-5e3e-a972-41f5cb9a29de.xml">
+                <common:shortDescription>bleaching, conventional // bleaching, conventional // glo, elementary</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1</meanAmount>
+            <resultingAmount>1</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="1">
+            <referenceToFlowDataSet refObjectId="0342f5e5-b53e-4cec-9e67-fb197f24fff0" type="flow data set">
+                <common:shortDescription>Water, Emissions to air, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.00016356133714858702</meanAmount>
+            <resultingAmount>0.00016356133714858702</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="2">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.926387846667781E-06</meanAmount>
+            <resultingAmount>1.926387846667781E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="3">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.482028633118143E-05</meanAmount>
+            <resultingAmount>2.482028633118143E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="4">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.401515895180589E-06</meanAmount>
+            <resultingAmount>2.401515895180589E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="5">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.9875077166026083E-05</meanAmount>
+            <resultingAmount>2.9875077166026083E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="6">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BG</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.650061096989336E-06</meanAmount>
+            <resultingAmount>7.650061096989336E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="7">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BY</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.933476496568371E-06</meanAmount>
+            <resultingAmount>9.933476496568371E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="8">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CH</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.960232491426691E-05</meanAmount>
+            <resultingAmount>2.960232491426691E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="9">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.060300958356888E-05</meanAmount>
+            <resultingAmount>2.060300958356888E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="10">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00022422647085780352</meanAmount>
+            <resultingAmount>0.00022422647085780352</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="11">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.6258981767305652E-05</meanAmount>
+            <resultingAmount>1.6258981767305652E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="12">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>EE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.2201850300854953E-06</meanAmount>
+            <resultingAmount>2.2201850300854953E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="13">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ES</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.622189029755906E-05</meanAmount>
+            <resultingAmount>9.622189029755906E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="14">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FI</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.3868573970059542E-05</meanAmount>
+            <resultingAmount>1.3868573970059542E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="15">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00015816892887401485</meanAmount>
+            <resultingAmount>0.00015816892887401485</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="16">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GB</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00015718154911020628</meanAmount>
+            <resultingAmount>0.00015718154911020628</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="17">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.14022937058173E-05</meanAmount>
+            <resultingAmount>3.14022937058173E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="18">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.788040166043252E-05</meanAmount>
+            <resultingAmount>1.788040166043252E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="19">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.749145595926905E-06</meanAmount>
+            <resultingAmount>5.749145595926905E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="20">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.5071374511020232E-05</meanAmount>
+            <resultingAmount>1.5071374511020232E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="21">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.6234814963951325E-05</meanAmount>
+            <resultingAmount>1.6234814963951325E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="22">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.264061647492658E-07</meanAmount>
+            <resultingAmount>9.264061647492658E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="23">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0001353261926978268</meanAmount>
+            <resultingAmount>0.0001353261926978268</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="24">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.7404790193715925E-06</meanAmount>
+            <resultingAmount>4.7404790193715925E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="25">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.29085481079682E-06</meanAmount>
+            <resultingAmount>3.29085481079682E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="26">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LV</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.7952873670401385E-06</meanAmount>
+            <resultingAmount>2.7952873670401385E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="27">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MD</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.4790376043864696E-06</meanAmount>
+            <resultingAmount>1.4790376043864696E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="28">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ME</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.958394458039198E-07</meanAmount>
+            <resultingAmount>5.958394458039198E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="29">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.645639986570301E-06</meanAmount>
+            <resultingAmount>1.645639986570301E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="30">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.103455348715475E-07</meanAmount>
+            <resultingAmount>9.103455348715475E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="31">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.01634459588826E-05</meanAmount>
+            <resultingAmount>5.01634459588826E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="32">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.89883680196688E-05</meanAmount>
+            <resultingAmount>1.89883680196688E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="33">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.773246693194887E-05</meanAmount>
+            <resultingAmount>5.773246693194887E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="34">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.821666489044586E-05</meanAmount>
+            <resultingAmount>1.821666489044586E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="35">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>RO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.5290572533385024E-05</meanAmount>
+            <resultingAmount>2.5290572533385024E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="36">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>RS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.275949913924839E-06</meanAmount>
+            <resultingAmount>6.275949913924839E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="37">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.7399980376343363E-05</meanAmount>
+            <resultingAmount>2.7399980376343363E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="38">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SI</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.880232614440916E-06</meanAmount>
+            <resultingAmount>3.880232614440916E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="39">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.10748364180961E-06</meanAmount>
+            <resultingAmount>9.10748364180961E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="40">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SM</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.1335158496949395E-07</meanAmount>
+            <resultingAmount>1.1335158496949395E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="41">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>UA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.6703234629558046E-05</meanAmount>
+            <resultingAmount>2.6703234629558046E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="42">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.29539237560286E-05</meanAmount>
+            <resultingAmount>6.29539237560286E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="43">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00017782696323786007</meanAmount>
+            <resultingAmount>0.00017782696323786007</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="44">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.345603255468708E-05</meanAmount>
+            <resultingAmount>9.345603255468708E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="45">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CI</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.8416399632067825E-06</meanAmount>
+            <resultingAmount>4.8416399632067825E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="46">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.2873824977679773E-05</meanAmount>
+            <resultingAmount>2.2873824977679773E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="47">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CN</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0009789361148208095</meanAmount>
+            <resultingAmount>0.0009789361148208095</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="48">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.578920707979896E-05</meanAmount>
+            <resultingAmount>3.578920707979896E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="49">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ID</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00015041033544267702</meanAmount>
+            <resultingAmount>0.00015041033544267702</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="50">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IN</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00040148365397072366</meanAmount>
+            <resultingAmount>0.00040148365397072366</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="51">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>JP</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00029051989519970927</meanAmount>
+            <resultingAmount>0.00029051989519970927</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="52">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>KR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00010819609692754922</meanAmount>
+            <resultingAmount>0.00010819609692754922</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="53">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>KZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.3418059035823032E-05</meanAmount>
+            <resultingAmount>2.3418059035823032E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="54">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MX</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00012668117714926058</meanAmount>
+            <resultingAmount>0.00012668117714926058</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="55">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MY</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.23082301214951E-05</meanAmount>
+            <resultingAmount>4.23082301214951E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="56">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.872558815424443E-06</meanAmount>
+            <resultingAmount>9.872558815424443E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="57">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>RU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00020938624434956032</meanAmount>
+            <resultingAmount>0.00020938624434956032</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="58">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TH</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.24813803264687E-05</meanAmount>
+            <resultingAmount>6.24813803264687E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="59">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00010581205371207424</meanAmount>
+            <resultingAmount>0.00010581205371207424</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="60">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>US</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0010307661419133392</meanAmount>
+            <resultingAmount>0.0010307661419133392</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="61">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>VE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.989886485948918E-05</meanAmount>
+            <resultingAmount>2.989886485948918E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="62">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>VN</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.096744367885266E-05</meanAmount>
+            <resultingAmount>3.096744367885266E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="63">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ZA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.986312224441045E-05</meanAmount>
+            <resultingAmount>3.986312224441045E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="64">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.6774613018706025E-05</meanAmount>
+            <resultingAmount>3.6774613018706025E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="65">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AF</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.7764403987124777E-06</meanAmount>
+            <resultingAmount>3.7764403987124777E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="66">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AG</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.1028182634848903E-07</meanAmount>
+            <resultingAmount>1.1028182634848903E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="67">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AM</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7028857093527233E-06</meanAmount>
+            <resultingAmount>1.7028857093527233E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="68">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.143931206764032E-05</meanAmount>
+            <resultingAmount>1.143931206764032E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="69">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.098240506949549E-05</meanAmount>
+            <resultingAmount>5.098240506949549E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="70">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AW</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.2145005016109607E-07</meanAmount>
+            <resultingAmount>2.2145005016109607E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="71">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.622102463496482E-06</meanAmount>
+            <resultingAmount>8.622102463496482E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="72">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BB</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.68242112686008E-07</meanAmount>
+            <resultingAmount>2.68242112686008E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="73">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BD</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.0436709990557734E-05</meanAmount>
+            <resultingAmount>3.0436709990557734E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="74">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BF</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.81718942884569E-06</meanAmount>
+            <resultingAmount>1.81718942884569E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="75">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BH</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.869265918154701E-06</meanAmount>
+            <resultingAmount>3.869265918154701E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="76">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BI</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.3241250238477855E-07</meanAmount>
+            <resultingAmount>4.3241250238477855E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="77">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BJ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.6742188416215247E-06</meanAmount>
+            <resultingAmount>1.6742188416215247E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="78">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BN</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7848424972788605E-06</meanAmount>
+            <resultingAmount>1.7848424972788605E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="79">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.295870946514263E-06</meanAmount>
+            <resultingAmount>4.295870946514263E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="80">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.331304445628649E-07</meanAmount>
+            <resultingAmount>7.331304445628649E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="81">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.7549950481221444E-07</meanAmount>
+            <resultingAmount>3.7549950481221444E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="82">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BW</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.9149686038427377E-06</meanAmount>
+            <resultingAmount>1.9149686038427377E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="83">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.5253841810414513E-07</meanAmount>
+            <resultingAmount>1.5253841810414513E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="84">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CD</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.648919792320127E-06</meanAmount>
+            <resultingAmount>3.648919792320127E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="85">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CF</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.3956123542201107E-07</meanAmount>
+            <resultingAmount>2.3956123542201107E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="86">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CG</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.4137129682490242E-06</meanAmount>
+            <resultingAmount>1.4137129682490242E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="87">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CM</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.196463841496445E-06</meanAmount>
+            <resultingAmount>4.196463841496445E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="88">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.469943285826321E-06</meanAmount>
+            <resultingAmount>4.469943285826321E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="89">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CV</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.86964673436383E-07</meanAmount>
+            <resultingAmount>1.86964673436383E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="90">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CY</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7186501122160822E-06</meanAmount>
+            <resultingAmount>1.7186501122160822E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="91">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DJ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.404937426899877E-07</meanAmount>
+            <resultingAmount>2.404937426899877E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="92">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DM</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.5594108631370066E-08</meanAmount>
+            <resultingAmount>4.5594108631370066E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="93">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.342785209458352E-06</meanAmount>
+            <resultingAmount>8.342785209458352E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="94">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.900673196723612E-05</meanAmount>
+            <resultingAmount>2.900673196723612E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="95">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>EC</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0139918434815034E-05</meanAmount>
+            <resultingAmount>1.0139918434815034E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="96">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>EG</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.743286202495294E-05</meanAmount>
+            <resultingAmount>5.743286202495294E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="97">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ER</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.050382266664908E-07</meanAmount>
+            <resultingAmount>3.050382266664908E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="98">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ET</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.765765884396556E-06</meanAmount>
+            <resultingAmount>8.765765884396556E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="99">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FJ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.515653086469898E-07</meanAmount>
+            <resultingAmount>5.515653086469898E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="100">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.650620121592761E-06</meanAmount>
+            <resultingAmount>1.650620121592761E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="101">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GD</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.553804790429446E-08</meanAmount>
+            <resultingAmount>8.553804790429446E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="102">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.412998792331072E-06</meanAmount>
+            <resultingAmount>2.412998792331072E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="103">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GH</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.165847556047911E-06</meanAmount>
+            <resultingAmount>7.165847556047911E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="104">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GM</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.591804276960707E-07</meanAmount>
+            <resultingAmount>2.591804276960707E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="105">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GN</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.2905626915409693E-06</meanAmount>
+            <resultingAmount>1.2905626915409693E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="106">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GQ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.920141051528717E-06</meanAmount>
+            <resultingAmount>1.920141051528717E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="107">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.94290631648362E-06</meanAmount>
+            <resultingAmount>6.94290631648362E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="108">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GW</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.5605949751782225E-07</meanAmount>
+            <resultingAmount>1.5605949751782225E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="109">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GY</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.920533152276772E-07</meanAmount>
+            <resultingAmount>4.920533152276772E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="110">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HN</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.4236811223068306E-06</meanAmount>
+            <resultingAmount>2.4236811223068306E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="111">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7970676566533348E-06</meanAmount>
+            <resultingAmount>1.7970676566533348E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="112">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.665165144585699E-05</meanAmount>
+            <resultingAmount>1.665165144585699E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="113">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IQ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.506906741436561E-05</meanAmount>
+            <resultingAmount>2.506906741436561E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="114">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.086380465956416E-05</meanAmount>
+            <resultingAmount>7.086380465956416E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="115">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>JM</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.487315029968865E-06</meanAmount>
+            <resultingAmount>1.487315029968865E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="116">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>JO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.903882220484986E-06</meanAmount>
+            <resultingAmount>4.903882220484986E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="117">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>KE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.567932936091047E-06</meanAmount>
+            <resultingAmount>8.567932936091047E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="118">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>KG</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.4229771634681964E-06</meanAmount>
+            <resultingAmount>1.4229771634681964E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="119">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>KH</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.8951925969555074E-06</meanAmount>
+            <resultingAmount>2.8951925969555074E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="120">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>KM</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.1941872705454996E-07</meanAmount>
+            <resultingAmount>1.1941872705454996E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="121">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>KN</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.116355667496565E-08</meanAmount>
+            <resultingAmount>7.116355667496565E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="122">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>KW</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.3633646384546436E-05</meanAmount>
+            <resultingAmount>1.3633646384546436E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="123">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.214188817227007E-06</meanAmount>
+            <resultingAmount>2.214188817227007E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="124">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LB</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.400270578534854E-06</meanAmount>
+            <resultingAmount>5.400270578534854E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="125">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LC</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.451609948399908E-07</meanAmount>
+            <resultingAmount>1.451609948399908E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="126">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.3302835809480473E-05</meanAmount>
+            <resultingAmount>1.3302835809480473E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="127">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.301803898029904E-07</meanAmount>
+            <resultingAmount>3.301803898029904E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="128">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.2062871884575265E-07</meanAmount>
+            <resultingAmount>3.2062871884575265E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="129">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LY</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.816982744908914E-06</meanAmount>
+            <resultingAmount>6.816982744908914E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="130">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.413251411103495E-05</meanAmount>
+            <resultingAmount>1.413251411103495E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="131">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MG</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.18416241458227E-06</meanAmount>
+            <resultingAmount>2.18416241458227E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="132">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ML</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.9829996257261102E-06</meanAmount>
+            <resultingAmount>1.9829996257261102E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="133">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MM</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.2614653963329739E-05</meanAmount>
+            <resultingAmount>1.2614653963329739E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="134">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MN</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7642933188496243E-06</meanAmount>
+            <resultingAmount>1.7642933188496243E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="135">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0402419571649508E-06</meanAmount>
+            <resultingAmount>1.0402419571649508E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="136">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.3889241868024924E-06</meanAmount>
+            <resultingAmount>1.3889241868024924E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="137">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MW</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.003479270120467E-06</meanAmount>
+            <resultingAmount>1.003479270120467E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="138">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7940288341508084E-06</meanAmount>
+            <resultingAmount>1.7940288341508084E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="139">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.2974352781484757E-06</meanAmount>
+            <resultingAmount>1.2974352781484757E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="140">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.2827226412441097E-06</meanAmount>
+            <resultingAmount>1.2827226412441097E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="141">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NG</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.3248663773815585E-05</meanAmount>
+            <resultingAmount>5.3248663773815585E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="142">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NI</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7922504383668533E-06</meanAmount>
+            <resultingAmount>1.7922504383668533E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="143">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NP</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.980527991993769E-06</meanAmount>
+            <resultingAmount>3.980527991993769E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="144">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>OM</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.4594349487346E-06</meanAmount>
+            <resultingAmount>8.4594349487346E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="145">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.256290506137613E-06</meanAmount>
+            <resultingAmount>5.256290506137613E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="146">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.021379743869296E-05</meanAmount>
+            <resultingAmount>2.021379743869296E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="147">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PG</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7025146223236707E-06</meanAmount>
+            <resultingAmount>1.7025146223236707E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="148">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PH</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.097726621550725E-05</meanAmount>
+            <resultingAmount>4.097726621550725E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="149">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.914160522952456E-05</meanAmount>
+            <resultingAmount>4.914160522952456E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="150">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.9547359136780175E-06</meanAmount>
+            <resultingAmount>6.9547359136780175E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="151">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.316202443678774E-06</meanAmount>
+            <resultingAmount>1.316202443678774E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="152">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PY</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.377256539351889E-06</meanAmount>
+            <resultingAmount>4.377256539351889E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="153">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>QA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.5839026413933698E-05</meanAmount>
+            <resultingAmount>1.5839026413933698E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="154">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>RW</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.1041485369038752E-06</meanAmount>
+            <resultingAmount>1.1041485369038752E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="155">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.338799705291181E-05</meanAmount>
+            <resultingAmount>9.338799705291181E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="156">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SB</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.459463396151933E-08</meanAmount>
+            <resultingAmount>8.459463396151933E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="157">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SD</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.798200253377408E-06</meanAmount>
+            <resultingAmount>9.798200253377408E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="158">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SG</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.7201509706091684E-05</meanAmount>
+            <resultingAmount>2.7201509706091684E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="159">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.23623572446038E-07</meanAmount>
+            <resultingAmount>6.23623572446038E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="160">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SN</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.4416394911340297E-06</meanAmount>
+            <resultingAmount>2.4416394911340297E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="161">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.085207799675873E-07</meanAmount>
+            <resultingAmount>5.085207799675873E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="162">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ST</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.0217668744438685E-08</meanAmount>
+            <resultingAmount>4.0217668744438685E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="163">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SV</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.7122298817350267E-06</meanAmount>
+            <resultingAmount>2.7122298817350267E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="164">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.473461422740757E-07</meanAmount>
+            <resultingAmount>5.473461422740757E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="165">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TC</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.890280532551386E-08</meanAmount>
+            <resultingAmount>4.890280532551386E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="166">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TD</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.3587838036913204E-06</meanAmount>
+            <resultingAmount>1.3587838036913204E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="167">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TG</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.628761559094935E-07</meanAmount>
+            <resultingAmount>5.628761559094935E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="168">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TJ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.4102305791602118E-06</meanAmount>
+            <resultingAmount>1.4102305791602118E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="169">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.8085888062430196E-07</meanAmount>
+            <resultingAmount>1.8085888062430196E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="170">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TM</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.0901837970592015E-06</meanAmount>
+            <resultingAmount>4.0901837970592015E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="171">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TN</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.7973917606020745E-06</meanAmount>
+            <resultingAmount>6.7973917606020745E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="172">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.3908127127781695E-08</meanAmount>
+            <resultingAmount>3.3908127127781695E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="173">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.3305241536257513E-06</meanAmount>
+            <resultingAmount>2.3305241536257513E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="174">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.600438229713025E-06</meanAmount>
+            <resultingAmount>6.600438229713025E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="175">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>UG</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.572879415875552E-06</meanAmount>
+            <resultingAmount>4.572879415875552E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="176">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>UY</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.900744291262612E-06</meanAmount>
+            <resultingAmount>3.900744291262612E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="177">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>UZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.089921728469265E-05</meanAmount>
+            <resultingAmount>1.089921728469265E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="178">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>VC</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.33226196856379E-08</meanAmount>
+            <resultingAmount>7.33226196856379E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="179">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>VU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.6576595671053555E-08</meanAmount>
+            <resultingAmount>4.6576595671053555E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="180">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>WS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.625663657383807E-08</meanAmount>
+            <resultingAmount>6.625663657383807E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="181">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>YE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.452633361034691E-06</meanAmount>
+            <resultingAmount>5.452633361034691E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="182">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ZM</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.0921718063242178E-06</meanAmount>
+            <resultingAmount>3.0921718063242178E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="183">
+            <referenceToFlowDataSet refObjectId="4f462198-40cd-4184-8733-86648a20dc3f" type="flow data set">
+                <common:shortDescription>ground water, Renewable material resources from water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ZW</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.008537540350667E-06</meanAmount>
+            <resultingAmount>2.008537540350667E-06</resultingAmount>
+        </exchange>
+    </exchanges>
+    <LCIAResults>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c619fa-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c619fa-def3-11e6-bf01-fe55135034f3.xml" version="02.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication marine</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Eutrophication marine</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="05316e7a-b254-4bea-9cf0-6bf33eb5c630" type="LCIA method data set" uri="../lciamethods/05316e7a-b254-4bea-9cf0-6bf33eb5c630.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Ecotoxicity, freshwater</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Ecotoxicity, freshwater</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6890-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6890-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Land use</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Land use</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad66ce-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad66ce-c78d-11e6-9d9d-cec0c932ce01.xml" version="03.00.014">
+                <common:shortDescription xml:lang="en">Water use</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.17276192470920712</meanAmount>
+            <generalComment>Water use</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6494-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6494-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, minerals and metals</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Resource use, minerals and metals</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6110-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6110-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, fossils</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Resource use, fossils</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="6209b35f-9447-40b5-b68c-a1099e3674a0" type="LCIA method data set" uri="../lciamethods/6209b35f-9447-40b5-b68c-a1099e3674a0.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Climate change</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Climate change</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c629d6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c629d6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.012">
+                <common:shortDescription xml:lang="en">Ozone depletion</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Ozone depletion</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="2299222a-bbd8-474f-9d4f-4dd1f18aea7c" type="LCIA method data set" uri="../lciamethods/2299222a-bbd8-474f-9d4f-4dd1f18aea7c.xml" version="01.01.000">
+                <common:shortDescription xml:lang="en">Human toxicity, cancer</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Human toxicity, cancer</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8" type="LCIA method data set" uri="../lciamethods/7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Human toxicity, non-cancer</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Human toxicity, non-cancer</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c602c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c602c6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.011">
+                <common:shortDescription xml:lang="en">EF-particulate Matter</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>EF-particulate Matter</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c632be-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c632be-def3-11e6-bf01-fe55135034f3.xml" version="01.00.011">
+                <common:shortDescription xml:lang="en">Ionising radiation, human health</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Ionising radiation, human health</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c610fe-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c610fe-def3-11e6-bf01-fe55135034f3.xml" version="02.01.000">
+                <common:shortDescription xml:lang="en">Photochemical ozone formation - human health</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Photochemical ozone formation - human health</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c611c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c611c6-def3-11e6-bf01-fe55135034f3.xml" version="01.04.000">
+                <common:shortDescription xml:lang="en">Acidification</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Acidification</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c614d2-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c614d2-def3-11e6-bf01-fe55135034f3.xml" version="01.02.009">
+                <common:shortDescription xml:lang="en">Eutrophication, terrestrial</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Eutrophication, terrestrial</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b53ec18f-7377-4ad3-86eb-cc3f4f276b2b" type="LCIA method data set" uri="../lciamethods/b53ec18f-7377-4ad3-86eb-cc3f4f276b2b.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication, freshwater</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Eutrophication, freshwater</generalComment>
+        </LCIAResult>
+    </LCIAResults>
+</processDataSet>
