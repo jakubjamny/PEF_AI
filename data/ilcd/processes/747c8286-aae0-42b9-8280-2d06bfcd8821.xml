@@ -1,0 +1,1598 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?><processDataSet xmlns="http://lca.jrc.it/ILCD/Process" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:ext="http://eplca.jrc.ec.europa.eu/ILCD/Extensions/2017" xmlns:ns5="thinkstepio" xmlns:ns6="ext" xmlns:thinkstepio="http://conversion.thinkstep.com/ILCD/ThinkstepIo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" locations="../ILCDLocations.xml" metaDataOnly="false" version="1.1" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+  <processInformation>
+    <dataSetInformation>
+      <common:UUID>747c8286-aae0-42b9-8280-2d06bfcd8821</common:UUID>
+      <name>
+        <baseName xml:lang="en">Lorry, Total weight 20-26 t, cooled, CNG Euro 0- 6 mix / 17.3t payload capacity</baseName>
+        <treatmentStandardsRoutes xml:lang="en">CNG driven, Euro 4 - 6 mix, cargo, cooled</treatmentStandardsRoutes>
+        <mixAndLocationTypes xml:lang="en">consumption mix, to consumer</mixAndLocationTypes>
+        <functionalUnitFlowProperties xml:lang="en">20 - 26 t gross weight / 17,3t payload capacity</functionalUnitFlowProperties>
+      </name>
+      <common:synonyms xml:lang="en">lorry</common:synonyms>
+      <classificationInformation>
+        <common:classification>
+          <common:class level="0">Transport services</common:class>
+          <common:class level="1">Road</common:class>
+        </common:classification>
+      </classificationInformation>
+      <common:generalComment xml:lang="en">- emission values for Euro 4 - 6 (no relevant vehicle numbers complying with Euro 0-3 present in vehicle fleet for reference year), shares of technologies are adjustable									&#13;
+- fleet composition (share of different technologies) based on HBEFA 4.1. 2021 (base year)									&#13;
+- source emissions/driving share/fleet composition: HBEFA 4.1, status September 2019									&#13;
+- input parameter: distance [km], payload [t], utilisation [-], driving share motorway/rural/urban, share of emission standards									&#13;
+									&#13;
+- Source of non-exhaust PM emissions: HBEFA 4.1. Remark: “Please note that the differentiation by traffic situation is uncertain and that the output emission factors are only valid for Central Europe (DE, AT, CH, FR) but not for Northern Europe (NO, SE). Treat any results with caution”</common:generalComment>
+    </dataSetInformation>
+    <quantitativeReference type="Reference flow(s)">
+      <referenceToReferenceFlow>11</referenceToReferenceFlow>
+    </quantitativeReference>
+    <time>
+      <common:referenceYear>2020</common:referenceYear>
+      <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+      <common:timeRepresentativenessDescription xml:lang="en">annual average</common:timeRepresentativenessDescription>
+    </time>
+    <geography>
+      <locationOfOperationSupplyOrProduction location="GLO">
+        <descriptionOfRestrictions xml:lang="en">The data set is representative for the mentioned region.</descriptionOfRestrictions>
+      </locationOfOperationSupplyOrProduction>
+    </geography>
+    <technology>
+      <technologyDescriptionAndIncludedProcesses xml:lang="en">Truck as heavy or light duty vehicle for road transport. Variable parameters are: payload, utilisation ratio, distance and driving share urban/interurban/motorway. Inputs: CNG, road and vehicle (production). Outputs: cargo, cooling leakage emisions and combustion emissions (carbon dioxide, carbon monoxide, methane, nitrogen monoxide, nitrogen dioxide, NMVOC, particulate PM 2.5). NMVOC emissions of the truck result from imperfect combustion and evaporation losses via diffusion through the tank. Truck production, end-of-life treatment of the truck and the fuel supply chain (emissions of exploration, refinery, transportation etc.) are not included in the data set.									&#13;
+For more information please refer to: https://scn.spherasolutions.com/client/downloads.aspx?product=GaBi&amp;productID=47</technologyDescriptionAndIncludedProcesses>
+      <technologicalApplicability xml:lang="en">Provision of a standard transport service according to the applied technology.</technologicalApplicability>
+      <referenceToTechnologyFlowDiagrammOrPicture refObjectId="fa05a4ca-b9e6-4689-b663-5c9131fe8c55" type="source data set" uri="../sources/fa05a4ca-b9e6-4689-b663-5c9131fe8c55.xml" version="30.00.000">
+        <common:shortDescription xml:lang="en">transport_truck.jpg</common:shortDescription>
+      </referenceToTechnologyFlowDiagrammOrPicture>
+    </technology>
+    <mathematicalRelations>
+      <modelDescription xml:lang="en">The open parameters in this processes enable the user to adjust the model to their individual circumstances. The description of the parameters is given alongside the parameters in the comments section.&#13;
+&#13;
+For mathematical model details concerning the implementation of the CCF formula see: &#13;
+http://www.gabi-software.com/fileadmin/GaBi_Databases/PEF_CFF_model_description.pdf</modelDescription>
+      <variableParameter name="Cool_Leakage_dr">
+        <formula>(Cool_Leakage_ra / km_year) * distance / (payload * utilisation * 1000)</formula>
+        <meanValue>7.20174358002464E-8</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[kg] Calculated leakage rate per km driven per year</comment>
+      </variableParameter>
+      <variableParameter name="Cool_Leakage_ra">
+        <meanValue>0.76</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[kg/year] Coolant leakage</comment>
+      </variableParameter>
+      <variableParameter name="distance">
+        <meanValue>100.0</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[km] distance start - end, default = 100 km</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_CH4_mw">
+        <formula>(0.207608403904098 + (0.295148261955806 - 0.207608403904098) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>2.47330349015105E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCH4/(kg*km)] CH4 emission motorway, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_CH4_ru">
+        <formula>(0.192968790020262 + (0.297274257455554 - 0.192968790020262) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>2.43148986217938E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCH4/(kg*km)] CH4 emission rural, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_CH4_tot">
+        <formula>((share_mw * E4sp_CH4_mw) + (share_ru * E4sp_CH4_ru) + (share_ur * E4sp_CH4_ur)) * distance</formula>
+        <meanValue>0.00253035414125467</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCH4/kg] CH4 emission weighted, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_CH4_ur">
+        <formula>(0.258512318134308 + (0.427367806434631 - 0.258512318134308) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>3.42570042639539E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCH4/(kg*km)] CH4 emission urban, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_CO_mw">
+        <formula>(0.478273272514343 + (0.679941296577453 - 0.478273272514343) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>5.69781831889359E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO/(kg*km)] CO emission motorway, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_CO_ru">
+        <formula>(0.444547585078648 + (0.684838993208749 - 0.444547585078648) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>5.60149098870472E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO/(kg*km)] CO emission rural, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_CO_tot">
+        <formula>((share_mw * E4sp_CO_mw) + (share_ru * E4sp_CO_ru) + (share_ur * E4sp_CO_ur)) * distance</formula>
+        <meanValue>0.00582924745726289</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO/kg] CO emission weighted, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_CO_ur">
+        <formula>(0.595542013645172 + (0.984539134161811 - 0.595542013645172) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>7.89188152336134E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO/(kg*km)] CO emission urban, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_CO2_bio">
+        <formula>E4sp_CO2_tot * share_CO2_bio</formula>
+        <meanValue>0.388977447980722</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO2/kg] weighted CO2 emission, biogenic CO2 share of CO2 emission, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_CO2_fos">
+        <formula>E4sp_CO2_tot * (1 - share_CO2_bio)</formula>
+        <meanValue>7.39057151163372</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO2/kg] weighted CO2 emission, fossil CO2 share of CO2 emission, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_CO2_mw">
+        <formula>(586.985046386719 + 58.5 + (834.492327008929 - 586.985046386719) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>0.0754728027637892</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO2/(kg*km)] CO2 emission motorway, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_CO2_ru">
+        <formula>(545.593497140067 + 63.0 + (840.503295898437 - 545.593497140067) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>0.0747169974777478</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO2/(kg*km)] CO2 emission rural, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_CO2_tot">
+        <formula>((share_mw * E4sp_CO2_mw) + (share_ru * E4sp_CO2_ru) + (share_ur * E4sp_CO2_ur)) * distance</formula>
+        <meanValue>7.77954895961444</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO2/kg] CO2 emission weighted, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_CO2_ur">
+        <formula>(730.909057617188 + 150.7 + (1208.32538713728 - 730.909057617188) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>0.111137403451572</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO2/(kg*km)] CO2 emission urban, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_fuel_mw">
+        <formula>(207.158981323242 + 21.8 + (294.509347098215 - 207.158981323242) * utilisation) / (payload * 1000 * utilisation) / 1000</formula>
+        <meanValue>2.67452576941131E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[kgfuel/(kg*km)] fuel consumption motorway, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_fuel_ru">
+        <formula>(192.551045009068 + 23.5 + (296.630724225725 - 192.551045009068) * utilisation) / (payload * 1000 * utilisation) / 1000</formula>
+        <meanValue>2.6489116775441E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[kgfuel/(kg*km)] fuel consumption rural, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_fuel_tot">
+        <formula>((share_mw * E4sp_fuel_mw) + (share_ru * E4sp_fuel_ru) + (share_ur * E4sp_fuel_ur)) * distance</formula>
+        <meanValue>0.00275797614322836</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[kgfuel/kg] fuel consumption weighted, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_fuel_ur">
+        <formula>(257.952697753906 + 56.2 + (426.442653111049 - 257.952697753906) * utilisation) / (payload * 1000 * utilisation) / 1000</formula>
+        <meanValue>3.95083455436145E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[kgfuel/(kg*km)] fuel consumption urban, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_NMVOC_mw">
+        <formula>(0.0180529042014054 + (0.0256650650075504 - 0.0180529042014054) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>2.15069859690646E-6</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNMVOC/(kg*km)] NMVOC emission motorway (without benzene), Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_NMVOC_ru">
+        <formula>(0.016779893210956 + (0.0258499336029802 - 0.016779893210956) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>2.11433884678203E-6</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNMVOC/(kg*km)] NMVOC emission rural (without benzene), Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_NMVOC_tot">
+        <formula>((share_mw * E4sp_NMVOC_mw) + (share_ru * E4sp_NMVOC_ru) + (share_ur * E4sp_NMVOC_ur)) * distance</formula>
+        <meanValue>2.20030783095103E-4</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNMVOC/kg] NMVOC emission weighted (without benzene), Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_NMVOC_ur">
+        <formula>(0.0224793305886643 + (0.0371624146189009 - 0.0224793305886643) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>2.97886969080912E-6</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNMVOC/(kg*km)] NMVOC emission urban (without benzene), Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_NO_mw">
+        <formula>(0.652332084519522 + (0.927393449204309 - 0.652332084519522) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>7.77143482400495E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO/(kg*km)] NO emission motorway, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_NO_ru">
+        <formula>(0.606332525610924 + (0.934073580162866 - 0.606332525610924) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>7.64005087546298E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO/(kg*km)] NO emission rural, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_NO_tot">
+        <formula>((share_mw * E4sp_NO_mw) + (share_ru * E4sp_NO_ru) + (share_ur * E4sp_NO_ur)) * distance</formula>
+        <meanValue>0.00795069518915462</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO/kg] NO emission weighted, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_NO_ur">
+        <formula>(0.812278645379202 + (1.3428441115788 - 0.812278645379202) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>1.07639872999238E-4</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO/(kg*km)] NO emission urban, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_NO2_mw">
+        <formula>(0.217444028173174 + (0.30913114973477 - 0.217444028173174) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>2.59047827466832E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO2/(kg*km)] NO2 emissions motorway, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_NO2_ru">
+        <formula>(0.202110841870308 + (0.311357860054289 - 0.202110841870308) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>2.54668362515433E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO2/(kg*km)] NO2 emissions rural, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_NO2_tot">
+        <formula>((share_mw * E4sp_NO2_mw) + (share_ru * E4sp_NO2_ru) + (share_ur * E4sp_NO2_ur)) * distance</formula>
+        <meanValue>0.00265023172971821</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO2/kg] NO2 emissions weighted, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_NO2_ur">
+        <formula>(0.270759548459734 + (0.447614703859602 - 0.270759548459734) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>3.58799576664127E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO2/(kg*km)] NO2 emissions urban, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_part_mw">
+        <formula>(0.00408059661276638 + (0.00639597858701433 - 0.00408059661276638) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>5.2051356174146E-7</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gparticle/(kg*km)] particle emission motorway, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_part_ru">
+        <formula>(0.00346868485212326 + (0.00534361407959036 - 0.00346868485212326) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>4.37069239162152E-7</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gparticle/(kg*km)] particle emission rural, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_part_tot">
+        <formula>((share_mw * E4sp_Part_mw) + (share_ru * E4sp_Part_ru) + (share_ur * E4sp_Part_ur)) * distance</formula>
+        <meanValue>5.07990174590363E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gparticle/kg] particle emission weighted, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E4sp_part_ur">
+        <formula>(0.00464685407600233 + (0.00768209315304243 - 0.00464685407600233) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>6.15782233772083E-7</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gparticle/(kg*km)] particle emission urban, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_CH4_mw">
+        <formula>(0.207608403904098 + (0.295148261955806 - 0.207608403904098) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>2.47330349015105E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCH4/(kg*km)] CH4 emission motorway, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_CH4_ru">
+        <formula>(0.192968790020262 + (0.297274257455554 - 0.192968790020262) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>2.43148986217938E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCH4/(kg*km)] CH4 emission rural, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_CH4_tot">
+        <formula>((share_mw * E5sp_CH4_mw) + (share_ru * E5sp_CH4_ru) + (share_ur * E5sp_CH4_ur)) * distance</formula>
+        <meanValue>0.00253035414125467</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCH4/kg] CH4 emission weighted, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_CH4_ur">
+        <formula>(0.258512318134308 + (0.427367806434631 - 0.258512318134308) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>3.42570042639539E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCH4/(kg*km)] CH4 emission urban, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_CO_mw">
+        <formula>(0.478273272514343 + (0.679941296577453 - 0.478273272514343) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>5.69781831889359E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO/(kg*km)] CO emission motorway, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_CO_ru">
+        <formula>(0.444547585078648 + (0.684838993208749 - 0.444547585078648) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>5.60149098870472E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO/(kg*km)] CO emission rural, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_CO_tot">
+        <formula>((share_mw * E5sp_CO_mw) + (share_ru * E5sp_CO_ru) + (share_ur * E5sp_CO_ur)) * distance</formula>
+        <meanValue>0.00582924745726289</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO/kg] CO emission weighted, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_CO_ur">
+        <formula>(0.595542013645172 + (0.984539134161811 - 0.595542013645172) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>7.89188152336134E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO/(kg*km)] CO emission urban, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_CO2_bio">
+        <formula>E5sp_CO2_tot * share_CO2_bio</formula>
+        <meanValue>0.388977447980722</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO2/kg] weighted CO2 emission, biogenic CO2 share of CO2 emission, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_CO2_fos">
+        <formula>E5sp_CO2_tot * (1 - share_CO2_bio)</formula>
+        <meanValue>7.39057151163372</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO2/kg] weighted CO2 emission, fossil CO2 share of CO2 emission, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_CO2_mw">
+        <formula>(586.985046386719 + 58.5 + (834.492327008929 - 586.985046386719) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>0.0754728027637892</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO2/(kg*km)] CO2 emission motorway, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_CO2_ru">
+        <formula>(545.593497140067 + 63.0 + (840.503295898437 - 545.593497140067) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>0.0747169974777478</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO2/(kg*km)] CO2 emission rural, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_CO2_tot">
+        <formula>((share_mw * E5sp_CO2_mw) + (share_ru * E5sp_CO2_ru) + (share_ur * E5sp_CO2_ur)) * distance</formula>
+        <meanValue>7.77954895961444</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO2/kg] CO2 emission weighted, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_CO2_ur">
+        <formula>(730.909057617188 + 150.7 + (1208.32538713728 - 730.909057617188) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>0.111137403451572</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO2/(kg*km)] CO2 emission urban, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_fuel_mw">
+        <formula>(207.158981323242 + 21.8 + (294.509347098215 - 207.158981323242) * utilisation) / (payload * 1000 * utilisation) / 1000</formula>
+        <meanValue>2.67452576941131E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[kgfuel/(kg*km)] fuel consumption motorway, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_fuel_ru">
+        <formula>(192.551045009068 + 23.5 + (296.630724225725 - 192.551045009068) * utilisation) / (payload * 1000 * utilisation) / 1000</formula>
+        <meanValue>2.6489116775441E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[kgfuel/(kg*km)] fuel consumption rural, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_fuel_tot">
+        <formula>((share_mw * E5sp_fuel_mw) + (share_ru * E5sp_fuel_ru) + (share_ur * E5sp_fuel_ur)) * distance</formula>
+        <meanValue>0.00275797614322836</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[kgfuel/kg] fuel consumption weighted, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_fuel_ur">
+        <formula>(257.952697753906 + 56.2 + (426.442653111049 - 257.952697753906) * utilisation) / (payload * 1000 * utilisation) / 1000</formula>
+        <meanValue>3.95083455436145E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[kgfuel/(kg*km)] fuel consumption urban, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_NMVOC_mw">
+        <formula>(0.0180529042014054 + (0.0256650650075504 - 0.0180529042014054) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>2.15069859690646E-6</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNMVOC/(kg*km)] NMVOC emission motorway (without benzene), Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_NMVOC_ru">
+        <formula>(0.016779893210956 + (0.0258499336029802 - 0.016779893210956) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>2.11433884678203E-6</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNMVOC/(kg*km)] NMVOC emission rural (without benzene), Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_NMVOC_tot">
+        <formula>((share_mw * E5sp_NMVOC_mw) + (share_ru * E5sp_NMVOC_ru) + (share_ur * E5sp_NMVOC_ur)) * distance</formula>
+        <meanValue>2.20030783095103E-4</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNMVOC/kg] NMVOC emission weighted (without benzene), Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_NMVOC_ur">
+        <formula>(0.0224793305886643 + (0.0371624146189009 - 0.0224793305886643) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>2.97886969080912E-6</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNMVOC/(kg*km)] NMVOC emission urban (without benzene), Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_NO_mw">
+        <formula>(0.652332084519522 + (0.927393449204309 - 0.652332084519522) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>7.77143482400495E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO/(kg*km)] NO emission motorway, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_NO_ru">
+        <formula>(0.606332525610924 + (0.934073580162866 - 0.606332525610924) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>7.64005087546298E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO/(kg*km)] NO emission rural, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_NO_tot">
+        <formula>((share_mw * E5sp_NO_mw) + (share_ru * E5sp_NO_ru) + (share_ur * E5sp_NO_ur)) * distance</formula>
+        <meanValue>0.00795069518915462</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO/kg] NO emission weighted, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_NO_ur">
+        <formula>(0.812278645379202 + (1.3428441115788 - 0.812278645379202) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>1.07639872999238E-4</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO/(kg*km)] NO emission urban, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_NO2_mw">
+        <formula>(0.217444028173174 + (0.30913114973477 - 0.217444028173174) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>2.59047827466832E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO2/(kg*km)] NO2 emissions motorway, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_NO2_ru">
+        <formula>(0.202110841870308 + (0.311357860054289 - 0.202110841870308) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>2.54668362515433E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO2/(kg*km)] NO2 emissions rural, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_NO2_tot">
+        <formula>((share_mw * E5sp_NO2_mw) + (share_ru * E5sp_NO2_ru) + (share_ur * E5sp_NO2_ur)) * distance</formula>
+        <meanValue>0.00265023172971821</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO2/kg] NO2 emissions weighted, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_NO2_ur">
+        <formula>(0.270759548459734 + (0.447614703859602 - 0.270759548459734) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>3.58799576664127E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO2/(kg*km)] NO2 emissions urban, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_part_mw">
+        <formula>(0.00373183749616146 + (0.00530539858820183 - 0.00373183749616146) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>4.44585403421405E-7</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gparticle/(kg*km)] particle emission motorway, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_part_ru">
+        <formula>(0.00346868485212326 + (0.00534361407959036 - 0.00346868485212326) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>4.37069239162152E-7</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gparticle/(kg*km)] particle emission rural, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_part_tot">
+        <formula>((share_mw * E5sp_Part_mw) + (share_ru * E5sp_Part_ru) + (share_ur * E5sp_Part_ur)) * distance</formula>
+        <meanValue>4.54840463766324E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gparticle/kg] particle emission weighted, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E5sp_part_ur">
+        <formula>(0.00464685407600233 + (0.00768209315304243 - 0.00464685407600233) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>6.15782233772083E-7</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gparticle/(kg*km)] particle emission urban, Euro 5</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_CH4_mw">
+        <formula>(0.100458422941821 + (0.142941095999309 - 0.100458422941821) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>1.19750642951662E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCH4/(kg*km)] CH4 emission motorway, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_CH4_ru">
+        <formula>(0.0933927648833822 + (0.143520885280201 - 0.0933927648833822) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>1.17474574363159E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCH4/(kg*km)] CH4 emission rural, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_CH4_tot">
+        <formula>((share_mw * E6sp_CH4_mw) + (share_ru * E6sp_CH4_ru) + (share_ur * E6sp_CH4_ur)) * distance</formula>
+        <meanValue>0.0012227361194964</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCH4/kg] CH4 emission weighted, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_CH4_ur">
+        <formula>(0.121861385447638 + (0.204548435551779 - 0.121861385447638) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>1.63271568285003E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCH4/(kg*km)] CH4 emission urban, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_CO_mw">
+        <formula>(0.412092523915427 + (0.586361535957881 - 0.412092523915427) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>4.91231518299369E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO/(kg*km)] CO emission motorway, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_CO_ru">
+        <formula>(0.383108322109494 + (0.588739923068455 - 0.383108322109494) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>4.81894815402691E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO/(kg*km)] CO emission rural, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_CO_tot">
+        <formula>((share_mw * E6sp_CO_mw) + (share_ru * E6sp_CO_ru) + (share_ur * E6sp_CO_ur)) * distance</formula>
+        <meanValue>0.00501581043954681</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO/kg] CO emission weighted, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_CO_ur">
+        <formula>(0.499890054975237 + (0.839082309177944 - 0.499890054975237) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>6.6975962289291E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO/(kg*km)] CO emission urban, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_CO2_bio">
+        <formula>E6sp_CO2_tot * share_CO2_bio</formula>
+        <meanValue>0.384323059003539</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO2/kg] weighted CO2 emission, biogenic CO2 share of CO2 emission, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_CO2_fos">
+        <formula>E6sp_CO2_tot * (1 - share_CO2_bio)</formula>
+        <meanValue>7.30213812106723</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO2/kg] weighted CO2 emission, fossil CO2 share of CO2 emission, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_CO2_mw">
+        <formula>(580.135070800781 + 58.5 + (825.467232840401 - 580.135070800781) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>0.0746979711593811</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO2/(kg*km)] CO2 emission motorway, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_CO2_ru">
+        <formula>(539.331743512835 + 63.0 + (828.815482003347 - 539.331743512835) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>0.0738099899547093</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO2/(kg*km)] CO2 emission rural, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_CO2_tot">
+        <formula>((share_mw * E6sp_CO2_mw) + (share_ru * E6sp_CO2_ru) + (share_ur * E6sp_CO2_ur)) * distance</formula>
+        <meanValue>7.68646118007077</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO2/kg] CO2 emission weighted, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_CO2_ur">
+        <formula>(703.734575544085 + 150.7 + (1181.24220493862 - 703.734575544085) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>0.108567632850825</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO2/(kg*km)] CO2 emission urban, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_fuel_mw">
+        <formula>(204.741489955357 + 21.8 + (291.324210030692 - 204.741489955357) * utilisation) / (payload * 1000 * utilisation) / 1000</formula>
+        <meanValue>2.64718041506028E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[kgfuel/(kg*km)] fuel consumption motorway, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_fuel_ru">
+        <formula>(190.34115600586 + 23.5 + (292.505863734654 - 190.34115600586) * utilisation) / (payload * 1000 * utilisation) / 1000</formula>
+        <meanValue>2.61690161774305E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[kgfuel/(kg*km)] fuel consumption rural, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_fuel_tot">
+        <formula>((share_mw * E6sp_fuel_mw) + (share_ru * E6sp_fuel_ru) + (share_ur * E6sp_fuel_ur)) * distance</formula>
+        <meanValue>0.00272512359302278</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[kgfuel/kg] fuel consumption weighted, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_fuel_ur">
+        <formula>(248.36226109096 + 56.2 + (416.884408133371 - 248.36226109096) * utilisation) / (payload * 1000 * utilisation) / 1000</formula>
+        <meanValue>3.86014186285256E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[kgfuel/(kg*km)] fuel consumption urban, Euro 4</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_NMVOC_mw">
+        <formula>(0.00873551464506558 + (0.0124296596539872 - 0.00873551464506558) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>1.0413098740176E-6</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNMVOC/(kg*km)] NMVOC emission motorway (without benzene), Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_NMVOC_ru">
+        <formula>(0.0081211095675826 + (0.0124800764024257 - 0.0081211095675826) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>1.02151798889765E-6</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNMVOC/(kg*km)] NMVOC emission rural (without benzene), Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_NMVOC_tot">
+        <formula>((share_mw * E6sp_NMVOC_mw) + (share_ru * E6sp_NMVOC_ru) + (share_ur * E6sp_NMVOC_ur)) * distance</formula>
+        <meanValue>1.06324874273963E-4</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNMVOC/kg] NMVOC emission weighted (without benzene), Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_NMVOC_ur">
+        <formula>(0.0105966420045921 + (0.0177868205521788 - 0.0105966420045921) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>1.41975276401213E-6</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNMVOC/(kg*km)] NMVOC emission urban (without benzene), Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_NO_mw">
+        <formula>(0.205171354115009 + (0.291935869625637 - 0.205171354115009) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>2.44572831021029E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO/(kg*km)] NO emission motorway, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_NO_ru">
+        <formula>(0.190740791814668 + (0.293120001043592 - 0.190740791814668) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>2.39924295882035E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO/(kg*km)] NO emission rural, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_NO_tot">
+        <formula>((share_mw * E6sp_NO_mw) + (share_ru * E6sp_NO_ru) + (share_ur * E6sp_NO_ur)) * distance</formula>
+        <meanValue>0.00249725619076257</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO/kg] NO emission weighted, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_NO_ur">
+        <formula>(0.248883716762066 + (0.417759699480874 - 0.248883716762066) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>3.33457847266691E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO/(kg*km)] NO emission urban, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_NO2_mw">
+        <formula>(0.0683904513716698 + (0.0973119565418787 - 0.0683904513716698) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>8.15242770070096E-6</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO2/(kg*km)] NO2 emissions motorway, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_NO2_ru">
+        <formula>(0.0635802639382226 + (0.0977066670145309 - 0.0635802639382226) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>7.99747652940118E-6</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO2/(kg*km)] NO2 emissions rural, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_NO2_tot">
+        <formula>((share_mw * E6sp_NO2_mw) + (share_ru * E6sp_NO2_ru) + (share_ur * E6sp_NO2_ur)) * distance</formula>
+        <meanValue>8.32418730254189E-4</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO2/kg] NO2 emissions weighted, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_NO2_ur">
+        <formula>(0.0829612389206886 + (0.139253233160291 - 0.0829612389206886) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>1.11152615755563E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO2/(kg*km)] NO2 emissions urban, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_part_mw">
+        <formula>(0.00368828778820378 + (0.00524802086874843 - 0.00368828778820378) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>4.39659335481476E-7</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gparticle/(kg*km)] particle emission motorway, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_part_ru">
+        <formula>(0.00342887513605612 + (0.00526930731055992 - 0.00342887513605612) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>4.31302829764374E-7</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gparticle/(kg*km)] particle emission rural, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_part_tot">
+        <formula>((share_mw * E6sp_Part_mw) + (share_ru * E6sp_Part_ru) + (share_ur * E6sp_Part_ur)) * distance</formula>
+        <meanValue>4.48922304422898E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gparticle/kg] particle emission weighted, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="E6sp_part_ur">
+        <formula>(0.00447408848309091 + (0.00750990797366414 - 0.00447408848309091) * utilisation) / (payload * 1000 * utilisation)</formula>
+        <meanValue>5.99444553429412E-7</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gparticle/(kg*km)] particle emission urban, Euro 6</comment>
+      </variableParameter>
+      <variableParameter name="km_year">
+        <formula>service_life / lifetime_truck</formula>
+        <meanValue>100000.0</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[km/year] Calculated km per year</comment>
+      </variableParameter>
+      <variableParameter name="Lifetime_truck">
+        <meanValue>10.0</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[Years] Assumed lifetime of truck (assumed 10 years)</comment>
+      </variableParameter>
+      <variableParameter name="lorry">
+        <formula>distance / (service_life * tonnage * 1000)</formula>
+        <meanValue>9.47597839476926E-9</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[pcs] pieces of lorry allocated to the transport</comment>
+      </variableParameter>
+      <variableParameter name="payload">
+        <meanValue>17.3</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[t] default = 17,3t</comment>
+      </variableParameter>
+      <variableParameter name="service_life">
+        <meanValue>1000000.0</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[km] total service life of the lorry, default 1.000.000 km, used for allocation of capital goods</comment>
+      </variableParameter>
+      <variableParameter name="share_check">
+        <formula>share_mw + share_ru + share_ur</formula>
+        <meanValue>1.0</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">Check - value must be 1</comment>
+      </variableParameter>
+      <variableParameter name="share_check_E">
+        <formula>share_E4 + share_E5 + share_E6</formula>
+        <meanValue>1.0</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">Check - value must be 1</comment>
+      </variableParameter>
+      <variableParameter name="share_CO2_bio">
+        <meanValue>0.05</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[-] share of biogenic C in fuel</comment>
+      </variableParameter>
+      <variableParameter name="share_E4">
+        <meanValue>0.02</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[-] share of Euro 4 vehicle kilometers, default = 0,02</comment>
+      </variableParameter>
+      <variableParameter name="share_E5">
+        <meanValue>0.14</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[-] share of Euro 5 vehicle kilometers, default = 0,14</comment>
+      </variableParameter>
+      <variableParameter name="share_E6">
+        <meanValue>0.84</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[-] share of Euro 6 vehicle kilometers, default = 0,84</comment>
+      </variableParameter>
+      <variableParameter name="share_mw">
+        <meanValue>0.7</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[-] driving share motorway , default = 0,70</comment>
+      </variableParameter>
+      <variableParameter name="share_ru">
+        <meanValue>0.23</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[-] driving share rural , default = 0,23</comment>
+      </variableParameter>
+      <variableParameter name="share_ur">
+        <meanValue>0.07</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[-] driving share urban , default = 0,07</comment>
+      </variableParameter>
+      <variableParameter name="spec_CH4_tot">
+        <formula>E4sp_CH4_tot * share_E4 + E5sp_CH4_tot * share_E5 + E6sp_CH4_tot * share_E6</formula>
+        <meanValue>0.00143195500297772</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCH4/kg] CH4 emission weighted; Mix</comment>
+      </variableParameter>
+      <variableParameter name="spec_CO_tot">
+        <formula>E4sp_CO_tot * share_E4 + E5sp_CO_tot * share_E5 + E6sp_CO_tot * share_E6</formula>
+        <meanValue>0.00514596036238138</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO/kg] CO emission weighted; Mix</comment>
+      </variableParameter>
+      <variableParameter name="spec_CO2_bio">
+        <formula>E4sp_CO2_bio * share_E4 + E5sp_CO2_bio * share_E5 + E6sp_CO2_bio * share_E6</formula>
+        <meanValue>0.385067761239888</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO2/kg] biogenic CO2-emissions per kg</comment>
+      </variableParameter>
+      <variableParameter name="spec_CO2_fos">
+        <formula>E4sp_CO2_fos * share_E4 + E5sp_CO2_fos * share_E5 + E6sp_CO2_fos * share_E6</formula>
+        <meanValue>7.31628746355787</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO2/kg] fossil CO2-Emission per kg</comment>
+      </variableParameter>
+      <variableParameter name="spec_CO2_tot">
+        <formula>E4sp_CO2_tot * share_E4 + E5sp_CO2_tot * share_E5 + E6sp_CO2_tot * share_E6</formula>
+        <meanValue>7.70135522479776</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gCO2/kg] CO2 Emissions weighted; Mix</comment>
+      </variableParameter>
+      <variableParameter name="spec_fuel_tot">
+        <formula>E4sp_fuel_tot * share_E4 + E5sp_fuel_tot * share_E5 + E6sp_fuel_tot * share_E6</formula>
+        <meanValue>0.00273038000105567</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[kgfuel/kg] fuel consumption; Mix</comment>
+      </variableParameter>
+      <variableParameter name="spec_NMVOC_tot">
+        <formula>E4sp_NMVOC_tot * share_E4 + E5sp_NMVOC_tot * share_E5 + E6sp_NMVOC_tot * share_E6</formula>
+        <meanValue>1.24517819685345E-4</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNMVOC/kg] NMVOC Emissions (Without Xylene, Toluene and Benzene); Mix</comment>
+      </variableParameter>
+      <variableParameter name="spec_NO_tot">
+        <formula>E4sp_NO_tot * share_E4 + E5sp_NO_tot * share_E5 + E6sp_NO_tot * share_E6</formula>
+        <meanValue>0.0033698064305053</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO/kg] NO Emissions weighted; Mix</comment>
+      </variableParameter>
+      <variableParameter name="spec_NO2_tot">
+        <formula>E4sp_NO2_tot * share_E4 + E5sp_NO2_tot * share_E5 + E6sp_NO2_tot * share_E6</formula>
+        <meanValue>0.00112326881016843</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gNO2/kg] NO2 Emissions weighted; Mix</comment>
+      </variableParameter>
+      <variableParameter name="spec_part_tot">
+        <formula>E4sp_part_tot * share_E4 + E5sp_part_tot * share_E5 + E6sp_part_tot * share_E6</formula>
+        <meanValue>4.50932204134327E-5</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[gParticulate matter/kg] Particulate emissions weighted; Mix</comment>
+      </variableParameter>
+      <variableParameter name="street">
+        <formula>(spec_fuel_tot/53800000000)*(690000/50)*1000</formula>
+        <meanValue>7.00357695438072E-7</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[m] meters of average street allocated to the transport (default service life of the street = 50a)</comment>
+      </variableParameter>
+      <variableParameter name="tonnage">
+        <formula>utilisation * payload</formula>
+        <meanValue>10.553</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[t]</comment>
+      </variableParameter>
+      <variableParameter name="utilisation">
+        <meanValue>0.61</meanValue>
+        <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+        <comment xml:lang="en">[-] utilisation by mass, default = 0.61</comment>
+      </variableParameter>
+    </mathematicalRelations>
+  </processInformation>
+  <modellingAndValidation>
+    <LCIMethodAndAllocation>
+      <typeOfDataSet>Unit process, single operation</typeOfDataSet>
+      <LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+      <deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+      <LCIMethodApproaches>Not applicable</LCIMethodApproaches>
+      <deviationsFromLCIMethodApproaches xml:lang="en">None</deviationsFromLCIMethodApproaches>
+      <modellingConstants xml:lang="en">Direct land use change: GHG emissions from direct LUC allocated to good/service for 20 years after the LUC occurs.
+Carbon  storage  and  delayed  emissions:  credits  associated  with  temporary  (carbon) storage or delayed emissions are not considered in the calculation of the EF for the default impact categories.
+Emissions off-setting: not included
+Fossil and biogenic carbon emissions and removals: removals and emissions are modelled as follows: All  GHG  emissions  from  fossil  fuels  (including  peat  and  limestone)  are modelled consistently with the ILCD list of elementary flows. In the case that the emissions refer to the molecules CO2 and CH4, they are modelled as ‘carbon dioxide (fossil)’ and ‘methane (fossil)’. Biogenic   uptake   and   emissions   are modelled   separately. For land use change, all carbon emissions and uptakes are inventoried separately for each of the elementary flows. Soil carbon accumulation (uptake) via improved agricultural management is excluded from the model.</modellingConstants>
+      <deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+      <referenceToLCAMethodDetails refObjectId="1a453aa5-4e46-468f-b441-17fb02054ac3" type="source data set" uri="../sources/1a453aa5-4e46-468f-b441-17fb02054ac3.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">GaBi Refinery Modelling Principles</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="f2b512cd-43b2-4260-9882-eebc06731274" type="source data set" uri="../sources/f2b512cd-43b2-4260-9882-eebc06731274.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">GaBi Modelling Principles</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="2f4e6329-f31d-44dc-8933-f4e6608590f5" type="source data set" uri="../sources/2f4e6329-f31d-44dc-8933-f4e6608590f5.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">GaBi Water Modelling Principles</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="69cb87e8-2532-455d-b7d3-18eced579e8f" type="source data set" uri="../sources/69cb87e8-2532-455d-b7d3-18eced579e8f.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">GaBi Agriculture Model Documentation</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="57a2608f-18fc-454f-998a-1657376a4322" type="source data set" uri="../sources/57a2608f-18fc-454f-998a-1657376a4322.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">GaBi Land Use Change Model Documentation</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="3c6b1a84-fc51-463c-a66f-eaacfde2cb2f" type="source data set" uri="../sources/3c6b1a84-fc51-463c-a66f-eaacfde2cb2f.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">GaBi Energy Modelling Principles</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="afc1ce43-e800-494b-aad4-46b9e8ea74da" type="source data set" uri="../sources/afc1ce43-e800-494b-aad4-46b9e8ea74da.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">Suggestions for updating the PEF method 2019</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="14dbc7d1-3ff2-4bda-8ff4-6805278f5d7c" type="source data set" uri="../sources/14dbc7d1-3ff2-4bda-8ff4-6805278f5d7c.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">Guide for EF compliant data sets</common:shortDescription>
+      </referenceToLCAMethodDetails>
+      <referenceToLCAMethodDetails refObjectId="4e2eaf14-1b54-4d3f-95dd-ef3bbbf49d32" type="source data set" uri="../sources/4e2eaf14-1b54-4d3f-95dd-ef3bbbf49d32.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">GaBi Agrarian Modelling Principles</common:shortDescription>
+      </referenceToLCAMethodDetails>
+    </LCIMethodAndAllocation>
+    <dataSourcesTreatmentAndRepresentativeness>
+      <dataCutOffAndCompletenessPrinciples xml:lang="en">A cut-off rule based on mass or energy flow or the level of environmental significance of max. 3% is applied and confirmed by the reviewer. An active cut-off within the system has not been applied, no data gaps are known and all elementary flows of environmental effect are included in the inventory.	&#13;
+&#13;
+Capital goods (including infrastructures) and their end of life are included unless the exclusion is clearly documented and conform with the cut-off principles.&#13;
+&#13;
+System boundaries include all known processes linked to the product supply chain.</dataCutOffAndCompletenessPrinciples>
+      <deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+      <dataSelectionAndCombinationPrinciples xml:lang="en"> LCI modeling is fully consistent.&#13;
+Energy and transport datasets from the PEF energy and transports tender are consistently used.</dataSelectionAndCombinationPrinciples>
+      <deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+      <dataTreatmentAndExtrapolationsPrinciples xml:lang="en">For details please see the document "GaBi Databases Modelling Principles"</dataTreatmentAndExtrapolationsPrinciples>
+      <deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+      <referenceToDataSource refObjectId="7aa2c8e5-9b1c-4fb8-92f2-4bff5907466e" type="source data set" uri="../sources/7aa2c8e5-9b1c-4fb8-92f2-4bff5907466e.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">Handbook Emission Factors for Road Transport HBEFA, Version 4.1, 2019</common:shortDescription>
+      </referenceToDataSource>
+      <percentageSupplyOrProductionCovered>95.0</percentageSupplyOrProductionCovered>
+      <uncertaintyAdjustments xml:lang="en">None</uncertaintyAdjustments>
+      <useAdviceForDataSet xml:lang="en">Notice: this data set supersedes the EF3.0-compliant version (see link under "preceding data set version" below calculated with the EF3.0). The life cycle inventory is not changed from the original EF3.0 data set. The LCIA results are calculated based on the EF3.1 methods which provide updated characterisation factors in the following impact categories: Climate Change, Ecotoxicity freshwater, Photochemical Ozone Formation, Acidification, Human Toxicity non-cancer, and Human Toxicity cancer. The review report and the data quality ratings refer to the original results. The data set has been updated by the European Commission on the basis of the original EF3.0 data set delivered by the data provider.&#13;
+&#13;
+Life Cycle Inventory (LCI) datasets to be used for implementing regular Product Environmental Footprint (PEF) studies and Organisation Environmental Footprint (OEF) studies exclusively under the specified Product groups and sectors as defined in the Product Environmental Footprint Category Rules (PEFCR) and Organisation Environmental Footprint Sectorial Rules (OEFSR) listed in https://ec.europa.eu/environment/eussd/smgp/ef_transition.htm
+The datasets are specifically designed for these methodological requirements (see above) and the related LCIA methods (listed below) recommended in EF.</useAdviceForDataSet>
+    </dataSourcesTreatmentAndRepresentativeness>
+    <completeness>
+      <completenessProductModel>All relevant flows quantified</completenessProductModel>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad66ce-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" version="03.00.014">
+        <common:shortDescription xml:lang="en">Water use</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6494-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" version="01.00.010">
+        <common:shortDescription xml:lang="en">Resource use, minerals and metals</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6110-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" version="01.00.010">
+        <common:shortDescription xml:lang="en">Resource use, fossils</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b5c610fe-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" version="02.01.000">
+        <common:shortDescription xml:lang="en">Photochemical ozone formation - human health</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b5c602c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" version="02.00.011">
+        <common:shortDescription xml:lang="en">EF-particulate matter</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b5c629d6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" version="02.00.012">
+        <common:shortDescription xml:lang="en">Ozone depletion</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6890-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" version="01.00.010">
+        <common:shortDescription xml:lang="en">Land use</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b5c632be-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" version="01.00.011">
+        <common:shortDescription xml:lang="en">Ionising radiation, human health</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="8c3141e9-1f15-43b5-bff2-182e49893a46" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Human toxicity, non-cancer_organics</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="9d1d43a2-e1aa-4c16-acd4-3dd8a6a2fb85" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Human toxicity, non-cancer_inorganics</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Human toxicity, non-cancer</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="503699e0-eca9-4089-8bf8-e0f49c93e578" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Human toxicity, cancer_organics</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="01500b74-7ffb-463e-9bd4-72f17c2263ff" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Human toxicity, cancer_inorganics</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="2299222a-bbd8-474f-9d4f-4dd1f18aea7c" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Human toxicity, cancer</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b5c614d2-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" version="01.02.009">
+        <common:shortDescription xml:lang="en">Eutrophication, terrestrial</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b53ec18f-7377-4ad3-86eb-cc3f4f276b2b" type="LCIA method data set" version="01.00.010">
+        <common:shortDescription xml:lang="en">Eutrophication, freshwater</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b5c619fa-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" version="02.00.010">
+        <common:shortDescription xml:lang="en">Eutrophication marine</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="fd530f00-9325-424a-92ef-aaac67922fd9" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Ecotoxicity, freshwater_organics</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="dacd48b5-4da5-49aa-aff4-cd5f5495c037" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Ecotoxicity, freshwater_inorganics</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="05316e7a-b254-4bea-9cf0-6bf33eb5c630" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Ecotoxicity, freshwater</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="14af9ca7-aa1d-4832-b1d9-ab05a06dcb12" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Climate change-Land use and land use change</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="7fce5b3a-66b8-4ce1-91e8-a925aee1f186" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Climate change-Fossil</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="706261af-a357-4cc0-a50a-f3033fcbd556" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Climate change-Biogenic</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="6209b35f-9447-40b5-b68c-a1099e3674a0" type="LCIA method data set" version="01.00.000">
+        <common:shortDescription xml:lang="en">Climate change</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <referenceToSupportedImpactAssessmentMethods refObjectId="b5c611c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" version="01.04.000">
+        <common:shortDescription xml:lang="en">Acidification</common:shortDescription>
+      </referenceToSupportedImpactAssessmentMethods>
+      <completenessElementaryFlows type="Climate change" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Ozone depletion" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Summer smog" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Eutrophication" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Acidification" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Human toxicity" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Freshwater ecotoxicity" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Seawater eco-toxicity" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Terrestric eco-toxicity" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Radioactivity" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Land use" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Non-renewable material resource depletion" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Renewable material resource consumption" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Non-renewable primary energy depletion" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Renewable primary energy consumption" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Particulate matter/respiratory inorganics" value="All relevant flows quantified"/>
+      <completenessElementaryFlows type="Species depletion" value="No statement"/>
+      <completenessElementaryFlows type="Noise" value="No statement"/>
+    </completeness>
+    <validation>
+      <review type="Independent internal review">
+        <common:scope name="Raw data">
+          <common:method name="Validation of data sources"/>
+          <common:method name="Sample tests on calculations"/>
+          <common:method name="Cross-check with other source"/>
+          <common:method name="Expert judgement"/>
+        </common:scope>
+        <common:scope name="Unit process(es), single operation">
+          <common:method name="Validation of data sources"/>
+          <common:method name="Sample tests on calculations"/>
+          <common:method name="Energy balance"/>
+          <common:method name="Element balance"/>
+          <common:method name="Cross-check with other source"/>
+          <common:method name="Cross-check with other data set"/>
+          <common:method name="Expert judgement"/>
+          <common:method name="Mass balance"/>
+          <common:method name="Compliance with ISO 14040 to 14044"/>
+        </common:scope>
+        <common:scope name="Unit process(es), black box">
+          <common:method name="Validation of data sources"/>
+          <common:method name="Sample tests on calculations"/>
+          <common:method name="Energy balance"/>
+          <common:method name="Element balance"/>
+          <common:method name="Cross-check with other source"/>
+          <common:method name="Cross-check with other data set"/>
+          <common:method name="Expert judgement"/>
+          <common:method name="Mass balance"/>
+          <common:method name="Compliance with ISO 14040 to 14044"/>
+        </common:scope>
+        <common:scope name="LCI results or Partly terminated system">
+          <common:method name="Validation of data sources"/>
+          <common:method name="Sample tests on calculations"/>
+          <common:method name="Energy balance"/>
+          <common:method name="Element balance"/>
+          <common:method name="Cross-check with other source"/>
+          <common:method name="Cross-check with other data set"/>
+          <common:method name="Expert judgement"/>
+          <common:method name="Mass balance"/>
+          <common:method name="Compliance with ISO 14040 to 14044"/>
+        </common:scope>
+        <common:scope name="LCIA results">
+          <common:method name="Cross-check with other source"/>
+          <common:method name="Cross-check with other data set"/>
+          <common:method name="Expert judgement"/>
+        </common:scope>
+        <common:scope name="Documentation">
+          <common:method name="Expert judgement"/>
+          <common:method name="Compliance with ISO 14040 to 14044"/>
+        </common:scope>
+        <common:scope name="Life cycle inventory methods">
+          <common:method name="Compliance with ISO 14040 to 14044"/>
+        </common:scope>
+        <common:scope name="LCIA results calculation"/>
+        <common:scope name="Goal and scope definition"/>
+        <common:dataQualityIndicators>
+          <common:dataQualityIndicator ext:numericValue="2.00" name="Technological representativeness" value="Good"/>
+          <common:dataQualityIndicator ext:numericValue="2.00" name="Time representativeness" value="Good"/>
+          <common:dataQualityIndicator ext:numericValue="2.00" name="Geographical representativeness" value="Good"/>
+          <common:dataQualityIndicator name="Completeness" value="Not evaluated / unknown"/>
+          <common:dataQualityIndicator ext:numericValue="2.00" name="Precision" value="Good"/>
+          <common:dataQualityIndicator name="Methodological appropriateness and consistency" value="Not evaluated / unknown"/>
+          <common:dataQualityIndicator ext:numericValue="2.00" name="Overall quality" value="Good"/>
+        </common:dataQualityIndicators>
+        <common:reviewDetails xml:lang="en">The dataset is compliant to "Zampori L., Pant R.: Suggestions for updating the Product Environmental Footprint (PEF) method, 2019 and Fazio S., Zampori L., De Schryver A. et al.: Guide for EF compliant data sets, Version 2.0, 2020.&#13;
+In the PEF context the fields "Methodological appropriateness and consistency" and "completeness" are not evaluated by the review since their good quality is defined as mandatory.</common:reviewDetails>
+        <common:referenceToNameOfReviewerAndInstitution refObjectId="b3c3f6e6-510a-4a97-bf15-89fe1de5c8ba" type="contact data set" uri="../contacts/b3c3f6e6-510a-4a97-bf15-89fe1de5c8ba.xml" version="22.11.011">
+          <common:shortDescription xml:lang="en">Sphera Solutions GmbH, Dr. Michael Baumann</common:shortDescription>
+        </common:referenceToNameOfReviewerAndInstitution>
+        <common:referenceToNameOfReviewerAndInstitution refObjectId="79193b1f-952f-4a45-86fb-edaad5b9a6ff" type="contact data set" uri="../contacts/79193b1f-952f-4a45-86fb-edaad5b9a6ff.xml" version="22.11.011">
+          <common:shortDescription xml:lang="en">Sphera Solutions GmbH, Dr. Stefan Eckert</common:shortDescription>
+        </common:referenceToNameOfReviewerAndInstitution>
+        <common:otherReviewDetails xml:lang="en">Good overall quality (2,0) interpreted into "very good quality" in the PEF quality validation scheme. The quality indicator for completeness was not requested to be quantified as a single DQI for all tenders. If a value “Not evaluated / unknown” completeness is given, this indicates that a single DQI was not explicitly requested but the completeness is still to be understood as very good.&#13;
+The Data Quality Indicator Results are conservative expert judgements, confirmed or - if necessary - corrected by the reviewers, based on their methodological as well as process understanding and considering semi-quantitatively the contribution of the DQIs of the used EF energy and transport datasets and of EF-related DQIs provided and reviewed within the GaBi databases. The overall DQIs of the datasets take into account primarily the quality and representativeness of the foreground technology information and that of the key upstream processes. If datasets are e.g. energy and transport intensive - or gain credits from energy recovery - the DQIs of the used EF energy and transport datasets influence the overall DQI significantly and have stronger been taken into account, via expert judgement. Analogous applies for other key background datasets. For the DQIs of the mentioned GaBi secondary datasets, similar DQIs had already been assigned to those datasets and were considered by the reviewers via expert judgement when assigning of the overall DQIs. In case of doubt, lower (i.e. lower quality) DQIs were assigned.</common:otherReviewDetails>
+        <common:referenceToCompleteReviewReport refObjectId="4cfc420f-a1a1-42e2-9fe9-60302946f4bc" type="source data set" uri="../sources/4cfc420f-a1a1-42e2-9fe9-60302946f4bc.xml" version="22.11.011">
+          <common:shortDescription xml:lang="en">GLO Lorry, Total weight 20-26 t, cooled, CNG Euro 0- 6 mix / 17.3t payload capacity [u-so]</common:shortDescription>
+        </common:referenceToCompleteReviewReport>
+      </review>
+    </validation>
+    <complianceDeclarations>
+      <compliance>
+        <common:referenceToComplianceSystem refObjectId="d92a1a12-2545-49e2-a585-55c259997756" type="source data set" uri="../sources/d92a1a12-2545-49e2-a585-55c259997756.xml" version="22.11.011">
+          <common:shortDescription xml:lang="en">ILCD Data Network - Entry-level</common:shortDescription>
+        </common:referenceToComplianceSystem>
+        <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+        <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+        <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+        <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+        <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+        <common:qualityCompliance>Not defined</common:qualityCompliance>
+      </compliance>
+      <compliance>
+        <common:referenceToComplianceSystem refObjectId="afc1ce43-e800-494b-aad4-46b9e8ea74da" type="source data set" uri="../sources/afc1ce43-e800-494b-aad4-46b9e8ea74da.xml" version="22.11.011">
+          <common:shortDescription xml:lang="en">Suggestions for updating the PEF method 2019</common:shortDescription>
+        </common:referenceToComplianceSystem>
+        <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+        <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+        <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+        <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+        <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+        <common:qualityCompliance>Fully compliant</common:qualityCompliance>
+      </compliance>
+      <compliance>
+        <common:referenceToComplianceSystem refObjectId="1ea48531-e397-4ca7-ac08-056e4fa11826" type="source data set" uri="../sources/1ea48531-e397-4ca7-ac08-056e4fa11826.xml" version="22.11.011">
+          <common:shortDescription xml:lang="en">ISO 14040 Environmental Management – Life Cycle Assessment – Principles and Framework, 2006</common:shortDescription>
+        </common:referenceToComplianceSystem>
+        <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+        <common:nomenclatureCompliance>Not defined</common:nomenclatureCompliance>
+        <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+        <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+        <common:documentationCompliance>Not defined</common:documentationCompliance>
+        <common:qualityCompliance>Not defined</common:qualityCompliance>
+      </compliance>
+      <compliance>
+        <common:referenceToComplianceSystem refObjectId="1adb438d-4a8b-4919-885e-0a66da3c0f2a" type="source data set" uri="../sources/1adb438d-4a8b-4919-885e-0a66da3c0f2a.xml" version="22.11.011">
+          <common:shortDescription xml:lang="en">ISO 14044:2006. Environmental Management – Life Cycle Assessment – Requirements and guidelines. </common:shortDescription>
+        </common:referenceToComplianceSystem>
+        <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+        <common:nomenclatureCompliance>Not defined</common:nomenclatureCompliance>
+        <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+        <common:reviewCompliance>Not defined</common:reviewCompliance>
+        <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+        <common:qualityCompliance>Not defined</common:qualityCompliance>
+      </compliance>
+      <compliance>
+        <common:referenceToComplianceSystem refObjectId="0eb2b770-2cb1-43cf-9fbc-215df36fe9f0" type="source data set" uri="../sources/0eb2b770-2cb1-43cf-9fbc-215df36fe9f0.xml" version="00.00.001">
+          <common:shortDescription xml:lang="en">Environmental Footprint 3.1</common:shortDescription>
+        </common:referenceToComplianceSystem>
+        <common:approvalOfOverallCompliance>Not defined</common:approvalOfOverallCompliance>
+        <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+        <common:methodologicalCompliance>Not defined</common:methodologicalCompliance>
+        <common:reviewCompliance>Not defined</common:reviewCompliance>
+        <common:documentationCompliance>Not defined</common:documentationCompliance>
+        <common:qualityCompliance>Not defined</common:qualityCompliance>
+      </compliance>
+    </complianceDeclarations>
+  </modellingAndValidation>
+  <administrativeInformation>
+    <common:commissionerAndGoal>
+      <common:referenceToCommissioner refObjectId="1c2f3702-e030-41d3-871c-69450426653b" type="contact data set" uri="../contacts/1c2f3702-e030-41d3-871c-69450426653b.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">European Commission, DG ENV B1</common:shortDescription>
+      </common:referenceToCommissioner>
+      <common:project xml:lang="en">Provision of product environmental footprint-compliant life cycle inventory datasets. Contract number N° 09.029901/2021/846457/SER/ENV.B.1</common:project>
+      <common:intendedApplications xml:lang="en">Life Cycle Inventory (LCI) datasets to be used in Product Environmental Footprint Category Rules (PEFCRs) and Organisation Environmental Footprint Sectoral Rules (OEFSRs) developed in the context of the Environmental Footprint transition phase launched by the Commission in 2018.</common:intendedApplications>
+    </common:commissionerAndGoal>
+    <dataGenerator>
+      <common:referenceToPersonOrEntityGeneratingTheDataSet refObjectId="d7fa0337-f279-430d-becf-7f3111a85010" type="contact data set" uri="../contacts/d7fa0337-f279-430d-becf-7f3111a85010.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">Sphera Solutions GmbH</common:shortDescription>
+      </common:referenceToPersonOrEntityGeneratingTheDataSet>
+    </dataGenerator>
+    <dataEntryBy>
+      <common:timeStamp>2022-12-02T10:33:43.909+01:00</common:timeStamp>
+      <common:referenceToDataSetFormat refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" type="source data set" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+      </common:referenceToDataSetFormat>
+      <common:referenceToPersonOrEntityEnteringTheData refObjectId="d7fa0337-f279-430d-becf-7f3111a85010" type="contact data set" uri="../contacts/d7fa0337-f279-430d-becf-7f3111a85010.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">Sphera Solutions GmbH</common:shortDescription>
+      </common:referenceToPersonOrEntityEnteringTheData>
+      <common:referenceToDataSetUseApproval refObjectId="be34bbb0-b054-11db-abbd-0800200c9a66" type="contact data set" uri="../contacts/be34bbb0-b054-11db-abbd-0800200c9a66.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">No official approval by producer or operator</common:shortDescription>
+      </common:referenceToDataSetUseApproval>
+    </dataEntryBy>
+    <publicationAndOwnership>
+      <common:dateOfLastRevision>2022-11-07T15:29:06.000</common:dateOfLastRevision>
+      <common:dataSetVersion>22.12.000</common:dataSetVersion>
+      <common:referenceToPrecedingDataSetVersion refObjectId="747c8286-aae0-42b9-8280-2d06bfcd8821" type="process data set" uri="../processes/747c8286-aae0-42b9-8280-2d06bfcd8821?version=22.11.011" version="22.11.011">
+        <common:shortDescription xml:lang="en">Lorry, Total weight 20-26 t, cooled, CNG Euro 0- 6 mix / 17.3t payload capacityCNG driven, Euro 4 - 6 mix, cargo, cooledconsumption mix, to consumer20 - 26 t gross weight / 17,3t payload capacity</common:shortDescription>
+      </common:referenceToPrecedingDataSetVersion>
+      <common:permanentDataSetURI>http://lcdn.thinkstep.com/Node/showProcess.xhtml?uuid=747c8286-aae0-42b9-8280-2d06bfcd8821&amp;stock=EF_30pt2_all_datasets</common:permanentDataSetURI>
+      <common:workflowAndPublicationStatus>Data set finalised; entirely published</common:workflowAndPublicationStatus>
+      <common:referenceToOwnershipOfDataSet refObjectId="d7fa0337-f279-430d-becf-7f3111a85010" type="contact data set" uri="../contacts/d7fa0337-f279-430d-becf-7f3111a85010.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">Sphera Solutions GmbH</common:shortDescription>
+      </common:referenceToOwnershipOfDataSet>
+      <common:copyright>true</common:copyright>
+      <common:referenceToEntitiesWithExclusiveAccess refObjectId="8b3e08f0-740a-43b1-aa8d-bec56c5daf6e" type="contact data set" uri="../contacts/8b3e08f0-740a-43b1-aa8d-bec56c5daf6e.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">FINAL USER</common:shortDescription>
+      </common:referenceToEntitiesWithExclusiveAccess>
+      <common:licenseType>Free of charge for some user types or use types</common:licenseType>
+      <common:accessRestrictions xml:lang="en">Datasets can only be used in accordance with the terms and conditions of this EULA exclusively until 31st December 2024 (PERMITTED USE).</common:accessRestrictions>
+    </publicationAndOwnership>
+  </administrativeInformation>
+  <exchanges>
+    <exchange dataSetInternalID="0">
+      <referenceToFlowDataSet refObjectId="efa69527-5e73-4485-b95f-91fcbe097f3e" type="flow data set" uri="../flows/efa69527-5e73-4485-b95f-91fcbe097f3e.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">Truck (tractor &amp; trailer)</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Input</exchangeDirection>
+      <referenceToVariable>lorry</referenceToVariable>
+      <meanAmount>1.0</meanAmount>
+      <resultingAmount>9.47597839476926E-9</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>valuable</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="1">
+      <referenceToFlowDataSet refObjectId="0eba1524-45c9-46bd-8f81-f40c6b502a52" type="flow data set" uri="../flows/0eba1524-45c9-46bd-8f81-f40c6b502a52.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">Road (average)</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Input</exchangeDirection>
+      <referenceToVariable>street</referenceToVariable>
+      <meanAmount>1.0</meanAmount>
+      <resultingAmount>7.00357695438072E-7</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>valuable</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="2">
+      <referenceToFlowDataSet refObjectId="396c738a-cf1b-4b64-b4c7-e267898d562e" type="flow data set" uri="../flows/396c738a-cf1b-4b64-b4c7-e267898d562e.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">Natural gas</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Input</exchangeDirection>
+      <referenceToVariable>spec_fuel_tot</referenceToVariable>
+      <meanAmount>1.0</meanAmount>
+      <resultingAmount>0.00273038000105567</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>valuable</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="3">
+      <referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9610-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9610-0050c2490048.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">methane (fossil) [Emissions to air, unspecified]</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <referenceToVariable>spec_CH4_tot</referenceToVariable>
+      <meanAmount>0.001</meanAmount>
+      <resultingAmount>1.43195500297772E-6</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>none</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="4">
+      <referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9c15-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9c15-0050c2490048.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">carbon dioxide (biogenic) [Emissions to air, unspecified]</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <referenceToVariable>spec_CO2_bio</referenceToVariable>
+      <meanAmount>0.001</meanAmount>
+      <resultingAmount>3.85067761239888E-4</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>none</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="5">
+      <referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9293-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9293-0050c2490048.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">particles (PM2.5) [Emissions to air, unspecified]</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <referenceToVariable>spec_part_tot</referenceToVariable>
+      <meanAmount>0.001</meanAmount>
+      <resultingAmount>4.50932204134327E-8</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>none</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="6">
+      <referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-96ee-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-96ee-0050c2490048.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">nitrogen monoxide [Emissions to air, unspecified]</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <referenceToVariable>spec_NO_tot</referenceToVariable>
+      <meanAmount>0.001</meanAmount>
+      <resultingAmount>3.3698064305053E-6</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>none</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="7">
+      <referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a3ea-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a3ea-0050c2490048.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">HFC-125 [Emissions to air, unspecified]</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <referenceToVariable>Cool_Leakage_dr</referenceToVariable>
+      <meanAmount>0.44</meanAmount>
+      <resultingAmount>3.1687671752108417E-8</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>none</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="8">
+      <referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-96e5-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-96e5-0050c2490048.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">nitrogen dioxide [Emissions to air, unspecified]</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <referenceToVariable>spec_NO2_tot</referenceToVariable>
+      <meanAmount>0.001</meanAmount>
+      <resultingAmount>1.12326881016843E-6</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>none</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="9">
+      <referenceToFlowDataSet refObjectId="26162114-f5b3-45b5-87c3-f0fe0ecf2bb9" type="flow data set" uri="../flows/26162114-f5b3-45b5-87c3-f0fe0ecf2bb9.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">1,1,1-trifluoroethane [Emissions to air, unspecified]</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <referenceToVariable>Cool_Leakage_dr</referenceToVariable>
+      <meanAmount>0.52</meanAmount>
+      <resultingAmount>3.744906661612813E-8</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>none</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="10">
+      <referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-a302-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-a302-0050c2490048.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">non-methane volatile organic compounds [Emissions to air, unspecified]</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <referenceToVariable>spec_NMVOC_tot</referenceToVariable>
+      <meanAmount>0.001</meanAmount>
+      <resultingAmount>1.24517819685345E-7</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>none</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="11">
+      <referenceToFlowDataSet refObjectId="cc42cd54-36f3-4b6c-930a-c47144607c12" type="flow data set" uri="../flows/cc42cd54-36f3-4b6c-930a-c47144607c12.xml" version="22.11.011">
+        <common:shortDescription xml:lang="en">Transport</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <meanAmount>100.0</meanAmount>
+      <resultingAmount>100.0</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>valuable</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="12">
+      <referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-924e-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-924e-0050c2490048.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">carbon monoxide [Emissions to air, unspecified]</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <referenceToVariable>spec_CO_tot</referenceToVariable>
+      <meanAmount>0.001</meanAmount>
+      <resultingAmount>5.14596036238138E-6</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>none</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="13">
+      <referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">carbon dioxide (fossil) [Emissions to air, unspecified]</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <referenceToVariable>spec_CO2_fos</referenceToVariable>
+      <meanAmount>0.001</meanAmount>
+      <resultingAmount>0.00731628746355787</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>none</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+    <exchange dataSetInternalID="14">
+      <referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a6d2-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a6d2-0050c2490048.xml" version="03.00.000">
+        <common:shortDescription xml:lang="en">HFC-134a [Emissions to air, unspecified]</common:shortDescription>
+      </referenceToFlowDataSet>
+      <exchangeDirection>Output</exchangeDirection>
+      <referenceToVariable>Cool_Leakage_dr</referenceToVariable>
+      <meanAmount>0.04</meanAmount>
+      <resultingAmount>2.880697432009856E-9</resultingAmount>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+      <dataSourceType>Mixed primary / secondary</dataSourceType>
+      <dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+      <common:other>
+        <thinkstepio:thinkstep>
+          <thinkstepio:ioType>none</thinkstepio:ioType>
+        </thinkstepio:thinkstep>
+      </common:other>
+    </exchange>
+  </exchanges>
+  <LCIAResults>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b5c611c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c611c6-def3-11e6-bf01-fe55135034f3.xml" version="01.04.000">
+        <common:shortDescription xml:lang="en">Acidification</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>4.654837182026087E-6</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="6209b35f-9447-40b5-b68c-a1099e3674a0" type="LCIA method data set" uri="../lciamethods/6209b35f-9447-40b5-b68c-a1099e3674a0.xml" version="01.00.000">
+        <common:shortDescription xml:lang="en">Climate change</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.007699458159110171</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="05316e7a-b254-4bea-9cf0-6bf33eb5c630" type="LCIA method data set" uri="../lciamethods/05316e7a-b254-4bea-9cf0-6bf33eb5c630.xml" version="01.00.000">
+        <common:shortDescription xml:lang="en">Ecotoxicity, freshwater</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>1.6585530319497688E-6</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b53ec18f-7377-4ad3-86eb-cc3f4f276b2b" type="LCIA method data set" uri="../lciamethods/b53ec18f-7377-4ad3-86eb-cc3f4f276b2b.xml" version="01.00.010">
+        <common:shortDescription xml:lang="en">Eutrophication, freshwater</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b5c619fa-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c619fa-def3-11e6-bf01-fe55135034f3.xml" version="02.00.010">
+        <common:shortDescription xml:lang="en">Eutrophication marine</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>2.44535619973668E-6</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b5c614d2-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c614d2-def3-11e6-bf01-fe55135034f3.xml" version="01.02.009">
+        <common:shortDescription xml:lang="en">Eutrophication, terrestrial</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>2.67967007146604E-5</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="2299222a-bbd8-474f-9d4f-4dd1f18aea7c" type="LCIA method data set" uri="../lciamethods/2299222a-bbd8-474f-9d4f-4dd1f18aea7c.xml" version="01.01.000">
+        <common:shortDescription xml:lang="en">Human toxicity, cancer</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>3.378481948261159E-17</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8" type="LCIA method data set" uri="../lciamethods/7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8.xml" version="01.00.000">
+        <common:shortDescription xml:lang="en">Human toxicity, non-cancer</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>7.730603109047133E-14</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b5c632be-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c632be-def3-11e6-bf01-fe55135034f3.xml" version="01.00.011">
+        <common:shortDescription xml:lang="en">Ionising radiation, human health</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b2ad6890-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6890-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+        <common:shortDescription xml:lang="en">Land use</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b5c629d6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c629d6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.012">
+        <common:shortDescription xml:lang="en">Ozone depletion</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b5c602c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c602c6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.011">
+        <common:shortDescription xml:lang="en">EF-particulate Matter</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>1.79435181740204E-11</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b5c610fe-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c610fe-def3-11e6-bf01-fe55135034f3.xml" version="02.01.000">
+        <common:shortDescription xml:lang="en">Photochemical ozone formation - human health</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>4.866711598413742E-6</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b2ad66ce-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad66ce-c78d-11e6-9d9d-cec0c932ce01.xml" version="03.00.014">
+        <common:shortDescription xml:lang="en">Water use</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b2ad6494-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6494-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+        <common:shortDescription xml:lang="en">Resource use, minerals and metals</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b2ad6110-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6110-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+        <common:shortDescription xml:lang="en">Resource use, fossils</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="0db6bc32-3f72-48b9-bdb3-617849c2752f" type="LCIA method data set" uri="../lciamethods/0db6bc32-3f72-48b9-bdb3-617849c2752f.xml" version="01.00.005">
+        <common:shortDescription xml:lang="en">Climate change-Biogenic</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="2105d3ac-c7c7-4c80-b202-7328c14c66e8" type="LCIA method data set" uri="../lciamethods/2105d3ac-c7c7-4c80-b202-7328c14c66e8.xml" version="01.00.008">
+        <common:shortDescription xml:lang="en">Climate change-Fossil</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.00770479951227615</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="6f1b7d2a-eb2d-4b86-9b4d-2301b3186400" type="LCIA method data set" uri="../lciamethods/6f1b7d2a-eb2d-4b86-9b4d-2301b3186400.xml" version="01.00.005">
+        <common:shortDescription xml:lang="en">Climate change-Land use and land use change</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="9ee9886e-1430-4afe-ae1b-5580b76def07" type="LCIA method data set" uri="../lciamethods/9ee9886e-1430-4afe-ae1b-5580b76def07.xml" version="01.00.002">
+        <common:shortDescription xml:lang="en">Ecotoxicity, freshwater_inorganics</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>1.17497712954254E-7</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="7fe353ed-2aac-4c81-9045-2f0ed4ef855e" type="LCIA method data set" uri="../lciamethods/7fe353ed-2aac-4c81-9045-2f0ed4ef855e.xml" version="01.00.002">
+        <common:shortDescription xml:lang="en">Ecotoxicity, freshwater_metals</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="6800f5d3-7284-4ba3-8eb6-e3ab3ade7995" type="LCIA method data set" uri="../lciamethods/6800f5d3-7284-4ba3-8eb6-e3ab3ade7995.xml" version="01.00.002">
+        <common:shortDescription xml:lang="en">Ecotoxicity, freshwater_organics</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>1.54105531899552E-6</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="6c7a9d7d-4888-41ae-84bb-0d460ec52b80" type="LCIA method data set" uri="../lciamethods/6c7a9d7d-4888-41ae-84bb-0d460ec52b80.xml" version="01.00.003">
+        <common:shortDescription xml:lang="en">Human toxicity, cancer_inorganics</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="6453d675-cfd8-42c8-93e9-4ea34ab1b78e" type="LCIA method data set" uri="../lciamethods/6453d675-cfd8-42c8-93e9-4ea34ab1b78e.xml" version="01.00.003">
+        <common:shortDescription xml:lang="en">Human toxicity, cancer_metals</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="503699e0-eca9-4089-8bf8-e0f49c93e578" type="LCIA method data set" uri="../lciamethods/503699e0-eca9-4089-8bf8-e0f49c93e578.xml" version="01.00.003">
+        <common:shortDescription xml:lang="en">Human toxicity, cancer_organics</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>3.37848194826116E-17</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="b92648c3-e996-41ad-9dca-78c69932b779" type="LCIA method data set" uri="../lciamethods/b92648c3-e996-41ad-9dca-78c69932b779.xml" version="01.00.002">
+        <common:shortDescription xml:lang="en">Human toxicity, non-cancer_inorganics</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>5.5550642111907E-12</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="dea1149d-d918-4b48-a3af-838b0a1e4ca1" type="LCIA method data set" uri="../lciamethods/dea1149d-d918-4b48-a3af-838b0a1e4ca1.xml" version="01.00.002">
+        <common:shortDescription xml:lang="en">Human toxicity, non-cancer_metals</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>0.0</meanAmount>
+    </LCIAResult>
+    <LCIAResult>
+      <referenceToLCIAMethodDataSet refObjectId="216596d1-9539-4237-80ff-5eef712b0a71" type="LCIA method data set" uri="../lciamethods/216596d1-9539-4237-80ff-5eef712b0a71.xml" version="01.00.002">
+        <common:shortDescription xml:lang="en">Human toxicity, non-cancer_organics</common:shortDescription>
+      </referenceToLCIAMethodDataSet>
+      <meanAmount>7.73060310904715E-14</meanAmount>
+    </LCIAResult>
+  </LCIAResults>
+</processDataSet>

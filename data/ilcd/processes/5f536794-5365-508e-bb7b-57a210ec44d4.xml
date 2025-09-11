@@ -1,0 +1,1341 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<processDataSet xmlns="http://lca.jrc.it/ILCD/Process" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:ext="http://eplca.jrc.ec.europa.eu/ILCD/Extensions/2017" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" locations="../ILCDLocations.xml" version="1.1" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+        
+    <processInformation>
+                
+        <dataSetInformation>
+                        
+            <common:UUID>5f536794-5365-508e-bb7b-57a210ec44d4</common:UUID>
+                        
+            <name>
+                                
+                <baseName>care label</baseName>
+                                
+                <treatmentStandardsRoutes>spinning, weaving, printing</treatmentStandardsRoutes>
+                                
+                <mixAndLocationTypes>Production mix, at plant</mixAndLocationTypes>
+                                
+                <functionalUnitFlowProperties>PET/PE label</functionalUnitFlowProperties>
+                            
+            </name>
+                        
+            <identifierOfSubDataSet/>
+                        
+            <complementingProcesses>
+                                
+                <referenceToComplementingProcess refObjectId="e1ded83e-a02f-42cd-92f9-81cce21a3a98" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/e1ded83e-a02f-42cd-92f9-81cce21a3a98?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="6ca61112-1d5b-473c-abfa-4accc66a8a63" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/6ca61112-1d5b-473c-abfa-4accc66a8a63?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Transoceanic ship, containers - GLO</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="8baf5585-2700-5285-a4c5-c41d1d8b50eb" type="process data set" uri="../processes/8baf5585-2700-5285-a4c5-c41d1d8b50eb.xml" version="01.00.000">
+                                        
+                    <common:shortDescription>avoided product system, hdpe from care label - GLO</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="f24ae779-5fbb-5de1-b0f1-419443d3bb99" type="process data set" uri="../processes/f24ae779-5fbb-5de1-b0f1-419443d3bb99.xml" version="01.00.000">
+                                        
+                    <common:shortDescription>avoided product system, pet from care label - GLO</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="c9f2b486-c4d6-5cc0-a0f2-ba968fcacea2" type="process data set" uri="../processes/c9f2b486-c4d6-5cc0-a0f2-ba968fcacea2.xml" version="01.00.000">
+                                        
+                    <common:shortDescription>polyethylene terephthalate (pet) production, recycled, semi-mechanical, pre-consumer - GLO</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="9ca85eff-c3cb-5ffc-b07a-03ca5a318e20" type="process data set" uri="../processes/9ca85eff-c3cb-5ffc-b07a-03ca5a318e20.xml" version="01.00.000">
+                                        
+                    <common:shortDescription>high density polyethylene (hdpe) production, recycled - GLO</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="30e4677c-68c7-5528-a0ff-3d3819f8a9c0" type="process data set" uri="../processes/30e4677c-68c7-5528-a0ff-3d3819f8a9c0.xml" version="01.00.000">
+                                        
+                    <common:shortDescription>care label, blackbox - GLO</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="2f482f7e-33f5-5d03-9bfc-7084290b749b" type="process data set" uri="../processes/2f482f7e-33f5-5d03-9bfc-7084290b749b.xml" version="01.00.000">
+                                        
+                    <common:shortDescription>care label, elementary - GLO</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                            
+            </complementingProcesses>
+                        
+            <classificationInformation>
+                                
+                <common:classification>
+                                        
+                    <common:class level="0">Systems</common:class>
+                                        
+                    <common:class level="1">Textiles, furnitures and other interiors</common:class>
+                                    
+                </common:classification>
+                            
+            </classificationInformation>
+                        
+            <common:generalComment>Notice: this data set supersedes the EF3.0-compliant version (see link under "preceding data set version" below calculated with the EF3.0). The life cycle inventory is not changed from the original EF3.0 data set. The LCIA results are calculated based on the EF3.1 methods which provide updated characterisation factors in the following impact categories: Climate Change, Ecotoxicity freshwater, Photochemical Ozone Formation, Acidification, Human Toxicity non-cancer, and Human Toxicity cancer. The review report and the data quality ratings refer to the original results. The data set has been updated by the European Commission on the basis of the original EF3.0 data set delivered by the data provider.Care labels provide guidelines to consumers about apparel care, and the best cleaning procedures to be used for a particular combination of fabric. Care label is a printed fabric label made of PET or PE, and is durable to washing.
+
+This dataset covers yarns spining, waving and printing of care details on the label.</common:generalComment>
+                    
+        </dataSetInformation>
+                
+        <quantitativeReference type="Reference flow(s)">
+                        
+            <referenceToReferenceFlow>0</referenceToReferenceFlow>
+                    
+        </quantitativeReference>
+                
+        <time>
+                        
+            <common:referenceYear>2021</common:referenceYear>
+                        
+            <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+                    
+        </time>
+                
+        <geography>
+                        
+            <locationOfOperationSupplyOrProduction location="GLO">
+                                
+                <descriptionOfRestrictions/>
+                            
+            </locationOfOperationSupplyOrProduction>
+                    
+        </geography>
+                
+        <technology>
+                        
+            <technologyDescriptionAndIncludedProcesses>Care labels provide guidelines to consumers about apparel care, and the best cleaning procedures to be used for a particular combination of fabric.
+
+Raw materials and production processes were included to model as following:
+- Spinning of synthetic yarn from PET and PE (production mix)
+- Weaving of synthetic yarns
+- Printing of care label (printing of care info on label)
+
+Waste processing model was generated from global waste collection rate.  Global waste collection rate is 65%. 75% of waste collected are delivered to recycle facility and, 25% of collected waste are delivered to landfill areas.  Uncollected part of waste (35%) was assumed that it is dropped to landfill areas. From production facility to landfill transport was assumed as 70 km.</technologyDescriptionAndIncludedProcesses>
+                        
+            <technologicalApplicability>na</technologicalApplicability>
+                        
+            <referenceToTechnologyFlowDiagrammOrPicture refObjectId="4562465a-92b8-5dc0-b302-692e4e067f38" type="source data set" uri="../sources/4562465a-92b8-5dc0-b302-692e4e067f38.xml" version="22.00.000">
+                                
+                <common:shortDescription>Diagram of data for chemicals EF3.0</common:shortDescription>
+                            
+            </referenceToTechnologyFlowDiagrammOrPicture>
+                        
+            <referenceToTechnologyFlowDiagrammOrPicture refObjectId="a269f748-a531-5df7-abb0-dda2190361bb" type="source data set" uri="../sources/a269f748-a531-5df7-abb0-dda2190361bb.xml" version="01.00.000">
+                                
+                <common:shortDescription>Diagram of care label - GLO - EF3.0</common:shortDescription>
+                            
+            </referenceToTechnologyFlowDiagrammOrPicture>
+                    
+        </technology>
+                
+        <mathematicalRelations>
+                        
+            <variableParameter name="A_HDPE">
+                                
+                <formula/>
+                                
+                <meanValue>0.5</meanValue>
+                                
+                <comment>The amount of waste HDPE produced is 0.021195652173913kg. The assumed percentage of losses of the recycling process  is 0.0892531876138434. R2 has been  calculated as the original amount of waste minues losses, i.e. 0.019303872653837kg. The value for A has been taken from the default values for the CFF. The default value for plastics is 0.5. Being pre-consumer waste, Qsout/Qp is assumed to be 1. The E*v part of the formula is modelled as a negative input of the relevant virgin material.</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="A_PET">
+                                
+                <formula/>
+                                
+                <meanValue>0.5</meanValue>
+                                
+                <comment>The amount of waste PET produced is 0.021195652173913kg. The assumed percentage of losses of the recycling process  is 0.0999999999999999. R2 has been  calculated as the original amount of waste minues losses, i.e. 0.0190760869565217kg. The value for A has been taken from the default values for the CFF. The default value for plastics is 0.5. Being pre-consumer waste, Qsout/Qp is assumed to be 1. The E*v part of the formula is modelled as a negative input of the relevant virgin material.</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="Qsout/Qp_HDPE">
+                                
+                <formula/>
+                                
+                <meanValue>1.0</meanValue>
+                                
+                <comment>The amount of waste HDPE produced is 0.021195652173913kg. The assumed percentage of losses of the recycling process  is 0.0892531876138434. R2 has been  calculated as the original amount of waste minues losses, i.e. 0.019303872653837kg. The value for A has been taken from the default values for the CFF. The default value for plastics is 0.5. Being pre-consumer waste, Qsout/Qp is assumed to be 1. The E*v part of the formula is modelled as a negative input of the relevant virgin material.</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="Qsout/Qp_PET">
+                                
+                <formula/>
+                                
+                <meanValue>1.0</meanValue>
+                                
+                <comment>The amount of waste PET produced is 0.021195652173913kg. The assumed percentage of losses of the recycling process  is 0.0999999999999999. R2 has been  calculated as the original amount of waste minues losses, i.e. 0.0190760869565217kg. The value for A has been taken from the default values for the CFF. The default value for plastics is 0.5. Being pre-consumer waste, Qsout/Qp is assumed to be 1. The E*v part of the formula is modelled as a negative input of the relevant virgin material.</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="CFF_HDPE">
+                                
+                <formula>(1-A_HDPE)*R2_HDPE</formula>
+                                
+                <meanValue>0.021195652173913032</meanValue>
+                                
+                <comment>The amount of waste HDPE produced is 0.021195652173913kg. The assumed percentage of losses of the recycling process  is 0.0892531876138434. R2 has been  calculated as the original amount of waste minues losses, i.e. 0.019303872653837kg. The value for A has been taken from the default values for the CFF. The default value for plastics is 0.5. Being pre-consumer waste, Qsout/Qp is assumed to be 1. The E*v part of the formula is modelled as a negative input of the relevant virgin material.</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="CFF_PET">
+                                
+                <formula>(1-A_PET)*R2_PET</formula>
+                                
+                <meanValue>0.021195652173913032</meanValue>
+                                
+                <comment>The amount of waste PET produced is 0.021195652173913kg. The assumed percentage of losses of the recycling process  is 0.0999999999999999. R2 has been  calculated as the original amount of waste minues losses, i.e. 0.0190760869565217kg. The value for A has been taken from the default values for the CFF. The default value for plastics is 0.5. Being pre-consumer waste, Qsout/Qp is assumed to be 1. The E*v part of the formula is modelled as a negative input of the relevant virgin material.</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="avoid_HDPE">
+                                
+                <formula>CFF_HDPE*Qsout/Qp_HDPE</formula>
+                                
+                <meanValue>0.08925318761384342</meanValue>
+                                
+                <comment>The amount of waste HDPE produced is 0.021195652173913kg. The assumed percentage of losses of the recycling process  is 0.0892531876138434. R2 has been  calculated as the original amount of waste minues losses, i.e. 0.019303872653837kg. The value for A has been taken from the default values for the CFF. The default value for plastics is 0.5. Being pre-consumer waste, Qsout/Qp is assumed to be 1. The E*v part of the formula is modelled as a negative input of the relevant virgin material.</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="avoid_PET">
+                                
+                <formula>CFF_PET*Qsout/Qp_PET</formula>
+                                
+                <meanValue>0.09999999999999987</meanValue>
+                                
+                <comment>The amount of waste PET produced is 0.021195652173913kg. The assumed percentage of losses of the recycling process  is 0.0999999999999999. R2 has been  calculated as the original amount of waste minues losses, i.e. 0.0190760869565217kg. The value for A has been taken from the default values for the CFF. The default value for plastics is 0.5. Being pre-consumer waste, Qsout/Qp is assumed to be 1. The E*v part of the formula is modelled as a negative input of the relevant virgin material.</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="R2_PET">
+                                
+                <formula/>
+                                
+                <meanValue>0.019076086956521732</meanValue>
+                                
+                <comment>The amount of waste  produced is 0.021195652173913kg. The assumed percentage of losses of the recycling process  is 0.0999999999999999. R2 has been  calculated as the original amount of waste minues losses, i.e. 0.0190760869565217kg. The value for A has been taken from the default values for the CFF. The default value for plastics is 0.5. Being pre-consumer waste, Qsout/Qp is assumed to be 1. The E*v part of the formula is modelled as a negative input of the relevant virgin material.</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="R2_HDPE">
+                                
+                <formula/>
+                                
+                <meanValue>0.019303872653837005</meanValue>
+                                
+                <comment>The amount of waste  produced is 0.021195652173913kg. The assumed percentage of losses of the recycling process  is 0.0892531876138434. R2 has been  calculated as the original amount of waste minues losses, i.e. 0.019303872653837kg. The value for A has been taken from the default values for the CFF. The default value for plastics is 0.5. Being pre-consumer waste, Qsout/Qp is assumed to be 1. The E*v part of the formula is modelled as a negative input of the relevant virgin material.</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_0">
+                                
+                <meanValue>0.5434782608695652</meanValue>
+                                
+                <comment>Mass in kg, for high density polyethylene, petrochemical // high density polyethylene (hdpe) production, fossil fuel-based // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_0">
+                                
+                <meanValue>999.12</meanValue>
+                                
+                <comment>Distance in km, for high density polyethylene, petrochemical // high density polyethylene (hdpe) production, fossil fuel-based // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_0">
+                                
+                <formula>kg_0*km_0</formula>
+                                
+                <meanValue>543.0</meanValue>
+                                
+                <comment>Transport amount in km*km, for high density polyethylene, petrochemical // high density polyethylene (hdpe) production, fossil fuel-based // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_1">
+                                
+                <meanValue>0.5434782608695652</meanValue>
+                                
+                <comment>Mass in kg, for polyethylene terephthalate, mix // polyethylene terephthalate (pet) production, blend of bio- based and fossil // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_1">
+                                
+                <meanValue>999.12</meanValue>
+                                
+                <comment>Distance in km, for polyethylene terephthalate, mix // polyethylene terephthalate (pet) production, blend of bio- based and fossil // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_1">
+                                
+                <formula>kg_1*km_1</formula>
+                                
+                <meanValue>543.0</meanValue>
+                                
+                <comment>Transport amount in km*km, for polyethylene terephthalate, mix // polyethylene terephthalate (pet) production, blend of bio- based and fossil // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_2">
+                                
+                <meanValue>0.04456521739130431</meanValue>
+                                
+                <comment>Mass in kg, for waste (unspecified) // landfill of plastic waste // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_2">
+                                
+                <meanValue>70.0</meanValue>
+                                
+                <comment>Distance in km, for waste (unspecified) // landfill of plastic waste // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_2">
+                                
+                <formula>kg_2*km_2</formula>
+                                
+                <meanValue>3.119565217391302</meanValue>
+                                
+                <comment>Transport amount in km*km, for waste (unspecified) // landfill of plastic waste // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_3">
+                                
+                <meanValue>0.5434782608695652</meanValue>
+                                
+                <comment>Mass in kg, for high density polyethylene, petrochemical // high density polyethylene (hdpe) production, fossil fuel-based // glo; Transoceanic ship, containers; GLO</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_3">
+                                
+                <meanValue>17995.2</meanValue>
+                                
+                <comment>Distance in km, for high density polyethylene, petrochemical // high density polyethylene (hdpe) production, fossil fuel-based // glo; Transoceanic ship, containers; GLO</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_3">
+                                
+                <formula>kg_3*km_3</formula>
+                                
+                <meanValue>9780.0</meanValue>
+                                
+                <comment>Transport amount in km*km, for high density polyethylene, petrochemical // high density polyethylene (hdpe) production, fossil fuel-based // glo; Transoceanic ship, containers; GLO</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_4">
+                                
+                <meanValue>0.5434782608695652</meanValue>
+                                
+                <comment>Mass in kg, for polyethylene terephthalate, mix // polyethylene terephthalate (pet) production, blend of bio- based and fossil // glo; Transoceanic ship, containers; GLO</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_4">
+                                
+                <meanValue>17995.2</meanValue>
+                                
+                <comment>Distance in km, for polyethylene terephthalate, mix // polyethylene terephthalate (pet) production, blend of bio- based and fossil // glo; Transoceanic ship, containers; GLO</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_4">
+                                
+                <formula>kg_4*km_4</formula>
+                                
+                <meanValue>9780.0</meanValue>
+                                
+                <comment>Transport amount in km*km, for polyethylene terephthalate, mix // polyethylene terephthalate (pet) production, blend of bio- based and fossil // glo; Transoceanic ship, containers; GLO</comment>
+                            
+            </variableParameter>
+                    
+        </mathematicalRelations>
+            
+    </processInformation>
+        
+    <modellingAndValidation>
+                
+        <LCIMethodAndAllocation>
+                        
+            <typeOfDataSet>Partly terminated system</typeOfDataSet>
+                        
+            <LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+                        
+            <deviationsFromLCIMethodPrinciple>The background data uses: 
+- the \xe2\x80\x9cRecycled content cut-off\xe2\x80\x9d approach to allocate end-of-life by-products and secondary materials. This allocation is explained in the description of the recycled content system model (http://www.ecoinvent.org/database/system-models-in-ecoinvent-3/cut-off-system-model/allocation-cut-off-by-classification.html).
+OR
+- EF compliant data</deviationsFromLCIMethodPrinciple>
+                        
+            <LCIMethodApproaches>Allocation - market value</LCIMethodApproaches>
+                        
+            <deviationsFromLCIMethodApproaches>Background data: 
+- the \xe2\x80\x9cRecycled content cut-off\xe2\x80\x9d approach to allocate end-of-life by-products and secondary materials. This allocation is explained in the description of the recycled content system model (http://www.ecoinvent.org/database/system-models-in-ecoinvent-3/cut-off-system-model/allocation-cut-off-by-classification.html). The ecoinvent database mostly relies on “Allocation – market values” apart for few exceptions particularly in the energy sector. ecoinvent energy data is replaced with EF3.0 core data as per the EF guidelines version 2.0.
+OR
+- EF compliant data
+
+CFF implementation: 
+-For recycling of waste cotton. The original amount of waste material was 0.0286764705882353kg. The default A of 0.8 for textile shirt was used. 20% of the original amount is therefore considered to reflect the implementation of the CFF formula. Being pre-consumer waste, Qsout/Qp is assumed to be 1. The E*v part of the formula is  modelled as a negative input of the relevant virgin material. 90% of the amount of the produced waste material is used to account for losses during recycling.</deviationsFromLCIMethodApproaches>
+                        
+            <modellingConstants>All modelling constants follow the requirements listed in the Tender Specifications 070201/2020/SER/ENV.B1. Completeness: There are no intentional cut-offs in the inventory no matter how small their contribution to all the EF impact categories is. Eventual cut-offs are in compliance with the Guide for EF compliant data sets (JRC 2020), i.e. only if below the 3% cut-off rule. Water use: water use is modelled at country level using separate flows for water withdrawal, water release and water evaporation. Handling multi-functional processes: the following PEF multi- functionality decision hierarchy is applied for resolving all multi- functionality problems: (1) subdivision or system expansion; (2) allocation based on a relevant underlying physical relationship (substitution may apply here); (3) allocation based on some other relationship. Direct land use change: GHG emissions from direct LUC allocated to good/service for 20 years after the LUC occurs, with IPCC default values. Carbon storage and delayed emissions: credits associated with temporary (carbon) storage or delayed emissions up to 300 years are not be considered. Emissions off-setting: are not included. Capital goods (including infrastructures) and their End of life: they are included. System boundaries: system boundaries include all processes linked to the product supply chain (e.g. maintenance). Time period: emissions and removals are modelled as if released or removed at the beginning of the assessment method. Fossil and biogenic carbon emissions and removals: removals and emissions are modelled as follows: All GHG emissions from fossil fuels (including peat and limestone) are modelled consistently with the most updated ILCD list of elementary flows. The non-fossil (biogenic) carbon flows are modelled consistently with the most updated ILCD list of elementary flows.</modellingConstants>
+                        
+            <deviationsFromModellingConstants>None</deviationsFromModellingConstants>
+                    
+        </LCIMethodAndAllocation>
+                
+        <dataSourcesTreatmentAndRepresentativeness>
+                        
+            <dataCutOffAndCompletenessPrinciples>There are no intentional cut-offs in the inventory no matter how small their contribution to all the EF impact categories is. Eventual cut-offs are in compliance with the Guide for EF compliant data sets (JRC 2020), i.e. only if below the 3% cut-off rule. The dataset dry mass and water balance has been checked to ensure the inventory is complete. Capital goods (e.g. infrastructure) and their end-of-life are included.</dataCutOffAndCompletenessPrinciples>
+                        
+            <deviationsFromCutOffAndCompletenessPrinciples>None</deviationsFromCutOffAndCompletenessPrinciples>
+                        
+            <dataSelectionAndCombinationPrinciples>These datasets include, in both their foreground and background data, links to EF3.0 compliant data.
+The relevant background data on energy, transport, and End of Life are from the LCDN data node (http://lcdn.thinkstep.com/Node/).
+All other background data in the supply of this product for which no EF3.0 process was available are from ecoinvent v3.7 database (www.ecoinvent.org) or other data sources.</dataSelectionAndCombinationPrinciples>
+                        
+            <deviationsFromSelectionAndCombinationPrinciples>None</deviationsFromSelectionAndCombinationPrinciples>
+                        
+            <dataTreatmentAndExtrapolationsPrinciples>Several data sources have been used to model the inventory.</dataTreatmentAndExtrapolationsPrinciples>
+                        
+            <deviationsFromTreatmentAndExtrapolationPrinciples>None</deviationsFromTreatmentAndExtrapolationPrinciples>
+                        
+            <referenceToDataSource refObjectId="d4fe7d8a-1f8c-591d-a31f-f58d2f888e3e" type="source data set" uri="../sources/d4fe7d8a-1f8c-591d-a31f-f58d2f888e3e.xml" version="01.00.000">
+                                
+                <common:shortDescription>Background Data for Representative products and organisations. EF 3.0 compliant (data stock)</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="409c510c-d431-592c-b49f-1658b4978aa6" type="source data set" uri="../sources/409c510c-d431-592c-b49f-1658b4978aa6.xml" version="01.00.000">
+                                
+                <common:shortDescription>CONFIGURE YOUR: PRINTED TEXTILE COMPOSITION &amp; CARE LABELS, https://wunderlabel.co.uk/care-labels/printed-textile-composition-labels/, Access Date: 22.03.2021</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="73d8ad98-597b-5037-bbf1-bfd1a61dd3f1" type="source data set" uri="../sources/73d8ad98-597b-5037-bbf1-bfd1a61dd3f1.xml" version="01.00.000">
+                                
+                <common:shortDescription>Vignesh, K. S., Rajadesingu, S., &amp; Arunachalam, K. D. (2021). Challenges, issues, and problems with zero-waste tools. In Concepts of Advanced Zero Waste Tools (pp. 69-90). Elsevier.</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="2dea569d-a837-5959-bf68-92e834d82ff8" type="source data set" uri="../sources/2dea569d-a837-5959-bf68-92e834d82ff8.xml" version="01.00.000">
+                                
+                <common:shortDescription>Altun, S. (2012). Prediction of textile waste profile and recycling opportunities in Turk. Fibres &amp; Textiles in Eastern Europe.</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <annualSupplyOrProductionVolume/>
+                        
+            <samplingProcedure/>
+                        
+            <dataCollectionPeriod/>
+                        
+            <uncertaintyAdjustments>None</uncertaintyAdjustments>
+                        
+            <useAdviceForDataSet/>
+                    
+        </dataSourcesTreatmentAndRepresentativeness>
+                
+        <completeness>
+                        
+            <completenessProductModel>All relevant flows quantified</completenessProductModel>
+                              
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b53ec18f-7377-4ad3-86eb-cc3f4f276b2b" type="LCIA method data set" uri="../lciamethods/b53ec18f-7377-4ad3-86eb-cc3f4f276b2b.xml" version="01.00.010">
+                                
+                <common:shortDescription xml:lang="en">Eutrophication, freshwater</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c632be-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c632be-def3-11e6-bf01-fe55135034f3.xml" version="01.00.011">
+                                
+                <common:shortDescription xml:lang="en">Ionising radiation, human health</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad66ce-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad66ce-c78d-11e6-9d9d-cec0c932ce01.xml" version="03.00.014">
+                                
+                <common:shortDescription xml:lang="en">Water use</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c614d2-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c614d2-def3-11e6-bf01-fe55135034f3.xml" version="01.02.009">
+                                
+                <common:shortDescription xml:lang="en">Eutrophication, terrestrial</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="05316e7a-b254-4bea-9cf0-6bf33eb5c630" type="LCIA method data set" uri="../lciamethods/05316e7a-b254-4bea-9cf0-6bf33eb5c630.xml" version="01.00.000">
+                                
+                <common:shortDescription xml:lang="en">Ecotoxicity, freshwater</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c602c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c602c6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.011">
+                                
+                <common:shortDescription xml:lang="en">EF-particulate Matter</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6890-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6890-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                                
+                <common:shortDescription xml:lang="en">Land use</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c611c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c611c6-def3-11e6-bf01-fe55135034f3.xml" version="01.04.000">
+                                
+                <common:shortDescription xml:lang="en">Acidification</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6110-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6110-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                                
+                <common:shortDescription xml:lang="en">Resource use, fossils</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="6209b35f-9447-40b5-b68c-a1099e3674a0" type="LCIA method data set" uri="../lciamethods/6209b35f-9447-40b5-b68c-a1099e3674a0.xml" version="01.00.000">
+                                
+                <common:shortDescription xml:lang="en">Climate change</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6494-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6494-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                                
+                <common:shortDescription xml:lang="en">Resource use, minerals and metals</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c629d6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c629d6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.012">
+                                
+                <common:shortDescription xml:lang="en">Ozone depletion</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="2299222a-bbd8-474f-9d4f-4dd1f18aea7c" type="LCIA method data set" uri="../lciamethods/2299222a-bbd8-474f-9d4f-4dd1f18aea7c.xml" version="01.01.000">
+                                
+                <common:shortDescription xml:lang="en">Human toxicity, cancer</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c619fa-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c619fa-def3-11e6-bf01-fe55135034f3.xml" version="02.00.010">
+                                
+                <common:shortDescription xml:lang="en">Eutrophication marine</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8" type="LCIA method data set" uri="../lciamethods/7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8.xml" version="01.00.000">
+                                
+                <common:shortDescription xml:lang="en">Human toxicity, non-cancer</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c610fe-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c610fe-def3-11e6-bf01-fe55135034f3.xml" version="02.01.000">
+                                
+                <common:shortDescription xml:lang="en">Photochemical ozone formation - human health</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <completenessElementaryFlows type="Climate change" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Ozone depletion" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Summer smog" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Eutrophication" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Acidification" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Human toxicity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Freshwater ecotoxicity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Seawater eco-toxicity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Terrestric eco-toxicity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Radioactivity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Land use" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Non-renewable material resource depletion" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Renewable material resource consumption" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Non-renewable primary energy depletion" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Renewable primary energy consumption" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Particulate matter/respiratory inorganics" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Species depletion" value="No statement"/>
+                        
+            <completenessElementaryFlows type="Noise" value="No statement"/>
+                    
+        </completeness>
+                
+        <validation>
+                        
+            <review type="Dependent internal review">
+                                
+                <common:scope name="Raw data">
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Validation of data sources"/>
+                                        
+                    <common:method name="Sample tests on calculations"/>
+                                        
+                    <common:method name="Element balance"/>
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Mass balance"/>
+                                        
+                    <common:method name="Documentation"/>
+                                        
+                    <common:method name="Energy balance"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="Unit process(es), single operation">
+                                        
+                    <common:method name="Validation of data sources"/>
+                                        
+                    <common:method name="Sample tests on calculations"/>
+                                        
+                    <common:method name="Energy balance"/>
+                                        
+                    <common:method name="Element balance"/>
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Cross-check with other data set"/>
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Mass balance"/>
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                        
+                    <common:method name="Documentation"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="Unit process(es), black box">
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Validation of data sources"/>
+                                        
+                    <common:method name="Sample tests on calculations"/>
+                                        
+                    <common:method name="Energy balance"/>
+                                        
+                    <common:method name="Element balance"/>
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Cross-check with other data set"/>
+                                        
+                    <common:method name="Mass balance"/>
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="LCI results or Partly terminated system">
+                                        
+                    <common:method name="Validation of data sources"/>
+                                        
+                    <common:method name="Sample tests on calculations"/>
+                                        
+                    <common:method name="Energy balance"/>
+                                        
+                    <common:method name="Element balance"/>
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Cross-check with other data set"/>
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Mass balance"/>
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="LCIA results">
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Cross-check with other data set"/>
+                                        
+                    <common:method name="Expert judgement"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="Documentation">
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="Life cycle inventory methods">
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                    
+                </common:scope>
+                                
+                <common:dataQualityIndicators>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.62" name="Overall quality" value="Good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.00" name="Time representativeness" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="2.14" name="Geographical representativeness" value="Fair"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.59" name="Technological representativeness" value="Good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.76" name="Precision" value="Good"/>
+                                        
+                    <common:dataQualityIndicator name="Methodological appropriateness and consistency" value="Not applicable"/>
+                                    
+                </common:dataQualityIndicators>
+                                
+                <common:reviewDetails>Internal reviews have been asked to review the plausibility of the unit process, LCIA scores, and DQRs. Internal reviewers have also been asked to review the data for EF compliancy. The consortium is therefore responsible for aspects such as compliancy with the ILCD format, including validation in Look@LCI, and nomenclature.
+Internal reviwers have been asked to judge based on the process name, that the unit process models in a complete and representative way the  process in the requested location. The review encompassed the plausability of:
+- exchanges with nature (elementary flows) as well as exchanges such as product and waste flows.
+- meta information (general comment, technology comment, system boundaries, allocation, cut-off rules, etc.). Reviewers were asked to judge if the provided information is enough to understand the content of the process.
+- LCIA scores
+- DQRs including precision, technology, time and geography. As well as the overall DQR.</common:reviewDetails>
+                                
+                <common:referenceToNameOfReviewerAndInstitution refObjectId="80e534c3-7a1e-5641-9b76-585833743e7b" type="contact data set" uri="../contacts/80e534c3-7a1e-5641-9b76-585833743e7b.xml">
+                                        
+                    <common:shortDescription>Avraam Symeonidis</common:shortDescription>
+                                    
+                </common:referenceToNameOfReviewerAndInstitution>
+                                
+                <common:referenceToNameOfReviewerAndInstitution refObjectId="c6fc97df-7c89-52f8-80b3-abcfe6796f96" type="contact data set" uri="../contacts/c6fc97df-7c89-52f8-80b3-abcfe6796f96.xml">
+                                        
+                    <common:shortDescription>Emilia Moreno Ruiz</common:shortDescription>
+                                    
+                </common:referenceToNameOfReviewerAndInstitution>
+                            
+            </review>
+                        
+            <review type="Independent review panel">
+                                
+                <common:dataQualityIndicators>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.62" name="Overall quality" value="Good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.00" name="Time representativeness" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="2.14" name="Geographical representativeness" value="Fair"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.59" name="Technological representativeness" value="Good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.76" name="Precision" value="Good"/>
+                                        
+                    <common:dataQualityIndicator name="Methodological appropriateness and consistency" value="Not applicable"/>
+                                    
+                </common:dataQualityIndicators>
+                                
+                <common:reviewDetails>External reviewers have been asked to provide their expertise in the field of interest. External reviewers have been asked to review the unit process, including eventual methodological choices, the LCIA scores (provided with contribution scores as well), and DQRs. External reviewers have been provided all the information in a tool developed by the consortium for the purpose of this project.
+External reviewers have been asked to judge based on the process name, that the unit process models in a complete and representative way the  process in the requested location. The review encompassed:
+- Plausability and completeness of exchanges with nature (elementary flows) as well as exchanges such as product and waste flows.
+- Review of meta information (general comment, technology comment, system boundaries, allocation, cut-off rules, etc.). Reviewers were asked to judge if the provided information is enough to understand the content of the process.
+- Review of properties (biogenic carbon and water content).
+- Review of allocation keys.
+- Plausability of LCIA scores calculated by the consortium.
+- Plausability of DQRs including precision, technology, time and geography. As well as the overall DQR.</common:reviewDetails>
+                                
+                <common:referenceToNameOfReviewerAndInstitution refObjectId="03793469-ee70-563e-bfa7-61b7930d0551" type="contact data set" uri="../contacts/03793469-ee70-563e-bfa7-61b7930d0551.xml">
+                                        
+                    <common:shortDescription>Madhuri Nigam</common:shortDescription>
+                                    
+                </common:referenceToNameOfReviewerAndInstitution>
+                                
+                <common:referenceToCompleteReviewReport refObjectId="0477e235-1faf-5324-8ef3-e8e27295ac47" type="source data set" uri="../sources/0477e235-1faf-5324-8ef3-e8e27295ac47.xml" version="01.00.000">
+                                        
+                    <common:shortDescription>Review report for care label - GLO</common:shortDescription>
+                                    
+                </common:referenceToCompleteReviewReport>
+                            
+            </review>
+                    
+        </validation>
+                
+        <complianceDeclarations>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="d92a1a12-2545-49e2-a585-55c259997756" type="source data set" uri="../sources/d92a1a12-2545-49e2-a585-55c259997756.xml" version="35.00.000">
+                                        
+                    <common:shortDescription>ILCD Data Network - Entry-level</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+                            
+            </compliance>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="afc1ce43-e800-494b-aad4-46b9e8ea74da" type="source data set" uri="../sources/afc1ce43-e800-494b-aad4-46b9e8ea74da.xml" version="00.00.000">
+                                        
+                    <common:shortDescription>Suggestions for updating the PEF method 2019</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Fully compliant</common:qualityCompliance>
+                            
+            </compliance>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="1ea48531-e397-4ca7-ac08-056e4fa11826" type="source data set" uri="../sources/1ea48531-e397-4ca7-ac08-056e4fa11826.xml" version="35.00.000">
+                                        
+                    <common:shortDescription>ISO 14040 Environmental Management – Life Cycle Assessment – Principles and Framework, 2006</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Not defined</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Not defined</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+                            
+            </compliance>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="1adb438d-4a8b-4919-885e-0a66da3c0f2a" type="source data set" uri="../sources/1adb438d-4a8b-4919-885e-0a66da3c0f2a.xml" version="35.00.000">
+                                        
+                    <common:shortDescription>ISO 14044:2006. Environmental Management – Life Cycle Assessment – Requirements and guidelines.</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Not defined</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Not defined</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+                            
+            </compliance>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="0eb2b770-2cb1-43cf-9fbc-215df36fe9f0" type="source data set" uri="../sources/0eb2b770-2cb1-43cf-9fbc-215df36fe9f0.xml" version="00.00.001">
+                                        
+                    <common:shortDescription>Environmental Footprint 3.1</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Not defined</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Not defined</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Not defined</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Not defined</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+                            
+            </compliance>
+                    
+        </complianceDeclarations>
+            
+    </modellingAndValidation>
+        
+    <administrativeInformation>
+                
+        <common:commissionerAndGoal>
+                        
+            <common:referenceToCommissioner refObjectId="cf7f0f79-a312-4b28-89ea-32a589b87f58" type="contact data set" uri="../contacts/cf7f0f79-a312-4b28-89ea-32a589b87f58.xml" version="01.00.000">
+                                
+                <common:shortDescription>European Commission, DG ENV B1</common:shortDescription>
+                            
+            </common:referenceToCommissioner>
+                        
+            <common:project>Provision of process-based 3.0 Environmental Footprint-compliant life cycle inventory datasets - Others - contract number 070201/2020/840235/SER/ENV.B.1</common:project>
+                        
+            <common:intendedApplications>Implementation of regular Product Environmental Footprint (PEF) studies and Organisation Environmental Footprint (OEF) studies exclusively under the specified Product groups and sectors as defined in the Product Environmental Footprint Category Rules (PEFCR) and Organisation Environmental Footprint Sectorial Rules (OEFSR) listed in http://ec.europa.eu/environment/eussd/smgp/PEFCR_OEFSR.htm</common:intendedApplications>
+                    
+        </common:commissionerAndGoal>
+                
+        <dataGenerator>
+                        
+            <common:referenceToPersonOrEntityGeneratingTheDataSet refObjectId="36b0010e-3a48-549e-bda0-46d1a32a327a" type="contact data set" uri="../contacts/36b0010e-3a48-549e-bda0-46d1a32a327a.xml" version="01.00.000">
+                                
+                <common:shortDescription>Metsims Sustainability Consulting</common:shortDescription>
+                            
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+                    
+        </dataGenerator>
+                
+        <dataEntryBy>
+                        
+            <common:timeStamp>2024-07-13T10:02:59.124+02:00</common:timeStamp>
+                        
+            <common:referenceToDataSetFormat refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" type="source data set" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml" version="03.00.000">
+                                
+                <common:shortDescription>ILCD format 1.1</common:shortDescription>
+                            
+            </common:referenceToDataSetFormat>
+                        
+            <common:referenceToPersonOrEntityEnteringTheData refObjectId="36b0010e-3a48-549e-bda0-46d1a32a327a" type="contact data set" uri="../contacts/36b0010e-3a48-549e-bda0-46d1a32a327a.xml" version="01.00.000">
+                                
+                <common:shortDescription>Metsims Sustainability Consulting</common:shortDescription>
+                            
+            </common:referenceToPersonOrEntityEnteringTheData>
+                    
+        </dataEntryBy>
+                
+        <publicationAndOwnership>
+                        
+            <common:dateOfLastRevision>2020-09-02T14:36:46.214668+02:00</common:dateOfLastRevision>
+                        
+            <common:dataSetVersion>01.01.000</common:dataSetVersion>
+                        
+            <common:referenceToPrecedingDataSetVersion refObjectId="5f536794-5365-508e-bb7b-57a210ec44d4" type="process data set" uri="../processes/5f536794-5365-508e-bb7b-57a210ec44d4.xml?version=01.00.000" version="01.00.000">
+                                
+                <common:shortDescription xml:lang="en">care label</common:shortDescription>
+                            
+            </common:referenceToPrecedingDataSetVersion>
+                        
+            <common:permanentDataSetURI/>
+                        
+            <common:workflowAndPublicationStatus>Data set finalised; entirely published</common:workflowAndPublicationStatus>
+                        
+            <common:registrationNumber/>
+                        
+            <common:referenceToOwnershipOfDataSet refObjectId="cdbab85b-40b1-5a9c-8131-46d43471d900" type="contact data set" uri="../contacts/cdbab85b-40b1-5a9c-8131-46d43471d900.xml" version="01.00.000">
+                                
+                <common:shortDescription>PRé Sustainability B.V.</common:shortDescription>
+                            
+            </common:referenceToOwnershipOfDataSet>
+                        
+            <common:copyright>true</common:copyright>
+                        
+            <common:referenceToEntitiesWithExclusiveAccess refObjectId="8b3e08f0-740a-43b1-aa8d-bec56c5daf6e" type="contact data set" uri="../contacts/8b3e08f0-740a-43b1-aa8d-bec56c5daf6e.xml" version="29.00.000">
+                                
+                <common:shortDescription>Final user</common:shortDescription>
+                            
+            </common:referenceToEntitiesWithExclusiveAccess>
+                        
+            <common:licenseType>Free of charge for some user types or use types</common:licenseType>
+                        
+            <common:accessRestrictions>Free of charge for all final users implementing a regular Product Environmental Footprint (PEF) studies and Organisation Environmental Footprint (OEF) studies exclusively under the specified Product groups and sectors as defined in the Product Environmental Footprint Category Rules (PEFCR) and Organisation Environmental Footprint Sectorial Rules (OEFSR) listed in http://ec.europa.eu/environment/eussd/smgp/PEFCR_OEFSR.htm and in accordance with the terms and conditions of the EULA (available at https://ecoinvent.lca-data.com/) exclusively until 31st December 2024. Any use of this dataset or any derivative data not within the specific context of one of the PEF/OEF projects or after the end of 2024 is not permitted.</common:accessRestrictions>
+                    
+        </publicationAndOwnership>
+            
+    </administrativeInformation>
+        
+    <exchanges>
+                
+        <exchange dataSetInternalID="0">
+                        
+            <referenceToFlowDataSet refObjectId="22db27e0-37c0-583b-b629-42f228d0c2fe" type="flow data set" uri=".../flows/22db27e0-37c0-583b-b629-42f228d0c2fe.xml">
+                                
+                <common:shortDescription>care label, pet, tyvek (hdpe) // care label // glo</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Output</exchangeDirection>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>1</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="1">
+                        
+            <referenceToFlowDataSet refObjectId="d0d54124-c258-5312-8826-d171f5ef59df" type="flow data set" uri=".../flows/d0d54124-c258-5312-8826-d171f5ef59df.xml">
+                                
+                <common:shortDescription>Transport of high density polyethylene, petrochemical // high density polyethylene (hdpe) production, fossil fuel-based // glo by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_0</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>543.0</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="2">
+                        
+            <referenceToFlowDataSet refObjectId="3e2b2237-883d-5fd5-a877-ebdbbb0e570c" type="flow data set" uri=".../flows/3e2b2237-883d-5fd5-a877-ebdbbb0e570c.xml">
+                                
+                <common:shortDescription>Transport of polyethylene terephthalate, mix // polyethylene terephthalate (pet) production, blend of bio- based and fossil // glo by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_1</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>543.0</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="3">
+                        
+            <referenceToFlowDataSet refObjectId="defb344a-ac2e-5e64-a3e6-f45de0ad4fb7" type="flow data set" uri=".../flows/defb344a-ac2e-5e64-a3e6-f45de0ad4fb7.xml">
+                                
+                <common:shortDescription>Transport of waste (unspecified) // landfill of plastic waste // eu+efta+uk by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_2</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>3.119565217391302</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="4">
+                        
+            <referenceToFlowDataSet refObjectId="582d3512-9695-5df4-bb74-ab2dbe0bc552" type="flow data set" uri=".../flows/582d3512-9695-5df4-bb74-ab2dbe0bc552.xml">
+                                
+                <common:shortDescription>Transport of high density polyethylene, petrochemical // high density polyethylene (hdpe) production, fossil fuel-based // glo by Transoceanic ship, containers - GLO</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_3</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>9780.0</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="5">
+                        
+            <referenceToFlowDataSet refObjectId="e68d10cc-f679-5969-b0ce-a261e60e8a59" type="flow data set" uri=".../flows/e68d10cc-f679-5969-b0ce-a261e60e8a59.xml">
+                                
+                <common:shortDescription>Transport of polyethylene terephthalate, mix // polyethylene terephthalate (pet) production, blend of bio- based and fossil // glo by Transoceanic ship, containers - GLO</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_4</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>9780.0</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="6">
+                        
+            <referenceToFlowDataSet refObjectId="b70f0de3-fdd2-5676-88a8-f8a2a0f99e8c" type="flow data set" uri=".../flows/b70f0de3-fdd2-5676-88a8-f8a2a0f99e8c.xml">
+                                
+                <common:shortDescription>avoided product system, hdpe from care label // avoided product system hdpe in care label // glo</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Output</exchangeDirection>
+                        
+            <referenceToVariable>avoid_HDPE</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.009651936326918503</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="7">
+                        
+            <referenceToFlowDataSet refObjectId="9b955537-9a37-59a9-a6b6-063d98403c20" type="flow data set" uri=".../flows/9b955537-9a37-59a9-a6b6-063d98403c20.xml">
+                                
+                <common:shortDescription>avoided product system, pet from care label // avoided product system pet in care label // glo</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Output</exchangeDirection>
+                        
+            <referenceToVariable>avoid_PET</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.009538043478260866</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="8">
+                        
+            <referenceToFlowDataSet refObjectId="e6c92a3b-6b16-58e5-9a13-1cf3622acedc" type="flow data set" uri=".../flows/e6c92a3b-6b16-58e5-9a13-1cf3622acedc.xml">
+                                
+                <common:shortDescription>polyethylene terephthalate, recycled, pre-consumer // polyethylene terephthalate (pet) production, recycled, semi-mechanical, pre-consumer // glo</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>CFF_PET</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.009538043478260866</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="9">
+                        
+            <referenceToFlowDataSet refObjectId="07aea4a0-38b0-51ac-b238-ad2bcaf476f4" type="flow data set" uri=".../flows/07aea4a0-38b0-51ac-b238-ad2bcaf476f4.xml">
+                                
+                <common:shortDescription>high density polyethylene, recycled // high density polyethylene (hdpe) production, recycled // glo</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>CFF_HDPE</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.009651936326918503</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="10">
+                        
+            <referenceToFlowDataSet refObjectId="2cedc9ab-45dc-5cb6-8925-eec28f6592d4" type="flow data set" uri=".../flows/2cedc9ab-45dc-5cb6-8925-eec28f6592d4.xml">
+                                
+                <common:shortDescription>care label, pet, tyvek (hdpe) // care label // glo, blackbox</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>1</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="11">
+                        
+            <referenceToFlowDataSet refObjectId="b12ba476-6fad-5f8b-9c47-87a3384fedc2" type="flow data set" uri=".../flows/b12ba476-6fad-5f8b-9c47-87a3384fedc2.xml">
+                                
+                <common:shortDescription>care label, pet, tyvek (hdpe) // care label // glo, elementary</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>1</resultingAmount>
+                    
+        </exchange>
+            
+    </exchanges>
+    <LCIAResults>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c619fa-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c619fa-def3-11e6-bf01-fe55135034f3.xml" version="02.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication marine</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.04607615629260166</meanAmount>
+            <generalComment>Eutrophication marine</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="05316e7a-b254-4bea-9cf0-6bf33eb5c630" type="LCIA method data set" uri="../lciamethods/05316e7a-b254-4bea-9cf0-6bf33eb5c630.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Ecotoxicity, freshwater</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>458.63990075127833</meanAmount>
+            <generalComment>Ecotoxicity, freshwater</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6890-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6890-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Land use</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>83.10233488486038</meanAmount>
+            <generalComment>Land use</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad66ce-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad66ce-c78d-11e6-9d9d-cec0c932ce01.xml" version="03.00.014">
+                <common:shortDescription xml:lang="en">Water use</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>14.536187027049777</meanAmount>
+            <generalComment>Water use</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6494-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6494-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, minerals and metals</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>5.236288286313701E-4</meanAmount>
+            <generalComment>Resource use, minerals and metals</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6110-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6110-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, fossils</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>506.7712494296009</meanAmount>
+            <generalComment>Resource use, fossils</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="6209b35f-9447-40b5-b68c-a1099e3674a0" type="LCIA method data set" uri="../lciamethods/6209b35f-9447-40b5-b68c-a1099e3674a0.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Climate change</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>34.128895628213996</meanAmount>
+            <generalComment>Climate change</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c629d6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c629d6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.012">
+                <common:shortDescription xml:lang="en">Ozone depletion</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>3.9355339104273863E-7</meanAmount>
+            <generalComment>Ozone depletion</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="2299222a-bbd8-474f-9d4f-4dd1f18aea7c" type="LCIA method data set" uri="../lciamethods/2299222a-bbd8-474f-9d4f-4dd1f18aea7c.xml" version="01.01.000">
+                <common:shortDescription xml:lang="en">Human toxicity, cancer</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>3.3962005243373174E-8</meanAmount>
+            <generalComment>Human toxicity, cancer</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8" type="LCIA method data set" uri="../lciamethods/7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Human toxicity, non-cancer</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>2.5418082408861943E-7</meanAmount>
+            <generalComment>Human toxicity, non-cancer</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c602c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c602c6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.011">
+                <common:shortDescription xml:lang="en">EF-particulate Matter</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>5.2183656816614305E-6</meanAmount>
+            <generalComment>EF-particulate Matter</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c632be-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c632be-def3-11e6-bf01-fe55135034f3.xml" version="01.00.011">
+                <common:shortDescription xml:lang="en">Ionising radiation, human health</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>1.420675147427602</meanAmount>
+            <generalComment>Ionising radiation, human health</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c610fe-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c610fe-def3-11e6-bf01-fe55135034f3.xml" version="02.01.000">
+                <common:shortDescription xml:lang="en">Photochemical ozone formation - human health</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.13195309317485607</meanAmount>
+            <generalComment>Photochemical ozone formation - human health</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c611c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c611c6-def3-11e6-bf01-fe55135034f3.xml" version="01.04.000">
+                <common:shortDescription xml:lang="en">Acidification</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.2358004757789533</meanAmount>
+            <generalComment>Acidification</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c614d2-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c614d2-def3-11e6-bf01-fe55135034f3.xml" version="01.02.009">
+                <common:shortDescription xml:lang="en">Eutrophication, terrestrial</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.4662640359556083</meanAmount>
+            <generalComment>Eutrophication, terrestrial</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b53ec18f-7377-4ad3-86eb-cc3f4f276b2b" type="LCIA method data set" uri="../lciamethods/b53ec18f-7377-4ad3-86eb-cc3f4f276b2b.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication, freshwater</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0014234897838205224</meanAmount>
+            <generalComment>Eutrophication, freshwater</generalComment>
+        </LCIAResult>
+    </LCIAResults>
+        
+
+</processDataSet>

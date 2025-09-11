@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<processDataSet xmlns="http://lca.jrc.it/ILCD/Process" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:ext="http://eplca.jrc.ec.europa.eu/ILCD/Extensions/2017" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" locations="../ILCDLocations.xml" version="1.1" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+        
+    <processInformation>
+                
+        <dataSetInformation>
+                        
+            <common:UUID>39e60674-00ce-5fb1-88e2-a5069c99542c</common:UUID>
+                        
+            <name>
+                                
+                <baseName>sawn wood, softwood</baseName>
+                                
+                <treatmentStandardsRoutes>technology mix</treatmentStandardsRoutes>
+                                
+                <mixAndLocationTypes>production mix, at plant</mixAndLocationTypes>
+                                
+                <functionalUnitFlowProperties>wet mass</functionalUnitFlowProperties>
+                            
+            </name>
+                        
+            <identifierOfSubDataSet/>
+                        
+            <complementingProcesses>
+                                
+                <referenceToComplementingProcess refObjectId="34960d4d-af62-43a0-aa76-adc5fcf57246" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/34960d4d-af62-43a0-aa76-adc5fcf57246?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Electricity grid mix 1kV-60kV - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="c0b34c11-a229-5521-b8b8-0c63d6f3cc91" type="process data set" uri="../processes/c0b34c11-a229-5521-b8b8-0c63d6f3cc91.xml" version="01.00.000">
+                                        
+                    <common:shortDescription>sawn wood, softwood, blackbox - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="6f2c3f23-7947-518a-97c5-f84598bf25ca" type="process data set" uri="../processes/6f2c3f23-7947-518a-97c5-f84598bf25ca.xml" version="01.00.000">
+                                        
+                    <common:shortDescription>sawn wood, softwood, elementary - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                            
+            </complementingProcesses>
+                        
+            <classificationInformation>
+                                
+                <common:classification>
+                                        
+                    <common:class level="0">Materials production</common:class>
+                                        
+                    <common:class level="1">Wood</common:class>
+                                    
+                </common:classification>
+                            
+            </classificationInformation>
+                        
+            <common:generalComment>Notice: this data set supersedes the EF3.0-compliant version (see link under "preceding data set version" below calculated with the EF3.0). The life cycle inventory is not changed from the original EF3.0 data set. The LCIA results are calculated based on the EF3.1 methods which provide updated characterisation factors in the following impact categories: Climate Change, Ecotoxicity freshwater, Photochemical Ozone Formation, Acidification, Human Toxicity non-cancer, and Human Toxicity cancer. The review report and the data quality ratings refer to the original results. The data set has been updated by the European Commission on the basis of the original EF3.0 data set delivered by the data provider.This dataset represents the production of 1 kg sawn, dried, and planed softwood. The dataset represents a mix of more specific sawn wood products, i.e., beam board and laths. The split of beam, board and lath is assumed to be 0.5, 0.33, and 0.17, respectively. It was assumed that 50 % of the wood is dried to a gravimetric water content of u = 20 % and the remaining 50 % to u = 10 % resulting in a gravimetric water content of ca. 15 %. 80 % of the wood dried to u = 20 % are assumed to be dried by kiln drying, the remaining 20 % are assumed to be dried by air drying. All wood dried to a gravimetric water content of 10 % is dried by kiln drying. The basic wood density (dry mass/wet volume) is assumed to be 359.75 Kg/m3. The planing mill is assumed to be located at the sawmill site. In the planing process shavings are produced as a by-product. The allocation keys for sawn wood, softwood and shavings are 97.13% and 2.87%, respectively.</common:generalComment>
+                    
+        </dataSetInformation>
+                
+        <quantitativeReference type="Reference flow(s)">
+                        
+            <referenceToReferenceFlow>0</referenceToReferenceFlow>
+                    
+        </quantitativeReference>
+                
+        <time>
+                        
+            <common:referenceYear>2018</common:referenceYear>
+                        
+            <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+                    
+        </time>
+                
+        <geography>
+                        
+            <locationOfOperationSupplyOrProduction location="EU+EFTA+UK">
+                                
+                <descriptionOfRestrictions/>
+                            
+            </locationOfOperationSupplyOrProduction>
+                    
+        </geography>
+                
+        <technology>
+                        
+            <technologyDescriptionAndIncludedProcesses>The activity starts with the dried sawn wood from air and kiln drying with a gravimetric water content of ca. 15 %.  The dataset includes the planning process and the input of dried, sawn wood. The dataset does not include dust emission. The activity ends with planed softwood at the planning mill.</technologyDescriptionAndIncludedProcesses>
+                        
+            <technologicalApplicability>na</technologicalApplicability>
+                        
+            <referenceToTechnologyFlowDiagrammOrPicture refObjectId="4562465a-92b8-5dc0-b302-692e4e067f38" type="source data set" uri="../sources/4562465a-92b8-5dc0-b302-692e4e067f38.xml" version="22.00.000">
+                                
+                <common:shortDescription>Diagram of data for chemicals EF3.0</common:shortDescription>
+                            
+            </referenceToTechnologyFlowDiagrammOrPicture>
+                        
+            <referenceToTechnologyFlowDiagrammOrPicture refObjectId="f7000920-401e-5d7f-9fb5-a35d7e7a9533" type="source data set" uri="../sources/f7000920-401e-5d7f-9fb5-a35d7e7a9533.xml" version="01.00.000">
+                                
+                <common:shortDescription>Diagram of sawn wood, softwood - EU+EFTA+UK - EF3.0</common:shortDescription>
+                            
+            </referenceToTechnologyFlowDiagrammOrPicture>
+                    
+        </technology>
+                
+        <mathematicalRelations/>
+            
+    </processInformation>
+        
+    <modellingAndValidation>
+                
+        <LCIMethodAndAllocation>
+                        
+            <typeOfDataSet>Partly terminated system</typeOfDataSet>
+                        
+            <LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+                        
+            <deviationsFromLCIMethodPrinciple>The background data use the \xe2\x80\x9cRecycled content cut-off\xe2\x80\x9d approach to allocate end-of-life by-products and secondary materials. This allocation is explained in the description of the recycled content system model (http://www.ecoinvent.org/database/system-models-in-ecoinvent-3/cut-off-system-model/allocation-cut-off-by-classification.html).</deviationsFromLCIMethodPrinciple>
+                        
+            <LCIMethodApproaches>Allocation - market value</LCIMethodApproaches>
+                        
+            <deviationsFromLCIMethodApproaches>Background data: 
+- the \xe2\x80\x9cRecycled content cut-off\xe2\x80\x9d approach to allocate end-of-life by-products and secondary materials. This allocation is explained in the description of the recycled content system model (http://www.ecoinvent.org/database/system-models-in-ecoinvent-3/cut-off-system-model/allocation-cut-off-by-classification.html). The ecoinvent database mostly relies on “Allocation – market values” apart for few exceptions particularly in the energy sector. ecoinvent energy data is replaced with EF3.0 core data as per the EF guidelines version 2.0.
+OR
+- EF compliant data</deviationsFromLCIMethodApproaches>
+                        
+            <modellingConstants>All modelling constants follow the requirements listed in the Tender Specifications ENV.B.1/SER/2016/0038vl. Completeness: All known environmental flows are included. All known resource uses and emissions are listed in the inventory. Water use: water use is modelled at country level using separate flows for water withdrawal, water release and water evaporation. Cut-off: All known environmental flows are included. All known resource uses and emissions are listed in the inventory. Handling multi-functional processes: the following PEF multi- functionality decision hierarchy is applied for resolving all multi- functionality problems: (1) subdivision or system expansion; (2) allocation based on a relevant underlying physical relationship (substitution may apply here); (3) allocation based on some other relationship. Direct land use change: GHG emissions from direct LUC allocated to good/service for 20 years after the LUC occurs, with IPCC default values. Carbon storage and delayed emissions: credits associated with temporary (carbon) storage or delayed emissions up to 300 years are not be considered. Emissions off-setting: are not included. Capital goods (including infrastructures) and their End of life: they are included. System boundaries: system boundaries include all processes linked to the product supply chain (e.g. maintenance). Time period: emissions and removals are modelled as if released or removed at the beginning of the assessment method. Fossil and biogenic carbon emissions and removals: removals and emissions are modelled as follows: All GHG emissions from fossil fuels (including peat and limestone) are modelled consistently with the most updated ILCD list of elementary flows. The non-fossil (biogenic) carbon flows are modelled consistently with the most updated ILCD list of elementary flows.</modellingConstants>
+                        
+            <deviationsFromModellingConstants>None</deviationsFromModellingConstants>
+                    
+        </LCIMethodAndAllocation>
+                
+        <dataSourcesTreatmentAndRepresentativeness>
+                        
+            <dataCutOffAndCompletenessPrinciples>All known environmental flows are included. All known resource uses and emissions are listed in the inventory. The dataset dry mass balance has been checked to ensure the inventory is complete. Capital goods (e.g. infrastructure) and their end-of-life are included.</dataCutOffAndCompletenessPrinciples>
+                        
+            <deviationsFromCutOffAndCompletenessPrinciples>None</deviationsFromCutOffAndCompletenessPrinciples>
+                        
+            <dataSelectionAndCombinationPrinciples>These datasets include, in both their foreground and background data, links to EF3.0 compliant data.
+The relevant background data on energy, transport, and End of Life are from the LCDN data node (http://lcdn.thinkstep.com/Node/).
+All other background data in the supply of this product for which no EF3.0 process was available are from ecoinvent v3.7 database (www.ecoinvent.org) or other data sources.</dataSelectionAndCombinationPrinciples>
+                        
+            <deviationsFromSelectionAndCombinationPrinciples>None</deviationsFromSelectionAndCombinationPrinciples>
+                        
+            <dataTreatmentAndExtrapolationsPrinciples>Several data sources have been used to model the inventory.</dataTreatmentAndExtrapolationsPrinciples>
+                        
+            <deviationsFromTreatmentAndExtrapolationPrinciples>None</deviationsFromTreatmentAndExtrapolationPrinciples>
+                        
+            <referenceToDataSource refObjectId="d4fe7d8a-1f8c-591d-a31f-f58d2f888e3e" type="source data set" uri="../sources/d4fe7d8a-1f8c-591d-a31f-f58d2f888e3e.xml" version="01.00.000">
+                                
+                <common:shortDescription>Background Data for Representative products and organisations. EF 3.0 compliant (data stock)</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="d9b8b7e3-dc6b-5fce-830d-4c5ea0f5020c" type="source data set" uri="../sources/d9b8b7e3-dc6b-5fce-830d-4c5ea0f5020c.xml" version="01.00.000">
+                                
+                <common:shortDescription>Werner, F., planing, lath, softwood, u=20%, Europe without Switzerland, undefined, ecoinvent database version 3.7.1.</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="c6f03bde-62cf-5132-9d61-fedf5282c34a" type="source data set" uri="../sources/c6f03bde-62cf-5132-9d61-fedf5282c34a.xml" version="01.00.000">
+                                
+                <common:shortDescription>Werner, F., planing, lath, softwood, u=10%, Europe without Switzerland, undefined, ecoinvent database version 3.7.1.</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="82de6deb-a8e8-5e4b-b0be-b90d233477a2" type="source data set" uri="../sources/82de6deb-a8e8-5e4b-b0be-b90d233477a2.xml" version="01.00.000">
+                                
+                <common:shortDescription>Werner, F., planing, beam, softwood, u=20%, Europe without Switzerland, undefined, ecoinvent database version 3.7.1.</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="ad6b4629-72df-5a4f-b55c-c0123cc9636b" type="source data set" uri="../sources/ad6b4629-72df-5a4f-b55c-c0123cc9636b.xml" version="01.00.000">
+                                
+                <common:shortDescription>Werner, F., planing, beam, softwood, u=10%, Europe without Switzerland, undefined, ecoinvent database version 3.7.1.</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="bb822a57-1c24-5892-acf6-085e511fd2f8" type="source data set" uri="../sources/bb822a57-1c24-5892-acf6-085e511fd2f8.xml" version="01.00.000">
+                                
+                <common:shortDescription>Werner, F., planing, board, softwood, u=20%, Europe without Switzerland, undefined, ecoinvent database version 3.7.1.</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="55cbd377-9551-5709-b2d6-5d827d69fb42" type="source data set" uri="../sources/55cbd377-9551-5709-b2d6-5d827d69fb42.xml" version="01.00.000">
+                                
+                <common:shortDescription>Werner, F., planing, board, softwood, u=10%, Europe without Switzerland, undefined, ecoinvent database version 3.7.1.</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="1962b0d8-5889-5d65-b5f0-8353e4950fec" type="source data set" uri="../sources/1962b0d8-5889-5d65-b5f0-8353e4950fec.xml" version="01.00.000">
+                                
+                <common:shortDescription>Werner F., Bauer C., Büsser S., Doka G., Kaufmann E., Kono J., Luginbühl, U., Mina M., Frischknecht R., Thees O, Wallbaum H., Zimmermann W., Hischer R. (2015). Aktualisierung der Modelle und Datensätze zu Holz und Holzprodukten in der Datenbank ecoinvent. Auftraggeberin: Bundesamt für Umwelt, Aktionsplan Holz, Bern, Auftragnehmer: Eidgenössische Materialprüfungs- und Forschungsanstalt EMPA. </common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="4ca747ba-8a9b-59bf-b27b-308f16fd7977" type="source data set" uri="../sources/4ca747ba-8a9b-59bf-b27b-308f16fd7977.xml" version="01.00.000">
+                                
+                <common:shortDescription>Cardellini, G., Valada, T., Cornillier, C., Vial, E., Dragoi, M., Goudiaby, V., Muys, B. (2018). EFO-LCI: A new life cycle inventory database of forestry operations in Europe. Environmental Management, 61(6), 1031-1047.</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="d91723e1-9067-558d-8ba7-cf7aa16ce0df" type="source data set" uri="../sources/d91723e1-9067-558d-8ba7-cf7aa16ce0df.xml" version="01.00.000">
+                                
+                <common:shortDescription>Eurostat (2021). Roundwood removals by type of wood and assortment. Tree species: Coniferous. Wood products: Roundwood under bark. Available at: ec.europa.eu/eurostat/databrowser/bookmark/2fe47d27-a1ea-4028-a4cc-06c1f8725af0?lang=en [Accessed on 25/06/2021]</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <annualSupplyOrProductionVolume/>
+                        
+            <samplingProcedure/>
+                        
+            <dataCollectionPeriod/>
+                        
+            <uncertaintyAdjustments>None</uncertaintyAdjustments>
+                        
+            <useAdviceForDataSet/>
+                    
+        </dataSourcesTreatmentAndRepresentativeness>
+                
+        <completeness>
+                        
+            <completenessProductModel>All relevant flows quantified</completenessProductModel>
+                              
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b53ec18f-7377-4ad3-86eb-cc3f4f276b2b" type="LCIA method data set" uri="../lciamethods/b53ec18f-7377-4ad3-86eb-cc3f4f276b2b.xml" version="01.00.010">
+                                
+                <common:shortDescription xml:lang="en">Eutrophication, freshwater</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c632be-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c632be-def3-11e6-bf01-fe55135034f3.xml" version="01.00.011">
+                                
+                <common:shortDescription xml:lang="en">Ionising radiation, human health</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad66ce-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad66ce-c78d-11e6-9d9d-cec0c932ce01.xml" version="03.00.014">
+                                
+                <common:shortDescription xml:lang="en">Water use</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c614d2-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c614d2-def3-11e6-bf01-fe55135034f3.xml" version="01.02.009">
+                                
+                <common:shortDescription xml:lang="en">Eutrophication, terrestrial</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="05316e7a-b254-4bea-9cf0-6bf33eb5c630" type="LCIA method data set" uri="../lciamethods/05316e7a-b254-4bea-9cf0-6bf33eb5c630.xml" version="01.00.000">
+                                
+                <common:shortDescription xml:lang="en">Ecotoxicity, freshwater</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c602c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c602c6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.011">
+                                
+                <common:shortDescription xml:lang="en">EF-particulate Matter</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6890-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6890-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                                
+                <common:shortDescription xml:lang="en">Land use</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c611c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c611c6-def3-11e6-bf01-fe55135034f3.xml" version="01.04.000">
+                                
+                <common:shortDescription xml:lang="en">Acidification</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6110-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6110-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                                
+                <common:shortDescription xml:lang="en">Resource use, fossils</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="6209b35f-9447-40b5-b68c-a1099e3674a0" type="LCIA method data set" uri="../lciamethods/6209b35f-9447-40b5-b68c-a1099e3674a0.xml" version="01.00.000">
+                                
+                <common:shortDescription xml:lang="en">Climate change</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6494-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6494-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                                
+                <common:shortDescription xml:lang="en">Resource use, minerals and metals</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c629d6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c629d6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.012">
+                                
+                <common:shortDescription xml:lang="en">Ozone depletion</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="2299222a-bbd8-474f-9d4f-4dd1f18aea7c" type="LCIA method data set" uri="../lciamethods/2299222a-bbd8-474f-9d4f-4dd1f18aea7c.xml" version="01.01.000">
+                                
+                <common:shortDescription xml:lang="en">Human toxicity, cancer</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c619fa-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c619fa-def3-11e6-bf01-fe55135034f3.xml" version="02.00.010">
+                                
+                <common:shortDescription xml:lang="en">Eutrophication marine</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8" type="LCIA method data set" uri="../lciamethods/7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8.xml" version="01.00.000">
+                                
+                <common:shortDescription xml:lang="en">Human toxicity, non-cancer</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c610fe-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c610fe-def3-11e6-bf01-fe55135034f3.xml" version="02.01.000">
+                                
+                <common:shortDescription xml:lang="en">Photochemical ozone formation - human health</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <completenessElementaryFlows type="Climate change" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Ozone depletion" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Summer smog" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Eutrophication" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Acidification" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Human toxicity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Freshwater ecotoxicity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Seawater eco-toxicity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Terrestric eco-toxicity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Radioactivity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Land use" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Non-renewable material resource depletion" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Renewable material resource consumption" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Non-renewable primary energy depletion" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Renewable primary energy consumption" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Particulate matter/respiratory inorganics" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Species depletion" value="No statement"/>
+                        
+            <completenessElementaryFlows type="Noise" value="No statement"/>
+                    
+        </completeness>
+                
+        <validation>
+                        
+            <review type="Dependent internal review">
+                                
+                <common:scope name="Raw data">
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Validation of data sources"/>
+                                        
+                    <common:method name="Sample tests on calculations"/>
+                                        
+                    <common:method name="Element balance"/>
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Mass balance"/>
+                                        
+                    <common:method name="Documentation"/>
+                                        
+                    <common:method name="Energy balance"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="Unit process(es), single operation">
+                                        
+                    <common:method name="Validation of data sources"/>
+                                        
+                    <common:method name="Sample tests on calculations"/>
+                                        
+                    <common:method name="Energy balance"/>
+                                        
+                    <common:method name="Element balance"/>
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Cross-check with other data set"/>
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Mass balance"/>
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                        
+                    <common:method name="Documentation"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="Unit process(es), black box">
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Validation of data sources"/>
+                                        
+                    <common:method name="Sample tests on calculations"/>
+                                        
+                    <common:method name="Energy balance"/>
+                                        
+                    <common:method name="Element balance"/>
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Cross-check with other data set"/>
+                                        
+                    <common:method name="Mass balance"/>
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="LCI results or Partly terminated system">
+                                        
+                    <common:method name="Validation of data sources"/>
+                                        
+                    <common:method name="Sample tests on calculations"/>
+                                        
+                    <common:method name="Energy balance"/>
+                                        
+                    <common:method name="Element balance"/>
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Cross-check with other data set"/>
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Mass balance"/>
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="LCIA results">
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Cross-check with other data set"/>
+                                        
+                    <common:method name="Expert judgement"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="Documentation">
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="Life cycle inventory methods">
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                    
+                </common:scope>
+                                
+                <common:dataQualityIndicators>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.31" name="Overall quality" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.12" name="Time representativeness" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.06" name="Geographical representativeness" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.06" name="Technological representativeness" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="2.00" name="Precision" value="Good"/>
+                                        
+                    <common:dataQualityIndicator name="Methodological appropriateness and consistency" value="Not applicable"/>
+                                    
+                </common:dataQualityIndicators>
+                                
+                <common:reviewDetails>Internal reviews have been asked to review the plausibility of the unit process, LCIA scores, and DQRs. Internal reviewers have also been asked to review the data for EF compliancy. The consortium is therefore responsible for aspects such as compliancy with the ILCD format, including validation in Look@LCI, and nomenclature.
+Internal reviwers have been asked to judge based on the process name, that the unit process models in a complete and representative way the  process in the requested location. The review encompassed the plausability of:
+- exchanges with nature (elementary flows) as well as exchanges such as product and waste flows.
+- meta information (general comment, technology comment, system boundaries, allocation, cut-off rules, etc.). Reviewers were asked to judge if the provided information is enough to understand the content of the process.
+- LCIA scores
+- DQRs including precision, technology, time and geography. As well as the overall DQR.</common:reviewDetails>
+                                
+                <common:referenceToNameOfReviewerAndInstitution refObjectId="8d8a11a9-7e67-59f5-a22c-2a3b9086d497" type="contact data set" uri="../contacts/8d8a11a9-7e67-59f5-a22c-2a3b9086d497.xml">
+                                        
+                    <common:shortDescription>Lucia Valsasina</common:shortDescription>
+                                    
+                </common:referenceToNameOfReviewerAndInstitution>
+                                
+                <common:referenceToNameOfReviewerAndInstitution refObjectId="c6fc97df-7c89-52f8-80b3-abcfe6796f96" type="contact data set" uri="../contacts/c6fc97df-7c89-52f8-80b3-abcfe6796f96.xml">
+                                        
+                    <common:shortDescription>Emilia Moreno Ruiz</common:shortDescription>
+                                    
+                </common:referenceToNameOfReviewerAndInstitution>
+                            
+            </review>
+                        
+            <review type="Independent review panel">
+                                
+                <common:dataQualityIndicators>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.31" name="Overall quality" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.12" name="Time representativeness" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.06" name="Geographical representativeness" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.06" name="Technological representativeness" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="2.00" name="Precision" value="Good"/>
+                                        
+                    <common:dataQualityIndicator name="Methodological appropriateness and consistency" value="Not applicable"/>
+                                    
+                </common:dataQualityIndicators>
+                                
+                <common:reviewDetails>External reviewers have been asked to provide their expertise in the field of interest. External reviewers have been asked to review the unit process, including eventual methodological choices, the LCIA scores (provided with contribution scores as well), and DQRs. External reviewers have been provided all the information in a tool developed by the consortium for the purpose of this project.
+External reviewers have been asked to judge based on the process name, that the unit process models in a complete and representative way the  process in the requested location. The review encompassed:
+- Plausability and completeness of exchanges with nature (elementary flows) as well as exchanges such as product and waste flows.
+- Review of meta information (general comment, technology comment, system boundaries, allocation, cut-off rules, etc.). Reviewers were asked to judge if the provided information is enough to understand the content of the process.
+- Review of properties (biogenic carbon and water content).
+- Review of allocation keys.
+- Plausability of LCIA scores calculated by the consortium.
+- Plausability of DQRs including precision, technology, time and geography. As well as the overall DQR.</common:reviewDetails>
+                                
+                <common:referenceToNameOfReviewerAndInstitution refObjectId="88efd27d-0c2f-56c4-8366-37c8c6a40a5c" type="contact data set" uri="../contacts/88efd27d-0c2f-56c4-8366-37c8c6a40a5c.xml">
+                                        
+                    <common:shortDescription>Jens Lansche</common:shortDescription>
+                                    
+                </common:referenceToNameOfReviewerAndInstitution>
+                                
+                <common:referenceToCompleteReviewReport refObjectId="13b1fef3-46ff-5f2c-ad05-623109e437cb" type="source data set" uri="../sources/13b1fef3-46ff-5f2c-ad05-623109e437cb.xml" version="01.00.000">
+                                        
+                    <common:shortDescription>Review report for sawn wood, softwood - EU+EFTA+UK</common:shortDescription>
+                                    
+                </common:referenceToCompleteReviewReport>
+                            
+            </review>
+                    
+        </validation>
+                
+        <complianceDeclarations>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="d92a1a12-2545-49e2-a585-55c259997756" type="source data set" uri="../sources/d92a1a12-2545-49e2-a585-55c259997756.xml" version="35.00.000">
+                                        
+                    <common:shortDescription>ILCD Data Network - Entry-level</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+                            
+            </compliance>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="afc1ce43-e800-494b-aad4-46b9e8ea74da" type="source data set" uri="../sources/afc1ce43-e800-494b-aad4-46b9e8ea74da.xml" version="00.00.000">
+                                        
+                    <common:shortDescription>Suggestions for updating the PEF method 2019</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Fully compliant</common:qualityCompliance>
+                            
+            </compliance>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="1ea48531-e397-4ca7-ac08-056e4fa11826" type="source data set" uri="../sources/1ea48531-e397-4ca7-ac08-056e4fa11826.xml" version="35.00.000">
+                                        
+                    <common:shortDescription>ISO 14040 Environmental Management – Life Cycle Assessment – Principles and Framework, 2006</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Not defined</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Not defined</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+                            
+            </compliance>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="1adb438d-4a8b-4919-885e-0a66da3c0f2a" type="source data set" uri="../sources/1adb438d-4a8b-4919-885e-0a66da3c0f2a.xml" version="35.00.000">
+                                        
+                    <common:shortDescription>ISO 14044:2006. Environmental Management – Life Cycle Assessment – Requirements and guidelines.</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Not defined</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Not defined</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+                            
+            </compliance>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="0eb2b770-2cb1-43cf-9fbc-215df36fe9f0" type="source data set" uri="../sources/0eb2b770-2cb1-43cf-9fbc-215df36fe9f0.xml" version="00.00.001">
+                                        
+                    <common:shortDescription>Environmental Footprint 3.1</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Not defined</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Not defined</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Not defined</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Not defined</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+                            
+            </compliance>
+                    
+        </complianceDeclarations>
+            
+    </modellingAndValidation>
+        
+    <administrativeInformation>
+                
+        <common:commissionerAndGoal>
+                        
+            <common:referenceToCommissioner refObjectId="cf7f0f79-a312-4b28-89ea-32a589b87f58" type="contact data set" uri="../contacts/cf7f0f79-a312-4b28-89ea-32a589b87f58.xml" version="01.00.000">
+                                
+                <common:shortDescription>European Commission, DG ENV B1</common:shortDescription>
+                            
+            </common:referenceToCommissioner>
+                        
+            <common:project>Provision of process-based 3.0 Environmental Footprint-compliant life cycle inventory datasets - Renewable materials - contract number 070201/2020/840085/SER/ENV.B.1</common:project>
+                        
+            <common:intendedApplications>Implementation of regular Product Environmental Footprint (PEF) studies and Organisation Environmental Footprint (OEF) studies exclusively under the specified Product groups and sectors as defined in the Product Environmental Footprint Category Rules (PEFCR) and Organisation Environmental Footprint Sectorial Rules (OEFSR) listed in http://ec.europa.eu/environment/eussd/smgp/PEFCR_OEFSR.htm</common:intendedApplications>
+                    
+        </common:commissionerAndGoal>
+                
+        <dataGenerator>
+                        
+            <common:referenceToPersonOrEntityGeneratingTheDataSet refObjectId="6ae096bd-5b0a-5222-a4dd-b48143206947" type="contact data set" uri="../contacts/6ae096bd-5b0a-5222-a4dd-b48143206947.xml" version="01.00.000">
+                                
+                <common:shortDescription>ecoinvent</common:shortDescription>
+                            
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+                    
+        </dataGenerator>
+                
+        <dataEntryBy>
+                        
+            <common:timeStamp>2024-07-13T11:36:45.636+02:00</common:timeStamp>
+                        
+            <common:referenceToDataSetFormat refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" type="source data set" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml" version="03.00.000">
+                                
+                <common:shortDescription>ILCD format 1.1</common:shortDescription>
+                            
+            </common:referenceToDataSetFormat>
+                        
+            <common:referenceToPersonOrEntityEnteringTheData refObjectId="6ae096bd-5b0a-5222-a4dd-b48143206947" type="contact data set" uri="../contacts/6ae096bd-5b0a-5222-a4dd-b48143206947.xml" version="01.00.000">
+                                
+                <common:shortDescription>ecoinvent</common:shortDescription>
+                            
+            </common:referenceToPersonOrEntityEnteringTheData>
+                    
+        </dataEntryBy>
+                
+        <publicationAndOwnership>
+                        
+            <common:dateOfLastRevision>2020-09-02T14:36:46.214668+02:00</common:dateOfLastRevision>
+                        
+            <common:dataSetVersion>01.01.000</common:dataSetVersion>
+                        
+            <common:referenceToPrecedingDataSetVersion refObjectId="39e60674-00ce-5fb1-88e2-a5069c99542c" type="process data set" uri="../processes/39e60674-00ce-5fb1-88e2-a5069c99542c.xml?version=01.00.000" version="01.00.000">
+                                
+                <common:shortDescription xml:lang="en">sawn wood, softwood</common:shortDescription>
+                            
+            </common:referenceToPrecedingDataSetVersion>
+                        
+            <common:permanentDataSetURI/>
+                        
+            <common:workflowAndPublicationStatus>Data set finalised; entirely published</common:workflowAndPublicationStatus>
+                        
+            <common:registrationNumber/>
+                        
+            <common:referenceToOwnershipOfDataSet refObjectId="6ae096bd-5b0a-5222-a4dd-b48143206947" type="contact data set" uri="../contacts/6ae096bd-5b0a-5222-a4dd-b48143206947.xml" version="01.00.000">
+                                
+                <common:shortDescription>ecoinvent</common:shortDescription>
+                            
+            </common:referenceToOwnershipOfDataSet>
+                        
+            <common:copyright>true</common:copyright>
+                        
+            <common:referenceToEntitiesWithExclusiveAccess refObjectId="8b3e08f0-740a-43b1-aa8d-bec56c5daf6e" type="contact data set" uri="../contacts/8b3e08f0-740a-43b1-aa8d-bec56c5daf6e.xml" version="29.00.000">
+                                
+                <common:shortDescription>Final user</common:shortDescription>
+                            
+            </common:referenceToEntitiesWithExclusiveAccess>
+                        
+            <common:licenseType>Free of charge for some user types or use types</common:licenseType>
+                        
+            <common:accessRestrictions>Free of charge for all final users implementing a regular Product Environmental Footprint (PEF) studies and Organisation Environmental Footprint (OEF) studies exclusively under the specified Product groups and sectors as defined in the Product Environmental Footprint Category Rules (PEFCR) and Organisation Environmental Footprint Sectorial Rules (OEFSR) listed in http://ec.europa.eu/environment/eussd/smgp/PEFCR_OEFSR.htm and in accordance with the terms and conditions of the EULA (available at https://ecoinvent.lca-data.com/) exclusively until 31st December 2024. Any use of this dataset or any derivative data not within the specific context of one of the PEF/OEF projects or after the end of 2024 is not permitted.</common:accessRestrictions>
+                    
+        </publicationAndOwnership>
+            
+    </administrativeInformation>
+        
+    <exchanges>
+                
+        <exchange dataSetInternalID="0">
+                        
+            <referenceToFlowDataSet refObjectId="789caf24-dc7c-5fbf-8b12-c400b2291e69" type="flow data set" uri=".../flows/789caf24-dc7c-5fbf-8b12-c400b2291e69.xml">
+                                
+                <common:shortDescription>sawn wood, softwood // sawn wood, softwood // eu+efta+uk</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Output</exchangeDirection>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>1</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="1">
+                        
+            <referenceToFlowDataSet refObjectId="7e7f9837-7d18-574c-bc2d-79d71b628740" type="flow data set" uri=".../flows/7e7f9837-7d18-574c-bc2d-79d71b628740.xml">
+                                
+                <common:shortDescription>Electricity from Electricity grid mix 1kV-60kV - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>0.136326484563079</meanAmount>
+                        
+            <resultingAmount>0.136326484563079</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="2">
+                        
+            <referenceToFlowDataSet refObjectId="5707067e-6b73-56be-a4ab-184aa591e751" type="flow data set" uri=".../flows/5707067e-6b73-56be-a4ab-184aa591e751.xml">
+                                
+                <common:shortDescription>sawn wood, softwood // sawn wood, softwood // eu+efta+uk, blackbox</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>1</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="3">
+                        
+            <referenceToFlowDataSet refObjectId="4e5d8518-a584-5ba0-b50a-898c0b54d7f7" type="flow data set" uri=".../flows/4e5d8518-a584-5ba0-b50a-898c0b54d7f7.xml">
+                                
+                <common:shortDescription>sawn wood, softwood // sawn wood, softwood // eu+efta+uk, elementary</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>1</resultingAmount>
+                    
+        </exchange>
+            
+    </exchanges>
+    <LCIAResults>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c619fa-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c619fa-def3-11e6-bf01-fe55135034f3.xml" version="02.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication marine</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>4.814798284788986E-4</meanAmount>
+            <generalComment>Eutrophication marine</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="05316e7a-b254-4bea-9cf0-6bf33eb5c630" type="LCIA method data set" uri="../lciamethods/05316e7a-b254-4bea-9cf0-6bf33eb5c630.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Ecotoxicity, freshwater</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>1.4417263712609911</meanAmount>
+            <generalComment>Ecotoxicity, freshwater</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6890-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6890-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Land use</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>554.5341386438696</meanAmount>
+            <generalComment>Land use</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad66ce-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad66ce-c78d-11e6-9d9d-cec0c932ce01.xml" version="03.00.014">
+                <common:shortDescription xml:lang="en">Water use</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.04147925410355816</meanAmount>
+            <generalComment>Water use</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6494-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6494-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, minerals and metals</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>4.1956972174255576E-7</meanAmount>
+            <generalComment>Resource use, minerals and metals</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6110-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6110-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, fossils</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>2.738491339600866</meanAmount>
+            <generalComment>Resource use, fossils</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="6209b35f-9447-40b5-b68c-a1099e3674a0" type="LCIA method data set" uri="../lciamethods/6209b35f-9447-40b5-b68c-a1099e3674a0.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Climate change</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.1825418569953801</meanAmount>
+            <generalComment>Climate change</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c629d6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c629d6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.012">
+                <common:shortDescription xml:lang="en">Ozone depletion</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>3.268228187031209E-10</meanAmount>
+            <generalComment>Ozone depletion</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="2299222a-bbd8-474f-9d4f-4dd1f18aea7c" type="LCIA method data set" uri="../lciamethods/2299222a-bbd8-474f-9d4f-4dd1f18aea7c.xml" version="01.01.000">
+                <common:shortDescription xml:lang="en">Human toxicity, cancer</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>2.1897671415684637E-10</meanAmount>
+            <generalComment>Human toxicity, cancer</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8" type="LCIA method data set" uri="../lciamethods/7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Human toxicity, non-cancer</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>1.4166907196387614E-9</meanAmount>
+            <generalComment>Human toxicity, non-cancer</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c602c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c602c6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.011">
+                <common:shortDescription xml:lang="en">EF-particulate Matter</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>4.303640251511152E-8</meanAmount>
+            <generalComment>EF-particulate Matter</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c632be-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c632be-def3-11e6-bf01-fe55135034f3.xml" version="01.00.011">
+                <common:shortDescription xml:lang="en">Ionising radiation, human health</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.02712228257587056</meanAmount>
+            <generalComment>Ionising radiation, human health</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c610fe-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c610fe-def3-11e6-bf01-fe55135034f3.xml" version="02.01.000">
+                <common:shortDescription xml:lang="en">Photochemical ozone formation - human health</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.001704756624258312</meanAmount>
+            <generalComment>Photochemical ozone formation - human health</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c611c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c611c6-def3-11e6-bf01-fe55135034f3.xml" version="01.04.000">
+                <common:shortDescription xml:lang="en">Acidification</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0010851875377531643</meanAmount>
+            <generalComment>Acidification</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c614d2-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c614d2-def3-11e6-bf01-fe55135034f3.xml" version="01.02.009">
+                <common:shortDescription xml:lang="en">Eutrophication, terrestrial</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.004357354900782586</meanAmount>
+            <generalComment>Eutrophication, terrestrial</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b53ec18f-7377-4ad3-86eb-cc3f4f276b2b" type="LCIA method data set" uri="../lciamethods/b53ec18f-7377-4ad3-86eb-cc3f4f276b2b.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication, freshwater</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>1.5886021062728933E-5</meanAmount>
+            <generalComment>Eutrophication, freshwater</generalComment>
+        </LCIAResult>
+    </LCIAResults>
+        
+
+</processDataSet>

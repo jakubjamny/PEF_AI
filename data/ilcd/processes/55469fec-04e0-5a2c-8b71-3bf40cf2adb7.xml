@@ -1,0 +1,2636 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<processDataSet xmlns="http://lca.jrc.it/ILCD/Process" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:ext="http://eplca.jrc.ec.europa.eu/ILCD/Extensions/2017" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" locations="../ILCDLocations.xml" version="1.1" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+        
+    <processInformation>
+                
+        <dataSetInformation>
+                        
+            <common:UUID>55469fec-04e0-5a2c-8b71-3bf40cf2adb7</common:UUID>
+                        
+            <name>
+                                
+                <baseName>leather, high environmental practice tannery</baseName>
+                                
+                <treatmentStandardsRoutes>technology mix</treatmentStandardsRoutes>
+                                
+                <mixAndLocationTypes>production mix, at tannery</mixAndLocationTypes>
+                                
+                <functionalUnitFlowProperties>m2</functionalUnitFlowProperties>
+                            
+            </name>
+                        
+            <identifierOfSubDataSet/>
+                        
+            <complementingProcesses>
+                                
+                <referenceToComplementingProcess refObjectId="34960d4d-af62-43a0-aa76-adc5fcf57246" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/34960d4d-af62-43a0-aa76-adc5fcf57246?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Electricity grid mix 1kV-60kV - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="602bba9c-3262-4555-a0a4-7b9f6bc50f82" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/602bba9c-3262-4555-a0a4-7b9f6bc50f82?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Thermal energy from heavy fuel oil (HFO) - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="81675341-f1af-44b0-81d3-d108caef5c28" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/81675341-f1af-44b0-81d3-d108caef5c28?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Thermal energy from natural gas - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="e1ded83e-a02f-42cd-92f9-81cce21a3a98" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/e1ded83e-a02f-42cd-92f9-81cce21a3a98?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="4cfacea0-cce4-4b4d-bd2b-223c8d4c90ae" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/4cfacea0-cce4-4b4d-bd2b-223c8d4c90ae?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Barge - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="4cedf877-89c5-4b4d-8014-5b7d099a2095" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/4cedf877-89c5-4b4d-8014-5b7d099a2095?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Freight train, average - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="083caf2d-b287-50eb-a506-eef956219ae1" type="process data set" uri="../processes/083caf2d-b287-50eb-a506-eef956219ae1.xml" version="01.00.000">
+                                        
+                    <common:shortDescription>leather, high environmental practice tannery, blackbox - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="9684107f-0ad8-5c56-8bd2-e5d71cf2a9c1" type="process data set" uri="../processes/9684107f-0ad8-5c56-8bd2-e5d71cf2a9c1.xml" version="01.00.000">
+                                        
+                    <common:shortDescription>leather, high environmental practice tannery, elementary - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                            
+            </complementingProcesses>
+                        
+            <classificationInformation>
+                                
+                <common:classification>
+                                        
+                    <common:class level="0">Materials production</common:class>
+                                        
+                    <common:class level="1">Other materials</common:class>
+                                    
+                </common:classification>
+                            
+            </classificationInformation>
+                        
+            <common:generalComment>Notice: this data set supersedes the EF3.0-compliant version (see link under "preceding data set version" below calculated with the EF3.0). The life cycle inventory is not changed from the original EF3.0 data set. The LCIA results are calculated based on the EF3.1 methods which provide updated characterisation factors in the following impact categories: Climate Change, Ecotoxicity freshwater, Photochemical Ozone Formation, Acidification, Human Toxicity non-cancer, and Human Toxicity cancer. The review report and the data quality ratings refer to the original results. The data set has been updated by the European Commission on the basis of the original EF3.0 data set delivered by the data provider.This dataset represents the production of 1 m2 of finished leather in Europe by high environmental practice tanneries, with a density of 1.5 kg/m2 finished leather. It is an adjustment of the base model used for the leather datasets using information shared by COTANCE, the Best Available Techniques (BAT) Reference Document for the Tanning of Hides and Skins, and from the 2020 EU Leather Industry Social &amp; Environmental Report. Veal and reptile leathers are not considered.
+
+EU Leather Industry Social &amp; Environmental Report 2020 is based on data collected annually from 79 companies (5% of the EU total) from Italy, Germany, Austria, Denmark, Sweden, UK, Spain, France, Portugal, Hungary and Romania), covering 43% of total EU leather production. Reference period: 2016 - 2018 (inclusive), with some data from 2012 and 2020.
+
+# Differences from typical production and best practice tanneries in the EU:
+1.	Water usage: 120 m3 / m2 leather, compared with 148 m3 /m2 finished leather. Former value based on EU Leather Industry Social &amp; Environmental Report 2020, average 2016-18
+2.	Water treatment: Values of treatment efficiency are replaced with those from EU Leather Industry Social &amp; Environmental Report 2020 (COTANCE and industriAll-Europe, 2020), and compared with water emissions measured after treatment from two treatment plant reports from Italy (Cuiodepur and Acque del Chiampo)
+3.	Total Primary Energy = 73.7 MJ/m2, and shares of each energy source updated, also from the the EU Leather SER 2020.
+
+# Weighting of different leather types:
+1.	Market shares for each animal leather type based on Table 4, UNIDO. ‘Future Trends in the World Leather and Leather Products Industry and Trade’, 2010. https://leatherpanel.org/sites/default/files/publications-attachments/future_trends_in_the_world_leather_and_leather_products_industry_and_trade.pdf. This data originally comes from the FAO. Market shares for each animal leather type are as follows:
+market_share_cattle: 66%
+market_share_sheep: 15%
+market_share_pig: 11%
+market_share_goat: 7%
+market_share_other (reptile, etc): 1%
+ Bovine leather is predominantly (approx. 90%, Leather PEFCR) from adult cattle, so veal leather is not modelled. Reptile leather is also not included as it has a market share of less than 1%, and the models has a low data quality. Input of the pig hide is not included as there is zero allocation of the environmental impact of slaughter to the pig hide
+
+2.	Proportion of leather tanned by each technique based on Table 7, p.8 and Annex 5, De Rosa-Giglio, Fontanella, Gonzalez-Quijano, Ioannidis, Nucci, and Brugnoli. ‘PRODUCT ENVIRONMENTAL  FOOTPRINT CATEGORY RULES Leather’, 25 April 2018. It is assumed that chrome-free (12% market share) refers to wet-white (and not vegetable, which is a separate category), and wet-white metal-free and wet-white metal tanning each contribute 50% of this tanning technique
+
+# Energy
+Total primary energy = 1.76 tonnes oil equivalent / m2 finished leather = 73.7 MJ/m2 
+Share for each energy fraction based on p.26 of EU Leather Social and Environmental Report 2020. total_primary_energy_per_m2 * proportion_energy_type
+
+Source: p.25 COTANCE and IndustriAll-Europe, 2020, SER 2020.
+
+# Conversion factors
+Sources reporting values per tonne raw hide, are converted from mass per tonne raw hide to per m2 using conversion factor of kg_hide_per_m2_leather = 6.3 (default) based on Table 7, p.8 and Annex 5, Leather PEFCR, 2018. Average weighted by end-use and proportion of animal type in each end use. This is a parameter that can be adjusted if the value is known
+
+Density of 1.50 kg/m2 averaged across different leather types is based on
+Thanikaivelan, Shelly, and Ramkumar, ‘Gauge Length Effect on the Tensile Properties of Leather’.; Pati, Chaudhary, and Subramani, ‘Biochemical Method for Extraction and Reuse of Protein and Chromium from Chrome Leather Shavings’.; Clarke, ‘Some Density Data on Leather’.; Dilek et al., ‘Evaluation of Collagen Hydrolysate on the Performance Properties of DifferentWet-White Tanned Leathers’.; BASF, 2003; COTANCE, 2021, personal communications; De Rosa-Giglio et al., ‘PRODUCT ENVIRONMENTAL  FOOTPRINT CATEGORY RULES Leather’.; Andrea Fontanella et al., ‘Leather PEF Screening Report in the Context of the EU Product Environmental Footprint Category Rules (PEFCR) Pilots’.
+
+Note that density depends on whether full-grain (with the more dense corium layer) or split-grain (without) leathers are used.
+
+# Waste Water and Emissions
+Waste water is used to balance the mass in the model. Emissions are averaged from a mix of tanning techniques and regions, see comments on the exchanges for the sources used for each emission. 
+
+Mass waste water  = Mass of inputs – mass of leather out – mass of emissions (to water and air) – mass of textile machinery
+where Mass of leather  = density of leather (kg/m3) × thickness of leather (m) × area leather (m2)
+The proportion of tanning agents and other synthetic compounds being absorbed into the final leather or being emitted into the water stream cannot be determined in general from the data used, and varies strongly based on the tannery parameters.</common:generalComment>
+                    
+        </dataSetInformation>
+                
+        <quantitativeReference type="Reference flow(s)">
+                        
+            <referenceToReferenceFlow>0</referenceToReferenceFlow>
+                    
+        </quantitativeReference>
+                
+        <time>
+                        
+            <common:referenceYear>2021</common:referenceYear>
+                        
+            <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+                    
+        </time>
+                
+        <geography>
+                        
+            <locationOfOperationSupplyOrProduction location="EU+EFTA+UK">
+                                
+                <descriptionOfRestrictions/>
+                            
+            </locationOfOperationSupplyOrProduction>
+                    
+        </geography>
+                
+        <technology>
+                        
+            <technologyDescriptionAndIncludedProcesses>System boundaries: The dataset describes the tanning and finishing of cattle leather. The inventory includes the following flows:
+-	Electricity and heat use
+-	Chemicals: chromium tanning agent, wetting agents, liming agents, fatliquors and other agents used in the processing of leather
+-	Water 
+-	Emissions to water
+-	Transport of chemicals, and raw materials
+
+It does not include:
+-	Packaging materials
+- Certain chemicals have been replaced with proxies where there is no exact match
+- Animal leathers for which market share is less than 1% (reptile)</technologyDescriptionAndIncludedProcesses>
+                        
+            <technologicalApplicability>na</technologicalApplicability>
+                        
+            <referenceToTechnologyFlowDiagrammOrPicture refObjectId="4562465a-92b8-5dc0-b302-692e4e067f38" type="source data set" uri="../sources/4562465a-92b8-5dc0-b302-692e4e067f38.xml" version="22.00.000">
+                                
+                <common:shortDescription>Diagram of data for chemicals EF3.0</common:shortDescription>
+                            
+            </referenceToTechnologyFlowDiagrammOrPicture>
+                        
+            <referenceToTechnologyFlowDiagrammOrPicture refObjectId="1fe4b3c4-16c3-5d71-861c-dcb9bbd00701" type="source data set" uri="../sources/1fe4b3c4-16c3-5d71-861c-dcb9bbd00701.xml" version="01.00.000">
+                                
+                <common:shortDescription>Diagram of leather, high environmental practice tannery - EU+EFTA+UK - EF3.0</common:shortDescription>
+                            
+            </referenceToTechnologyFlowDiagrammOrPicture>
+                    
+        </technology>
+                
+        <mathematicalRelations>
+                        
+            <variableParameter name="kg_0">
+                                
+                <meanValue>0.01610268</meanValue>
+                                
+                <comment>Mass in kg, for beef, fresh hides // beef, fresh hides // br; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_0">
+                                
+                <meanValue>130.0</meanValue>
+                                
+                <comment>Distance in km, for beef, fresh hides // beef, fresh hides // br; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_0">
+                                
+                <formula>kg_0*km_0</formula>
+                                
+                <meanValue>2.0933484</meanValue>
+                                
+                <comment>Transport amount in km*km, for beef, fresh hides // beef, fresh hides // br; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_1">
+                                
+                <meanValue>1.9957564</meanValue>
+                                
+                <comment>Mass in kg, for beef, fresh hides // beef, fresh hides // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_1">
+                                
+                <meanValue>130.0</meanValue>
+                                
+                <comment>Distance in km, for beef, fresh hides // beef, fresh hides // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_1">
+                                
+                <formula>kg_1*km_1</formula>
+                                
+                <meanValue>259.448332</meanValue>
+                                
+                <comment>Transport amount in km*km, for beef, fresh hides // beef, fresh hides // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_2">
+                                
+                <meanValue>1.2491776</meanValue>
+                                
+                <comment>Mass in kg, for beef, fresh hides // beef, fresh hides // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_2">
+                                
+                <meanValue>130.0</meanValue>
+                                
+                <comment>Distance in km, for beef, fresh hides // beef, fresh hides // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_2">
+                                
+                <formula>kg_2*km_2</formula>
+                                
+                <meanValue>162.393088</meanValue>
+                                
+                <comment>Transport amount in km*km, for beef, fresh hides // beef, fresh hides // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_3">
+                                
+                <meanValue>1.5907496000000003</meanValue>
+                                
+                <comment>Mass in kg, for beef, fresh hides // beef, fresh hides // us; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_3">
+                                
+                <meanValue>130.0</meanValue>
+                                
+                <comment>Distance in km, for beef, fresh hides // beef, fresh hides // us; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_3">
+                                
+                <formula>kg_3*km_3</formula>
+                                
+                <meanValue>206.79744800000003</meanValue>
+                                
+                <comment>Transport amount in km*km, for beef, fresh hides // beef, fresh hides // us; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_4">
+                                
+                <meanValue>0.5137499999999999</meanValue>
+                                
+                <comment>Mass in kg, for raw sheep pelt // sheep slaughtering and skinning // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_4">
+                                
+                <meanValue>130.0</meanValue>
+                                
+                <comment>Distance in km, for raw sheep pelt // sheep slaughtering and skinning // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_4">
+                                
+                <formula>kg_4*km_4</formula>
+                                
+                <meanValue>66.7875</meanValue>
+                                
+                <comment>Transport amount in km*km, for raw sheep pelt // sheep slaughtering and skinning // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_5">
+                                
+                <meanValue>0.16940000000000002</meanValue>
+                                
+                <comment>Mass in kg, for raw goat pelt // goat slaughtering and skinning // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_5">
+                                
+                <meanValue>130.0</meanValue>
+                                
+                <comment>Distance in km, for raw goat pelt // goat slaughtering and skinning // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_5">
+                                
+                <formula>kg_5*km_5</formula>
+                                
+                <meanValue>22.022000000000002</meanValue>
+                                
+                <comment>Transport amount in km*km, for raw goat pelt // goat slaughtering and skinning // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_6">
+                                
+                <meanValue>0.2662</meanValue>
+                                
+                <comment>Mass in kg, for raw pig pelt // pig slaughtering and skinning // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_6">
+                                
+                <meanValue>130.0</meanValue>
+                                
+                <comment>Distance in km, for raw pig pelt // pig slaughtering and skinning // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_6">
+                                
+                <formula>kg_6*km_6</formula>
+                                
+                <meanValue>34.606</meanValue>
+                                
+                <comment>Transport amount in km*km, for raw pig pelt // pig slaughtering and skinning // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_7">
+                                
+                <meanValue>1.134</meanValue>
+                                
+                <comment>Mass in kg, for sodium chloride powder // sodium chloride powder production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_7">
+                                
+                <meanValue>55.5</meanValue>
+                                
+                <comment>Distance in km, for sodium chloride powder // sodium chloride powder production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_7">
+                                
+                <formula>kg_7*km_7</formula>
+                                
+                <meanValue>62.937</meanValue>
+                                
+                <comment>Transport amount in km*km, for sodium chloride powder // sodium chloride powder production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_8">
+                                
+                <meanValue>0.2256345</meanValue>
+                                
+                <comment>Mass in kg, for basic chrome sulfate // basic chrome sulfate production // za; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_8">
+                                
+                <meanValue>130.0</meanValue>
+                                
+                <comment>Distance in km, for basic chrome sulfate // basic chrome sulfate production // za; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_8">
+                                
+                <formula>kg_8*km_8</formula>
+                                
+                <meanValue>29.332485</meanValue>
+                                
+                <comment>Transport amount in km*km, for basic chrome sulfate // basic chrome sulfate production // za; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_9">
+                                
+                <meanValue>0.0378</meanValue>
+                                
+                <comment>Mass in kg, for wet-white metal-free tanning agent mix // wet-white metal-free tanning agent production // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_9">
+                                
+                <meanValue>130.0</meanValue>
+                                
+                <comment>Distance in km, for wet-white metal-free tanning agent mix // wet-white metal-free tanning agent production // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_9">
+                                
+                <formula>kg_9*km_9</formula>
+                                
+                <meanValue>4.914</meanValue>
+                                
+                <comment>Transport amount in km*km, for wet-white metal-free tanning agent mix // wet-white metal-free tanning agent production // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_10">
+                                
+                <meanValue>0.0378</meanValue>
+                                
+                <comment>Mass in kg, for wet-white metal tanning agent mix // wet-white metal tanning agent production // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_10">
+                                
+                <meanValue>130.0</meanValue>
+                                
+                <comment>Distance in km, for wet-white metal tanning agent mix // wet-white metal tanning agent production // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_10">
+                                
+                <formula>kg_10*km_10</formula>
+                                
+                <meanValue>4.914</meanValue>
+                                
+                <comment>Transport amount in km*km, for wet-white metal tanning agent mix // wet-white metal tanning agent production // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_11">
+                                
+                <meanValue>0.31638599999999995</meanValue>
+                                
+                <comment>Mass in kg, for natural tannins extracted from chestnut // natural tannins extracted from chestnut production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_11">
+                                
+                <meanValue>130.0</meanValue>
+                                
+                <comment>Distance in km, for natural tannins extracted from chestnut // natural tannins extracted from chestnut production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_11">
+                                
+                <formula>kg_11*km_11</formula>
+                                
+                <meanValue>41.130179999999996</meanValue>
+                                
+                <comment>Transport amount in km*km, for natural tannins extracted from chestnut // natural tannins extracted from chestnut production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_12">
+                                
+                <meanValue>0.01610268</meanValue>
+                                
+                <comment>Mass in kg, for beef, fresh hides // beef, fresh hides // br; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_12">
+                                
+                <meanValue>270.0</meanValue>
+                                
+                <comment>Distance in km, for beef, fresh hides // beef, fresh hides // br; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_12">
+                                
+                <formula>kg_12*km_12</formula>
+                                
+                <meanValue>4.3477236</meanValue>
+                                
+                <comment>Transport amount in km*km, for beef, fresh hides // beef, fresh hides // br; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_13">
+                                
+                <meanValue>1.9957564</meanValue>
+                                
+                <comment>Mass in kg, for beef, fresh hides // beef, fresh hides // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_13">
+                                
+                <meanValue>270.0</meanValue>
+                                
+                <comment>Distance in km, for beef, fresh hides // beef, fresh hides // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_13">
+                                
+                <formula>kg_13*km_13</formula>
+                                
+                <meanValue>538.854228</meanValue>
+                                
+                <comment>Transport amount in km*km, for beef, fresh hides // beef, fresh hides // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_14">
+                                
+                <meanValue>1.2491776</meanValue>
+                                
+                <comment>Mass in kg, for beef, fresh hides // beef, fresh hides // glo; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_14">
+                                
+                <meanValue>270.0</meanValue>
+                                
+                <comment>Distance in km, for beef, fresh hides // beef, fresh hides // glo; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_14">
+                                
+                <formula>kg_14*km_14</formula>
+                                
+                <meanValue>337.277952</meanValue>
+                                
+                <comment>Transport amount in km*km, for beef, fresh hides // beef, fresh hides // glo; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_15">
+                                
+                <meanValue>1.5907496000000003</meanValue>
+                                
+                <comment>Mass in kg, for beef, fresh hides // beef, fresh hides // us; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_15">
+                                
+                <meanValue>270.0</meanValue>
+                                
+                <comment>Distance in km, for beef, fresh hides // beef, fresh hides // us; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_15">
+                                
+                <formula>kg_15*km_15</formula>
+                                
+                <meanValue>429.5023920000001</meanValue>
+                                
+                <comment>Transport amount in km*km, for beef, fresh hides // beef, fresh hides // us; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_16">
+                                
+                <meanValue>0.5137499999999999</meanValue>
+                                
+                <comment>Mass in kg, for raw sheep pelt // sheep slaughtering and skinning // glo; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_16">
+                                
+                <meanValue>270.0</meanValue>
+                                
+                <comment>Distance in km, for raw sheep pelt // sheep slaughtering and skinning // glo; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_16">
+                                
+                <formula>kg_16*km_16</formula>
+                                
+                <meanValue>138.71249999999998</meanValue>
+                                
+                <comment>Transport amount in km*km, for raw sheep pelt // sheep slaughtering and skinning // glo; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_17">
+                                
+                <meanValue>0.16940000000000002</meanValue>
+                                
+                <comment>Mass in kg, for raw goat pelt // goat slaughtering and skinning // glo; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_17">
+                                
+                <meanValue>270.0</meanValue>
+                                
+                <comment>Distance in km, for raw goat pelt // goat slaughtering and skinning // glo; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_17">
+                                
+                <formula>kg_17*km_17</formula>
+                                
+                <meanValue>45.73800000000001</meanValue>
+                                
+                <comment>Transport amount in km*km, for raw goat pelt // goat slaughtering and skinning // glo; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_18">
+                                
+                <meanValue>0.2662</meanValue>
+                                
+                <comment>Mass in kg, for raw pig pelt // pig slaughtering and skinning // glo; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_18">
+                                
+                <meanValue>270.0</meanValue>
+                                
+                <comment>Distance in km, for raw pig pelt // pig slaughtering and skinning // glo; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_18">
+                                
+                <formula>kg_18*km_18</formula>
+                                
+                <meanValue>71.874</meanValue>
+                                
+                <comment>Transport amount in km*km, for raw pig pelt // pig slaughtering and skinning // glo; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_19">
+                                
+                <meanValue>1.134</meanValue>
+                                
+                <comment>Mass in kg, for sodium chloride powder // sodium chloride powder production // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_19">
+                                
+                <meanValue>115.00000000000001</meanValue>
+                                
+                <comment>Distance in km, for sodium chloride powder // sodium chloride powder production // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_19">
+                                
+                <formula>kg_19*km_19</formula>
+                                
+                <meanValue>130.41</meanValue>
+                                
+                <comment>Transport amount in km*km, for sodium chloride powder // sodium chloride powder production // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_20">
+                                
+                <meanValue>0.2256345</meanValue>
+                                
+                <comment>Mass in kg, for basic chrome sulfate // basic chrome sulfate production // za; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_20">
+                                
+                <meanValue>270.0</meanValue>
+                                
+                <comment>Distance in km, for basic chrome sulfate // basic chrome sulfate production // za; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_20">
+                                
+                <formula>kg_20*km_20</formula>
+                                
+                <meanValue>60.921315</meanValue>
+                                
+                <comment>Transport amount in km*km, for basic chrome sulfate // basic chrome sulfate production // za; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_21">
+                                
+                <meanValue>0.0378</meanValue>
+                                
+                <comment>Mass in kg, for wet-white metal-free tanning agent mix // wet-white metal-free tanning agent production // glo; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_21">
+                                
+                <meanValue>270.0</meanValue>
+                                
+                <comment>Distance in km, for wet-white metal-free tanning agent mix // wet-white metal-free tanning agent production // glo; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_21">
+                                
+                <formula>kg_21*km_21</formula>
+                                
+                <meanValue>10.206</meanValue>
+                                
+                <comment>Transport amount in km*km, for wet-white metal-free tanning agent mix // wet-white metal-free tanning agent production // glo; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_22">
+                                
+                <meanValue>0.0378</meanValue>
+                                
+                <comment>Mass in kg, for wet-white metal tanning agent mix // wet-white metal tanning agent production // glo; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_22">
+                                
+                <meanValue>270.0</meanValue>
+                                
+                <comment>Distance in km, for wet-white metal tanning agent mix // wet-white metal tanning agent production // glo; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_22">
+                                
+                <formula>kg_22*km_22</formula>
+                                
+                <meanValue>10.206</meanValue>
+                                
+                <comment>Transport amount in km*km, for wet-white metal tanning agent mix // wet-white metal tanning agent production // glo; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_23">
+                                
+                <meanValue>0.31638599999999995</meanValue>
+                                
+                <comment>Mass in kg, for natural tannins extracted from chestnut // natural tannins extracted from chestnut production // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_23">
+                                
+                <meanValue>270.0</meanValue>
+                                
+                <comment>Distance in km, for natural tannins extracted from chestnut // natural tannins extracted from chestnut production // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_23">
+                                
+                <formula>kg_23*km_23</formula>
+                                
+                <meanValue>85.42421999999999</meanValue>
+                                
+                <comment>Transport amount in km*km, for natural tannins extracted from chestnut // natural tannins extracted from chestnut production // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_24">
+                                
+                <meanValue>0.01610268</meanValue>
+                                
+                <comment>Mass in kg, for beef, fresh hides // beef, fresh hides // br; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_24">
+                                
+                <meanValue>240.0</meanValue>
+                                
+                <comment>Distance in km, for beef, fresh hides // beef, fresh hides // br; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_24">
+                                
+                <formula>kg_24*km_24</formula>
+                                
+                <meanValue>3.8646432</meanValue>
+                                
+                <comment>Transport amount in km*km, for beef, fresh hides // beef, fresh hides // br; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_25">
+                                
+                <meanValue>1.9957564</meanValue>
+                                
+                <comment>Mass in kg, for beef, fresh hides // beef, fresh hides // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_25">
+                                
+                <meanValue>240.0</meanValue>
+                                
+                <comment>Distance in km, for beef, fresh hides // beef, fresh hides // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_25">
+                                
+                <formula>kg_25*km_25</formula>
+                                
+                <meanValue>478.981536</meanValue>
+                                
+                <comment>Transport amount in km*km, for beef, fresh hides // beef, fresh hides // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_26">
+                                
+                <meanValue>1.2491776</meanValue>
+                                
+                <comment>Mass in kg, for beef, fresh hides // beef, fresh hides // glo; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_26">
+                                
+                <meanValue>240.0</meanValue>
+                                
+                <comment>Distance in km, for beef, fresh hides // beef, fresh hides // glo; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_26">
+                                
+                <formula>kg_26*km_26</formula>
+                                
+                <meanValue>299.80262400000004</meanValue>
+                                
+                <comment>Transport amount in km*km, for beef, fresh hides // beef, fresh hides // glo; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_27">
+                                
+                <meanValue>1.5907496000000003</meanValue>
+                                
+                <comment>Mass in kg, for beef, fresh hides // beef, fresh hides // us; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_27">
+                                
+                <meanValue>240.00000000000003</meanValue>
+                                
+                <comment>Distance in km, for beef, fresh hides // beef, fresh hides // us; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_27">
+                                
+                <formula>kg_27*km_27</formula>
+                                
+                <meanValue>381.7799040000001</meanValue>
+                                
+                <comment>Transport amount in km*km, for beef, fresh hides // beef, fresh hides // us; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_28">
+                                
+                <meanValue>0.5137499999999999</meanValue>
+                                
+                <comment>Mass in kg, for raw sheep pelt // sheep slaughtering and skinning // glo; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_28">
+                                
+                <meanValue>240.0</meanValue>
+                                
+                <comment>Distance in km, for raw sheep pelt // sheep slaughtering and skinning // glo; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_28">
+                                
+                <formula>kg_28*km_28</formula>
+                                
+                <meanValue>123.29999999999998</meanValue>
+                                
+                <comment>Transport amount in km*km, for raw sheep pelt // sheep slaughtering and skinning // glo; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_29">
+                                
+                <meanValue>0.16940000000000002</meanValue>
+                                
+                <comment>Mass in kg, for raw goat pelt // goat slaughtering and skinning // glo; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_29">
+                                
+                <meanValue>240.0</meanValue>
+                                
+                <comment>Distance in km, for raw goat pelt // goat slaughtering and skinning // glo; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_29">
+                                
+                <formula>kg_29*km_29</formula>
+                                
+                <meanValue>40.656000000000006</meanValue>
+                                
+                <comment>Transport amount in km*km, for raw goat pelt // goat slaughtering and skinning // glo; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_30">
+                                
+                <meanValue>0.2662</meanValue>
+                                
+                <comment>Mass in kg, for raw pig pelt // pig slaughtering and skinning // glo; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_30">
+                                
+                <meanValue>240.0</meanValue>
+                                
+                <comment>Distance in km, for raw pig pelt // pig slaughtering and skinning // glo; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_30">
+                                
+                <formula>kg_30*km_30</formula>
+                                
+                <meanValue>63.888</meanValue>
+                                
+                <comment>Transport amount in km*km, for raw pig pelt // pig slaughtering and skinning // glo; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_31">
+                                
+                <meanValue>1.134</meanValue>
+                                
+                <comment>Mass in kg, for sodium chloride powder // sodium chloride powder production // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_31">
+                                
+                <meanValue>102.0</meanValue>
+                                
+                <comment>Distance in km, for sodium chloride powder // sodium chloride powder production // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_31">
+                                
+                <formula>kg_31*km_31</formula>
+                                
+                <meanValue>115.66799999999999</meanValue>
+                                
+                <comment>Transport amount in km*km, for sodium chloride powder // sodium chloride powder production // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_32">
+                                
+                <meanValue>0.2256345</meanValue>
+                                
+                <comment>Mass in kg, for basic chrome sulfate // basic chrome sulfate production // za; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_32">
+                                
+                <meanValue>240.0</meanValue>
+                                
+                <comment>Distance in km, for basic chrome sulfate // basic chrome sulfate production // za; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_32">
+                                
+                <formula>kg_32*km_32</formula>
+                                
+                <meanValue>54.15228</meanValue>
+                                
+                <comment>Transport amount in km*km, for basic chrome sulfate // basic chrome sulfate production // za; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_33">
+                                
+                <meanValue>0.0378</meanValue>
+                                
+                <comment>Mass in kg, for wet-white metal-free tanning agent mix // wet-white metal-free tanning agent production // glo; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_33">
+                                
+                <meanValue>239.99999999999997</meanValue>
+                                
+                <comment>Distance in km, for wet-white metal-free tanning agent mix // wet-white metal-free tanning agent production // glo; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_33">
+                                
+                <formula>kg_33*km_33</formula>
+                                
+                <meanValue>9.072</meanValue>
+                                
+                <comment>Transport amount in km*km, for wet-white metal-free tanning agent mix // wet-white metal-free tanning agent production // glo; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_34">
+                                
+                <meanValue>0.0378</meanValue>
+                                
+                <comment>Mass in kg, for wet-white metal tanning agent mix // wet-white metal tanning agent production // glo; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_34">
+                                
+                <meanValue>239.99999999999997</meanValue>
+                                
+                <comment>Distance in km, for wet-white metal tanning agent mix // wet-white metal tanning agent production // glo; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_34">
+                                
+                <formula>kg_34*km_34</formula>
+                                
+                <meanValue>9.072</meanValue>
+                                
+                <comment>Transport amount in km*km, for wet-white metal tanning agent mix // wet-white metal tanning agent production // glo; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_35">
+                                
+                <meanValue>0.31638599999999995</meanValue>
+                                
+                <comment>Mass in kg, for natural tannins extracted from chestnut // natural tannins extracted from chestnut production // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_35">
+                                
+                <meanValue>240.00000000000003</meanValue>
+                                
+                <comment>Distance in km, for natural tannins extracted from chestnut // natural tannins extracted from chestnut production // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_35">
+                                
+                <formula>kg_35*km_35</formula>
+                                
+                <meanValue>75.93263999999999</meanValue>
+                                
+                <comment>Transport amount in km*km, for natural tannins extracted from chestnut // natural tannins extracted from chestnut production // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                    
+        </mathematicalRelations>
+            
+    </processInformation>
+        
+    <modellingAndValidation>
+                
+        <LCIMethodAndAllocation>
+                        
+            <typeOfDataSet>Partly terminated system</typeOfDataSet>
+                        
+            <LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+                        
+            <deviationsFromLCIMethodPrinciple>The background data uses: 
+- the \xe2\x80\x9cRecycled content cut-off\xe2\x80\x9d approach to allocate end-of-life by-products and secondary materials. This allocation is explained in the description of the recycled content system model (http://www.ecoinvent.org/database/system-models-in-ecoinvent-3/cut-off-system-model/allocation-cut-off-by-classification.html).
+OR
+- EF compliant data</deviationsFromLCIMethodPrinciple>
+                        
+            <LCIMethodApproaches>Allocation - market value</LCIMethodApproaches>
+                        
+            <deviationsFromLCIMethodApproaches>Background data: 
+- the \xe2\x80\x9cRecycled content cut-off\xe2\x80\x9d approach to allocate end-of-life by-products and secondary materials. This allocation is explained in the description of the recycled content system model (http://www.ecoinvent.org/database/system-models-in-ecoinvent-3/cut-off-system-model/allocation-cut-off-by-classification.html). The ecoinvent database mostly relies on “Allocation – market values” apart for few exceptions particularly in the energy sector. ecoinvent energy data is replaced with EF3.0 core data as per the EF guidelines version 2.0.
+OR
+- EF compliant data</deviationsFromLCIMethodApproaches>
+                        
+            <modellingConstants>All modelling constants follow the requirements listed in the Tender Specifications 070201/2020/SER/ENV.B1. Completeness: There are no intentional cut-offs in the inventory no matter how small their contribution to all the EF impact categories is. Eventual cut-offs are in compliance with the Guide for EF compliant data sets (JRC 2020), i.e. only if below the 3% cut-off rule. Water use: water use is modelled at country level using separate flows for water withdrawal, water release and water evaporation. Handling multi-functional processes: the following PEF multi- functionality decision hierarchy is applied for resolving all multi- functionality problems: (1) subdivision or system expansion; (2) allocation based on a relevant underlying physical relationship (substitution may apply here); (3) allocation based on some other relationship. Direct land use change: GHG emissions from direct LUC allocated to good/service for 20 years after the LUC occurs, with IPCC default values. Carbon storage and delayed emissions: credits associated with temporary (carbon) storage or delayed emissions up to 300 years are not be considered. Emissions off-setting: are not included. Capital goods (including infrastructures) and their End of life: they are included. System boundaries: system boundaries include all processes linked to the product supply chain (e.g. maintenance). Time period: emissions and removals are modelled as if released or removed at the beginning of the assessment method. Fossil and biogenic carbon emissions and removals: removals and emissions are modelled as follows: All GHG emissions from fossil fuels (including peat and limestone) are modelled consistently with the most updated ILCD list of elementary flows. The non-fossil (biogenic) carbon flows are modelled consistently with the most updated ILCD list of elementary flows.</modellingConstants>
+                        
+            <deviationsFromModellingConstants>None</deviationsFromModellingConstants>
+                    
+        </LCIMethodAndAllocation>
+                
+        <dataSourcesTreatmentAndRepresentativeness>
+                        
+            <dataCutOffAndCompletenessPrinciples>There are no intentional cut-offs in the inventory no matter how small their contribution to all the EF impact categories is. Eventual cut-offs are in compliance with the Guide for EF compliant data sets (JRC 2020), i.e. only if below the 3% cut-off rule. The dataset dry mass and water balance has been checked to ensure the inventory is complete. Capital goods (e.g. infrastructure) and their end-of-life are included.</dataCutOffAndCompletenessPrinciples>
+                        
+            <deviationsFromCutOffAndCompletenessPrinciples>None</deviationsFromCutOffAndCompletenessPrinciples>
+                        
+            <dataSelectionAndCombinationPrinciples>These datasets include, in both their foreground and background data, links to EF3.0 compliant data.
+The relevant background data on energy, transport, and End of Life are from the LCDN data node (http://lcdn.thinkstep.com/Node/).
+All other background data in the supply of this product for which no EF3.0 process was available are from ecoinvent v3.7 database (www.ecoinvent.org) or other data sources.</dataSelectionAndCombinationPrinciples>
+                        
+            <deviationsFromSelectionAndCombinationPrinciples>None</deviationsFromSelectionAndCombinationPrinciples>
+                        
+            <dataTreatmentAndExtrapolationsPrinciples>Several data sources have been used to model the inventory.</dataTreatmentAndExtrapolationsPrinciples>
+                        
+            <deviationsFromTreatmentAndExtrapolationPrinciples>None</deviationsFromTreatmentAndExtrapolationPrinciples>
+                        
+            <referenceToDataSource refObjectId="d4fe7d8a-1f8c-591d-a31f-f58d2f888e3e" type="source data set" uri="../sources/d4fe7d8a-1f8c-591d-a31f-f58d2f888e3e.xml" version="01.00.000">
+                                
+                <common:shortDescription>Background Data for Representative products and organisations. EF 3.0 compliant (data stock)</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="67c2450a-3538-58bb-843b-c22bf2d4f40d" type="source data set" uri="../sources/67c2450a-3538-58bb-843b-c22bf2d4f40d.xml" version="01.00.000">
+                                
+                <common:shortDescription>Andrea Fontanella, Benedetta Nucci, Primiano De Rosa-Giglio, and Ioannis Ioannidis. ‘Leather PEF Screening Report in the Context of the EU Product Environmental Footprint Category Rules (PEFCR) Pilots’, 11 November 2015.</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="a2c42032-e178-5f04-9594-a3995eea8d42" type="source data set" uri="../sources/a2c42032-e178-5f04-9594-a3995eea8d42.xml" version="01.00.000">
+                                
+                <common:shortDescription>COTANCE and industriAll-Europe. ‘European Leather Industry - SOCIAL &amp; ENVIRONMENTAL REPORT 2020’, 2020. https://www.euroleather.com/doc/SER/European%20Leather%20Industry%20-%20Social%20and%20Environmental%20Report%202020%20-%20EN%20web.pdf.</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="38a7a9b8-f31d-5fd7-b82d-e8eadef5365c" type="source data set" uri="../sources/38a7a9b8-f31d-5fd7-b82d-e8eadef5365c.xml" version="01.00.000">
+                                
+                <common:shortDescription>COTANCE. ‘COTANCE, Personal Communications’, June 2021.</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="550e064d-eaaa-5e7b-b71b-3cd1bc39fb5c" type="source data set" uri="../sources/550e064d-eaaa-5e7b-b71b-3cd1bc39fb5c.xml" version="01.00.000">
+                                
+                <common:shortDescription>Cuiodepur. ‘Description of the Consorzio Cuoiodepur Plant’, 2004. https://web.archive.org/web/20210707082819/http://www.cuoiodepur.it/wp-content/uploads/2016/06/relazione.pdf.</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="18a428db-8abf-5410-abb9-e53565238d7a" type="source data set" uri="../sources/18a428db-8abf-5410-abb9-e53565238d7a.xml" version="01.00.000">
+                                
+                <common:shortDescription>De Rosa-Giglio, Fontanella, Gonzalez-Quijano, Ioannidis, Nucci, and Brugnoli. ‘PRODUCT ENVIRONMENTAL  FOOTPRINT CATEGORY RULES Leather’, 25 April 2018.</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="2ddb88c9-7f49-51cd-939a-d0cc04319a15" type="source data set" uri="../sources/2ddb88c9-7f49-51cd-939a-d0cc04319a15.xml" version="01.00.000">
+                                
+                <common:shortDescription>Acque del Chiampo. ‘Acque del Chiampo Wastewater Treatment 2019 Sustainability Report (Italian)’, 2019. https://web.archive.org/web/20210707082948/https://www.acquedelchiampospa.it/FILES/files/Trasparenza/2020/bilanciosolidale2018_compresso.pdf.</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <annualSupplyOrProductionVolume/>
+                        
+            <samplingProcedure/>
+                        
+            <dataCollectionPeriod/>
+                        
+            <uncertaintyAdjustments>None</uncertaintyAdjustments>
+                        
+            <useAdviceForDataSet/>
+                    
+        </dataSourcesTreatmentAndRepresentativeness>
+                
+        <completeness>
+                        
+            <completenessProductModel>All relevant flows quantified</completenessProductModel>
+                              
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b53ec18f-7377-4ad3-86eb-cc3f4f276b2b" type="LCIA method data set" uri="../lciamethods/b53ec18f-7377-4ad3-86eb-cc3f4f276b2b.xml" version="01.00.010">
+                                
+                <common:shortDescription xml:lang="en">Eutrophication, freshwater</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c632be-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c632be-def3-11e6-bf01-fe55135034f3.xml" version="01.00.011">
+                                
+                <common:shortDescription xml:lang="en">Ionising radiation, human health</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad66ce-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad66ce-c78d-11e6-9d9d-cec0c932ce01.xml" version="03.00.014">
+                                
+                <common:shortDescription xml:lang="en">Water use</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c614d2-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c614d2-def3-11e6-bf01-fe55135034f3.xml" version="01.02.009">
+                                
+                <common:shortDescription xml:lang="en">Eutrophication, terrestrial</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="05316e7a-b254-4bea-9cf0-6bf33eb5c630" type="LCIA method data set" uri="../lciamethods/05316e7a-b254-4bea-9cf0-6bf33eb5c630.xml" version="01.00.000">
+                                
+                <common:shortDescription xml:lang="en">Ecotoxicity, freshwater</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c602c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c602c6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.011">
+                                
+                <common:shortDescription xml:lang="en">EF-particulate Matter</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6890-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6890-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                                
+                <common:shortDescription xml:lang="en">Land use</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c611c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c611c6-def3-11e6-bf01-fe55135034f3.xml" version="01.04.000">
+                                
+                <common:shortDescription xml:lang="en">Acidification</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6110-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6110-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                                
+                <common:shortDescription xml:lang="en">Resource use, fossils</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="6209b35f-9447-40b5-b68c-a1099e3674a0" type="LCIA method data set" uri="../lciamethods/6209b35f-9447-40b5-b68c-a1099e3674a0.xml" version="01.00.000">
+                                
+                <common:shortDescription xml:lang="en">Climate change</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6494-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6494-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                                
+                <common:shortDescription xml:lang="en">Resource use, minerals and metals</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c629d6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c629d6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.012">
+                                
+                <common:shortDescription xml:lang="en">Ozone depletion</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="2299222a-bbd8-474f-9d4f-4dd1f18aea7c" type="LCIA method data set" uri="../lciamethods/2299222a-bbd8-474f-9d4f-4dd1f18aea7c.xml" version="01.01.000">
+                                
+                <common:shortDescription xml:lang="en">Human toxicity, cancer</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c619fa-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c619fa-def3-11e6-bf01-fe55135034f3.xml" version="02.00.010">
+                                
+                <common:shortDescription xml:lang="en">Eutrophication marine</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8" type="LCIA method data set" uri="../lciamethods/7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8.xml" version="01.00.000">
+                                
+                <common:shortDescription xml:lang="en">Human toxicity, non-cancer</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c610fe-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c610fe-def3-11e6-bf01-fe55135034f3.xml" version="02.01.000">
+                                
+                <common:shortDescription xml:lang="en">Photochemical ozone formation - human health</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <completenessElementaryFlows type="Climate change" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Ozone depletion" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Summer smog" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Eutrophication" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Acidification" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Human toxicity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Freshwater ecotoxicity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Seawater eco-toxicity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Terrestric eco-toxicity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Radioactivity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Land use" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Non-renewable material resource depletion" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Renewable material resource consumption" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Non-renewable primary energy depletion" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Renewable primary energy consumption" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Particulate matter/respiratory inorganics" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Species depletion" value="No statement"/>
+                        
+            <completenessElementaryFlows type="Noise" value="No statement"/>
+                    
+        </completeness>
+                
+        <validation>
+                        
+            <review type="Dependent internal review">
+                                
+                <common:scope name="Raw data">
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Validation of data sources"/>
+                                        
+                    <common:method name="Sample tests on calculations"/>
+                                        
+                    <common:method name="Element balance"/>
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Mass balance"/>
+                                        
+                    <common:method name="Documentation"/>
+                                        
+                    <common:method name="Energy balance"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="Unit process(es), single operation">
+                                        
+                    <common:method name="Validation of data sources"/>
+                                        
+                    <common:method name="Sample tests on calculations"/>
+                                        
+                    <common:method name="Energy balance"/>
+                                        
+                    <common:method name="Element balance"/>
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Cross-check with other data set"/>
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Mass balance"/>
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                        
+                    <common:method name="Documentation"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="Unit process(es), black box">
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Validation of data sources"/>
+                                        
+                    <common:method name="Sample tests on calculations"/>
+                                        
+                    <common:method name="Energy balance"/>
+                                        
+                    <common:method name="Element balance"/>
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Cross-check with other data set"/>
+                                        
+                    <common:method name="Mass balance"/>
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="LCI results or Partly terminated system">
+                                        
+                    <common:method name="Validation of data sources"/>
+                                        
+                    <common:method name="Sample tests on calculations"/>
+                                        
+                    <common:method name="Energy balance"/>
+                                        
+                    <common:method name="Element balance"/>
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Cross-check with other data set"/>
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Mass balance"/>
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="LCIA results">
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Cross-check with other data set"/>
+                                        
+                    <common:method name="Expert judgement"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="Documentation">
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="Life cycle inventory methods">
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                    
+                </common:scope>
+                                
+                <common:dataQualityIndicators>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.50" name="Overall quality" value="Good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.09" name="Time representativeness" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.52" name="Geographical representativeness" value="Good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.38" name="Technological representativeness" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="2.02" name="Precision" value="Fair"/>
+                                        
+                    <common:dataQualityIndicator name="Methodological appropriateness and consistency" value="Not applicable"/>
+                                    
+                </common:dataQualityIndicators>
+                                
+                <common:reviewDetails>Internal reviews have been asked to review the plausibility of the unit process, LCIA scores, and DQRs. Internal reviewers have also been asked to review the data for EF compliancy. The consortium is therefore responsible for aspects such as compliancy with the ILCD format, including validation in Look@LCI, and nomenclature.
+Internal reviwers have been asked to judge based on the process name, that the unit process models in a complete and representative way the  process in the requested location. The review encompassed the plausability of:
+- exchanges with nature (elementary flows) as well as exchanges such as product and waste flows.
+- meta information (general comment, technology comment, system boundaries, allocation, cut-off rules, etc.). Reviewers were asked to judge if the provided information is enough to understand the content of the process.
+- LCIA scores
+- DQRs including precision, technology, time and geography. As well as the overall DQR.</common:reviewDetails>
+                                
+                <common:referenceToNameOfReviewerAndInstitution refObjectId="80e534c3-7a1e-5641-9b76-585833743e7b" type="contact data set" uri="../contacts/80e534c3-7a1e-5641-9b76-585833743e7b.xml">
+                                        
+                    <common:shortDescription>Avraam Symeonidis</common:shortDescription>
+                                    
+                </common:referenceToNameOfReviewerAndInstitution>
+                                
+                <common:referenceToNameOfReviewerAndInstitution refObjectId="9b17426d-bb24-5264-89b5-f480327c5c78" type="contact data set" uri="../contacts/9b17426d-bb24-5264-89b5-f480327c5c78.xml">
+                                        
+                    <common:shortDescription>Marisa Vieira</common:shortDescription>
+                                    
+                </common:referenceToNameOfReviewerAndInstitution>
+                            
+            </review>
+                        
+            <review type="Independent review panel">
+                                
+                <common:dataQualityIndicators>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.50" name="Overall quality" value="Good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.09" name="Time representativeness" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.52" name="Geographical representativeness" value="Good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.38" name="Technological representativeness" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="2.02" name="Precision" value="Fair"/>
+                                        
+                    <common:dataQualityIndicator name="Methodological appropriateness and consistency" value="Not applicable"/>
+                                    
+                </common:dataQualityIndicators>
+                                
+                <common:reviewDetails>External reviewers have been asked to provide their expertise in the field of interest. External reviewers have been asked to review the unit process, including eventual methodological choices, the LCIA scores (provided with contribution scores as well), and DQRs. External reviewers have been provided all the information in a tool developed by the consortium for the purpose of this project.
+External reviewers have been asked to judge based on the process name, that the unit process models in a complete and representative way the  process in the requested location. The review encompassed:
+- Plausability and completeness of exchanges with nature (elementary flows) as well as exchanges such as product and waste flows.
+- Review of meta information (general comment, technology comment, system boundaries, allocation, cut-off rules, etc.). Reviewers were asked to judge if the provided information is enough to understand the content of the process.
+- Review of properties (biogenic carbon and water content).
+- Review of allocation keys.
+- Plausability of LCIA scores calculated by the consortium.
+- Plausability of DQRs including precision, technology, time and geography. As well as the overall DQR.</common:reviewDetails>
+                                
+                <common:referenceToNameOfReviewerAndInstitution refObjectId="03793469-ee70-563e-bfa7-61b7930d0551" type="contact data set" uri="../contacts/03793469-ee70-563e-bfa7-61b7930d0551.xml">
+                                        
+                    <common:shortDescription>Madhuri Nigam</common:shortDescription>
+                                    
+                </common:referenceToNameOfReviewerAndInstitution>
+                                
+                <common:referenceToCompleteReviewReport refObjectId="99f55b37-1e90-5115-8841-35508cb93935" type="source data set" uri="../sources/99f55b37-1e90-5115-8841-35508cb93935.xml" version="01.00.000">
+                                        
+                    <common:shortDescription>Review report for leather, high environmental practice tannery - EU+EFTA+UK</common:shortDescription>
+                                    
+                </common:referenceToCompleteReviewReport>
+                            
+            </review>
+                    
+        </validation>
+                
+        <complianceDeclarations>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="d92a1a12-2545-49e2-a585-55c259997756" type="source data set" uri="../sources/d92a1a12-2545-49e2-a585-55c259997756.xml" version="35.00.000">
+                                        
+                    <common:shortDescription>ILCD Data Network - Entry-level</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+                            
+            </compliance>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="afc1ce43-e800-494b-aad4-46b9e8ea74da" type="source data set" uri="../sources/afc1ce43-e800-494b-aad4-46b9e8ea74da.xml" version="00.00.000">
+                                        
+                    <common:shortDescription>Suggestions for updating the PEF method 2019</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Fully compliant</common:qualityCompliance>
+                            
+            </compliance>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="1ea48531-e397-4ca7-ac08-056e4fa11826" type="source data set" uri="../sources/1ea48531-e397-4ca7-ac08-056e4fa11826.xml" version="35.00.000">
+                                        
+                    <common:shortDescription>ISO 14040 Environmental Management – Life Cycle Assessment – Principles and Framework, 2006</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Not defined</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Not defined</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+                            
+            </compliance>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="1adb438d-4a8b-4919-885e-0a66da3c0f2a" type="source data set" uri="../sources/1adb438d-4a8b-4919-885e-0a66da3c0f2a.xml" version="35.00.000">
+                                        
+                    <common:shortDescription>ISO 14044:2006. Environmental Management – Life Cycle Assessment – Requirements and guidelines.</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Not defined</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Not defined</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+                            
+            </compliance>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="0eb2b770-2cb1-43cf-9fbc-215df36fe9f0" type="source data set" uri="../sources/0eb2b770-2cb1-43cf-9fbc-215df36fe9f0.xml" version="00.00.001">
+                                        
+                    <common:shortDescription>Environmental Footprint 3.1</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Not defined</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Not defined</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Not defined</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Not defined</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+                            
+            </compliance>
+                    
+        </complianceDeclarations>
+            
+    </modellingAndValidation>
+        
+    <administrativeInformation>
+                
+        <common:commissionerAndGoal>
+                        
+            <common:referenceToCommissioner refObjectId="cf7f0f79-a312-4b28-89ea-32a589b87f58" type="contact data set" uri="../contacts/cf7f0f79-a312-4b28-89ea-32a589b87f58.xml" version="01.00.000">
+                                
+                <common:shortDescription>European Commission, DG ENV B1</common:shortDescription>
+                            
+            </common:referenceToCommissioner>
+                        
+            <common:project>Provision of process-based 3.0 Environmental Footprint-compliant life cycle inventory datasets - Apparel 3 - contract number 070201/2020/840294/SER/ENV.B.1</common:project>
+                        
+            <common:intendedApplications>Implementation of regular Product Environmental Footprint (PEF) studies and Organisation Environmental Footprint (OEF) studies exclusively under the specified Product groups and sectors as defined in the Product Environmental Footprint Category Rules (PEFCR) and Organisation Environmental Footprint Sectorial Rules (OEFSR) listed in http://ec.europa.eu/environment/eussd/smgp/PEFCR_OEFSR.htm</common:intendedApplications>
+                    
+        </common:commissionerAndGoal>
+                
+        <dataGenerator>
+                        
+            <common:referenceToPersonOrEntityGeneratingTheDataSet refObjectId="cdbab85b-40b1-5a9c-8131-46d43471d900" type="contact data set" uri="../contacts/cdbab85b-40b1-5a9c-8131-46d43471d900.xml" version="01.00.000">
+                                
+                <common:shortDescription>PRé Sustainability B.V.</common:shortDescription>
+                            
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+                    
+        </dataGenerator>
+                
+        <dataEntryBy>
+                        
+            <common:timeStamp>2024-07-13T09:33:03.334+02:00</common:timeStamp>
+                        
+            <common:referenceToDataSetFormat refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" type="source data set" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml" version="03.00.000">
+                                
+                <common:shortDescription>ILCD format 1.1</common:shortDescription>
+                            
+            </common:referenceToDataSetFormat>
+                        
+            <common:referenceToPersonOrEntityEnteringTheData refObjectId="cdbab85b-40b1-5a9c-8131-46d43471d900" type="contact data set" uri="../contacts/cdbab85b-40b1-5a9c-8131-46d43471d900.xml" version="01.00.000">
+                                
+                <common:shortDescription>PRé Sustainability B.V.</common:shortDescription>
+                            
+            </common:referenceToPersonOrEntityEnteringTheData>
+                    
+        </dataEntryBy>
+                
+        <publicationAndOwnership>
+                        
+            <common:dateOfLastRevision>2020-09-02T14:36:46.214668+02:00</common:dateOfLastRevision>
+                        
+            <common:dataSetVersion>01.01.000</common:dataSetVersion>
+                        
+            <common:referenceToPrecedingDataSetVersion refObjectId="55469fec-04e0-5a2c-8b71-3bf40cf2adb7" type="process data set" uri="../processes/55469fec-04e0-5a2c-8b71-3bf40cf2adb7.xml?version=01.00.000" version="01.00.000">
+                                
+                <common:shortDescription xml:lang="en">leather, high environmental practice tannery</common:shortDescription>
+                            
+            </common:referenceToPrecedingDataSetVersion>
+                        
+            <common:permanentDataSetURI/>
+                        
+            <common:workflowAndPublicationStatus>Data set finalised; entirely published</common:workflowAndPublicationStatus>
+                        
+            <common:registrationNumber/>
+                        
+            <common:referenceToOwnershipOfDataSet refObjectId="cdbab85b-40b1-5a9c-8131-46d43471d900" type="contact data set" uri="../contacts/cdbab85b-40b1-5a9c-8131-46d43471d900.xml" version="01.00.000">
+                                
+                <common:shortDescription>PRé Sustainability B.V.</common:shortDescription>
+                            
+            </common:referenceToOwnershipOfDataSet>
+                        
+            <common:copyright>true</common:copyright>
+                        
+            <common:referenceToEntitiesWithExclusiveAccess refObjectId="8b3e08f0-740a-43b1-aa8d-bec56c5daf6e" type="contact data set" uri="../contacts/8b3e08f0-740a-43b1-aa8d-bec56c5daf6e.xml" version="29.00.000">
+                                
+                <common:shortDescription>Final user</common:shortDescription>
+                            
+            </common:referenceToEntitiesWithExclusiveAccess>
+                        
+            <common:licenseType>Free of charge for some user types or use types</common:licenseType>
+                        
+            <common:accessRestrictions>Free of charge for all final users implementing a regular Product Environmental Footprint (PEF) studies and Organisation Environmental Footprint (OEF) studies exclusively under the specified Product groups and sectors as defined in the Product Environmental Footprint Category Rules (PEFCR) and Organisation Environmental Footprint Sectorial Rules (OEFSR) listed in http://ec.europa.eu/environment/eussd/smgp/PEFCR_OEFSR.htm and in accordance with the terms and conditions of the EULA (available at https://ecoinvent.lca-data.com/) exclusively until 31st December 2024. Any use of this dataset or any derivative data not within the specific context of one of the PEF/OEF projects or after the end of 2024 is not permitted.</common:accessRestrictions>
+                    
+        </publicationAndOwnership>
+            
+    </administrativeInformation>
+        
+    <exchanges>
+                
+        <exchange dataSetInternalID="0">
+                        
+            <referenceToFlowDataSet refObjectId="a9b6f8d9-2044-54a4-9aa6-cfe5a2e5a674" type="flow data set" uri=".../flows/a9b6f8d9-2044-54a4-9aa6-cfe5a2e5a674.xml">
+                                
+                <common:shortDescription>leather, high environmental practice tannery // leather, high environmental practice tannery // eu+efta+uk</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Output</exchangeDirection>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>1</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="1">
+                        
+            <referenceToFlowDataSet refObjectId="7e7f9837-7d18-574c-bc2d-79d71b628740" type="flow data set" uri=".../flows/7e7f9837-7d18-574c-bc2d-79d71b628740.xml">
+                                
+                <common:shortDescription>Electricity from Electricity grid mix 1kV-60kV - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>20.176524590163936</meanAmount>
+                        
+            <resultingAmount>20.176524590163936</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="2">
+                        
+            <referenceToFlowDataSet refObjectId="217d2377-c04d-5931-840d-94f8a20dce9c" type="flow data set" uri=".../flows/217d2377-c04d-5931-840d-94f8a20dce9c.xml">
+                                
+                <common:shortDescription>Thermal energy (MJ) from Thermal energy from heavy fuel oil (HFO) - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>4.127016393442624</meanAmount>
+                        
+            <resultingAmount>4.127016393442624</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="3">
+                        
+            <referenceToFlowDataSet refObjectId="98b7ff36-4b0e-5dbc-8ec2-7f145439e680" type="flow data set" uri=".../flows/98b7ff36-4b0e-5dbc-8ec2-7f145439e680.xml">
+                                
+                <common:shortDescription>Thermal energy (MJ) from Thermal energy from natural gas - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>52.12268852459017</meanAmount>
+                        
+            <resultingAmount>52.12268852459017</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="4">
+                        
+            <referenceToFlowDataSet refObjectId="00188935-f82d-56e1-952c-d128cb46d9cb" type="flow data set" uri=".../flows/00188935-f82d-56e1-952c-d128cb46d9cb.xml">
+                                
+                <common:shortDescription>Transport of beef, fresh hides // beef, fresh hides // br by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_0</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>2.0933484</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="5">
+                        
+            <referenceToFlowDataSet refObjectId="ec18be2b-da72-55c2-9b2c-7f76aa11ceae" type="flow data set" uri=".../flows/ec18be2b-da72-55c2-9b2c-7f76aa11ceae.xml">
+                                
+                <common:shortDescription>Transport of beef, fresh hides // beef, fresh hides // eu+efta+uk by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_1</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>259.448332</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="6">
+                        
+            <referenceToFlowDataSet refObjectId="8e71da8e-39f1-50af-833a-c86e3e3b5b05" type="flow data set" uri=".../flows/8e71da8e-39f1-50af-833a-c86e3e3b5b05.xml">
+                                
+                <common:shortDescription>Transport of beef, fresh hides // beef, fresh hides // glo by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_2</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>162.393088</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="7">
+                        
+            <referenceToFlowDataSet refObjectId="70f7a89a-18b6-53c0-a6c8-aaea869294c3" type="flow data set" uri=".../flows/70f7a89a-18b6-53c0-a6c8-aaea869294c3.xml">
+                                
+                <common:shortDescription>Transport of beef, fresh hides // beef, fresh hides // us by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_3</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>206.79744800000003</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="8">
+                        
+            <referenceToFlowDataSet refObjectId="15bd5b5b-c1a7-5a65-b8f6-907f137d6df3" type="flow data set" uri=".../flows/15bd5b5b-c1a7-5a65-b8f6-907f137d6df3.xml">
+                                
+                <common:shortDescription>Transport of raw sheep pelt // sheep slaughtering and skinning // glo by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_4</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>66.7875</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="9">
+                        
+            <referenceToFlowDataSet refObjectId="09c3f1ce-a1a0-5713-bd18-dee5657797d8" type="flow data set" uri=".../flows/09c3f1ce-a1a0-5713-bd18-dee5657797d8.xml">
+                                
+                <common:shortDescription>Transport of raw goat pelt // goat slaughtering and skinning // glo by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_5</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>22.022000000000002</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="10">
+                        
+            <referenceToFlowDataSet refObjectId="455c122e-e860-5778-876d-1198a0a2bb30" type="flow data set" uri=".../flows/455c122e-e860-5778-876d-1198a0a2bb30.xml">
+                                
+                <common:shortDescription>Transport of raw pig pelt // pig slaughtering and skinning // glo by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_6</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>34.606</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="11">
+                        
+            <referenceToFlowDataSet refObjectId="712b797d-f03c-5131-9033-f4ec1cad8a19" type="flow data set" uri=".../flows/712b797d-f03c-5131-9033-f4ec1cad8a19.xml">
+                                
+                <common:shortDescription>Transport of sodium chloride powder // sodium chloride powder production // eu+efta+uk by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_7</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>62.937</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="12">
+                        
+            <referenceToFlowDataSet refObjectId="acbf4568-1bb8-545e-b592-475727b0540d" type="flow data set" uri=".../flows/acbf4568-1bb8-545e-b592-475727b0540d.xml">
+                                
+                <common:shortDescription>Transport of basic chrome sulfate // basic chrome sulfate production // za by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_8</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>29.332485</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="13">
+                        
+            <referenceToFlowDataSet refObjectId="ecaa0e5f-48e9-5861-bc66-46b869ae2aa4" type="flow data set" uri=".../flows/ecaa0e5f-48e9-5861-bc66-46b869ae2aa4.xml">
+                                
+                <common:shortDescription>Transport of wet-white metal-free tanning agent mix // wet-white metal-free tanning agent production // glo by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_9</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>4.914</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="14">
+                        
+            <referenceToFlowDataSet refObjectId="8d17eab7-9688-53d0-9e3f-3a9d2d8f5366" type="flow data set" uri=".../flows/8d17eab7-9688-53d0-9e3f-3a9d2d8f5366.xml">
+                                
+                <common:shortDescription>Transport of wet-white metal tanning agent mix // wet-white metal tanning agent production // glo by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_10</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>4.914</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="15">
+                        
+            <referenceToFlowDataSet refObjectId="7cdc1ee9-efa0-5639-a1b4-6616d80f23cc" type="flow data set" uri=".../flows/7cdc1ee9-efa0-5639-a1b4-6616d80f23cc.xml">
+                                
+                <common:shortDescription>Transport of natural tannins extracted from chestnut // natural tannins extracted from chestnut production // eu+efta+uk by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_11</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>41.130179999999996</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="16">
+                        
+            <referenceToFlowDataSet refObjectId="5b0b2508-85fc-5642-9c85-c4ddde4f5cc5" type="flow data set" uri=".../flows/5b0b2508-85fc-5642-9c85-c4ddde4f5cc5.xml">
+                                
+                <common:shortDescription>Transport of beef, fresh hides // beef, fresh hides // br by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_12</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>4.3477236</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="17">
+                        
+            <referenceToFlowDataSet refObjectId="f5c48db9-0387-5b1a-a7ed-169762084677" type="flow data set" uri=".../flows/f5c48db9-0387-5b1a-a7ed-169762084677.xml">
+                                
+                <common:shortDescription>Transport of beef, fresh hides // beef, fresh hides // eu+efta+uk by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_13</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>538.854228</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="18">
+                        
+            <referenceToFlowDataSet refObjectId="c166df47-945b-5502-b363-86d697141e8c" type="flow data set" uri=".../flows/c166df47-945b-5502-b363-86d697141e8c.xml">
+                                
+                <common:shortDescription>Transport of beef, fresh hides // beef, fresh hides // glo by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_14</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>337.277952</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="19">
+                        
+            <referenceToFlowDataSet refObjectId="8c4011db-f6fc-585d-8ffa-ed25359d289f" type="flow data set" uri=".../flows/8c4011db-f6fc-585d-8ffa-ed25359d289f.xml">
+                                
+                <common:shortDescription>Transport of beef, fresh hides // beef, fresh hides // us by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_15</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>429.5023920000001</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="20">
+                        
+            <referenceToFlowDataSet refObjectId="7df08860-5baa-5095-a6c1-6a13cbc4ef2d" type="flow data set" uri=".../flows/7df08860-5baa-5095-a6c1-6a13cbc4ef2d.xml">
+                                
+                <common:shortDescription>Transport of raw sheep pelt // sheep slaughtering and skinning // glo by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_16</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>138.71249999999998</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="21">
+                        
+            <referenceToFlowDataSet refObjectId="36177bfa-c61d-5ac1-b1ef-37abb7fd4d15" type="flow data set" uri=".../flows/36177bfa-c61d-5ac1-b1ef-37abb7fd4d15.xml">
+                                
+                <common:shortDescription>Transport of raw goat pelt // goat slaughtering and skinning // glo by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_17</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>45.73800000000001</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="22">
+                        
+            <referenceToFlowDataSet refObjectId="29245057-66bf-5280-9807-122e3ace65c4" type="flow data set" uri=".../flows/29245057-66bf-5280-9807-122e3ace65c4.xml">
+                                
+                <common:shortDescription>Transport of raw pig pelt // pig slaughtering and skinning // glo by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_18</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>71.874</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="23">
+                        
+            <referenceToFlowDataSet refObjectId="03c49eac-294a-588e-a863-98fad5d8679c" type="flow data set" uri=".../flows/03c49eac-294a-588e-a863-98fad5d8679c.xml">
+                                
+                <common:shortDescription>Transport of sodium chloride powder // sodium chloride powder production // eu+efta+uk by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_19</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>130.41</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="24">
+                        
+            <referenceToFlowDataSet refObjectId="e5bf8a0c-a482-5619-af14-a56c6bdd6cab" type="flow data set" uri=".../flows/e5bf8a0c-a482-5619-af14-a56c6bdd6cab.xml">
+                                
+                <common:shortDescription>Transport of basic chrome sulfate // basic chrome sulfate production // za by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_20</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>60.921315</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="25">
+                        
+            <referenceToFlowDataSet refObjectId="67d6993a-6a3f-5ce0-a933-69b1c99de5dc" type="flow data set" uri=".../flows/67d6993a-6a3f-5ce0-a933-69b1c99de5dc.xml">
+                                
+                <common:shortDescription>Transport of wet-white metal-free tanning agent mix // wet-white metal-free tanning agent production // glo by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_21</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>10.206</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="26">
+                        
+            <referenceToFlowDataSet refObjectId="401cacf6-4c17-5d4f-8b7f-022a6d93c30d" type="flow data set" uri=".../flows/401cacf6-4c17-5d4f-8b7f-022a6d93c30d.xml">
+                                
+                <common:shortDescription>Transport of wet-white metal tanning agent mix // wet-white metal tanning agent production // glo by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_22</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>10.206</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="27">
+                        
+            <referenceToFlowDataSet refObjectId="e1f26d01-062c-5f9c-b24b-51ae1ef6e260" type="flow data set" uri=".../flows/e1f26d01-062c-5f9c-b24b-51ae1ef6e260.xml">
+                                
+                <common:shortDescription>Transport of natural tannins extracted from chestnut // natural tannins extracted from chestnut production // eu+efta+uk by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_23</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>85.42421999999999</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="28">
+                        
+            <referenceToFlowDataSet refObjectId="d208214b-aa57-5754-bb94-a84db557f46d" type="flow data set" uri=".../flows/d208214b-aa57-5754-bb94-a84db557f46d.xml">
+                                
+                <common:shortDescription>Transport of beef, fresh hides // beef, fresh hides // br by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_24</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>3.8646432</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="29">
+                        
+            <referenceToFlowDataSet refObjectId="9f23c777-22e6-5250-8c15-9e0c487465f9" type="flow data set" uri=".../flows/9f23c777-22e6-5250-8c15-9e0c487465f9.xml">
+                                
+                <common:shortDescription>Transport of beef, fresh hides // beef, fresh hides // eu+efta+uk by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_25</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>478.981536</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="30">
+                        
+            <referenceToFlowDataSet refObjectId="13947ba3-ae09-5deb-9675-0d445edf8197" type="flow data set" uri=".../flows/13947ba3-ae09-5deb-9675-0d445edf8197.xml">
+                                
+                <common:shortDescription>Transport of beef, fresh hides // beef, fresh hides // glo by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_26</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>299.80262400000004</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="31">
+                        
+            <referenceToFlowDataSet refObjectId="44085cba-0e6b-5c3b-bac7-e8ea750dfee5" type="flow data set" uri=".../flows/44085cba-0e6b-5c3b-bac7-e8ea750dfee5.xml">
+                                
+                <common:shortDescription>Transport of beef, fresh hides // beef, fresh hides // us by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_27</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>381.7799040000001</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="32">
+                        
+            <referenceToFlowDataSet refObjectId="1368e559-2308-5133-83fd-66c9a12679b6" type="flow data set" uri=".../flows/1368e559-2308-5133-83fd-66c9a12679b6.xml">
+                                
+                <common:shortDescription>Transport of raw sheep pelt // sheep slaughtering and skinning // glo by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_28</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>123.29999999999998</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="33">
+                        
+            <referenceToFlowDataSet refObjectId="b01559bd-688b-572b-96da-8a5caf6b7b2a" type="flow data set" uri=".../flows/b01559bd-688b-572b-96da-8a5caf6b7b2a.xml">
+                                
+                <common:shortDescription>Transport of raw goat pelt // goat slaughtering and skinning // glo by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_29</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>40.656000000000006</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="34">
+                        
+            <referenceToFlowDataSet refObjectId="0222de6f-dd30-5e9a-a42a-1c4773cb4b11" type="flow data set" uri=".../flows/0222de6f-dd30-5e9a-a42a-1c4773cb4b11.xml">
+                                
+                <common:shortDescription>Transport of raw pig pelt // pig slaughtering and skinning // glo by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_30</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>63.888</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="35">
+                        
+            <referenceToFlowDataSet refObjectId="3c022852-3d3c-5e8f-b2db-9df8f76a0f2a" type="flow data set" uri=".../flows/3c022852-3d3c-5e8f-b2db-9df8f76a0f2a.xml">
+                                
+                <common:shortDescription>Transport of sodium chloride powder // sodium chloride powder production // eu+efta+uk by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_31</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>115.66799999999999</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="36">
+                        
+            <referenceToFlowDataSet refObjectId="8687cee9-2205-5584-b56b-72b19c075fd5" type="flow data set" uri=".../flows/8687cee9-2205-5584-b56b-72b19c075fd5.xml">
+                                
+                <common:shortDescription>Transport of basic chrome sulfate // basic chrome sulfate production // za by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_32</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>54.15228</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="37">
+                        
+            <referenceToFlowDataSet refObjectId="7d4f269f-f12b-59b0-a42b-32e3c494adbc" type="flow data set" uri=".../flows/7d4f269f-f12b-59b0-a42b-32e3c494adbc.xml">
+                                
+                <common:shortDescription>Transport of wet-white metal-free tanning agent mix // wet-white metal-free tanning agent production // glo by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_33</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>9.072</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="38">
+                        
+            <referenceToFlowDataSet refObjectId="1ebf52c6-c022-5d8e-923c-627982b8e36a" type="flow data set" uri=".../flows/1ebf52c6-c022-5d8e-923c-627982b8e36a.xml">
+                                
+                <common:shortDescription>Transport of wet-white metal tanning agent mix // wet-white metal tanning agent production // glo by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_34</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>9.072</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="39">
+                        
+            <referenceToFlowDataSet refObjectId="a5ae716f-200f-5fcf-a5fc-846b2f2aba6f" type="flow data set" uri=".../flows/a5ae716f-200f-5fcf-a5fc-846b2f2aba6f.xml">
+                                
+                <common:shortDescription>Transport of natural tannins extracted from chestnut // natural tannins extracted from chestnut production // eu+efta+uk by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_35</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>75.93263999999999</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="40">
+                        
+            <referenceToFlowDataSet refObjectId="03680aac-0580-5749-b20e-c9d8218a67dc" type="flow data set" uri=".../flows/03680aac-0580-5749-b20e-c9d8218a67dc.xml">
+                                
+                <common:shortDescription>leather, high environmental practice tannery // leather, high environmental practice tannery // eu+efta+uk, blackbox</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>1</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="41">
+                        
+            <referenceToFlowDataSet refObjectId="d1a27f89-e065-5cfa-aee6-1339de62a112" type="flow data set" uri=".../flows/d1a27f89-e065-5cfa-aee6-1339de62a112.xml">
+                                
+                <common:shortDescription>leather, high environmental practice tannery // leather, high environmental practice tannery // eu+efta+uk, elementary</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>1</resultingAmount>
+                    
+        </exchange>
+            
+    </exchanges>
+    <LCIAResults>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c619fa-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c619fa-def3-11e6-bf01-fe55135034f3.xml" version="02.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication marine</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.45866317335131473</meanAmount>
+            <generalComment>Eutrophication marine</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="05316e7a-b254-4bea-9cf0-6bf33eb5c630" type="LCIA method data set" uri="../lciamethods/05316e7a-b254-4bea-9cf0-6bf33eb5c630.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Ecotoxicity, freshwater</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>1821.2765463669905</meanAmount>
+            <generalComment>Ecotoxicity, freshwater</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6890-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6890-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Land use</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>4568.577462456004</meanAmount>
+            <generalComment>Land use</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad66ce-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad66ce-c78d-11e6-9d9d-cec0c932ce01.xml" version="03.00.014">
+                <common:shortDescription xml:lang="en">Water use</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>28.73253506124808</meanAmount>
+            <generalComment>Water use</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6494-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6494-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, minerals and metals</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>1.7770972163686988E-4</meanAmount>
+            <generalComment>Resource use, minerals and metals</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6110-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6110-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, fossils</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>497.1712830321813</meanAmount>
+            <generalComment>Resource use, fossils</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="6209b35f-9447-40b5-b68c-a1099e3674a0" type="LCIA method data set" uri="../lciamethods/6209b35f-9447-40b5-b68c-a1099e3674a0.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Climate change</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>62.09356027287502</meanAmount>
+            <generalComment>Climate change</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c629d6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c629d6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.012">
+                <common:shortDescription xml:lang="en">Ozone depletion</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>5.287079448975694E-6</meanAmount>
+            <generalComment>Ozone depletion</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="2299222a-bbd8-474f-9d4f-4dd1f18aea7c" type="LCIA method data set" uri="../lciamethods/2299222a-bbd8-474f-9d4f-4dd1f18aea7c.xml" version="01.01.000">
+                <common:shortDescription xml:lang="en">Human toxicity, cancer</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>1.1324416152047094E-7</meanAmount>
+            <generalComment>Human toxicity, cancer</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8" type="LCIA method data set" uri="../lciamethods/7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Human toxicity, non-cancer</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>7.919177077497578E-6</meanAmount>
+            <generalComment>Human toxicity, non-cancer</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c602c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c602c6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.011">
+                <common:shortDescription xml:lang="en">EF-particulate Matter</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>1.2343272297898585E-5</meanAmount>
+            <generalComment>EF-particulate Matter</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c632be-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c632be-def3-11e6-bf01-fe55135034f3.xml" version="01.00.011">
+                <common:shortDescription xml:lang="en">Ionising radiation, human health</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>2.544141726365615</meanAmount>
+            <generalComment>Ionising radiation, human health</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c610fe-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c610fe-def3-11e6-bf01-fe55135034f3.xml" version="02.01.000">
+                <common:shortDescription xml:lang="en">Photochemical ozone formation - human health</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.3169951497277278</meanAmount>
+            <generalComment>Photochemical ozone formation - human health</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c611c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c611c6-def3-11e6-bf01-fe55135034f3.xml" version="01.04.000">
+                <common:shortDescription xml:lang="en">Acidification</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>1.239892086242233</meanAmount>
+            <generalComment>Acidification</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c614d2-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c614d2-def3-11e6-bf01-fe55135034f3.xml" version="01.02.009">
+                <common:shortDescription xml:lang="en">Eutrophication, terrestrial</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>4.839129793897214</meanAmount>
+            <generalComment>Eutrophication, terrestrial</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b53ec18f-7377-4ad3-86eb-cc3f4f276b2b" type="LCIA method data set" uri="../lciamethods/b53ec18f-7377-4ad3-86eb-cc3f4f276b2b.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication, freshwater</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.007083924260100879</meanAmount>
+            <generalComment>Eutrophication, freshwater</generalComment>
+        </LCIAResult>
+    </LCIAResults>
+        
+
+</processDataSet>

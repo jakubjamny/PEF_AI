@@ -1,0 +1,2047 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<processDataSet xmlns="http://lca.jrc.it/ILCD/Process" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:ext="http://eplca.jrc.ec.europa.eu/ILCD/Extensions/2017" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" locations="../ILCDLocations.xml" version="1.1" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+        
+    <processInformation>
+                
+        <dataSetInformation>
+                        
+            <common:UUID>2353ad27-ce2f-5bc6-bdb7-7585da66a3f7</common:UUID>
+                        
+            <name>
+                                
+                <baseName>chemi-thermomechanical pulp</baseName>
+                                
+                <treatmentStandardsRoutes>technology mix;</treatmentStandardsRoutes>
+                                
+                <mixAndLocationTypes>production mix; at plant</mixAndLocationTypes>
+                                
+                <functionalUnitFlowProperties>dry mass 0.9 kg; carbon content, non fossil 0.494</functionalUnitFlowProperties>
+                            
+            </name>
+                        
+            <identifierOfSubDataSet/>
+                        
+            <complementingProcesses>
+                                
+                <referenceToComplementingProcess refObjectId="f4476d2b-9dee-4edd-b6c1-9f04aa407b82" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/f4476d2b-9dee-4edd-b6c1-9f04aa407b82?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Freight train, diesel traction - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="dbde67a3-af4f-4d60-9568-4e0ef6eaaf07" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/dbde67a3-af4f-4d60-9568-4e0ef6eaaf07?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Freight train, electricity traction - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="4cedf877-89c5-4b4d-8014-5b7d099a2095" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/4cedf877-89c5-4b4d-8014-5b7d099a2095?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Freight train, average - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="794afe57-dca3-462c-8988-8f1790dfd8b2" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/794afe57-dca3-462c-8988-8f1790dfd8b2?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Articulated lorry transport, Total weight &gt;32 t, mix Euro 0-5 - ROW w/o EU+EFTA</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="6ca61112-1d5b-473c-abfa-4accc66a8a63" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/6ca61112-1d5b-473c-abfa-4accc66a8a63?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Transoceanic ship, containers - GLO</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="bdcb1da0-9f81-4c89-880d-b6b3db75d2e3" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/bdcb1da0-9f81-4c89-880d-b6b3db75d2e3?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Barge - ROW w/o EU+EFTA</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="b8dc5183-2d07-4377-b5b2-d9374ae5a084" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/b8dc5183-2d07-4377-b5b2-d9374ae5a084?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Electricity grid mix 1kV-60kV - AU</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="34211c77-659a-4f9e-aef0-dd5bccdf3596" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/34211c77-659a-4f9e-aef0-dd5bccdf3596?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Electricity grid mix 1kV-60kV - NZ</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="adf54687-52a3-4184-9592-aec146c02699" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/adf54687-52a3-4184-9592-aec146c02699?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Electricity grid mix 1kV-60kV - RAF</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="21f53e07-1076-4b0b-b5e8-1764da6c8e6d" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/21f53e07-1076-4b0b-b5e8-1764da6c8e6d?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Electricity grid mix 1kV-60kV - RAS w/o CN</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="d67279fa-71b3-4f8e-9b6d-4060dae8bdd5" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/d67279fa-71b3-4f8e-9b6d-4060dae8bdd5?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Electricity grid mix 1kV-60kV - RNA</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="8aa75f7f-8b03-4308-a4c0-4ed14cf8aeab" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/8aa75f7f-8b03-4308-a4c0-4ed14cf8aeab?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Electricity grid mix 1kV-60kV - RSA</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="976a4c46-d2e5-4607-838a-4138e9a6c470" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/976a4c46-d2e5-4607-838a-4138e9a6c470?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Electricity grid mix 1kV-60kV - RU</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="0a223e9c-94c2-4acb-917c-4bb5c1fdc92b" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/0a223e9c-94c2-4acb-917c-4bb5c1fdc92b?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Thermal energy from biogas - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="98c3b374-3bd0-476d-980a-5d9dc132f2d3" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/98c3b374-3bd0-476d-980a-5d9dc132f2d3?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Thermal energy from biogas - ROW</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="61cfc75a-391f-4512-a907-4f92114058c1" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/61cfc75a-391f-4512-a907-4f92114058c1?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Thermal energy from hard coal - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="1fd7e5fd-0464-46be-b289-52e4d074f4bb" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/1fd7e5fd-0464-46be-b289-52e4d074f4bb?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Thermal energy from hard coal - ROW</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="602bba9c-3262-4555-a0a4-7b9f6bc50f82" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/602bba9c-3262-4555-a0a4-7b9f6bc50f82?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Thermal energy from heavy fuel oil (HFO) - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="2e7f9cb1-2d86-4ff8-9600-d022f39171aa" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/2e7f9cb1-2d86-4ff8-9600-d022f39171aa?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Thermal energy from heavy fuel oil (HFO) - ROW</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="e7510ad9-4bfa-4113-94b0-426e5f430c98" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/e7510ad9-4bfa-4113-94b0-426e5f430c98?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Thermal energy from light fuel oil (LFO) - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="4f1ece6c-9fec-4c3d-b991-253ef79f6e46" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/4f1ece6c-9fec-4c3d-b991-253ef79f6e46?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Thermal energy from light fuel oil (LFO) - ROW</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="b2e8b5a9-ac00-4d3a-a180-e52fe73e29fd" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/b2e8b5a9-ac00-4d3a-a180-e52fe73e29fd?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Thermal energy from lignite - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="dceacc7b-1176-4a0d-85e6-1ae82a83a4bb" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/dceacc7b-1176-4a0d-85e6-1ae82a83a4bb?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Thermal energy from lignite - ROW</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="ade98dea-0c74-4ebb-94ef-f9686eb0ddc5" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/ade98dea-0c74-4ebb-94ef-f9686eb0ddc5?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Thermal energy from LPG - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="b0c798c5-4a8d-4004-995b-56f456d568a6" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/b0c798c5-4a8d-4004-995b-56f456d568a6?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Thermal energy from LPG - ROW</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="6db46295-201a-47d1-af8f-c2a7bee43946" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/6db46295-201a-47d1-af8f-c2a7bee43946?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Thermal energy from natural gas - ROW</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="e1ded83e-a02f-42cd-92f9-81cce21a3a98" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/e1ded83e-a02f-42cd-92f9-81cce21a3a98?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="2767ede8-d456-520a-be09-9969476f6294" type="process data set" uri="../processes/2767ede8-d456-520a-be09-9969476f6294.xml" version="01.00.000">
+                                        
+                    <common:shortDescription>chemi-thermomechanical pulp, blackbox - WORLD (WITHOUT EU+EFTA+UK)</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="2bec480b-3710-51f4-81ab-55d2769c01e8" type="process data set" uri="../processes/2bec480b-3710-51f4-81ab-55d2769c01e8.xml" version="01.00.000">
+                                        
+                    <common:shortDescription>chemi-thermomechanical pulp, elementary - WORLD (WITHOUT EU+EFTA+UK)</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                            
+            </complementingProcesses>
+                        
+            <classificationInformation>
+                                
+                <common:classification>
+                                        
+                    <common:class level="0">Materials production</common:class>
+                                        
+                    <common:class level="1">Paper and cardboards</common:class>
+                                    
+                </common:classification>
+                            
+            </classificationInformation>
+                        
+            <common:generalComment>Notice: this data set supersedes the EF3.0-compliant version (see link under "preceding data set version" below calculated with the EF3.0). The life cycle inventory is not changed from the original EF3.0 data set. The LCIA results are calculated based on the EF3.1 methods which provide updated characterisation factors in the following impact categories: Climate Change, Ecotoxicity freshwater, Photochemical Ozone Formation, Acidification, Human Toxicity non-cancer, and Human Toxicity cancer. The review report and the data quality ratings refer to the original results. The data set has been updated by the European Commission on the basis of the original EF3.0 data set delivered by the data provider.This dataset characterises the average production of pulp following a chemi-thermomechanical process (CTMP) in th World. In the CTMP wood chips are impregnated with chemicals before they are mechanically defibrated in the refiner under high pressure (~about 3 bar) or at atmospheric pressure, mainly in two stages. Bleaching has not been included because chemi-mechanical pulps cannot be brightened effectively by oxidative and reductive bleaching. During mechanical defibration, lignin is plasticised and remains in the pulp.</common:generalComment>
+                    
+        </dataSetInformation>
+                
+        <quantitativeReference type="Reference flow(s)">
+                        
+            <referenceToReferenceFlow>0</referenceToReferenceFlow>
+                    
+        </quantitativeReference>
+                
+        <time>
+                        
+            <common:referenceYear>2019</common:referenceYear>
+                        
+            <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+                    
+        </time>
+                
+        <geography>
+                        
+            <locationOfOperationSupplyOrProduction location="WORLD (WITHOUT EU+EFTA+UK)">
+                                
+                <descriptionOfRestrictions/>
+                            
+            </locationOfOperationSupplyOrProduction>
+                    
+        </geography>
+                
+        <technology>
+                        
+            <technologyDescriptionAndIncludedProcesses>In the CTMP wood chips are impregnated with chemicals before they are mechanically defibrated in the refiner under high pressure (~about 3 bar) or at atmospheric pressure, mainly in two stages. Bleaching has not been included because chemi-mechanical pulps cannot be brightened effectively by oxidative and reductive bleaching. During mechanical defibration, lignin is plasticised and remains in the pulp.</technologyDescriptionAndIncludedProcesses>
+                        
+            <technologicalApplicability>na</technologicalApplicability>
+                        
+            <referenceToTechnologyFlowDiagrammOrPicture refObjectId="4562465a-92b8-5dc0-b302-692e4e067f38" type="source data set" uri="../sources/4562465a-92b8-5dc0-b302-692e4e067f38.xml" version="22.00.000">
+                                
+                <common:shortDescription>Diagram of data for chemicals EF3.0</common:shortDescription>
+                            
+            </referenceToTechnologyFlowDiagrammOrPicture>
+                        
+            <referenceToTechnologyFlowDiagrammOrPicture refObjectId="db810cd2-ee24-5fc2-a331-fd3cbd2bdb2f" type="source data set" uri="../sources/db810cd2-ee24-5fc2-a331-fd3cbd2bdb2f.xml" version="01.00.000">
+                                
+                <common:shortDescription>Diagram of chemi-thermomechanical pulp - WORLD (WITHOUT EU+EFTA+UK) - EF3.0</common:shortDescription>
+                            
+            </referenceToTechnologyFlowDiagrammOrPicture>
+                    
+        </technology>
+                
+        <mathematicalRelations>
+                        
+            <variableParameter name="kg_0">
+                                
+                <meanValue>0.025</meanValue>
+                                
+                <comment>Mass in kg, for sulfite; Freight train, diesel traction; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_0">
+                                
+                <meanValue>235.9088085529686</meanValue>
+                                
+                <comment>Distance in km, for sulfite; Freight train, diesel traction; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_0">
+                                
+                <formula>kg_0*km_0</formula>
+                                
+                <meanValue>5.897720213824215</meanValue>
+                                
+                <comment>Transport amount in km*km, for sulfite; Freight train, diesel traction; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_1">
+                                
+                <meanValue>0.025</meanValue>
+                                
+                <comment>Mass in kg, for sulfite; Freight train, electricity traction; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_1">
+                                
+                <meanValue>71.24013130200399</meanValue>
+                                
+                <comment>Distance in km, for sulfite; Freight train, electricity traction; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_1">
+                                
+                <formula>kg_1*km_1</formula>
+                                
+                <meanValue>1.7810032825500999</meanValue>
+                                
+                <comment>Transport amount in km*km, for sulfite; Freight train, electricity traction; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_2">
+                                
+                <meanValue>0.025</meanValue>
+                                
+                <comment>Mass in kg, for sulfite; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_2">
+                                
+                <meanValue>1.951060145027892</meanValue>
+                                
+                <comment>Distance in km, for sulfite; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_2">
+                                
+                <formula>kg_2*km_2</formula>
+                                
+                <meanValue>0.0487765036256973</meanValue>
+                                
+                <comment>Transport amount in km*km, for sulfite; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_3">
+                                
+                <meanValue>0.025</meanValue>
+                                
+                <comment>Mass in kg, for sulfite; Articulated lorry transport, Total weight &gt;32 t, mix Euro 0-5; ROW w/o EU+EFTA</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_3">
+                                
+                <meanValue>208.8000000000003</meanValue>
+                                
+                <comment>Distance in km, for sulfite; Articulated lorry transport, Total weight &gt;32 t, mix Euro 0-5; ROW w/o EU+EFTA</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_3">
+                                
+                <formula>kg_3*km_3</formula>
+                                
+                <meanValue>5.220000000000008</meanValue>
+                                
+                <comment>Transport amount in km*km, for sulfite; Articulated lorry transport, Total weight &gt;32 t, mix Euro 0-5; ROW w/o EU+EFTA</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_4">
+                                
+                <meanValue>0.025</meanValue>
+                                
+                <comment>Mass in kg, for sulfite; Transoceanic ship, containers; GLO</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_4">
+                                
+                <meanValue>599.0</meanValue>
+                                
+                <comment>Distance in km, for sulfite; Transoceanic ship, containers; GLO</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_4">
+                                
+                <formula>kg_4*km_4</formula>
+                                
+                <meanValue>14.975000000000001</meanValue>
+                                
+                <comment>Transport amount in km*km, for sulfite; Transoceanic ship, containers; GLO</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_5">
+                                
+                <meanValue>0.025</meanValue>
+                                
+                <comment>Mass in kg, for sulfite; Barge; ROW w/o EU+EFTA</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_5">
+                                
+                <meanValue>24.6</meanValue>
+                                
+                <comment>Distance in km, for sulfite; Barge; ROW w/o EU+EFTA</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_5">
+                                
+                <formula>kg_5*km_5</formula>
+                                
+                <meanValue>0.6150000000000001</meanValue>
+                                
+                <comment>Transport amount in km*km, for sulfite; Barge; ROW w/o EU+EFTA</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_6">
+                                
+                <meanValue>0.002</meanValue>
+                                
+                <comment>Mass in kg, for edta // edta production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_6">
+                                
+                <meanValue>1000.0</meanValue>
+                                
+                <comment>Distance in km, for edta // edta production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_6">
+                                
+                <formula>kg_6*km_6</formula>
+                                
+                <meanValue>2.0</meanValue>
+                                
+                <comment>Transport amount in km*km, for edta // edta production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_7">
+                                
+                <meanValue>0.025</meanValue>
+                                
+                <comment>Mass in kg, for hydrogen peroxide, 50% // hydrogen peroxide, 50% production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_7">
+                                
+                <meanValue>1000.0</meanValue>
+                                
+                <comment>Distance in km, for hydrogen peroxide, 50% // hydrogen peroxide, 50% production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_7">
+                                
+                <formula>kg_7*km_7</formula>
+                                
+                <meanValue>25.0</meanValue>
+                                
+                <comment>Transport amount in km*km, for hydrogen peroxide, 50% // hydrogen peroxide, 50% production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_8">
+                                
+                <meanValue>0.019</meanValue>
+                                
+                <comment>Mass in kg, for sodium silicate powder // sodium silicate powder production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_8">
+                                
+                <meanValue>1000.0</meanValue>
+                                
+                <comment>Distance in km, for sodium silicate powder // sodium silicate powder production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_8">
+                                
+                <formula>kg_8*km_8</formula>
+                                
+                <meanValue>19.0</meanValue>
+                                
+                <comment>Transport amount in km*km, for sodium silicate powder // sodium silicate powder production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_9">
+                                
+                <meanValue>1.658069270449521</meanValue>
+                                
+                <comment>Mass in kg, for softwood under bark // softwood forestry // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_9">
+                                
+                <meanValue>922.76</meanValue>
+                                
+                <comment>Distance in km, for softwood under bark // softwood forestry // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_9">
+                                
+                <formula>kg_9*km_9</formula>
+                                
+                <meanValue>1530.0</meanValue>
+                                
+                <comment>Transport amount in km*km, for softwood under bark // softwood forestry // glo; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_10">
+                                
+                <meanValue>0.002</meanValue>
+                                
+                <comment>Mass in kg, for edta // edta production // eu+efta+uk; Transoceanic ship, containers; GLO</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_10">
+                                
+                <meanValue>18000.0</meanValue>
+                                
+                <comment>Distance in km, for edta // edta production // eu+efta+uk; Transoceanic ship, containers; GLO</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_10">
+                                
+                <formula>kg_10*km_10</formula>
+                                
+                <meanValue>36.0</meanValue>
+                                
+                <comment>Transport amount in km*km, for edta // edta production // eu+efta+uk; Transoceanic ship, containers; GLO</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_11">
+                                
+                <meanValue>0.025</meanValue>
+                                
+                <comment>Mass in kg, for hydrogen peroxide, 50% // hydrogen peroxide, 50% production // eu+efta+uk; Transoceanic ship, containers; GLO</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_11">
+                                
+                <meanValue>18000.0</meanValue>
+                                
+                <comment>Distance in km, for hydrogen peroxide, 50% // hydrogen peroxide, 50% production // eu+efta+uk; Transoceanic ship, containers; GLO</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_11">
+                                
+                <formula>kg_11*km_11</formula>
+                                
+                <meanValue>450.0</meanValue>
+                                
+                <comment>Transport amount in km*km, for hydrogen peroxide, 50% // hydrogen peroxide, 50% production // eu+efta+uk; Transoceanic ship, containers; GLO</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_12">
+                                
+                <meanValue>0.019</meanValue>
+                                
+                <comment>Mass in kg, for sodium silicate powder // sodium silicate powder production // eu+efta+uk; Transoceanic ship, containers; GLO</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_12">
+                                
+                <meanValue>18000.0</meanValue>
+                                
+                <comment>Distance in km, for sodium silicate powder // sodium silicate powder production // eu+efta+uk; Transoceanic ship, containers; GLO</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_12">
+                                
+                <formula>kg_12*km_12</formula>
+                                
+                <meanValue>342.0</meanValue>
+                                
+                <comment>Transport amount in km*km, for sodium silicate powder // sodium silicate powder production // eu+efta+uk; Transoceanic ship, containers; GLO</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_13">
+                                
+                <meanValue>1.658069270449521</meanValue>
+                                
+                <comment>Mass in kg, for softwood under bark // softwood forestry // glo; Transoceanic ship, containers; GLO</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_13">
+                                
+                <meanValue>16585.555555555555</meanValue>
+                                
+                <comment>Distance in km, for softwood under bark // softwood forestry // glo; Transoceanic ship, containers; GLO</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_13">
+                                
+                <formula>kg_13*km_13</formula>
+                                
+                <meanValue>27500.0</meanValue>
+                                
+                <comment>Transport amount in km*km, for softwood under bark // softwood forestry // glo; Transoceanic ship, containers; GLO</comment>
+                            
+            </variableParameter>
+                    
+        </mathematicalRelations>
+            
+    </processInformation>
+        
+    <modellingAndValidation>
+                
+        <LCIMethodAndAllocation>
+                        
+            <typeOfDataSet>Partly terminated system</typeOfDataSet>
+                        
+            <LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+                        
+            <deviationsFromLCIMethodPrinciple>The background data uses: 
+- the \xe2\x80\x9cRecycled content cut-off\xe2\x80\x9d approach to allocate end-of-life by-products and secondary materials. This allocation is explained in the description of the recycled content system model (http://www.ecoinvent.org/database/system-models-in-ecoinvent-3/cut-off-system-model/allocation-cut-off-by-classification.html).
+OR
+- EF compliant data</deviationsFromLCIMethodPrinciple>
+                        
+            <LCIMethodApproaches>Allocation - market value</LCIMethodApproaches>
+                        
+            <deviationsFromLCIMethodApproaches>Background data: 
+- the \xe2\x80\x9cRecycled content cut-off\xe2\x80\x9d approach to allocate end-of-life by-products and secondary materials. This allocation is explained in the description of the recycled content system model (http://www.ecoinvent.org/database/system-models-in-ecoinvent-3/cut-off-system-model/allocation-cut-off-by-classification.html). The ecoinvent database mostly relies on “Allocation – market values” apart for few exceptions particularly in the energy sector. ecoinvent energy data is replaced with EF3.0 core data as per the EF guidelines version 2.0.
+OR
+- EF compliant data</deviationsFromLCIMethodApproaches>
+                        
+            <modellingConstants>All modelling constants follow the requirements listed in the Tender Specifications 070201/2020/SER/ENV.B1. Completeness: There are no intentional cut-offs in the inventory no matter how small their contribution to all the EF impact categories is. Eventual cut-offs are in compliance with the Guide for EF compliant data sets (JRC 2020), i.e. only if below the 3% cut-off rule. Water use: water use is modelled at country level using separate flows for water withdrawal, water release and water evaporation. Handling multi-functional processes: the following PEF multi- functionality decision hierarchy is applied for resolving all multi- functionality problems: (1) subdivision or system expansion; (2) allocation based on a relevant underlying physical relationship (substitution may apply here); (3) allocation based on some other relationship. Direct land use change: GHG emissions from direct LUC allocated to good/service for 20 years after the LUC occurs, with IPCC default values. Carbon storage and delayed emissions: credits associated with temporary (carbon) storage or delayed emissions up to 300 years are not be considered. Emissions off-setting: are not included. Capital goods (including infrastructures) and their End of life: they are included. System boundaries: system boundaries include all processes linked to the product supply chain (e.g. maintenance). Time period: emissions and removals are modelled as if released or removed at the beginning of the assessment method. Fossil and biogenic carbon emissions and removals: removals and emissions are modelled as follows: All GHG emissions from fossil fuels (including peat and limestone) are modelled consistently with the most updated ILCD list of elementary flows. The non-fossil (biogenic) carbon flows are modelled consistently with the most updated ILCD list of elementary flows.</modellingConstants>
+                        
+            <deviationsFromModellingConstants>None</deviationsFromModellingConstants>
+                    
+        </LCIMethodAndAllocation>
+                
+        <dataSourcesTreatmentAndRepresentativeness>
+                        
+            <dataCutOffAndCompletenessPrinciples>There are no intentional cut-offs in the inventory no matter how small their contribution to all the EF impact categories is. Eventual cut-offs are in compliance with the Guide for EF compliant data sets (JRC 2020), i.e. only if below the 3% cut-off rule. The dataset dry mass and water balance has been checked to ensure the inventory is complete. Capital goods (e.g. infrastructure) and their end-of-life are included.</dataCutOffAndCompletenessPrinciples>
+                        
+            <deviationsFromCutOffAndCompletenessPrinciples>None</deviationsFromCutOffAndCompletenessPrinciples>
+                        
+            <dataSelectionAndCombinationPrinciples>These datasets include, in both their foreground and background data, links to EF3.0 compliant data.
+The relevant background data on energy, transport, and End of Life are from the LCDN data node (http://lcdn.thinkstep.com/Node/).
+All other background data in the supply of this product for which no EF3.0 process was available are from ecoinvent v3.7 database (www.ecoinvent.org) or other data sources.</dataSelectionAndCombinationPrinciples>
+                        
+            <deviationsFromSelectionAndCombinationPrinciples>None</deviationsFromSelectionAndCombinationPrinciples>
+                        
+            <dataTreatmentAndExtrapolationsPrinciples>Several data sources have been used to model the inventory.</dataTreatmentAndExtrapolationsPrinciples>
+                        
+            <deviationsFromTreatmentAndExtrapolationPrinciples>None</deviationsFromTreatmentAndExtrapolationPrinciples>
+                        
+            <referenceToDataSource refObjectId="d4fe7d8a-1f8c-591d-a31f-f58d2f888e3e" type="source data set" uri="../sources/d4fe7d8a-1f8c-591d-a31f-f58d2f888e3e.xml" version="01.00.000">
+                                
+                <common:shortDescription>Background Data for Representative products and organisations. EF 3.0 compliant (data stock)</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="2679e198-e19a-5e1d-9a4a-5ee3080ec7f0" type="source data set" uri="../sources/2679e198-e19a-5e1d-9a4a-5ee3080ec7f0.xml" version="01.00.000">
+                                
+                <common:shortDescription>Naturvardsverket, 2001. Naturvardsverket (2001) Skogsindustrins utsläpp - avfallsmängder och energiförbrukning 2000. Report 5154. Naturvardsverket (Swedish EPA), Stockholm.</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="492f22b9-705e-50b7-9d0d-fedfee9ee90f" type="source data set" uri="../sources/492f22b9-705e-50b7-9d0d-fedfee9ee90f.xml" version="01.00.000">
+                                
+                <common:shortDescription>Södra (2002) Meeting Södra. Environmental Report 2001. Södra, Växjö (Sweden) as pdf-File under: www.sodra.com.</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="97017374-fa03-5cda-86df-1df76fcf83da" type="source data set" uri="../sources/97017374-fa03-5cda-86df-1df76fcf83da.xml" version="01.00.000">
+                                
+                <common:shortDescription>European Commission, 2000. European Commission (2000) Integrated Pollution Prevention and Control (IPPC) - Reference Document on Best Available Techniques in the Pulp and Pa-per Industry. Institute for Prospective Technological Studies, Sevilla.</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="c5c364e5-af7d-5446-82f1-f3c349bf0d8e" type="source data set" uri="../sources/c5c364e5-af7d-5446-82f1-f3c349bf0d8e.xml" version="01.00.000">
+                                
+                <common:shortDescription>Patt R., Kordsachia O., Süttinger R., Ohtani Y., Hoesch J. F., Ehrler P., Eich-inger R., Holik H., Hamm U., Rohmann M. E., Mummenhoff P., Petermann E., Miller R. F., Frank D., Wilken R., Baumgarten H. L. and Rentrop G.-H. (1993) Paper and Pulp. In: Ullmann's Encyclopedia of Industrial Chemistry, Vol. A.18. VCH Publisher Inc.</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="589c564c-17fe-507b-9f48-dce615d393bb" type="source data set" uri="../sources/589c564c-17fe-507b-9f48-dce615d393bb.xml" version="01.00.000">
+                                
+                <common:shortDescription>ecoinvent database v3.7.1, chemi-thermomechanical pulp production, GLO</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="937f9167-0de0-5640-80d0-329c379bdc41" type="source data set" uri="../sources/937f9167-0de0-5640-80d0-329c379bdc41.xml" version="01.00.000">
+                                
+                <common:shortDescription>Rullifank, K. F., Roefinal, M. E., Kostanti, M., Sartika, L., &amp; Evelyn. (2020). Pulp and paper industry: An overview on pulping technologies, factors, and challenges. IOP Conference Series: Materials Science and Engineering, 845(1), 012005. https://doi.org/10.1088/1757-899x/845/1/012005</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="e6228eb6-eee4-5551-baf2-5440f3a10076" type="source data set" uri="../sources/e6228eb6-eee4-5551-baf2-5440f3a10076.xml" version="01.00.000">
+                                
+                <common:shortDescription>Sandberg, Christer, Ferritsius, Olof and Ferritsius, Rita. "Energy efficiency in mechanical pulping – definitions and considerations" Nordic Pulp &amp; Paper Research Journal, vol. 36, no. 3, 2021, pp. 425-434. https://doi.org/10.1515/npprj-2021-0013</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="dcb7bb5b-4df7-511f-a4fa-48e84ce2524f" type="source data set" uri="../sources/dcb7bb5b-4df7-511f-a4fa-48e84ce2524f.xml" version="01.00.000">
+                                
+                <common:shortDescription>Netramai, S., Kijchavengkul, T., &amp; Kittipinyovath, P. (2016). Pulp and Paper Production. Reference Module in Food Science. https://doi.org/10.1016/b978-0-08-100596-5.03201-7</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="79f737af-4a23-58c0-9e47-6cdacf0b6ed8" type="source data set" uri="../sources/79f737af-4a23-58c0-9e47-6cdacf0b6ed8.xml" version="01.00.000">
+                                
+                <common:shortDescription>Bajpai, P. (2016). Energy conservation measures for mechanical pulping. Pulp and Paper Industry, 125–144. https://doi.org/10.1016/b978-0-12-803411-8.00008-1</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="b3548a44-4bef-5a6e-81de-97b846830088" type="source data set" uri="../sources/b3548a44-4bef-5a6e-81de-97b846830088.xml" version="01.00.000">
+                                
+                <common:shortDescription>Suhr M, Klein G, Kourti I, Rodrigo Gonzalo M, Giner Santonja G, Roudier S, Delgado Sancho L. Best Available Techniques (BAT) Reference Document for the Production of Pulp, Paper and Board. Industrial Emissions Directive 2010/75/EU (Integrated Pollution Prevention and Control). EUR 27235. Luxembourg (Luxembourg): Publications Office of the European Union; 2015. JRC95678</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="812ffbab-7772-5eb8-bc70-803f507160c2" type="source data set" uri="../sources/812ffbab-7772-5eb8-bc70-803f507160c2.xml" version="01.00.000">
+                                
+                <common:shortDescription>European Organization of the Sawmill Industry – EOS (2019). Annual Report of the European Sawmill Industry. Available at: https://www.eos-oes.eu/downloads/EOS-annual-report-2018-2019.pdf</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <annualSupplyOrProductionVolume/>
+                        
+            <samplingProcedure/>
+                        
+            <dataCollectionPeriod/>
+                        
+            <uncertaintyAdjustments>None</uncertaintyAdjustments>
+                        
+            <useAdviceForDataSet/>
+                    
+        </dataSourcesTreatmentAndRepresentativeness>
+                
+        <completeness>
+                        
+            <completenessProductModel>All relevant flows quantified</completenessProductModel>
+                              
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b53ec18f-7377-4ad3-86eb-cc3f4f276b2b" type="LCIA method data set" uri="../lciamethods/b53ec18f-7377-4ad3-86eb-cc3f4f276b2b.xml" version="01.00.010">
+                                
+                <common:shortDescription xml:lang="en">Eutrophication, freshwater</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c632be-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c632be-def3-11e6-bf01-fe55135034f3.xml" version="01.00.011">
+                                
+                <common:shortDescription xml:lang="en">Ionising radiation, human health</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad66ce-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad66ce-c78d-11e6-9d9d-cec0c932ce01.xml" version="03.00.014">
+                                
+                <common:shortDescription xml:lang="en">Water use</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c614d2-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c614d2-def3-11e6-bf01-fe55135034f3.xml" version="01.02.009">
+                                
+                <common:shortDescription xml:lang="en">Eutrophication, terrestrial</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="05316e7a-b254-4bea-9cf0-6bf33eb5c630" type="LCIA method data set" uri="../lciamethods/05316e7a-b254-4bea-9cf0-6bf33eb5c630.xml" version="01.00.000">
+                                
+                <common:shortDescription xml:lang="en">Ecotoxicity, freshwater</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c602c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c602c6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.011">
+                                
+                <common:shortDescription xml:lang="en">EF-particulate Matter</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6890-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6890-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                                
+                <common:shortDescription xml:lang="en">Land use</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c611c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c611c6-def3-11e6-bf01-fe55135034f3.xml" version="01.04.000">
+                                
+                <common:shortDescription xml:lang="en">Acidification</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6110-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6110-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                                
+                <common:shortDescription xml:lang="en">Resource use, fossils</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="6209b35f-9447-40b5-b68c-a1099e3674a0" type="LCIA method data set" uri="../lciamethods/6209b35f-9447-40b5-b68c-a1099e3674a0.xml" version="01.00.000">
+                                
+                <common:shortDescription xml:lang="en">Climate change</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6494-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6494-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                                
+                <common:shortDescription xml:lang="en">Resource use, minerals and metals</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c629d6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c629d6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.012">
+                                
+                <common:shortDescription xml:lang="en">Ozone depletion</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="2299222a-bbd8-474f-9d4f-4dd1f18aea7c" type="LCIA method data set" uri="../lciamethods/2299222a-bbd8-474f-9d4f-4dd1f18aea7c.xml" version="01.01.000">
+                                
+                <common:shortDescription xml:lang="en">Human toxicity, cancer</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c619fa-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c619fa-def3-11e6-bf01-fe55135034f3.xml" version="02.00.010">
+                                
+                <common:shortDescription xml:lang="en">Eutrophication marine</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8" type="LCIA method data set" uri="../lciamethods/7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8.xml" version="01.00.000">
+                                
+                <common:shortDescription xml:lang="en">Human toxicity, non-cancer</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c610fe-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c610fe-def3-11e6-bf01-fe55135034f3.xml" version="02.01.000">
+                                
+                <common:shortDescription xml:lang="en">Photochemical ozone formation - human health</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <completenessElementaryFlows type="Climate change" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Ozone depletion" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Summer smog" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Eutrophication" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Acidification" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Human toxicity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Freshwater ecotoxicity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Seawater eco-toxicity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Terrestric eco-toxicity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Radioactivity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Land use" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Non-renewable material resource depletion" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Renewable material resource consumption" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Non-renewable primary energy depletion" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Renewable primary energy consumption" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Particulate matter/respiratory inorganics" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Species depletion" value="No statement"/>
+                        
+            <completenessElementaryFlows type="Noise" value="No statement"/>
+                    
+        </completeness>
+                
+        <validation>
+                        
+            <review type="Dependent internal review">
+                                
+                <common:scope name="Raw data">
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Validation of data sources"/>
+                                        
+                    <common:method name="Sample tests on calculations"/>
+                                        
+                    <common:method name="Element balance"/>
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Mass balance"/>
+                                        
+                    <common:method name="Documentation"/>
+                                        
+                    <common:method name="Energy balance"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="Unit process(es), single operation">
+                                        
+                    <common:method name="Validation of data sources"/>
+                                        
+                    <common:method name="Sample tests on calculations"/>
+                                        
+                    <common:method name="Energy balance"/>
+                                        
+                    <common:method name="Element balance"/>
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Cross-check with other data set"/>
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Mass balance"/>
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                        
+                    <common:method name="Documentation"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="Unit process(es), black box">
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Validation of data sources"/>
+                                        
+                    <common:method name="Sample tests on calculations"/>
+                                        
+                    <common:method name="Energy balance"/>
+                                        
+                    <common:method name="Element balance"/>
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Cross-check with other data set"/>
+                                        
+                    <common:method name="Mass balance"/>
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="LCI results or Partly terminated system">
+                                        
+                    <common:method name="Validation of data sources"/>
+                                        
+                    <common:method name="Sample tests on calculations"/>
+                                        
+                    <common:method name="Energy balance"/>
+                                        
+                    <common:method name="Element balance"/>
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Cross-check with other data set"/>
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Mass balance"/>
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="LCIA results">
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Cross-check with other data set"/>
+                                        
+                    <common:method name="Expert judgement"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="Documentation">
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="Life cycle inventory methods">
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                    
+                </common:scope>
+                                
+                <common:dataQualityIndicators>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.65" name="Overall quality" value="Good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.82" name="Time representativeness" value="Good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="2.21" name="Geographical representativeness" value="Fair"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.37" name="Technological representativeness" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.20" name="Precision" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator name="Methodological appropriateness and consistency" value="Not applicable"/>
+                                    
+                </common:dataQualityIndicators>
+                                
+                <common:reviewDetails>Internal reviews have been asked to review the plausibility of the unit process, LCIA scores, and DQRs. Internal reviewers have also been asked to review the data for EF compliancy. The consortium is therefore responsible for aspects such as compliancy with the ILCD format, including validation in Look@LCI, and nomenclature.
+Internal reviwers have been asked to judge based on the process name, that the unit process models in a complete and representative way the  process in the requested location. The review encompassed the plausability of:
+- exchanges with nature (elementary flows) as well as exchanges such as product and waste flows.
+- meta information (general comment, technology comment, system boundaries, allocation, cut-off rules, etc.). Reviewers were asked to judge if the provided information is enough to understand the content of the process.
+- LCIA scores
+- DQRs including precision, technology, time and geography. As well as the overall DQR.</common:reviewDetails>
+                                
+                <common:referenceToNameOfReviewerAndInstitution refObjectId="8d8a11a9-7e67-59f5-a22c-2a3b9086d497" type="contact data set" uri="../contacts/8d8a11a9-7e67-59f5-a22c-2a3b9086d497.xml">
+                                        
+                    <common:shortDescription>Lucia Valsasina</common:shortDescription>
+                                    
+                </common:referenceToNameOfReviewerAndInstitution>
+                                
+                <common:referenceToNameOfReviewerAndInstitution refObjectId="c6fc97df-7c89-52f8-80b3-abcfe6796f96" type="contact data set" uri="../contacts/c6fc97df-7c89-52f8-80b3-abcfe6796f96.xml">
+                                        
+                    <common:shortDescription>Emilia Moreno Ruiz</common:shortDescription>
+                                    
+                </common:referenceToNameOfReviewerAndInstitution>
+                            
+            </review>
+                        
+            <review type="Independent review panel">
+                                
+                <common:dataQualityIndicators>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.65" name="Overall quality" value="Good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.82" name="Time representativeness" value="Good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="2.21" name="Geographical representativeness" value="Fair"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.37" name="Technological representativeness" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.20" name="Precision" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator name="Methodological appropriateness and consistency" value="Not applicable"/>
+                                    
+                </common:dataQualityIndicators>
+                                
+                <common:reviewDetails>External reviewers have been asked to provide their expertise in the field of interest. External reviewers have been asked to review the unit process, including eventual methodological choices, the LCIA scores (provided with contribution scores as well), and DQRs. External reviewers have been provided all the information in a tool developed by the consortium for the purpose of this project.
+External reviewers have been asked to judge based on the process name, that the unit process models in a complete and representative way the  process in the requested location. The review encompassed:
+- Plausability and completeness of exchanges with nature (elementary flows) as well as exchanges such as product and waste flows.
+- Review of meta information (general comment, technology comment, system boundaries, allocation, cut-off rules, etc.). Reviewers were asked to judge if the provided information is enough to understand the content of the process.
+- Review of properties (biogenic carbon and water content).
+- Review of allocation keys.
+- Plausability of LCIA scores calculated by the consortium.
+- Plausability of DQRs including precision, technology, time and geography. As well as the overall DQR.</common:reviewDetails>
+                                
+                <common:referenceToNameOfReviewerAndInstitution refObjectId="f34f740f-b72e-517c-9c1f-000884fbd32c" type="contact data set" uri="../contacts/f34f740f-b72e-517c-9c1f-000884fbd32c.xml">
+                                        
+                    <common:shortDescription>Michael Sturges</common:shortDescription>
+                                    
+                </common:referenceToNameOfReviewerAndInstitution>
+                                
+                <common:referenceToCompleteReviewReport refObjectId="5387a3cc-4f5b-5a00-a852-82c012c85fca" type="source data set" uri="../sources/5387a3cc-4f5b-5a00-a852-82c012c85fca.xml" version="01.00.000">
+                                        
+                    <common:shortDescription>Review report for chemi-thermomechanical pulp - WORLD (WITHOUT EU+EFTA+UK)</common:shortDescription>
+                                    
+                </common:referenceToCompleteReviewReport>
+                            
+            </review>
+                    
+        </validation>
+                
+        <complianceDeclarations>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="d92a1a12-2545-49e2-a585-55c259997756" type="source data set" uri="../sources/d92a1a12-2545-49e2-a585-55c259997756.xml" version="35.00.000">
+                                        
+                    <common:shortDescription>ILCD Data Network - Entry-level</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+                            
+            </compliance>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="afc1ce43-e800-494b-aad4-46b9e8ea74da" type="source data set" uri="../sources/afc1ce43-e800-494b-aad4-46b9e8ea74da.xml" version="00.00.000">
+                                        
+                    <common:shortDescription>Suggestions for updating the PEF method 2019</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Fully compliant</common:qualityCompliance>
+                            
+            </compliance>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="1ea48531-e397-4ca7-ac08-056e4fa11826" type="source data set" uri="../sources/1ea48531-e397-4ca7-ac08-056e4fa11826.xml" version="35.00.000">
+                                        
+                    <common:shortDescription>ISO 14040 Environmental Management – Life Cycle Assessment – Principles and Framework, 2006</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Not defined</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Not defined</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+                            
+            </compliance>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="1adb438d-4a8b-4919-885e-0a66da3c0f2a" type="source data set" uri="../sources/1adb438d-4a8b-4919-885e-0a66da3c0f2a.xml" version="35.00.000">
+                                        
+                    <common:shortDescription>ISO 14044:2006. Environmental Management – Life Cycle Assessment – Requirements and guidelines.</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Not defined</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Not defined</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+                            
+            </compliance>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="0eb2b770-2cb1-43cf-9fbc-215df36fe9f0" type="source data set" uri="../sources/0eb2b770-2cb1-43cf-9fbc-215df36fe9f0.xml" version="00.00.001">
+                                        
+                    <common:shortDescription>Environmental Footprint 3.1</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Not defined</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Not defined</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Not defined</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Not defined</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+                            
+            </compliance>
+                    
+        </complianceDeclarations>
+            
+    </modellingAndValidation>
+        
+    <administrativeInformation>
+                
+        <common:commissionerAndGoal>
+                        
+            <common:referenceToCommissioner refObjectId="cf7f0f79-a312-4b28-89ea-32a589b87f58" type="contact data set" uri="../contacts/cf7f0f79-a312-4b28-89ea-32a589b87f58.xml" version="01.00.000">
+                                
+                <common:shortDescription>European Commission, DG ENV B1</common:shortDescription>
+                            
+            </common:referenceToCommissioner>
+                        
+            <common:project>Provision of process-based 3.0 Environmental Footprint-compliant life cycle inventory datasets - Renewable materials - contract number 070201/2020/840085/SER/ENV.B.1</common:project>
+                        
+            <common:intendedApplications>Implementation of regular Product Environmental Footprint (PEF) studies and Organisation Environmental Footprint (OEF) studies exclusively under the specified Product groups and sectors as defined in the Product Environmental Footprint Category Rules (PEFCR) and Organisation Environmental Footprint Sectorial Rules (OEFSR) listed in http://ec.europa.eu/environment/eussd/smgp/PEFCR_OEFSR.htm</common:intendedApplications>
+                    
+        </common:commissionerAndGoal>
+                
+        <dataGenerator>
+                        
+            <common:referenceToPersonOrEntityGeneratingTheDataSet refObjectId="6ae096bd-5b0a-5222-a4dd-b48143206947" type="contact data set" uri="../contacts/6ae096bd-5b0a-5222-a4dd-b48143206947.xml" version="01.00.000">
+                                
+                <common:shortDescription>ecoinvent</common:shortDescription>
+                            
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+                    
+        </dataGenerator>
+                
+        <dataEntryBy>
+                        
+            <common:timeStamp>2024-07-13T10:49:26.143+02:00</common:timeStamp>
+                        
+            <common:referenceToDataSetFormat refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" type="source data set" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml" version="03.00.000">
+                                
+                <common:shortDescription>ILCD format 1.1</common:shortDescription>
+                            
+            </common:referenceToDataSetFormat>
+                        
+            <common:referenceToPersonOrEntityEnteringTheData refObjectId="6ae096bd-5b0a-5222-a4dd-b48143206947" type="contact data set" uri="../contacts/6ae096bd-5b0a-5222-a4dd-b48143206947.xml" version="01.00.000">
+                                
+                <common:shortDescription>ecoinvent</common:shortDescription>
+                            
+            </common:referenceToPersonOrEntityEnteringTheData>
+                    
+        </dataEntryBy>
+                
+        <publicationAndOwnership>
+                        
+            <common:dateOfLastRevision>2020-09-02T14:36:46.214668+02:00</common:dateOfLastRevision>
+                        
+            <common:dataSetVersion>01.01.000</common:dataSetVersion>
+                        
+            <common:referenceToPrecedingDataSetVersion refObjectId="2353ad27-ce2f-5bc6-bdb7-7585da66a3f7" type="process data set" uri="../processes/2353ad27-ce2f-5bc6-bdb7-7585da66a3f7.xml?version=01.00.000" version="01.00.000">
+                                
+                <common:shortDescription xml:lang="en">chemi-thermomechanical pulp</common:shortDescription>
+                            
+            </common:referenceToPrecedingDataSetVersion>
+                        
+            <common:permanentDataSetURI/>
+                        
+            <common:workflowAndPublicationStatus>Data set finalised; entirely published</common:workflowAndPublicationStatus>
+                        
+            <common:registrationNumber/>
+                        
+            <common:referenceToOwnershipOfDataSet refObjectId="6ae096bd-5b0a-5222-a4dd-b48143206947" type="contact data set" uri="../contacts/6ae096bd-5b0a-5222-a4dd-b48143206947.xml" version="01.00.000">
+                                
+                <common:shortDescription>ecoinvent</common:shortDescription>
+                            
+            </common:referenceToOwnershipOfDataSet>
+                        
+            <common:copyright>true</common:copyright>
+                        
+            <common:referenceToEntitiesWithExclusiveAccess refObjectId="8b3e08f0-740a-43b1-aa8d-bec56c5daf6e" type="contact data set" uri="../contacts/8b3e08f0-740a-43b1-aa8d-bec56c5daf6e.xml" version="29.00.000">
+                                
+                <common:shortDescription>Final user</common:shortDescription>
+                            
+            </common:referenceToEntitiesWithExclusiveAccess>
+                        
+            <common:licenseType>Free of charge for some user types or use types</common:licenseType>
+                        
+            <common:accessRestrictions>Free of charge for all final users implementing a regular Product Environmental Footprint (PEF) studies and Organisation Environmental Footprint (OEF) studies exclusively under the specified Product groups and sectors as defined in the Product Environmental Footprint Category Rules (PEFCR) and Organisation Environmental Footprint Sectorial Rules (OEFSR) listed in http://ec.europa.eu/environment/eussd/smgp/PEFCR_OEFSR.htm and in accordance with the terms and conditions of the EULA (available at https://ecoinvent.lca-data.com/) exclusively until 31st December 2024. Any use of this dataset or any derivative data not within the specific context of one of the PEF/OEF projects or after the end of 2024 is not permitted.</common:accessRestrictions>
+                    
+        </publicationAndOwnership>
+            
+    </administrativeInformation>
+        
+    <exchanges>
+                
+        <exchange dataSetInternalID="0">
+                        
+            <referenceToFlowDataSet refObjectId="edfb06f6-f608-58dd-a83f-cf55e9a1318c" type="flow data set" uri=".../flows/edfb06f6-f608-58dd-a83f-cf55e9a1318c.xml">
+                                
+                <common:shortDescription>chemi-thermomechanical pulp // chemi-thermomechanical pulp // world (without eu+efta+uk)</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Output</exchangeDirection>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>1</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="1">
+                        
+            <referenceToFlowDataSet refObjectId="309560a0-7029-52c4-aa08-63bbadf26be2" type="flow data set" uri=".../flows/309560a0-7029-52c4-aa08-63bbadf26be2.xml">
+                                
+                <common:shortDescription>Transport of sulfite by Freight train, diesel traction - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_0</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>5.897720213824215</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="2">
+                        
+            <referenceToFlowDataSet refObjectId="92aed1a4-9e0f-5cff-9775-1f8665cc90a6" type="flow data set" uri=".../flows/92aed1a4-9e0f-5cff-9775-1f8665cc90a6.xml">
+                                
+                <common:shortDescription>Transport of sulfite by Freight train, electricity traction - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_1</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>1.7810032825500999</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="3">
+                        
+            <referenceToFlowDataSet refObjectId="85f95f0e-863a-50a2-9467-b444fefc273e" type="flow data set" uri=".../flows/85f95f0e-863a-50a2-9467-b444fefc273e.xml">
+                                
+                <common:shortDescription>Transport of sulfite by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_2</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.0487765036256973</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="4">
+                        
+            <referenceToFlowDataSet refObjectId="e06efa32-1a02-5b91-b847-b86675139bab" type="flow data set" uri=".../flows/e06efa32-1a02-5b91-b847-b86675139bab.xml">
+                                
+                <common:shortDescription>Transport of sulfite by Articulated lorry transport, Total weight &gt;32 t, mix Euro 0-5 - ROW w/o EU+EFTA</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_3</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>5.220000000000008</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="5">
+                        
+            <referenceToFlowDataSet refObjectId="762b4144-2601-5fa4-b5a9-171fb08dfe3e" type="flow data set" uri=".../flows/762b4144-2601-5fa4-b5a9-171fb08dfe3e.xml">
+                                
+                <common:shortDescription>Transport of sulfite by Transoceanic ship, containers - GLO</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_4</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>14.975000000000001</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="6">
+                        
+            <referenceToFlowDataSet refObjectId="394a8a99-d77e-56cc-b3f9-6c585cfce623" type="flow data set" uri=".../flows/394a8a99-d77e-56cc-b3f9-6c585cfce623.xml">
+                                
+                <common:shortDescription>Transport of sulfite by Barge - ROW w/o EU+EFTA</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_5</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.6150000000000001</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="7">
+                        
+            <referenceToFlowDataSet refObjectId="42625bff-95c5-5ff2-8d88-2874daaf3750" type="flow data set" uri=".../flows/42625bff-95c5-5ff2-8d88-2874daaf3750.xml">
+                                
+                <common:shortDescription>Electricity from Electricity grid mix 1kV-60kV - AU</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>0.08299621220136698</meanAmount>
+                        
+            <resultingAmount>0.08299621220136698</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="8">
+                        
+            <referenceToFlowDataSet refObjectId="06276179-d692-5062-8ec9-d767843ae2a7" type="flow data set" uri=".../flows/06276179-d692-5062-8ec9-d767843ae2a7.xml">
+                                
+                <common:shortDescription>Electricity from Electricity grid mix 1kV-60kV - NZ</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>0.01581347948452081</meanAmount>
+                        
+            <resultingAmount>0.01581347948452081</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="9">
+                        
+            <referenceToFlowDataSet refObjectId="cf91aacd-8e07-589a-b22e-072958b67b8d" type="flow data set" uri=".../flows/cf91aacd-8e07-589a-b22e-072958b67b8d.xml">
+                                
+                <common:shortDescription>Electricity from Electricity grid mix 1kV-60kV - RAF</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>0.2671839600482468</meanAmount>
+                        
+            <resultingAmount>0.2671839600482468</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="10">
+                        
+            <referenceToFlowDataSet refObjectId="22c5f113-f7dd-55f1-9c66-f8aa34e99a6d" type="flow data set" uri=".../flows/22c5f113-f7dd-55f1-9c66-f8aa34e99a6d.xml">
+                                
+                <common:shortDescription>Electricity from Electricity grid mix 1kV-60kV - RAS w/o CN</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>3.8421353027064766</meanAmount>
+                        
+            <resultingAmount>3.8421353027064766</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="11">
+                        
+            <referenceToFlowDataSet refObjectId="15ed4376-4189-59cd-a507-dd5312bcb31d" type="flow data set" uri=".../flows/15ed4376-4189-59cd-a507-dd5312bcb31d.xml">
+                                
+                <common:shortDescription>Electricity from Electricity grid mix 1kV-60kV - RNA</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>1.7893295808028438</meanAmount>
+                        
+            <resultingAmount>1.7893295808028438</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="12">
+                        
+            <referenceToFlowDataSet refObjectId="750e44d6-3961-55d7-927a-0653d787e56f" type="flow data set" uri=".../flows/750e44d6-3961-55d7-927a-0653d787e56f.xml">
+                                
+                <common:shortDescription>Electricity from Electricity grid mix 1kV-60kV - RSA</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>0.6071492138730769</meanAmount>
+                        
+            <resultingAmount>0.6071492138730769</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="13">
+                        
+            <referenceToFlowDataSet refObjectId="21caf112-f36a-5fb0-9e9e-a6bb63ae8a91" type="flow data set" uri=".../flows/21caf112-f36a-5fb0-9e9e-a6bb63ae8a91.xml">
+                                
+                <common:shortDescription>Electricity from Electricity grid mix 1kV-60kV - RU</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>0.35779225088346694</meanAmount>
+                        
+            <resultingAmount>0.35779225088346694</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="14">
+                        
+            <referenceToFlowDataSet refObjectId="44d4cacb-9137-5108-85f8-be140328ad29" type="flow data set" uri=".../flows/44d4cacb-9137-5108-85f8-be140328ad29.xml">
+                                
+                <common:shortDescription>Thermal energy (MJ) from Thermal energy from biogas - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>0.1254526754028087</meanAmount>
+                        
+            <resultingAmount>0.1254526754028087</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="15">
+                        
+            <referenceToFlowDataSet refObjectId="ce50630e-f95c-5252-a0cb-8142881314f3" type="flow data set" uri=".../flows/ce50630e-f95c-5252-a0cb-8142881314f3.xml">
+                                
+                <common:shortDescription>Thermal energy (MJ) from Thermal energy from biogas - ROW</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>0.1472705319946015</meanAmount>
+                        
+            <resultingAmount>0.1472705319946015</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="16">
+                        
+            <referenceToFlowDataSet refObjectId="6fb7b954-5eda-54e7-91d8-7c57b492fe2d" type="flow data set" uri=".../flows/6fb7b954-5eda-54e7-91d8-7c57b492fe2d.xml">
+                                
+                <common:shortDescription>Thermal energy (MJ) from Thermal energy from hard coal - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>1.1574067805766586</meanAmount>
+                        
+            <resultingAmount>1.1574067805766586</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="17">
+                        
+            <referenceToFlowDataSet refObjectId="82db4dfd-042a-50d6-92e6-20e500f358f0" type="flow data set" uri=".../flows/82db4dfd-042a-50d6-92e6-20e500f358f0.xml">
+                                
+                <common:shortDescription>Thermal energy (MJ) from Thermal energy from hard coal - ROW</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>1.358694916329121</meanAmount>
+                        
+            <resultingAmount>1.358694916329121</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="18">
+                        
+            <referenceToFlowDataSet refObjectId="217d2377-c04d-5931-840d-94f8a20dce9c" type="flow data set" uri=".../flows/217d2377-c04d-5931-840d-94f8a20dce9c.xml">
+                                
+                <common:shortDescription>Thermal energy (MJ) from Thermal energy from heavy fuel oil (HFO) - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>0.006776164472876813</meanAmount>
+                        
+            <resultingAmount>0.006776164472876813</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="19">
+                        
+            <referenceToFlowDataSet refObjectId="8d8bc6f3-a1f8-5c83-ad2a-006bb92c6bda" type="flow data set" uri=".../flows/8d8bc6f3-a1f8-5c83-ad2a-006bb92c6bda.xml">
+                                
+                <common:shortDescription>Thermal energy (MJ) from Thermal energy from heavy fuel oil (HFO) - ROW</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>0.007954627859464084</meanAmount>
+                        
+            <resultingAmount>0.007954627859464084</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="20">
+                        
+            <referenceToFlowDataSet refObjectId="a765ba7e-ec79-57ac-ae7c-cada4a4669a2" type="flow data set" uri=".../flows/a765ba7e-ec79-57ac-ae7c-cada4a4669a2.xml">
+                                
+                <common:shortDescription>Thermal energy (MJ) from Thermal energy from light fuel oil (LFO) - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>0.09637503530308131</meanAmount>
+                        
+            <resultingAmount>0.09637503530308131</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="21">
+                        
+            <referenceToFlowDataSet refObjectId="67e11d46-85e1-586b-a023-5b44a868e07d" type="flow data set" uri=".../flows/67e11d46-85e1-586b-a023-5b44a868e07d.xml">
+                                
+                <common:shortDescription>Thermal energy (MJ) from Thermal energy from light fuel oil (LFO) - ROW</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>0.11313591100796502</meanAmount>
+                        
+            <resultingAmount>0.11313591100796502</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="22">
+                        
+            <referenceToFlowDataSet refObjectId="46c10da0-169a-5711-9b94-894e4562ed82" type="flow data set" uri=".../flows/46c10da0-169a-5711-9b94-894e4562ed82.xml">
+                                
+                <common:shortDescription>Thermal energy (MJ) from Thermal energy from lignite - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>0.10064406787623119</meanAmount>
+                        
+            <resultingAmount>0.10064406787623119</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="23">
+                        
+            <referenceToFlowDataSet refObjectId="ceb51f35-2eef-5d62-89f5-f8622967e0ac" type="flow data set" uri=".../flows/ceb51f35-2eef-5d62-89f5-f8622967e0ac.xml">
+                                
+                <common:shortDescription>Thermal energy (MJ) from Thermal energy from lignite - ROW</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>0.11814738402861923</meanAmount>
+                        
+            <resultingAmount>0.11814738402861923</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="24">
+                        
+            <referenceToFlowDataSet refObjectId="356c76e1-a716-5799-8f4c-dccd918e1d0d" type="flow data set" uri=".../flows/356c76e1-a716-5799-8f4c-dccd918e1d0d.xml">
+                                
+                <common:shortDescription>Thermal energy (MJ) from Thermal energy from LPG - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>0.005401276368343183</meanAmount>
+                        
+            <resultingAmount>0.005401276368343183</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="25">
+                        
+            <referenceToFlowDataSet refObjectId="4635e1a0-c79c-5d88-b5e4-a371aa3677e7" type="flow data set" uri=".../flows/4635e1a0-c79c-5d88-b5e4-a371aa3677e7.xml">
+                                
+                <common:shortDescription>Thermal energy (MJ) from Thermal energy from LPG - ROW</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>0.006340628780228955</meanAmount>
+                        
+            <resultingAmount>0.006340628780228955</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="26">
+                        
+            <referenceToFlowDataSet refObjectId="0973efcc-a728-5c67-a136-368b758c0631" type="flow data set" uri=".../flows/0973efcc-a728-5c67-a136-368b758c0631.xml">
+                                
+                <common:shortDescription>Thermal energy (MJ) from Thermal energy from natural gas - ROW</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>0.5723999999999999</meanAmount>
+                        
+            <resultingAmount>0.5723999999999999</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="27">
+                        
+            <referenceToFlowDataSet refObjectId="3bb1de36-2a4c-5d9c-a5f5-05bcfa812fb3" type="flow data set" uri=".../flows/3bb1de36-2a4c-5d9c-a5f5-05bcfa812fb3.xml">
+                                
+                <common:shortDescription>Transport of edta // edta production // eu+efta+uk by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_6</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>2.0</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="28">
+                        
+            <referenceToFlowDataSet refObjectId="4ebc3ed5-8605-5b4a-91a3-fcb2452a9a36" type="flow data set" uri=".../flows/4ebc3ed5-8605-5b4a-91a3-fcb2452a9a36.xml">
+                                
+                <common:shortDescription>Transport of hydrogen peroxide, 50% // hydrogen peroxide, 50% production // eu+efta+uk by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_7</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>25.0</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="29">
+                        
+            <referenceToFlowDataSet refObjectId="52bb1602-440a-5616-8fec-76c7705d4eba" type="flow data set" uri=".../flows/52bb1602-440a-5616-8fec-76c7705d4eba.xml">
+                                
+                <common:shortDescription>Transport of sodium silicate powder // sodium silicate powder production // eu+efta+uk by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_8</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>19.0</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="30">
+                        
+            <referenceToFlowDataSet refObjectId="7e6f2889-a100-5e02-8c70-e406b2a1c31f" type="flow data set" uri=".../flows/7e6f2889-a100-5e02-8c70-e406b2a1c31f.xml">
+                                
+                <common:shortDescription>Transport of softwood under bark // softwood forestry // glo by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_9</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>1530.0</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="31">
+                        
+            <referenceToFlowDataSet refObjectId="4141f40b-7c24-59b1-9837-8bbb5f3c6aad" type="flow data set" uri=".../flows/4141f40b-7c24-59b1-9837-8bbb5f3c6aad.xml">
+                                
+                <common:shortDescription>Transport of edta // edta production // eu+efta+uk by Transoceanic ship, containers - GLO</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_10</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>36.0</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="32">
+                        
+            <referenceToFlowDataSet refObjectId="b4919d25-dae5-5daf-9951-2b714ba46041" type="flow data set" uri=".../flows/b4919d25-dae5-5daf-9951-2b714ba46041.xml">
+                                
+                <common:shortDescription>Transport of hydrogen peroxide, 50% // hydrogen peroxide, 50% production // eu+efta+uk by Transoceanic ship, containers - GLO</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_11</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>450.0</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="33">
+                        
+            <referenceToFlowDataSet refObjectId="078531ac-57fd-5163-856f-808f59af34e4" type="flow data set" uri=".../flows/078531ac-57fd-5163-856f-808f59af34e4.xml">
+                                
+                <common:shortDescription>Transport of sodium silicate powder // sodium silicate powder production // eu+efta+uk by Transoceanic ship, containers - GLO</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_12</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>342.0</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="34">
+                        
+            <referenceToFlowDataSet refObjectId="f6e21a02-3fe7-5fbf-8688-fb38a0f5bd31" type="flow data set" uri=".../flows/f6e21a02-3fe7-5fbf-8688-fb38a0f5bd31.xml">
+                                
+                <common:shortDescription>Transport of softwood under bark // softwood forestry // glo by Transoceanic ship, containers - GLO</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_13</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>27500.0</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="35">
+                        
+            <referenceToFlowDataSet refObjectId="92bc1b9d-a23b-5982-ab3f-79576e6aa91d" type="flow data set" uri=".../flows/92bc1b9d-a23b-5982-ab3f-79576e6aa91d.xml">
+                                
+                <common:shortDescription>chemi-thermomechanical pulp // chemi-thermomechanical pulp // world (without eu+efta+uk), blackbox</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>1</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="36">
+                        
+            <referenceToFlowDataSet refObjectId="df10c75f-e66b-598e-b822-0270a1290805" type="flow data set" uri=".../flows/df10c75f-e66b-598e-b822-0270a1290805.xml">
+                                
+                <common:shortDescription>chemi-thermomechanical pulp // chemi-thermomechanical pulp // world (without eu+efta+uk), elementary</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>1</resultingAmount>
+                    
+        </exchange>
+            
+    </exchanges>
+    <LCIAResults>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c619fa-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c619fa-def3-11e6-bf01-fe55135034f3.xml" version="02.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication marine</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.005012105090679449</meanAmount>
+            <generalComment>Eutrophication marine</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="05316e7a-b254-4bea-9cf0-6bf33eb5c630" type="LCIA method data set" uri="../lciamethods/05316e7a-b254-4bea-9cf0-6bf33eb5c630.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Ecotoxicity, freshwater</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>16.179238013317843</meanAmount>
+            <generalComment>Ecotoxicity, freshwater</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6890-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6890-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Land use</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>216.96598533349098</meanAmount>
+            <generalComment>Land use</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad66ce-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad66ce-c78d-11e6-9d9d-cec0c932ce01.xml" version="03.00.014">
+                <common:shortDescription xml:lang="en">Water use</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.6528994845486734</meanAmount>
+            <generalComment>Water use</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6494-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6494-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, minerals and metals</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>3.6956181036837817E-6</meanAmount>
+            <generalComment>Resource use, minerals and metals</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6110-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6110-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, fossils</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>27.89085879823519</meanAmount>
+            <generalComment>Resource use, fossils</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="6209b35f-9447-40b5-b68c-a1099e3674a0" type="LCIA method data set" uri="../lciamethods/6209b35f-9447-40b5-b68c-a1099e3674a0.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Climate change</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>2.7381326045888645</meanAmount>
+            <generalComment>Climate change</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c629d6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c629d6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.012">
+                <common:shortDescription xml:lang="en">Ozone depletion</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>1.9082895903137047E-8</meanAmount>
+            <generalComment>Ozone depletion</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="2299222a-bbd8-474f-9d4f-4dd1f18aea7c" type="LCIA method data set" uri="../lciamethods/2299222a-bbd8-474f-9d4f-4dd1f18aea7c.xml" version="01.01.000">
+                <common:shortDescription xml:lang="en">Human toxicity, cancer</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>1.0835975743315548E-9</meanAmount>
+            <generalComment>Human toxicity, cancer</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8" type="LCIA method data set" uri="../lciamethods/7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Human toxicity, non-cancer</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>1.2681868641559852E-8</meanAmount>
+            <generalComment>Human toxicity, non-cancer</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c602c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c602c6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.011">
+                <common:shortDescription xml:lang="en">EF-particulate Matter</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>4.39205338091281E-7</meanAmount>
+            <generalComment>EF-particulate Matter</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c632be-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c632be-def3-11e6-bf01-fe55135034f3.xml" version="01.00.011">
+                <common:shortDescription xml:lang="en">Ionising radiation, human health</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.046263807703377235</meanAmount>
+            <generalComment>Ionising radiation, human health</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c610fe-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c610fe-def3-11e6-bf01-fe55135034f3.xml" version="02.01.000">
+                <common:shortDescription xml:lang="en">Photochemical ozone formation - human health</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.013467908818781378</meanAmount>
+            <generalComment>Photochemical ozone formation - human health</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c611c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c611c6-def3-11e6-bf01-fe55135034f3.xml" version="01.04.000">
+                <common:shortDescription xml:lang="en">Acidification</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.02369480459243223</meanAmount>
+            <generalComment>Acidification</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c614d2-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c614d2-def3-11e6-bf01-fe55135034f3.xml" version="01.02.009">
+                <common:shortDescription xml:lang="en">Eutrophication, terrestrial</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.050059348330423754</meanAmount>
+            <generalComment>Eutrophication, terrestrial</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b53ec18f-7377-4ad3-86eb-cc3f4f276b2b" type="LCIA method data set" uri="../lciamethods/b53ec18f-7377-4ad3-86eb-cc3f4f276b2b.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication, freshwater</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>3.976995486389237E-5</meanAmount>
+            <generalComment>Eutrophication, freshwater</generalComment>
+        </LCIAResult>
+    </LCIAResults>
+        
+
+</processDataSet>

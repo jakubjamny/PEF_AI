@@ -1,0 +1,2043 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<processDataSet xmlns="http://lca.jrc.it/ILCD/Process" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:ext="http://eplca.jrc.ec.europa.eu/ILCD/Extensions/2017" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" locations="../ILCDLocations.xml" version="1.1" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>f1c6deb0-5f8a-52fe-a670-b507b40b711a</common:UUID>
+            <name>
+                <baseName>coating, solvent emulsion, 2 times (for 3 layers), elementary</baseName>
+                <treatmentStandardsRoutes>Finishing</treatmentStandardsRoutes>
+                <mixAndLocationTypes>technology mix</mixAndLocationTypes>
+                <functionalUnitFlowProperties>textile service for 1 kg of fabric</functionalUnitFlowProperties>
+            </name>
+            <identifierOfSubDataSet/>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0">Other Services</common:class>
+                    <common:class level="1">Other services</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment>Notice: this data set supersedes the EF3.0-compliant version (see link under "preceding data set version" below calculated with the EF3.0). The life cycle inventory is not changed from the original EF3.0 data set. The LCIA results are calculated based on the EF3.1 methods which provide updated characterisation factors in the following impact categories: Climate Change, Ecotoxicity freshwater, Photochemical Ozone Formation, Acidification, Human Toxicity non-cancer, and Human Toxicity cancer. The review report and the data quality ratings refer to the original results. The data set has been updated by the European Commission on the basis of the original EF3.0 data set delivered by the data provider.This sub-process has limited documentation only. For all detailed documentation of the full model to which this data set belongs (such as DQRs, review reports and other technical documentation), please see this process: coating, solvent emulsion, 2 times (for 3 layers) - GLO [UUID: 77fc9346-877f-5f2f-bb97-9b2e455d5d8f]</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>0</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time>
+            <common:referenceYear>2018</common:referenceYear>
+            <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="GLO">
+                <descriptionOfRestrictions/>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses>Coating is the application of polymer onto a textile as a paste, foam or viscous liquid. The application of polymer is made such that coating cannot be detached. In solvent emulsion coating process, a polymer is dissolved in a solvent and directly applied to textile. Solvent is extracted through coagulation and coating is dried, cured and washed. Coating curing is performed in a stenter. Solvent based water repellents may be applied by this technique to leather clothing, medical garment and wipes.</technologyDescriptionAndIncludedProcesses>
+            <technologicalApplicability>na</technologicalApplicability>
+            <referenceToTechnologyFlowDiagrammOrPicture refObjectId="4562465a-92b8-5dc0-b302-692e4e067f38" type="source data set" uri="../sources/4562465a-92b8-5dc0-b302-692e4e067f38.xml" version="04.00.001">
+                <common:shortDescription>Diagram of data for chemicals EF3.0</common:shortDescription>
+            </referenceToTechnologyFlowDiagrammOrPicture>
+        </technology>
+        <mathematicalRelations>
+            <modelDescription/>
+        </mathematicalRelations>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, single operation</typeOfDataSet>
+            <LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+            <deviationsFromLCIMethodPrinciple>The background data uses: 
+- the \xe2\x80\x9cRecycled content cut-off\xe2\x80\x9d approach to allocate end-of-life by-products and secondary materials. This allocation is explained in the description of the recycled content system model (http://www.ecoinvent.org/database/system-models-in-ecoinvent-3/cut-off-system-model/allocation-cut-off-by-classification.html).
+OR
+- EF compliant data</deviationsFromLCIMethodPrinciple>
+            <LCIMethodApproaches>Allocation - market value</LCIMethodApproaches>
+            <deviationsFromLCIMethodApproaches>Background data: 
+- the \xe2\x80\x9cRecycled content cut-off\xe2\x80\x9d approach to allocate end-of-life by-products and secondary materials. This allocation is explained in the description of the recycled content system model (http://www.ecoinvent.org/database/system-models-in-ecoinvent-3/cut-off-system-model/allocation-cut-off-by-classification.html). The ecoinvent database mostly relies on “Allocation – market values” apart for few exceptions particularly in the energy sector. ecoinvent energy data is replaced with EF3.0 core data as per the EF guidelines version 2.0.
+OR
+- EF compliant data</deviationsFromLCIMethodApproaches>
+            <modellingConstants>All modelling constants follow the requirements listed in the Tender Specifications 070201/2020/SER/ENV.B1. Completeness: There are no intentional cut-offs in the inventory no matter how small their contribution to all the EF impact categories is. Eventual cut-offs are in compliance with the Guide for EF compliant data sets (JRC 2020), i.e. only if below the 3% cut-off rule. Water use: water use is modelled at country level using separate flows for water withdrawal, water release and water evaporation. Handling multi-functional processes: the following PEF multi- functionality decision hierarchy is applied for resolving all multi- functionality problems: (1) subdivision or system expansion; (2) allocation based on a relevant underlying physical relationship (substitution may apply here); (3) allocation based on some other relationship. Direct land use change: GHG emissions from direct LUC allocated to good/service for 20 years after the LUC occurs, with IPCC default values. Carbon storage and delayed emissions: credits associated with temporary (carbon) storage or delayed emissions up to 300 years are not be considered. Emissions off-setting: are not included. Capital goods (including infrastructures) and their End of life: they are included. System boundaries: system boundaries include all processes linked to the product supply chain (e.g. maintenance). Time period: emissions and removals are modelled as if released or removed at the beginning of the assessment method. Fossil and biogenic carbon emissions and removals: removals and emissions are modelled as follows: All GHG emissions from fossil fuels (including peat and limestone) are modelled consistently with the most updated ILCD list of elementary flows. The non-fossil (biogenic) carbon flows are modelled consistently with the most updated ILCD list of elementary flows.</modellingConstants>
+            <deviationsFromModellingConstants>None</deviationsFromModellingConstants>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <dataCutOffAndCompletenessPrinciples>There are no intentional cut-offs in the inventory no matter how small their contribution to all the EF impact categories is. Eventual cut-offs are in compliance with the Guide for EF compliant data sets (JRC 2020), i.e. only if below the 3% cut-off rule. The dataset dry mass and water balance has been checked to ensure the inventory is complete. Capital goods (e.g. infrastructure) and their end-of-life are included.</dataCutOffAndCompletenessPrinciples>
+            <deviationsFromCutOffAndCompletenessPrinciples>None</deviationsFromCutOffAndCompletenessPrinciples>
+            <dataSelectionAndCombinationPrinciples>These datasets include, in both their foreground and background data, links to EF3.0 compliant data.
+The relevant background data on energy, transport, and End of Life are from the LCDN data node (http://lcdn.thinkstep.com/Node/).
+All other background data in the supply of this product for which no EF3.0 process was available are from ecoinvent v3.7 database (www.ecoinvent.org) or other data sources.</dataSelectionAndCombinationPrinciples>
+            <deviationsFromSelectionAndCombinationPrinciples>None</deviationsFromSelectionAndCombinationPrinciples>
+            <dataTreatmentAndExtrapolationsPrinciples>Several data sources have been used to model the inventory.</dataTreatmentAndExtrapolationsPrinciples>
+            <deviationsFromTreatmentAndExtrapolationPrinciples>None</deviationsFromTreatmentAndExtrapolationPrinciples>
+            <referenceToDataSource refObjectId="d4fe7d8a-1f8c-591d-a31f-f58d2f888e3e" type="source data set" uri="../sources/d4fe7d8a-1f8c-591d-a31f-f58d2f888e3e.xml" version="01.00.000">
+                <common:shortDescription>Background Data for Representative products and organisations. EF 3.0 compliant (data stock)</common:shortDescription>
+            </referenceToDataSource>
+            <referenceToDataSource refObjectId="6b7a5cd2-c56c-5138-9277-a4444c40499e" type="source data set" uri="../sources/6b7a5cd2-c56c-5138-9277-a4444c40499e.xml" version="01.00.000">
+                <common:shortDescription>Sur SH, Choi PJ, Ko JW, Lee JY, Lee YH, KHD (2018) Preparation and Properties of DMF-Based Polyurethanes for Wet-Type Polyurethane Artificial Leather. International Journal of Polymer Science Volume 2018, Article ID 7370852, 9 pages
+https://doi.org/10.1155/2018/7370852</common:shortDescription>
+            </referenceToDataSource>
+            <referenceToDataSource refObjectId="69ae56ba-e3e5-5b86-b05c-00c7d85455c7" type="source data set" uri="../sources/69ae56ba-e3e5-5b86-b05c-00c7d85455c7.xml" version="01.00.000">
+                <common:shortDescription>Ka T, Geberehiwot Z (2020) Economy and Ecology in Dyeing-Cold Pad batch Dyeing Method for Cotton Knitted Fabric. Journal of
+Textile Science &amp; Engineering. Volume 10:4, 2020
+DOI: 10.37421/jtese.2020.10.411</common:shortDescription>
+            </referenceToDataSource>
+            <referenceToDataSource refObjectId="a108f3c3-f3bd-55f1-93dc-be1c3488a01c" type="source data set" uri="../sources/a108f3c3-f3bd-55f1-93dc-be1c3488a01c.xml" version="01.00.000">
+                <common:shortDescription>Mazo-Restrepo R, Alvarado P, Cacua K (2021) Analysis of potential waste heat recovery from a stenter in a textile plant.. DYNA, 88(217), pp. 292-302,
+April - June, 2021.</common:shortDescription>
+            </referenceToDataSource>
+            <referenceToDataSource refObjectId="68864cef-02ed-5acd-ae0e-1f035224ce59" type="source data set" uri="../sources/68864cef-02ed-5acd-ae0e-1f035224ce59.xml" version="01.00.000">
+                <common:shortDescription>M.H. Abo-Shosha, Z.H. El-Hilw, A.A. Aly, A. Amr and Al Said I. El. Nagdy (2008) Paraffin Wax Emulsion as Water Repellent for Cotton/Polyester Blended fabric. Journal of Industrial Textiles 2008 37: 315 DOI: 10.1177/1528083707083793</common:shortDescription>
+            </referenceToDataSource>
+            <referenceToDataSource refObjectId="f77f0d1c-2d62-53c3-8cc8-71c6f380d8f2" type="source data set" uri="../sources/f77f0d1c-2d62-53c3-8cc8-71c6f380d8f2.xml" version="01.00.000">
+                <common:shortDescription>thinkstep AG. 2017. LCA Update of Cotton Fiber and Fabric Life Cycle Inventory.   </common:shortDescription>
+            </referenceToDataSource>
+            <referenceToDataSource refObjectId="ab9f664c-f143-5372-a2ef-32d6d2bcee5d" type="source data set" uri="../sources/ab9f664c-f143-5372-a2ef-32d6d2bcee5d.xml" version="01.00.000">
+                <common:shortDescription>UNFCCC (2012) COMPONENT PROJECT ACTIVITIES DESIGN DOCUMENT (CPA-DD). Accessed online August 8th 2021: http://gec.jp/gec/jp/Activities/cdm-fs/2012/2012_cdmfs01_jPear_bangladesh_cpa-dd.pdf</common:shortDescription>
+            </referenceToDataSource>
+            <referenceToDataSource refObjectId="3d126b88-6af1-57a1-af00-dddaaf20eafa" type="source data set" uri="../sources/3d126b88-6af1-57a1-af00-dddaaf20eafa.xml" version="01.00.000">
+                <common:shortDescription>XiNLiLONG (2021) Solvent based adhesive coating leather fabric bonding machine upholstery making machine. Accessed online August 10th, 2021: https://www.alibaba.com/product-detail/solvent-based-adhesive-coating-leather-fabric_62269930388.html?spm=a2700.7724857.normal_offer.d_title.2e1623ce0I6uFC</common:shortDescription>
+            </referenceToDataSource>
+            <referenceToDataSource refObjectId="3733ca8d-990c-5473-91a2-74e5f235cb35" type="source data set" uri="../sources/3733ca8d-990c-5473-91a2-74e5f235cb35.xml" version="01.00.000">
+                <common:shortDescription>EUREKA (2021) Production activities in line with the “green factory” approach in the textile sector. Accessed online August 8th 2021: https://eureka-eurogia-green.eu/offering_expertise/production-activities-in-line-with-the-green-factory-approach-in-the-textile-sector-13-04-2021/</common:shortDescription>
+            </referenceToDataSource>
+            <annualSupplyOrProductionVolume/>
+            <samplingProcedure/>
+            <dataCollectionPeriod/>
+            <uncertaintyAdjustments>None</uncertaintyAdjustments>
+            <useAdviceForDataSet>This data set is a supporting sub-data set and must be used exclusively as sub-data set of its corresponding level-1 partly disaggregated data set (see “General comment” field for exact name and UUID).</useAdviceForDataSet>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <completeness>
+            <completenessProductModel>All relevant flows quantified</completenessProductModel>
+                  
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b53ec18f-7377-4ad3-86eb-cc3f4f276b2b" type="LCIA method data set" uri="../lciamethods/b53ec18f-7377-4ad3-86eb-cc3f4f276b2b.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication, freshwater</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c632be-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c632be-def3-11e6-bf01-fe55135034f3.xml" version="01.00.011">
+                <common:shortDescription xml:lang="en">Ionising radiation, human health</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad66ce-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad66ce-c78d-11e6-9d9d-cec0c932ce01.xml" version="03.00.014">
+                <common:shortDescription xml:lang="en">Water use</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c614d2-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c614d2-def3-11e6-bf01-fe55135034f3.xml" version="01.02.009">
+                <common:shortDescription xml:lang="en">Eutrophication, terrestrial</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="05316e7a-b254-4bea-9cf0-6bf33eb5c630" type="LCIA method data set" uri="../lciamethods/05316e7a-b254-4bea-9cf0-6bf33eb5c630.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Ecotoxicity, freshwater</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c602c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c602c6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.011">
+                <common:shortDescription xml:lang="en">EF-particulate Matter</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6890-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6890-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Land use</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c611c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c611c6-def3-11e6-bf01-fe55135034f3.xml" version="01.04.000">
+                <common:shortDescription xml:lang="en">Acidification</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6110-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6110-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, fossils</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="6209b35f-9447-40b5-b68c-a1099e3674a0" type="LCIA method data set" uri="../lciamethods/6209b35f-9447-40b5-b68c-a1099e3674a0.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Climate change</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6494-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6494-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, minerals and metals</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c629d6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c629d6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.012">
+                <common:shortDescription xml:lang="en">Ozone depletion</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="2299222a-bbd8-474f-9d4f-4dd1f18aea7c" type="LCIA method data set" uri="../lciamethods/2299222a-bbd8-474f-9d4f-4dd1f18aea7c.xml" version="01.01.000">
+                <common:shortDescription xml:lang="en">Human toxicity, cancer</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c619fa-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c619fa-def3-11e6-bf01-fe55135034f3.xml" version="02.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication marine</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8" type="LCIA method data set" uri="../lciamethods/7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Human toxicity, non-cancer</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c610fe-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c610fe-def3-11e6-bf01-fe55135034f3.xml" version="02.01.000">
+                <common:shortDescription xml:lang="en">Photochemical ozone formation - human health</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <completenessElementaryFlows type="Climate change" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Ozone depletion" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Summer smog" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Eutrophication" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Acidification" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Human toxicity" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Freshwater ecotoxicity" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Seawater eco-toxicity" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Terrestric eco-toxicity" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Radioactivity" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Land use" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Non-renewable material resource depletion" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Renewable material resource consumption" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Non-renewable primary energy depletion" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Renewable primary energy consumption" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Particulate matter/respiratory inorganics" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Species depletion" value="No statement"/>
+            <completenessElementaryFlows type="Noise" value="No statement"/>
+        </completeness>
+        <complianceDeclarations>
+            <compliance>
+                <common:referenceToComplianceSystem refObjectId="2f8a3ebd-befc-4ea9-a6de-34bb6d426d2f" type="source data set" uri="../sources/2f8a3ebd-befc-4ea9-a6de-34bb6d426d2f.xml" version="00.00.001">
+                    <common:shortDescription>Environmental Footprint non-primary supporting data set</common:shortDescription>
+                </common:referenceToComplianceSystem>
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+                <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+            </compliance>
+            <compliance>
+                <common:referenceToComplianceSystem refObjectId="0eb2b770-2cb1-43cf-9fbc-215df36fe9f0" type="source data set" uri="../sources/0eb2b770-2cb1-43cf-9fbc-215df36fe9f0.xml" version="00.00.001">
+                    <common:shortDescription>Environmental Footprint 3.1</common:shortDescription>
+                </common:referenceToComplianceSystem>
+                <common:approvalOfOverallCompliance>Not defined</common:approvalOfOverallCompliance>
+                <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+                <common:methodologicalCompliance>Not defined</common:methodologicalCompliance>
+                <common:reviewCompliance>Not defined</common:reviewCompliance>
+                <common:documentationCompliance>Not defined</common:documentationCompliance>
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+            </compliance>
+        </complianceDeclarations>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <common:commissionerAndGoal>
+            <common:referenceToCommissioner refObjectId="cf7f0f79-a312-4b28-89ea-32a589b87f58" type="contact data set" uri="../contacts/cf7f0f79-a312-4b28-89ea-32a589b87f58.xml" version="01.00.000">
+                <common:shortDescription>European Commission, DG ENV B1</common:shortDescription>
+            </common:referenceToCommissioner>
+            <common:project>Provision of process-based 3.0 Environmental Footprint-compliant life cycle inventory datasets - Apparel 2 - contract number 070201/2020/840292/SER/ENV.B.1</common:project>
+            <common:intendedApplications>Implementation of regular Product Environmental Footprint (PEF) studies and Organisation Environmental Footprint (OEF) studies exclusively under the specified Product groups and sectors as defined in the Product Environmental Footprint Category Rules (PEFCR) and Organisation Environmental Footprint Sectorial Rules (OEFSR) listed in http://ec.europa.eu/environment/eussd/smgp/PEFCR_OEFSR.htm</common:intendedApplications>
+        </common:commissionerAndGoal>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet refObjectId="5eb0c12a-870c-5af7-a300-de1ef99afc9f" type="contact data set" uri="../contacts/5eb0c12a-870c-5af7-a300-de1ef99afc9f.xml" version="01.00.000">
+                <common:shortDescription>CADIS</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2024-07-13T15:44:55.649+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" type="source data set" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml" version="03.00.000">
+                <common:shortDescription>ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData refObjectId="5eb0c12a-870c-5af7-a300-de1ef99afc9f" type="contact data set" uri="../contacts/5eb0c12a-870c-5af7-a300-de1ef99afc9f.xml" version="01.00.000">
+                <common:shortDescription>CADIS</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2020-09-02T14:36:46.214668+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>01.01.000</common:dataSetVersion>
+            <common:referenceToPrecedingDataSetVersion refObjectId="f1c6deb0-5f8a-52fe-a670-b507b40b711a" type="process data set" uri="../processes/f1c6deb0-5f8a-52fe-a670-b507b40b711a.xml?version=01.00.000" version="01.00.000">
+                <common:shortDescription xml:lang="en">coating, solvent emulsion, 2 times (for 3 layers), elementary</common:shortDescription>
+            </common:referenceToPrecedingDataSetVersion>
+            <common:permanentDataSetURI/>
+            <common:workflowAndPublicationStatus>Data set finalised; entirely published</common:workflowAndPublicationStatus>
+            <common:registrationNumber/>
+            <common:referenceToOwnershipOfDataSet refObjectId="cdbab85b-40b1-5a9c-8131-46d43471d900" type="contact data set" uri="../contacts/cdbab85b-40b1-5a9c-8131-46d43471d900.xml" version="01.00.000">
+                <common:shortDescription>PRé Sustainability B.V.</common:shortDescription>
+            </common:referenceToOwnershipOfDataSet>
+            <common:copyright>true</common:copyright>
+            <common:referenceToEntitiesWithExclusiveAccess refObjectId="8b3e08f0-740a-43b1-aa8d-bec56c5daf6e" type="contact data set" uri="../contacts/8b3e08f0-740a-43b1-aa8d-bec56c5daf6e.xml" version="29.00.000">
+                <common:shortDescription>Final user</common:shortDescription>
+            </common:referenceToEntitiesWithExclusiveAccess>
+            <common:licenseType>Free of charge for some user types or use types</common:licenseType>
+            <common:accessRestrictions>Free of charge for all final users implementing a regular Product Environmental Footprint (PEF) studies and Organisation Environmental Footprint (OEF) studies exclusively under the specified Product groups and sectors as defined in the Product Environmental Footprint Category Rules (PEFCR) and Organisation Environmental Footprint Sectorial Rules (OEFSR) listed in http://ec.europa.eu/environment/eussd/smgp/PEFCR_OEFSR.htm and in accordance with the terms and conditions of the EULA (available at https://ecoinvent.lca-data.com/) exclusively until 31st December 2024. Any use of this dataset or any derivative data not within the specific context of one of the PEF/OEF projects or after the end of 2024 is not permitted.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange dataSetInternalID="0">
+            <referenceToFlowDataSet refObjectId="e2d68936-0fdb-5b63-ae5a-f7c8aaca7a61" type="flow data set" uri=".../flows/e2d68936-0fdb-5b63-ae5a-f7c8aaca7a61.xml">
+                <common:shortDescription>coating, solvent emulsion, 2 times (for 3 layers) // coating, solvent emulsion, 2 times (for 3 layers) // glo, elementary</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1</meanAmount>
+            <resultingAmount>1</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="1">
+            <referenceToFlowDataSet refObjectId="0342f5e5-b53e-4cec-9e67-fb197f24fff0" type="flow data set">
+                <common:shortDescription>Water, Emissions to air, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.12E-05</meanAmount>
+            <resultingAmount>6.12E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="2">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AL</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0681885151412174E-07</meanAmount>
+            <resultingAmount>1.0681885151412174E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="3">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AT</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.3762931928451298E-06</meanAmount>
+            <resultingAmount>1.3762931928451298E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="4">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BA</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.3316486099091257E-07</meanAmount>
+            <resultingAmount>1.3316486099091257E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="5">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BE</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.6565830381928366E-06</meanAmount>
+            <resultingAmount>1.6565830381928366E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="6">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BG</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.241984509021822E-07</meanAmount>
+            <resultingAmount>4.241984509021822E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="7">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BY</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.508145998436348E-07</meanAmount>
+            <resultingAmount>5.508145998436348E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="8">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CH</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.6414588344499598E-06</meanAmount>
+            <resultingAmount>1.6414588344499598E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="9">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CZ</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.1424437842349058E-06</meanAmount>
+            <resultingAmount>1.1424437842349058E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="10">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DE</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.2433432933833226E-05</meanAmount>
+            <resultingAmount>1.2433432933833226E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="11">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DK</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.015659864013627E-07</meanAmount>
+            <resultingAmount>9.015659864013627E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="12">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>EE</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.2311000376835222E-07</meanAmount>
+            <resultingAmount>1.2311000376835222E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="13">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ES</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.335536055152262E-06</meanAmount>
+            <resultingAmount>5.335536055152262E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="14">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FI</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.690170731625707E-07</meanAmount>
+            <resultingAmount>7.690170731625707E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="15">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FR</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.77052009893354E-06</meanAmount>
+            <resultingAmount>8.77052009893354E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="16">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GB</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.715769560218942E-06</meanAmount>
+            <resultingAmount>8.715769560218942E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="17">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.7412677070025983E-06</meanAmount>
+            <resultingAmount>1.7412677070025983E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="18">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GR</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.914742627152712E-07</meanAmount>
+            <resultingAmount>9.914742627152712E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="19">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HR</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.1879204948612394E-07</meanAmount>
+            <resultingAmount>3.1879204948612394E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="20">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HU</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.357127661447653E-07</meanAmount>
+            <resultingAmount>8.357127661447653E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="21">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IE</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.002259290585269E-07</meanAmount>
+            <resultingAmount>9.002259290585269E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="22">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IS</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.136953221818408E-08</meanAmount>
+            <resultingAmount>5.136953221818408E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="23">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IT</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.50388272474059E-06</meanAmount>
+            <resultingAmount>7.50388272474059E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="24">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LT</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.6286114987279143E-07</meanAmount>
+            <resultingAmount>2.6286114987279143E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="25">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LU</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.824790018256701E-07</meanAmount>
+            <resultingAmount>1.824790018256701E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="26">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LV</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.5499962103459775E-07</meanAmount>
+            <resultingAmount>1.5499962103459775E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="27">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MD</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.201313069953507E-08</meanAmount>
+            <resultingAmount>8.201313069953507E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="28">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ME</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.303949689969252E-08</meanAmount>
+            <resultingAmount>3.303949689969252E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="29">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MK</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.125128861003953E-08</meanAmount>
+            <resultingAmount>9.125128861003953E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="30">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MT</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.047896491051608E-08</meanAmount>
+            <resultingAmount>5.047896491051608E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="31">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NL</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.781579885165588E-06</meanAmount>
+            <resultingAmount>2.781579885165588E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="32">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NO</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.052911368547632E-06</meanAmount>
+            <resultingAmount>1.052911368547632E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="33">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PL</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.201284634044578E-06</meanAmount>
+            <resultingAmount>3.201284634044578E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="34">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PT</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0101201714810403E-06</meanAmount>
+            <resultingAmount>1.0101201714810403E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="35">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>RO</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.402370720321864E-06</meanAmount>
+            <resultingAmount>1.402370720321864E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="36">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>RS</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.480035254194665E-07</meanAmount>
+            <resultingAmount>3.480035254194665E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="37">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SE</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.5193380919492605E-06</meanAmount>
+            <resultingAmount>1.5193380919492605E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="38">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SI</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.1516019850269376E-07</meanAmount>
+            <resultingAmount>2.1516019850269376E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="39">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SK</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.050130193068687E-07</meanAmount>
+            <resultingAmount>5.050130193068687E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="40">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SM</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.2853833638387E-09</meanAmount>
+            <resultingAmount>6.2853833638387E-09</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="41">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>UA</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.4807033068525336E-06</meanAmount>
+            <resultingAmount>1.4807033068525336E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="42">
+            <referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-ac04-0050c2490048" type="flow data set">
+                <common:shortDescription>water vapour, Emissions to air, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>15.658783494929803</meanAmount>
+            <resultingAmount>15.658783494929803</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="43">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AE</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.0391646128423152E-06</meanAmount>
+            <resultingAmount>2.0391646128423152E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="44">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AF</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.0940488536603975E-07</meanAmount>
+            <resultingAmount>2.0940488536603975E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="45">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AG</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.1151642198129906E-09</meanAmount>
+            <resultingAmount>6.1151642198129906E-09</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="46">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AM</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.442558311791425E-08</meanAmount>
+            <resultingAmount>9.442558311791425E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="47">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AO</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.343136867742621E-07</meanAmount>
+            <resultingAmount>6.343136867742621E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="48">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AR</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.8269914422328823E-06</meanAmount>
+            <resultingAmount>2.8269914422328823E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="49">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AU</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.490816164335092E-06</meanAmount>
+            <resultingAmount>3.490816164335092E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="50">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AW</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.227947947598966E-08</meanAmount>
+            <resultingAmount>1.227947947598966E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="51">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AZ</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.780984703474447E-07</meanAmount>
+            <resultingAmount>4.780984703474447E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="52">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BB</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.4874115020194304E-08</meanAmount>
+            <resultingAmount>1.4874115020194304E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="53">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BD</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.687725766482406E-06</meanAmount>
+            <resultingAmount>1.687725766482406E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="54">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BF</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0076376266008237E-07</meanAmount>
+            <resultingAmount>1.0076376266008237E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="55">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BH</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.1455209151934458E-07</meanAmount>
+            <resultingAmount>2.1455209151934458E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="56">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BI</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.397741813258814E-08</meanAmount>
+            <resultingAmount>2.397741813258814E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="57">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BJ</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.283599569768072E-08</meanAmount>
+            <resultingAmount>9.283599569768072E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="58">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BN</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.897011446719566E-08</meanAmount>
+            <resultingAmount>9.897011446719566E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="59">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BO</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.3820748327150012E-07</meanAmount>
+            <resultingAmount>2.3820748327150012E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="60">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BR</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.86056469063056E-06</meanAmount>
+            <resultingAmount>9.86056469063056E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="61">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BS</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.065232877881013E-08</meanAmount>
+            <resultingAmount>4.065232877881013E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="62">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BT</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.082157334907621E-08</meanAmount>
+            <resultingAmount>2.082157334907621E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="63">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BW</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0618565067357347E-07</meanAmount>
+            <resultingAmount>1.0618565067357347E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="64">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BZ</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.458306390299662E-09</meanAmount>
+            <resultingAmount>8.458306390299662E-09</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="65">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CA</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.18216831663788E-06</meanAmount>
+            <resultingAmount>5.18216831663788E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="66">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CD</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.0233382501711906E-07</meanAmount>
+            <resultingAmount>2.0233382501711906E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="67">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CF</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.328375076667335E-08</meanAmount>
+            <resultingAmount>1.328375076667335E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="68">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CG</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.839085773936766E-08</meanAmount>
+            <resultingAmount>7.839085773936766E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="69">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CI</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.684705581013843E-07</meanAmount>
+            <resultingAmount>2.684705581013843E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="70">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CL</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.2683612586516481E-06</meanAmount>
+            <resultingAmount>1.2683612586516481E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="71">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CM</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.3269532599293617E-07</meanAmount>
+            <resultingAmount>2.3269532599293617E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="72">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CN</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.4282335549269536E-05</meanAmount>
+            <resultingAmount>5.4282335549269536E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="73">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CO</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.9845235233798148E-06</meanAmount>
+            <resultingAmount>1.9845235233798148E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="74">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CR</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.4785985280749693E-07</meanAmount>
+            <resultingAmount>2.4785985280749693E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="75">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CV</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0367253782634279E-08</meanAmount>
+            <resultingAmount>1.0367253782634279E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="76">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CY</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.52997245383882E-08</meanAmount>
+            <resultingAmount>9.52997245383882E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="77">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DJ</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.3335458607109605E-08</meanAmount>
+            <resultingAmount>1.3335458607109605E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="78">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DM</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.528208599445641E-09</meanAmount>
+            <resultingAmount>2.528208599445641E-09</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="79">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DO</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.6261023502866327E-07</meanAmount>
+            <resultingAmount>4.6261023502866327E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="80">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DZ</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.6084330059898242E-06</meanAmount>
+            <resultingAmount>1.6084330059898242E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="81">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>EC</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.62261874485656E-07</meanAmount>
+            <resultingAmount>5.62261874485656E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="82">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>EG</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.1846714415721176E-06</meanAmount>
+            <resultingAmount>3.1846714415721176E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="83">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ER</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.6914471868570814E-08</meanAmount>
+            <resultingAmount>1.6914471868570814E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="84">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ET</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.860646551693023E-07</meanAmount>
+            <resultingAmount>4.860646551693023E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="85">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FJ</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.058448116074742E-08</meanAmount>
+            <resultingAmount>3.058448116074742E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="86">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GA</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.152743876557785E-08</meanAmount>
+            <resultingAmount>9.152743876557785E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="87">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GD</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.743113414934461E-09</meanAmount>
+            <resultingAmount>4.743113414934461E-09</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="88">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GE</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.3380159148513322E-07</meanAmount>
+            <resultingAmount>1.3380159148513322E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="89">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GH</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.973486478262239E-07</meanAmount>
+            <resultingAmount>3.973486478262239E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="90">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GM</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.4371641551478117E-08</meanAmount>
+            <resultingAmount>1.4371641551478117E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="91">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GN</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.156213363567507E-08</meanAmount>
+            <resultingAmount>7.156213363567507E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="92">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GQ</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0647246463073631E-07</meanAmount>
+            <resultingAmount>1.0647246463073631E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="93">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GT</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.8498648139821947E-07</meanAmount>
+            <resultingAmount>3.8498648139821947E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="94">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GW</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.653551423489425E-09</meanAmount>
+            <resultingAmount>8.653551423489425E-09</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="95">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GY</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.7284521186766515E-08</meanAmount>
+            <resultingAmount>2.7284521186766515E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="96">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HN</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.343939302612936E-07</meanAmount>
+            <resultingAmount>1.343939302612936E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="97">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HT</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.96480036504239E-08</meanAmount>
+            <resultingAmount>9.96480036504239E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="98">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ID</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.340303493729093E-06</meanAmount>
+            <resultingAmount>8.340303493729093E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="99">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IL</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.233396516369629E-07</meanAmount>
+            <resultingAmount>9.233396516369629E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="100">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IN</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.2262403125636908E-05</meanAmount>
+            <resultingAmount>2.2262403125636908E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="101">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IQ</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.3900881872592303E-06</meanAmount>
+            <resultingAmount>1.3900881872592303E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="102">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IR</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.929421710560211E-06</meanAmount>
+            <resultingAmount>3.929421710560211E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="103">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>JM</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.247211672134501E-08</meanAmount>
+            <resultingAmount>8.247211672134501E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="104">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>JO</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.719219121210875E-07</meanAmount>
+            <resultingAmount>2.719219121210875E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="105">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>JP</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.6109425524520457E-05</meanAmount>
+            <resultingAmount>1.6109425524520457E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="106">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>KE</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.750947519038715E-07</meanAmount>
+            <resultingAmount>4.750947519038715E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="107">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>KG</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.890456046814388E-08</meanAmount>
+            <resultingAmount>7.890456046814388E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="108">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>KH</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.6053939950562255E-07</meanAmount>
+            <resultingAmount>1.6053939950562255E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="109">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>KM</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.62180842518848E-09</meanAmount>
+            <resultingAmount>6.62180842518848E-09</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="110">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>KN</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.946043060243046E-09</meanAmount>
+            <resultingAmount>3.946043060243046E-09</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="111">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>KR</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.9995098246197325E-06</meanAmount>
+            <resultingAmount>5.9995098246197325E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="112">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>KW</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.559902598358028E-07</meanAmount>
+            <resultingAmount>7.559902598358028E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="113">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>KZ</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.2985392195157037E-06</meanAmount>
+            <resultingAmount>1.2985392195157037E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="114">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LA</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.227775117563797E-07</meanAmount>
+            <resultingAmount>1.227775117563797E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="115">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LB</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.994468128847559E-07</meanAmount>
+            <resultingAmount>2.994468128847559E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="116">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LC</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.049225798572677E-09</meanAmount>
+            <resultingAmount>8.049225798572677E-09</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="117">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LK</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.376467026137216E-07</meanAmount>
+            <resultingAmount>7.376467026137216E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="118">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LR</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.8308613238112345E-08</meanAmount>
+            <resultingAmount>1.8308613238112345E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="119">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LS</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.7778969883344604E-08</meanAmount>
+            <resultingAmount>1.7778969883344604E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="120">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LY</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.780039771650072E-07</meanAmount>
+            <resultingAmount>3.780039771650072E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="121">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MA</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.836526424100809E-07</meanAmount>
+            <resultingAmount>7.836526424100809E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="122">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MG</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.2111253766969233E-07</meanAmount>
+            <resultingAmount>1.2111253766969233E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="123">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ML</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0995799363009918E-07</meanAmount>
+            <resultingAmount>1.0995799363009918E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="124">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MM</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.994867886764287E-07</meanAmount>
+            <resultingAmount>6.994867886764287E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="125">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MN</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.783065563850407E-08</meanAmount>
+            <resultingAmount>9.783065563850407E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="126">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MR</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.768176504714279E-08</meanAmount>
+            <resultingAmount>5.768176504714279E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="127">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MU</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.701631150293174E-08</meanAmount>
+            <resultingAmount>7.701631150293174E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="128">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MW</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.564326173356676E-08</meanAmount>
+            <resultingAmount>5.564326173356676E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="129">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MX</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.024513716149236E-06</meanAmount>
+            <resultingAmount>7.024513716149236E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="130">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MY</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.346005535173346E-06</meanAmount>
+            <resultingAmount>2.346005535173346E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="131">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MZ</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.947949992453265E-08</meanAmount>
+            <resultingAmount>9.947949992453265E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="132">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NA</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.194322086565061E-08</meanAmount>
+            <resultingAmount>7.194322086565061E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="133">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NE</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.112740021998616E-08</meanAmount>
+            <resultingAmount>7.112740021998616E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="134">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NG</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.9526562466740523E-06</meanAmount>
+            <resultingAmount>2.9526562466740523E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="135">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NI</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.938088728247917E-08</meanAmount>
+            <resultingAmount>9.938088728247917E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="136">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NP</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.2072161079093202E-07</meanAmount>
+            <resultingAmount>2.2072161079093202E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="137">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NZ</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.474366940143628E-07</meanAmount>
+            <resultingAmount>5.474366940143628E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="138">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>OM</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.69078502153824E-07</meanAmount>
+            <resultingAmount>4.69078502153824E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="139">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PA</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.914630696312896E-07</meanAmount>
+            <resultingAmount>2.914630696312896E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="140">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PE</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.1208618404000185E-06</meanAmount>
+            <resultingAmount>1.1208618404000185E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="141">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PG</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.44050062178244E-08</meanAmount>
+            <resultingAmount>9.44050062178244E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="142">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PH</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.272203140660581E-06</meanAmount>
+            <resultingAmount>2.272203140660581E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="143">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PK</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.72491847436548E-06</meanAmount>
+            <resultingAmount>2.72491847436548E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="144">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PR</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.856424365260334E-07</meanAmount>
+            <resultingAmount>3.856424365260334E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="145">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PS</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.298386648205103E-08</meanAmount>
+            <resultingAmount>7.298386648205103E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="146">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PY</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.4272034166175064E-07</meanAmount>
+            <resultingAmount>2.4272034166175064E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="147">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>QA</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.782793213551752E-07</meanAmount>
+            <resultingAmount>8.782793213551752E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="148">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>RW</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.122540630490702E-08</meanAmount>
+            <resultingAmount>6.122540630490702E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="149">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SA</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.178395725269848E-06</meanAmount>
+            <resultingAmount>5.178395725269848E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="150">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SB</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.690800795726462E-09</meanAmount>
+            <resultingAmount>4.690800795726462E-09</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="151">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SD</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.433134868357848E-07</meanAmount>
+            <resultingAmount>5.433134868357848E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="152">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SG</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.5083328267882523E-06</meanAmount>
+            <resultingAmount>1.5083328267882523E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="153">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SL</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.458013603078324E-08</meanAmount>
+            <resultingAmount>3.458013603078324E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="154">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SN</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.3538972782952815E-07</meanAmount>
+            <resultingAmount>1.3538972782952815E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="155">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SR</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.8197647623848863E-08</meanAmount>
+            <resultingAmount>2.8197647623848863E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="156">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ST</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.2300832063945255E-09</meanAmount>
+            <resultingAmount>2.2300832063945255E-09</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="157">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SV</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.503940556468749E-07</meanAmount>
+            <resultingAmount>1.503940556468749E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="158">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SZ</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.035052697178112E-08</meanAmount>
+            <resultingAmount>3.035052697178112E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="159">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TC</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.71167693968064E-09</meanAmount>
+            <resultingAmount>2.71167693968064E-09</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="160">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TD</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.534501716119254E-08</meanAmount>
+            <resultingAmount>7.534501716119254E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="161">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TG</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.121167143103605E-08</meanAmount>
+            <resultingAmount>3.121167143103605E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="162">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TH</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.4646134728451894E-06</meanAmount>
+            <resultingAmount>3.4646134728451894E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="163">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TJ</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.819775809765443E-08</meanAmount>
+            <resultingAmount>7.819775809765443E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="164">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TL</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0028685525521434E-08</meanAmount>
+            <resultingAmount>1.0028685525521434E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="165">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TM</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.268020619208575E-07</meanAmount>
+            <resultingAmount>2.268020619208575E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="166">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TN</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.7691765052143556E-07</meanAmount>
+            <resultingAmount>3.7691765052143556E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="167">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TO</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.8802170098040075E-09</meanAmount>
+            <resultingAmount>1.8802170098040075E-09</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="168">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TR</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.867313829572537E-06</meanAmount>
+            <resultingAmount>5.867313829572537E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="169">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TT</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.292283451366455E-07</meanAmount>
+            <resultingAmount>1.292283451366455E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="170">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>TZ</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.659965112463872E-07</meanAmount>
+            <resultingAmount>3.659965112463872E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="171">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>UG</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.5356769570641623E-07</meanAmount>
+            <resultingAmount>2.5356769570641623E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="172">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>US</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.715632791666668E-05</meanAmount>
+            <resultingAmount>5.715632791666668E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="173">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>UY</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.1629757785468274E-07</meanAmount>
+            <resultingAmount>2.1629757785468274E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="174">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>UZ</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.043652501066235E-07</meanAmount>
+            <resultingAmount>6.043652501066235E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="175">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>VC</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.065763827556631E-09</meanAmount>
+            <resultingAmount>4.065763827556631E-09</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="176">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>VE</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.657902073765187E-06</meanAmount>
+            <resultingAmount>1.657902073765187E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="177">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>VN</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.7171551273152117E-06</meanAmount>
+            <resultingAmount>1.7171551273152117E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="178">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>VU</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.5826878349682473E-09</meanAmount>
+            <resultingAmount>2.5826878349682473E-09</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="179">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>WS</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6739526966225167E-09</meanAmount>
+            <resultingAmount>3.6739526966225167E-09</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="180">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>YE</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.023503467179825E-07</meanAmount>
+            <resultingAmount>3.023503467179825E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="181">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ZA</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.2104234841808095E-06</meanAmount>
+            <resultingAmount>2.2104234841808095E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="182">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ZM</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.7146196266097144E-07</meanAmount>
+            <resultingAmount>1.7146196266097144E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="183">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ZW</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.1137407955224596E-07</meanAmount>
+            <resultingAmount>1.1137407955224596E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="184">
+            <referenceToFlowDataSet refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" type="flow data set">
+                <common:shortDescription>Water, Emissions to water, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>RU</location>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.1610537401886203E-05</meanAmount>
+            <resultingAmount>1.1610537401886203E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="185">
+            <referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-acdb-0050c2490048" type="flow data set">
+                <common:shortDescription>dimethyl formamide, Emissions to air, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.1289490651192779</meanAmount>
+            <resultingAmount>0.1289490651192779</resultingAmount>
+        </exchange>
+    </exchanges>
+    <LCIAResults>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c619fa-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c619fa-def3-11e6-bf01-fe55135034f3.xml" version="02.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication marine</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Eutrophication marine</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="05316e7a-b254-4bea-9cf0-6bf33eb5c630" type="LCIA method data set" uri="../lciamethods/05316e7a-b254-4bea-9cf0-6bf33eb5c630.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Ecotoxicity, freshwater</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.07458413926499034</meanAmount>
+            <generalComment>Ecotoxicity, freshwater</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6890-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6890-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Land use</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Land use</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad66ce-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad66ce-c78d-11e6-9d9d-cec0c932ce01.xml" version="03.00.014">
+                <common:shortDescription xml:lang="en">Water use</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>-0.009579715313566339</meanAmount>
+            <generalComment>Water use</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6494-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6494-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, minerals and metals</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Resource use, minerals and metals</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6110-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6110-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, fossils</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Resource use, fossils</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="6209b35f-9447-40b5-b68c-a1099e3674a0" type="LCIA method data set" uri="../lciamethods/6209b35f-9447-40b5-b68c-a1099e3674a0.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Climate change</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Climate change</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c629d6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c629d6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.012">
+                <common:shortDescription xml:lang="en">Ozone depletion</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Ozone depletion</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="2299222a-bbd8-474f-9d4f-4dd1f18aea7c" type="LCIA method data set" uri="../lciamethods/2299222a-bbd8-474f-9d4f-4dd1f18aea7c.xml" version="01.01.000">
+                <common:shortDescription xml:lang="en">Human toxicity, cancer</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Human toxicity, cancer</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8" type="LCIA method data set" uri="../lciamethods/7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Human toxicity, non-cancer</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>4.7824629271437785E-9</meanAmount>
+            <generalComment>Human toxicity, non-cancer</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c602c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c602c6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.011">
+                <common:shortDescription xml:lang="en">EF-particulate Matter</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>EF-particulate Matter</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c632be-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c632be-def3-11e6-bf01-fe55135034f3.xml" version="01.00.011">
+                <common:shortDescription xml:lang="en">Ionising radiation, human health</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Ionising radiation, human health</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c610fe-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c610fe-def3-11e6-bf01-fe55135034f3.xml" version="02.01.000">
+                <common:shortDescription xml:lang="en">Photochemical ozone formation - human health</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Photochemical ozone formation - human health</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c611c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c611c6-def3-11e6-bf01-fe55135034f3.xml" version="01.04.000">
+                <common:shortDescription xml:lang="en">Acidification</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Acidification</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c614d2-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c614d2-def3-11e6-bf01-fe55135034f3.xml" version="01.02.009">
+                <common:shortDescription xml:lang="en">Eutrophication, terrestrial</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Eutrophication, terrestrial</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b53ec18f-7377-4ad3-86eb-cc3f4f276b2b" type="LCIA method data set" uri="../lciamethods/b53ec18f-7377-4ad3-86eb-cc3f4f276b2b.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication, freshwater</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Eutrophication, freshwater</generalComment>
+        </LCIAResult>
+    </LCIAResults>
+</processDataSet>

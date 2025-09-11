@@ -1,0 +1,2543 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<processDataSet xmlns="http://lca.jrc.it/ILCD/Process" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:ext="http://eplca.jrc.ec.europa.eu/ILCD/Extensions/2017" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" locations="../ILCDLocations.xml" version="1.1" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>5ab18914-4597-5e06-953d-090f59bdf779</common:UUID>
+            <name>
+                <baseName>softwood forestry, elementary</baseName>
+                <treatmentStandardsRoutes>technology mix</treatmentStandardsRoutes>
+                <mixAndLocationTypes>production mix, at forest</mixAndLocationTypes>
+                <functionalUnitFlowProperties>measured as solid wood under bark</functionalUnitFlowProperties>
+            </name>
+            <identifierOfSubDataSet/>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0">Other Services</common:class>
+                    <common:class level="1">Other services</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment>Notice: this data set supersedes the EF3.0-compliant version (see link under "preceding data set version" below calculated with the EF3.0). The life cycle inventory is not changed from the original EF3.0 data set. The LCIA results are calculated based on the EF3.1 methods which provide updated characterisation factors in the following impact categories: Climate Change, Ecotoxicity freshwater, Photochemical Ozone Formation, Acidification, Human Toxicity non-cancer, and Human Toxicity cancer. The review report and the data quality ratings refer to the original results. The data set has been updated by the European Commission on the basis of the original EF3.0 data set delivered by the data provider.This sub-process has limited documentation only. For all detailed documentation of the full model to which this data set belongs (such as DQRs, review reports and other technical documentation), please see this process: softwood forestry - EU+EFTA+UK [UUID: 4784d49e-d4b3-5702-b16e-fc67a880d145]</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>0</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time>
+            <common:referenceYear>2018</common:referenceYear>
+            <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="EU+EFTA+UK">
+                <descriptionOfRestrictions/>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses>The activity of pine cultivation starts with site preparation, including seedling and/or natural regeneration, thinnings, and the final felling. This dataset is modelled as the average of the activities in Sweeden, Germany and Finland, weighted by their production volumes. These regions represent 49% of the total removals of softwood (roundwood) in Europe during 2019 (eurostat, 2021).
+Softwood removals during 2019:
+Sweeden: 66,048,000 m³ 
+Germany: 56,052,860 m³ 
+Finland: 50,152,21 m³ 
+European Union – 28 countries: 352,966,200 m³
+Average dry wood density (kg dry matter/ dry volume): 434.9 kg/m³
+References:
+Eurostat (2021). Roundwood removals by type of wood and assortment. Tree species: Coniferous. Wood products: Roundwood under bark. Available at: ec.europa.eu/eurostat/databrowser/bookmark/2fe47d27-a1ea-4028-a4cc-06c1f8725af0?lang=en [Accessed on 25/06/2021]</technologyDescriptionAndIncludedProcesses>
+            <technologicalApplicability>na</technologicalApplicability>
+            <referenceToTechnologyFlowDiagrammOrPicture refObjectId="4562465a-92b8-5dc0-b302-692e4e067f38" type="source data set" uri="../sources/4562465a-92b8-5dc0-b302-692e4e067f38.xml" version="04.00.001">
+                <common:shortDescription>Diagram of data for chemicals EF3.0</common:shortDescription>
+            </referenceToTechnologyFlowDiagrammOrPicture>
+        </technology>
+        <mathematicalRelations>
+            <modelDescription/>
+        </mathematicalRelations>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, single operation</typeOfDataSet>
+            <LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+            <deviationsFromLCIMethodPrinciple>The background data uses: 
+- the \xe2\x80\x9cRecycled content cut-off\xe2\x80\x9d approach to allocate end-of-life by-products and secondary materials. This allocation is explained in the description of the recycled content system model (http://www.ecoinvent.org/database/system-models-in-ecoinvent-3/cut-off-system-model/allocation-cut-off-by-classification.html).
+OR
+- EF compliant data</deviationsFromLCIMethodPrinciple>
+            <LCIMethodApproaches>Allocation - market value</LCIMethodApproaches>
+            <deviationsFromLCIMethodApproaches>Background data: 
+- the \xe2\x80\x9cRecycled content cut-off\xe2\x80\x9d approach to allocate end-of-life by-products and secondary materials. This allocation is explained in the description of the recycled content system model (http://www.ecoinvent.org/database/system-models-in-ecoinvent-3/cut-off-system-model/allocation-cut-off-by-classification.html). The ecoinvent database mostly relies on “Allocation – market values” apart for few exceptions particularly in the energy sector. ecoinvent energy data is replaced with EF3.0 core data as per the EF guidelines version 2.0.
+OR
+- EF compliant data</deviationsFromLCIMethodApproaches>
+            <modellingConstants>All modelling constants follow the requirements listed in the Tender Specifications 070201/2020/SER/ENV.B1. Completeness: There are no intentional cut-offs in the inventory no matter how small their contribution to all the EF impact categories is. Eventual cut-offs are in compliance with the Guide for EF compliant data sets (JRC 2020), i.e. only if below the 3% cut-off rule. Water use: water use is modelled at country level using separate flows for water withdrawal, water release and water evaporation. Handling multi-functional processes: the following PEF multi- functionality decision hierarchy is applied for resolving all multi- functionality problems: (1) subdivision or system expansion; (2) allocation based on a relevant underlying physical relationship (substitution may apply here); (3) allocation based on some other relationship. Direct land use change: GHG emissions from direct LUC allocated to good/service for 20 years after the LUC occurs, with IPCC default values. Carbon storage and delayed emissions: credits associated with temporary (carbon) storage or delayed emissions up to 300 years are not be considered. Emissions off-setting: are not included. Capital goods (including infrastructures) and their End of life: they are included. System boundaries: system boundaries include all processes linked to the product supply chain (e.g. maintenance). Time period: emissions and removals are modelled as if released or removed at the beginning of the assessment method. Fossil and biogenic carbon emissions and removals: removals and emissions are modelled as follows: All GHG emissions from fossil fuels (including peat and limestone) are modelled consistently with the most updated ILCD list of elementary flows. The non-fossil (biogenic) carbon flows are modelled consistently with the most updated ILCD list of elementary flows.</modellingConstants>
+            <deviationsFromModellingConstants>None</deviationsFromModellingConstants>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <dataCutOffAndCompletenessPrinciples>There are no intentional cut-offs in the inventory no matter how small their contribution to all the EF impact categories is. Eventual cut-offs are in compliance with the Guide for EF compliant data sets (JRC 2020), i.e. only if below the 3% cut-off rule. The dataset dry mass and water balance has been checked to ensure the inventory is complete. Capital goods (e.g. infrastructure) and their end-of-life are included.</dataCutOffAndCompletenessPrinciples>
+            <deviationsFromCutOffAndCompletenessPrinciples>None</deviationsFromCutOffAndCompletenessPrinciples>
+            <dataSelectionAndCombinationPrinciples>These datasets include, in both their foreground and background data, links to EF3.0 compliant data.
+The relevant background data on energy, transport, and End of Life are from the LCDN data node (http://lcdn.thinkstep.com/Node/).
+All other background data in the supply of this product for which no EF3.0 process was available are from ecoinvent v3.7 database (www.ecoinvent.org) or other data sources.</dataSelectionAndCombinationPrinciples>
+            <deviationsFromSelectionAndCombinationPrinciples>None</deviationsFromSelectionAndCombinationPrinciples>
+            <dataTreatmentAndExtrapolationsPrinciples>Several data sources have been used to model the inventory.</dataTreatmentAndExtrapolationsPrinciples>
+            <deviationsFromTreatmentAndExtrapolationPrinciples>None</deviationsFromTreatmentAndExtrapolationPrinciples>
+            <referenceToDataSource refObjectId="d4fe7d8a-1f8c-591d-a31f-f58d2f888e3e" type="source data set" uri="../sources/d4fe7d8a-1f8c-591d-a31f-f58d2f888e3e.xml" version="01.00.000">
+                <common:shortDescription>Background Data for Representative products and organisations. EF 3.0 compliant (data stock)</common:shortDescription>
+            </referenceToDataSource>
+            <referenceToDataSource refObjectId="d91723e1-9067-558d-8ba7-cf7aa16ce0df" type="source data set" uri="../sources/d91723e1-9067-558d-8ba7-cf7aa16ce0df.xml" version="01.00.000">
+                <common:shortDescription>Eurostat (2021). Roundwood removals by type of wood and assortment. Tree species: Coniferous. Wood products: Roundwood under bark. Available at: ec.europa.eu/eurostat/databrowser/bookmark/2fe47d27-a1ea-4028-a4cc-06c1f8725af0?lang=en [Accessed on 25/06/2021]</common:shortDescription>
+            </referenceToDataSource>
+            <annualSupplyOrProductionVolume/>
+            <samplingProcedure/>
+            <dataCollectionPeriod/>
+            <uncertaintyAdjustments>None</uncertaintyAdjustments>
+            <useAdviceForDataSet>This data set is a supporting sub-data set and must be used exclusively as sub-data set of its corresponding level-1 partly disaggregated data set (see “General comment” field for exact name and UUID).</useAdviceForDataSet>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <completeness>
+            <completenessProductModel>All relevant flows quantified</completenessProductModel>
+                  
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b53ec18f-7377-4ad3-86eb-cc3f4f276b2b" type="LCIA method data set" uri="../lciamethods/b53ec18f-7377-4ad3-86eb-cc3f4f276b2b.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication, freshwater</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c632be-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c632be-def3-11e6-bf01-fe55135034f3.xml" version="01.00.011">
+                <common:shortDescription xml:lang="en">Ionising radiation, human health</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad66ce-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad66ce-c78d-11e6-9d9d-cec0c932ce01.xml" version="03.00.014">
+                <common:shortDescription xml:lang="en">Water use</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c614d2-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c614d2-def3-11e6-bf01-fe55135034f3.xml" version="01.02.009">
+                <common:shortDescription xml:lang="en">Eutrophication, terrestrial</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="05316e7a-b254-4bea-9cf0-6bf33eb5c630" type="LCIA method data set" uri="../lciamethods/05316e7a-b254-4bea-9cf0-6bf33eb5c630.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Ecotoxicity, freshwater</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c602c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c602c6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.011">
+                <common:shortDescription xml:lang="en">EF-particulate Matter</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6890-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6890-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Land use</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c611c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c611c6-def3-11e6-bf01-fe55135034f3.xml" version="01.04.000">
+                <common:shortDescription xml:lang="en">Acidification</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6110-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6110-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, fossils</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="6209b35f-9447-40b5-b68c-a1099e3674a0" type="LCIA method data set" uri="../lciamethods/6209b35f-9447-40b5-b68c-a1099e3674a0.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Climate change</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6494-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6494-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, minerals and metals</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c629d6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c629d6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.012">
+                <common:shortDescription xml:lang="en">Ozone depletion</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="2299222a-bbd8-474f-9d4f-4dd1f18aea7c" type="LCIA method data set" uri="../lciamethods/2299222a-bbd8-474f-9d4f-4dd1f18aea7c.xml" version="01.01.000">
+                <common:shortDescription xml:lang="en">Human toxicity, cancer</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c619fa-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c619fa-def3-11e6-bf01-fe55135034f3.xml" version="02.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication marine</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8" type="LCIA method data set" uri="../lciamethods/7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Human toxicity, non-cancer</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c610fe-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c610fe-def3-11e6-bf01-fe55135034f3.xml" version="02.01.000">
+                <common:shortDescription xml:lang="en">Photochemical ozone formation - human health</common:shortDescription>
+            </referenceToSupportedImpactAssessmentMethods>
+            <completenessElementaryFlows type="Climate change" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Ozone depletion" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Summer smog" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Eutrophication" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Acidification" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Human toxicity" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Freshwater ecotoxicity" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Seawater eco-toxicity" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Terrestric eco-toxicity" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Radioactivity" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Land use" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Non-renewable material resource depletion" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Renewable material resource consumption" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Non-renewable primary energy depletion" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Renewable primary energy consumption" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Particulate matter/respiratory inorganics" value="All relevant flows quantified"/>
+            <completenessElementaryFlows type="Species depletion" value="No statement"/>
+            <completenessElementaryFlows type="Noise" value="No statement"/>
+        </completeness>
+        <complianceDeclarations>
+            <compliance>
+                <common:referenceToComplianceSystem refObjectId="2f8a3ebd-befc-4ea9-a6de-34bb6d426d2f" type="source data set" uri="../sources/2f8a3ebd-befc-4ea9-a6de-34bb6d426d2f.xml" version="00.00.001">
+                    <common:shortDescription>Environmental Footprint non-primary supporting data set</common:shortDescription>
+                </common:referenceToComplianceSystem>
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+                <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+            </compliance>
+            <compliance>
+                <common:referenceToComplianceSystem refObjectId="0eb2b770-2cb1-43cf-9fbc-215df36fe9f0" type="source data set" uri="../sources/0eb2b770-2cb1-43cf-9fbc-215df36fe9f0.xml" version="00.00.001">
+                    <common:shortDescription>Environmental Footprint 3.1</common:shortDescription>
+                </common:referenceToComplianceSystem>
+                <common:approvalOfOverallCompliance>Not defined</common:approvalOfOverallCompliance>
+                <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+                <common:methodologicalCompliance>Not defined</common:methodologicalCompliance>
+                <common:reviewCompliance>Not defined</common:reviewCompliance>
+                <common:documentationCompliance>Not defined</common:documentationCompliance>
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+            </compliance>
+        </complianceDeclarations>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <common:commissionerAndGoal>
+            <common:referenceToCommissioner refObjectId="cf7f0f79-a312-4b28-89ea-32a589b87f58" type="contact data set" uri="../contacts/cf7f0f79-a312-4b28-89ea-32a589b87f58.xml" version="01.00.000">
+                <common:shortDescription>European Commission, DG ENV B1</common:shortDescription>
+            </common:referenceToCommissioner>
+            <common:project>Provision of process-based 3.0 Environmental Footprint-compliant life cycle inventory datasets - Renewable materials - contract number 070201/2020/840085/SER/ENV.B.1</common:project>
+            <common:intendedApplications>Implementation of regular Product Environmental Footprint (PEF) studies and Organisation Environmental Footprint (OEF) studies exclusively under the specified Product groups and sectors as defined in the Product Environmental Footprint Category Rules (PEFCR) and Organisation Environmental Footprint Sectorial Rules (OEFSR) listed in http://ec.europa.eu/environment/eussd/smgp/PEFCR_OEFSR.htm</common:intendedApplications>
+        </common:commissionerAndGoal>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet refObjectId="f55ce287-34d4-59ba-9c81-95158b41d287" type="contact data set" uri="../contacts/f55ce287-34d4-59ba-9c81-95158b41d287.xml" version="01.00.000">
+                <common:shortDescription>ACV Brasil</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2024-07-13T12:27:11.192+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" type="source data set" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml" version="03.00.000">
+                <common:shortDescription>ILCD format 1.1</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData refObjectId="f55ce287-34d4-59ba-9c81-95158b41d287" type="contact data set" uri="../contacts/f55ce287-34d4-59ba-9c81-95158b41d287.xml" version="01.00.000">
+                <common:shortDescription>ACV Brasil</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2020-09-02T14:36:46.214668+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>01.01.000</common:dataSetVersion>
+            <common:referenceToPrecedingDataSetVersion refObjectId="5ab18914-4597-5e06-953d-090f59bdf779" type="process data set" uri="../processes/5ab18914-4597-5e06-953d-090f59bdf779.xml?version=01.00.000" version="01.00.000">
+                <common:shortDescription xml:lang="en">softwood forestry, elementary</common:shortDescription>
+            </common:referenceToPrecedingDataSetVersion>
+            <common:permanentDataSetURI/>
+            <common:workflowAndPublicationStatus>Data set finalised; entirely published</common:workflowAndPublicationStatus>
+            <common:registrationNumber/>
+            <common:referenceToOwnershipOfDataSet refObjectId="6ae096bd-5b0a-5222-a4dd-b48143206947" type="contact data set" uri="../contacts/6ae096bd-5b0a-5222-a4dd-b48143206947.xml" version="01.00.000">
+                <common:shortDescription>ecoinvent</common:shortDescription>
+            </common:referenceToOwnershipOfDataSet>
+            <common:copyright>true</common:copyright>
+            <common:referenceToEntitiesWithExclusiveAccess refObjectId="8b3e08f0-740a-43b1-aa8d-bec56c5daf6e" type="contact data set" uri="../contacts/8b3e08f0-740a-43b1-aa8d-bec56c5daf6e.xml" version="29.00.000">
+                <common:shortDescription>Final user</common:shortDescription>
+            </common:referenceToEntitiesWithExclusiveAccess>
+            <common:licenseType>Free of charge for some user types or use types</common:licenseType>
+            <common:accessRestrictions>Free of charge for all final users implementing a regular Product Environmental Footprint (PEF) studies and Organisation Environmental Footprint (OEF) studies exclusively under the specified Product groups and sectors as defined in the Product Environmental Footprint Category Rules (PEFCR) and Organisation Environmental Footprint Sectorial Rules (OEFSR) listed in http://ec.europa.eu/environment/eussd/smgp/PEFCR_OEFSR.htm and in accordance with the terms and conditions of the EULA (available at https://ecoinvent.lca-data.com/) exclusively until 31st December 2024. Any use of this dataset or any derivative data not within the specific context of one of the PEF/OEF projects or after the end of 2024 is not permitted.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange dataSetInternalID="0">
+            <referenceToFlowDataSet refObjectId="5d4fa9d6-0450-5435-b214-121588461602" type="flow data set" uri=".../flows/5d4fa9d6-0450-5435-b214-121588461602.xml">
+                <common:shortDescription>softwood under bark // softwood forestry // eu+efta+uk, elementary</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1</meanAmount>
+            <resultingAmount>1</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="1">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.9066308769112908E-07</meanAmount>
+            <resultingAmount>1.9066308769112908E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="2">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.9066308769112908E-07</meanAmount>
+            <resultingAmount>1.9066308769112908E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="3">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.9200720225879403E-05</meanAmount>
+            <resultingAmount>1.9200720225879403E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="4">
+            <referenceToFlowDataSet refObjectId="da174fac-e567-42d3-99b5-a688913dc88e" type="flow data set">
+                <common:shortDescription>carbon dioxide (biogenic), Renewable material resources from air</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0654901960784309</meanAmount>
+            <resultingAmount>1.0654901960784309</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="5">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0026729097586217776</meanAmount>
+            <resultingAmount>0.0026729097586217776</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="6">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.9472371381580875E-05</meanAmount>
+            <resultingAmount>2.9472371381580875E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="7">
+            <referenceToFlowDataSet refObjectId="1de8efff-89e0-47d9-be78-1192f6e1a20d" type="flow data set">
+                <common:shortDescription>Energy, gross calorific value, in biomass, primary forest, Renewable energy resources from biosphere</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>11.999999999999998</meanAmount>
+            <resultingAmount>11.999999999999998</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="8">
+            <referenceToFlowDataSet refObjectId="34724ae6-a108-4f17-8b12-5b188a0c4200" type="flow data set">
+                <common:shortDescription>Wood, soft, standing, Renewable material resources from biosphere</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0014218459533534749</meanAmount>
+            <resultingAmount>0.0014218459533534749</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="9">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.378889506467697E-05</meanAmount>
+            <resultingAmount>4.378889506467697E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="10">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.378889506467697E-05</meanAmount>
+            <resultingAmount>4.378889506467697E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="11">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0044097592948849134</meanAmount>
+            <resultingAmount>0.0044097592948849134</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="12">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.6138774230241013</meanAmount>
+            <resultingAmount>0.6138774230241013</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="13">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.006768811904618467</meanAmount>
+            <resultingAmount>0.006768811904618467</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="14">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.006768811904618467</meanAmount>
+            <resultingAmount>0.006768811904618467</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="15">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.9472371381580875E-05</meanAmount>
+            <resultingAmount>2.9472371381580875E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="16">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.3509064334994934E-06</meanAmount>
+            <resultingAmount>5.3509064334994934E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="17">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.3509064334994934E-06</meanAmount>
+            <resultingAmount>5.3509064334994934E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="18">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0005388628634344816</meanAmount>
+            <resultingAmount>0.0005388628634344816</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="19">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.07501446764957291</meanAmount>
+            <resultingAmount>0.07501446764957291</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="20">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0008271338912314275</meanAmount>
+            <resultingAmount>0.0008271338912314275</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="21">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0008271338912314275</meanAmount>
+            <resultingAmount>0.0008271338912314275</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="22">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FI</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.708375723652937E-06</meanAmount>
+            <resultingAmount>2.708375723652937E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="23">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FI</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.708375723652937E-06</meanAmount>
+            <resultingAmount>2.708375723652937E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="24">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FI</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0002727468917354217</meanAmount>
+            <resultingAmount>0.0002727468917354217</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="25">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FI</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.03796877512806375</meanAmount>
+            <resultingAmount>0.03796877512806375</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="26">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FI</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0004186560499725844</meanAmount>
+            <resultingAmount>0.0004186560499725844</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="27">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FI</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0004186560499725844</meanAmount>
+            <resultingAmount>0.0004186560499725844</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="28">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CH</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.780999426081786E-06</meanAmount>
+            <resultingAmount>5.780999426081786E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="29">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CH</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.780999426081786E-06</meanAmount>
+            <resultingAmount>5.780999426081786E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="30">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CH</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0005821753646725993</meanAmount>
+            <resultingAmount>0.0005821753646725993</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="31">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.005273980375882143</meanAmount>
+            <resultingAmount>0.005273980375882143</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="32">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0679518941426345</meanAmount>
+            <resultingAmount>0.0679518941426345</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="33">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.006574765162404871</meanAmount>
+            <resultingAmount>0.006574765162404871</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="34">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.08179067936611557</meanAmount>
+            <resultingAmount>0.08179067936611557</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="35">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BG</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.020944002615886092</meanAmount>
+            <resultingAmount>0.020944002615886092</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="36">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BY</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.027195437407793677</meanAmount>
+            <resultingAmount>0.027195437407793677</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="37">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CH</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.08104395018292235</meanAmount>
+            <resultingAmount>0.08104395018292235</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="38">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0564060183497374</meanAmount>
+            <resultingAmount>0.0564060183497374</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="39">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.04451312902587247</meanAmount>
+            <resultingAmount>0.04451312902587247</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="40">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>EE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.006078325452349857</meanAmount>
+            <resultingAmount>0.006078325452349857</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="41">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ES</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.2634320819856833</meanAmount>
+            <resultingAmount>0.2634320819856833</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="42">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.4330279742985281</meanAmount>
+            <resultingAmount>0.4330279742985281</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="43">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GB</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.4303247691745562</meanAmount>
+            <resultingAmount>0.4303247691745562</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="44">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.04895218147951409</meanAmount>
+            <resultingAmount>0.04895218147951409</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="45">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.01573975931350276</meanAmount>
+            <resultingAmount>0.01573975931350276</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="46">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.041261749832041464</meanAmount>
+            <resultingAmount>0.041261749832041464</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="47">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.04444696620883696</meanAmount>
+            <resultingAmount>0.04444696620883696</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="48">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0025362742717855535</meanAmount>
+            <resultingAmount>0.0025362742717855535</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="49">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.37049013046139084</meanAmount>
+            <resultingAmount>0.37049013046139084</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="50">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.012978276084794274</meanAmount>
+            <resultingAmount>0.012978276084794274</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="51">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.009009558341037912</meanAmount>
+            <resultingAmount>0.009009558341037912</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="52">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LV</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.007652815472347281</meanAmount>
+            <resultingAmount>0.007652815472347281</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="53">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MD</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00404924445210706</meanAmount>
+            <resultingAmount>0.00404924445210706</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="54">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ME</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0016312631694505812</meanAmount>
+            <resultingAmount>0.0016312631694505812</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="55">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.004505361165951898</meanAmount>
+            <resultingAmount>0.004505361165951898</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="56">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.002492304181885998</meanAmount>
+            <resultingAmount>0.002492304181885998</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="57">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1373352879231472</meanAmount>
+            <resultingAmount>0.1373352879231472</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="58">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.051985523309331746</meanAmount>
+            <resultingAmount>0.051985523309331746</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="59">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1580574224328943</meanAmount>
+            <resultingAmount>0.1580574224328943</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="60">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.049872788240654525</meanAmount>
+            <resultingAmount>0.049872788240654525</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="61">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>RO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.06923942313414067</meanAmount>
+            <resultingAmount>0.06923942313414067</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="62">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>RS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.017182021130019633</meanAmount>
+            <resultingAmount>0.017182021130019633</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="63">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SI</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.010623131109250844</meanAmount>
+            <resultingAmount>0.010623131109250844</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="64">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.024934070303473565</meanAmount>
+            <resultingAmount>0.024934070303473565</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="65">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SM</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00031032901071211205</meanAmount>
+            <resultingAmount>0.00031032901071211205</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="66">
+            <referenceToFlowDataSet refObjectId="eb01bbdf-8977-4dd2-9c20-9d59d6f8a71f" type="flow data set">
+                <common:shortDescription>forest, intensive, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>UA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.07310694762348816</meanAmount>
+            <resultingAmount>0.07310694762348816</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="67">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.815262105117959E-05</meanAmount>
+            <resultingAmount>5.815262105117959E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="68">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0007492596612336729</meanAmount>
+            <resultingAmount>0.0007492596612336729</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="69">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.249549671027667E-05</meanAmount>
+            <resultingAmount>7.249549671027667E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="70">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0009018506030941934</meanAmount>
+            <resultingAmount>0.0009018506030941934</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="71">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BG</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00023093537719370445</meanAmount>
+            <resultingAmount>0.00023093537719370445</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="72">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BY</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0002998657281943289</meanAmount>
+            <resultingAmount>0.0002998657281943289</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="73">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CH</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0008936169245206684</meanAmount>
+            <resultingAmount>0.0008936169245206684</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="74">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0006219510836821253</meanAmount>
+            <resultingAmount>0.0006219510836821253</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="75">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0004908162221993202</meanAmount>
+            <resultingAmount>0.0004908162221993202</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="76">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>EE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.702159118237491E-05</meanAmount>
+            <resultingAmount>6.702159118237491E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="77">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ES</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00290468772058606</meanAmount>
+            <resultingAmount>0.00290468772058606</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="78">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0047747071280541615</meanAmount>
+            <resultingAmount>0.0047747071280541615</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="79">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GB</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.004744900710131787</meanAmount>
+            <resultingAmount>0.004744900710131787</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="80">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0005397626567259661</meanAmount>
+            <resultingAmount>0.0005397626567259661</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="81">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00017355169977131422</meanAmount>
+            <resultingAmount>0.00017355169977131422</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="82">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00045496545889022865</meanAmount>
+            <resultingAmount>0.00045496545889022865</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="83">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0004900866894835105</meanAmount>
+            <resultingAmount>0.0004900866894835105</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="84">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.7965784113167456E-05</meanAmount>
+            <resultingAmount>2.7965784113167456E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="85">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.004085144544421947</meanAmount>
+            <resultingAmount>0.004085144544421947</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="86">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00014310268853254713</meanAmount>
+            <resultingAmount>0.00014310268853254713</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="87">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.934231732085991E-05</meanAmount>
+            <resultingAmount>9.934231732085991E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="88">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LV</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.438242966794846E-05</meanAmount>
+            <resultingAmount>8.438242966794846E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="89">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MD</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.464828485972267E-05</meanAmount>
+            <resultingAmount>4.464828485972267E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="90">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ME</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7986837676076643E-05</meanAmount>
+            <resultingAmount>1.7986837676076643E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="91">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.967757593115402E-05</meanAmount>
+            <resultingAmount>4.967757593115402E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="92">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.74809556167991E-05</meanAmount>
+            <resultingAmount>2.74809556167991E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="93">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.001514303502544525</meanAmount>
+            <resultingAmount>0.001514303502544525</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="94">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0005732092692228078</meanAmount>
+            <resultingAmount>0.0005732092692228078</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="95">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0017427924899187592</meanAmount>
+            <resultingAmount>0.0017427924899187592</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="96">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0005499135659638107</meanAmount>
+            <resultingAmount>0.0005499135659638107</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="97">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>RO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0007634563741903346</meanAmount>
+            <resultingAmount>0.0007634563741903346</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="98">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>RS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00018945454712661233</meanAmount>
+            <resultingAmount>0.00018945454712661233</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="99">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SI</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00011713409488557915</meanAmount>
+            <resultingAmount>0.00011713409488557915</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="100">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00027493115982230785</meanAmount>
+            <resultingAmount>0.00027493115982230785</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="101">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SM</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.4217884927397738E-06</meanAmount>
+            <resultingAmount>3.4217884927397738E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="102">
+            <referenceToFlowDataSet refObjectId="f20439b3-200f-48d7-b0a0-972a0628a31e" type="flow data set">
+                <common:shortDescription>to forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>UA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0008061009557029389</meanAmount>
+            <resultingAmount>0.0008061009557029389</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="103">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.815262105117959E-05</meanAmount>
+            <resultingAmount>5.815262105117959E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="104">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0007492596612336729</meanAmount>
+            <resultingAmount>0.0007492596612336729</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="105">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.249549671027667E-05</meanAmount>
+            <resultingAmount>7.249549671027667E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="106">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0009018506030941934</meanAmount>
+            <resultingAmount>0.0009018506030941934</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="107">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BG</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00023093537719370445</meanAmount>
+            <resultingAmount>0.00023093537719370445</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="108">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BY</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0002998657281943289</meanAmount>
+            <resultingAmount>0.0002998657281943289</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="109">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CH</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0008936169245206684</meanAmount>
+            <resultingAmount>0.0008936169245206684</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="110">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0006219510836821253</meanAmount>
+            <resultingAmount>0.0006219510836821253</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="111">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0004908162221993202</meanAmount>
+            <resultingAmount>0.0004908162221993202</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="112">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>EE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.702159118237491E-05</meanAmount>
+            <resultingAmount>6.702159118237491E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="113">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ES</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00290468772058606</meanAmount>
+            <resultingAmount>0.00290468772058606</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="114">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0047747071280541615</meanAmount>
+            <resultingAmount>0.0047747071280541615</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="115">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GB</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.004744900710131787</meanAmount>
+            <resultingAmount>0.004744900710131787</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="116">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0005397626567259661</meanAmount>
+            <resultingAmount>0.0005397626567259661</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="117">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00017355169977131422</meanAmount>
+            <resultingAmount>0.00017355169977131422</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="118">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00045496545889022865</meanAmount>
+            <resultingAmount>0.00045496545889022865</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="119">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0004900866894835105</meanAmount>
+            <resultingAmount>0.0004900866894835105</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="120">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.7965784113167456E-05</meanAmount>
+            <resultingAmount>2.7965784113167456E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="121">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.004085144544421947</meanAmount>
+            <resultingAmount>0.004085144544421947</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="122">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00014310268853254713</meanAmount>
+            <resultingAmount>0.00014310268853254713</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="123">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.934231732085991E-05</meanAmount>
+            <resultingAmount>9.934231732085991E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="124">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LV</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.438242966794846E-05</meanAmount>
+            <resultingAmount>8.438242966794846E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="125">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MD</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.464828485972267E-05</meanAmount>
+            <resultingAmount>4.464828485972267E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="126">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ME</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7986837676076643E-05</meanAmount>
+            <resultingAmount>1.7986837676076643E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="127">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.967757593115402E-05</meanAmount>
+            <resultingAmount>4.967757593115402E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="128">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.74809556167991E-05</meanAmount>
+            <resultingAmount>2.74809556167991E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="129">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.001514303502544525</meanAmount>
+            <resultingAmount>0.001514303502544525</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="130">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0005732092692228078</meanAmount>
+            <resultingAmount>0.0005732092692228078</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="131">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0017427924899187592</meanAmount>
+            <resultingAmount>0.0017427924899187592</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="132">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0005499135659638107</meanAmount>
+            <resultingAmount>0.0005499135659638107</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="133">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>RO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0007634563741903346</meanAmount>
+            <resultingAmount>0.0007634563741903346</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="134">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>RS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00018945454712661233</meanAmount>
+            <resultingAmount>0.00018945454712661233</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="135">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SI</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00011713409488557915</meanAmount>
+            <resultingAmount>0.00011713409488557915</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="136">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00027493115982230785</meanAmount>
+            <resultingAmount>0.00027493115982230785</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="137">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SM</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.4217884927397738E-06</meanAmount>
+            <resultingAmount>3.4217884927397738E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="138">
+            <referenceToFlowDataSet refObjectId="f80c15bc-c2bf-4491-8b02-46ad74b8e1eb" type="flow data set">
+                <common:shortDescription>from forest, intensive, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>UA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0008061009557029389</meanAmount>
+            <resultingAmount>0.0008061009557029389</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="139">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.7620177024103043E-07</meanAmount>
+            <resultingAmount>3.7620177024103043E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="140">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.847121347776033E-06</meanAmount>
+            <resultingAmount>4.847121347776033E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="141">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.6898890718797045E-07</meanAmount>
+            <resultingAmount>4.6898890718797045E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="142">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.834264857612888E-06</meanAmount>
+            <resultingAmount>5.834264857612888E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="143">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BG</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.493970454660864E-06</meanAmount>
+            <resultingAmount>1.493970454660864E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="144">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BY</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.9398956700857757E-06</meanAmount>
+            <resultingAmount>1.9398956700857757E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="145">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.023534871775081E-06</meanAmount>
+            <resultingAmount>4.023534871775081E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="146">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.1751953448821164E-06</meanAmount>
+            <resultingAmount>3.1751953448821164E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="147">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>EE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.33577039029587E-07</meanAmount>
+            <resultingAmount>4.33577039029587E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="148">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ES</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.8791047466633383E-05</meanAmount>
+            <resultingAmount>1.8791047466633383E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="149">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.0888603840841085E-05</meanAmount>
+            <resultingAmount>3.0888603840841085E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="150">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GB</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.069577973447669E-05</meanAmount>
+            <resultingAmount>3.069577973447669E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="151">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.4918403212057996E-06</meanAmount>
+            <resultingAmount>3.4918403212057996E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="152">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.1227431455728662E-06</meanAmount>
+            <resultingAmount>1.1227431455728662E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="153">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.94326907264234E-06</meanAmount>
+            <resultingAmount>2.94326907264234E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="154">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.1704758413726385E-06</meanAmount>
+            <resultingAmount>3.1704758413726385E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="155">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.8091665172396688E-07</meanAmount>
+            <resultingAmount>1.8091665172396688E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="156">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.6427675683774712E-05</meanAmount>
+            <resultingAmount>2.6427675683774712E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="157">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.257619653087505E-07</meanAmount>
+            <resultingAmount>9.257619653087505E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="158">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.426667441706928E-07</meanAmount>
+            <resultingAmount>6.426667441706928E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="159">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LV</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.458880243829961E-07</meanAmount>
+            <resultingAmount>5.458880243829961E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="160">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MD</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.88839324846094E-07</meanAmount>
+            <resultingAmount>2.88839324846094E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="161">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ME</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.1636070829589612E-07</meanAmount>
+            <resultingAmount>1.1636070829589612E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="162">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.2137488678516335E-07</meanAmount>
+            <resultingAmount>3.2137488678516335E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="163">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7778019226091791E-07</meanAmount>
+            <resultingAmount>1.7778019226091791E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="164">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.796353939714421E-06</meanAmount>
+            <resultingAmount>9.796353939714421E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="165">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.708213626526014E-06</meanAmount>
+            <resultingAmount>3.708213626526014E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="166">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.1274498174264342E-05</meanAmount>
+            <resultingAmount>1.1274498174264342E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="167">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.5575087288511276E-06</meanAmount>
+            <resultingAmount>3.5575087288511276E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="168">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>RO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.9389629268718316E-06</meanAmount>
+            <resultingAmount>4.9389629268718316E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="169">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>RS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.2256220737929843E-06</meanAmount>
+            <resultingAmount>1.2256220737929843E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="170">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SI</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.577655667962682E-07</meanAmount>
+            <resultingAmount>7.577655667962682E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="171">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7785886027139592E-06</meanAmount>
+            <resultingAmount>1.7785886027139592E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="172">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SM</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.2136283199104032E-08</meanAmount>
+            <resultingAmount>2.2136283199104032E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="173">
+            <referenceToFlowDataSet refObjectId="0c08b290-70d4-4d06-bf99-af10a0df99d5" type="flow data set">
+                <common:shortDescription>to traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>UA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.2148398652837794E-06</meanAmount>
+            <resultingAmount>5.2148398652837794E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="174">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.7620177024103043E-07</meanAmount>
+            <resultingAmount>3.7620177024103043E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="175">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.847121347776033E-06</meanAmount>
+            <resultingAmount>4.847121347776033E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="176">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.6898890718797045E-07</meanAmount>
+            <resultingAmount>4.6898890718797045E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="177">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.834264857612888E-06</meanAmount>
+            <resultingAmount>5.834264857612888E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="178">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BG</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.493970454660864E-06</meanAmount>
+            <resultingAmount>1.493970454660864E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="179">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BY</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.9398956700857757E-06</meanAmount>
+            <resultingAmount>1.9398956700857757E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="180">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.023534871775081E-06</meanAmount>
+            <resultingAmount>4.023534871775081E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="181">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.1751953448821164E-06</meanAmount>
+            <resultingAmount>3.1751953448821164E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="182">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>EE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.33577039029587E-07</meanAmount>
+            <resultingAmount>4.33577039029587E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="183">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ES</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.8791047466633383E-05</meanAmount>
+            <resultingAmount>1.8791047466633383E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="184">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.0888603840841085E-05</meanAmount>
+            <resultingAmount>3.0888603840841085E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="185">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GB</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.069577973447669E-05</meanAmount>
+            <resultingAmount>3.069577973447669E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="186">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.4918403212057996E-06</meanAmount>
+            <resultingAmount>3.4918403212057996E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="187">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.1227431455728662E-06</meanAmount>
+            <resultingAmount>1.1227431455728662E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="188">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.94326907264234E-06</meanAmount>
+            <resultingAmount>2.94326907264234E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="189">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.1704758413726385E-06</meanAmount>
+            <resultingAmount>3.1704758413726385E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="190">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.8091665172396688E-07</meanAmount>
+            <resultingAmount>1.8091665172396688E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="191">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.6427675683774712E-05</meanAmount>
+            <resultingAmount>2.6427675683774712E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="192">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.257619653087505E-07</meanAmount>
+            <resultingAmount>9.257619653087505E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="193">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.426667441706928E-07</meanAmount>
+            <resultingAmount>6.426667441706928E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="194">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LV</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.458880243829961E-07</meanAmount>
+            <resultingAmount>5.458880243829961E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="195">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MD</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.88839324846094E-07</meanAmount>
+            <resultingAmount>2.88839324846094E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="196">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ME</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.1636070829589612E-07</meanAmount>
+            <resultingAmount>1.1636070829589612E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="197">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.2137488678516335E-07</meanAmount>
+            <resultingAmount>3.2137488678516335E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="198">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7778019226091791E-07</meanAmount>
+            <resultingAmount>1.7778019226091791E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="199">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.796353939714421E-06</meanAmount>
+            <resultingAmount>9.796353939714421E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="200">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.708213626526014E-06</meanAmount>
+            <resultingAmount>3.708213626526014E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="201">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.1274498174264342E-05</meanAmount>
+            <resultingAmount>1.1274498174264342E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="202">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.5575087288511276E-06</meanAmount>
+            <resultingAmount>3.5575087288511276E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="203">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>RO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.9389629268718316E-06</meanAmount>
+            <resultingAmount>4.9389629268718316E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="204">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>RS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.2256220737929843E-06</meanAmount>
+            <resultingAmount>1.2256220737929843E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="205">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SI</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.577655667962682E-07</meanAmount>
+            <resultingAmount>7.577655667962682E-07</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="206">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7785886027139592E-06</meanAmount>
+            <resultingAmount>1.7785886027139592E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="207">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SM</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.2136283199104032E-08</meanAmount>
+            <resultingAmount>2.2136283199104032E-08</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="208">
+            <referenceToFlowDataSet refObjectId="1102e599-8b30-4c4e-bc98-6c34ac2c1748" type="flow data set">
+                <common:shortDescription>from traffic area, rail/road embankment, Land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>UA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.2148398652837794E-06</meanAmount>
+            <resultingAmount>5.2148398652837794E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="209">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.788538739381824E-05</meanAmount>
+            <resultingAmount>3.788538739381824E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="210">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>AT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00048812920228335816</meanAmount>
+            <resultingAmount>0.00048812920228335816</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="211">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.722951309037163E-05</meanAmount>
+            <resultingAmount>4.722951309037163E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="212">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0005875394582731207</meanAmount>
+            <resultingAmount>0.0005875394582731207</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="213">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BG</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00015045024746556217</meanAmount>
+            <resultingAmount>0.00015045024746556217</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="214">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>BY</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0001953571322051547</meanAmount>
+            <resultingAmount>0.0001953571322051547</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="215">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>CZ</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00040518995222184264</meanAmount>
+            <resultingAmount>0.00040518995222184264</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="216">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>DK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00031975794695180695</meanAmount>
+            <resultingAmount>0.00031975794695180695</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="217">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>EE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.3663362025586306E-05</meanAmount>
+            <resultingAmount>4.3663362025586306E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="218">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ES</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0018923518418132855</meanAmount>
+            <resultingAmount>0.0018923518418132855</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="219">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>FR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0031106358745060887</meanAmount>
+            <resultingAmount>0.0031106358745060887</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="220">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GB</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.003091217528962947</meanAmount>
+            <resultingAmount>0.003091217528962947</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="221">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>GR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00035164566929464237</meanAmount>
+            <resultingAmount>0.00035164566929464237</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="222">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HR</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.000113065813025095</meanAmount>
+            <resultingAmount>0.000113065813025095</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="223">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>HU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00029640181902880827</meanAmount>
+            <resultingAmount>0.00029640181902880827</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="224">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IE</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00031928266949989996</meanAmount>
+            <resultingAmount>0.00031928266949989996</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="225">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.8219205699546805E-05</meanAmount>
+            <resultingAmount>1.8219205699546805E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="226">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>IT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0026613982452993704</meanAmount>
+            <resultingAmount>0.0026613982452993704</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="227">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.322882948613864E-05</meanAmount>
+            <resultingAmount>9.322882948613864E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="228">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LU</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.471973417996186E-05</meanAmount>
+            <resultingAmount>6.471973417996186E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="229">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>LV</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.497363625946147E-05</meanAmount>
+            <resultingAmount>5.497363625946147E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="230">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MD</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.9087555088728564E-05</meanAmount>
+            <resultingAmount>2.9087555088728564E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="231">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>ME</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.1718101454931179E-05</meanAmount>
+            <resultingAmount>1.1718101454931179E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="232">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.236404782651519E-05</meanAmount>
+            <resultingAmount>3.236404782651519E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="233">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>MT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7903348648351947E-05</meanAmount>
+            <resultingAmount>1.7903348648351947E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="234">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0009865415141859961</meanAmount>
+            <resultingAmount>0.0009865415141859961</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="235">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>NO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0003734355361750805</meanAmount>
+            <resultingAmount>0.0003734355361750805</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="236">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PL</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0011353979826549873</meanAmount>
+            <resultingAmount>0.0011353979826549873</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="237">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>PT</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00035825880421313166</meanAmount>
+            <resultingAmount>0.00035825880421313166</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="238">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>RO</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0004973781056063677</meanAmount>
+            <resultingAmount>0.0004973781056063677</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="239">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>RS</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00012342623224317263</meanAmount>
+            <resultingAmount>0.00012342623224317263</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="240">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SI</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.631075747830654E-05</meanAmount>
+            <resultingAmount>7.631075747830654E-05</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="241">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SK</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00017911270907863247</meanAmount>
+            <resultingAmount>0.00017911270907863247</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="242">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>SM</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.229233700628291E-06</meanAmount>
+            <resultingAmount>2.229233700628291E-06</resultingAmount>
+        </exchange>
+        <exchange dataSetInternalID="243">
+            <referenceToFlowDataSet refObjectId="1dea9abe-eef4-4e7e-9439-fa041242ceb5" type="flow data set">
+                <common:shortDescription>traffic area, rail/road embankment, Land occupation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <location>UA</location>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0005251602839785237</meanAmount>
+            <resultingAmount>0.0005251602839785237</resultingAmount>
+        </exchange>
+    </exchanges>
+    <LCIAResults>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c619fa-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c619fa-def3-11e6-bf01-fe55135034f3.xml" version="02.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication marine</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Eutrophication marine</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="05316e7a-b254-4bea-9cf0-6bf33eb5c630" type="LCIA method data set" uri="../lciamethods/05316e7a-b254-4bea-9cf0-6bf33eb5c630.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Ecotoxicity, freshwater</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Ecotoxicity, freshwater</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6890-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6890-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Land use</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>202.61157185093265</meanAmount>
+            <generalComment>Land use</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad66ce-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad66ce-c78d-11e6-9d9d-cec0c932ce01.xml" version="03.00.014">
+                <common:shortDescription xml:lang="en">Water use</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Water use</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6494-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6494-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, minerals and metals</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Resource use, minerals and metals</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6110-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6110-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, fossils</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Resource use, fossils</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="6209b35f-9447-40b5-b68c-a1099e3674a0" type="LCIA method data set" uri="../lciamethods/6209b35f-9447-40b5-b68c-a1099e3674a0.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Climate change</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Climate change</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c629d6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c629d6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.012">
+                <common:shortDescription xml:lang="en">Ozone depletion</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Ozone depletion</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="2299222a-bbd8-474f-9d4f-4dd1f18aea7c" type="LCIA method data set" uri="../lciamethods/2299222a-bbd8-474f-9d4f-4dd1f18aea7c.xml" version="01.01.000">
+                <common:shortDescription xml:lang="en">Human toxicity, cancer</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Human toxicity, cancer</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8" type="LCIA method data set" uri="../lciamethods/7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Human toxicity, non-cancer</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Human toxicity, non-cancer</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c602c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c602c6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.011">
+                <common:shortDescription xml:lang="en">EF-particulate Matter</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>EF-particulate Matter</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c632be-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c632be-def3-11e6-bf01-fe55135034f3.xml" version="01.00.011">
+                <common:shortDescription xml:lang="en">Ionising radiation, human health</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Ionising radiation, human health</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c610fe-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c610fe-def3-11e6-bf01-fe55135034f3.xml" version="02.01.000">
+                <common:shortDescription xml:lang="en">Photochemical ozone formation - human health</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Photochemical ozone formation - human health</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c611c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c611c6-def3-11e6-bf01-fe55135034f3.xml" version="01.04.000">
+                <common:shortDescription xml:lang="en">Acidification</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Acidification</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c614d2-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c614d2-def3-11e6-bf01-fe55135034f3.xml" version="01.02.009">
+                <common:shortDescription xml:lang="en">Eutrophication, terrestrial</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Eutrophication, terrestrial</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b53ec18f-7377-4ad3-86eb-cc3f4f276b2b" type="LCIA method data set" uri="../lciamethods/b53ec18f-7377-4ad3-86eb-cc3f4f276b2b.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication, freshwater</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0</meanAmount>
+            <generalComment>Eutrophication, freshwater</generalComment>
+        </LCIAResult>
+    </LCIAResults>
+</processDataSet>

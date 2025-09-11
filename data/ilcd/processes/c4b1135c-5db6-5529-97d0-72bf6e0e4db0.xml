@@ -1,0 +1,2432 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<processDataSet xmlns="http://lca.jrc.it/ILCD/Process" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:ext="http://eplca.jrc.ec.europa.eu/ILCD/Extensions/2017" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" locations="../ILCDLocations.xml" version="1.1" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+        
+    <processInformation>
+                
+        <dataSetInformation>
+                        
+            <common:UUID>c4b1135c-5db6-5529-97d0-72bf6e0e4db0</common:UUID>
+                        
+            <name>
+                                
+                <baseName>eucalyptus forestry</baseName>
+                                
+                <treatmentStandardsRoutes>technology mix</treatmentStandardsRoutes>
+                                
+                <mixAndLocationTypes>production mix, at plantation</mixAndLocationTypes>
+                                
+                <functionalUnitFlowProperties>1 kg of DM (average basic wood density 500 kg/m³)</functionalUnitFlowProperties>
+                            
+            </name>
+                        
+            <identifierOfSubDataSet/>
+                        
+            <complementingProcesses>
+                                
+                <referenceToComplementingProcess refObjectId="4cfacea0-cce4-4b4d-bd2b-223c8d4c90ae" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/4cfacea0-cce4-4b4d-bd2b-223c8d4c90ae?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Barge - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="e1ded83e-a02f-42cd-92f9-81cce21a3a98" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/e1ded83e-a02f-42cd-92f9-81cce21a3a98?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="f4476d2b-9dee-4edd-b6c1-9f04aa407b82" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/f4476d2b-9dee-4edd-b6c1-9f04aa407b82?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Freight train, diesel traction - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="dbde67a3-af4f-4d60-9568-4e0ef6eaaf07" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/dbde67a3-af4f-4d60-9568-4e0ef6eaaf07?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Freight train, electricity traction - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="4cedf877-89c5-4b4d-8014-5b7d099a2095" type="process data set" uri="http://lcdn.thinkstep.com/Node/resource/processes/4cedf877-89c5-4b4d-8014-5b7d099a2095?version=20.05.014" version="20.05.014">
+                                        
+                    <common:shortDescription>Freight train, average - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="4cedefee-0385-5d78-b20f-d61912a36124" type="process data set" uri="../processes/4cedefee-0385-5d78-b20f-d61912a36124.xml" version="01.00.000">
+                                        
+                    <common:shortDescription>eucalyptus forestry, blackbox - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                                
+                <referenceToComplementingProcess refObjectId="80d08c2e-a708-5047-b1c3-4d79837a768c" type="process data set" uri="../processes/80d08c2e-a708-5047-b1c3-4d79837a768c.xml" version="01.00.000">
+                                        
+                    <common:shortDescription>eucalyptus forestry, elementary - EU+EFTA+UK</common:shortDescription>
+                                    
+                </referenceToComplementingProcess>
+                            
+            </complementingProcesses>
+                        
+            <classificationInformation>
+                                
+                <common:classification>
+                                        
+                    <common:class level="0">Materials production</common:class>
+                                        
+                    <common:class level="1">Wood</common:class>
+                                    
+                </common:classification>
+                            
+            </classificationInformation>
+                        
+            <common:generalComment>Notice: this data set supersedes the EF3.0-compliant version (see link under "preceding data set version" below calculated with the EF3.0). The life cycle inventory is not changed from the original EF3.0 data set. The LCIA results are calculated based on the EF3.1 methods which provide updated characterisation factors in the following impact categories: Climate Change, Ecotoxicity freshwater, Photochemical Ozone Formation, Acidification, Human Toxicity non-cancer, and Human Toxicity cancer. The review report and the data quality ratings refer to the original results. The data set has been updated by the European Commission on the basis of the original EF3.0 data set delivered by the data provider.This dataset represents the production of 1 kg of Eucalyptus on a dry mass basis. Inventory for diesel consumption by forestry machinery, productivity and rotation period are retrieved from EFO-LCI: A New Life Cycle Inventory Database of Forestry Operations in Europe (Cardellini et al., 2018). The arithmetic average of the inventory data for production of Eucalyptus in Portugal and Spain was calculated from EFO-LCI. Other specific exchange flows not available in EFO-LCI are extrapolated from data reported by two pulp and paper companies in Brazil. The sites used to represent European production are the ones located in the Southern and Southeast regions of Brazil, namely in the states of São Paulo and Paraná. These sites have been selected because they are classified with a subtropical climate, according to the Köppen-Geiger classification, while other sites are located in a tropical climate region. The average basic wood density considered is 500 kg/m³ (Cardellini et al., 2018).</common:generalComment>
+                    
+        </dataSetInformation>
+                
+        <quantitativeReference type="Reference flow(s)">
+                        
+            <referenceToReferenceFlow>0</referenceToReferenceFlow>
+                    
+        </quantitativeReference>
+                
+        <time>
+                        
+            <common:referenceYear>2018</common:referenceYear>
+                        
+            <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+                    
+        </time>
+                
+        <geography>
+                        
+            <locationOfOperationSupplyOrProduction location="EU+EFTA+UK">
+                                
+                <descriptionOfRestrictions/>
+                            
+            </locationOfOperationSupplyOrProduction>
+                    
+        </geography>
+                
+        <technology>
+                        
+            <technologyDescriptionAndIncludedProcesses>The production of Eucalyptus starts with the cultivation of seedlings in greenhouses, which are transplanted to the plantation area. Machines are used for site preparation. Eucalyptus cultivation is enhanced by means of herbicides, pesticides and fertilizers, especially in the first years of growth. After a growing period of eleven years, machines are used for thinning and clear cut of the trees (Cardellini et al., 2018).
+This activity includes the seedling production, the inputs of fertilizers, herbicides and pesticides as well as the fuel burned in the machines.
+References:
+Cardellini, G., Valada, T., Cornillier, C., Vial, E., Dragoi, M., Goudiaby, V., Muys, B. (2018). EFO-LCI: A new life cycle inventory database of forestry operations in Europe. Environmental Management, 61(6), 1031-1047.</technologyDescriptionAndIncludedProcesses>
+                        
+            <technologicalApplicability>na</technologicalApplicability>
+                        
+            <referenceToTechnologyFlowDiagrammOrPicture refObjectId="4562465a-92b8-5dc0-b302-692e4e067f38" type="source data set" uri="../sources/4562465a-92b8-5dc0-b302-692e4e067f38.xml" version="22.00.000">
+                                
+                <common:shortDescription>Diagram of data for chemicals EF3.0</common:shortDescription>
+                            
+            </referenceToTechnologyFlowDiagrammOrPicture>
+                        
+            <referenceToTechnologyFlowDiagrammOrPicture refObjectId="a36eac85-8fa9-5a1e-a901-1a4d0f4106cc" type="source data set" uri="../sources/a36eac85-8fa9-5a1e-a901-1a4d0f4106cc.xml" version="01.00.000">
+                                
+                <common:shortDescription>Diagram of eucalyptus forestry - EU+EFTA+UK - EF3.0</common:shortDescription>
+                            
+            </referenceToTechnologyFlowDiagrammOrPicture>
+                    
+        </technology>
+                
+        <mathematicalRelations>
+                        
+            <variableParameter name="kg_0">
+                                
+                <meanValue>0.005398962534449706</meanValue>
+                                
+                <comment>Mass in kg, for dolomite; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_0">
+                                
+                <meanValue>21.869034608135202</meanValue>
+                                
+                <comment>Distance in km, for dolomite; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_0">
+                                
+                <formula>kg_0*km_0</formula>
+                                
+                <meanValue>0.11807009851390596</meanValue>
+                                
+                <comment>Transport amount in km*km, for dolomite; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_1">
+                                
+                <meanValue>0.005398962534449706</meanValue>
+                                
+                <comment>Mass in kg, for dolomite; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_1">
+                                
+                <meanValue>171.298965541689</meanValue>
+                                
+                <comment>Distance in km, for dolomite; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_1">
+                                
+                <formula>kg_1*km_1</formula>
+                                
+                <meanValue>0.9248366971495701</meanValue>
+                                
+                <comment>Transport amount in km*km, for dolomite; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_2">
+                                
+                <meanValue>0.005398962534449706</meanValue>
+                                
+                <comment>Mass in kg, for dolomite; Freight train, diesel traction; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_2">
+                                
+                <meanValue>17.00243761194126</meanValue>
+                                
+                <comment>Distance in km, for dolomite; Freight train, diesel traction; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_2">
+                                
+                <formula>kg_2*km_2</formula>
+                                
+                <meanValue>0.0917955236611894</meanValue>
+                                
+                <comment>Transport amount in km*km, for dolomite; Freight train, diesel traction; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_3">
+                                
+                <meanValue>0.005398962534449706</meanValue>
+                                
+                <comment>Mass in kg, for dolomite; Freight train, electricity traction; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_3">
+                                
+                <meanValue>26.817232479732652</meanValue>
+                                
+                <comment>Distance in km, for dolomite; Freight train, electricity traction; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_3">
+                                
+                <formula>kg_3*km_3</formula>
+                                
+                <meanValue>0.14478523343570437</meanValue>
+                                
+                <comment>Transport amount in km*km, for dolomite; Freight train, electricity traction; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_4">
+                                
+                <meanValue>1.4757160045195232E-05</meanValue>
+                                
+                <comment>Mass in kg, for crude vegetable oil blend, from crushing, at plant // rer; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_4">
+                                
+                <meanValue>240.0</meanValue>
+                                
+                <comment>Distance in km, for crude vegetable oil blend, from crushing, at plant // rer; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_4">
+                                
+                <formula>kg_4*km_4</formula>
+                                
+                <meanValue>0.003541718410846856</meanValue>
+                                
+                <comment>Transport amount in km*km, for crude vegetable oil blend, from crushing, at plant // rer; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_5">
+                                
+                <meanValue>1.5089716958226273E-05</meanValue>
+                                
+                <comment>Mass in kg, for polyacrylamide // polyacrylamide production // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_5">
+                                
+                <meanValue>240.0</meanValue>
+                                
+                <comment>Distance in km, for polyacrylamide // polyacrylamide production // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_5">
+                                
+                <formula>kg_5*km_5</formula>
+                                
+                <meanValue>0.0036215320699743057</meanValue>
+                                
+                <comment>Transport amount in km*km, for polyacrylamide // polyacrylamide production // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_6">
+                                
+                <meanValue>3.2717500911355276E-07</meanValue>
+                                
+                <comment>Mass in kg, for urea, per kg n, production mix, at plant // urea, per kg n // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_6">
+                                
+                <meanValue>240.0</meanValue>
+                                
+                <comment>Distance in km, for urea, per kg n, production mix, at plant // urea, per kg n // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_6">
+                                
+                <formula>kg_6*km_6</formula>
+                                
+                <meanValue>7.852200218725266E-05</meanValue>
+                                
+                <comment>Transport amount in km*km, for urea, per kg n, production mix, at plant // urea, per kg n // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_7">
+                                
+                <meanValue>0.0007167533475540763</meanValue>
+                                
+                <comment>Mass in kg, for pesticide, unspecified // pesticide production, unspecified // rer; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_7">
+                                
+                <meanValue>240.0</meanValue>
+                                
+                <comment>Distance in km, for pesticide, unspecified // pesticide production, unspecified // rer; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_7">
+                                
+                <formula>kg_7*km_7</formula>
+                                
+                <meanValue>0.17202080341297832</meanValue>
+                                
+                <comment>Transport amount in km*km, for pesticide, unspecified // pesticide production, unspecified // rer; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_8">
+                                
+                <meanValue>2.6193003382901996E-05</meanValue>
+                                
+                <comment>Mass in kg, for glyphosate // glyphosate // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_8">
+                                
+                <meanValue>240.0</meanValue>
+                                
+                <comment>Distance in km, for glyphosate // glyphosate // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_8">
+                                
+                <formula>kg_8*km_8</formula>
+                                
+                <meanValue>0.006286320811896479</meanValue>
+                                
+                <comment>Transport amount in km*km, for glyphosate // glyphosate // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_9">
+                                
+                <meanValue>9.167551184015699E-05</meanValue>
+                                
+                <comment>Mass in kg, for mono ammonium phosphate, per kg n, production mix, at plant // mono ammonium phosphate, per kg n // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_9">
+                                
+                <meanValue>240.00000000000003</meanValue>
+                                
+                <comment>Distance in km, for mono ammonium phosphate, per kg n, production mix, at plant // mono ammonium phosphate, per kg n // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_9">
+                                
+                <formula>kg_9*km_9</formula>
+                                
+                <meanValue>0.02200212284163768</meanValue>
+                                
+                <comment>Transport amount in km*km, for mono ammonium phosphate, per kg n, production mix, at plant // mono ammonium phosphate, per kg n // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_10">
+                                
+                <meanValue>0.0002140160032505407</meanValue>
+                                
+                <comment>Mass in kg, for triple super phosphate, per kg substance, production mix, at plant // triple super phosphate, per kg substance // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_10">
+                                
+                <meanValue>240.00000000000003</meanValue>
+                                
+                <comment>Distance in km, for triple super phosphate, per kg substance, production mix, at plant // triple super phosphate, per kg substance // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_10">
+                                
+                <formula>kg_10*km_10</formula>
+                                
+                <meanValue>0.051363840780129774</meanValue>
+                                
+                <comment>Transport amount in km*km, for triple super phosphate, per kg substance, production mix, at plant // triple super phosphate, per kg substance // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_11">
+                                
+                <meanValue>0.0005053286663087939</meanValue>
+                                
+                <comment>Mass in kg, for inorganic potassium fertiliser, as k2o // nutrient supply from potassium chloride // rer; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_11">
+                                
+                <meanValue>119.84939444181269</meanValue>
+                                
+                <comment>Distance in km, for inorganic potassium fertiliser, as k2o // nutrient supply from potassium chloride // rer; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_11">
+                                
+                <formula>kg_11*km_11</formula>
+                                
+                <meanValue>0.06056333465119779</meanValue>
+                                
+                <comment>Transport amount in km*km, for inorganic potassium fertiliser, as k2o // nutrient supply from potassium chloride // rer; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_12">
+                                
+                <meanValue>1.0748714193105515E-05</meanValue>
+                                
+                <comment>Mass in kg, for wax // wax production // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_12">
+                                
+                <meanValue>240.0</meanValue>
+                                
+                <comment>Distance in km, for wax // wax production // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_12">
+                                
+                <formula>kg_12*km_12</formula>
+                                
+                <meanValue>0.0025796914063453236</meanValue>
+                                
+                <comment>Transport amount in km*km, for wax // wax production // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_13">
+                                
+                <meanValue>0.0004759460370795607</meanValue>
+                                
+                <comment>Mass in kg, for acrylic acid // acrylic acid production // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_13">
+                                
+                <meanValue>240.0</meanValue>
+                                
+                <comment>Distance in km, for acrylic acid // acrylic acid production // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_13">
+                                
+                <formula>kg_13*km_13</formula>
+                                
+                <meanValue>0.11422704889909457</meanValue>
+                                
+                <comment>Transport amount in km*km, for acrylic acid // acrylic acid production // eu+efta+uk; Freight train, average; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_14">
+                                
+                <meanValue>1.4757160045195232E-05</meanValue>
+                                
+                <comment>Mass in kg, for crude vegetable oil blend, from crushing, at plant // rer; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_14">
+                                
+                <meanValue>270.0</meanValue>
+                                
+                <comment>Distance in km, for crude vegetable oil blend, from crushing, at plant // rer; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_14">
+                                
+                <formula>kg_14*km_14</formula>
+                                
+                <meanValue>0.003984433212202713</meanValue>
+                                
+                <comment>Transport amount in km*km, for crude vegetable oil blend, from crushing, at plant // rer; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_15">
+                                
+                <meanValue>1.5089716958226273E-05</meanValue>
+                                
+                <comment>Mass in kg, for polyacrylamide // polyacrylamide production // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_15">
+                                
+                <meanValue>270.0</meanValue>
+                                
+                <comment>Distance in km, for polyacrylamide // polyacrylamide production // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_15">
+                                
+                <formula>kg_15*km_15</formula>
+                                
+                <meanValue>0.004074223578721094</meanValue>
+                                
+                <comment>Transport amount in km*km, for polyacrylamide // polyacrylamide production // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_16">
+                                
+                <meanValue>3.2717500911355276E-07</meanValue>
+                                
+                <comment>Mass in kg, for urea, per kg n, production mix, at plant // urea, per kg n // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_16">
+                                
+                <meanValue>270.0</meanValue>
+                                
+                <comment>Distance in km, for urea, per kg n, production mix, at plant // urea, per kg n // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_16">
+                                
+                <formula>kg_16*km_16</formula>
+                                
+                <meanValue>8.833725246065925E-05</meanValue>
+                                
+                <comment>Transport amount in km*km, for urea, per kg n, production mix, at plant // urea, per kg n // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_17">
+                                
+                <meanValue>0.0007167533475540763</meanValue>
+                                
+                <comment>Mass in kg, for pesticide, unspecified // pesticide production, unspecified // rer; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_17">
+                                
+                <meanValue>270.0</meanValue>
+                                
+                <comment>Distance in km, for pesticide, unspecified // pesticide production, unspecified // rer; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_17">
+                                
+                <formula>kg_17*km_17</formula>
+                                
+                <meanValue>0.1935234038396006</meanValue>
+                                
+                <comment>Transport amount in km*km, for pesticide, unspecified // pesticide production, unspecified // rer; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_18">
+                                
+                <meanValue>2.6193003382901996E-05</meanValue>
+                                
+                <comment>Mass in kg, for glyphosate // glyphosate // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_18">
+                                
+                <meanValue>270.0</meanValue>
+                                
+                <comment>Distance in km, for glyphosate // glyphosate // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_18">
+                                
+                <formula>kg_18*km_18</formula>
+                                
+                <meanValue>0.0070721109133835384</meanValue>
+                                
+                <comment>Transport amount in km*km, for glyphosate // glyphosate // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_19">
+                                
+                <meanValue>9.167551184015699E-05</meanValue>
+                                
+                <comment>Mass in kg, for mono ammonium phosphate, per kg n, production mix, at plant // mono ammonium phosphate, per kg n // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_19">
+                                
+                <meanValue>270.0</meanValue>
+                                
+                <comment>Distance in km, for mono ammonium phosphate, per kg n, production mix, at plant // mono ammonium phosphate, per kg n // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_19">
+                                
+                <formula>kg_19*km_19</formula>
+                                
+                <meanValue>0.024752388196842386</meanValue>
+                                
+                <comment>Transport amount in km*km, for mono ammonium phosphate, per kg n, production mix, at plant // mono ammonium phosphate, per kg n // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_20">
+                                
+                <meanValue>0.0002140160032505407</meanValue>
+                                
+                <comment>Mass in kg, for triple super phosphate, per kg substance, production mix, at plant // triple super phosphate, per kg substance // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_20">
+                                
+                <meanValue>270.0</meanValue>
+                                
+                <comment>Distance in km, for triple super phosphate, per kg substance, production mix, at plant // triple super phosphate, per kg substance // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_20">
+                                
+                <formula>kg_20*km_20</formula>
+                                
+                <meanValue>0.05778432087764599</meanValue>
+                                
+                <comment>Transport amount in km*km, for triple super phosphate, per kg substance, production mix, at plant // triple super phosphate, per kg substance // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_21">
+                                
+                <meanValue>0.0005053286663087939</meanValue>
+                                
+                <comment>Mass in kg, for inorganic potassium fertiliser, as k2o // nutrient supply from potassium chloride // rer; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_21">
+                                
+                <meanValue>134.83056874703928</meanValue>
+                                
+                <comment>Distance in km, for inorganic potassium fertiliser, as k2o // nutrient supply from potassium chloride // rer; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_21">
+                                
+                <formula>kg_21*km_21</formula>
+                                
+                <meanValue>0.06813375148259751</meanValue>
+                                
+                <comment>Transport amount in km*km, for inorganic potassium fertiliser, as k2o // nutrient supply from potassium chloride // rer; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_22">
+                                
+                <meanValue>1.0748714193105515E-05</meanValue>
+                                
+                <comment>Mass in kg, for wax // wax production // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_22">
+                                
+                <meanValue>270.0</meanValue>
+                                
+                <comment>Distance in km, for wax // wax production // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_22">
+                                
+                <formula>kg_22*km_22</formula>
+                                
+                <meanValue>0.002902152832138489</meanValue>
+                                
+                <comment>Transport amount in km*km, for wax // wax production // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_23">
+                                
+                <meanValue>0.0004759460370795607</meanValue>
+                                
+                <comment>Mass in kg, for acrylic acid // acrylic acid production // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_23">
+                                
+                <meanValue>270.0</meanValue>
+                                
+                <comment>Distance in km, for acrylic acid // acrylic acid production // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_23">
+                                
+                <formula>kg_23*km_23</formula>
+                                
+                <meanValue>0.1285054300114814</meanValue>
+                                
+                <comment>Transport amount in km*km, for acrylic acid // acrylic acid production // eu+efta+uk; Barge; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_24">
+                                
+                <meanValue>1.4757160045195232E-05</meanValue>
+                                
+                <comment>Mass in kg, for crude vegetable oil blend, from crushing, at plant // rer; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_24">
+                                
+                <meanValue>130.0</meanValue>
+                                
+                <comment>Distance in km, for crude vegetable oil blend, from crushing, at plant // rer; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_24">
+                                
+                <formula>kg_24*km_24</formula>
+                                
+                <meanValue>0.0019184308058753801</meanValue>
+                                
+                <comment>Transport amount in km*km, for crude vegetable oil blend, from crushing, at plant // rer; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_25">
+                                
+                <meanValue>1.5089716958226273E-05</meanValue>
+                                
+                <comment>Mass in kg, for polyacrylamide // polyacrylamide production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_25">
+                                
+                <meanValue>130.0</meanValue>
+                                
+                <comment>Distance in km, for polyacrylamide // polyacrylamide production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_25">
+                                
+                <formula>kg_25*km_25</formula>
+                                
+                <meanValue>0.0019616632045694154</meanValue>
+                                
+                <comment>Transport amount in km*km, for polyacrylamide // polyacrylamide production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_26">
+                                
+                <meanValue>3.2717500911355276E-07</meanValue>
+                                
+                <comment>Mass in kg, for urea, per kg n, production mix, at plant // urea, per kg n // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_26">
+                                
+                <meanValue>130.0</meanValue>
+                                
+                <comment>Distance in km, for urea, per kg n, production mix, at plant // urea, per kg n // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_26">
+                                
+                <formula>kg_26*km_26</formula>
+                                
+                <meanValue>4.253275118476186E-05</meanValue>
+                                
+                <comment>Transport amount in km*km, for urea, per kg n, production mix, at plant // urea, per kg n // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_27">
+                                
+                <meanValue>0.0007167533475540763</meanValue>
+                                
+                <comment>Mass in kg, for pesticide, unspecified // pesticide production, unspecified // rer; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_27">
+                                
+                <meanValue>130.0</meanValue>
+                                
+                <comment>Distance in km, for pesticide, unspecified // pesticide production, unspecified // rer; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_27">
+                                
+                <formula>kg_27*km_27</formula>
+                                
+                <meanValue>0.09317793518202992</meanValue>
+                                
+                <comment>Transport amount in km*km, for pesticide, unspecified // pesticide production, unspecified // rer; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_28">
+                                
+                <meanValue>2.6193003382901996E-05</meanValue>
+                                
+                <comment>Mass in kg, for glyphosate // glyphosate // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_28">
+                                
+                <meanValue>130.0</meanValue>
+                                
+                <comment>Distance in km, for glyphosate // glyphosate // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_28">
+                                
+                <formula>kg_28*km_28</formula>
+                                
+                <meanValue>0.0034050904397772593</meanValue>
+                                
+                <comment>Transport amount in km*km, for glyphosate // glyphosate // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_29">
+                                
+                <meanValue>9.167551184015699E-05</meanValue>
+                                
+                <comment>Mass in kg, for mono ammonium phosphate, per kg n, production mix, at plant // mono ammonium phosphate, per kg n // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_29">
+                                
+                <meanValue>130.0</meanValue>
+                                
+                <comment>Distance in km, for mono ammonium phosphate, per kg n, production mix, at plant // mono ammonium phosphate, per kg n // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_29">
+                                
+                <formula>kg_29*km_29</formula>
+                                
+                <meanValue>0.011917816539220409</meanValue>
+                                
+                <comment>Transport amount in km*km, for mono ammonium phosphate, per kg n, production mix, at plant // mono ammonium phosphate, per kg n // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_30">
+                                
+                <meanValue>0.0002140160032505407</meanValue>
+                                
+                <comment>Mass in kg, for triple super phosphate, per kg substance, production mix, at plant // triple super phosphate, per kg substance // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_30">
+                                
+                <meanValue>130.0</meanValue>
+                                
+                <comment>Distance in km, for triple super phosphate, per kg substance, production mix, at plant // triple super phosphate, per kg substance // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_30">
+                                
+                <formula>kg_30*km_30</formula>
+                                
+                <meanValue>0.027822080422570294</meanValue>
+                                
+                <comment>Transport amount in km*km, for triple super phosphate, per kg substance, production mix, at plant // triple super phosphate, per kg substance // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_31">
+                                
+                <meanValue>0.0005053286663087939</meanValue>
+                                
+                <comment>Mass in kg, for inorganic potassium fertiliser, as k2o // nutrient supply from potassium chloride // rer; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_31">
+                                
+                <meanValue>64.9184219893152</meanValue>
+                                
+                <comment>Distance in km, for inorganic potassium fertiliser, as k2o // nutrient supply from potassium chloride // rer; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_31">
+                                
+                <formula>kg_31*km_31</formula>
+                                
+                <meanValue>0.03280513960273213</meanValue>
+                                
+                <comment>Transport amount in km*km, for inorganic potassium fertiliser, as k2o // nutrient supply from potassium chloride // rer; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_32">
+                                
+                <meanValue>1.0748714193105515E-05</meanValue>
+                                
+                <comment>Mass in kg, for wax // wax production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_32">
+                                
+                <meanValue>130.0</meanValue>
+                                
+                <comment>Distance in km, for wax // wax production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_32">
+                                
+                <formula>kg_32*km_32</formula>
+                                
+                <meanValue>0.0013973328451037169</meanValue>
+                                
+                <comment>Transport amount in km*km, for wax // wax production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_33">
+                                
+                <meanValue>0.0004759460370795607</meanValue>
+                                
+                <comment>Mass in kg, for acrylic acid // acrylic acid production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="km_33">
+                                
+                <meanValue>130.0</meanValue>
+                                
+                <comment>Distance in km, for acrylic acid // acrylic acid production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                        
+            <variableParameter name="kg_km_33">
+                                
+                <formula>kg_33*km_33</formula>
+                                
+                <meanValue>0.06187298482034289</meanValue>
+                                
+                <comment>Transport amount in km*km, for acrylic acid // acrylic acid production // eu+efta+uk; Articulated lorry transport, Euro 4, Total weight &gt;32 t; EU+EFTA+UK</comment>
+                            
+            </variableParameter>
+                    
+        </mathematicalRelations>
+            
+    </processInformation>
+        
+    <modellingAndValidation>
+                
+        <LCIMethodAndAllocation>
+                        
+            <typeOfDataSet>Partly terminated system</typeOfDataSet>
+                        
+            <LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+                        
+            <deviationsFromLCIMethodPrinciple>The background data uses: 
+- the \xe2\x80\x9cRecycled content cut-off\xe2\x80\x9d approach to allocate end-of-life by-products and secondary materials. This allocation is explained in the description of the recycled content system model (http://www.ecoinvent.org/database/system-models-in-ecoinvent-3/cut-off-system-model/allocation-cut-off-by-classification.html).
+OR
+- EF compliant data</deviationsFromLCIMethodPrinciple>
+                        
+            <LCIMethodApproaches>Allocation - market value</LCIMethodApproaches>
+                        
+            <deviationsFromLCIMethodApproaches>Background data: 
+- the \xe2\x80\x9cRecycled content cut-off\xe2\x80\x9d approach to allocate end-of-life by-products and secondary materials. This allocation is explained in the description of the recycled content system model (http://www.ecoinvent.org/database/system-models-in-ecoinvent-3/cut-off-system-model/allocation-cut-off-by-classification.html). The ecoinvent database mostly relies on “Allocation – market values” apart for few exceptions particularly in the energy sector. ecoinvent energy data is replaced with EF3.0 core data as per the EF guidelines version 2.0.
+OR
+- EF compliant data</deviationsFromLCIMethodApproaches>
+                        
+            <modellingConstants>All modelling constants follow the requirements listed in the Tender Specifications 070201/2020/SER/ENV.B1. Completeness: There are no intentional cut-offs in the inventory no matter how small their contribution to all the EF impact categories is. Eventual cut-offs are in compliance with the Guide for EF compliant data sets (JRC 2020), i.e. only if below the 3% cut-off rule. Water use: water use is modelled at country level using separate flows for water withdrawal, water release and water evaporation. Handling multi-functional processes: the following PEF multi- functionality decision hierarchy is applied for resolving all multi- functionality problems: (1) subdivision or system expansion; (2) allocation based on a relevant underlying physical relationship (substitution may apply here); (3) allocation based on some other relationship. Direct land use change: GHG emissions from direct LUC allocated to good/service for 20 years after the LUC occurs, with IPCC default values. Carbon storage and delayed emissions: credits associated with temporary (carbon) storage or delayed emissions up to 300 years are not be considered. Emissions off-setting: are not included. Capital goods (including infrastructures) and their End of life: they are included. System boundaries: system boundaries include all processes linked to the product supply chain (e.g. maintenance). Time period: emissions and removals are modelled as if released or removed at the beginning of the assessment method. Fossil and biogenic carbon emissions and removals: removals and emissions are modelled as follows: All GHG emissions from fossil fuels (including peat and limestone) are modelled consistently with the most updated ILCD list of elementary flows. The non-fossil (biogenic) carbon flows are modelled consistently with the most updated ILCD list of elementary flows.</modellingConstants>
+                        
+            <deviationsFromModellingConstants>None</deviationsFromModellingConstants>
+                    
+        </LCIMethodAndAllocation>
+                
+        <dataSourcesTreatmentAndRepresentativeness>
+                        
+            <dataCutOffAndCompletenessPrinciples>There are no intentional cut-offs in the inventory no matter how small their contribution to all the EF impact categories is. Eventual cut-offs are in compliance with the Guide for EF compliant data sets (JRC 2020), i.e. only if below the 3% cut-off rule. The dataset dry mass and water balance has been checked to ensure the inventory is complete. Capital goods (e.g. infrastructure) and their end-of-life are included.</dataCutOffAndCompletenessPrinciples>
+                        
+            <deviationsFromCutOffAndCompletenessPrinciples>None</deviationsFromCutOffAndCompletenessPrinciples>
+                        
+            <dataSelectionAndCombinationPrinciples>These datasets include, in both their foreground and background data, links to EF3.0 compliant data.
+The relevant background data on energy, transport, and End of Life are from the LCDN data node (http://lcdn.thinkstep.com/Node/).
+All other background data in the supply of this product for which no EF3.0 process was available are from ecoinvent v3.7 database (www.ecoinvent.org) or other data sources.</dataSelectionAndCombinationPrinciples>
+                        
+            <deviationsFromSelectionAndCombinationPrinciples>None</deviationsFromSelectionAndCombinationPrinciples>
+                        
+            <dataTreatmentAndExtrapolationsPrinciples>Several data sources have been used to model the inventory.</dataTreatmentAndExtrapolationsPrinciples>
+                        
+            <deviationsFromTreatmentAndExtrapolationPrinciples>None</deviationsFromTreatmentAndExtrapolationPrinciples>
+                        
+            <referenceToDataSource refObjectId="d4fe7d8a-1f8c-591d-a31f-f58d2f888e3e" type="source data set" uri="../sources/d4fe7d8a-1f8c-591d-a31f-f58d2f888e3e.xml" version="01.00.000">
+                                
+                <common:shortDescription>Background Data for Representative products and organisations. EF 3.0 compliant (data stock)</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="4ca747ba-8a9b-59bf-b27b-308f16fd7977" type="source data set" uri="../sources/4ca747ba-8a9b-59bf-b27b-308f16fd7977.xml" version="01.00.000">
+                                
+                <common:shortDescription>Cardellini, G., Valada, T., Cornillier, C., Vial, E., Dragoi, M., Goudiaby, V., Muys, B. (2018). EFO-LCI: A new life cycle inventory database of forestry operations in Europe. Environmental Management, 61(6), 1031-1047.</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="ac97fea6-4e82-5e53-bca3-9840e0496a59" type="source data set" uri="../sources/ac97fea6-4e82-5e53-bca3-9840e0496a59.xml" version="01.00.000">
+                                
+                <common:shortDescription>Novais &amp; Smyth (1999) Fósforo em solo e planta em condições tropicais. Viçosa: Universidade Federal de Viçosa, p. 399.</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <referenceToDataSource refObjectId="5b419f0d-fb3c-54dc-be55-896304951d55" type="source data set" uri="../sources/5b419f0d-fb3c-54dc-be55-896304951d55.xml" version="01.00.000">
+                                
+                <common:shortDescription>Nemecek, T.; Schnetzer, J (2011). Methods of assessment of direct field emissions for LCIs of agricultural production systems, Data v3.0 (2011): http://www.ecoinvent.org/fileadmin/talkpages/pages/01-01-crop-production/01_crop_production_-_direct_field_emissions___natural_resources_v1.1.pdf.
+
+</common:shortDescription>
+                            
+            </referenceToDataSource>
+                        
+            <annualSupplyOrProductionVolume/>
+                        
+            <samplingProcedure/>
+                        
+            <dataCollectionPeriod/>
+                        
+            <uncertaintyAdjustments>None</uncertaintyAdjustments>
+                        
+            <useAdviceForDataSet/>
+                    
+        </dataSourcesTreatmentAndRepresentativeness>
+                
+        <completeness>
+                        
+            <completenessProductModel>All relevant flows quantified</completenessProductModel>
+                              
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b53ec18f-7377-4ad3-86eb-cc3f4f276b2b" type="LCIA method data set" uri="../lciamethods/b53ec18f-7377-4ad3-86eb-cc3f4f276b2b.xml" version="01.00.010">
+                                
+                <common:shortDescription xml:lang="en">Eutrophication, freshwater</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c632be-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c632be-def3-11e6-bf01-fe55135034f3.xml" version="01.00.011">
+                                
+                <common:shortDescription xml:lang="en">Ionising radiation, human health</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad66ce-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad66ce-c78d-11e6-9d9d-cec0c932ce01.xml" version="03.00.014">
+                                
+                <common:shortDescription xml:lang="en">Water use</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c614d2-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c614d2-def3-11e6-bf01-fe55135034f3.xml" version="01.02.009">
+                                
+                <common:shortDescription xml:lang="en">Eutrophication, terrestrial</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="05316e7a-b254-4bea-9cf0-6bf33eb5c630" type="LCIA method data set" uri="../lciamethods/05316e7a-b254-4bea-9cf0-6bf33eb5c630.xml" version="01.00.000">
+                                
+                <common:shortDescription xml:lang="en">Ecotoxicity, freshwater</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c602c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c602c6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.011">
+                                
+                <common:shortDescription xml:lang="en">EF-particulate Matter</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6890-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6890-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                                
+                <common:shortDescription xml:lang="en">Land use</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c611c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c611c6-def3-11e6-bf01-fe55135034f3.xml" version="01.04.000">
+                                
+                <common:shortDescription xml:lang="en">Acidification</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6110-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6110-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                                
+                <common:shortDescription xml:lang="en">Resource use, fossils</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="6209b35f-9447-40b5-b68c-a1099e3674a0" type="LCIA method data set" uri="../lciamethods/6209b35f-9447-40b5-b68c-a1099e3674a0.xml" version="01.00.000">
+                                
+                <common:shortDescription xml:lang="en">Climate change</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b2ad6494-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6494-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                                
+                <common:shortDescription xml:lang="en">Resource use, minerals and metals</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c629d6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c629d6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.012">
+                                
+                <common:shortDescription xml:lang="en">Ozone depletion</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="2299222a-bbd8-474f-9d4f-4dd1f18aea7c" type="LCIA method data set" uri="../lciamethods/2299222a-bbd8-474f-9d4f-4dd1f18aea7c.xml" version="01.01.000">
+                                
+                <common:shortDescription xml:lang="en">Human toxicity, cancer</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c619fa-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c619fa-def3-11e6-bf01-fe55135034f3.xml" version="02.00.010">
+                                
+                <common:shortDescription xml:lang="en">Eutrophication marine</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8" type="LCIA method data set" uri="../lciamethods/7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8.xml" version="01.00.000">
+                                
+                <common:shortDescription xml:lang="en">Human toxicity, non-cancer</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <referenceToSupportedImpactAssessmentMethods refObjectId="b5c610fe-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c610fe-def3-11e6-bf01-fe55135034f3.xml" version="02.01.000">
+                                
+                <common:shortDescription xml:lang="en">Photochemical ozone formation - human health</common:shortDescription>
+                            
+            </referenceToSupportedImpactAssessmentMethods>
+                        
+            <completenessElementaryFlows type="Climate change" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Ozone depletion" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Summer smog" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Eutrophication" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Acidification" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Human toxicity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Freshwater ecotoxicity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Seawater eco-toxicity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Terrestric eco-toxicity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Radioactivity" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Land use" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Non-renewable material resource depletion" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Renewable material resource consumption" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Non-renewable primary energy depletion" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Renewable primary energy consumption" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Particulate matter/respiratory inorganics" value="All relevant flows quantified"/>
+                        
+            <completenessElementaryFlows type="Species depletion" value="No statement"/>
+                        
+            <completenessElementaryFlows type="Noise" value="No statement"/>
+                    
+        </completeness>
+                
+        <validation>
+                        
+            <review type="Dependent internal review">
+                                
+                <common:scope name="Raw data">
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Validation of data sources"/>
+                                        
+                    <common:method name="Sample tests on calculations"/>
+                                        
+                    <common:method name="Element balance"/>
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Mass balance"/>
+                                        
+                    <common:method name="Documentation"/>
+                                        
+                    <common:method name="Energy balance"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="Unit process(es), single operation">
+                                        
+                    <common:method name="Validation of data sources"/>
+                                        
+                    <common:method name="Sample tests on calculations"/>
+                                        
+                    <common:method name="Energy balance"/>
+                                        
+                    <common:method name="Element balance"/>
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Cross-check with other data set"/>
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Mass balance"/>
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                        
+                    <common:method name="Documentation"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="Unit process(es), black box">
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Validation of data sources"/>
+                                        
+                    <common:method name="Sample tests on calculations"/>
+                                        
+                    <common:method name="Energy balance"/>
+                                        
+                    <common:method name="Element balance"/>
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Cross-check with other data set"/>
+                                        
+                    <common:method name="Mass balance"/>
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="LCI results or Partly terminated system">
+                                        
+                    <common:method name="Validation of data sources"/>
+                                        
+                    <common:method name="Sample tests on calculations"/>
+                                        
+                    <common:method name="Energy balance"/>
+                                        
+                    <common:method name="Element balance"/>
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Cross-check with other data set"/>
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Mass balance"/>
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="LCIA results">
+                                        
+                    <common:method name="Cross-check with other source"/>
+                                        
+                    <common:method name="Cross-check with other data set"/>
+                                        
+                    <common:method name="Expert judgement"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="Documentation">
+                                        
+                    <common:method name="Expert judgement"/>
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                    
+                </common:scope>
+                                
+                <common:scope name="Life cycle inventory methods">
+                                        
+                    <common:method name="Compliance with ISO 14040 to 14044"/>
+                                    
+                </common:scope>
+                                
+                <common:dataQualityIndicators>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.41" name="Overall quality" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.82" name="Time representativeness" value="Good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.36" name="Geographical representativeness" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.36" name="Technological representativeness" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.10" name="Precision" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator name="Methodological appropriateness and consistency" value="Not applicable"/>
+                                    
+                </common:dataQualityIndicators>
+                                
+                <common:reviewDetails>Internal reviews have been asked to review the plausibility of the unit process, LCIA scores, and DQRs. Internal reviewers have also been asked to review the data for EF compliancy. The consortium is therefore responsible for aspects such as compliancy with the ILCD format, including validation in Look@LCI, and nomenclature.
+Internal reviwers have been asked to judge based on the process name, that the unit process models in a complete and representative way the  process in the requested location. The review encompassed the plausability of:
+- exchanges with nature (elementary flows) as well as exchanges such as product and waste flows.
+- meta information (general comment, technology comment, system boundaries, allocation, cut-off rules, etc.). Reviewers were asked to judge if the provided information is enough to understand the content of the process.
+- LCIA scores
+- DQRs including precision, technology, time and geography. As well as the overall DQR.</common:reviewDetails>
+                                
+                <common:referenceToNameOfReviewerAndInstitution refObjectId="5253f6dc-3b4a-5bd9-bb9a-992fb573cb04" type="contact data set" uri="../contacts/5253f6dc-3b4a-5bd9-bb9a-992fb573cb04.xml">
+                                        
+                    <common:shortDescription>Hans Blonk</common:shortDescription>
+                                    
+                </common:referenceToNameOfReviewerAndInstitution>
+                                
+                <common:referenceToNameOfReviewerAndInstitution refObjectId="8d8a11a9-7e67-59f5-a22c-2a3b9086d497" type="contact data set" uri="../contacts/8d8a11a9-7e67-59f5-a22c-2a3b9086d497.xml">
+                                        
+                    <common:shortDescription>Lucia Valsasina</common:shortDescription>
+                                    
+                </common:referenceToNameOfReviewerAndInstitution>
+                            
+            </review>
+                        
+            <review type="Independent review panel">
+                                
+                <common:dataQualityIndicators>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.41" name="Overall quality" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.82" name="Time representativeness" value="Good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.36" name="Geographical representativeness" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.36" name="Technological representativeness" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator ext:numericValue="1.10" name="Precision" value="Very good"/>
+                                        
+                    <common:dataQualityIndicator name="Methodological appropriateness and consistency" value="Not applicable"/>
+                                    
+                </common:dataQualityIndicators>
+                                
+                <common:reviewDetails>External reviewers have been asked to provide their expertise in the field of interest. External reviewers have been asked to review the unit process, including eventual methodological choices, the LCIA scores (provided with contribution scores as well), and DQRs. External reviewers have been provided all the information in a tool developed by the consortium for the purpose of this project.
+External reviewers have been asked to judge based on the process name, that the unit process models in a complete and representative way the  process in the requested location. The review encompassed:
+- Plausability and completeness of exchanges with nature (elementary flows) as well as exchanges such as product and waste flows.
+- Review of meta information (general comment, technology comment, system boundaries, allocation, cut-off rules, etc.). Reviewers were asked to judge if the provided information is enough to understand the content of the process.
+- Review of properties (biogenic carbon and water content).
+- Review of allocation keys.
+- Plausability of LCIA scores calculated by the consortium.
+- Plausability of DQRs including precision, technology, time and geography. As well as the overall DQR.</common:reviewDetails>
+                                
+                <common:referenceToNameOfReviewerAndInstitution refObjectId="f2704032-b45f-5dea-b00d-dd1f0bfedd2e" type="contact data set" uri="../contacts/f2704032-b45f-5dea-b00d-dd1f0bfedd2e.xml">
+                                        
+                    <common:shortDescription>Laura Batlle Bayer</common:shortDescription>
+                                    
+                </common:referenceToNameOfReviewerAndInstitution>
+                                
+                <common:referenceToCompleteReviewReport refObjectId="5419ccc2-14fd-5077-b542-fad04b8a48e6" type="source data set" uri="../sources/5419ccc2-14fd-5077-b542-fad04b8a48e6.xml" version="01.00.000">
+                                        
+                    <common:shortDescription>Review report for eucalyptus forestry - EU+EFTA+UK</common:shortDescription>
+                                    
+                </common:referenceToCompleteReviewReport>
+                            
+            </review>
+                    
+        </validation>
+                
+        <complianceDeclarations>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="d92a1a12-2545-49e2-a585-55c259997756" type="source data set" uri="../sources/d92a1a12-2545-49e2-a585-55c259997756.xml" version="35.00.000">
+                                        
+                    <common:shortDescription>ILCD Data Network - Entry-level</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+                            
+            </compliance>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="afc1ce43-e800-494b-aad4-46b9e8ea74da" type="source data set" uri="../sources/afc1ce43-e800-494b-aad4-46b9e8ea74da.xml" version="00.00.000">
+                                        
+                    <common:shortDescription>Suggestions for updating the PEF method 2019</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Fully compliant</common:qualityCompliance>
+                            
+            </compliance>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="1ea48531-e397-4ca7-ac08-056e4fa11826" type="source data set" uri="../sources/1ea48531-e397-4ca7-ac08-056e4fa11826.xml" version="35.00.000">
+                                        
+                    <common:shortDescription>ISO 14040 Environmental Management – Life Cycle Assessment – Principles and Framework, 2006</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Not defined</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Fully compliant</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Not defined</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+                            
+            </compliance>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="1adb438d-4a8b-4919-885e-0a66da3c0f2a" type="source data set" uri="../sources/1adb438d-4a8b-4919-885e-0a66da3c0f2a.xml" version="35.00.000">
+                                        
+                    <common:shortDescription>ISO 14044:2006. Environmental Management – Life Cycle Assessment – Requirements and guidelines.</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Not defined</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Fully compliant</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Not defined</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Fully compliant</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+                            
+            </compliance>
+                        
+            <compliance>
+                                
+                <common:referenceToComplianceSystem refObjectId="0eb2b770-2cb1-43cf-9fbc-215df36fe9f0" type="source data set" uri="../sources/0eb2b770-2cb1-43cf-9fbc-215df36fe9f0.xml" version="00.00.001">
+                                        
+                    <common:shortDescription>Environmental Footprint 3.1</common:shortDescription>
+                                    
+                </common:referenceToComplianceSystem>
+                                
+                <common:approvalOfOverallCompliance>Not defined</common:approvalOfOverallCompliance>
+                                
+                <common:nomenclatureCompliance>Fully compliant</common:nomenclatureCompliance>
+                                
+                <common:methodologicalCompliance>Not defined</common:methodologicalCompliance>
+                                
+                <common:reviewCompliance>Not defined</common:reviewCompliance>
+                                
+                <common:documentationCompliance>Not defined</common:documentationCompliance>
+                                
+                <common:qualityCompliance>Not defined</common:qualityCompliance>
+                            
+            </compliance>
+                    
+        </complianceDeclarations>
+            
+    </modellingAndValidation>
+        
+    <administrativeInformation>
+                
+        <common:commissionerAndGoal>
+                        
+            <common:referenceToCommissioner refObjectId="cf7f0f79-a312-4b28-89ea-32a589b87f58" type="contact data set" uri="../contacts/cf7f0f79-a312-4b28-89ea-32a589b87f58.xml" version="01.00.000">
+                                
+                <common:shortDescription>European Commission, DG ENV B1</common:shortDescription>
+                            
+            </common:referenceToCommissioner>
+                        
+            <common:project>Provision of process-based 3.0 Environmental Footprint-compliant life cycle inventory datasets - Renewable materials - contract number 070201/2020/840085/SER/ENV.B.1</common:project>
+                        
+            <common:intendedApplications>Implementation of regular Product Environmental Footprint (PEF) studies and Organisation Environmental Footprint (OEF) studies exclusively under the specified Product groups and sectors as defined in the Product Environmental Footprint Category Rules (PEFCR) and Organisation Environmental Footprint Sectorial Rules (OEFSR) listed in http://ec.europa.eu/environment/eussd/smgp/PEFCR_OEFSR.htm</common:intendedApplications>
+                    
+        </common:commissionerAndGoal>
+                
+        <dataGenerator>
+                        
+            <common:referenceToPersonOrEntityGeneratingTheDataSet refObjectId="f55ce287-34d4-59ba-9c81-95158b41d287" type="contact data set" uri="../contacts/f55ce287-34d4-59ba-9c81-95158b41d287.xml" version="01.00.000">
+                                
+                <common:shortDescription>ACV Brasil</common:shortDescription>
+                            
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+                    
+        </dataGenerator>
+                
+        <dataEntryBy>
+                        
+            <common:timeStamp>2024-07-13T14:47:24.757+02:00</common:timeStamp>
+                        
+            <common:referenceToDataSetFormat refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" type="source data set" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml" version="03.00.000">
+                                
+                <common:shortDescription>ILCD format 1.1</common:shortDescription>
+                            
+            </common:referenceToDataSetFormat>
+                        
+            <common:referenceToPersonOrEntityEnteringTheData refObjectId="f55ce287-34d4-59ba-9c81-95158b41d287" type="contact data set" uri="../contacts/f55ce287-34d4-59ba-9c81-95158b41d287.xml" version="01.00.000">
+                                
+                <common:shortDescription>ACV Brasil</common:shortDescription>
+                            
+            </common:referenceToPersonOrEntityEnteringTheData>
+                    
+        </dataEntryBy>
+                
+        <publicationAndOwnership>
+                        
+            <common:dateOfLastRevision>2020-09-02T14:36:46.214668+02:00</common:dateOfLastRevision>
+                        
+            <common:dataSetVersion>01.01.000</common:dataSetVersion>
+                        
+            <common:referenceToPrecedingDataSetVersion refObjectId="c4b1135c-5db6-5529-97d0-72bf6e0e4db0" type="process data set" uri="../processes/c4b1135c-5db6-5529-97d0-72bf6e0e4db0.xml?version=01.00.000" version="01.00.000">
+                                
+                <common:shortDescription xml:lang="en">eucalyptus forestry</common:shortDescription>
+                            
+            </common:referenceToPrecedingDataSetVersion>
+                        
+            <common:permanentDataSetURI/>
+                        
+            <common:workflowAndPublicationStatus>Data set finalised; entirely published</common:workflowAndPublicationStatus>
+                        
+            <common:registrationNumber/>
+                        
+            <common:referenceToOwnershipOfDataSet refObjectId="6ae096bd-5b0a-5222-a4dd-b48143206947" type="contact data set" uri="../contacts/6ae096bd-5b0a-5222-a4dd-b48143206947.xml" version="01.00.000">
+                                
+                <common:shortDescription>ecoinvent</common:shortDescription>
+                            
+            </common:referenceToOwnershipOfDataSet>
+                        
+            <common:copyright>true</common:copyright>
+                        
+            <common:referenceToEntitiesWithExclusiveAccess refObjectId="8b3e08f0-740a-43b1-aa8d-bec56c5daf6e" type="contact data set" uri="../contacts/8b3e08f0-740a-43b1-aa8d-bec56c5daf6e.xml" version="29.00.000">
+                                
+                <common:shortDescription>Final user</common:shortDescription>
+                            
+            </common:referenceToEntitiesWithExclusiveAccess>
+                        
+            <common:licenseType>Free of charge for some user types or use types</common:licenseType>
+                        
+            <common:accessRestrictions>Free of charge for all final users implementing a regular Product Environmental Footprint (PEF) studies and Organisation Environmental Footprint (OEF) studies exclusively under the specified Product groups and sectors as defined in the Product Environmental Footprint Category Rules (PEFCR) and Organisation Environmental Footprint Sectorial Rules (OEFSR) listed in http://ec.europa.eu/environment/eussd/smgp/PEFCR_OEFSR.htm and in accordance with the terms and conditions of the EULA (available at https://ecoinvent.lca-data.com/) exclusively until 31st December 2024. Any use of this dataset or any derivative data not within the specific context of one of the PEF/OEF projects or after the end of 2024 is not permitted.</common:accessRestrictions>
+                    
+        </publicationAndOwnership>
+            
+    </administrativeInformation>
+        
+    <exchanges>
+                
+        <exchange dataSetInternalID="0">
+                        
+            <referenceToFlowDataSet refObjectId="5c08002a-e447-506e-972e-7a7d0caff9ae" type="flow data set" uri=".../flows/5c08002a-e447-506e-972e-7a7d0caff9ae.xml">
+                                
+                <common:shortDescription>eucalyptus forestry // eucalyptus forestry // eu+efta+uk</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Output</exchangeDirection>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>1</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="1">
+                        
+            <referenceToFlowDataSet refObjectId="f5915ef8-a5d2-5601-a13d-b54ef41ab02c" type="flow data set" uri=".../flows/f5915ef8-a5d2-5601-a13d-b54ef41ab02c.xml">
+                                
+                <common:shortDescription>Transport of dolomite by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_0</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.11807009851390596</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="2">
+                        
+            <referenceToFlowDataSet refObjectId="85aadc4d-10ba-5422-b993-2bfb0e251b1a" type="flow data set" uri=".../flows/85aadc4d-10ba-5422-b993-2bfb0e251b1a.xml">
+                                
+                <common:shortDescription>Transport of dolomite by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_1</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.9248366971495701</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="3">
+                        
+            <referenceToFlowDataSet refObjectId="c47354c0-13a1-54ce-9e61-2f1bfd81cde1" type="flow data set" uri=".../flows/c47354c0-13a1-54ce-9e61-2f1bfd81cde1.xml">
+                                
+                <common:shortDescription>Transport of dolomite by Freight train, diesel traction - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_2</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.0917955236611894</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="4">
+                        
+            <referenceToFlowDataSet refObjectId="720362dc-9da5-5db3-b221-5b52bca84298" type="flow data set" uri=".../flows/720362dc-9da5-5db3-b221-5b52bca84298.xml">
+                                
+                <common:shortDescription>Transport of dolomite by Freight train, electricity traction - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_3</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.14478523343570437</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="5">
+                        
+            <referenceToFlowDataSet refObjectId="352baf4b-5a81-5d22-8c36-7095e0dc03e6" type="flow data set" uri=".../flows/352baf4b-5a81-5d22-8c36-7095e0dc03e6.xml">
+                                
+                <common:shortDescription>Transport of crude vegetable oil blend, from crushing, at plant // rer by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_4</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.003541718410846856</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="6">
+                        
+            <referenceToFlowDataSet refObjectId="8fbf1d75-22ac-5195-a24f-930aa7c35f74" type="flow data set" uri=".../flows/8fbf1d75-22ac-5195-a24f-930aa7c35f74.xml">
+                                
+                <common:shortDescription>Transport of polyacrylamide // polyacrylamide production // eu+efta+uk by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_5</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.0036215320699743057</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="7">
+                        
+            <referenceToFlowDataSet refObjectId="896ad174-21fd-5221-bb97-4eed50d7509e" type="flow data set" uri=".../flows/896ad174-21fd-5221-bb97-4eed50d7509e.xml">
+                                
+                <common:shortDescription>Transport of urea, per kg n, production mix, at plant // urea, per kg n // eu+efta+uk by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_6</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>7.852200218725266E-05</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="8">
+                        
+            <referenceToFlowDataSet refObjectId="7ef074f6-1bc7-5bc5-915d-63ed1226f907" type="flow data set" uri=".../flows/7ef074f6-1bc7-5bc5-915d-63ed1226f907.xml">
+                                
+                <common:shortDescription>Transport of pesticide, unspecified // pesticide production, unspecified // rer by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_7</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.17202080341297832</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="9">
+                        
+            <referenceToFlowDataSet refObjectId="af7cbb90-84e3-580a-bdbc-7ce6cb53801c" type="flow data set" uri=".../flows/af7cbb90-84e3-580a-bdbc-7ce6cb53801c.xml">
+                                
+                <common:shortDescription>Transport of glyphosate // glyphosate // eu+efta+uk by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_8</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.006286320811896479</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="10">
+                        
+            <referenceToFlowDataSet refObjectId="ac6ee2f3-786e-51e3-9464-26a9c0d86df5" type="flow data set" uri=".../flows/ac6ee2f3-786e-51e3-9464-26a9c0d86df5.xml">
+                                
+                <common:shortDescription>Transport of mono ammonium phosphate, per kg n, production mix, at plant // mono ammonium phosphate, per kg n // eu+efta+uk by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_9</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.02200212284163768</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="11">
+                        
+            <referenceToFlowDataSet refObjectId="042bf458-fb4c-5a31-81d2-da51e33d11f1" type="flow data set" uri=".../flows/042bf458-fb4c-5a31-81d2-da51e33d11f1.xml">
+                                
+                <common:shortDescription>Transport of triple super phosphate, per kg substance, production mix, at plant // triple super phosphate, per kg substance // eu+efta+uk by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_10</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.051363840780129774</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="12">
+                        
+            <referenceToFlowDataSet refObjectId="08f2aa60-4081-5a33-88a7-7c08f7358964" type="flow data set" uri=".../flows/08f2aa60-4081-5a33-88a7-7c08f7358964.xml">
+                                
+                <common:shortDescription>Transport of inorganic potassium fertiliser, as k2o // nutrient supply from potassium chloride // rer by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_11</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.06056333465119779</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="13">
+                        
+            <referenceToFlowDataSet refObjectId="011a04c2-15e7-5926-8e8c-20b758de389f" type="flow data set" uri=".../flows/011a04c2-15e7-5926-8e8c-20b758de389f.xml">
+                                
+                <common:shortDescription>Transport of wax // wax production // eu+efta+uk by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_12</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.0025796914063453236</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="14">
+                        
+            <referenceToFlowDataSet refObjectId="3581e545-1ac7-5cd9-89e8-b359d73b93bf" type="flow data set" uri=".../flows/3581e545-1ac7-5cd9-89e8-b359d73b93bf.xml">
+                                
+                <common:shortDescription>Transport of acrylic acid // acrylic acid production // eu+efta+uk by Freight train, average - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_13</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.11422704889909457</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="15">
+                        
+            <referenceToFlowDataSet refObjectId="9134a4aa-50f0-58f1-bc1a-6ba4d669c7e5" type="flow data set" uri=".../flows/9134a4aa-50f0-58f1-bc1a-6ba4d669c7e5.xml">
+                                
+                <common:shortDescription>Transport of crude vegetable oil blend, from crushing, at plant // rer by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_14</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.003984433212202713</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="16">
+                        
+            <referenceToFlowDataSet refObjectId="1290f9f0-2f8d-51c8-ad65-d83e71ebca83" type="flow data set" uri=".../flows/1290f9f0-2f8d-51c8-ad65-d83e71ebca83.xml">
+                                
+                <common:shortDescription>Transport of polyacrylamide // polyacrylamide production // eu+efta+uk by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_15</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.004074223578721094</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="17">
+                        
+            <referenceToFlowDataSet refObjectId="e838970a-8150-54ff-bf0e-3c7f95c5bde9" type="flow data set" uri=".../flows/e838970a-8150-54ff-bf0e-3c7f95c5bde9.xml">
+                                
+                <common:shortDescription>Transport of urea, per kg n, production mix, at plant // urea, per kg n // eu+efta+uk by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_16</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>8.833725246065925E-05</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="18">
+                        
+            <referenceToFlowDataSet refObjectId="c2e5de5c-02c5-54b0-af78-6602090e2ca0" type="flow data set" uri=".../flows/c2e5de5c-02c5-54b0-af78-6602090e2ca0.xml">
+                                
+                <common:shortDescription>Transport of pesticide, unspecified // pesticide production, unspecified // rer by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_17</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.1935234038396006</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="19">
+                        
+            <referenceToFlowDataSet refObjectId="ddc9ceab-2b03-572e-9ce7-84c0530b36dd" type="flow data set" uri=".../flows/ddc9ceab-2b03-572e-9ce7-84c0530b36dd.xml">
+                                
+                <common:shortDescription>Transport of glyphosate // glyphosate // eu+efta+uk by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_18</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.0070721109133835384</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="20">
+                        
+            <referenceToFlowDataSet refObjectId="5864f68d-4678-560e-a39d-a26164fe72e3" type="flow data set" uri=".../flows/5864f68d-4678-560e-a39d-a26164fe72e3.xml">
+                                
+                <common:shortDescription>Transport of mono ammonium phosphate, per kg n, production mix, at plant // mono ammonium phosphate, per kg n // eu+efta+uk by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_19</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.024752388196842386</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="21">
+                        
+            <referenceToFlowDataSet refObjectId="ab8fea5b-9d3a-54aa-9977-f5582800b7ae" type="flow data set" uri=".../flows/ab8fea5b-9d3a-54aa-9977-f5582800b7ae.xml">
+                                
+                <common:shortDescription>Transport of triple super phosphate, per kg substance, production mix, at plant // triple super phosphate, per kg substance // eu+efta+uk by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_20</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.05778432087764599</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="22">
+                        
+            <referenceToFlowDataSet refObjectId="06eef343-6016-5faf-b5d1-f988472b46ab" type="flow data set" uri=".../flows/06eef343-6016-5faf-b5d1-f988472b46ab.xml">
+                                
+                <common:shortDescription>Transport of inorganic potassium fertiliser, as k2o // nutrient supply from potassium chloride // rer by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_21</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.06813375148259751</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="23">
+                        
+            <referenceToFlowDataSet refObjectId="683f56a1-2e49-5d1e-b3aa-9f011972bf70" type="flow data set" uri=".../flows/683f56a1-2e49-5d1e-b3aa-9f011972bf70.xml">
+                                
+                <common:shortDescription>Transport of wax // wax production // eu+efta+uk by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_22</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.002902152832138489</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="24">
+                        
+            <referenceToFlowDataSet refObjectId="d821b752-c947-5114-9188-3d4fe2818ab4" type="flow data set" uri=".../flows/d821b752-c947-5114-9188-3d4fe2818ab4.xml">
+                                
+                <common:shortDescription>Transport of acrylic acid // acrylic acid production // eu+efta+uk by Barge - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_23</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.1285054300114814</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="25">
+                        
+            <referenceToFlowDataSet refObjectId="88ed1d23-dc6a-5db8-b611-0de82eb8d500" type="flow data set" uri=".../flows/88ed1d23-dc6a-5db8-b611-0de82eb8d500.xml">
+                                
+                <common:shortDescription>Transport of crude vegetable oil blend, from crushing, at plant // rer by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_24</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.0019184308058753801</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="26">
+                        
+            <referenceToFlowDataSet refObjectId="cf6b9048-4eba-5f60-8acd-887647ae9f72" type="flow data set" uri=".../flows/cf6b9048-4eba-5f60-8acd-887647ae9f72.xml">
+                                
+                <common:shortDescription>Transport of polyacrylamide // polyacrylamide production // eu+efta+uk by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_25</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.0019616632045694154</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="27">
+                        
+            <referenceToFlowDataSet refObjectId="e4268a9e-fae5-581b-84eb-9e92f97511d4" type="flow data set" uri=".../flows/e4268a9e-fae5-581b-84eb-9e92f97511d4.xml">
+                                
+                <common:shortDescription>Transport of urea, per kg n, production mix, at plant // urea, per kg n // eu+efta+uk by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_26</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>4.253275118476186E-05</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="28">
+                        
+            <referenceToFlowDataSet refObjectId="b35af00a-7189-5302-9c76-b9f4c59fdbde" type="flow data set" uri=".../flows/b35af00a-7189-5302-9c76-b9f4c59fdbde.xml">
+                                
+                <common:shortDescription>Transport of pesticide, unspecified // pesticide production, unspecified // rer by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_27</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.09317793518202992</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="29">
+                        
+            <referenceToFlowDataSet refObjectId="4f9bcc70-57e1-5b86-8547-95c652673723" type="flow data set" uri=".../flows/4f9bcc70-57e1-5b86-8547-95c652673723.xml">
+                                
+                <common:shortDescription>Transport of glyphosate // glyphosate // eu+efta+uk by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_28</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.0034050904397772593</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="30">
+                        
+            <referenceToFlowDataSet refObjectId="25c39a51-0a20-50f5-82d2-8c7dde992ab2" type="flow data set" uri=".../flows/25c39a51-0a20-50f5-82d2-8c7dde992ab2.xml">
+                                
+                <common:shortDescription>Transport of mono ammonium phosphate, per kg n, production mix, at plant // mono ammonium phosphate, per kg n // eu+efta+uk by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_29</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.011917816539220409</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="31">
+                        
+            <referenceToFlowDataSet refObjectId="0b008f5e-a8f8-5e76-aada-72e0f66c1713" type="flow data set" uri=".../flows/0b008f5e-a8f8-5e76-aada-72e0f66c1713.xml">
+                                
+                <common:shortDescription>Transport of triple super phosphate, per kg substance, production mix, at plant // triple super phosphate, per kg substance // eu+efta+uk by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_30</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.027822080422570294</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="32">
+                        
+            <referenceToFlowDataSet refObjectId="ccafabed-bc3f-5d57-959d-5f8a2d2ebca2" type="flow data set" uri=".../flows/ccafabed-bc3f-5d57-959d-5f8a2d2ebca2.xml">
+                                
+                <common:shortDescription>Transport of inorganic potassium fertiliser, as k2o // nutrient supply from potassium chloride // rer by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_31</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.03280513960273213</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="33">
+                        
+            <referenceToFlowDataSet refObjectId="c63accc8-f883-5337-ab09-d02f40911eb7" type="flow data set" uri=".../flows/c63accc8-f883-5337-ab09-d02f40911eb7.xml">
+                                
+                <common:shortDescription>Transport of wax // wax production // eu+efta+uk by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_32</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.0013973328451037169</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="34">
+                        
+            <referenceToFlowDataSet refObjectId="054a3f49-4148-52eb-bb45-f94d5e051d80" type="flow data set" uri=".../flows/054a3f49-4148-52eb-bb45-f94d5e051d80.xml">
+                                
+                <common:shortDescription>Transport of acrylic acid // acrylic acid production // eu+efta+uk by Articulated lorry transport, Euro 4, Total weight &gt;32 t - EU+EFTA+UK</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <referenceToVariable>kg_km_33</referenceToVariable>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>0.06187298482034289</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="35">
+                        
+            <referenceToFlowDataSet refObjectId="505b6046-3671-5808-954d-6c657892f31d" type="flow data set" uri=".../flows/505b6046-3671-5808-954d-6c657892f31d.xml">
+                                
+                <common:shortDescription>eucalyptus forestry // eucalyptus forestry // eu+efta+uk, blackbox</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>1</resultingAmount>
+                    
+        </exchange>
+                
+        <exchange dataSetInternalID="36">
+                        
+            <referenceToFlowDataSet refObjectId="01c9c303-d146-5c92-a095-c80a6c72bbf5" type="flow data set" uri=".../flows/01c9c303-d146-5c92-a095-c80a6c72bbf5.xml">
+                                
+                <common:shortDescription>eucalyptus forestry // eucalyptus forestry // eu+efta+uk, elementary</common:shortDescription>
+                            
+            </referenceToFlowDataSet>
+                        
+            <exchangeDirection>Input</exchangeDirection>
+                        
+            <meanAmount>1</meanAmount>
+                        
+            <resultingAmount>1</resultingAmount>
+                    
+        </exchange>
+            
+    </exchanges>
+    <LCIAResults>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c619fa-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c619fa-def3-11e6-bf01-fe55135034f3.xml" version="02.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication marine</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>1.528334747314906E-4</meanAmount>
+            <generalComment>Eutrophication marine</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="05316e7a-b254-4bea-9cf0-6bf33eb5c630" type="LCIA method data set" uri="../lciamethods/05316e7a-b254-4bea-9cf0-6bf33eb5c630.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Ecotoxicity, freshwater</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>51.03270625482967</meanAmount>
+            <generalComment>Ecotoxicity, freshwater</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6890-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6890-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Land use</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>59.41435604496479</meanAmount>
+            <generalComment>Land use</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad66ce-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad66ce-c78d-11e6-9d9d-cec0c932ce01.xml" version="03.00.014">
+                <common:shortDescription xml:lang="en">Water use</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.003722386613259053</meanAmount>
+            <generalComment>Water use</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6494-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6494-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, minerals and metals</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>1.6211139501927904E-7</meanAmount>
+            <generalComment>Resource use, minerals and metals</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b2ad6110-c78d-11e6-9d9d-cec0c932ce01" type="LCIA method data set" uri="../lciamethods/b2ad6110-c78d-11e6-9d9d-cec0c932ce01.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Resource use, fossils</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.4060285637450616</meanAmount>
+            <generalComment>Resource use, fossils</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="6209b35f-9447-40b5-b68c-a1099e3674a0" type="LCIA method data set" uri="../lciamethods/6209b35f-9447-40b5-b68c-a1099e3674a0.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Climate change</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.03250192983243768</meanAmount>
+            <generalComment>Climate change</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c629d6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c629d6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.012">
+                <common:shortDescription xml:lang="en">Ozone depletion</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>1.2871670607918523E-8</meanAmount>
+            <generalComment>Ozone depletion</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="2299222a-bbd8-474f-9d4f-4dd1f18aea7c" type="LCIA method data set" uri="../lciamethods/2299222a-bbd8-474f-9d4f-4dd1f18aea7c.xml" version="01.01.000">
+                <common:shortDescription xml:lang="en">Human toxicity, cancer</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>1.8002850132964527E-11</meanAmount>
+            <generalComment>Human toxicity, cancer</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8" type="LCIA method data set" uri="../lciamethods/7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8.xml" version="01.00.000">
+                <common:shortDescription xml:lang="en">Human toxicity, non-cancer</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>9.924792231991115E-9</meanAmount>
+            <generalComment>Human toxicity, non-cancer</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c602c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c602c6-def3-11e6-bf01-fe55135034f3.xml" version="02.00.011">
+                <common:shortDescription xml:lang="en">EF-particulate Matter</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>7.2463792320853E-9</meanAmount>
+            <generalComment>EF-particulate Matter</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c632be-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c632be-def3-11e6-bf01-fe55135034f3.xml" version="01.00.011">
+                <common:shortDescription xml:lang="en">Ionising radiation, human health</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.0010557626185196194</meanAmount>
+            <generalComment>Ionising radiation, human health</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c610fe-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c610fe-def3-11e6-bf01-fe55135034f3.xml" version="02.01.000">
+                <common:shortDescription xml:lang="en">Photochemical ozone formation - human health</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>3.533858924773742E-4</meanAmount>
+            <generalComment>Photochemical ozone formation - human health</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c611c6-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c611c6-def3-11e6-bf01-fe55135034f3.xml" version="01.04.000">
+                <common:shortDescription xml:lang="en">Acidification</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>4.3386942713966254E-4</meanAmount>
+            <generalComment>Acidification</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b5c614d2-def3-11e6-bf01-fe55135034f3" type="LCIA method data set" uri="../lciamethods/b5c614d2-def3-11e6-bf01-fe55135034f3.xml" version="01.02.009">
+                <common:shortDescription xml:lang="en">Eutrophication, terrestrial</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>0.001843191912422335</meanAmount>
+            <generalComment>Eutrophication, terrestrial</generalComment>
+        </LCIAResult>
+        <LCIAResult>
+            <referenceToLCIAMethodDataSet refObjectId="b53ec18f-7377-4ad3-86eb-cc3f4f276b2b" type="LCIA method data set" uri="../lciamethods/b53ec18f-7377-4ad3-86eb-cc3f4f276b2b.xml" version="01.00.010">
+                <common:shortDescription xml:lang="en">Eutrophication, freshwater</common:shortDescription>
+            </referenceToLCIAMethodDataSet>
+            <meanAmount>1.3282338286941366E-5</meanAmount>
+            <generalComment>Eutrophication, freshwater</generalComment>
+        </LCIAResult>
+    </LCIAResults>
+        
+
+</processDataSet>
