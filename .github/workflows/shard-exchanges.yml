@@ -1,0 +1,31 @@
+name: Build Exchanges Shards
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [ feature/ef31-pefcr ]
+    paths:
+      - 'output/new_csv/ilcd_exchanges_all_enhanced.csv'
+      - 'scripts/shard_exchanges.py'
+
+jobs:
+  shard:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.x' }
+      - name: Shard CSV
+        run: |
+          python scripts/shard_exchanges.py \
+            --src output/new_csv/ilcd_exchanges_all_enhanced.csv \
+            --dst output/new_csv/exchanges \
+            --bytes 8000000
+      - name: Commit shards
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add output/new_csv/exchanges
+          git commit -m "build: shard exchanges + index.json" || echo "No changes"
+          git push
