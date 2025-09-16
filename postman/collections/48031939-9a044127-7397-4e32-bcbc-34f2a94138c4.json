@@ -14,6 +14,15 @@
 					"script": {
 						"id": "780eff78-678a-4fbc-a4ed-e93a47ea1de2",
 						"exec": [
+							"// DEBUG: Check what data we have",
+							"console.log(\"=== REQUEST 4 DEBUG ===\");",
+							"console.log(\"target_json exists:\", !!pm.environment.get(\"target_json\"));",
+							"console.log(\"merged_input exists:\", !!pm.environment.get(\"merged_input\"));",
+							"",
+							"const testData = JSON.parse(pm.environment.get(\"target_json\") || \"{}\");",
+							"console.log(\"distribution.legs exists:\", !!(testData.distribution && testData.distribution.legs));",
+							"console.log(\"distribution_scenario.legs exists:\", !!(testData.distribution_scenario && testData.distribution_scenario.legs));",
+							"console.log(\"=== END DEBUG ===\");",
 							";(async () => {",
 							"// === R3 FINAL v3.1: load target_json → EF3.1 (materials + PACKAGING PEFCR/ILCD + use-phase + EoL) ===",
 							"function tryParseJSON(s){ try{ return JSON.parse(s); }catch(_){ return null; } }",
