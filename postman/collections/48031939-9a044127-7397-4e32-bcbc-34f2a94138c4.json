@@ -3159,6 +3159,7 @@
 					"script": {
 						"id": "ff7a52cf-ab9d-45bb-b037-5356fd109f2e",
 						"exec": [
+							"",
 							"// === XML DATA FETCHER - GET REQUEST PRE-SCRIPT ===",
 							"// This script runs BETWEEN Request 3 (merge answers) and Request 4 (final PEF calculation)",
 							"// Purpose: Fetch ILCD XML processes based on target_json materials and build process inventory",
@@ -3261,6 +3262,7 @@
 							"        ",
 							"        \"wo\": \"wool_virgin\",",
 							"        \"wool\": \"wool_virgin\",",
+							"        \"wool_sheep\": \"wool_virgin\",",
 							"        ",
 							"        \"pa\": \"nylon\",",
 							"        \"pa6\": \"nylon\",",
@@ -3594,11 +3596,7 @@
 							"    pm.environment.set(\"xml_data_ready\", \"false\");",
 							"    pm.environment.set(\"xml_fetch_error\", String(error));",
 							"});",
-							"",
-							"// === Set up the actual GET request (placeholder) ===",
-							"// This is just a placeholder - the real work happens in pre-request",
-							"pm.request.url = \"https://postman-echo.com/status/200\";",
-							"pm.request.method = \"GET\";"
+							""
 						],
 						"type": "text/javascript",
 						"packages": {}
