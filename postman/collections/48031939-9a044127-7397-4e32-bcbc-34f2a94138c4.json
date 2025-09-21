@@ -1450,6 +1450,12 @@
 					"script": {
 						"id": "1616902f-6cac-4a14-88ac-0eed82a7fb6e",
 						"exec": [
+							"// Try direct format first",
+							"const direct = tryParseJSON(pm.environment.get(\"ilcd_usephase_direct\"));",
+							"if (direct && Object.keys(direct).length > 0) {",
+							"  console.log(`✅ Using direct format: ${Object.keys(direct).length} keys`);",
+							"  return direct;",
+							"}",
 							"// === R4 ENHANCED PEF CALCULATOR (CLEANED) ===",
 							"// ILCD priority with PEFCR fallback for use-phase",
 							"// Removes redundant debug code and focuses on core calculation",
