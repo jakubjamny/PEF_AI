@@ -3,14 +3,14 @@
     "pefcr_version": "A&F v3.1",
     "ef_version": "EF Database 3.1",
     "region_default": "EU+EFTA+UK",
-    "notes": "Všechny podíly jsou v rozsahu 0..1. 'minutes_per_garment' je počet minut žehlení na kus (použije se s podílem kusů žehlených a počtem praní). 'uses_between_washes' má 4 varianty dle PEFCR (animal_fibre_gt50 / other_fibres / sport / delicates)."
+    "notes": "Use-phase dle PEFCR v3.1: používej defaulty (Tab. 39–42) a default EF datasets z Annex VII. Jednotky: washing/handwash/dry-clean/tumble = event; ironing = minute. Electricity mix: consumption grid EU27+UK+EFTA."
   },
   "datasets": {
     "washing_hand": {
       "category": "Washing - both",
       "lcs": "LCS4",
       "name": "Handwashing {EU+EFTA+UK} | handwashing process | production mix, at plant | service | LCI result",
-      "unit": "kg",
+      "unit": "event",
       "region": "EU+EFTA+UK",
       "source": "EF Database 3.1",
       "uuid": "25b97e74-0fc8-5092-ac30-8452c6d1ecbe"
@@ -19,7 +19,7 @@
       "category": "Washing - both",
       "lcs": "LCS4",
       "name": "Washing, 30 degrees C, average {EU+EFTA+UK} | washing, cold to warm water | production mix, at plant | service | LCI result",
-      "unit": "kg",
+      "unit": "event",
       "region": "EU+EFTA+UK",
       "source": "EF Database 3.1",
       "uuid": "27f9009b-8fd1-5cae-ad4f-115dd1f44d71"
@@ -28,7 +28,7 @@
       "category": "Washing - both",
       "lcs": "LCS4",
       "name": "Washing, 40 degrees C, average {EU+EFTA+UK} | washing, warm water | production mix, at plant | service | LCI result",
-      "unit": "kg",
+      "unit": "event",
       "region": "EU+EFTA+UK",
       "source": "EF Database 3.1",
       "uuid": "ae46be13-3830-5af9-9e21-875793e94c88"
@@ -37,7 +37,7 @@
       "category": "Washing - both",
       "lcs": "LCS4",
       "name": "Washing, 60 degrees C, average {EU+EFTA+UK} | washing, hot water | production mix, at plant | service | LCI result",
-      "unit": "kg",
+      "unit": "event",
       "region": "EU+EFTA+UK",
       "source": "EF Database 3.1",
       "uuid": "2baf17e3-2fff-5b3f-bceb-dd9718cf96e4"
@@ -46,7 +46,7 @@
       "category": "Washing - both",
       "lcs": "LCS4",
       "name": "Washing, dry cleaning {EU+EFTA+UK} | washing process | production mix, at plant | service | LCI result",
-      "unit": "kg",
+      "unit": "event",
       "region": "EU+EFTA+UK",
       "source": "EF Database 3.1",
       "uuid": "64a29c62-7bed-5c8b-9aa3-761864dc435a"
@@ -55,7 +55,7 @@
       "category": "Drying - Apparel",
       "lcs": "LCS4",
       "name": "Tumble drying {EU+EFTA+UK} | drying, condenser tumble dryer | production mix, at plant | service | LCI result",
-      "unit": "kg",
+      "unit": "event",
       "region": "EU+EFTA+UK",
       "source": "EF Database 3.1",
       "uuid": "90d4e7cb-842b-5ff3-8788-7f999c27889f"
@@ -64,7 +64,7 @@
       "category": "Ironing - Apparel",
       "lcs": "LCS4",
       "name": "Ironing, average, 1 minute {EU+EFTA+UK} | technology mix | production mix, at plant | service | LCI result",
-      "unit": "kg",
+      "unit": "minute",
       "region": "EU+EFTA+UK",
       "source": "EF Database 3.1",
       "uuid": "c5459a8f-21e8-53fc-987c-eed7f5debf43"
@@ -78,15 +78,6 @@
       "source": "EF Database 3.1",
       "uuid": "697889d5-d952-45eb-9e46-c39046c35522"
     },
-    "zipper_plastic": {
-      "category": "Trims",
-      "lcs": "LCS1",
-      "name": "Zipper tape and puller, plastic {GLO} | production, at plant | 1kg of product, nylon zipper | LCI result",
-      "unit": "kg",
-      "region": "GLO",
-      "source": "EF Database 3.1",
-      "uuid": "00d09aaa-f6b8-5e16-bbc5-4f74d571366f"
-    }
   },
   "rp_defaults": [
     {
