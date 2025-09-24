@@ -3,62 +3,482 @@
     "pefcr_version": "A&F v3.1",
     "ef_version": "EF Database 3.1",
     "region_default": "EU+EFTA+UK",
-    "notes": "Use-phase dle PEFCR v3.1: používej defaulty (Tab. 39–42) a default EF datasets z Annex VII. Jednotky: washing/handwash/dry-clean/tumble = event; ironing = minute. Electricity mix: consumption grid EU27+UK+EFTA."
+    "notes": "Use-phase dle PEFCR v3.1: používej defaulty (Tab. 39–42) a default EF datasets z Annex VII. FU: washing/handwash/dry-clean/tumble = 1 kg prádla; ironing = 1 minuta. Elektrina: EU27+UK+EFTA consumption mix. LCIA results z EF 3.1 (per 1×FU) zapsány níže."
   },
   "datasets": {
     "washing_hand": {
       "category": "Washing - both",
       "lcs": "LCS4",
       "name": "Handwashing {EU+EFTA+UK} | handwashing process | production mix, at plant | service | LCI result",
-      "unit": "event",
+      "unit": "kg",
       "region": "EU+EFTA+UK",
       "source": "EF Database 3.1",
-      "uuid": "25b97e74-0fc8-5092-ac30-8452c6d1ecbe"
+      "uuid": "25b97e74-0fc8-5092-ac30-8452c6d1ecbe",
+      "ref_flow": {
+        "value": 1,
+        "unit": "kg"
+      },
+      "lcia": {
+        "acidification": {
+          "value": 0.0012606249820676534,
+          "unit": "mol H+ equivalents"
+        },
+        "climate_change": {
+          "value": 0.16480938524011257,
+          "unit": "kg CO2 Equivalents"
+        },
+        "ef_particulate_matter": {
+          "value": 1.8517616101418094e-8,
+          "unit": "disease incidence"
+        },
+        "ecotoxicity_freshwater": {
+          "value": 3.4912599807091937,
+          "unit": ""
+        },
+        "eutrophication_marine": {
+          "value": 0.0008008611070997649,
+          "unit": "kg N equivalents"
+        },
+        "eutrophication_freshwater": {
+          "value": 2.0854362541523163e-5,
+          "unit": "kg P equivalents"
+        },
+        "eutrophication_terrestrial": {
+          "value": 0.0038696265686234137,
+          "unit": "mol N equivalents"
+        },
+        "human_toxicity_cancer": {
+          "value": 3.2996096158661017e-10,
+          "unit": "CTUh"
+        },
+        "human_toxicity_non_cancer": {
+          "value": 3.759302651005764e-9,
+          "unit": ""
+        },
+        "ionising_radiation_human_health": {
+          "value": 0.027346401592481775,
+          "unit": "kBq U235 equivalents"
+        },
+        "land_use": {
+          "value": 5.60283909753671,
+          "unit": "dimensionless (pt)"
+        },
+        "ozone_depletion": {
+          "value": 2.4835496829121096e-9,
+          "unit": "kg CFC11 equivalents"
+        },
+        "photochemical_ozone_formation_human_health": {
+          "value": 0.0007042235579109112,
+          "unit": "kg NMVOC equivalents"
+        },
+        "resource_use_fossils": {
+          "value": 2.590612911077389,
+          "unit": "MJ"
+        },
+        "resource_use_minerals_metals": {
+          "value": 5.721657873006964e-7,
+          "unit": "kg Sb equivalents"
+        },
+        "water_use": {
+          "value": 0.274892519590426,
+          "unit": "m3-world equivalents"
+        }
+      }
     },
     "washing_30": {
       "category": "Washing - both",
       "lcs": "LCS4",
       "name": "Washing, 30 degrees C, average {EU+EFTA+UK} | washing, cold to warm water | production mix, at plant | service | LCI result",
-      "unit": "event",
+      "unit": "kg",
       "region": "EU+EFTA+UK",
       "source": "EF Database 3.1",
-      "uuid": "27f9009b-8fd1-5cae-ad4f-115dd1f44d71"
+      "uuid": "27f9009b-8fd1-5cae-ad4f-115dd1f44d71",
+      "ref_flow": {
+        "value": 1,
+        "unit": "kg"
+      },
+      "lcia": {
+        "acidification": {
+          "value": 4.4281881720188883e-4,
+          "unit": "mol H+ equivalents"
+        },
+        "climate_change": {
+          "value": 0.11748584139809755,
+          "unit": "kg CO2 Equivalents"
+        },
+        "ef_particulate_matter": {
+          "value": 8.653531878079642e-9,
+          "unit": "disease incidence"
+        },
+        "ecotoxicity_freshwater": {
+          "value": 1.7917278069730023,
+          "unit": ""
+        },
+        "eutrophication_marine": {
+          "value": 3.233057821695716e-4,
+          "unit": "kg N equivalents"
+        },
+        "eutrophication_freshwater": {
+          "value": 2.326438333114078e-5,
+          "unit": "kg P equivalents"
+        },
+        "eutrophication_terrestrial": {
+          "value": 0.0011811896842140652,
+          "unit": "mol N equivalents"
+        },
+        "human_toxicity_cancer": {
+          "value": 2.1404569778383955e-10,
+          "unit": "CTUh"
+        },
+        "human_toxicity_non_cancer": {
+          "value": 2.2914889787575056e-9,
+          "unit": ""
+        },
+        "ionising_radiation_human_health": {
+          "value": 0.014538794686750884,
+          "unit": "kBq U235 equivalents"
+        },
+        "land_use": {
+          "value": 4.803139709400215,
+          "unit": "dimensionless (pt)"
+        },
+        "ozone_depletion": {
+          "value": 1.2571444749194233e-9,
+          "unit": "kg CFC11 equivalents"
+        },
+        "photochemical_ozone_formation_human_health": {
+          "value": 2.809182659198304e-4,
+          "unit": "kg NMVOC equivalents"
+        },
+        "resource_use_fossils": {
+          "value": 1.1152543010260927,
+          "unit": "MJ"
+        },
+        "resource_use_minerals_metals": {
+          "value": 2.56306338687821e-6,
+          "unit": "kg Sb equivalents"
+        },
+        "water_use": {
+          "value": 0.16272063904026676,
+          "unit": "m3-world equivalents"
+        }
+      }
     },
     "washing_40": {
       "category": "Washing - both",
       "lcs": "LCS4",
       "name": "Washing, 40 degrees C, average {EU+EFTA+UK} | washing, warm water | production mix, at plant | service | LCI result",
-      "unit": "event",
+      "unit": "kg",
       "region": "EU+EFTA+UK",
       "source": "EF Database 3.1",
-      "uuid": "ae46be13-3830-5af9-9e21-875793e94c88"
+      "uuid": "ae46be13-3830-5af9-9e21-875793e94c88",
+      "ref_flow": {
+        "value": 1,
+        "unit": "kg"
+      },
+      "lcia": {
+        "acidification": {
+          "value": 5.308329653725053e-4,
+          "unit": "mol H+ equivalents"
+        },
+        "climate_change": {
+          "value": 0.14182472981321279,
+          "unit": "kg CO2 Equivalents"
+        },
+        "ef_particulate_matter": {
+          "value": 9.916988906780633e-9,
+          "unit": "disease incidence"
+        },
+        "ecotoxicity_freshwater": {
+          "value": 1.709030285053952,
+          "unit": ""
+        },
+        "eutrophication_marine": {
+          "value": 3.190513601074511e-4,
+          "unit": "kg N equivalents"
+        },
+        "eutrophication_freshwater": {
+          "value": 1.8578511476411098e-5,
+          "unit": "kg P equivalents"
+        },
+        "eutrophication_terrestrial": {
+          "value": 0.0013776817139085065,
+          "unit": "mol N equivalents"
+        },
+        "human_toxicity_cancer": {
+          "value": 1.9650298386358353e-10,
+          "unit": "CTUh"
+        },
+        "human_toxicity_non_cancer": {
+          "value": 2.0050856078126605e-9,
+          "unit": ""
+        },
+        "ionising_radiation_human_health": {
+          "value": 0.027888645244887135,
+          "unit": "kBq U235 equivalents"
+        },
+        "land_use": {
+          "value": 5.082418900281674,
+          "unit": "dimensionless (pt)"
+        },
+        "ozone_depletion": {
+          "value": 1.215559759061407e-9,
+          "unit": "kg CFC11 equivalents"
+        },
+        "photochemical_ozone_formation_human_health": {
+          "value": 3.19708373426721e-4,
+          "unit": "kg NMVOC equivalents"
+        },
+        "resource_use_fossils": {
+          "value": 1.6307830248373867,
+          "unit": "MJ"
+        },
+        "resource_use_minerals_metals": {
+          "value": 2.5609113127909876e-6,
+          "unit": "kg Sb equivalents"
+        },
+        "water_use": {
+          "value": 0.13991067600504728,
+          "unit": "m3-world equivalents"
+        }
+      }
     },
     "washing_60": {
       "category": "Washing - both",
       "lcs": "LCS4",
       "name": "Washing, 60 degrees C, average {EU+EFTA+UK} | washing, hot water | production mix, at plant | service | LCI result",
-      "unit": "event",
+      "unit": "kg",
       "region": "EU+EFTA+UK",
       "source": "EF Database 3.1",
-      "uuid": "2baf17e3-2fff-5b3f-bceb-dd9718cf96e4"
+      "uuid": "2baf17e3-2fff-5b3f-bceb-dd9718cf96e4",
+      "ref_flow": {
+        "value": 1,
+        "unit": "kg"
+      },
+      "lcia": {
+        "acidification": {
+          "value": 6.426992052891924e-4,
+          "unit": "mol H+ equivalents"
+        },
+        "climate_change": {
+          "value": 0.17862345333064444,
+          "unit": "kg CO2 Equivalents"
+        },
+        "ef_particulate_matter": {
+          "value": 1.1086536135419912e-8,
+          "unit": "disease incidence"
+        },
+        "ecotoxicity_freshwater": {
+          "value": 1.8781296836227166,
+          "unit": ""
+        },
+        "eutrophication_marine": {
+          "value": 3.4043343082522257e-4,
+          "unit": "kg N equivalents"
+        },
+        "eutrophication_freshwater": {
+          "value": 1.8690935544245286e-5,
+          "unit": "kg P equivalents"
+        },
+        "eutrophication_terrestrial": {
+          "value": 0.0016024571081987718,
+          "unit": "mol N equivalents"
+        },
+        "human_toxicity_cancer": {
+          "value": 2.0278359194392398e-10,
+          "unit": "CTUh"
+        },
+        "human_toxicity_non_cancer": {
+          "value": 2.131156484601525e-9,
+          "unit": ""
+        },
+        "ionising_radiation_human_health": {
+          "value": 0.043502025670524296,
+          "unit": "kBq U235 equivalents"
+        },
+        "land_use": {
+          "value": 5.239500316129883,
+          "unit": "dimensionless (pt)"
+        },
+        "ozone_depletion": {
+          "value": 1.2296234763923967e-9,
+          "unit": "kg CFC11 equivalents"
+        },
+        "photochemical_ozone_formation_human_health": {
+          "value": 3.7998191290412897e-4,
+          "unit": "kg NMVOC equivalents"
+        },
+        "resource_use_fossils": {
+          "value": 2.2700791643040548,
+          "unit": "MJ"
+        },
+        "resource_use_minerals_metals": {
+          "value": 2.57035064606263e-6,
+          "unit": "kg Sb equivalents"
+        },
+        "water_use": {
+          "value": 0.1527204985395504,
+          "unit": "m3-world equivalents"
+        }
+      }
     },
     "dry_cleaning": {
       "category": "Washing - both",
       "lcs": "LCS4",
       "name": "Washing, dry cleaning {EU+EFTA+UK} | washing process | production mix, at plant | service | LCI result",
-      "unit": "event",
+      "unit": "kg",
       "region": "EU+EFTA+UK",
       "source": "EF Database 3.1",
-      "uuid": "64a29c62-7bed-5c8b-9aa3-761864dc435a"
+      "uuid": "64a29c62-7bed-5c8b-9aa3-761864dc435a",
+      "ref_flow": {
+        "value": 1,
+        "unit": "kg"
+      },
+      "lcia": {
+        "acidification": {
+          "value": 0.0013481596365505918,
+          "unit": "mol H+ equivalents"
+        },
+        "climate_change": {
+          "value": 0.27111130948908074,
+          "unit": "kg CO2 Equivalents"
+        },
+        "ef_particulate_matter": {
+          "value": 2.022551070011778e-8,
+          "unit": "disease incidence"
+        },
+        "ecotoxicity_freshwater": {
+          "value": 3.4365107777886554,
+          "unit": ""
+        },
+        "eutrophication_marine": {
+          "value": 5.053937561781383e-4,
+          "unit": "kg N equivalents"
+        },
+        "eutrophication_freshwater": {
+          "value": 8.624717684215795e-6,
+          "unit": "kg P equivalents"
+        },
+        "eutrophication_terrestrial": {
+          "value": 0.003408250382104136,
+          "unit": "mol N equivalents"
+        },
+        "human_toxicity_cancer": {
+          "value": 7.77155350897906e-10,
+          "unit": "CTUh"
+        },
+        "human_toxicity_non_cancer": {
+          "value": 4.786360953017093e-9,
+          "unit": ""
+        },
+        "ionising_radiation_human_health": {
+          "value": 0.07317003732464204,
+          "unit": "kBq U235 equivalents"
+        },
+        "land_use": {
+          "value": 3.3632863266213846,
+          "unit": "dimensionless (pt)"
+        },
+        "ozone_depletion": {
+          "value": 2.2026176681612672e-7,
+          "unit": "kg CFC11 equivalents"
+        },
+        "photochemical_ozone_formation_human_health": {
+          "value": 9.169344865817516e-4,
+          "unit": "kg NMVOC equivalents"
+        },
+        "resource_use_fossils": {
+          "value": 4.34492268242826,
+          "unit": "MJ"
+        },
+        "resource_use_minerals_metals": {
+          "value": 6.155681049861217e-7,
+          "unit": "kg Sb equivalents"
+        },
+        "water_use": {
+          "value": 0.1876559765858936,
+          "unit": "m3-world equivalents"
+        }
+      }
     },
     "tumble_drying": {
       "category": "Drying - Apparel",
       "lcs": "LCS4",
       "name": "Tumble drying {EU+EFTA+UK} | drying, condenser tumble dryer | production mix, at plant | service | LCI result",
-      "unit": "event",
+      "unit": "kg",
       "region": "EU+EFTA+UK",
       "source": "EF Database 3.1",
-      "uuid": "90d4e7cb-842b-5ff3-8788-7f999c27889f"
+      "uuid": "90d4e7cb-842b-5ff3-8788-7f999c27889f",
+      "ref_flow": {
+        "value": 1,
+        "unit": "kg"
+      },
+      "lcia": {
+        "acidification": {
+          "value": 8.196611736095113e-4,
+          "unit": "mol H+ equivalents"
+        },
+        "climate_change": {
+          "value": 0.2300868468585942,
+          "unit": "kg CO2 Equivalents"
+        },
+        "ef_particulate_matter": {
+          "value": 1.3538977369012106e-8,
+          "unit": "disease incidence"
+        },
+        "ecotoxicity_freshwater": {
+          "value": 1.9683818949437168,
+          "unit": ""
+        },
+        "eutrophication_marine": {
+          "value": 1.585961581491412e-4,
+          "unit": "kg N equivalents"
+        },
+        "eutrophication_freshwater": {
+          "value": 1.4111051085196035e-5,
+          "unit": "kg P equivalents"
+        },
+        "eutrophication_terrestrial": {
+          "value": 0.0016889304560109965,
+          "unit": "mol N equivalents"
+        },
+        "human_toxicity_cancer": {
+          "value": 2.2231471105638716e-10,
+          "unit": "CTUh"
+        },
+        "human_toxicity_non_cancer": {
+          "value": 1.814688403483578e-9,
+          "unit": ""
+        },
+        "ionising_radiation_human_health": {
+          "value": 0.07522077987071743,
+          "unit": "kBq U235 equivalents"
+        },
+        "land_use": {
+          "value": 0.9396825980902407,
+          "unit": "dimensionless (pt)"
+        },
+        "ozone_depletion": {
+          "value": 4.31747616943946e-10,
+          "unit": "kg CFC11 equivalents"
+        },
+        "photochemical_ozone_formation_human_health": {
+          "value": 4.801589957116071e-4,
+          "unit": "kg NMVOC equivalents"
+        },
+        "resource_use_fossils": {
+          "value": 4.383944878200885,
+          "unit": "MJ"
+        },
+        "resource_use_minerals_metals": {
+          "value": 4.714840936708351e-6,
+          "unit": "kg Sb equivalents"
+        },
+        "water_use": {
+          "value": 0.06762428226641232,
+          "unit": "m3-world equivalents"
+        }
+      }
     },
     "ironing_1min": {
       "category": "Ironing - Apparel",
@@ -67,7 +487,77 @@
       "unit": "minute",
       "region": "EU+EFTA+UK",
       "source": "EF Database 3.1",
-      "uuid": "c5459a8f-21e8-53fc-987c-eed7f5debf43"
+      "uuid": "c5459a8f-21e8-53fc-987c-eed7f5debf43",
+      "ref_flow": {
+        "value": 1,
+        "unit": "minute"
+      },
+      "lcia": {
+        "acidification": {
+          "value": 3.9752306630413905e-5,
+          "unit": "mol H+ equivalents"
+        },
+        "climate_change": {
+          "value": 0.012863410494697289,
+          "unit": "kg CO2 Equivalents"
+        },
+        "ef_particulate_matter": {
+          "value": 4.3959379853348327e-10,
+          "unit": "disease incidence"
+        },
+        "ecotoxicity_freshwater": {
+          "value": 0.059366587814007825,
+          "unit": ""
+        },
+        "eutrophication_marine": {
+          "value": 7.578632181242455e-6,
+          "unit": "kg N equivalents"
+        },
+        "eutrophication_freshwater": {
+          "value": 4.6203758849724855e-8,
+          "unit": "kg P equivalents"
+        },
+        "eutrophication_terrestrial": {
+          "value": 8.019431759326547e-5,
+          "unit": "mol N equivalents"
+        },
+        "human_toxicity_cancer": {
+          "value": 4.287260641051636e-12,
+          "unit": "CTUh"
+        },
+        "human_toxicity_non_cancer": {
+          "value": 4.6711482178586874e-11,
+          "unit": ""
+        },
+        "ionising_radiation_human_health": {
+          "value": 0.0053920482157312774,
+          "unit": "kBq U235 equivalents"
+        },
+        "land_use": {
+          "value": 0.055106305386328644,
+          "unit": "dimensionless (pt)"
+        },
+        "ozone_depletion": {
+          "value": 6.4776093107704355e-12,
+          "unit": "kg CFC11 equivalents"
+        },
+        "photochemical_ozone_formation_human_health": {
+          "value": 2.1567151639132774e-5,
+          "unit": "kg NMVOC equivalents"
+        },
+        "resource_use_fossils": {
+          "value": 0.22288197484076538,
+          "unit": "MJ"
+        },
+        "resource_use_minerals_metals": {
+          "value": 6.883258293193119e-9,
+          "unit": "kg Sb equivalents"
+        },
+        "water_use": {
+          "value": 0.004798391985862963,
+          "unit": "m3-world equivalents"
+        }
+      }
     },
     "waxing": {
       "category": "Care - Footwear",
