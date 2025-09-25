@@ -4957,7 +4957,7 @@
 							"  const sha = br.commit && br.commit.sha;",
 							"  const tree = await getJson(`${GH_API}/git/trees/${sha}?recursive=1`);",
 							"  const files = (tree.tree || [])",
-							"    .filter(n => n.type === 'blob' && n.path.startsWith('data/ilcd/processes') && n.path.endsWith('.xml'))",
+							"    .filter(n => n.type === 'blob' && n.path.startsWith('data/xml') && n.path.endsWith('.xml'))",
 							"    .map(n => n.path)",
 							"    .slice(0, ILCD_MAX_FILES);",
 							"",
