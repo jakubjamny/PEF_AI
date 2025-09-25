@@ -172,6 +172,7 @@
 							"];",
 							"",
 							"for (const source of sources) {",
+							"    console.log(\"Target: \");",
 							"    if (source) {",
 							"        targetJson = tryParseJSON(source);",
 							"        if (targetJson) break;",
