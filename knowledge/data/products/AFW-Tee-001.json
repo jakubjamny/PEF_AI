@@ -1,0 +1,40 @@
+{
+  "product_id": "AFW-Tee-001",
+  "subcategory": "T-shirts",
+  "reference_size": "M",
+  "finished_product_mass_kg": 0.18,
+  "bom": [
+    {
+      "name": "Cotton fibre",
+      "uuid": "71cae2e1-a84f-5b1d-b386-ee1f86ec78db",
+      "dataset_name": "Cotton fibre {GLO} | technology mix | production mix, at farm | \"as is\" delinted product | LCI result",
+      "unit": "kg",
+      "mass_kg": 0.18,
+      "origin": "outside_continent_ship"
+    },
+    {
+      "name": "Elastane fibre / spandex",
+      "uuid": "686e526f-cc4e-50a8-9922-490c1e98d746",
+      "dataset_name": "Elastane fibre / spandex {GLO} | dry spinning, extrusion, texturising | production mix, at plant | 1kg of product | LCI result",
+      "unit": "kg",
+      "mass_kg": 0.01,
+      "origin": "outside_continent_ship"
+    },
+    {
+      "name": "Brand tag (care label)",
+      "uuid": "6ad4fcd5-8cd0-58cf-aedf-17ad8714d642",
+      "dataset_name": "Care label {GLO} | spinning, weaving, printing | Production mix, at plant | PET/PE label | LCI result",
+      "unit": "kg",
+      "mass_kg": 0.002,
+      "origin": "same_continent"
+    }
+  ],
+  "losses": {
+    "preprocessing_loss_rate": null,
+    "manufacturing_loss_rate": null,
+    "assembly_loss_rate": null,
+    "unsold_rate": null,
+    "distribution_loss_rate": null
+  },
+  "notes": "Pokud doplníš reálné ztráty (pre-processing, manufacturing, assembly, unsold, distribution), přepočítá se potřebná surovina podle PEFCR (hmotnost na vstupu do LCS2)."
+}
