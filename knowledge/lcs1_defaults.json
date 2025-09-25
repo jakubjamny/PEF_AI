@@ -1,0 +1,49 @@
+{
+  "bom_rule": {
+    "minimum_coverage_mass_percent": 95,
+    "notes": "Pokrýt 100 % hlavních materiálů (main fabrics, lining, padding, elektronika). Pokud BOM chybí, použij hmotnost produktu a referenční velikost."
+  },
+  "loss_defaults": {
+    "preprocessing_loss_rate": 0.15,
+    "manufacturing_loss_rate": 0.0,
+    "assembly_loss_rate": 0.0,
+    "unsold_rate": 0.0,
+    "distribution_loss_rate": 0.0
+  },
+  "circularity_defaults": {
+    "r1_default": 0.0,
+    "notes": "Bez verifikované sledovatelnosti je R1 = 0 % (PEF)."
+  },
+  "units": {
+    "mass": "kg",
+    "transport": "kgkm"
+  },
+  "transport_case_default": "outside_continent_ship",
+  "transport_defaults": {
+    "same_continent": {
+      "utilisation_ratio_truck": 0.64,
+      "modes": [
+        { "mode": "Truck (>32t, EURO 4)", "distance_km": 1000, "share_of_mass": 0.40 },
+        { "mode": "Train (average freight train)", "distance_km": 1000, "share_of_mass": 0.40 },
+        { "mode": "Ship (barge)", "distance_km": 800, "share_of_mass": 0.20 }
+      ]
+    },
+    "outside_continent_ship": {
+      "utilisation_ratio_truck": 0.64,
+      "modes": [
+        { "mode": "Truck (>32t, EURO 4)", "distance_km": 1000, "share_of_mass": 1.00 },
+        { "mode": "Ship (transoceanic container)", "distance_km": 18000, "share_of_mass": 1.00 },
+        { "mode": "Truck (>32t, EURO 4)", "distance_km": 500, "share_of_mass": 1.00 }
+      ],
+      "notes": "Model jediné dopravní etapy reprezentující všechny nutné nohy."
+    },
+    "outside_continent_plane": {
+      "utilisation_ratio_truck": 0.64,
+      "modes": [
+        { "mode": "Truck (>32t, EURO 4)", "distance_km": 1000, "share_of_mass": 1.00 },
+        { "mode": "Cargo plane", "distance_km": 10000, "share_of_mass": 1.00 },
+        { "mode": "Truck (>32t, EURO 4)", "distance_km": 100, "share_of_mass": 1.00 }
+      ]
+    }
+  }
+}
