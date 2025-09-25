@@ -4842,7 +4842,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "7b7a906f-ed2c-4075-9d23-36f141f59cfa",
+						"id": "47f253f2-b818-43b7-98e2-e38e1620fce8",
 						"exec": [
 							"// ========== CONFIG ==========",
 							"const OWNER  = pm.environment.get(\"GITHUB_OWNER\")  || \"jakubjamny\";",
@@ -5021,7 +5021,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "a7af72ee-6070-44f6-8ea2-d8d942aaaa2d",
+						"id": "43758875-2181-47bc-afd1-af2c8e36db4a",
 						"exec": [
 							"// ————— Inputs —————",
 							"const product = JSON.parse(pm.environment.get('product_json') || '{}');",
@@ -5163,6 +5163,16 @@
 							"language": "json"
 						}
 					}
+				},
+				"url": {
+					"raw": "{{gh_raw_base}}data/products/AFW-Tee-001.json",
+					"host": [
+						"{{gh_raw_base}}data"
+					],
+					"path": [
+						"products",
+						"AFW-Tee-001.json"
+					]
 				}
 			},
 			"response": []
