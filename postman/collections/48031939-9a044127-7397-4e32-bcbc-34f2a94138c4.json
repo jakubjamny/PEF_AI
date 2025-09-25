@@ -3021,36 +3021,11 @@
 					"script": {
 						"id": "66b99e28-46c0-4234-87bf-20e915a54935",
 						"exec": [
-							"(async ()=>{",
-							"  try{",
-							"    console.log(\"=== SIMPLE TEST ===\");",
-							"    ",
-							"    // Test direct file access",
-							"    const testUrl = \"https://raw.githubusercontent.com/jakubjamny/PEF_AI/feature/ef31-pefcr/data/ilcd/processes/packaging/d05c4b39-2e68-43bb-9875-fba8fd1333a6.xml\";",
-							"    ",
-							"    const response = await fetch(testUrl);",
-							"    const xmlContent = await response.text();",
-							"    ",
-							"    console.log(`Direct XML fetch - Length: ${xmlContent.length}`);",
-							"    console.log(`First 200 chars: ${xmlContent.substring(0, 200)}`);",
-							"    ",
-							"    if(xmlContent.length > 100) {",
-							"      // Pokus o nalezení exchanges",
-							"      const exchangeMatches = xmlContent.match(/<exchange[\\s\\S]*?<\\/exchange>/gi) || [];",
-							"      console.log(`Found ${exchangeMatches.length} exchanges`);",
-							"      ",
-							"      if(exchangeMatches.length > 0) {",
-							"        console.log(`First exchange sample: ${exchangeMatches[0].substring(0, 300)}`);",
-							"      }",
-							"    }",
-							"    ",
-							"  } catch(e) {",
-							"    console.error(\"Test error:\", e);",
-							"  }",
-							"})();"
+							""
 						],
 						"type": "text/javascript",
-						"packages": {}
+						"packages": {},
+						"requests": {}
 					}
 				},
 				{
@@ -3499,7 +3474,8 @@
 							""
 						],
 						"type": "text/javascript",
-						"packages": {}
+						"packages": {},
+						"requests": {}
 					}
 				}
 			],
@@ -4857,6 +4833,18 @@
 						"{{USEPHASE_URL}}"
 					]
 				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "48031939-312943a9-d33d-4bb9-a67f-f66a953fd9c7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
 			},
 			"response": []
 		}
