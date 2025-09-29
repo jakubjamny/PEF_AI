@@ -1,0 +1,22 @@
+{
+  "version": "PEFCR_A&F_v3.1",
+  "ef_unit_to_canonical": {
+    "kg": { "canonical": "kg", "dimension": "mass" },
+    "m2": { "canonical": "m2", "dimension": "area" },
+    "p": { "canonical": "pair", "dimension": "item" },
+    "Item(s)": { "canonical": "item", "dimension": "item" },
+    "kgkm": { "canonical": "kgkm", "dimension": "transport_work" },
+    "MJ": { "canonical": "MJ", "dimension": "energy" },
+    "m": { "canonical": "m", "dimension": "length" }
+  },
+  "textile_conversions": {
+    "default_fabric_grammage_g_per_m2": 200,
+    "notes": [
+      "Pro převody m2↔kg preferuj produktově specifickou gramáž.",
+      "Pokud chybí, použij default (200 g/m2) a označ ve výstupu jako odhad."
+    ]
+  },
+  "notes": [
+    "Interně počítej v canonical jednotkách, ale respektuj EF31 jednotky při mapování datasetů."
+  ]
+}
