@@ -1,0 +1,36 @@
+{
+  "version": "PEFCR_A&F_v3.1",
+  "verify_with_pefcr": true,
+  "packaging_mass_per_kg_sfip": {
+    "cardboard": 0.10,
+    "ldpe": 0.075
+  },
+  "end_of_life_shares": {
+    "ldpe": {
+      "recycling": 0.912,
+      "incineration": 0.088,
+      "landfill": 0.0
+    },
+    "cardboard": {
+      "recycling": 0.542,
+      "incineration": 0.33,
+      "landfill": 0.128
+    }
+  },
+  "datasets": {
+    "ldpe": {
+      "recycling": "Recycling, LDPE",
+      "incineration": "Incineration, LDPE",
+      "landfill": "Landfill, LDPE"
+    },
+    "cardboard": {
+      "recycling": "Recycling, cardboard",
+      "incineration": "Incineration, cardboard",
+      "landfill": "Landfill, cardboard"
+    }
+  },
+  "notes": [
+    "Produkce obalů SFIP patří do LCS1; EoL obalů SFIP patří do LCS2.",
+    "Pokud máš primární EoL podíly, přepiš tyto defaulty."
+  ]
+}
