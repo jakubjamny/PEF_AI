@@ -1,0 +1,17 @@
+{
+  "version": "PEFCR_A&F_v3.1",
+  "defaults": {
+    "manufacturing_losses_rate_default": 0.15,
+    "manufacturing_leftovers_rate_default": 0.05,
+    "unsold_products_rate_default": 0.0,
+    "distribution_losses_rate_default": 0.0
+  },
+  "equations": {
+    "sfip_mass_equation_25": "SFIP = mBOM*(1+ManuLeft)*Π_j(1+ManuLoss_j)*(1+UnsoldProducts)*(1+DistribLoss)"
+  },
+  "notes": [
+    "Hodnoty jsou frakce (0.15 = 15 %).",
+    "Pokud jsou k dispozici primární data, nahraď defaulty.",
+    "EoL pro manufacturing losses a leftovers se účtují v LCS2."
+  ]
+}
