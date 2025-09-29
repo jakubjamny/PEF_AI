@@ -1,76 +1,74 @@
 {
   "version": "PEFCR_A&F_v3.1",
-  "verify_with_pefcr": true,
+  "notes": [
+    "Default transport scenarios for semi-finished & intermediate products (SFIP).",
+    "Use primary data when all points are available: origin(s), distances for all legs, transport modes and mass shares.",
+    "Single proxy step between last pre-processing and first manufacturing step; multiply mass × distance × share."
+  ],
   "utilisation_ratio_truck_default": 0.64,
   "scenarios": {
     "same_continent": {
-      "description": "Dodavatel ve stejném kontinentu jako montážní závod",
+      "description": "Supplier located in the same continent as the processing plant",
       "modes": [
         {
           "mode": "truck_euro4_gt32t",
           "distance_km": 1000,
-          "share_of_mass": 0.40,
+          "share_of_product_mass": 0.40,
+          "utilisation_ratio": 0.64,
           "ef_dataset": "Transport, truck (32t, euro4)",
           "unit": "kgkm"
         },
         {
           "mode": "freight_train",
           "distance_km": 1000,
-          "share_of_mass": 0.40,
+          "share_of_product_mass": 0.40,
+          "utilisation_ratio": null,
           "ef_dataset": "Transportation, train",
-          "unit": "kgkm"
-        },
-        {
-          "mode": "ship_barge",
-          "distance_km": 800,
-          "share_of_mass": 0.20,
-          "ef_dataset": "Transportation, barge",
           "unit": "kgkm"
         }
       ]
     },
-    "outside_continent_sea": {
-      "description": "Dodavatel mimo kontinent – námořní přeprava",
+    "outside_continent_ship": {
+      "description": "Supplier located outside the continent of the processing plant (ship)",
       "modes": [
         {
           "mode": "truck_euro4_gt32t",
           "distance_km": 1000,
-          "share_of_mass": 0.55,
+          "share_of_product_mass": 0.55,
+          "utilisation_ratio": 0.64,
           "ef_dataset": "Transport, truck (32t, euro4)",
           "unit": "kgkm"
         },
         {
-          "mode": "ship_container_ocean",
+          "mode": "ship_transoceanic_container",
           "distance_km": 18000,
-          "share_of_mass": 0.55,
+          "share_of_product_mass": 0.55,
+          "utilisation_ratio": null,
           "ef_dataset": "Transport, ship",
           "unit": "kgkm"
         }
       ]
     },
-    "outside_continent_air": {
-      "description": "Dodavatel mimo kontinent – letecká přeprava",
+    "outside_continent_plane": {
+      "description": "Supplier located outside the continent of the processing plant (plane)",
       "modes": [
         {
           "mode": "truck_euro4_gt32t",
           "distance_km": 1000,
-          "share_of_mass": 0.05,
+          "share_of_product_mass": 0.05,
+          "utilisation_ratio": 0.64,
           "ef_dataset": "Transport, truck (32t, euro4)",
           "unit": "kgkm"
         },
         {
-          "mode": "air_cargo_plane",
+          "mode": "air_freight_cargo_plane",
           "distance_km": 10000,
-          "share_of_mass": 0.05,
+          "share_of_product_mass": 0.05,
+          "utilisation_ratio": null,
           "ef_dataset": "Transport, plane",
           "unit": "kgkm"
         }
       ]
     }
-  },
-  "notes": [
-    "SFIP doprava se modeluje jedním proxy krokem mezi posledním zpracováním a montáží.",
-    "Podíly hmotnosti a vzdálenosti zde slouží jako default; nahraď je primárními daty, jsou-li dostupná.",
-    "Truck utilisation ratio aplikuj podle metodiky EF/PEF při výpočtu kgkm."
-  ]
+  }
 }
