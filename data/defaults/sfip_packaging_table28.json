@@ -1,36 +1,34 @@
 {
   "version": "PEFCR_A&F_v3.1",
-  "verify_with_pefcr": true,
+  "notes": [
+    "Mass of packaging per kg of semi-finished & intermediate product transported (Table 28).",
+    "Production of SFIP packaging is accounted in LCS1; EoL of SFIP packaging is accounted in LCS2.",
+    "Tables 29–31 (primary/secondary/tertiary packaging per product) relate to product packaging in LCS3, not SFIP."
+  ],
   "packaging_mass_per_kg_sfip": {
-    "cardboard": 0.10,
-    "ldpe": 0.075
+    "corrugated_cardboard": 0.040,
+    "pallets_reused": 0.00002,
+    "shrink_film": 0.001
   },
-  "end_of_life_shares": {
-    "ldpe": {
-      "recycling": 0.912,
-      "incineration": 0.088,
-      "landfill": 0.0
+  "datasets_eol": {
+    "corrugated_cardboard": {
+      "recycling": "Recycling, cardboard",
+      "incineration": "Incineration, cardboard",
+      "landfill": "Landfill, cardboard"
     },
-    "cardboard": {
-      "recycling": 0.542,
-      "incineration": 0.33,
-      "landfill": 0.128
-    }
-  },
-  "datasets": {
-    "ldpe": {
+    "shrink_film": {
       "recycling": "Recycling, LDPE",
       "incineration": "Incineration, LDPE",
       "landfill": "Landfill, LDPE"
     },
-    "cardboard": {
-      "recycling": "Recycling, cardboard",
-      "incineration": "Incineration, cardboard",
-      "landfill": "Landfill, cardboard"
+    "pallets_reused": {
+      "incineration": "Incineration, pallet",
+      "landfill": "Landfill, pallet"
     }
   },
-  "notes": [
-    "Produkce obalů SFIP patří do LCS1; EoL obalů SFIP patří do LCS2.",
-    "Pokud máš primární EoL podíly, přepiš tyto defaulty."
-  ]
+  "default_eol_shares": {
+    "corrugated_cardboard": { "recycling": 0.542, "incineration": 0.330, "landfill": 0.128 },
+    "shrink_film":         { "recycling": 0.912, "incineration": 0.088, "landfill": 0.000 },
+    "pallets_reused":      { "incineration": 0.500, "landfill": 0.500 }
+  }
 }
