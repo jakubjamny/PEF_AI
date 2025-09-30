@@ -1,9 +1,9 @@
 {
   "version": "PEFCR_A&F_v3.1",
   "notes": [
-    "Default transport scenarios for semi-finished & intermediate products (SFIP).",
-    "Use primary data when all points are available: origin(s), distances for all legs, transport modes and mass shares.",
-    "Single proxy step between last pre-processing and first manufacturing step; multiply mass × distance × share."
+    "Default transport scenarios for semi-finished & intermediate products (SFIP) per PEFCR A&F v3.1 Table 32.",
+    "A single proxy transportation step represents all necessary legs between the last pre-processing step and the first manufacturing step (LCS2).",
+    "For each scenario, apply the SAME scenario share to every listed leg, then sum the legs. Scenario shares across scenarios sum to 100%."
   ],
   "utilisation_ratio_truck_default": 0.64,
   "scenarios": {
@@ -24,6 +24,14 @@
           "share_of_product_mass": 0.40,
           "utilisation_ratio": null,
           "ef_dataset": "Transportation, train",
+          "unit": "kgkm"
+        },
+        {
+          "mode": "barge",
+          "distance_km": 800,
+          "share_of_product_mass": 0.40,
+          "utilisation_ratio": null,
+          "ef_dataset": "Transportation, barge",
           "unit": "kgkm"
         }
       ]
