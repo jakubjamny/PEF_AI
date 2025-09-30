@@ -1,35 +1,45 @@
 {
   "version": "PEFCR_A&F_v3.1",
   "notes": [
-    "Default transport scenarios for semi-finished & intermediate products (SFIP) per PEFCR A&F v3.1 Table 32.",
-    "A single proxy transportation step represents all necessary legs between the last pre-processing step and the first manufacturing step (LCS2).",
-    "For each scenario, apply the SAME scenario share to every listed leg, then sum the legs. Scenario shares across scenarios sum to 100%."
+    "Default transport scenarios for SFIP (PEFCR v3.1, Table 32).",
+    "One proxy hop between last pre-processing and first manufacturing step; impacts = mass × distance × share.",
+    "This JSON is structured so each scenario is a complete path. The script sums modes → use share=1.0 within a scenario."
   ],
   "utilisation_ratio_truck_default": 0.64,
   "scenarios": {
-    "same_continent": {
-      "description": "Supplier located in the same continent as the processing plant",
+    "same_continent_truck": {
+      "description": "Same continent – road freight (Table 32)",
       "modes": [
         {
           "mode": "truck_euro4_gt32t",
           "distance_km": 1000,
-          "share_of_product_mass": 0.40,
+          "share_of_product_mass": 1.0,
           "utilisation_ratio": 0.64,
           "ef_dataset": "Transport, truck (32t, euro4)",
           "unit": "kgkm"
-        },
+        }
+      ]
+    },
+    "same_continent_train": {
+      "description": "Same continent – rail freight (Table 32)",
+      "modes": [
         {
           "mode": "freight_train",
           "distance_km": 1000,
-          "share_of_product_mass": 0.40,
+          "share_of_product_mass": 1.0,
           "utilisation_ratio": null,
           "ef_dataset": "Transportation, train",
           "unit": "kgkm"
-        },
+        }
+      ]
+    },
+    "same_continent_barge": {
+      "description": "Same continent – inland waterway (Table 32)",
+      "modes": [
         {
-          "mode": "barge",
+          "mode": "inland_barge",
           "distance_km": 800,
-          "share_of_product_mass": 0.40,
+          "share_of_product_mass": 1.0,
           "utilisation_ratio": null,
           "ef_dataset": "Transportation, barge",
           "unit": "kgkm"
@@ -37,12 +47,12 @@
       ]
     },
     "outside_continent_ship": {
-      "description": "Supplier located outside the continent of the processing plant (ship)",
+      "description": "Outside the continent – truck to port + transoceanic ship (Table 32)",
       "modes": [
         {
           "mode": "truck_euro4_gt32t",
           "distance_km": 1000,
-          "share_of_product_mass": 0.55,
+          "share_of_product_mass": 1.0,
           "utilisation_ratio": 0.64,
           "ef_dataset": "Transport, truck (32t, euro4)",
           "unit": "kgkm"
@@ -50,7 +60,7 @@
         {
           "mode": "ship_transoceanic_container",
           "distance_km": 18000,
-          "share_of_product_mass": 0.55,
+          "share_of_product_mass": 1.0,
           "utilisation_ratio": null,
           "ef_dataset": "Transport, ship",
           "unit": "kgkm"
@@ -58,12 +68,12 @@
       ]
     },
     "outside_continent_plane": {
-      "description": "Supplier located outside the continent of the processing plant (plane)",
+      "description": "Outside the continent – truck to airport + air freight (Table 32)",
       "modes": [
         {
           "mode": "truck_euro4_gt32t",
           "distance_km": 1000,
-          "share_of_product_mass": 0.05,
+          "share_of_product_mass": 1.0,
           "utilisation_ratio": 0.64,
           "ef_dataset": "Transport, truck (32t, euro4)",
           "unit": "kgkm"
@@ -71,7 +81,7 @@
         {
           "mode": "air_freight_cargo_plane",
           "distance_km": 10000,
-          "share_of_product_mass": 0.05,
+          "share_of_product_mass": 1.0,
           "utilisation_ratio": null,
           "ef_dataset": "Transport, plane",
           "unit": "kgkm"
