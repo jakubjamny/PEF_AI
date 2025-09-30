@@ -1,0 +1,201 @@
+{
+  "version": "PEFCR_A&F_v3.1",
+  "notes": [
+    "EoL for manufacturing losses/leftovers in LCS2 follows the product EoL for apparel.",
+    "Default apparel recycling (R2) from PEFCR Table 22 ≈ 17% total → 5% wipers + 12% insulation; the rest to MSW.",
+    "MSW split (incineration vs landfill) must come from PEF Method Annex / country-specific data; leave null here if unknown.",
+    "Packaging EoL (e.g., LDPE shrink film, cardboard) is handled separately via Table 28 and should not be mapped here."
+  ],
+
+  "apparel_default_shares": {
+    "recycling_wipers": 0.05,
+    "recycling_insulation": 0.12,
+    "msw_rest": 0.83
+  },
+
+  "footwear_default_shares": {
+    "recycling_wipers": 0.0,
+    "recycling_insulation": 0.0,
+    "msw_rest": 1.0
+  },
+
+  "msw_split": {
+    "source": "PEF_Method_Annex_II_or_country_specific",
+    "incineration_share": null,
+    "landfill_share": null
+  },
+
+  "msw_split_overrides": {
+    "notes": "Optional region/country overrides. Fill with decimals in [0,1] that sum to 1.",
+    "EU27_2020": { "incineration_share": null, "landfill_share": null },
+    "EU27_2019": { "incineration_share": null, "landfill_share": null },
+    "CZ":       { "incineration_share": null, "landfill_share": null },
+    "DE":       { "incineration_share": null, "landfill_share": null },
+    "FR":       { "incineration_share": null, "landfill_share": null },
+    "IT":       { "incineration_share": null, "landfill_share": null },
+    "ES":       { "incineration_share": null, "landfill_share": null },
+    "PL":       { "incineration_share": null, "landfill_share": null },
+    "UK":       { "incineration_share": null, "landfill_share": null }
+  },
+
+  "by_material_code": {
+    "cotton_fibre": {
+      "ds": {
+        "recycling_wipers": "Processing for recycling, wipers",
+        "recycling_insulation": "Processing for recycling, insulation",
+        "incineration": "Incineration of textiles, biobased",
+        "landfill": "Landfill of textiles"
+      }
+    },
+    "wool_fibre": {
+      "ds": {
+        "recycling_wipers": "Processing for recycling, wipers",
+        "recycling_insulation": "Processing for recycling, insulation",
+        "incineration": "Incineration of textiles, biobased",
+        "landfill": "Landfill of textiles"
+      }
+    },
+    "silk_fibre": {
+      "ds": {
+        "recycling_wipers": "Processing for recycling, wipers",
+        "recycling_insulation": "Processing for recycling, insulation",
+        "incineration": "Incineration of textiles, biobased",
+        "landfill": "Landfill of textiles"
+      }
+    },
+    "viscose_fibre": {
+      "aliases": ["rayon_fibre"],
+      "ds": {
+        "recycling_wipers": "Processing for recycling, wipers",
+        "recycling_insulation": "Processing for recycling, insulation",
+        "incineration": "Incineration of textiles, biobased",
+        "landfill": "Landfill of textiles"
+      }
+    },
+    "lyocell_fibre": {
+      "aliases": ["tencel_fibre"],
+      "ds": {
+        "recycling_wipers": "Processing for recycling, wipers",
+        "recycling_insulation": "Processing for recycling, insulation",
+        "incineration": "Incineration of textiles, biobased",
+        "landfill": "Landfill of textiles"
+      }
+    },
+    "modal_fibre": {
+      "ds": {
+        "recycling_wipers": "Processing for recycling, wipers",
+        "recycling_insulation": "Processing for recycling, insulation",
+        "incineration": "Incineration of textiles, biobased",
+        "landfill": "Landfill of textiles"
+      }
+    },
+    "cupro_fibre": {
+      "ds": {
+        "recycling_wipers": "Processing for recycling, wipers",
+        "recycling_insulation": "Processing for recycling, insulation",
+        "incineration": "Incineration of textiles, biobased",
+        "landfill": "Landfill of textiles"
+      }
+    },
+    "linen_flax_fibre": {
+      "aliases": ["flax_fibre", "linen_fibre"],
+      "ds": {
+        "recycling_wipers": "Processing for recycling, wipers",
+        "recycling_insulation": "Processing for recycling, insulation",
+        "incineration": "Incineration of textiles, biobased",
+        "landfill": "Landfill of textiles"
+      }
+    },
+    "hemp_fibre": {
+      "ds": {
+        "recycling_wipers": "Processing for recycling, wipers",
+        "recycling_insulation": "Processing for recycling, insulation",
+        "incineration": "Incineration of textiles, biobased",
+        "landfill": "Landfill of textiles"
+      }
+    },
+    "jute_fibre": {
+      "ds": {
+        "recycling_wipers": "Processing for recycling, wipers",
+        "recycling_insulation": "Processing for recycling, insulation",
+        "incineration": "Incineration of textiles, biobased",
+        "landfill": "Landfill of textiles"
+      }
+    },
+
+    "polyester_fibre": {
+      "aliases": ["pes_fibre", "pet_fibre"],
+      "ds": {
+        "recycling_wipers": "Processing for recycling, wipers",
+        "recycling_insulation": "Processing for recycling, insulation",
+        "incineration": "Incineration of polyester and other synthetic materials",
+        "landfill": "Landfill of textiles"
+      }
+    },
+    "polyamide_fibre": {
+      "aliases": ["nylon_fibre", "pa_fibre"],
+      "ds": {
+        "recycling_wipers": "Processing for recycling, wipers",
+        "recycling_insulation": "Processing for recycling, insulation",
+        "incineration": "Incineration of polyester and other synthetic materials",
+        "landfill": "Landfill of textiles"
+      }
+    },
+    "polypropylene_fibre": {
+      "aliases": ["pp_fibre"],
+      "ds": {
+        "recycling_wipers": "Processing for recycling, wipers",
+        "recycling_insulation": "Processing for recycling, insulation",
+        "incineration": "Incineration of polyester and other synthetic materials",
+        "landfill": "Landfill of textiles"
+      }
+    },
+    "acrylic_fibre": {
+      "aliases": ["pan_fibre"],
+      "ds": {
+        "recycling_wipers": "Processing for recycling, wipers",
+        "recycling_insulation": "Processing for recycling, insulation",
+        "incineration": "Incineration of polyester and other synthetic materials",
+        "landfill": "Landfill of textiles"
+      }
+    },
+    "elastane_fibre": {
+      "aliases": ["spandex_fibre", "lycra_fibre"],
+      "ds": {
+        "recycling_wipers": "Processing for recycling, wipers",
+        "recycling_insulation": "Processing for recycling, insulation",
+        "incineration": "Incineration of polyester and other synthetic materials",
+        "landfill": "Landfill of textiles"
+      }
+    },
+
+    "leather": {
+      "aliases": ["leather_bovine", "leather_split", "leather_suede"],
+      "ds": {
+        "recycling_wipers": "Processing for recycling, wipers",
+        "recycling_insulation": "Processing for recycling, insulation",
+        "incineration": "Incineration of other textiles and footwear components",
+        "landfill": "Landfill of textiles"
+      }
+    },
+
+    "pvc": {
+      "aliases": ["pvc_fibre", "pvc_trim"],
+      "shares_override": { "recycling_wipers": 0.0, "recycling_insulation": 0.0, "msw_rest": 1.0 },
+      "ds": {
+        "incineration": "Incineration of PVC",
+        "landfill": "Landfill, LDPE"
+      }
+    },
+
+    "unknown": {
+      "notes": "Fallback mapping when material code not recognized.",
+      "ds": {
+        "recycling_wipers": "Processing for recycling, wipers",
+        "recycling_insulation": "Processing for recycling, insulation",
+        "incineration": "Incineration of other textiles and footwear components",
+        "landfill": "Landfill of textiles"
+      }
+    }
+  }
+}
