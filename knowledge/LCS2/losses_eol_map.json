@@ -3,7 +3,7 @@
   "notes": [
     "EoL for manufacturing losses/leftovers in LCS2 follows the product EoL for apparel.",
     "Default apparel recycling (R2) from PEFCR Table 22 ≈ 17% total → 5% wipers + 12% insulation; the rest to MSW.",
-    "MSW split (incineration vs landfill) must come from PEF Method Annex / country-specific data; leave null here if unknown.",
+    "MSW split is NORMALISED within MSW (exclude recycling/composting). EU27_2020 uses 27% incineration and 23% landfill ⇒ incineration_share=0.54, landfill_share=0.46 (Eurostat 2020).",
     "Packaging EoL (e.g., LDPE shrink film, cardboard) is handled separately via Table 28 and should not be mapped here."
   ],
 
@@ -20,14 +20,14 @@
   },
 
   "msw_split": {
-    "source": "PEF_Method_Annex_II_or_country_specific",
-    "incineration_share": null,
-    "landfill_share": null
+    "source": "Eurostat 2020 (EU-27); normalised within MSW",
+    "incineration_share": 0.54,
+    "landfill_share": 0.46
   },
 
   "msw_split_overrides": {
-    "notes": "Optional region/country overrides. Fill with decimals in [0,1] that sum to 1.",
-    "EU27_2020": { "incineration_share": null, "landfill_share": null },
+    "notes": "Optional region/country overrides. Values are NORMALISED within MSW and must sum to 1.",
+    "EU27_2020": { "incineration_share": 0.54, "landfill_share": 0.46 },
     "EU27_2019": { "incineration_share": null, "landfill_share": null },
     "CZ":       { "incineration_share": null, "landfill_share": null },
     "DE":       { "incineration_share": null, "landfill_share": null },
