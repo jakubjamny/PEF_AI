@@ -1,0 +1,477 @@
+{
+  "metadata": {
+    "name": "LCS3 defaults for distribution (PEFCR Apparel & Footwear v3.1)",
+    "source": "A&FW_PEFCR_v3.1.pdf (Sections 6.3.1–6.3.4, Tables 33, 35, 37, 38)",
+    "version": "v3.1",
+    "units": {
+      "distance": "km",
+      "share": "percent",
+      "volume": "m3",
+      "energy": "kWh per m2 per year",
+      "time": "weeks"
+    },
+    "notes": [
+      "Shares per leg (Table 33) are defaults; items requiring company data are left as formulas.",
+      "Distances, utilisation ratios and mass shares per origin/mode from Table 37.",
+      "Consumer travel allocation by volume with 5 km total distance and VolumeMax(car)=0.2 m3.",
+      "Default distribution loss DistribLoss=1% until point of sale.",
+      "All shares within each leg/mode group must sum to 100% per Table 37 guidance."
+    ]
+  },
+  "global_parameters": {
+    "scenario_mix": {
+      "ShareF2C": 3.8,
+      "ShareClassicECom": 34.2,
+      "ShareRetail": 62.0
+    },
+    "returns_and_losses": {
+      "ReturnRateClassicECom": 28.0,
+      "ReturnRateRetail": 7.0,
+      "RestockRate": 50.0,
+      "DistribLoss": 1.0,
+      "InventoryGlutDC_default": 0.0,
+      "InventoryGlutPOS_default": 0.0
+    },
+    "consumer_travel": {
+      "distance_total_km": 5,
+      "allocation": "by_volume",
+      "passenger_car_volume_max_m3": 0.2,
+      "shares": {
+        "Passenger car": 62.0,
+        "Van (lorry <1.2t, EURO 3)": 5.0,
+        "No impact modelled (walking, cycling)": 33.0
+      },
+      "utilisation_ratio": {
+        "Van (lorry <1.2t, EURO 3)": 0.5,
+        "fallback_van_<7.5t_UR": 0.2
+      }
+    },
+    "volume_factor": 4,
+    "utilisation_ratio_defaults": {
+      "Truck (>32t, EURO 4)": 0.64,
+      "Train (average freight train)": 0.64,
+      "Cargo plane": 0.50,
+      "Van (lorry <1.2t, EURO 3)": 0.50
+    },
+    "plane_train_shares": {
+      "SharePlaneF2C": 0.0,
+      "SharePlaneWarehouseEU": 0.0,
+      "ShareTrainWarehouseEU": 0.0,
+      "SharePlaneWarehouseLocal": 0.0,
+      "ShareTrainWarehouseLocal": 0.0
+    }
+  },
+  "leg_shares_defaults": {
+    "F2C": {
+      "[1a1] Factory -> final client": 4.4,
+      "[1a2] Final client -> local DC (returns)": 1.2,
+      "[1a3] Local DC -> final client (restocked returns)": 0.6,
+      "[1c] Final client -> end-of-life (unrestocked returns)": 0.6
+    },
+    "ClassicECom": {
+      "[2a1] Factory -> EU DC": { "formula": "[3a] * (1 - InventoryGlutDC)" },
+      "[3a] EU DC -> local DC": 40.2,
+      "[3b] Local DC -> final client (net)": 34.9,
+      "[3b1] Local DC -> final client (sales)": 39.8,
+      "[3b2] Final client -> local DC (returns)": 11.1,
+      "[3b3] Local DC -> final client (restocked returns)": 5.6,
+      "[3c] Final client -> EoL (unrestocked returns)": 5.6,
+      "[2c1] Distrib. losses to EoL (pre-POS)": 0.4
+    },
+    "Retail": {
+      "[2a2] Factory -> EU DC": { "formula": "[4a] * (1 - InventoryGlutDC)" },
+      "[4a] EU DC -> retail/stores": 64.9,
+      "[4b] Retail/stores -> final client (net)": 62.0,
+      "[4b1] Retail/stores -> final client (sales)": 64.2,
+      "[4b2] Final client -> retail/stores (returns)": 4.5,
+      "[4b3] Retail/stores -> final client (restocked returns)": 2.2,
+      "[4c] Final client -> EoL (unrestocked returns)": 2.2,
+      "[2c2] Distrib. losses to EoL (pre-POS)": 0.7
+    }
+  },
+  "transport_parameters": {
+    "[1a1] Factory -> final client (F2C)": {
+      "origins": [
+        {
+          "origin": "Local",
+          "mode": "Truck (>32t, EURO 4)",
+          "distance_km": 1200,
+          "utilisation_ratio": 0.64,
+          "share_mass_percent": "25 * (100 - SharePlaneF2C) / 100"
+        },
+        {
+          "origin": "Intracontinental",
+          "mode": "Truck (>32t, EURO 4)",
+          "distance_km": 3500,
+          "utilisation_ratio": 0.64,
+          "share_mass_percent": "75 * (100 - SharePlaneF2C) / 100"
+        },
+        {
+          "origin": "International_ship_leg",
+          "mode": "Truck (>32t, EURO 4)",
+          "distance_km": 1000,
+          "utilisation_ratio": 0.64,
+          "share_mass_percent": 0
+        },
+        {
+          "origin": "International_ship_leg",
+          "mode": "Ship (transoceanic container)",
+          "distance_km": 18000,
+          "utilisation_ratio": null,
+          "share_mass_percent": 0
+        },
+        {
+          "origin": "International_plane_leg",
+          "mode": "Truck (>32t, EURO 4)",
+          "distance_km": 1000,
+          "utilisation_ratio": 0.64,
+          "share_mass_percent": "SharePlaneF2C"
+        },
+        {
+          "origin": "International_plane_leg",
+          "mode": "Cargo plane",
+          "distance_km": "DistanceF2C",
+          "utilisation_ratio": 0.50,
+          "share_mass_percent": "SharePlaneF2C"
+        }
+      ]
+    },
+    "[1a2] Final client -> local DC (returns)": {
+      "origins": [
+        {
+          "origin": "Local",
+          "mode": "Van (lorry <1.2t, EURO 3)",
+          "distance_km": 250,
+          "round_trip": true,
+          "utilisation_ratio": 0.50,
+          "share_mass_percent": 100
+        }
+      ]
+    },
+    "[1a3] Local DC -> final client (restocked F2C returns)": {
+      "origins": [
+        {
+          "origin": "Local",
+          "mode": "Van (lorry <1.2t, EURO 3)",
+          "distance_km": 250,
+          "round_trip": true,
+          "utilisation_ratio": 0.50,
+          "share_mass_percent": 100
+        }
+      ]
+    },
+    "[2a1] Factory -> EU DC (Classic e-com)": {
+      "origins": [
+        {
+          "origin": "Local",
+          "mode": "Truck (>32t, EURO 4)",
+          "distance_km": 1200,
+          "utilisation_ratio": 0.64,
+          "share_mass_percent": "5.6 * (100 - SharePlaneWarehouseEU) / 100"
+        },
+        {
+          "origin": "Intracontinental_barge_prehaul",
+          "mode": "Truck (>32t, EURO 4)",
+          "distance_km": 2500,
+          "utilisation_ratio": 0.64,
+          "share_mass_percent": "3.3 * (100 - SharePlaneWarehouseEU) / 100"
+        },
+        {
+          "origin": "Intracontinental_barge_main",
+          "mode": "Ship (barge)",
+          "distance_km": 800,
+          "utilisation_ratio": null,
+          "share_mass_percent": "3.3 * (100 - SharePlaneWarehouseEU) / 100"
+        },
+        {
+          "origin": "Intracontinental_train_prehaul",
+          "mode": "Truck (>32t, EURO 4)",
+          "distance_km": 800,
+          "utilisation_ratio": 0.64,
+          "share_mass_percent": "15.6 * (100 - SharePlaneWarehouseEU) / 100"
+        },
+        {
+          "origin": "Intracontinental_train_main",
+          "mode": "Train (average freight train)",
+          "distance_km": 2500,
+          "utilisation_ratio": 0.64,
+          "share_mass_percent": "15.6 * (100 - SharePlaneWarehouseEU) / 100"
+        },
+        {
+          "origin": "International_ship_prehaul",
+          "mode": "Truck (>32t, EURO 4)",
+          "distance_km": 1000,
+          "utilisation_ratio": 0.64,
+          "share_mass_percent": "73.3 * (100 - SharePlaneWarehouseEU) / 100"
+        },
+        {
+          "origin": "International_ship_main",
+          "mode": "Ship (transoceanic container)",
+          "distance_km": 18000,
+          "utilisation_ratio": null,
+          "share_mass_percent": "73.3 * (100 - SharePlaneWarehouseEU) / 100"
+        },
+        {
+          "origin": "International_plane_prehaul",
+          "mode": "Truck (>32t, EURO 4)",
+          "distance_km": 1000,
+          "utilisation_ratio": 0.64,
+          "share_mass_percent": "SharePlaneWarehouseEU"
+        },
+        {
+          "origin": "International_plane_main",
+          "mode": "Cargo plane",
+          "distance_km": "DistanceWarehouseEU",
+          "utilisation_ratio": 0.50,
+          "share_mass_percent": "SharePlaneWarehouseEU"
+        },
+        {
+          "origin": "International_train_prehaul",
+          "mode": "Truck (>32t, EURO 4)",
+          "distance_km": 1000,
+          "utilisation_ratio": 0.64,
+          "share_mass_percent": "2.2 * (100 - SharePlaneWarehouseEU) / 100"
+        },
+        {
+          "origin": "International_train_main",
+          "mode": "Train (average freight train)",
+          "distance_km": 10000,
+          "utilisation_ratio": 0.64,
+          "share_mass_percent": "2.2 * (100 - SharePlaneWarehouseEU) / 100"
+        }
+      ]
+    },
+    "[2a2] Factory -> EU DC (Retail)": {
+      "origins": [
+        {
+          "origin": "Local",
+          "mode": "Truck (>32t, EURO 4)",
+          "distance_km": 1200,
+          "utilisation_ratio": 0.64,
+          "share_mass_percent": 100
+        }
+      ]
+    },
+    "[3a] EU DC -> local DC (Classic e-com)": {
+      "origins": [
+        {
+          "origin": "Intracontinental_plane_prehaul",
+          "mode": "Truck (>32t, EURO 4)",
+          "distance_km": 500,
+          "utilisation_ratio": 0.64,
+          "share_mass_percent": "SharePlaneWarehouseLocal"
+        },
+        {
+          "origin": "Intracontinental_plane_main",
+          "mode": "Cargo plane",
+          "distance_km": "DistanceWarehouseLocal",
+          "utilisation_ratio": 0.50,
+          "share_mass_percent": "SharePlaneWarehouseLocal"
+        },
+        {
+          "origin": "Intracontinental_train_prehaul",
+          "mode": "Truck (>32t, EURO 4)",
+          "distance_km": 1000,
+          "utilisation_ratio": 0.64,
+          "share_mass_percent": "74 * (100 - SharePlaneWarehouseLocal) / 100"
+        },
+        {
+          "origin": "Intracontinental_train_main",
+          "mode": "Train (average freight train)",
+          "distance_km": 3000,
+          "utilisation_ratio": 0.64,
+          "share_mass_percent": "74 * (100 - SharePlaneWarehouseLocal) / 100"
+        },
+        {
+          "origin": "Intracontinental_truck_only",
+          "mode": "Truck (>32t, EURO 4)",
+          "distance_km": 4000,
+          "utilisation_ratio": 0.64,
+          "share_mass_percent": "26 * (100 - SharePlaneWarehouseLocal) / 100"
+        }
+      ]
+    },
+    "[3b1] Local DC -> final client (sales)": {
+      "origins": [
+        {
+          "origin": "Local",
+          "mode": "Van (lorry <1.2t, EURO 3)",
+          "distance_km": 250,
+          "round_trip": true,
+          "utilisation_ratio": 0.50,
+          "share_mass_percent": 100
+        }
+      ]
+    },
+    "[3b2] Final client -> local DC (returns)": {
+      "origins": [
+        {
+          "origin": "Local",
+          "mode": "Van (lorry <1.2t, EURO 3)",
+          "distance_km": 250,
+          "round_trip": true,
+          "utilisation_ratio": 0.50,
+          "share_mass_percent": 100
+        }
+      ]
+    },
+    "[3b3] Local DC -> final client (restocked returns)": {
+      "origins": [
+        {
+          "origin": "Local",
+          "mode": "Van (lorry <1.2t, EURO 3)",
+          "distance_km": 250,
+          "round_trip": true,
+          "utilisation_ratio": 0.50,
+          "share_mass_percent": 100
+        }
+      ]
+    },
+    "[4a] EU DC -> retail/stores": {
+      "origins": [
+        {
+          "origin": "Local",
+          "mode": "Truck (>32t, EURO 4)",
+          "distance_km": 1200,
+          "utilisation_ratio": 0.64,
+          "share_mass_percent": 100
+        }
+      ]
+    },
+    "[4b1] Retail/stores -> final client (sales)": {
+      "origins": [
+        {
+          "origin": "Local",
+          "mode": "Passenger car (average)",
+          "distance_km": 5,
+          "utilisation_ratio": null,
+          "share_mass_percent": 62
+        },
+        {
+          "origin": "Local",
+          "mode": "Van (lorry <1.2t, EURO 3)",
+          "distance_km": 5,
+          "utilisation_ratio": 0.50,
+          "share_mass_percent": 5
+        },
+        {
+          "origin": "Local",
+          "mode": "No impact modelled (walking, cycling etc)",
+          "distance_km": 0,
+          "utilisation_ratio": null,
+          "share_mass_percent": 33
+        }
+      ],
+      "allocation_method": "by_volume",
+      "passenger_car_volume_max_m3": 0.2
+    },
+    "[4b2] Final client -> retail/stores (returns)": {
+      "origins": [
+        {
+          "origin": "Local",
+          "mode": "Passenger car (average)",
+          "distance_km": 5,
+          "utilisation_ratio": null,
+          "share_mass_percent": 62
+        },
+        {
+          "origin": "Local",
+          "mode": "Van (lorry <1.2t, EURO 3)",
+          "distance_km": 5,
+          "utilisation_ratio": 0.50,
+          "share_mass_percent": 5
+        },
+        {
+          "origin": "Local",
+          "mode": "No impact modelled (walking, cycling etc)",
+          "distance_km": 0,
+          "utilisation_ratio": null,
+          "share_mass_percent": 33
+        }
+      ],
+      "allocation_method": "by_volume",
+      "passenger_car_volume_max_m3": 0.2
+    },
+    "[4b3] Retail/stores -> final client (restocked returns)": {
+      "origins": [
+        {
+          "origin": "Local",
+          "mode": "Passenger car (average)",
+          "distance_km": 5,
+          "utilisation_ratio": null,
+          "share_mass_percent": 62
+        },
+        {
+          "origin": "Local",
+          "mode": "Van (lorry <1.2t, EURO 3)",
+          "distance_km": 5,
+          "utilisation_ratio": 0.50,
+          "share_mass_percent": 5
+        },
+        {
+          "origin": "Local",
+          "mode": "No impact modelled (walking, cycling etc)",
+          "distance_km": 0,
+          "utilisation_ratio": null,
+          "share_mass_percent": 33
+        }
+      ],
+      "allocation_method": "by_volume",
+      "passenger_car_volume_max_m3": 0.2
+    }
+  },
+  "storage_defaults": {
+    "warehouse_dc": {
+      "default_storage_time_weeks": 3.5,
+      "electricity_kwh_per_m2_yr": {
+        "floor_area_in_buildings": 20.0,
+        "loading_docks": 5.0,
+        "operations_marshalling": 10.0
+      },
+      "volume_capacity_m3": {
+        "floor_area_in_buildings": 48000,
+        "loading_docks": 5200,
+        "operations_marshalling": 3200
+      },
+      "shelf_height_m": 2.0,
+      "shelf_coverage_percent": 50.0
+    },
+    "retail_store": {
+      "default_storage_time_weeks": 3.5,
+      "electricity_kwh_per_m2_yr": {
+        "floor_area_in_buildings": 75.0,
+        "loading_docks": 5.0,
+        "operations_marshalling": 0.0
+      },
+      "volume_capacity_m3": {
+        "floor_area_in_buildings": 2000,
+        "loading_docks": 500
+      },
+      "shelf_height_m": 2.0,
+      "shelf_coverage_percent": 50.0
+    },
+    "digital_infrastructure_kwh_per_order": 0.03
+  },
+  "product_volume_defaults_m3": {
+    "apparel": {
+      "RP1_T-shirt": 0.0020,
+      "RP2_Shirt_blouse": 0.0030,
+      "RP3_Sweater_jumpers_cardigans": 0.0045,
+      "RP4_Jacket_coat": 0.0070,
+      "RP5_Trousers_shorts": 0.0030,
+      "RP6_Dress_skirt": 0.0040,
+      "RP7_Underwear_socks_pantyhose": 0.0015,
+      "RP8_Accessories_scarves_gloves_hats": 0.0010
+    },
+    "footwear": {
+      "FS1_Sneakers_sports_shoes": 0.0045,
+      "FS2_Sandals_flipflops": 0.0030,
+      "FS3_Boots": 0.0070,
+      "FS4_Formal_shoes": 0.0040
+    }
+  },
+  "weight_volume_rules_per_leg": {
+    "volume_limited_legs": ["[3b1]", "[3b2]", "[3b3]", "[4b1]", "[4b2]", "[4b3]"],
+    "weight_limited_legs": ["[1a1]", "[1a2]", "[1a3]", "[2a1]", "[2a2]", "[3a]", "[4a]"]
+  }
+}
