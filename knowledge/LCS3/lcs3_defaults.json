@@ -11,12 +11,12 @@
       "time": "weeks"
     },
     "notes": [
-      "Shares per leg follow Table 33 (only skutečné transportní kroky; čisté/‘net’ a EoL toky nejsou v dopravě modelovány).",
-      "Distances, utilisation ratios a podíly dle původu/módu jsou z Tab. 37.",
+      "Shares per leg dle Table 33 (jen skutečné transportní kroky; ‘net’ a EoL toky se v dopravě nepočítají).",
+      "Vzdálenosti, módy a utilisation ratios dle Table 37.",
       "Consumer travel: 5 km celkem, alokace podle objemu; pro osobní auto VolumeMax = 0.2 m3 (Eq. 30).",
-      "Skladování: výpočet dle Eq. 31 a Tab. 38, VolumeFactor = 4, ShelfHeight = 2 m, ShelfCoverage = 50 %.",
-      "Default distrib. ztráty před POS = 1 % (Tab. 33).",
-      "Elektrická energie: dle hierarchie PEF používej reziduální grid mix (spotřební mix) pro danou zemi/region."
+      "Skladování: výpočet dle Eq. 31 a Table 38, VolumeFactor = 4, ShelfHeight = 2 m, ShelfCoverage = 50 %.",
+      "Default distrib. ztráty (DistribLoss) do POS = 1 %.",
+      "Elektrická energie: podle hierarchie PEF použij reziduální grid mix."
     ]
   },
   "global_parameters": {
@@ -40,7 +40,7 @@
       "shares": {
         "Passenger car (average)": 62.0,
         "Van (lorry <1.2t, EURO 3)": 5.0,
-        "No impact modelled (walking, cycling)": 33.0
+        "No impact modelled (walking, cycling etc)": 33.0
       },
       "utilisation_ratio": {
         "Van (lorry <1.2t, EURO 3)": 0.5,
@@ -501,21 +501,21 @@
       "RP1_T-shirt": 0.0018,
       "RP2_Shirt_blouse": 0.0060,
       "RP3_Sweater_jumpers_cardigans": 0.0102,
-      "RP4_Jacket_coat": 0.0168,
-      "RP5_Trousers_shorts": 0.0060,
-      "RP6_Dress_skirt": 0.0084,
-      "RP7_Underwear_socks_pantyhose": 0.0018,
-      "RP8_Accessories_scarves_gloves_hats": 0.0018
+      "RP4_Jacket_coat": 0.0150,
+      "RP5_Trousers_shorts": 0.0040,
+      "RP6_Dress_skirt": 0.0070,
+      "RP7_Underwear_socks_pantyhose": 0.0006,
+      "RP8_Accessories_scarves_gloves_hats": 0.0012
     },
     "footwear": {
-      "FS1_Sneakers_sports_shoes": 0.0070,
-      "FS2_Sandals_flipflops": 0.0035,
-      "FS3_Boots": 0.0100,
-      "FS4_Formal_shoes": 0.0060
+      "FS1_Sneakers_sports_shoes": 0.0180,
+      "FS2_Sandals_flipflops": 0.0048,
+      "FS3_Boots": 0.0240,
+      "FS4_Formal_shoes": 0.0180
     }
   },
   "weight_volume_rules_per_leg": {
-    "volume_limited_legs": ["[1a2]", "[1a3]", "[3b1]", "[3b2]", "[3b3]", "[4b1]", "[4b2]", "[4b3]"],
-    "weight_limited_legs": ["[1a1]", "[2a1]", "[2a2]", "[3a]", "[4a]"]
-  }
+    "volume_limited_legs": ["[4b1]", "[4b2]", "[4b3]"],
+    "weight_limited_legs": ["[1a1]", "[1a2]", "[1a3]", "[2a1]", "[2a2]", "[3a]", "[3b1]", "[3b2]", "[3b3]", "[4a]"]
+    }
 }
