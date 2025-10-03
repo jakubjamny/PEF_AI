@@ -1,0 +1,66 @@
+{
+  "version": "EF 3.1",
+  "scope": "LCS5 (End-of-Life) – Circular Footprint Formula: allocation factor A and QSin/Qp defaults",
+  "source_document": "PEFCR Apparel & Footwear v3.1 (29 Apr 2025)",
+  "last_update": "2025-10-03",
+  "notes": [
+    "QS ratios are capped at 1 by the PEF Method. If recycled material substitutes a different primary material, set QS=1 and handle quantity differences via E*v.",
+    "Where the PEFCR shows 'To be defined', leave QS entries null and set per project data or PEF Method Part C guidance."
+  ],
+  "factors": {
+    "textile_to_textile": {
+      "recycled_cellulosic_fibres_mechanical": {
+        "A": 0.8,
+        "QSin_over_Qp": 0.5
+      },
+      "recycled_wool_mechanical": {
+        "A": 0.8,
+        "QSin_over_Qp": 0.65
+      },
+      "recycled_polyester_mechanical": {
+        "A": 0.8,
+        "QSin_over_Qp": 0.5
+      },
+      "recycled_synthetics_chemical": {
+        "A": 0.8,
+        "QSin_over_Qp": 1.0
+      },
+      "recycled_mmcf_chemical": {
+        "A": 0.8,
+        "QSin_over_Qp": 0.5
+      },
+      "manufacturing_leftovers_fabrics": {
+        "A": 0.8,
+        "QSin_over_Qp": 1.0
+      }
+    },
+    "other_feedstock": {
+      "polymer_from_other_feedstock": {
+        "A": 0.5,
+        "QSin_over_Qp": 0.9
+      },
+      "rubber_from_other_feedstock": {
+        "A": 0.5,
+        "QSin_over_Qp": 0.75
+      },
+      "foam_from_other_feedstock": {
+        "A": 0.5,
+        "QSin_over_Qp": 0.75
+      }
+    },
+    "footwear_post_consumer": {
+      "recycled_rubber_from_footwear": {
+        "A": 0.5,
+        "QSin_over_Qp": null
+      },
+      "recycled_polymer_from_footwear": {
+        "A": 0.5,
+        "QSin_over_Qp": null
+      },
+      "recycled_foam_from_footwear": {
+        "A": 0.5,
+        "QSin_over_Qp": null
+      }
+    }
+  }
+}

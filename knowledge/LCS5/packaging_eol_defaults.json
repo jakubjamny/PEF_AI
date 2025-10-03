@@ -1,0 +1,172 @@
+{
+  "version": "EF 3.1",
+  "scope": "Packaging – Default EoL treatment mapping (datasets & stage) for Apparel & Footwear",
+  "source_document": "PEFCR Apparel & Footwear v3.1 (29 Apr 2025)",
+  "last_update": "2025-10-03",
+  "notes": [
+    "Per PEFCR, EoL of primary packaging is in LCS5; secondary/tertiary packaging EoL is in LCS3.",
+    "Default EoL datasets already include collection (Annex VII). Shares of recycling/incineration/landfill for packaging should follow PEF Method Part C defaults (set in your tool or national statistics)."
+  ],
+  "regions": {
+    "EU+EFTA+UK": {
+      "lifecycles": {
+        "LCS5_primary": {
+          "polybag_LDPE": {
+            "material": "LDPE",
+            "datasets": {
+              "recycling": {
+                "uuid": "86034c65-32b3-4a85-9241-1930c5c2495a",
+                "name": "Recycling of post-industrial waste polyethylene (PE) {EU+EFTA+UK}",
+                "unit": "kg"
+              },
+              "incineration": {
+                "uuid": "0370baaf-8923-4e26-b3b8-abcebb89f974",
+                "name": "Waste incineration of PE {EU+EFTA+UK}",
+                "unit": "kg"
+              },
+              "landfill": {
+                "uuid": "f2bea0f5-e4b7-4a2c-9f34-4eb32495cbc6",
+                "name": "Landfill of plastic waste {EU+EFTA+UK}",
+                "unit": "kg"
+              }
+            },
+            "shares_source": "PEF Method Part C (packaging)"
+          },
+          "hangtag_paper": {
+            "material": "paper/cardboard",
+            "datasets": {
+              "recycling": {
+                "uuid": "308685e7-15fe-417e-a016-1f6060a0ff10",
+                "name": "Recycling paper and cardboard, waste management, technology mix, at plant {EU+EFTA+UK}",
+                "unit": "kg"
+              },
+              "incineration": {
+                "uuid": "b6ce954d-deb4-4c16-907a-c67b71e1e862",
+                "name": "Waste incineration of paper and board {EU+EFTA+UK}",
+                "unit": "kg"
+              },
+              "landfill": {
+                "uuid": "86ff0001-4794-4df5-a1d4-083a9d986b62",
+                "name": "Landfill of paper and paperboard waste {EU+EFTA+UK}",
+                "unit": "kg"
+              }
+            },
+            "shares_source": "PEF Method Part C (packaging)"
+          },
+          "hangtag_plastic": {
+            "material": "plastic (unspecified)",
+            "datasets": {
+              "incineration_generic_msw": {
+                "uuid": "2f07be1f-d11a-46ac-b4f0-49c5f28b5b93",
+                "name": "Waste incineration of municipal solid waste {EU+EFTA+UK}",
+                "unit": "kg"
+              },
+              "landfill_plastic": {
+                "uuid": "f2bea0f5-e4b7-4a2c-9f34-4eb32495cbc6",
+                "name": "Landfill of plastic waste {EU+EFTA+UK}",
+                "unit": "kg"
+              }
+            },
+            "shares_source": "PEF Method Part C (packaging) or map to specific polymer where known"
+          },
+          "primary_corrugated_box_footwear": {
+            "material": "corrugated cardboard",
+            "datasets": {
+              "recycling": {
+                "uuid": "308685e7-15fe-417e-a016-1f6060a0ff10",
+                "name": "Recycling paper and cardboard, waste management, technology mix, at plant {EU+EFTA+UK}",
+                "unit": "kg"
+              },
+              "incineration": {
+                "uuid": "b6ce954d-deb4-4c16-907a-c67b71e1e862",
+                "name": "Waste incineration of paper and board {EU+EFTA+UK}",
+                "unit": "kg"
+              },
+              "landfill": {
+                "uuid": "86ff0001-4794-4df5-a1d4-083a9d986b62",
+                "name": "Landfill of paper and paperboard waste {EU+EFTA+UK}",
+                "unit": "kg"
+              }
+            },
+            "shares_source": "PEF Method Part C (packaging)"
+          },
+          "cellulose_paper_footwear": {
+            "material": "cellulose paper",
+            "datasets": {
+              "recycling": {
+                "uuid": "308685e7-15fe-417e-a016-1f6060a0ff10",
+                "name": "Recycling paper and cardboard, waste management, technology mix, at plant {EU+EFTA+UK}",
+                "unit": "kg"
+              },
+              "incineration": {
+                "uuid": "b6ce954d-deb4-4c16-907a-c67b71e1e862",
+                "name": "Waste incineration of paper and board {EU+EFTA+UK}",
+                "unit": "kg"
+              },
+              "landfill": {
+                "uuid": "86ff0001-4794-4df5-a1d4-083a9d986b62",
+                "name": "Landfill of paper and paperboard waste {EU+EFTA+UK}",
+                "unit": "kg"
+              }
+            },
+            "shares_source": "PEF Method Part C (packaging)"
+          }
+        },
+        "LCS3_secondary_tertiary": {
+          "corrugated_cardboard": {
+            "datasets": {
+              "recycling": {
+                "uuid": "308685e7-15fe-417e-a016-1f6060a0ff10",
+                "name": "Recycling paper and cardboard, waste management, technology mix, at plant {EU+EFTA+UK}",
+                "unit": "kg"
+              },
+              "incineration": {
+                "uuid": "b6ce954d-deb4-4c16-907a-c67b71e1e862",
+                "name": "Waste incineration of paper and board {EU+EFTA+UK}",
+                "unit": "kg"
+              },
+              "landfill": {
+                "uuid": "86ff0001-4794-4df5-a1d4-083a9d986b62",
+                "name": "Landfill of paper and paperboard waste {EU+EFTA+UK}",
+                "unit": "kg"
+              }
+            }
+          },
+          "shrink_film_LDPE": {
+            "datasets": {
+              "recycling": {
+                "uuid": "86034c65-32b3-4a85-9241-1930c5c2495a",
+                "name": "Recycling of post-industrial waste polyethylene (PE) {EU+EFTA+UK}",
+                "unit": "kg"
+              },
+              "incineration": {
+                "uuid": "0370baaf-8923-4e26-b3b8-abcebb89f974",
+                "name": "Waste incineration of PE {EU+EFTA+UK}",
+                "unit": "kg"
+              },
+              "landfill": {
+                "uuid": "f2bea0f5-e4b7-4a2c-9f34-4eb32495cbc6",
+                "name": "Landfill of plastic waste {EU+EFTA+UK}",
+                "unit": "kg"
+              }
+            }
+          },
+          "wood_pallets": {
+            "datasets": {
+              "incineration": {
+                "uuid": "034b2afb-2aa4-4d64-99b5-f39f700f3d44",
+                "name": "Waste incineration of processed wood {EU+EFTA+UK}",
+                "unit": "kg"
+              },
+              "landfill": {
+                "uuid": "0907b969-c8a5-4317-84b3-04ad0a04447e",
+                "name": "Landfill of processed wood {EU+EFTA+UK}",
+                "unit": "kg"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

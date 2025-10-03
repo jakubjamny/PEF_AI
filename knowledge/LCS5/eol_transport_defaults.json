@@ -1,0 +1,181 @@
+{
+  "version": "EF 3.1",
+  "scope": "LCS5 (End-of-Life) – Default transport parameters and representative product volumes",
+  "source_document": "PEFCR Apparel & Footwear v3.1 (29 Apr 2025)",
+  "last_update": "2025-10-03",
+  "units": {
+    "distance": "km",
+    "utilisation_ratio": "share of payload incl. empty returns",
+    "share_of_mass": "fraction of product mass"
+  },
+  "regions": {
+    "EU+EFTA+UK": {
+      "representative_product_volumes_m3": {
+        "t_shirts": {
+          "volume_m3": 0.0018,
+          "allocation_passenger_car": 0.009
+        },
+        "shirts_and_blouses": {
+          "volume_m3": 0.006,
+          "allocation_passenger_car": 0.03
+        },
+        "sweaters_and_midlayers": {
+          "volume_m3": 0.0102,
+          "allocation_passenger_car": 0.051
+        },
+        "jackets_and_coats": {
+          "volume_m3": 0.015,
+          "allocation_passenger_car": 0.075
+        },
+        "pants_and_shorts": {
+          "volume_m3": 0.004,
+          "allocation_passenger_car": 0.02
+        },
+        "dresses_skirts_jumpsuits": {
+          "volume_m3": 0.007,
+          "allocation_passenger_car": 0.035
+        },
+        "leggings_stockings_tights_socks": {
+          "volume_m3": 0.0006,
+          "allocation_passenger_car": 0.003
+        },
+        "underwear": {
+          "volume_m3": 0.0006,
+          "allocation_passenger_car": 0.003
+        },
+        "swimwear": {
+          "volume_m3": 0.0006,
+          "allocation_passenger_car": 0.003
+        },
+        "apparel_accessories": {
+          "volume_m3": 0.0012,
+          "allocation_passenger_car": 0.006
+        },
+        "open_toed_shoes": {
+          "volume_m3": 0.0048,
+          "allocation_passenger_car": 0.024
+        },
+        "closed_toed_shoes": {
+          "volume_m3": 0.018,
+          "allocation_passenger_car": 0.09
+        },
+        "boots": {
+          "volume_m3": 0.024,
+          "allocation_passenger_car": 0.12
+        }
+      },
+      "apparel": {
+        "municipal_waste_collection": {
+          "final_client_to_landfill": {
+            "distance_km": 30,
+            "utilisation_ratio": 0.64,
+            "share_of_mass": 0.805,
+            "transport_mode": "truck_>32t_euro4"
+          },
+          "final_client_to_incineration": {
+            "distance_km": 30,
+            "utilisation_ratio": 0.64,
+            "share_of_mass": 0.805,
+            "transport_mode": "truck_>32t_euro4"
+          }
+        },
+        "recycling_collection": {
+          "final_client_to_collection_point": {
+            "distance_km": 1,
+            "utilisation_ratio": null,
+            "share_of_mass": 0.195,
+            "transport_mode": "passenger_car"
+          },
+          "collection_point_to_sorting_point": [
+            {
+              "distance_km": 130,
+              "utilisation_ratio": 0.64,
+              "share_of_mass": 0.195,
+              "transport_mode": "truck_>32t_euro4"
+            },
+            {
+              "distance_km": 240,
+              "utilisation_ratio": null,
+              "share_of_mass": 0.195,
+              "transport_mode": "train_average_freight"
+            },
+            {
+              "distance_km": 270,
+              "utilisation_ratio": null,
+              "share_of_mass": 0.195,
+              "transport_mode": "ship_barge"
+            }
+          ],
+          "sorting_point_to_recycling": {
+            "distance_km": 100,
+            "utilisation_ratio": 0.64,
+            "share_of_mass": 0.169,
+            "transport_mode": "truck_>32t_euro4"
+          },
+          "sorting_point_to_incineration": {
+            "distance_km": 30,
+            "utilisation_ratio": 0.64,
+            "share_of_mass": 0.026,
+            "transport_mode": "truck_>32t_euro4"
+          }
+        }
+      },
+      "footwear": {
+        "municipal_waste_collection": {
+          "final_client_to_landfill": {
+            "distance_km": 30,
+            "utilisation_ratio": 0.64,
+            "share_of_mass": 0.98,
+            "transport_mode": "truck_>32t_euro4"
+          },
+          "final_client_to_incineration": {
+            "distance_km": 30,
+            "utilisation_ratio": 0.64,
+            "share_of_mass": 0.98,
+            "transport_mode": "truck_>32t_euro4"
+          }
+        },
+        "recycling_collection": {
+          "final_client_to_collection_point": {
+            "distance_km": 1,
+            "utilisation_ratio": null,
+            "share_of_mass": 0.02,
+            "transport_mode": "passenger_car"
+          },
+          "collection_point_to_sorting_point": [
+            {
+              "distance_km": 130,
+              "utilisation_ratio": 0.64,
+              "share_of_mass": 0.02,
+              "transport_mode": "truck_>32t_euro4"
+            },
+            {
+              "distance_km": 240,
+              "utilisation_ratio": null,
+              "share_of_mass": 0.02,
+              "transport_mode": "train_average_freight"
+            },
+            {
+              "distance_km": 270,
+              "utilisation_ratio": null,
+              "share_of_mass": 0.02,
+              "transport_mode": "ship_barge"
+            }
+          ],
+          "sorting_point_to_recycling": {
+            "distance_km": 100,
+            "utilisation_ratio": 0.64,
+            "share_of_mass": 0.0,
+            "transport_mode": "truck_>32t_euro4"
+          },
+          "sorting_point_to_incineration": {
+            "distance_km": 30,
+            "utilisation_ratio": 0.64,
+            "share_of_mass": 0.02,
+            "transport_mode": "truck_>32t_euro4"
+          }
+        }
+      }
+    }
+  }
+}
