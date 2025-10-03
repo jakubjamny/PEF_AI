@@ -1,0 +1,324 @@
+{
+  "version": "EF 3.1",
+  "scope": "LCS5 (End-of-Life) – Recyclability disruptors for Apparel & Footwear",
+  "source_document": "A&FW_PEFCR_v3.1.pdf – Tables 24–26 (recyclability disruptors)",
+  "resolution_policy": {
+    "precedence": [
+      "product_level",
+      "pathway_level",
+      "material_level"
+    ],
+    "effect": "If any matching rule evaluates to true, set R2 = 0 for the specified scope (product or pathway).",
+    "notes": [
+      "Disruptors are evaluated per product. If a product-level disruptor is true, all recycling pathways (R2) for that product are set to 0.",
+      "If only pathway-level disruptors are true, only those pathways are set to R2=0; other pathways may remain available.",
+      "All shares (R2/R3) must be renormalized if pathways are disabled."
+    ]
+  },
+  "apparel": {
+    "product_level": [
+      {
+        "id": "EEE_in_product",
+        "description": "Product contains electrical/electronic components (EEE).",
+        "if": {
+          "has_electronics": true
+        },
+        "then": {
+          "R2_all": 0,
+          "reason": "EEE disruptor blocks textile recycling pathways for the whole product."
+        }
+      },
+      {
+        "id": "multi_material_non_textile_dominance",
+        "description": "Non-textile materials (e.g., leather, coated fabrics, composites) dominate the product mass.",
+        "if": {
+          "non_textile_mass_share_ge": 0.5
+        },
+        "then": {
+          "R2_all": 0,
+          "reason": "Non-textile dominance disrupts textile recycling streams."
+        }
+      }
+    ],
+    "pathway_level": {
+      "mechanical_wipers": [
+        {
+          "id": "wipers_min_cotton_content",
+          "description": "Insufficient cotton content for wipers route.",
+          "if": {
+            "fiber_fractions": {
+              "Cotton": {
+                "lt": 0.8
+              }
+            }
+          },
+          "then": {
+            "R2_pathway": {
+              "mechanical_wipers": 0
+            },
+            "reason": "Wipers require high cotton share (>=80%)."
+          }
+        },
+        {
+          "id": "wipers_elastane_threshold",
+          "description": "Excess elastane disrupts wipers route.",
+          "if": {
+            "fiber_fractions": {
+              "Elastane": {
+                "gt": 0.05
+              }
+            }
+          },
+          "then": {
+            "R2_pathway": {
+              "mechanical_wipers": 0
+            },
+            "reason": "Elastane >5% disrupts tearing/absorption for wipers."
+          }
+        },
+        {
+          "id": "wipers_coatings_laminations",
+          "description": "Coatings, laminations or membrane layers present.",
+          "if": {
+            "has_coating_or_lamination": true
+          },
+          "then": {
+            "R2_pathway": {
+              "mechanical_wipers": 0
+            },
+            "reason": "Film layers disrupt rag cutting and absorption."
+          }
+        },
+        {
+          "id": "wipers_metallic_yarns",
+          "description": "Metalized/metallic yarns or surface metallization.",
+          "if": {
+            "has_metallic_yarns": true
+          },
+          "then": {
+            "R2_pathway": {
+              "mechanical_wipers": 0
+            },
+            "reason": "Metallic yarns contaminate wiping rags stream."
+          }
+        },
+        {
+          "id": "wipers_excess_fiber_types",
+          "description": "Too many fibre types in blend.",
+          "if": {
+            "num_fibre_types_gt": 2
+          },
+          "then": {
+            "R2_pathway": {
+              "mechanical_wipers": 0
+            },
+            "reason": "Complex blends unsuitable for wipers."
+          }
+        }
+      ],
+      "mechanical_insulation": [
+        {
+          "id": "insulation_elastane_threshold",
+          "description": "Excess elastane disrupts insulation route.",
+          "if": {
+            "fiber_fractions": {
+              "Elastane": {
+                "gt": 0.05
+              }
+            }
+          },
+          "then": {
+            "R2_pathway": {
+              "mechanical_insulation": 0
+            },
+            "reason": "Elastane >5% degrades shredding density and bonding."
+          }
+        },
+        {
+          "id": "insulation_multi_layer_composite",
+          "description": "Multi-layer composite (e.g., laminated membranes, PU coating).",
+          "if": {
+            "has_coating_or_lamination": true
+          },
+          "then": {
+            "R2_pathway": {
+              "mechanical_insulation": 0
+            },
+            "reason": "Composite layers disrupt uniform fibre feedstock."
+          }
+        },
+        {
+          "id": "insulation_heavy_trims_fasteners",
+          "description": "High share of trims/fasteners (metal/plastic) that cannot be removed.",
+          "if": {
+            "non_fibre_trim_mass_share_gt": 0.05
+          },
+          "then": {
+            "R2_pathway": {
+              "mechanical_insulation": 0
+            },
+            "reason": "Non-fibre components disrupt shredding and contamination limits."
+          }
+        }
+      ],
+      "mechanical_textile_to_textile": [
+        {
+          "id": "mech_t2t_fibre_purity",
+          "description": "Insufficient fibre purity for mechanical textile-to-textile.",
+          "if": {
+            "num_fibre_types_gt": 1
+          },
+          "then": {
+            "R2_pathway": {
+              "mechanical_textile_to_textile": 0
+            },
+            "reason": "Pathway requires near-monopoly fibre type (single fibre)."
+          }
+        },
+        {
+          "id": "mech_t2t_short_staple_or_damage",
+          "description": "Short staple length or severe fabric damage (e.g., heavy brushing/raising).",
+          "if": {
+            "short_staple_or_fibre_damage": true
+          },
+          "then": {
+            "R2_pathway": {
+              "mechanical_textile_to_textile": 0
+            },
+            "reason": "Insufficient fibre length for spinning recycled fibres."
+          }
+        }
+      ],
+      "chemical_textile_to_textile_synthetics": [
+        {
+          "id": "chem_t2t_synthetics_purity",
+          "description": "Insufficient PET/PA/PU purity for chemical recycling.",
+          "if": {
+            "fiber_fractions": {
+              "Polyester": {
+                "lt": 0.9
+              }
+            },
+            "any_of": [
+              "has_coating_or_lamination",
+              "num_fibre_types_gt:1"
+            ]
+          },
+          "then": {
+            "R2_pathway": {
+              "chemical_textile_to_textile_synthetics": 0
+            },
+            "reason": "Requires high polymer purity and limited contaminants."
+          }
+        }
+      ],
+      "chemical_textile_to_textile_cellulosics": [
+        {
+          "id": "chem_t2t_cellulosics_purity",
+          "description": "Insufficient cellulose content or presence of non-cellulosic coatings.",
+          "if": {
+            "cellulosic_fibres_mass_share_lt": 0.9
+          },
+          "then": {
+            "R2_pathway": {
+              "chemical_textile_to_textile_cellulosics": 0
+            },
+            "reason": "Requires very high cellulosic share and low contaminants."
+          }
+        }
+      ]
+    }
+  },
+  "footwear": {
+    "product_level": [
+      {
+        "id": "footwear_multimaterial_non_disassemblable",
+        "description": "Non-disassemblable multi-material construction (e.g., permanently bonded uppers/soles).",
+        "if": {
+          "disassemblable": false
+        },
+        "then": {
+          "R2_all": 0,
+          "reason": "Lack of separability disrupts recycling."
+        }
+      }
+    ],
+    "pathway_level": {
+      "thermoplastic_material": [
+        {
+          "id": "shoe_thermoplastic_purity",
+          "description": "Thermoplastic pathway requires high thermoplastic purity.",
+          "if": {
+            "thermoplastic_mass_share_lt": 0.9
+          },
+          "then": {
+            "R2_pathway": {
+              "thermoplastic_material": 0
+            },
+            "reason": "Insufficient thermoplastic share for pathway."
+          }
+        },
+        {
+          "id": "shoe_incompatible_adhesive",
+          "description": "Use of thermoset/PU adhesives incompatible with re-melting.",
+          "if": {
+            "adhesive_is_thermoset_or_PU": true
+          },
+          "then": {
+            "R2_pathway": {
+              "thermoplastic_material": 0
+            },
+            "reason": "Adhesives clog/exclude thermoplastic stream."
+          }
+        }
+      ],
+      "reticulated_materials_PU_foam": [
+        {
+          "id": "shoe_reticulated_foam_nonrecyclable",
+          "description": "Reticulated PU foams and cross-linked rubbers are not recyclable in default scenario.",
+          "if": {
+            "has_reticulated_PU_or_crosslinked_rubber": true
+          },
+          "then": {
+            "R2_pathway": {
+              "reticulated_materials_PU_foam": 0
+            },
+            "reason": "Cross-linked networks cannot be remelted or depolymerized per default."
+          }
+        }
+      ]
+    }
+  },
+  "schema": {
+    "operators": {
+      "gt": "greater than",
+      "ge": "greater or equal",
+      "lt": "less than",
+      "le": "less or equal"
+    },
+    "condition_fields": [
+      "has_electronics",
+      "non_textile_mass_share_ge",
+      "fiber_fractions.<FIBRE>.<op>",
+      "num_fibre_types_gt",
+      "has_coating_or_lamination",
+      "has_metallic_yarns",
+      "non_fibre_trim_mass_share_gt",
+      "short_staple_or_fibre_damage",
+      "cellulosic_fibres_mass_share_lt",
+      "thermoplastic_mass_share_lt",
+      "adhesive_is_thermoset_or_PU",
+      "has_reticulated_PU_or_crosslinked_rubber",
+      "disassemblable"
+    ],
+    "effects": [
+      "R2_all",
+      "R2_pathway.<PATHWAY>"
+    ]
+  },
+  "notes": [
+    "Thresholds reflect common defaults consistent with PEFCR logic. If you have verified industrial evidence of recyclability, you may override specific rules for a product with a documented R2 > 0.",
+    "If any pathway is disabled by disruptors, distribute the disabled R2 share to disposal (1 − R2 − R3) unless alternative evidence supports a different split.",
+    "For footwear, PEFCR default assumes negligible recycling (R2 ≈ 0). Pathways are provided here to support future evidence-based scenarios."
+  ]
+}
