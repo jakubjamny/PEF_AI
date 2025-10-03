@@ -1,0 +1,59 @@
+{
+  "version": "EF 3.1",
+  "scope": "LCS5 (End-of-Life) – Energy substitution parameters and per‑MJ impacts",
+  "calculation_mode": "split",
+  "regions": {
+    "EU+EFTA+UK": {
+      "datasets": {
+        "electricity": {
+          "uuid": "34960d4d-af62-43a0-aa76-adc5fcf57246",
+          "name": "Electricity grid mix 1kV-60kV {EU+EFTA+UK}",
+          "unit": "MJ"
+        },
+        "electricity_residual_alt": {
+          "uuid": "8fb75312-431d-42f6-9a4f-22fa886f7fe3",
+          "name": "Residual grid mix {EU+EFTA+UK}",
+          "unit": "MJ"
+        },
+        "heat": {
+          "uuid": "81675341-f1af-44b0-81d3-d108caef5c28",
+          "name": "Thermal energy from natural gas {EU+EFTA+UK}",
+          "unit": "MJ"
+        }
+      },
+      "ESE_impacts": {
+        "electricity": {
+          "climate_change_total_kgCO2e_per_MJ": 0.11635819273923369,
+          "water_use_m3weq_per_MJ": 0.03972746152405583
+        },
+        "heat": {
+          "climate_change_total_kgCO2e_per_MJ": 0.0689568416862937,
+          "water_use_m3weq_per_MJ": 0.00044477469186715
+        }
+      },
+      "XER_efficiencies": {
+        "electricity": 0.15,
+        "heat": 0.32
+      },
+      "WtE_profile": {
+        "type": "CHP",
+        "net_electricity_export_percent": 0.15,
+        "net_heat_export_percent": 0.32,
+        "production_rates_MWh_per_tonne": {
+          "electricity": 0.4,
+          "heat": 0.9
+        },
+        "notes": "EU-average WtE CHP defaults; override with plant-specific data if available."
+      },
+      "notes": [
+        "Per‑MJ impacts pulled from EF DB 3.1 datasets referenced above.",
+        "If you must run in 'net' mode (without XER/LHV), change calculation_mode to 'net'.",
+        "For residual grid electricity substitution, replace ESE_impacts.electricity with the residual mix values if desired."
+      ]
+    }
+  },
+  "meta": {
+    "owner": "LCA team",
+    "last_update": "2025-10-03"
+  }
+}
