@@ -4,121 +4,102 @@
   "units": "MJ/kg",
   "basis": "dry (0% moisture) unless noted",
   "notes": [
-    "Values are net calorific value (lower heating value, LHV) per kilogram of waste, dry basis.",
+    "Values are net calorific value (lower heating value, LHV) per kilogram of waste, dry basis unless a basis_override is specified.",
     "Use these to convert waste mass sent to incineration into available chemical energy (MJ) before applying plant-specific export efficiencies (XER) from energy_substitution.json.",
-    "For mixed MSW fractions, NCV varies widely with moisture; a pragmatic default is provided and should be overridden with plant data if available."
+    "For mixed MSW fractions, NCV varies widely with moisture; a pragmatic default is provided and should be overridden with plant data if available.",
+    "Ranges (range_MJ_per_kg) are provided for sensitivity; unless a literature range is cited, they are engineering defaults (±10% around the central value) and should be replaced by plant/lab data when available.",
+    "If only HHV is available, a common approximation is LHV ≈ HHV − 2.44 × (9 × H + moisture_as-received), where H is the hydrogen mass fraction (kg/kg). Use with caution and prefer lab/plant NCV."
   ],
   "families": {
     "ldpe": {
       "label": "Low-density polyethylene (LDPE) / Polyethylene",
       "lhv_MJ_per_kg": 44.6,
-      "source_keys": [
-        "plastics_table12"
-      ],
-      "aliases": [
-        "PE",
-        "LDPE",
-        "HDPE",
-        "polyethylene"
-      ]
+      "range_MJ_per_kg": [40.14, 49.06],
+      "range_source": "engineering_default_±10%",
+      "source_keys": ["plastics_table12"],
+      "aliases": ["PE", "LDPE", "HDPE", "polyethylene"]
     },
     "pvc": {
       "label": "Polyvinyl chloride (PVC)",
       "lhv_MJ_per_kg": 19.2,
-      "source_keys": [
-        "plastics_table12"
-      ]
+      "range_MJ_per_kg": [17.28, 21.12],
+      "range_source": "engineering_default_±10%",
+      "source_keys": ["plastics_table12"]
     },
     "polyester_pet": {
       "label": "Polyester (PET)",
       "lhv_MJ_per_kg": 23.2,
-      "source_keys": [
-        "plastics_table12"
-      ],
-      "aliases": [
-        "polyester",
-        "PET"
-      ]
+      "range_MJ_per_kg": [20.88, 25.52],
+      "range_source": "engineering_default_±10%",
+      "source_keys": ["plastics_table12"],
+      "aliases": ["polyester", "PET"]
     },
     "polyurethane_pu": {
       "label": "Polyurethane (PU, PUR) – generic foam",
       "lhv_MJ_per_kg": 27.0,
-      "source_keys": [
-        "pu_zevenhoven",
-        "pu_range_review"
-      ],
-      "notes": "Within literature, PU foam HHV often ~32–33 MJ/kg; LHV around 20–27 MJ/kg. Using 27.0 MJ/kg as conservative LHV default for flexible/rigid PU.",
-      "range_MJ_per_kg": [
-        22.0,
-        31.0
-      ]
+      "range_MJ_per_kg": [22.0, 31.0],
+      "range_source": "literature_compilation",
+      "source_keys": ["pu_zevenhoven", "pu_range_review"],
+      "notes": "Within literature, PU foam HHV often ~32–33 MJ/kg; LHV around 20–27 MJ/kg. Using 27.0 MJ/kg as conservative LHV default for flexible/rigid PU."
     },
     "rubber": {
       "label": "Rubber (natural/synthetic, tyres excl.)",
       "lhv_MJ_per_kg": 42.4,
-      "source_keys": [
-        "plastics_table12"
-      ]
+      "range_MJ_per_kg": [38.16, 46.64],
+      "range_source": "engineering_default_±10%",
+      "source_keys": ["plastics_table12"]
     },
     "paper_cardboard": {
       "label": "Paper & cardboard",
       "lhv_MJ_per_kg": 16.0,
-      "source_keys": [
-        "wec_table2"
-      ],
+      "range_MJ_per_kg": [15.0, 17.0],
+      "range_source": "WEC_table_range",
+      "source_keys": ["wec_table2"],
       "basis_override": "air-dry (~10% moisture, WEC Table 2 approximations)",
-      "range_MJ_per_kg": [
-        15.0,
-        17.0
-      ],
-      "notes": "Approximate NCV for MSW paper/cardboard; effectively air-dry/as‑received. Use plant/lab data if available."
+      "moisture_default_mass_fraction": 0.10,
+      "ash_default_mass_fraction": 0.05,
+      "defaults_source": "engineering_default",
+      "notes": "Approximate NCV for MSW paper/cardboard; effectively air-dry/as-received. Use plant/lab data if available."
     },
     "wood_pallet": {
-      "label": "Processed wood / pallets (air‑dry)",
+      "label": "Processed wood / pallets (air-dry)",
       "lhv_MJ_per_kg": 18.0,
-      "source_keys": [
-        "wood_net_dresden",
-        "wood_handbook_note"
-      ],
-      "notes": "Air‑dry net heat of combustion typically 16.6–19.1 MJ/kg; using 18.0 MJ/kg default.",
-      "range_MJ_per_kg": [
-        16.6,
-        19.1
-      ],
-      "basis_override": "air-dry (~10–15% moisture)"
+      "range_MJ_per_kg": [16.6, 19.1],
+      "range_source": "literature_range",
+      "source_keys": ["wood_net_dresden", "wood_handbook_note"],
+      "basis_override": "air-dry (~10–15% moisture)",
+      "moisture_default_mass_fraction": 0.12,
+      "ash_default_mass_fraction": 0.01,
+      "defaults_source": "engineering_default",
+      "notes": "Air-dry net heat of combustion typically 16.6–19.1 MJ/kg; using 18.0 MJ/kg default."
     },
     "textiles_biobased": {
       "label": "Textiles – biobased (cotton, wool, leather)",
       "lhv_MJ_per_kg": 16.8,
-      "source_keys": [
-        "textile_cotton_lhv"
-      ],
-      "notes": "Representative LHV for mixed biobased textiles: Nunes et al. ~16.8; WEC MSW fraction ~19.0. Adjust for moisture if significant.",
-      "range_MJ_per_kg": [
-        16.8,
-        19.0
-      ]
+      "range_MJ_per_kg": [16.8, 19.0],
+      "range_source": "literature_plus_WEC_fraction",
+      "source_keys": ["textile_cotton_lhv"],
+      "moisture_default_mass_fraction": 0.10,
+      "ash_default_mass_fraction": 0.03,
+      "defaults_source": "engineering_default",
+      "notes": "Representative LHV for mixed biobased textiles: Nunes et al. ~16.8; WEC MSW fraction ~19.0. Adjust for moisture if significant."
     },
     "msw_mixed_residual": {
-      "label": "MSW – mixed residual feed (as‑received)",
+      "label": "MSW – mixed residual feed (as-received)",
       "lhv_MJ_per_kg": 10.0,
-      "source_keys": [
-        "wec_table2",
-        "wec_residual_range"
-      ],
-      "notes": "Typical as‑received NCV 8–12 MJ/kg in Europe; set 10.0 MJ/kg default. Not truly dry basis; used only if no plant‑specific NCV is available.",
-      "range_MJ_per_kg": [
-        8.0,
-        12.0
-      ],
-      "basis_override": "as‑received (plant-specific NCV preferred)"
+      "range_MJ_per_kg": [8.0, 12.0],
+      "range_source": "WEC_table_range",
+      "source_keys": ["wec_table2", "wec_residual_range"],
+      "basis_override": "as-received (plant-specific NCV preferred)",
+      "moisture_default_mass_fraction": 0.30,
+      "ash_default_mass_fraction": 0.15,
+      "defaults_source": "engineering_default",
+      "notes": "Typical as-received NCV 8–12 MJ/kg in Europe; set 10.0 MJ/kg default. Not truly dry basis; use plant-specific NCV when available."
     },
     "inert": {
       "label": "Inert materials (glass, mineral wool, soil)",
       "lhv_MJ_per_kg": 0.0,
-      "source_keys": [
-        "wec_table2"
-      ]
+      "source_keys": ["wec_table2"]
     },
     "electronics": {
       "label": "Electronics / WEEE (for EF LCS5 electro recycling dataset)",
@@ -142,7 +123,7 @@
   },
   "sources": {
     "plastics_table12": {
-      "citation": "Juniper Publishers (2018). Energy Potential of Natural, Synthetic Polymers and Waste – Table 12 gives LHV for PE 44.6, PET 23.2, PVC 19.2, PA‑6 30.2, Rubber 42.4 MJ/kg.",
+      "citation": "Juniper Publishers (2018). Energy Potential of Natural, Synthetic Polymers and Waste – Table 12 gives LHV for PE 44.6, PET 23.2, PVC 19.2, PA-6 30.2, Rubber 42.4 MJ/kg.",
       "url": "https://juniperpublishers.com/ajop/pdf/AJOP.MS.ID.555553.pdf"
     },
     "wec_table2": {
@@ -150,19 +131,19 @@
       "url": "https://smartnet.niua.org/sites/default/files/resources/weresources_waste_to_energy_2016.pdf#page=9"
     },
     "wec_residual_range": {
-      "citation": "World Energy Council (2016). Residual waste, unsorted in Europe typically 8–12 MJ/kg NCV (as‑received).",
+      "citation": "World Energy Council (2016). Residual waste, unsorted in Europe typically 8–12 MJ/kg NCV (as-received).",
       "url": "https://smartnet.niua.org/sites/default/files/resources/weresources_waste_to_energy_2016.pdf#page=11"
     },
     "wood_net_dresden": {
-      "citation": "Günther et al. (2012). Calorific value of selected wood species and products – net heat of combustion air‑dry typically 16.6–19.1 MJ/kg.",
+      "citation": "Günther et al. (2012). Calorific value of selected wood species and products – net heat of combustion air-dry typically 16.6–19.1 MJ/kg.",
       "url": "https://tu-dresden.de/ing/maschinenwesen/ifvu/evt/ressourcen/dateien/Veroeffentlichungen/VWS-2012-09_gnther_gebauer_barkowski_rosenthal_bues.pdf"
     },
     "wood_handbook_note": {
-      "citation": "Eurostat (2012). Quality standard for statistics on wood fuel consumption – bone‑dry GCV ~18–19 MJ/kg; NCV decreases with moisture.",
+      "citation": "Eurostat (2012). Quality standard for statistics on wood fuel consumption – bone-dry GCV ~18–19 MJ/kg; NCV decreases with moisture.",
       "url": "https://ec.europa.eu/eurostat/documents/38154/4956233/Quality_standard_statistics_wood_fuel_consumption_households_CA-RES_2012.pdf"
     },
     "pu_zevenhoven": {
-      "citation": "Zevenhoven. Options for recovery and recycling – LHV ~27 MJ/kg for PU‑based materials (indicative).",
+      "citation": "Zevenhoven. Options for recovery and recycling – LHV ~27 MJ/kg for PU-based materials (indicative).",
       "url": "https://users.abo.fi/rzevenho/tkk-eny-19.pdf"
     },
     "pu_range_review": {
