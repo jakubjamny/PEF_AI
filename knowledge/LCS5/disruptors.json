@@ -2,6 +2,7 @@
   "version": "EF 3.1",
   "scope": "LCS5 (End-of-Life) – Recyclability disruptors for Apparel & Footwear",
   "source_document": "A&FW_PEFCR_v3.1.pdf – Tables 24–26 (recyclability disruptors)",
+  "last_update": "2025-10-03",
   "resolution_policy": {
     "precedence": [
       "product_level",
@@ -56,7 +57,7 @@
             "R2_pathway": {
               "mechanical_wipers": 0
             },
-            "reason": "Wipers require high cotton share (>=80%)."
+            "reason": "Wipers require high cotton share (≥80%)."
           }
         },
         {
@@ -114,6 +115,26 @@
             },
             "reason": "Complex blends unsuitable for wipers."
           }
+        },
+        {
+          "id": "wipers_printing_disruptors",
+          "description": "All-over prints or large placed prints disrupt wipers route.",
+          "if": {
+            "or": [
+              {
+                "has_all_over_prints": true
+              },
+              {
+                "placed_print_area_cm2_ge": 10
+              }
+            ]
+          },
+          "then": {
+            "R2_pathway": {
+              "mechanical_wipers": 0
+            },
+            "reason": "Inks/finishes reduce absorbency or cause contamination."
+          }
         }
       ],
       "mechanical_insulation": [
@@ -163,8 +184,8 @@
       ],
       "mechanical_textile_to_textile": [
         {
-          "id": "mech_t2t_fibre_purity",
-          "description": "Insufficient fibre purity for mechanical textile-to-textile.",
+          "id": "mech_t2t_fibre_purity_generic",
+          "description": "Pathway prefers single-fibre streams; blends are problematic.",
           "if": {
             "num_fibre_types_gt": 1
           },
@@ -172,7 +193,95 @@
             "R2_pathway": {
               "mechanical_textile_to_textile": 0
             },
-            "reason": "Pathway requires near-monopoly fibre type (single fibre)."
+            "reason": "Mechanical t2t requires near-monopoly fibre type."
+          }
+        },
+        {
+          "id": "mech_t2t_elastane_threshold",
+          "description": "Excess elastane disrupts fibre recovery for spinning.",
+          "if": {
+            "fiber_fractions": {
+              "Elastane": {
+                "gt": 0.05
+              }
+            }
+          },
+          "then": {
+            "R2_pathway": {
+              "mechanical_textile_to_textile": 0
+            },
+            "reason": "Elastane >5% reduces fibre quality/length."
+          }
+        },
+        {
+          "id": "mech_t2t_cellulosics_thresholds",
+          "description": "Cellulosic-specific purity thresholds (cotton ≥90%; linen/hemp/silk ≥90%).",
+          "if": {
+            "or": [
+              {
+                "fiber_fractions": {
+                  "Cotton": {
+                    "lt": 0.9
+                  }
+                }
+              },
+              {
+                "sum_fibre_fractions": {
+                  "Linen,Hemp,Silk": {
+                    "lt": 0.9
+                  }
+                }
+              }
+            ]
+          },
+          "then": {
+            "R2_pathway": {
+              "mechanical_textile_to_textile": 0
+            },
+            "reason": "Insufficient cellulosic share for mechanical re-spinning."
+          }
+        },
+        {
+          "id": "mech_t2t_wool_threshold",
+          "description": "Wool-specific purity threshold (wool ≥50%).",
+          "if": {
+            "fiber_fractions": {
+              "Wool": {
+                "lt": 0.5
+              }
+            }
+          },
+          "then": {
+            "R2_pathway": {
+              "mechanical_textile_to_textile": 0
+            },
+            "reason": "Insufficient wool share for mechanical re-spinning."
+          }
+        },
+        {
+          "id": "mech_t2t_printing_metal_coating",
+          "description": "All-over prints, large placed prints, metallic yarns or coatings.",
+          "if": {
+            "or": [
+              {
+                "has_all_over_prints": true
+              },
+              {
+                "placed_print_area_cm2_ge": 10
+              },
+              {
+                "has_metallic_yarns": true
+              },
+              {
+                "has_coating_or_lamination": true
+              }
+            ]
+          },
+          "then": {
+            "R2_pathway": {
+              "mechanical_textile_to_textile": 0
+            },
+            "reason": "Contaminants/finishes reduce fibre quality."
           }
         },
         {
@@ -191,31 +300,58 @@
       ],
       "chemical_textile_to_textile_synthetics": [
         {
-          "id": "chem_t2t_synthetics_purity",
-          "description": "Insufficient PET/PA/PU purity for chemical recycling.",
+          "id": "chem_t2t_synthetics_purity_polyester_or_pa",
+          "description": "Insufficient PET/PA purity for chemical recycling (threshold 85%).",
           "if": {
-            "fiber_fractions": {
-              "Polyester": {
-                "lt": 0.9
+            "and": [
+              {
+                "or": [
+                  {
+                    "fiber_fractions": {
+                      "Polyester": {
+                        "lt": 0.85
+                      }
+                    }
+                  },
+                  {
+                    "fiber_fractions": {
+                      "Polyamide": {
+                        "lt": 0.85
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "num_fibre_types_gt": 1
               }
-            },
-            "any_of": [
-              "has_coating_or_lamination",
-              "num_fibre_types_gt:1"
             ]
           },
           "then": {
             "R2_pathway": {
               "chemical_textile_to_textile_synthetics": 0
             },
-            "reason": "Requires high polymer purity and limited contaminants."
+            "reason": "Chemical depolymerization needs high polymer purity and low blend complexity."
+          }
+        },
+        {
+          "id": "chem_t2t_synthetics_coatings",
+          "description": "Coatings/laminations disrupt chemical depolymerization.",
+          "if": {
+            "has_coating_or_lamination": true
+          },
+          "then": {
+            "R2_pathway": {
+              "chemical_textile_to_textile_synthetics": 0
+            },
+            "reason": "Barrier layers interfere with processes/solvents."
           }
         }
       ],
       "chemical_textile_to_textile_cellulosics": [
         {
           "id": "chem_t2t_cellulosics_purity",
-          "description": "Insufficient cellulose content or presence of non-cellulosic coatings.",
+          "description": "Insufficient cellulose content (threshold 90%).",
           "if": {
             "cellulosic_fibres_mass_share_lt": 0.9
           },
@@ -224,6 +360,19 @@
               "chemical_textile_to_textile_cellulosics": 0
             },
             "reason": "Requires very high cellulosic share and low contaminants."
+          }
+        },
+        {
+          "id": "chem_t2t_cellulosics_coatings",
+          "description": "Non-cellulosic coatings/membranes disrupt dissolution routes.",
+          "if": {
+            "has_coating_or_lamination": true
+          },
+          "then": {
+            "R2_pathway": {
+              "chemical_textile_to_textile_cellulosics": 0
+            },
+            "reason": "Barrier layers obstruct solvent-based processes."
           }
         }
       ]
@@ -240,6 +389,17 @@
         "then": {
           "R2_all": 0,
           "reason": "Lack of separability disrupts recycling."
+        }
+      },
+      {
+        "id": "footwear_EEE_in_product",
+        "description": "Footwear contains electronic components (e.g., LEDs).",
+        "if": {
+          "has_electronics": true
+        },
+        "then": {
+          "R2_all": 0,
+          "reason": "EEE disruptor blocks footwear recycling pathways."
         }
       }
     ],
@@ -296,10 +456,15 @@
       "lt": "less than",
       "le": "less or equal"
     },
+    "combinators": {
+      "or": "any condition true",
+      "and": "all conditions true"
+    },
     "condition_fields": [
       "has_electronics",
       "non_textile_mass_share_ge",
       "fiber_fractions.<FIBRE>.<op>",
+      "sum_fibre_fractions.<FIBRE_LIST>.<op>",
       "num_fibre_types_gt",
       "has_coating_or_lamination",
       "has_metallic_yarns",
@@ -309,7 +474,9 @@
       "thermoplastic_mass_share_lt",
       "adhesive_is_thermoset_or_PU",
       "has_reticulated_PU_or_crosslinked_rubber",
-      "disassemblable"
+      "disassemblable",
+      "has_all_over_prints",
+      "placed_print_area_cm2_ge"
     ],
     "effects": [
       "R2_all",
@@ -317,8 +484,8 @@
     ]
   },
   "notes": [
-    "Thresholds reflect common defaults consistent with PEFCR logic. If you have verified industrial evidence of recyclability, you may override specific rules for a product with a documented R2 > 0.",
-    "If any pathway is disabled by disruptors, distribute the disabled R2 share to disposal (1 − R2 − R3) unless alternative evidence supports a different split.",
-    "For footwear, PEFCR default assumes negligible recycling (R2 ≈ 0). Pathways are provided here to support future evidence-based scenarios."
+    "Thresholds implement PEFCR A&F v3.1 Tables 24–26 logic: e.g., wipers need ≥80% cotton and ≤5% elastane; insulation fails with elastane >5% and multi-layer laminates; mechanical t2t prefers single-fibre streams and sets explicit purity thresholds (cotton ≥90%, wool ≥50%, linen/hemp/silk ≥90%); synthetics chemical t2t requires high PET/PA purity (~85%) and low blend complexity; printing/coatings/metallic yarns can disable routes.",
+    "If any pathway is disabled by disruptors, renormalize R2/R3/ED shares for the remaining pathways. If all recycling routes are disabled, set R2=0 and allocate to incineration/landfill per scenario.",
+    "For footwear, PEFCR default assumes negligible recycling (R2≈0). Pathways remain for evidence-based pilots. Disassembly is a prerequisite for most material-specific routes."
   ]
 }
