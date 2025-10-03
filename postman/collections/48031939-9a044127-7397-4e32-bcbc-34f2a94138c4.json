@@ -4517,224 +4517,6 @@
 			"response": []
 		},
 		{
-			"name": "LCS4 - use_phase",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "355419c6-e724-46e3-bccf-42ac2a9b1842",
-						"exec": [
-							"// === Final LCS4 calculation from defaults + LCIA ============================",
-							"",
-							"function getJson(k, fb={}){ try { return JSON.parse(pm.environment.get(k) || \"\"); } catch(e){ return fb; } }",
-							"function clamp01(x){ return Math.max(0, Math.min(1, x)); }",
-							"function num0(v){ return (typeof v===\"number\" && isFinite(v)) ? v : 0; }",
-							"function rnd(x){ return Math.round(x*1e6)/1e6; }",
-							"",
-							"const KEY_DEF      = pm.environment.get(\"USEPHASE_DEFAULTS_KEY\");",
-							"const KEY_BY_RP    = pm.environment.get(\"USEPHASE_DEFAULTS_BY_RP_KEY\");",
-							"const KEY_DATASETS = pm.environment.get(\"USEPHASE_DATASETS_KEY\");",
-							"const KEY_IMP      = pm.environment.get(\"USEPHASE_IMPACTS_PER_FU_KEY\");",
-							"",
-							"const defaults = getJson(KEY_DEF, {});",
-							"const byRp     = getJson(KEY_BY_RP, {});",
-							"const dsMap    = getJson(KEY_DATASETS, {});",
-							"const impPFU   = getJson(KEY_IMP, {});",
-							"",
-							"let input={};",
-							"try { input = JSON.parse(pm.request.body?.raw || \"{}\"); } catch(e){ input={}; }",
-							"",
-							"pm.test(\"Valid input\", ()=> {",
-							"  pm.expect(input.rp).to.be.a(\"string\");",
-							"  pm.expect(input.mass_kg).to.be.a(\"number\").and.to.be.greaterThan(0);",
-							"});",
-							"const rp = input.rp;",
-							"const e  = byRp[rp];",
-							"pm.test(\"RP exists\", ()=> pm.expect(e).to.exist);",
-							"",
-							"const flags = {",
-							"  material_class: input.material_class || \"other_fibres\",",
-							"  sport: !!input.sport,",
-							"  delicates: !!input.delicates",
-							"};",
-							"const ironingMode = input.ironing_mode===\"per_use\" ? \"per_use\" : \"per_wash\";",
-							"",
-							"function chooseUsesBetweenWashes(entry, f){",
-							"  const u = entry.uses_between_washes || {};",
-							"  if (f.delicates) return u.delicates;",
-							"  if (f.sport)     return u.sport;",
-							"  return u[f.material_class] || u.other_fibres;",
-							"}",
-							"",
-							"function pushItem(arr, dsKey, amount, unit, note){",
-							"  if (!amount || amount<=0) return;",
-							"  const ds = dsMap[dsKey];",
-							"  if (!ds){ console.warn(\"Dataset not found:\", dsKey); return; }",
-							"  arr.push({ ref: dsKey, name: ds.name, amount: rnd(amount), unit: unit || ds.unit || \"\", note: note||\"\" });",
-							"}",
-							"",
-							"// --- sestavení aktivit (kg/min podle FU v defaults) -------------------------",
-							"const plan = { rp, mass_kg: rnd(input.mass_kg), items: [], notes: [] };",
-							"const isFoot = /^RP1[1-3]_/.test(rp);",
-							"",
-							"if (!isFoot){",
-							"  const dos   = num0(e.dos_uses);",
-							"  const usesB = chooseUsesBetweenWashes(e, flags);",
-							"  const nW    = dos / usesB;",
-							"",
-							"  const w={...(e.washing||{})};",
-							"  if (flags.delicates){ w.share_hand=0; w.share_machine=0; w.share_dry_clean=1; }",
-							"",
-							"  const cycH = nW * clamp01(num0(w.share_hand));",
-							"  const cycM = nW * clamp01(num0(w.share_machine));",
-							"  const cycD = nW * clamp01(num0(w.share_dry_clean));",
-							"",
-							"  pushItem(plan.items, w.hand_dataset,      cycH*input.mass_kg, \"kg\",     \"Hand washing\");",
-							"  pushItem(plan.items, w.machine_dataset,   cycM*input.mass_kg, \"kg\",     \"Machine washing\");",
-							"  pushItem(plan.items, w.dry_clean_dataset, cycD*input.mass_kg, \"kg\",     \"Dry cleaning\");",
-							"",
-							"  const d=e.drying||{};",
-							"  const tcyc = nW * clamp01(num0(d.tumble_dry_share));",
-							"  pushItem(plan.items, d.tumble_dry_dataset, tcyc*input.mass_kg, \"kg\",    \"Tumble drying\");",
-							"",
-							"  const ir=e.ironing||{};",
-							"  const ish=clamp01(num0(ir.ironed_share_per_use));",
-							"  const imin=num0(ir.minutes_per_garment);",
-							"  if (ir.dataset && ish>0 && imin>0){",
-							"    const mins = (ironingMode===\"per_wash\") ? nW*ish*imin : dos*ish*imin;",
-							"    pushItem(plan.items, ir.dataset, mins, \"minute\", \"Ironing\");",
-							"  }",
-							"}else{",
-							"  // Footwear",
-							"  const dos = num0(e.dos_uses);",
-							"  const c   = e.footwear_care || {};",
-							"  const wkg = num0(c.wash_events_per_lifetime) * input.mass_kg;",
-							"  pushItem(plan.items, c.wash_dataset || \"washing_30\", wkg, \"kg\", \"Footwear wash\");",
-							"  if (c.waxing && c.waxing.enabled){",
-							"    const events = dos / num0(c.waxing.every_uses);",
-							"    const dose   = num0(c.waxing.dose_kg_per_kg);",
-							"    const wax    = events * dose * input.mass_kg;",
-							"    pushItem(plan.items, c.waxing.dataset, wax, \"kg\", \"Waxing\");",
-							"  }",
-							"}",
-							"",
-							"// --- LCIA výpočet (defaultně Climate change + Water use) --------------------",
-							"let cc=0, ccUnit=\"kg CO2 eq\", wu=0, wuUnit=\"m3 world-eq. deprived\";",
-							"let withLCIA=0, missing=[];",
-							"",
-							"function pickCat(map, key){ // tolerantní názvy jednotek",
-							"  if (!map) return null;",
-							"  // normalize keys in input JSON (already snake_case)",
-							"  return map[key] || null;",
-							"}",
-							"",
-							"for (const it of plan.items){",
-							"  const lcia = impPFU[it.ref];",
-							"  if (!lcia){ missing.push(it.ref); continue; }",
-							"",
-							"  const ccObj = pickCat(lcia, \"climate_change\");",
-							"  const wuObj = pickCat(lcia, \"water_use\");",
-							"",
-							"  if (ccObj && isFinite(ccObj.value)){ cc += (ccObj.value * it.amount); ccUnit = ccObj.unit || ccUnit; }",
-							"  if (wuObj && isFinite(wuObj.value)){ wu += (wuObj.value * it.amount); wuUnit = wuObj.unit || wuUnit; }",
-							"",
-							"  if (ccObj || wuObj) withLCIA++;",
-							"}",
-							"",
-							"cc = rnd(cc); wu = rnd(wu);",
-							"if (missing.length) plan.notes.push(`Missing LCIA: ${missing.join(\", \")}`);",
-							"",
-							"// Ulož mini + plán",
-							"pm.environment.set(\"USEPHASE_LCIA_MINI\", JSON.stringify({",
-							"  climate_change: { value: cc, unit: ccUnit },",
-							"  water_use:      { value: wu, unit: wuUnit }",
-							"}, null, 2));",
-							"pm.environment.set(\"USEPHASE_PLAN\", JSON.stringify(plan, null, 2));",
-							"",
-							"// Vizualizace",
-							"const tpl = `",
-							"<style>",
-							".box{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:8px 0}",
-							".card{padding:12px 16px;border:1px solid #ddd;border-radius:8px;background:#f9f9f9}",
-							".big{font-size:24px;font-weight:700;color:#2d3748}",
-							".sub{color:#666;margin-top:4px;font-size:14px}",
-							".breakdown{margin-top:16px;font-size:12px}",
-							".item{margin:4px 0;padding:4px 8px;background:#fff;border-radius:4px}",
-							"</style>",
-							"<h3>Use phase — {{rp}} (mass {{mass_kg}} kg)</h3>",
-							"<div class=\"box\">",
-							"  <div class=\"card\"><div class=\"big\">{{cc}}</div><div class=\"sub\">Climate change<br>({{ccUnit}})</div></div>",
-							"  <div class=\"card\"><div class=\"big\">{{wu}}</div><div class=\"sub\">Water use<br>({{wuUnit}})</div></div>",
-							"</div>",
-							"<div class=\"breakdown\">",
-							"  <strong>Activity breakdown:</strong>",
-							"  {{#each items}} <div class=\"item\">{{name}}: {{amount}} {{unit}} — {{note}}</div> {{/each}}",
-							"</div>",
-							"{{#if notes.length}}<p><em>⚠️ {{notes}}</em></p>{{/if}}",
-							"<p><small>Methodology: EF 3.1 LCIA (per 1×FU) z defaults_use_phase.json; PEFCR A&F v3.1 default shares.</small></p>",
-							"`;",
-							"pm.visualizer.set(tpl, {",
-							"  rp: plan.rp, mass_kg: plan.mass_kg,",
-							"  cc, ccUnit, wu, wuUnit,",
-							"  items: plan.items,",
-							"  notes: (plan.notes||[]).join(\" • \")",
-							"});",
-							"",
-							"// Testy",
-							"pm.test(\"Has activity items\", ()=> pm.expect(plan.items.length).to.be.greaterThan(0));",
-							"pm.test(\"GHG calculated\",       ()=> pm.expect(cc).to.be.a(\"number\").and.to.be.greaterThanOrEqual(0));",
-							"pm.test(\"Water calculated\",     ()=> pm.expect(wu).to.be.a(\"number\").and.to.be.greaterThanOrEqual(0));",
-							""
-						],
-						"type": "text/javascript",
-						"packages": {},
-						"requests": {}
-					}
-				},
-				{
-					"listen": "prerequest",
-					"script": {
-						"id": "a4682a7f-952d-4077-9fef-6b1feea8f3c3",
-						"exec": [
-							""
-						],
-						"type": "text/javascript",
-						"packages": {},
-						"requests": {}
-					}
-				}
-			],
-			"id": "48031939-4ccdb1e9-d0b0-4e35-b9ce-e59e809d84d2",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"rp\": \"RP1_TSHIRT\",\n  \"mass_kg\": 0.20,\n  \"material_class\": \"other_fibres\", \n  \"sport\": false,\n  \"delicates\": false,\n  \"ironing_mode\": \"per_wash\" \n}\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "https://postman-echo.com/post",
-					"protocol": "https",
-					"host": [
-						"postman-echo",
-						"com"
-					],
-					"path": [
-						"post"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "LCS4",
 			"event": [
 				{
@@ -4812,6 +4594,108 @@
 				}
 			],
 			"id": "48031939-c0cbc544-cb32-487f-bdc2-760931191063",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{USEPHASE_URL}}",
+					"host": [
+						"{{USEPHASE_URL}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LCS4 Copy",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "cc5cedfb-5f49-4a82-b76a-b35ce613d069",
+						"exec": [
+							"// === Config =================================================================",
+							"const OWNER  = pm.environment.get(\"GITHUB_OWNER\")  || \"jakubjamny\";",
+							"const REPO   = pm.environment.get(\"GITHUB_REPO\")   || \"PEF_AI\";",
+							"const BRANCH = pm.environment.get(\"GITHUB_BRANCH\") || \"feature/ef31-pefcr\";",
+							"const TOKEN  = pm.environment.get(\"GITHUB_TOKEN\")  || \"\";",
+							"",
+							"const BASE_URL = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}`;",
+							"pm.environment.set(\"BASE_URL\", BASE_URL);",
+							"pm.environment.set(\"USEPHASE_URL\", `${BASE_URL}/data/usephase/defaults_use_phase.json`);",
+							"",
+							"if (TOKEN) pm.request.headers.upsert({ key: \"Authorization\", value: `token ${TOKEN}` });",
+							"",
+							"// Env klíče",
+							"pm.environment.set(\"USEPHASE_DEFAULTS_KEY\", \"USEPHASE_DEFAULTS\");",
+							"pm.environment.set(\"USEPHASE_DEFAULTS_BY_RP_KEY\", \"USEPHASE_DEFAULTS_BY_RP\");",
+							"pm.environment.set(\"USEPHASE_DATASETS_KEY\", \"USEPHASE_DATASETS\");",
+							"pm.environment.set(\"USEPHASE_IMPACTS_PER_FU_KEY\", \"USEPHASE_IMPACTS_PER_FU\");",
+							"pm.environment.set(\"USEPHASE_LCIA_CATS_KEY\", \"USEPHASE_LCIA_CATS\");",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "4f85a952-33df-4418-8a39-fbea06590087",
+						"exec": [
+							"// === Load defaults + build LCIA map ========================================",
+							"pm.test(\"HTTP 200\", ()=> pm.response.to.have.status(200));",
+							"",
+							"let def = {};",
+							"try { def = pm.response.json(); } catch(e){ def = {}; }",
+							"",
+							"const byRp = {};",
+							"(def.rp_defaults||[]).forEach(e=>{ if(e && e.rp) byRp[e.rp]=e; });",
+							"const dsMap = def.datasets || {};",
+							"",
+							"// LCIA per FU: key → { <category>: {value,unit}, ... }",
+							"const impPFU = {};",
+							"const allCats = new Set();",
+							"for (const [key, ds] of Object.entries(dsMap)){",
+							"  if (ds && ds.lcia){",
+							"    impPFU[key] = ds.lcia;",
+							"    Object.keys(ds.lcia).forEach(c => allCats.add(c));",
+							"  }",
+							"}",
+							"",
+							"// Ulož do env",
+							"pm.environment.set(pm.environment.get(\"USEPHASE_DEFAULTS_KEY\"), JSON.stringify(def));",
+							"pm.environment.set(pm.environment.get(\"USEPHASE_DEFAULTS_BY_RP_KEY\"), JSON.stringify(byRp));",
+							"pm.environment.set(pm.environment.get(\"USEPHASE_DATASETS_KEY\"), JSON.stringify(dsMap));",
+							"pm.environment.set(pm.environment.get(\"USEPHASE_IMPACTS_PER_FU_KEY\"), JSON.stringify(impPFU));",
+							"pm.environment.set(pm.environment.get(\"USEPHASE_LCIA_CATS_KEY\"), JSON.stringify([...allCats]));",
+							"",
+							"// Rychlé testy",
+							"pm.test(\"RP defaults loaded\", ()=> pm.expect(Object.keys(byRp).length).to.be.greaterThan(0));",
+							"pm.test(\"Datasets loaded\",    ()=> pm.expect(Object.keys(dsMap).length).to.be.greaterThan(0));",
+							"pm.test(\"LCIA present\",       ()=> pm.expect(Object.keys(impPFU).length).to.be.greaterThan(0));",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"id": "48031939-37233297-e121-4426-8b24-a5d351bc971a",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
