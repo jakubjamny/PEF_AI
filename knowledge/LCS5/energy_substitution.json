@@ -1,6 +1,6 @@
 {
   "version": "EF 3.1",
-  "scope": "LCS5 (End-of-Life) – Energy substitution parameters and per‑MJ impacts",
+  "scope": "LCS5 (End-of-Life) – Energy substitution parameters and per-MJ impacts",
   "calculation_mode": "split",
   "regions": {
     "EU+EFTA+UK": {
@@ -23,7 +23,7 @@
       },
       "ESE_impacts": {
         "electricity": {
-          "climate_change_total_kgCO2e_per_MJ": 0.11635819273923369,
+          "climate_change_total_kgCO2e_per_MJ": 0.11781942533310638,
           "water_use_m3weq_per_MJ": 0.03972746152405583
         },
         "heat": {
@@ -46,9 +46,9 @@
         "notes": "EU-average WtE CHP defaults; override with plant-specific data if available."
       },
       "notes": [
-        "Per‑MJ impacts pulled from EF DB 3.1 datasets referenced above.",
+        "Per-MJ impacts derived from EF 3.1 ILCD XML datasets above (electricity CC re-computed from per-kWh; heat per-MJ taken directly).",
         "If you must run in 'net' mode (without XER/LHV), change calculation_mode to 'net'.",
-        "For residual grid electricity substitution, replace ESE_impacts.electricity with the residual mix values if desired."
+        "To use residual mix for substitution, either swap the electricity UUID to the residual one or replace ESE_impacts.electricity with residual mix values."
       ]
     }
   },
