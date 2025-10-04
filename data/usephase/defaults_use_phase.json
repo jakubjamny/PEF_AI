@@ -33,7 +33,7 @@
         },
         "ecotoxicity_freshwater": {
           "value": 3.4912599807091937,
-          "unit": ""
+          "unit": "CTUe"
         },
         "eutrophication_marine": {
           "value": 0.0008008611070997649,
@@ -53,7 +53,7 @@
         },
         "human_toxicity_non_cancer": {
           "value": 3.759302651005764e-9,
-          "unit": ""
+          "unit": "CTUh"
         },
         "ionising_radiation_human_health": {
           "value": 0.027346401592481775,
@@ -112,7 +112,7 @@
         },
         "ecotoxicity_freshwater": {
           "value": 1.7917278069730023,
-          "unit": ""
+          "unit": "CTUe"
         },
         "eutrophication_marine": {
           "value": 3.233057821695716e-4,
@@ -132,7 +132,7 @@
         },
         "human_toxicity_non_cancer": {
           "value": 2.2914889787575056e-9,
-          "unit": ""
+          "unit": "CTUh"
         },
         "ionising_radiation_human_health": {
           "value": 0.014538794686750884,
@@ -191,7 +191,7 @@
         },
         "ecotoxicity_freshwater": {
           "value": 1.709030285053952,
-          "unit": ""
+          "unit": "CTUe"
         },
         "eutrophication_marine": {
           "value": 3.190513601074511e-4,
@@ -211,7 +211,7 @@
         },
         "human_toxicity_non_cancer": {
           "value": 2.0050856078126605e-9,
-          "unit": ""
+          "unit": "CTUh"
         },
         "ionising_radiation_human_health": {
           "value": 0.027888645244887135,
@@ -270,7 +270,7 @@
         },
         "ecotoxicity_freshwater": {
           "value": 1.8781296836227166,
-          "unit": ""
+          "unit": "CTUe"
         },
         "eutrophication_marine": {
           "value": 3.4043343082522257e-4,
@@ -290,7 +290,7 @@
         },
         "human_toxicity_non_cancer": {
           "value": 2.131156484601525e-9,
-          "unit": ""
+          "unit": "CTUh"
         },
         "ionising_radiation_human_health": {
           "value": 0.043502025670524296,
@@ -349,7 +349,7 @@
         },
         "ecotoxicity_freshwater": {
           "value": 3.4365107777886554,
-          "unit": ""
+          "unit": "CTUe"
         },
         "eutrophication_marine": {
           "value": 5.053937561781383e-4,
@@ -369,7 +369,7 @@
         },
         "human_toxicity_non_cancer": {
           "value": 4.786360953017093e-9,
-          "unit": ""
+          "unit": "CTUh"
         },
         "ionising_radiation_human_health": {
           "value": 0.07317003732464204,
@@ -428,7 +428,7 @@
         },
         "ecotoxicity_freshwater": {
           "value": 1.9683818949437168,
-          "unit": ""
+          "unit": "CTUe"
         },
         "eutrophication_marine": {
           "value": 1.585961581491412e-4,
@@ -448,7 +448,7 @@
         },
         "human_toxicity_non_cancer": {
           "value": 1.814688403483578e-9,
-          "unit": ""
+          "unit": "CTUh"
         },
         "ionising_radiation_human_health": {
           "value": 0.07522077987071743,
@@ -507,7 +507,7 @@
         },
         "ecotoxicity_freshwater": {
           "value": 0.059366587814007825,
-          "unit": ""
+          "unit": "CTUe"
         },
         "eutrophication_marine": {
           "value": 7.578632181242455e-6,
@@ -527,7 +527,7 @@
         },
         "human_toxicity_non_cancer": {
           "value": 4.6711482178586874e-11,
-          "unit": ""
+          "unit": "CTUh"
         },
         "ionising_radiation_human_health": {
           "value": 0.0053920482157312774,
@@ -566,7 +566,77 @@
       "unit": "kg",
       "region": "EU+EFTA+UK",
       "source": "EF Database 3.1",
-      "uuid": "697889d5-d952-45eb-9e46-c39046c35522"
+      "uuid": "697889d5-d952-45eb-9e46-c39046c35522",
+      "ref_flow": {
+        "value": 1,
+        "unit": "kg"
+      },
+      "lcia": {
+        "acidification": {
+          "value": 0.004820207161582674,
+          "unit": "mol H+ equivalents"
+        },
+        "climate_change": {
+          "value": 0.8284415012822366,
+          "unit": "kg CO2 Equivalents"
+        },
+        "ecotoxicity_freshwater": {
+          "value": 0.1842545406778824,
+          "unit": "CTUe"
+        },
+        "eutrophication_marine": {
+          "value": 9.617541569444993e-4,
+          "unit": "kg N equivalents"
+        },
+        "eutrophication_freshwater": {
+          "value": 8.1008610817888e-5,
+          "unit": "kg P equivalents"
+        },
+        "eutrophication_terrestrial": {
+          "value": 0.010461045089743957,
+          "unit": "mol N equivalents"
+        },
+        "human_toxicity_cancer": {
+          "value": 6.734649465397888e-9,
+          "unit": "CTUh"
+        },
+        "human_toxicity_non_cancer": {
+          "value": 4.289727719470879e-8,
+          "unit": "CTUh"
+        },
+        "ionising_radiation_human_health": {
+          "value": 0.010376303916533347,
+          "unit": "kBq U235 equivalents"
+        },
+        "land_use": {
+          "value": 1.6989575349287418,
+          "unit": "dimensionless (pt)"
+        },
+        "ozone_depletion": {
+          "value": 3.1402818455433027e-10,
+          "unit": "kg CFC11 equivalents"
+        },
+        "photochemical_ozone_formation_human_health": {
+          "value": 0.003539077077220521,
+          "unit": "kg NMVOC equivalents"
+        },
+        "resource_use_fossils": {
+          "value": 52.53483385547083,
+          "unit": "MJ"
+        },
+        "resource_use_minerals_metals": {
+          "value": 4.471039981768057e-6,
+          "unit": "kg Sb equivalents"
+        },
+        "water_use": {
+          "value": 0.010190157100861555,
+          "unit": "m3-world equivalents"
+        },
+        "ef_particulate_matter": {
+          "value": 4.5033471033267965e-8,
+          "unit": "disease incidence"
+        }
+      }
     },
     "zipper_plastic": {
       "category": "Trims",
@@ -575,7 +645,77 @@
       "unit": "kg",
       "region": "GLO",
       "source": "EF Database 3.1",
-      "uuid": "00d09aaa-f6b8-5e16-bbc5-4f74d571366f"
+      "uuid": "00d09aaa-f6b8-5e16-bbc5-4f74d571366f",
+      "ref_flow": {
+        "value": 1,
+        "unit": "kg"
+      },
+      "lcia": {
+        "acidification": {
+          "value": 0.0867756149497029,
+          "unit": "mol H+ equivalents"
+        },
+        "climate_change": {
+          "value": 11.730496956527517,
+          "unit": "kg CO2 Equivalents"
+        },
+        "ef_particulate_matter": {
+          "value": 2.0401378086903807e-6,
+          "unit": "disease incidence"
+        },
+        "ecotoxicity_freshwater": {
+          "value": 113.54529849624966,
+          "unit": "CTUe"
+        },
+        "eutrophication_marine": {
+          "value": 0.021806963929564313,
+          "unit": "kg N equivalents"
+        },
+        "eutrophication_freshwater": {
+          "value": 3.4389954876845044e-4,
+          "unit": "kg P equivalents"
+        },
+        "eutrophication_terrestrial": {
+          "value": 0.16356024126996974,
+          "unit": "mol N equivalents"
+        },
+        "human_toxicity_cancer": {
+          "value": 7.916700559313217e-9,
+          "unit": "CTUh"
+        },
+        "human_toxicity_non_cancer": {
+          "value": 7.404562485035206e-8,
+          "unit": "CTUh"
+        },
+        "ionising_radiation_human_health": {
+          "value": 0.413453650049669,
+          "unit": "kBq U235 equivalents"
+        },
+        "land_use": {
+          "value": 15.212007978722474,
+          "unit": "dimensionless (pt)"
+        },
+        "ozone_depletion": {
+          "value": 8.632746640005379e-8,
+          "unit": "kg CFC11 equivalents"
+        },
+        "photochemical_ozone_formation_human_health": {
+          "value": 0.043004557721302614,
+          "unit": "kg NMVOC equivalents"
+        },
+        "resource_use_fossils": {
+          "value": 169.7250947992307,
+          "unit": "MJ"
+        },
+        "resource_use_minerals_metals": {
+          "value": 2.8152933388797394e-4,
+          "unit": "kg Sb equivalents"
+        },
+        "water_use": {
+          "value": 3.761842006533695,
+          "unit": "m3-world equivalents"
+        }
+      }
     }
   },
   "rp_defaults": [
