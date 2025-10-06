@@ -1,22 +1,42 @@
 {
   "version": "PEFCR_A&F_v3.1",
   "ef_unit_to_canonical": {
-    "kg": { "canonical": "kg", "dimension": "mass" },
-    "m2": { "canonical": "m2", "dimension": "area" },
-    "p": { "canonical": "pair", "dimension": "item" },
-    "Item(s)": { "canonical": "item", "dimension": "item" },
+    "kg":   { "canonical": "kg",   "dimension": "mass" },
+    "m2":   { "canonical": "m2",   "dimension": "area" },
     "kgkm": { "canonical": "kgkm", "dimension": "transport_work" },
-    "MJ": { "canonical": "MJ", "dimension": "energy" },
-    "m": { "canonical": "m", "dimension": "length" }
+    "m":    { "canonical": "m",    "dimension": "length" },
+    "MJ":   { "canonical": "MJ",   "dimension": "energy" },
+
+    "p":        { "canonical": "pair", "dimension": "item" },
+    "pair":     { "canonical": "pair", "dimension": "item" },
+    "pairs":    { "canonical": "pair", "dimension": "item" },
+    "Item(s)":  { "canonical": "item", "dimension": "item" },
+    "item(s)":  { "canonical": "item", "dimension": "item" },
+    "item":     { "canonical": "item", "dimension": "item" },
+    "items":    { "canonical": "item", "dimension": "item" }
   },
   "textile_conversions": {
     "default_fabric_grammage_g_per_m2": 200,
+    "by_process_name": {
+      "Screen printing": 170,
+      "Printing, screen": 170,
+      "Dyeing, batch (incl. piece, jet, jig, kier [fiber], paddle, pad-batch, yarn), direct, sulfur, vat or reactive dyes": 180,
+      "Dyeing, batch (incl. piece, jet, jig, kier, yarn), disperse or cationic dyes": 180
+    },
+    "by_dataset_name": {},
+    "by_subcategory": {
+      "apparel_knit_top": 170,
+      "apparel_woven_top": 200,
+      "apparel_printed_top": 170
+    },
     "notes": [
-      "Pro převody m2↔kg preferuj produktově specifickou gramáž.",
-      "Pokud chybí, použij default (200 g/m2) a označ ve výstupu jako odhad."
+      "Pro převody m2↔kg preferuj produktově specifickou gramáž (input.lcs2.gsm_per_step nebo input.lcs2.gsm_g_per_m2).",
+      "Pokud chybí, použij subcategory nebo process-specific override; pokud není ani to, default 200 g/m2.",
+      "Ve výstupu uveď použitou gramáž (gsm_used_g_per_m2) pro kroky s FU=m2."
     ]
   },
   "notes": [
-    "Interně počítej v canonical jednotkách, ale respektuj EF31 jednotky při mapování datasetů."
+    "Interně počítej v canonical jednotkách, ale respektuj EF31 jednotky při mapování datasetů.",
+    "Mapa jednotek řeší běžné EF varianty (např. p/pair, Item(s)/item)."
   ]
 }
