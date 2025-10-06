@@ -1,0 +1,67 @@
+{
+  "pre_treatments": [
+    "(?i)^scouring",
+    "(?i)^pre[- ]?dye preparation",
+    "(?i)^bleaching"
+  ],
+  "yarn_production_apparel": [
+    "(?i)^combing",
+    "(?i)^spinning"
+  ],
+  "fabric_manufacturing_apparel": [
+    "(?i)^knitting,? (circular|flat)",
+    "(?i)^weaving"
+  ],
+  "dyeing_apparel": [
+    "(?i)^dyeing, batch",
+    "(?i)^screen printing|^printing, screen"
+  ],
+  "treatments_apparel": [
+    "(?i)^finishing"
+  ],
+  "assembly_apparel": [
+    "(?i)^cutting(?!.*pair)",
+    "(?i)^sewing$"                            // šití (oděvy) – Process_name je jen "Sewing"
+  ],
+  "component_manufacturing": [
+    "(?i)^cutting.*pair",                     // Cutting (pair) → sem
+    "(?i)^sewing$.*",                         // obuvní šití (když je Process_name "Sewing" a v datasetu je service for 1 pair; pokud by to dělalo kolizi, ponech jen předchozí řádek)
+    "(?i)^injection molding",
+    "(?i)^molding, compression",
+    "(?i)^insole production",
+    "(?i)^vulcanizing",
+    "(?i)^lasting|^delasting",
+    "(?i)^lamination, water based glue"
+  ],
+  "product_assembly_footwear": [
+    "(?i)^cementing/gluing",
+    "(?i)^stockfitting",
+    "(?i)^coating, water based emulsion",
+    "(?i)^waterproofing"
+  ],
+  "packaging_primary_apparel": [
+    "(?i)^cardboard$|^polybag$|^paper sack|^kraft paper|^hangtag"
+  ],
+  "packaging_tertiary_apparel": [
+    "(?i)^pallets?$",
+    "(?i)^shrink film$"
+  ],
+  "transport": [
+    "(?i)^transport, truck",
+    "(?i)^transportation, train",
+    "(?i)^transportation, barge",
+    "(?i)^transport, ship",
+    "(?i)^transport, plane",
+    "(?i)^lorry transport"
+  ],
+  "eol_textiles_and_components": [
+    "(?i)^landfill of textiles|^incineration of (textiles|polyester|polyurethane|pvc|other textiles|inert)",
+    "(?i)^processing for recycling, (wipers|insulation)|^recycling"
+  ],
+  "use_phase": [
+    "(?i)^washing|^tumble drying|^ironing|^handwashing|^waxing"
+  ],
+  "energy_and_conversion": [
+    "(?i)^electricity|^thermal energy|^conversion from electricity"
+  ]
+}
