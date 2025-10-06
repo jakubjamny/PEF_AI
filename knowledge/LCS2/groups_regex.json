@@ -21,11 +21,11 @@
   ],
   "assembly_apparel": [
     "(?i)^cutting(?!.*pair)",
-    "(?i)^sewing$"                            // šití (oděvy) – Process_name je jen "Sewing"
+    "(?i)^sewing$"                     
   ],
   "component_manufacturing": [
-    "(?i)^cutting.*pair",                     // Cutting (pair) → sem
-    "(?i)^sewing$.*",                         // obuvní šití (když je Process_name "Sewing" a v datasetu je service for 1 pair; pokud by to dělalo kolizi, ponech jen předchozí řádek)
+    "(?i)^cutting.*pair",   
+    "(?i)^sewing$.*",               
     "(?i)^injection molding",
     "(?i)^molding, compression",
     "(?i)^insole production",
