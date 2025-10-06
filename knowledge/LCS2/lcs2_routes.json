@@ -1,6 +1,7 @@
 {
+  "version": "PEFCR_A&F_v3.1",
   "routes": {
-    "apparel_knit_cellulosic": {
+    "default_apparel_knit": {
       "steps": [
         "Spinning, for knit, ring-spun",
         "Knitting, circular",
@@ -11,84 +12,25 @@
         "Sewing"
       ]
     },
-    "apparel_knit_synthetic": {
-      "steps": [
-        "Spinning, continuous filament (dry)",
-        "Knitting, circular",
-        "Dyeing, batch (incl. piece, jet, jig, kier, yarn), disperse or cationic dyes",
-        "Finishing, spray-dry-cure",
-        "Cutting",
-        "Sewing"
-      ]
-    },
-    "apparel_woven_cellulosic": {
+    "default_apparel_woven": {
       "steps": [
         "Spinning, for woven, ring-spun",
         "Weaving, others",
         "Bleaching, conventional",
-        "Dyeing, batch (incl. piece, jet, jig, kier [fiber], paddle, pad-batch, yarn), direct, sulfur, vat or reactive dyes",
-        "Finishing, spray-dry-cure",
-        "Cutting",
-        "Sewing"
-      ]
-    },
-    "apparel_woven_synthetic": {
-      "steps": [
-        "Spinning, continuous filament (dry)",
-        "Weaving, others",
         "Dyeing, batch (incl. piece, jet, jig, kier, yarn), disperse or cationic dyes",
         "Finishing, spray-dry-cure",
         "Cutting",
         "Sewing"
       ]
     },
-    "apparel_printed_cellulosic": {
+    "default_apparel_printed": {
       "steps": [
         "Spinning, for knit, ring-spun",
         "Knitting, circular",
         "Pre-dye preparation (scouring, etc), knit textile, natural fibers",
         "Dyeing, batch (incl. piece, jet, jig, kier [fiber], paddle, pad-batch, yarn), direct, sulfur, vat or reactive dyes",
-        "Printing, screen",
+        "Screen printing",
         "Finishing, spray-dry-cure",
-        "Cutting",
-        "Sewing"
-      ]
-    },
-    "apparel_printed_synthetic": {
-      "steps": [
-        "Spinning, continuous filament (dry)",
-        "Knitting, circular",
-        "Dyeing, batch (incl. piece, jet, jig, kier, yarn), disperse or cationic dyes",
-        "Printing, screen",
-        "Finishing, spray-dry-cure",
-        "Cutting",
-        "Sewing"
-      ]
-    },
-    "apparel_woven_flax": {
-      "steps": [
-        "Combing, flax",
-        "Spinning, for woven, ring-spun",
-        "Weaving, others",
-        "Bleaching, conventional",
-        "Dyeing, batch (incl. piece, jet, jig, kier [fiber], paddle, pad-batch, yarn), direct, sulfur, vat or reactive dyes",
-        "Finishing, spray-dry-cure",
-        "Cutting",
-        "Sewing"
-      ]
-    },
-    "apparel_knit_protein": {
-      "steps": [
-        "Spinning, for knit, ring-spun",
-        "Knitting, circular",
-        "Dyeing, batch (incl. piece, jet, jig, kier, yarn), acid dyes",
-        "Finishing, spray-dry-cure",
-        "Cutting",
-        "Sewing"
-      ]
-    },
-    "apparel_leather": {
-      "steps": [
         "Cutting",
         "Sewing"
       ]
@@ -98,8 +40,6 @@
         "Injection molding, for foam {GLO} | injection process | production mix, at plant | item(s) = pair | LCI result",
         "Molding, compression",
         "Insole production",
-        "Cutting",
-        "Sewing",
         "Stockfitting",
         "Cementing/gluing",
         "Vulcanizing",
@@ -109,23 +49,54 @@
     }
   },
   "by_subcategory": {
-    "apparel_knit_top_cellulosic": { "ref": "apparel_knit_cellulosic" },
-    "apparel_knit_top_synthetic": { "ref": "apparel_knit_synthetic" },
-    "apparel_knit_top_protein":    { "ref": "apparel_knit_protein" },
-
-    "apparel_woven_top_cellulosic": { "ref": "apparel_woven_cellulosic" },
-    "apparel_woven_top_synthetic":  { "ref": "apparel_woven_synthetic" },
-    "apparel_woven_top_flax":       { "ref": "apparel_woven_flax" },
-
-    "apparel_printed_top_cellulosic": { "ref": "apparel_printed_cellulosic" },
-    "apparel_printed_top_synthetic":  { "ref": "apparel_printed_synthetic" },
-
-    "apparel_leather": { "ref": "apparel_leather" },
-    "footwear_generic": { "ref": "default_footwear" }
+    "apparel_knit_top": {
+      "ref": "default_apparel_knit"
+    },
+    "apparel_woven_top": {
+      "ref": "default_apparel_woven"
+    },
+    "apparel_printed_top": {
+      "ref": "default_apparel_printed"
+    },
+    "footwear_generic": {
+      "ref": "default_footwear"
+    }
+  },
+  "groups_order": {
+    "apparel": [
+      "pre_treatments",
+      "yarn_production",
+      "fabric_manufacturing",
+      "dyeing_and_preparation",
+      "printing_and_finishing",
+      "assembly_apparel",
+      "transport_sfip",
+      "packaging_eol_sfip",
+      "manufacturing_losses_eol"
+    ],
+    "footwear": [
+      "component_manufacturing",
+      "product_assembly",
+      "transport_sfip",
+      "packaging_eol_sfip",
+      "manufacturing_losses_eol"
+    ]
   },
   "groups_regex": {
+    "pre_treatments": "(Scouring|Carding|Combing|Hackling)",
+    "yarn_production": "(Spinning|Filament)",
+    "fabric_manufacturing": "(Knitting|Weaving)",
+    "dyeing_and_preparation": "(Pre-dye|Bleaching|Dyeing)",
+    "printing_and_finishing": "(Printing|Finishing|Coating|Lamination|Waterproofing)",
     "assembly_apparel": "(Cutting|Sewing(?!.*pair))",
     "component_manufacturing": "(Injection|Molding|Moulding|Delasting|Lasting|Stockfitting|Insole)",
-    "product_assembly": "(Cementing|Vulcanizing|Vulcanising|Coating|Waterproofing|Sewing.*pair)"
-  }
+    "product_assembly": "(Cementing|Vulcanizing|Vulcanising|Coating|Waterproofing)",
+    "transport_sfip": "^(Transport|Transportation.*train|Barge|Ship|Cargo plane|Air freight)",
+    "packaging_eol_sfip": "(Recycling, (paper|cardboard|LDPE)|Incineration, (paper|board|cardboard|LDPE)|Landfill, (paper|cardboard|LDPE))",
+    "manufacturing_losses_eol": "(Incineration|Landfill|Processing for recycling|Recycling.*wipers|Stone wool)"
+  },
+  "notes": [
+    "Kroky jsou volené tak, aby pokrývaly typické defaultní procesy v Annex VII pro daný produkt.",
+    "Pokud má produkt jiné kroky, je možné přidat route nebo přepsat seznam steps v requestu."
+  ]
 }
