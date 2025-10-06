@@ -18,6 +18,7 @@
     "mass": "kg",
     "transport": "kgkm"
   },
+
   "transport_case_default": "outside_continent_ship",
   "transport_defaults": {
     "same_continent": {
@@ -45,5 +46,21 @@
         { "mode": "Truck (>32t, EURO 4)", "distance_km": 100, "share_of_mass": 1.00 }
       ]
     }
-  }
+  },
+
+  "packaging_origin_default": "same_continent",
+  "packaging_categories_origin_overrides": {
+    "Primary packaging - apparel": "same_continent",
+    "Primary packaging - footwear": "same_continent",
+    "Primary packaging - both": "same_continent",
+    "Secondary packaging - apparel": "same_continent",
+    "Secondary packaging - footwear": "same_continent",
+    "Tertiary packaging - apparel": "same_continent",
+    "Tertiary packaging - footwear": "same_continent"
+  },
+  "packaging_notes": [
+    "Výroba všech obalů (primary/secondary/tertiary) je v LCS1; EoL: primary → LCS5, secondary/tertiary → LCS3. (PEFCR 3.4, Tab. 10)", 
+    "Transport obalů: pokud chybí primární data, ber, že obaly přichází ze stejného kontinentu jako závod; módy jsou aditivní; přeprava je weight-limited. (PEFCR 6.1.5.1)",
+    "Obaly pro suroviny a SF&IP lze podle PEFCR vypustit cut-off pravidlem (produkce i distribuce) – netýká se ale obalů finálního výrobku. (PEFCR 3.4)"
+  ]
 }
