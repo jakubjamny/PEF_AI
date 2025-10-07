@@ -1,211 +1,580 @@
 {
   "version": "PEFCR_A&F_v3.1",
+
+  "datasets": {
+    "spin_cotton_knit_ring_150dtex": {
+      "process_name": "spinning, cotton, for knit, ring-spun (150 dtex- 135 denier-40/1 ne-67 nm)",
+      "uuid": "8f196966-bd4c-5456-864f-7b9a15c540c6",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 3.138441331757546, "unit": "kg CO2e/kg" },
+          "water_use": { "value": 0.9663844216058, "unit": "m3 world-eq/kg" }
+        }
+      },
+      "meta": { "functional_unit": "service of spinning 1 kg yarn (raw material excluded)" }
+    },
+    "spin_filament_dry": {
+      "process_name": "spinning, continuous filament (dry) spinning process production mix service of spinning 1kg of yarn (raw material excluded)",
+      "uuid": "2a45fc49-9fd3-57e3-8aaf-39308eff48ee",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 1.3853132830798767, "unit": "kg CO2e/kg" },
+          "water_use": { "value": 1.3620083716390727, "unit": "m3 world-eq/kg" }
+        }
+      }
+    },
+    "spin_wool_knit_200dtex": {
+      "process_name": "spinning, wool, for knit (200 dtex-50 nm) spinning process production mix service of spinning 1kg of yarn (raw material excluded)",
+      "uuid": "1f8d7a29-748a-5b45-9662-43681b7bd120",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 2.2082392081059066, "unit": "kg CO2e/kg" },
+          "water_use": { "value": 0.6716163775490787, "unit": "m3 world-eq/kg" }
+        }
+      }
+    },
+    "spin_cotton_woven_ring_150dtex": {
+      "process_name": "spinning, cotton, for woven, ring-spun (150 dtex-135 denier-40/1 ne-67 nm) spinning process production mix service of spinning 1kg of yarn (raw material excluded)",
+      "uuid": "992670e0-5c66-5723-ae97-a12a917208cf",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 3.745763617635678, "unit": "kg CO2e/kg" },
+          "water_use": { "value": 1.1652595408557491, "unit": "m3 world-eq/kg" }
+        }
+      }
+    },
+    "spin_wool_woven_120dtex": {
+      "process_name": "spinning, wool, for woven (120 dtex-83 nm) spinning process production mix service of spinning 1kg of yarn (raw material excluded)",
+      "uuid": "612df525-018b-5972-991e-ae8d59485097",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 4.9587807302662545, "unit": "kg CO2e/kg" },
+          "water_use": { "value": 1.5521143168945, "unit": "m3 world-eq/kg" }
+        }
+      }
+    },
+    "spin_bast_fiber": {
+      "process_name": "spinning, bast fiber spinning process production mix service of spinning 1kg of yarn (raw material excluded)",
+      "uuid": "0d455d01-290e-5b5c-a71f-de18e4f63abf",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 3.8521476369885765, "unit": "kg CO2e/kg" },
+          "water_use": { "value": 1.983582337726162, "unit": "m3 world-eq/kg" }
+        }
+      }
+    },
+    "knit_circular": {
+      "process_name": "knitting, circular knitting process production, at plant service of knitting fabric",
+      "uuid": "105d486f-1c09-56c3-ac9d-b517cd566fbb",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 6.995155822457846, "unit": "kg CO2e/kg" },
+          "water_use": { "value": 2.4290559628469737, "unit": "m3 world-eq/kg" }
+        }
+      }
+    },
+    "predye_knit_natural": {
+      "process_name": "pre-dye preparation (scouring, etc), knit textile, natural fibers Pre-treatment production mix, at plant textile service",
+      "uuid": "bbdef578-257d-5920-b3e7-d954b8a9f714",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 0.4975261865560527, "unit": "kg CO2e/kg" },
+          "water_use": { "value": 1.170036807621799, "unit": "m3 world-eq/kg" }
+        }
+      }
+    },
+    "dye_batch_cellulosics": {
+      "process_name": "dyeing, batch (incl. piece, jet, jig, kier [fiber], paddle, pad-batch, yarn), direct, sulfur, vat or reactive dyes Dyeing production mix, at plant textile service for 1 kg of fabric",
+      "uuid": "00fc088d-bc5f-5266-9e4a-086cfb653d2c",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 2.393501686318166, "unit": "kg CO2e/kg" },
+          "water_use": { "value": 2.9665682260733153, "unit": "m3 world-eq/kg" }
+        }
+      }
+    },
+    "dye_batch_disperse_cationic": {
+      "process_name": "dyeing, batch (incl. piece, jet, jig, kier, yarn), disperse or cationic dyes Dyeing production mix, at plant textile service for 1 kg of fabric",
+      "uuid": "3ca6756d-e7fc-5340-afe2-3dc0d24b39d1",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 2.1127150056758577, "unit": "kg CO2e/kg" },
+          "water_use": { "value": 2.513653585497376, "unit": "m3 world-eq/kg" }
+        }
+      }
+    },
+    "dye_batch_acid": {
+      "process_name": "dyeing, batch (incl. piece, jet, jig, kier, yarn), acid dyes Dyeing production mix, at plant textile service for 1 kg of fabric",
+      "uuid": "8f0dd29d-e2f5-5692-9882-d62af76c6adf",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 5.155378641809934, "unit": "kg CO2e/kg" },
+          "water_use": { "value": 4.34346351799958, "unit": "m3 world-eq/kg" }
+        }
+      }
+    },
+    "finish_spray_dry_cure": {
+      "process_name": "finishing, spray-dry-cure pad dry-cure method production mix, at plant service",
+      "uuid": "ab7bdb26-2eaf-5d2f-8565-a8ba44dd654f",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 0.12779263853199263, "unit": "kg CO2e/kg" },
+          "water_use": { "value": 0.041457131937835366, "unit": "m3 world-eq/kg" }
+        }
+      }
+    },
+    "cutting_service_kg": {
+      "process_name": "cutting straight knive, round knive, band knive, hot knife, and ultrasonic cutting production mix, at plant service for 1 kg",
+      "uuid": "143f0bad-fb5c-5dd3-9a42-366c3459a490",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 0.09235537973022773, "unit": "kg CO2e/kg" },
+          "water_use": { "value": 0.030219490708807487, "unit": "m3 world-eq/kg" }
+        }
+      }
+    },
+    "sewing_mix_incl_thread": {
+      "process_name": "sewing technology mix production mix, at plant service including thread",
+      "uuid": "ba493f57-af47-56ae-afea-5179cbf61c99",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 0.007074201521996643, "unit": "kg CO2e/kg" },
+          "water_use": { "value": 0.0027728781383628736, "unit": "m3 world-eq/kg" }
+        }
+      }
+    },
+    "weaving_rapier": {
+      "process_name": "weaving, rapier service, Fabric, Weaved by rapier loom production mix, at plant service, Fabric, Weaved by rapier loom",
+      "uuid": "9f0fea10-74dc-555f-a136-e82c4c23bac9",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 9.495217011124746, "unit": "kg CO2e/kg" },
+          "water_use": { "value": 3.2540412979325097, "unit": "m3 world-eq/kg" }
+        }
+      }
+    },
+    "bleaching_conventional": {
+      "process_name": "bleaching, conventional Pre-treatment production mix, at plant textile service",
+      "uuid": "d60b0c47-7e87-5f3b-b1a1-33f2ddc29873",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 0.09037608411114442, "unit": "kg CO2e/kg" },
+          "water_use": { "value": 0.16913947532726759, "unit": "m3 world-eq/kg" }
+        }
+      }
+    },
+    "combing_mix": {
+      "process_name": "combing technology mix production mix, at plant service (raw materials excluded)",
+      "uuid": "9e5c2783-4e70-556a-a5c9-aca3c830a2a6",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 0.02094290749792407, "unit": "kg CO2e/kg" },
+          "water_use": { "value": 0.006774718098700898, "unit": "m3 world-eq/kg" }
+        }
+      }
+    },
+    "screen_printing_m2": {
+      "process_name": "printing, screen printing service production, at plant service of printing, Screen on 1m2 of fabric",
+      "uuid": "1e02e4e6-b775-5da8-92d1-34bb284d629a",
+      "unit": "m2",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 13.889888223061023, "unit": "kg CO2e/m2" },
+          "water_use": { "value": 13.773102137772966, "unit": "m3 world-eq/m2" }
+        }
+      }
+    },
+
+    "inj_molding_foam_pair": {
+      "process_name": "injection molding, for foam injection process production mix, at plant item(s) = pair",
+      "uuid": "415b6078-e252-5716-a063-427f3b8e45b3",
+      "unit": "pair",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 1.521113092195534, "unit": "kg CO2e/pair" },
+          "water_use": { "value": -0.2586914297029755, "unit": "m3 world-eq/pair" }
+        }
+      }
+    },
+    "molding_compression_footwear": {
+      "process_name": "molding, compression service, footwear, pre-treatment production mix, at plant 1 Item(s) = 1 pair",
+      "uuid": "2168494b-7f83-51f5-b4d5-75c3ab3a1042",
+      "unit": "pair",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 0.13858794776960198, "unit": "kg CO2e/pair" },
+          "water_use": { "value": 0.042462977577175556, "unit": "m3 world-eq/pair" }
+        }
+      }
+    },
+    "insole_assembly": {
+      "process_name": "assembly, insole insole assembly process production mix, at plant service",
+      "uuid": "8342bf5f-64a4-5637-a7ca-9195b78848ea",
+      "unit": "pair",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 0.18134629543404363, "unit": "kg CO2e/pair" },
+          "water_use": { "value": 0.1736930779866586, "unit": "m3 world-eq/pair" }
+        }
+      }
+    },
+    "cutting_pair_mix": {
+      "process_name": "cutting hot knife, die cutting, laser and oscillating knive cutting production mix, at plant service for 1 pair",
+      "uuid": "35400001-b386-54e5-bcfc-89da155718c8",
+      "unit": "pair",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 0.004818626870656139, "unit": "kg CO2e/pair" },
+          "water_use": { "value": 0.0015368971217861887, "unit": "m3 world-eq/pair" }
+        }
+      }
+    },
+    "sewing_pair": {
+      "process_name": "sewing sewing process production mix, at plant service for 1 pair",
+      "uuid": "cfd88ae5-c94a-56e1-b2af-a58b96e38de6",
+      "unit": "pair",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 0.017363707163503245, "unit": "kg CO2e/pair" },
+          "water_use": { "value": 0.020824199062411508, "unit": "m3 world-eq/pair" }
+        }
+      }
+    },
+    "stockfitting_pair": {
+      "process_name": "stockfitting stock fitting process production mix, at plant service",
+      "uuid": "bd57ff30-eca9-5f19-8435-08edbd42dd2d",
+      "unit": "pair",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 0.06098422868175908, "unit": "kg CO2e/pair" },
+          "water_use": { "value": 0.02884652951560358, "unit": "m3 world-eq/pair" }
+        }
+      }
+    },
+    "cementing_pair": {
+      "process_name": "cementing/gluing cementing process production mix, at plant service of glueing 1 pair of shoes",
+      "uuid": "c07219cb-b3c3-5e09-b912-093a1364a6e4",
+      "unit": "pair",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 0.4631200746007951, "unit": "kg CO2e/pair" },
+          "water_use": { "value": 0.1658899259949718, "unit": "m3 world-eq/pair" }
+        }
+      }
+    },
+    "vulcanizing_autoclave_pair": {
+      "process_name": "autoclaving autoclave vulcanizing production mix, at plant service for 1 pair",
+      "uuid": "514f3536-de3c-5501-b30d-4702a4132327",
+      "unit": "pair",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 0.07943261870046005, "unit": "kg CO2e/pair" },
+          "water_use": { "value": 0.028529985600588514, "unit": "m3 world-eq/pair" }
+        }
+      }
+    },
+    "lasting_strobel_pair": {
+      "process_name": "lasting, strobel lasting process production mix, at plant service",
+      "uuid": "09d7db4c-f56c-5f1b-a3d1-d46767293282",
+      "unit": "pair",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 0.009798040710677268, "unit": "kg CO2e/pair" },
+          "water_use": { "value": 0.00449806246669852, "unit": "m3 world-eq/pair" }
+        }
+      }
+    },
+    "delasting_pair": {
+      "process_name": "delasting delasting process production mix, at plant service of delasting 1 pair of shoes",
+      "uuid": "ae29f020-906c-5ded-a946-d2e79f14ea5d",
+      "unit": "pair",
+      "source": "EF Database 3.1",
+      "region": "GLO",
+      "indicators": {
+        "EF_3.1": {
+          "climate_change_total": { "value": 0.0014216747136257491, "unit": "kg CO2e/pair" },
+          "water_use": { "value": 0.00044568548753431985, "unit": "m3 world-eq/pair" }
+        }
+      }
+    }
+  },
+
   "routes": {
     "apparel_knit_cellulosic": {
       "steps": [
-        "Spinning, for knit, ring-spun",
-        "Knitting, circular",
-        "Pre-dye preparation (scouring, etc), knit textile, natural fibers",
-        "Dyeing, batch (incl. piece, jet, jig, kier [fiber], paddle, pad-batch, yarn), direct, sulfur, vat or reactive dyes",
-        "Finishing, spray-dry-cure",
-        "Cutting",
-        "Sewing"
+        { "label": "Spinning, for knit, ring-spun", "ref": "spin_cotton_knit_ring_150dtex" },
+        { "label": "Knitting, circular", "ref": "knit_circular" },
+        { "label": "Pre-dye preparation (scouring, etc), knit textile, natural fibers", "ref": "predye_knit_natural" },
+        { "label": "Dyeing, batch (incl. piece, jet, jig, kier [fiber], paddle, pad-batch, yarn), direct, sulfur, vat or reactive dyes", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
       ]
     },
     "apparel_knit_synthetic": {
       "steps": [
-        "Spinning, continuous filament (dry)",
-        "Knitting, circular",
-        "Dyeing, batch (incl. piece, jet, jig, kier, yarn), disperse or cationic dyes",
-        "Finishing, spray-dry-cure",
-        "Cutting",
-        "Sewing"
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Knitting, circular", "ref": "knit_circular" },
+        { "label": "Dyeing, batch (incl. piece, jet, jig, kier, yarn), disperse or cationic dyes", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
       ]
     },
     "apparel_knit_protein": {
       "steps": [
-        "Spinning, for knit, ring-spun",
-        "Knitting, circular",
-        "Dyeing, batch (incl. piece, jet, jig, kier, yarn), acid dyes",
-        "Finishing, spray-dry-cure",
-        "Cutting",
-        "Sewing"
+        { "label": "Spinning, for knit, ring-spun", "ref": "spin_wool_knit_200dtex" },
+        { "label": "Knitting, circular", "ref": "knit_circular" },
+        { "label": "Dyeing, batch (incl. piece, jet, jig, kier, yarn), acid dyes", "ref": "dye_batch_acid" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
       ]
     },
     "apparel_woven_cellulosic": {
       "steps": [
-        "Spinning, for woven, ring-spun",
-        "Weaving, others",
-        "Bleaching, conventional",
-        "Dyeing, batch (incl. piece, jet, jig, kier [fiber], paddle, pad-batch, yarn), direct, sulfur, vat or reactive dyes",
-        "Finishing, spray-dry-cure",
-        "Cutting",
-        "Sewing"
+        { "label": "Spinning, for woven, ring-spun", "ref": "spin_cotton_woven_ring_150dtex" },
+        { "label": "Weaving, others", "ref": "weaving_rapier" },
+        { "label": "Bleaching, conventional", "ref": "bleaching_conventional" },
+        { "label": "Dyeing, batch (incl. piece, jet, jig, kier [fiber], paddle, pad-batch, yarn), direct, sulfur, vat or reactive dyes", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
       ]
     },
     "apparel_woven_synthetic": {
       "steps": [
-        "Spinning, continuous filament (dry)",
-        "Weaving, others",
-        "Dyeing, batch (incl. piece, jet, jig, kier, yarn), disperse or cationic dyes",
-        "Finishing, spray-dry-cure",
-        "Cutting",
-        "Sewing"
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Weaving, others", "ref": "weaving_rapier" },
+        { "label": "Dyeing, batch (incl. piece, jet, jig, kier, yarn), disperse or cationic dyes", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
       ]
     },
     "apparel_woven_protein": {
       "steps": [
-        "Spinning, for woven, ring-spun",
-        "Weaving, others",
-        "Dyeing, batch (incl. piece, jet, jig, kier, yarn), acid dyes",
-        "Finishing, spray-dry-cure",
-        "Cutting",
-        "Sewing"
+        { "label": "Spinning, for woven, ring-spun", "ref": "spin_wool_woven_120dtex" },
+        { "label": "Weaving, others", "ref": "weaving_rapier" },
+        { "label": "Dyeing, batch (incl. piece, jet, jig, kier, yarn), acid dyes", "ref": "dye_batch_acid" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
       ]
     },
     "apparel_woven_flax": {
       "steps": [
-        "Combing, flax",
-        "Spinning, for woven, ring-spun",
-        "Weaving, others",
-        "Bleaching, conventional",
-        "Dyeing, batch (incl. piece, jet, jig, kier [fiber], paddle, pad-batch, yarn), direct, sulfur, vat or reactive dyes",
-        "Finishing, spray-dry-cure",
-        "Cutting",
-        "Sewing"
+        { "label": "Combing, flax", "ref": "combing_mix" },
+        { "label": "Spinning, for woven, ring-spun", "ref": "spin_bast_fiber" },
+        { "label": "Weaving, others", "ref": "weaving_rapier" },
+        { "label": "Bleaching, conventional", "ref": "bleaching_conventional" },
+        { "label": "Dyeing, batch (incl. piece, jet, jig, kier [fiber], paddle, pad-batch, yarn), direct, sulfur, vat or reactive dyes", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
       ]
     },
     "apparel_printed_knit_cellulosic": {
       "steps": [
-        "Spinning, for knit, ring-spun",
-        "Knitting, circular",
-        "Pre-dye preparation (scouring, etc), knit textile, natural fibers",
-        "Dyeing, batch (incl. piece, jet, jig, kier [fiber], paddle, pad-batch, yarn), direct, sulfur, vat or reactive dyes",
-        "Screen printing",
-        "Finishing, spray-dry-cure",
-        "Cutting",
-        "Sewing"
+        { "label": "Spinning, for knit, ring-spun", "ref": "spin_cotton_knit_ring_150dtex" },
+        { "label": "Knitting, circular", "ref": "knit_circular" },
+        { "label": "Pre-dye preparation (scouring, etc), knit textile, natural fibers", "ref": "predye_knit_natural" },
+        { "label": "Dyeing, batch (incl. piece, jet, jig, kier [fiber], paddle, pad-batch, yarn), direct, sulfur, vat or reactive dyes", "ref": "dye_batch_cellulosics" },
+        { "label": "Screen printing", "ref": "screen_printing_m2" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
       ]
     },
     "apparel_printed_knit_synthetic": {
       "steps": [
-        "Spinning, continuous filament (dry)",
-        "Knitting, circular",
-        "Dyeing, batch (incl. piece, jet, jig, kier, yarn), disperse or cationic dyes",
-        "Screen printing",
-        "Finishing, spray-dry-cure",
-        "Cutting",
-        "Sewing"
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Knitting, circular", "ref": "knit_circular" },
+        { "label": "Dyeing, batch (incl. piece, jet, jig, kier, yarn), disperse or cationic dyes", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Screen printing", "ref": "screen_printing_m2" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
       ]
     },
     "apparel_printed_knit_protein": {
       "steps": [
-        "Spinning, for knit, ring-spun",
-        "Knitting, circular",
-        "Dyeing, batch (incl. piece, jet, jig, kier, yarn), acid dyes",
-        "Screen printing",
-        "Finishing, spray-dry-cure",
-        "Cutting",
-        "Sewing"
+        { "label": "Spinning, for knit, ring-spun", "ref": "spin_wool_knit_200dtex" },
+        { "label": "Knitting, circular", "ref": "knit_circular" },
+        { "label": "Dyeing, batch (incl. piece, jet, jig, kier, yarn), acid dyes", "ref": "dye_batch_acid" },
+        { "label": "Screen printing", "ref": "screen_printing_m2" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
       ]
     },
-
     "apparel_printed_woven_cellulosic": {
       "steps": [
-        "Spinning, for woven, ring-spun",
-        "Weaving, others",
-        "Bleaching, conventional",
-        "Dyeing, batch (incl. piece, jet, jig, kier [fiber], paddle, pad-batch, yarn), direct, sulfur, vat or reactive dyes",
-        "Screen printing",
-        "Finishing, spray-dry-cure",
-        "Cutting",
-        "Sewing"
+        { "label": "Spinning, for woven, ring-spun", "ref": "spin_cotton_woven_ring_150dtex" },
+        { "label": "Weaving, others", "ref": "weaving_rapier" },
+        { "label": "Bleaching, conventional", "ref": "bleaching_conventional" },
+        { "label": "Dyeing, batch (incl. piece, jet, jig, kier [fiber], paddle, pad-batch, yarn), direct, sulfur, vat or reactive dyes", "ref": "dye_batch_cellulosics" },
+        { "label": "Screen printing", "ref": "screen_printing_m2" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
       ]
     },
     "apparel_printed_woven_synthetic": {
       "steps": [
-        "Spinning, continuous filament (dry)",
-        "Weaving, others",
-        "Dyeing, batch (incl. piece, jet, jig, kier, yarn), disperse or cationic dyes",
-        "Screen printing",
-        "Finishing, spray-dry-cure",
-        "Cutting",
-        "Sewing"
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Weaving, others", "ref": "weaving_rapier" },
+        { "label": "Dyeing, batch (incl. piece, jet, jig, kier, yarn), disperse or cationic dyes", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Screen printing", "ref": "screen_printing_m2" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
       ]
     },
     "apparel_printed_woven_protein": {
       "steps": [
-        "Spinning, for woven, ring-spun",
-        "Weaving, others",
-        "Dyeing, batch (incl. piece, jet, jig, kier, yarn), acid dyes",
-        "Screen printing",
-        "Finishing, spray-dry-cure",
-        "Cutting",
-        "Sewing"
+        { "label": "Spinning, for woven, ring-spun", "ref": "spin_wool_woven_120dtex" },
+        { "label": "Weaving, others", "ref": "weaving_rapier" },
+        { "label": "Dyeing, batch (incl. piece, jet, jig, kier, yarn), acid dyes", "ref": "dye_batch_acid" },
+        { "label": "Screen printing", "ref": "screen_printing_m2" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
       ]
     },
     "apparel_leather": {
       "steps": [
-        "Cutting",
-        "Sewing"
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
       ]
     },
     "default_footwear": {
       "steps": [
-        "Injection molding, for foam {GLO} | injection process | production mix, at plant | item(s) = pair | LCI result",
-        "Molding, compression",
-        "Insole production",
-        "Cutting (pair)",
-        "Sewing",
-        "Stockfitting",
-        "Cementing/gluing",
-        "Vulcanizing",
-        "Lasting",
-        "Delasting"
+        { "label": "Injection molding, for foam {GLO} | injection process | production mix, at plant | item(s) = pair | LCI result", "ref": "inj_molding_foam_pair" },
+        { "label": "Molding, compression", "ref": "molding_compression_footwear" },
+        { "label": "Insole production", "ref": "insole_assembly" },
+        { "label": "Cutting (pair)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing", "ref": "sewing_pair" },
+        { "label": "Stockfitting", "ref": "stockfitting_pair" },
+        { "label": "Cementing/gluing", "ref": "cementing_pair" },
+        { "label": "Vulcanizing", "ref": "vulcanizing_autoclave_pair" },
+        { "label": "Lasting", "ref": "lasting_strobel_pair" },
+        { "label": "Delasting", "ref": "delasting_pair" }
       ]
     },
     "footwear_athletic_cemented": {
       "steps": [
-        "Injection molding, for foam {GLO} | injection process | production mix, at plant | item(s) = pair | LCI result",
-        "Insole production",
-        "Cutting (pair)",
-        "Sewing",
-        "Stockfitting",
-        "Cementing/gluing",
-        "Lasting",
-        "Delasting"
+        { "label": "Injection molding, for foam {GLO} | injection process | production mix, at plant | item(s) = pair | LCI result", "ref": "inj_molding_foam_pair" },
+        { "label": "Insole production", "ref": "insole_assembly" },
+        { "label": "Cutting (pair)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing", "ref": "sewing_pair" },
+        { "label": "Stockfitting", "ref": "stockfitting_pair" },
+        { "label": "Cementing/gluing", "ref": "cementing_pair" },
+        { "label": "Lasting", "ref": "lasting_strobel_pair" },
+        { "label": "Delasting", "ref": "delasting_pair" }
       ]
     },
     "footwear_vulcanized": {
       "steps": [
-        "Molding, compression",
-        "Insole production",
-        "Cutting (pair)",
-        "Sewing",
-        "Stockfitting",
-        "Cementing/gluing",
-        "Vulcanizing",
-        "Lasting",
-        "Delasting"
+        { "label": "Molding, compression", "ref": "molding_compression_footwear" },
+        { "label": "Insole production", "ref": "insole_assembly" },
+        { "label": "Cutting (pair)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing", "ref": "sewing_pair" },
+        { "label": "Stockfitting", "ref": "stockfitting_pair" },
+        { "label": "Cementing/gluing", "ref": "cementing_pair" },
+        { "label": "Vulcanizing", "ref": "vulcanizing_autoclave_pair" },
+        { "label": "Lasting", "ref": "lasting_strobel_pair" },
+        { "label": "Delasting", "ref": "delasting_pair" }
       ]
     },
     "footwear_leather_cemented": {
       "steps": [
-        "Insole production",
-        "Cutting (pair)",
-        "Sewing",
-        "Stockfitting",
-        "Cementing/gluing",
-        "Lasting",
-        "Delasting"
+        { "label": "Insole production", "ref": "insole_assembly" },
+        { "label": "Cutting (pair)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing", "ref": "sewing_pair" },
+        { "label": "Stockfitting", "ref": "stockfitting_pair" },
+        { "label": "Cementing/gluing", "ref": "cementing_pair" },
+        { "label": "Lasting", "ref": "lasting_strobel_pair" },
+        { "label": "Delasting", "ref": "delasting_pair" }
       ]
     },
     "footwear_sandal_cemented": {
       "steps": [
-        "Cutting (pair)",
-        "Stockfitting",
-        "Cementing/gluing",
-        "Delasting"
+        { "label": "Cutting (pair)", "ref": "cutting_pair_mix" },
+        { "label": "Stockfitting", "ref": "stockfitting_pair" },
+        { "label": "Cementing/gluing", "ref": "cementing_pair" },
+        { "label": "Delasting", "ref": "delasting_pair" }
       ]
     }
   },
@@ -231,7 +600,7 @@
     "footwear_leather":            { "ref": "footwear_leather_cemented" },
     "footwear_sandal":             { "ref": "footwear_sandal_cemented" }
   },
-  
+
   "groups_order": {
     "apparel": [
       "pre_treatments",
@@ -252,7 +621,7 @@
       "manufacturing_losses_eol"
     ]
   },
-  
+
   "groups_regex": {
     "pre_treatments": "(Scouring|Carding|Combing|Hackling)",
     "yarn_production": "(Spinning|Filament)",
@@ -269,8 +638,8 @@
 
   "notes": [
     "Všechny názvy kroků jsou zarovnány na Process_name v processes_master pro bezchybný matching.",
-    "U obuvi se volí procesy v jednotkách 'p' (pair).",
+    "U obuvi se volí procesy v jednotkách 'pair'.",
     "Printed routy vkládají 'Screen printing' před finální 'Finishing'.",
-    "Flax (len) přidává 'Combing, flax' a používá celulózové barvení."
+    "Flax (len) přidává 'Combing, flax' a používá celulózové barvení (dye_batch_cellulosics)."
   ]
 }
