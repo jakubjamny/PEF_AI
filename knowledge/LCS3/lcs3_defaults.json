@@ -20,10 +20,10 @@
     ]
   },
   "distance_tokens": {
-  "DistanceF2C": 0,
-  "DistanceWarehouseLocal": 0,
-  "DistanceWarehouseEU": 0
-},
+    "DistanceF2C": 0,
+    "DistanceWarehouseLocal": 0,
+    "DistanceWarehouseEU": 0
+  },
   "global_parameters": {
     "scenario_mix": {
       "ShareF2C": 3.8,
@@ -44,12 +44,12 @@
       "passenger_car_volume_max_m3": 0.2,
       "shares": {
         "Passenger car (average)": 62.0,
-        "Van (lorry <1.2t, EURO 3)": 5.0,
+        "Van (lorry <7.5t, EURO 3)": 5.0,
         "No impact modelled (walking, cycling etc)": 33.0
       },
       "utilisation_ratio": {
-        "Van (lorry <1.2t, EURO 3)": 0.5,
-        "fallback_van_<7.5t_UR": 0.2
+        "Van (lorry <7.5t, EURO 3)": 0.5,
+        "fallback_van_<7.5t_UR": 0.5
       }
     },
     "volume_factor": 4,
@@ -57,7 +57,7 @@
       "Truck (>32t, EURO 4)": 0.64,
       "Train (average freight train)": 0.64,
       "Cargo plane": 0.50,
-      "Van (lorry <1.2t, EURO 3)": 0.50
+      "Van (lorry <7.5t, EURO 3)": 0.50
     },
     "plane_train_shares": {
       "SharePlaneF2C": 0.0,
@@ -125,7 +125,7 @@
       "origins": [
         {
           "origin": "Local",
-          "mode": "Van (lorry <1.2t, EURO 3)",
+          "mode": "Van (lorry <7.5t, EURO 3)",
           "distance_km": 250,
           "round_trip": true,
           "utilisation_ratio": 0.50,
@@ -137,7 +137,7 @@
       "origins": [
         {
           "origin": "Local",
-          "mode": "Van (lorry <1.2t, EURO 3)",
+          "mode": "Van (lorry <7.5t, EURO 3)",
           "distance_km": 250,
           "round_trip": true,
           "utilisation_ratio": 0.50,
@@ -350,7 +350,7 @@
       "origins": [
         {
           "origin": "Local",
-          "mode": "Van (lorry <1.2t, EURO 3)",
+          "mode": "Van (lorry <7.5t, EURO 3)",
           "distance_km": 250,
           "round_trip": true,
           "utilisation_ratio": 0.50,
@@ -362,7 +362,7 @@
       "origins": [
         {
           "origin": "Local",
-          "mode": "Van (lorry <1.2t, EURO 3)",
+          "mode": "Van (lorry <7.5t, EURO 3)",
           "distance_km": 250,
           "round_trip": true,
           "utilisation_ratio": 0.50,
@@ -374,7 +374,7 @@
       "origins": [
         {
           "origin": "Local",
-          "mode": "Van (lorry <1.2t, EURO 3)",
+          "mode": "Van (lorry <7.5t, EURO 3)",
           "distance_km": 250,
           "round_trip": true,
           "utilisation_ratio": 0.50,
@@ -404,7 +404,7 @@
         },
         {
           "origin": "Local",
-          "mode": "Van (lorry <1.2t, EURO 3)",
+          "mode": "Van (lorry <7.5t, EURO 3)",
           "distance_km": 5,
           "utilisation_ratio": 0.50,
           "share_mass_percent": 5
@@ -431,7 +431,7 @@
         },
         {
           "origin": "Local",
-          "mode": "Van (lorry <1.2t, EURO 3)",
+          "mode": "Van (lorry <7.5t, EURO 3)",
           "distance_km": 5,
           "utilisation_ratio": 0.50,
           "share_mass_percent": 5
@@ -458,7 +458,7 @@
         },
         {
           "origin": "Local",
-          "mode": "Van (lorry <1.2t, EURO 3)",
+          "mode": "Van (lorry <7.5t, EURO 3)",
           "distance_km": 5,
           "utilisation_ratio": 0.50,
           "share_mass_percent": 5
@@ -522,5 +522,5 @@
   "weight_volume_rules_per_leg": {
     "volume_limited_legs": ["[4b1]", "[4b2]", "[4b3]"],
     "weight_limited_legs": ["[1a1]", "[1a2]", "[1a3]", "[2a1]", "[2a2]", "[3a]", "[3b1]", "[3b2]", "[3b3]", "[4a]"]
-    }
+  }
 }
