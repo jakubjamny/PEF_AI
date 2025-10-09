@@ -6,7 +6,13 @@
     "B_factor_energy_recovery": 0.0,
     "R1_default_recycled_content": 0.0,
     "quality_ratio_cap_QS_over_Qp": 1.0,
-    "A_factor_reference": "Defined by pathway/material per Table 21 of PEFCR; select per material when applying."
+    "A_factor_reference": "Defined by pathway/material per PEFCR. See A_factor_selection_rules.",
+    "A_factor_selection_rules": {
+      "textile_to_textile": 0.8,
+      "other_feedstock": 0.5,
+      "downcycling": 0.5
+     },
+    "A_fallback_default": 0.5
   },
   "end_of_life": {
     "general_notes": {
