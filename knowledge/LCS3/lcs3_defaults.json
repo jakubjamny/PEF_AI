@@ -12,10 +12,10 @@
     },
     "notes": [
       "Scénář pro malé/střední značky v ČR: výroba/sklad/expedice z jednoho místa; žádný EU DC, žádné letadlo/loď.",
-      "Scenario mix: ClassicECom 80 %, Retail 20 %, F2C 0 %.",
+      "Scenario mix: ClassicECom 70 %, Retail 30 %, F2C 0 %.",
       "ClassicECom — last-mile: kurýrní dodávka (<7.5 t), vzdálenost řídí token DistanceLastMileCZ (jednosměrně; engine provede round-trip).",
-      "Retail — consumer travel podle Eq.30: osobní auto (alokace podle objemu) + chůze/kolo (No impact); default 3 km total.",
-      "Skladování: DC 1 týden; Retail store 0 týdnů (prodej stejný den) — uprav podle reality."
+      "Retail — consumer travel podle Eq.30: osobní auto (alokace podle objemu) + chůze/kolo (No impact); default 5 km total.",
+      "Skladování: DC 1 týden; Retail store 1 týden — uprav podle reality."
     ]
   },
   "distance_tokens": {
@@ -27,8 +27,8 @@
   "global_parameters": {
     "scenario_mix": {
       "ShareF2C": 0,
-      "ShareClassicECom": 80,
-      "ShareRetail": 20
+      "ShareClassicECom": 70,
+      "ShareRetail": 30
     },
     "returns_and_losses": {
       "ReturnRateClassicECom": 28.0,
@@ -39,7 +39,7 @@
       "InventoryGlutPOS_default": 0.0
     },
     "consumer_travel": {
-      "distance_total_km": 3,
+      "distance_total_km": 5,
       "allocation": "by_volume",
       "passenger_car_volume_max_m3": 0.2,
       "shares": {
@@ -69,15 +69,15 @@
   },
   "leg_shares_defaults": {
     "ClassicECom": {
-      "[3b1] Local DC -> final client (sales)": 95,
-      "[3b2] Final client -> local DC (returns)": 3,
-      "[3b3] Local DC -> final client (restocked returns)": 2
+      "[3b1] Local DC -> final client (sales)": 70.4,
+      "[3b2] Final client -> local DC (returns)": 19.7,
+      "[3b3] Local DC -> final client (restocked returns)": 9.9
     },
     "Retail": {
       "[4a] EU DC -> retail/stores": 0,
-      "[4b1] Retail/stores -> final client (sales)": 95,
-      "[4b2] Final client -> retail/stores (returns)": 3,
-      "[4b3] Retail/stores -> final client (restocked returns)": 2
+      "[4b1] Retail/stores -> final client (sales)": 90.5,
+      "[4b2] Final client -> retail/stores (returns)": 6.3,
+      "[4b3] Retail/stores -> final client (restocked returns)": 3.2
     },
     "F2C": {
       "[1a1] Factory -> final client": 0,
@@ -124,7 +124,7 @@
     },
     "[4b1] Retail/stores -> final client (sales)": {
       "origins": [
-        { "origin": "Local", "mode": "Passenger car (average)", "distance_km": 3, "utilisation_ratio": null, "share_mass_percent": 30 },
+        { "origin": "Local", "mode": "Passenger car (average)", "distance_km": 5, "utilisation_ratio": null, "share_mass_percent": 30 },
         { "origin": "Local", "mode": "No impact modelled (walking, cycling etc)", "distance_km": 0, "utilisation_ratio": null, "share_mass_percent": 70 }
       ],
       "allocation_method": "by_volume",
@@ -132,7 +132,7 @@
     },
     "[4b2] Final client -> retail/stores (returns)": {
       "origins": [
-        { "origin": "Local", "mode": "Passenger car (average)", "distance_km": 3, "utilisation_ratio": null, "share_mass_percent": 30 },
+        { "origin": "Local", "mode": "Passenger car (average)", "distance_km": 5, "utilisation_ratio": null, "share_mass_percent": 30 },
         { "origin": "Local", "mode": "No impact modelled (walking, cycling etc)", "distance_km": 0, "utilisation_ratio": null, "share_mass_percent": 70 }
       ],
       "allocation_method": "by_volume",
@@ -140,7 +140,7 @@
     },
     "[4b3] Retail/stores -> final client (restocked returns)": {
       "origins": [
-        { "origin": "Local", "mode": "Passenger car (average)", "distance_km": 3, "utilisation_ratio": null, "share_mass_percent": 30 },
+        { "origin": "Local", "mode": "Passenger car (average)", "distance_km": 5, "utilisation_ratio": null, "share_mass_percent": 30 },
         { "origin": "Local", "mode": "No impact modelled (walking, cycling etc)", "distance_km": 0, "utilisation_ratio": null, "share_mass_percent": 70 }
       ],
       "allocation_method": "by_volume",
@@ -157,7 +157,7 @@
       "shelf_coverage_percent": 50.0
     },
     "retail_store": {
-      "default_storage_time_weeks": 0,
+      "default_storage_time_weeks": 1.0,
       "electricity_kwh_per_m2_yr": { "total": 150.0 },
       "volume_capacity_m3": { "total": 2000 },
       "shelf_height_m": 2.0,
