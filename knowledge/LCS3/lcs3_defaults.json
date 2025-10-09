@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "name": "LCS3 defaults — CZ e-shop only (PEFCR A&F v3.1)",
+    "name": "LCS3 defaults — CZ e-shop + retail (PEFCR A&F v3.1)",
     "source": "A&FW_PEFCR_v3.1.pdf (Eq.29–31; Tables 33, 37, 38)",
     "version": "v3.1",
     "units": {
@@ -12,10 +12,10 @@
     },
     "notes": [
       "Scénář pro malé/střední značky v ČR: výroba/sklad/expedice z jednoho místa; žádný EU DC, žádné letadlo/loď.",
-      "ClassicECom je 100 %; Retail a F2C jsou vypnuté.",
-      "Last-mile: kurýrní dodávka (<7.5 t), vzdálenost řídí token DistanceLastMileCZ (round-trip).",
-      "Consumer travel se v tomto scénáři nevyužívá (Retail je 0 %).",
-      "Skladování: 1 týden v lokálním skladu (DC); Retail store = 0 týdnů."
+      "Scenario mix: ClassicECom 80 %, Retail 20 %, F2C 0 %.",
+      "ClassicECom — last-mile: kurýrní dodávka (<7.5 t), vzdálenost řídí token DistanceLastMileCZ (jednosměrně; engine provede round-trip).",
+      "Retail — consumer travel podle Eq.30: osobní auto (alokace podle objemu) + chůze/kolo (No impact); default 3 km total.",
+      "Skladování: DC 1 týden; Retail store 0 týdnů (prodej stejný den) — uprav podle reality."
     ]
   },
   "distance_tokens": {
@@ -75,9 +75,9 @@
     },
     "Retail": {
       "[4a] EU DC -> retail/stores": 0,
-      "[4b1] Retail/stores -> final client (sales)": 0,
-      "[4b2] Final client -> retail/stores (returns)": 0,
-      "[4b3] Retail/stores -> final client (restocked returns)": 0
+      "[4b1] Retail/stores -> final client (sales)": 95,
+      "[4b2] Final client -> retail/stores (returns)": 3,
+      "[4b3] Retail/stores -> final client (restocked returns)": 2
     },
     "F2C": {
       "[1a1] Factory -> final client": 0,
@@ -121,6 +121,30 @@
           "share_mass_percent": 100
         }
       ]
+    },
+    "[4b1] Retail/stores -> final client (sales)": {
+      "origins": [
+        { "origin": "Local", "mode": "Passenger car (average)", "distance_km": 3, "utilisation_ratio": null, "share_mass_percent": 30 },
+        { "origin": "Local", "mode": "No impact modelled (walking, cycling etc)", "distance_km": 0, "utilisation_ratio": null, "share_mass_percent": 70 }
+      ],
+      "allocation_method": "by_volume",
+      "passenger_car_volume_max_m3": 0.2
+    },
+    "[4b2] Final client -> retail/stores (returns)": {
+      "origins": [
+        { "origin": "Local", "mode": "Passenger car (average)", "distance_km": 3, "utilisation_ratio": null, "share_mass_percent": 30 },
+        { "origin": "Local", "mode": "No impact modelled (walking, cycling etc)", "distance_km": 0, "utilisation_ratio": null, "share_mass_percent": 70 }
+      ],
+      "allocation_method": "by_volume",
+      "passenger_car_volume_max_m3": 0.2
+    },
+    "[4b3] Retail/stores -> final client (restocked returns)": {
+      "origins": [
+        { "origin": "Local", "mode": "Passenger car (average)", "distance_km": 3, "utilisation_ratio": null, "share_mass_percent": 30 },
+        { "origin": "Local", "mode": "No impact modelled (walking, cycling etc)", "distance_km": 0, "utilisation_ratio": null, "share_mass_percent": 70 }
+      ],
+      "allocation_method": "by_volume",
+      "passenger_car_volume_max_m3": 0.2
     }
   },
   "storage_defaults": {
@@ -160,7 +184,7 @@
     }
   },
   "weight_volume_rules_per_leg": {
-    "volume_limited_legs": [],
+    "volume_limited_legs": ["[4b1]", "[4b2]", "[4b3]"],
     "weight_limited_legs": ["[3b1]", "[3b2]", "[3b3]"]
   }
 }
