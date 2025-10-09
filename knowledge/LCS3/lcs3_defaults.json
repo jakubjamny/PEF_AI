@@ -1,526 +1,533 @@
 {
-  "metadata": {
-    "name": "LCS3 defaults for distribution (PEFCR Apparel & Footwear v3.1)",
-    "source": "A&FW_PEFCR_v3.1.pdf (Sections 6.3.1–6.3.4; Tables 33, 35, 37, 38; Eq.29–31)",
-    "version": "v3.1",
-    "units": {
-      "distance": "km",
-      "share": "percent",
-      "volume": "m3",
-      "energy": "kWh per m2 per year",
-      "time": "weeks"
-    },
-    "notes": [
-      "Shares per leg dle Table 33 (jen skutečné transportní kroky; ‘net’ a EoL toky se v dopravě nepočítají).",
-      "Vzdálenosti, módy a utilisation ratios dle Table 37.",
-      "Consumer travel: 5 km celkem, alokace podle objemu; pro osobní auto VolumeMax = 0.2 m3 (Eq. 30).",
-      "Skladování: výpočet dle Eq. 31 a Table 38, VolumeFactor = 4, ShelfHeight = 2 m, ShelfCoverage = 50 %.",
-      "Default distrib. ztráty (DistribLoss) do POS = 1 %.",
-      "Elektrická energie: podle hierarchie PEF použij reziduální grid mix."
-    ]
+  "version": "EF 3.1",
+  "scope": "LCS3 (Distribution) + related packaging EoL & utilities",
+  "indicators": {
+    "CC": "Climate change, kg CO2e per unit",
+    "WU": "Water use, m3 world-eq per unit"
   },
-  "distance_tokens": {
-    "DistanceF2C": 0,
-    "DistanceWarehouseLocal": 0,
-    "DistanceWarehouseEU": 0
-  },
-  "global_parameters": {
-    "scenario_mix": {
-      "ShareF2C": 3.8,
-      "ShareClassicECom": 34.2,
-      "ShareRetail": 62.0
-    },
-    "returns_and_losses": {
-      "ReturnRateClassicECom": 28.0,
-      "ReturnRateRetail": 7.0,
-      "RestockRate": 50.0,
-      "DistribLoss": 1.0,
-      "InventoryGlutDC_default": 0.0,
-      "InventoryGlutPOS_default": 0.0
-    },
-    "consumer_travel": {
-      "distance_total_km": 5,
-      "allocation": "by_volume",
-      "passenger_car_volume_max_m3": 0.2,
-      "shares": {
-        "Passenger car (average)": 62.0,
-        "Van (lorry <7.5t, EURO 3)": 5.0,
-        "No impact modelled (walking, cycling etc)": 33.0
+  "notes": "Tailored for SME/local brands: excludes air, sea and barge transport from the default dataset pack. You can still add them later if needed.",
+  "datasets": {
+    "e1ded83e-a02f-42cd-92f9-81cce21a3a98": {
+      "process_name": "Transport, truck (32t, euro4)",
+      "dataset_name": "Articulated lorry transport, Euro 4, Total weight >32 t {EU+EFTA+UK} | diesel driven, Euro 4, cargo | consumption mix, to consumer | more than 32t gross weight / 24,7t payload capacity | LCI result",
+      "region": "Europe",
+      "unit": "kgkm",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 6.620360908088095e-05,
+        "WU_m3eq_per_unit": 6.00871835445984e-06
       },
-      "utilisation_ratio": {
-        "Van (lorry <7.5t, EURO 3)": 0.5,
-        "fallback_van_<7.5t_UR": 0.5
+      "dqr": {
+        "TeR": 1.0,
+        "GR": 1.0,
+        "TiR": 1.0,
+        "P": 2.0,
+        "PEF_DQR": 1.25
       }
     },
-    "volume_factor": 4,
-    "utilisation_ratio_defaults": {
-      "Truck (>32t, EURO 4)": 0.64,
-      "Train (average freight train)": 0.64,
-      "Cargo plane": 0.50,
-      "Van (lorry <7.5t, EURO 3)": 0.50
-    },
-    "plane_train_shares": {
-      "SharePlaneF2C": 0.0,
-      "SharePlaneWarehouseEU": 0.0,
-      "ShareTrainWarehouseEU": 0.0,
-      "SharePlaneWarehouseLocal": 0.0,
-      "ShareTrainWarehouseLocal": 0.0
-    }
-  },
-  "leg_shares_defaults": {
-    "F2C": {
-      "[1a1] Factory -> final client": 4.4,
-      "[1a2] Final client -> local DC (returns)": 1.2,
-      "[1a3] Local DC -> final client (restocked returns)": 0.6
-    },
-    "ClassicECom": {
-      "[2a1] Factory -> EU DC": { "formula": "[3a] / (1 - InventoryGlutDC)" },
-      "[3a] EU DC -> local DC": 40.2,
-      "[3b1] Local DC -> final client (sales)": 39.8,
-      "[3b2] Final client -> local DC (returns)": 11.1,
-      "[3b3] Local DC -> final client (restocked returns)": 5.6
-    },
-    "Retail": {
-      "[2a2] Factory -> EU DC": { "formula": "[4a] / (1 - InventoryGlutDC)" },
-      "[4a] EU DC -> retail/stores": 64.9,
-      "[4b1] Retail/stores -> final client (sales)": 64.2,
-      "[4b2] Final client -> retail/stores (returns)": 4.5,
-      "[4b3] Retail/stores -> final client (restocked returns)": 2.2
-    }
-  },
-  "transport_parameters": {
-    "[1a1] Factory -> final client (F2C)": {
-      "origins": [
-        {
-          "origin": "Local",
-          "mode": "Truck (>32t, EURO 4)",
-          "distance_km": 1200,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "25 * (100 - SharePlaneF2C) / 100"
-        },
-        {
-          "origin": "Intracontinental",
-          "mode": "Truck (>32t, EURO 4)",
-          "distance_km": 3500,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "75 * (100 - SharePlaneF2C) / 100"
-        },
-        {
-          "origin": "International_plane_prehaul",
-          "mode": "Truck (>32t, EURO 4)",
-          "distance_km": 1000,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "SharePlaneF2C"
-        },
-        {
-          "origin": "International_plane_main",
-          "mode": "Cargo plane",
-          "distance_km": "DistanceF2C",
-          "utilisation_ratio": 0.50,
-          "share_mass_percent": "SharePlaneF2C"
-        }
-      ]
-    },
-    "[1a2] Final client -> local DC (returns)": {
-      "origins": [
-        {
-          "origin": "Local",
-          "mode": "Van (lorry <7.5t, EURO 3)",
-          "distance_km": 250,
-          "round_trip": true,
-          "utilisation_ratio": 0.50,
-          "share_mass_percent": 100
-        }
-      ]
-    },
-    "[1a3] Local DC -> final client (restocked F2C returns)": {
-      "origins": [
-        {
-          "origin": "Local",
-          "mode": "Van (lorry <7.5t, EURO 3)",
-          "distance_km": 250,
-          "round_trip": true,
-          "utilisation_ratio": 0.50,
-          "share_mass_percent": 100
-        }
-      ]
-    },
-    "[2a1] Factory -> EU DC (Classic e-com)": {
-      "origins": [
-        {
-          "origin": "Local",
-          "mode": "Truck (>32t, EURO 4)",
-          "distance_km": 1200,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "5.6 * (100 - SharePlaneWarehouseEU) / 100"
-        },
-        {
-          "origin": "Intracontinental_barge_prehaul",
-          "mode": "Truck (>32t, EURO 4)",
-          "distance_km": 2500,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "3.3 * (100 - SharePlaneWarehouseEU) / 100"
-        },
-        {
-          "origin": "Intracontinental_barge_main",
-          "mode": "Ship (barge)",
-          "distance_km": 800,
-          "utilisation_ratio": null,
-          "share_mass_percent": "3.3 * (100 - SharePlaneWarehouseEU) / 100"
-        },
-        {
-          "origin": "Intracontinental_train_prehaul",
-          "mode": "Truck (>32t, EURO 4)",
-          "distance_km": 800,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "15.6 * (100 - SharePlaneWarehouseEU) / 100"
-        },
-        {
-          "origin": "Intracontinental_train_main",
-          "mode": "Train (average freight train)",
-          "distance_km": 2500,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "15.6 * (100 - SharePlaneWarehouseEU) / 100"
-        },
-        {
-          "origin": "International_ship_prehaul",
-          "mode": "Truck (>32t, EURO 4)",
-          "distance_km": 1000,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "73.3 * (100 - SharePlaneWarehouseEU) / 100"
-        },
-        {
-          "origin": "International_ship_main",
-          "mode": "Ship (transoceanic container)",
-          "distance_km": 18000,
-          "utilisation_ratio": null,
-          "share_mass_percent": "73.3 * (100 - SharePlaneWarehouseEU) / 100"
-        },
-        {
-          "origin": "International_plane_prehaul",
-          "mode": "Truck (>32t, EURO 4)",
-          "distance_km": 1000,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "SharePlaneWarehouseEU"
-        },
-        {
-          "origin": "International_plane_main",
-          "mode": "Cargo plane",
-          "distance_km": "DistanceWarehouseEU",
-          "utilisation_ratio": 0.50,
-          "share_mass_percent": "SharePlaneWarehouseEU"
-        },
-        {
-          "origin": "International_train_prehaul",
-          "mode": "Truck (>32t, EURO 4)",
-          "distance_km": 1000,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "2.2 * (100 - SharePlaneWarehouseEU) / 100"
-        },
-        {
-          "origin": "International_train_main",
-          "mode": "Train (average freight train)",
-          "distance_km": 10000,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "2.2 * (100 - SharePlaneWarehouseEU) / 100"
-        }
-      ]
-    },
-    "[2a2] Factory -> EU DC (Retail)": {
-      "origins": [
-        {
-          "origin": "Local",
-          "mode": "Truck (>32t, EURO 4)",
-          "distance_km": 1200,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "5.6 * (100 - SharePlaneWarehouseEU) / 100"
-        },
-        {
-          "origin": "Intracontinental_barge_prehaul",
-          "mode": "Truck (>32t, EURO 4)",
-          "distance_km": 2500,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "3.3 * (100 - SharePlaneWarehouseEU) / 100"
-        },
-        {
-          "origin": "Intracontinental_barge_main",
-          "mode": "Ship (barge)",
-          "distance_km": 800,
-          "utilisation_ratio": null,
-          "share_mass_percent": "3.3 * (100 - SharePlaneWarehouseEU) / 100"
-        },
-        {
-          "origin": "Intracontinental_train_prehaul",
-          "mode": "Truck (>32t, EURO 4)",
-          "distance_km": 800,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "15.6 * (100 - SharePlaneWarehouseEU) / 100"
-        },
-        {
-          "origin": "Intracontinental_train_main",
-          "mode": "Train (average freight train)",
-          "distance_km": 2500,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "15.6 * (100 - SharePlaneWarehouseEU) / 100"
-        },
-        {
-          "origin": "International_ship_prehaul",
-          "mode": "Truck (>32t, EURO 4)",
-          "distance_km": 1000,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "73.3 * (100 - SharePlaneWarehouseEU) / 100"
-        },
-        {
-          "origin": "International_ship_main",
-          "mode": "Ship (transoceanic container)",
-          "distance_km": 18000,
-          "utilisation_ratio": null,
-          "share_mass_percent": "73.3 * (100 - SharePlaneWarehouseEU) / 100"
-        },
-        {
-          "origin": "International_plane_prehaul",
-          "mode": "Truck (>32t, EURO 4)",
-          "distance_km": 1000,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "SharePlaneWarehouseEU"
-        },
-        {
-          "origin": "International_plane_main",
-          "mode": "Cargo plane",
-          "distance_km": "DistanceWarehouseEU",
-          "utilisation_ratio": 0.50,
-          "share_mass_percent": "SharePlaneWarehouseEU"
-        },
-        {
-          "origin": "International_train_prehaul",
-          "mode": "Truck (>32t, EURO 4)",
-          "distance_km": 1000,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "2.2 * (100 - SharePlaneWarehouseEU) / 100"
-        },
-        {
-          "origin": "International_train_main",
-          "mode": "Train (average freight train)",
-          "distance_km": 10000,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "2.2 * (100 - SharePlaneWarehouseEU) / 100"
-        }
-      ]
-    },
-    "[3a] EU DC -> local DC (Classic e-com)": {
-      "origins": [
-        {
-          "origin": "Intracontinental_plane_prehaul",
-          "mode": "Truck (>32t, EURO 4)",
-          "distance_km": 500,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "SharePlaneWarehouseLocal"
-        },
-        {
-          "origin": "Intracontinental_plane_main",
-          "mode": "Cargo plane",
-          "distance_km": "DistanceWarehouseLocal",
-          "utilisation_ratio": 0.50,
-          "share_mass_percent": "SharePlaneWarehouseLocal"
-        },
-        {
-          "origin": "Intracontinental_train_prehaul",
-          "mode": "Truck (>32t, EURO 4)",
-          "distance_km": 1000,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "74 * (100 - SharePlaneWarehouseLocal) / 100"
-        },
-        {
-          "origin": "Intracontinental_train_main",
-          "mode": "Train (average freight train)",
-          "distance_km": 3000,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "74 * (100 - SharePlaneWarehouseLocal) / 100"
-        },
-        {
-          "origin": "Intracontinental_truck_only",
-          "mode": "Truck (>32t, EURO 4)",
-          "distance_km": 4000,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": "26 * (100 - SharePlaneWarehouseLocal) / 100"
-        }
-      ]
-    },
-    "[3b1] Local DC -> final client (sales)": {
-      "origins": [
-        {
-          "origin": "Local",
-          "mode": "Van (lorry <7.5t, EURO 3)",
-          "distance_km": 250,
-          "round_trip": true,
-          "utilisation_ratio": 0.50,
-          "share_mass_percent": 100
-        }
-      ]
-    },
-    "[3b2] Final client -> local DC (returns)": {
-      "origins": [
-        {
-          "origin": "Local",
-          "mode": "Van (lorry <7.5t, EURO 3)",
-          "distance_km": 250,
-          "round_trip": true,
-          "utilisation_ratio": 0.50,
-          "share_mass_percent": 100
-        }
-      ]
-    },
-    "[3b3] Local DC -> final client (restocked returns)": {
-      "origins": [
-        {
-          "origin": "Local",
-          "mode": "Van (lorry <7.5t, EURO 3)",
-          "distance_km": 250,
-          "round_trip": true,
-          "utilisation_ratio": 0.50,
-          "share_mass_percent": 100
-        }
-      ]
-    },
-    "[4a] EU DC -> retail/stores": {
-      "origins": [
-        {
-          "origin": "Local",
-          "mode": "Truck (>32t, EURO 4)",
-          "distance_km": 1200,
-          "utilisation_ratio": 0.64,
-          "share_mass_percent": 100
-        }
-      ]
-    },
-    "[4b1] Retail/stores -> final client (sales)": {
-      "origins": [
-        {
-          "origin": "Local",
-          "mode": "Passenger car (average)",
-          "distance_km": 5,
-          "utilisation_ratio": null,
-          "share_mass_percent": 62
-        },
-        {
-          "origin": "Local",
-          "mode": "Van (lorry <7.5t, EURO 3)",
-          "distance_km": 5,
-          "utilisation_ratio": 0.50,
-          "share_mass_percent": 5
-        },
-        {
-          "origin": "Local",
-          "mode": "No impact modelled (walking, cycling etc)",
-          "distance_km": 0,
-          "utilisation_ratio": null,
-          "share_mass_percent": 33
-        }
-      ],
-      "allocation_method": "by_volume",
-      "passenger_car_volume_max_m3": 0.2
-    },
-    "[4b2] Final client -> retail/stores (returns)": {
-      "origins": [
-        {
-          "origin": "Local",
-          "mode": "Passenger car (average)",
-          "distance_km": 5,
-          "utilisation_ratio": null,
-          "share_mass_percent": 62
-        },
-        {
-          "origin": "Local",
-          "mode": "Van (lorry <7.5t, EURO 3)",
-          "distance_km": 5,
-          "utilisation_ratio": 0.50,
-          "share_mass_percent": 5
-        },
-        {
-          "origin": "Local",
-          "mode": "No impact modelled (walking, cycling etc)",
-          "distance_km": 0,
-          "utilisation_ratio": null,
-          "share_mass_percent": 33
-        }
-      ],
-      "allocation_method": "by_volume",
-      "passenger_car_volume_max_m3": 0.2
-    },
-    "[4b3] Retail/stores -> final client (restocked returns)": {
-      "origins": [
-        {
-          "origin": "Local",
-          "mode": "Passenger car (average)",
-          "distance_km": 5,
-          "utilisation_ratio": null,
-          "share_mass_percent": 62
-        },
-        {
-          "origin": "Local",
-          "mode": "Van (lorry <7.5t, EURO 3)",
-          "distance_km": 5,
-          "utilisation_ratio": 0.50,
-          "share_mass_percent": 5
-        },
-        {
-          "origin": "Local",
-          "mode": "No impact modelled (walking, cycling etc)",
-          "distance_km": 0,
-          "utilisation_ratio": null,
-          "share_mass_percent": 33
-        }
-      ],
-      "allocation_method": "by_volume",
-      "passenger_car_volume_max_m3": 0.2
-    }
-  },
-  "storage_defaults": {
-    "warehouse_dc": {
-      "gas_MJ_per_m2_yr": 360,
-      "default_storage_time_weeks": 3.5,
-      "electricity_kwh_per_m2_yr": {
-        "total": 30.0
+    "8c6dc5a6-02b7-4356-b924-988059f991c2": {
+      "process_name": "Transport, lorry <7.5",
+      "dataset_name": "Articulated lorry transport, Euro 3, Total weight <7.5 t {EU+EFTA+UK} | diesel driven, Euro 3, cargo | consumption mix, to consumer | up to 7,5t gross weight / 3,3t payload capacity | LCI result",
+      "region": "Europe",
+      "unit": "kgkm",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 0.00019456457993685802,
+        "WU_m3eq_per_unit": 1.75662833156016e-05
       },
-      "volume_capacity_m3": {
-        "total": 48000
-      },
-      "shelf_height_m": 2.0,
-      "shelf_coverage_percent": 50.0
+      "dqr": {
+        "TeR": 1.0,
+        "GR": 1.0,
+        "TiR": 1.0,
+        "P": 2.0,
+        "PEF_DQR": 1.25
+      }
     },
-    "retail_store": {
-      "default_storage_time_weeks": 3.5,
-      "electricity_kwh_per_m2_yr": {
-        "total": 150.0
+    "f28bff05-7e79-46b8-8ac0-7c4d80f0d3fa": {
+      "process_name": "Transportation, train",
+      "dataset_name": "Freight train, average {EU+EFTA+UK} | mix of electricity driven and diesel driven, cargo | consumption mix, to consumer | average train, gross tonne weight 1000t / 726t payload capacity | LCI result",
+      "region": "Europe",
+      "unit": "kgkm",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 2.6625856685575635e-05,
+        "WU_m3eq_per_unit": 6.07326426765065e-06
       },
-      "volume_capacity_m3": {
-        "total": 2000
+      "dqr": {
+        "TeR": 3.0,
+        "GR": 3.0,
+        "TiR": 2.0,
+        "P": 2.0,
+        "PEF_DQR": 2.5
+      }
+    },
+    "1ead35dd-fc71-4b0c-9410-7e39da95c7dc": {
+      "process_name": "Passenger car",
+      "dataset_name": "Passenger car, average {GLO} | technology mix, gasoline and diesel driven, Euro 3-5, passenger car | consumption mix, to consumer | engine size from 1,4l up to >2l | LCI result",
+      "region": "GLO",
+      "unit": "m",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 0.00021332220075717326,
+        "WU_m3eq_per_unit": 2.31597260972102e-05
       },
-      "shelf_height_m": 2.0,
-      "shelf_coverage_percent": 50.0
+      "dqr": {
+        "TeR": 3.0,
+        "GR": 3.0,
+        "TiR": 3.0,
+        "P": 3.0,
+        "PEF_DQR": 3.0
+      }
     },
-    "digital_infrastructure_kwh_per_order": 0.03
-  },
-  "product_volume_defaults_m3": {
-    "apparel": {
-      "RP1_T-shirt": 0.0018,
-      "RP2_Shirt_blouse": 0.0060,
-      "RP3_Sweater_jumpers_cardigans": 0.0102,
-      "RP4_Jacket_coat": 0.0150,
-      "RP5_Trousers_shorts": 0.0040,
-      "RP6_Dress_skirt": 0.0070,
-      "RP7_Underwear_socks_pantyhose": 0.0006,
-      "RP8_Accessories_scarves_gloves_hats": 0.0012
+    "34960d4d-af62-43a0-aa76-adc5fcf57246": {
+      "process_name": "Electricity, EU grid mix",
+      "dataset_name": "Electricity grid mix 1kV-60kV {EU+EFTA+UK} | technology mix | consumption mix, to consumer | 1kV - 60kV | LCI result",
+      "region": "Europe",
+      "unit": "MJ",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 0.11635819273923369,
+        "WU_m3eq_per_unit": 0.03972746152405583
+      },
+      "dqr": {
+        "TeR": 1.0,
+        "GR": 1.0,
+        "TiR": 1.0,
+        "P": 2.0,
+        "PEF_DQR": 1.25
+      }
     },
-    "footwear": {
-      "FS1_Sneakers_sports_shoes": 0.0180,
-      "FS2_Sandals_flipflops": 0.0048,
-      "FS3_Boots": 0.0240,
-      "FS4_Formal_shoes": 0.0180
+    "81675341-f1af-44b0-81d3-d108caef5c28": {
+      "process_name": "Electricity (NG) EU grid mix",
+      "dataset_name": "Thermal energy from natural gas {EU+EFTA+UK} | technology mix regarding firing and flue gas cleaning | production mix, at heat plant | MJ, 100% efficiency | LCI result",
+      "region": "Europe",
+      "unit": "MJ",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 0.0689568416862937,
+        "WU_m3eq_per_unit": 0.00044477469186715
+      },
+      "dqr": {
+        "TeR": 1.0,
+        "GR": 1.0,
+        "TiR": 1.0,
+        "P": 2.0,
+        "PEF_DQR": 1.25
+      }
+    },
+    "8d21c6d3-cc85-49c4-b275-21827ce193b7": {
+      "process_name": "Electricity conversion medium to low voltage",
+      "dataset_name": "Conversion from electricity medium voltage to electricity low voltage {GLO} | Transformation of medium voltage electricity to low voltage | Consumption mix, to consumer | grid losses, from 0,54% to 18,18% see general comments | Unit process, single operation",
+      "region": "Europe",
+      "unit": "MJ",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 0.0,
+        "WU_m3eq_per_unit": 0.0
+      },
+      "dqr": {
+        "TeR": 1.0,
+        "GR": 1.0,
+        "TiR": 1.0,
+        "P": 2.0,
+        "PEF_DQR": 1.25
+      }
+    },
+    "8fb75312-431d-42f6-9a4f-22fa886f7fe3": {
+      "process_name": "Electricity, EU grid mix",
+      "dataset_name": "Residual grid mix {EU+EFTA+UK} | technology mix | consumption mix, to consumer | 1kV - 60kV | LCI result",
+      "region": "Europe",
+      "unit": "MJ",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 0.13420172051811916,
+        "WU_m3eq_per_unit": 0.03006984535557861
+      },
+      "dqr": {
+        "TeR": 1.0,
+        "GR": 1.0,
+        "TiR": 1.0,
+        "P": 2.0,
+        "PEF_DQR": 1.25
+      }
+    },
+    "95200bb4-08e0-5004-a12f-44358690da74": {
+      "process_name": "Processing for recycling, insulation",
+      "dataset_name": "Recycling {GLO} | recycling of textile | production mix, at plant | recycling of 1kg of textile | LCI result",
+      "region": "Europe",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 0.3029194189700264,
+        "WU_m3eq_per_unit": 0.09874481730678966
+      },
+      "dqr": {
+        "TeR": 1.0,
+        "GR": 1.66,
+        "TiR": 1.0,
+        "P": 2.0,
+        "PEF_DQR": 1.42
+      }
+    },
+    "7aeb5a00-122e-4bbf-9abd-ccf0e7510fc3": {
+      "process_name": "Virgin mineral wool",
+      "dataset_name": "Stone wool {GLO} | technology mix | production mix, at plant | LCI result",
+      "region": "Europe",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 0.9106994166121958,
+        "WU_m3eq_per_unit": 0.102777784475848
+      },
+      "dqr": {
+        "TeR": 2.0,
+        "GR": 3.0,
+        "TiR": 3.0,
+        "P": 2.0,
+        "PEF_DQR": 2.5
+      }
+    },
+    "f40ffb46-4dce-4df0-b2e0-afd1032e8801": {
+      "process_name": "Lorry transport, RoW",
+      "dataset_name": "Articulated lorry transport, Total weight 28-32 t, mix Euro 0-5 {EU+EFTA+UK} | diesel driven, Euro 0 - 5 mix, cargo | consumption mix, to consumer | 28 - 32t gross weight / 22t payload capacity | LCI result",
+      "region": "Europe",
+      "unit": "kgkm",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 7.461976710490276e-05,
+        "WU_m3eq_per_unit": 6.77289147576249e-06
+      },
+      "dqr": {
+        "TeR": 1.0,
+        "GR": 3.0,
+        "TiR": 1.0,
+        "P": 2.0,
+        "PEF_DQR": 1.75
+      }
+    },
+    "36c4a273-6e29-487d-9cd8-74c52578846b": {
+      "process_name": "Processing for recycling, wipers",
+      "dataset_name": "Recycling, downcycling {GLO} | collection, sorting, transport, washing, granulation, pelletization | production mix, at plant | LCI result",
+      "region": "Europe",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 0.16991560674580367,
+        "WU_m3eq_per_unit": -0.765449512887525
+      },
+      "dqr": {
+        "TeR": 3.0,
+        "GR": 3.0,
+        "TiR": 2.0,
+        "P": 2.0,
+        "PEF_DQR": 2.5
+      }
+    },
+    "7e851603-761f-4f7c-b5c9-145d0a703a44": {
+      "process_name": "Landfill of textiles",
+      "dataset_name": "Landfill of textile {EU+EFTA+UK} | landfill including leachate treatment and with transport without collection and pre-treatment | production mix (region specific sites), at landfill site | The carbon and water content are respectively of 40%C and and 12% Water (in weight %) | LCI result",
+      "region": "Europe",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 1.028936135585006,
+        "WU_m3eq_per_unit": -0.00693180470173697
+      },
+      "dqr": {
+        "TeR": 2.0,
+        "GR": 2.0,
+        "TiR": 2.0,
+        "P": 2.0,
+        "PEF_DQR": 2.0
+      }
+    },
+    "15eab50d-177a-46a6-815f-805200411487": {
+      "process_name": "Incineration of polyurethane",
+      "dataset_name": "Waste incineration of PU {EU+EFTA+UK} | waste-to-energy plant with dry flue gas treatment, including transport and pre-treatment | production mix, at consumer | polyurethane waste | LCI result",
+      "region": "Europe",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 1.2196863453455897,
+        "WU_m3eq_per_unit": 0.140789271981463
+      },
+      "dqr": {
+        "TeR": 2.0,
+        "GR": 1.0,
+        "TiR": 1.0,
+        "P": 2.0,
+        "PEF_DQR": 1.5
+      }
+    },
+    "4234f73d-11d3-4923-a6b7-f903e866e165": {
+      "process_name": "Incineration of PVC",
+      "dataset_name": "Waste incineration of PVC {EU+EFTA+UK} | waste-to-energy plant with dry flue gas treatment, including transport and pre-treatment | production mix, at consumer | polyvinyl chloride waste | LCI result",
+      "region": "Europe",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 1.6748513734974297,
+        "WU_m3eq_per_unit": 0.144493676336208
+      },
+      "dqr": {
+        "TeR": 2.0,
+        "GR": 1.0,
+        "TiR": 1.0,
+        "P": 2.0,
+        "PEF_DQR": 1.5
+      }
+    },
+    "99347a16-a176-4471-b6ef-35f37d2e9d09": {
+      "process_name": "Incineration of textiles, biobased",
+      "dataset_name": "Waste incineration of textile, animal and plant based {EU+EFTA+UK} | waste-to-energy plant with dry flue gas treatment, including transport and pre-treatment | production mix, at consumer | textile waste | LCI result",
+      "region": "Europe",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": -0.6298726246864043,
+        "WU_m3eq_per_unit": 0.134708465082171
+      },
+      "dqr": {
+        "TeR": 2.0,
+        "GR": 1.0,
+        "TiR": 1.0,
+        "P": 2.0,
+        "PEF_DQR": 1.5
+      }
+    },
+    "773b8f01-2263-4d3d-a6f9-11dd316d4a58": {
+      "process_name": "Incineration of polyester and other synthetic materials",
+      "dataset_name": "Waste incineration of PET {EU+EFTA+UK} | waste-to-energy plant with dry flue gas treatment, including transport and pre-treatment | production mix, at consumer | polyethylene terephthalate waste | LCI result",
+      "region": "Europe",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 1.4061676309437332,
+        "WU_m3eq_per_unit": 0.134446938081131
+      },
+      "dqr": {
+        "TeR": 2.0,
+        "GR": 1.0,
+        "TiR": 1.0,
+        "P": 2.0,
+        "PEF_DQR": 1.5
+      }
+    },
+    "2f07be1f-d11a-46ac-b4f0-49c5f28b5b93": {
+      "process_name": "Incineration of other textiles and footwear components",
+      "dataset_name": "Waste incineration of municipal solid waste {EU+EFTA+UK} | waste-to-energy plant with dry flue gas treatment, including transport and pre-treatment | production mix, at consumer | municipal solid waste | LCI result",
+      "region": "Europe",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 0.026439297314432286,
+        "WU_m3eq_per_unit": 0.129722492578893
+      },
+      "dqr": {
+        "TeR": 2.0,
+        "GR": 1.0,
+        "TiR": 1.0,
+        "P": 2.0,
+        "PEF_DQR": 1.5
+      }
+    },
+    "55cd3dde-21f9-47f8-8f15-bc319c732107": {
+      "process_name": "Incineration of inert waste",
+      "dataset_name": "Waste incineration of inert material {EU+EFTA+UK} | waste-to-energy plant with dry flue gas treatment, including transport and pre-treatment | production mix, at consumer | inert material waste | LCI result",
+      "region": "Europe",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 0.15420200418235125,
+        "WU_m3eq_per_unit": 0.138204253719712
+      },
+      "dqr": {
+        "TeR": 2.0,
+        "GR": 1.0,
+        "TiR": 1.0,
+        "P": 2.0,
+        "PEF_DQR": 1.5
+      }
+    },
+    "be844122-c9d9-4691-b5ef-52316d1d563d": {
+      "process_name": "Virgin, cardboard",
+      "dataset_name": "Cardboard, production mix, at plant {GLO} | Kraft Pulping Process | production mix, at plant | 180- 300 kg/m3 | LCI result",
+      "region": "Europe",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 0.8939024419706134,
+        "WU_m3eq_per_unit": 0.229211897144019
+      },
+      "dqr": {
+        "TeR": 3.0,
+        "GR": 3.0,
+        "TiR": 2.0,
+        "P": 2.0,
+        "PEF_DQR": 2.5
+      }
+    },
+    "03af7382-7420-5934-a943-8481e4d9ebbf": {
+      "process_name": "Virgin, LDPE",
+      "dataset_name": "Low density polyethylene (LDPE), fossil fuel-based {GLO} | polymerisation of fossil-based ethylene | production mix, at plant | petrochemical based | LCI result",
+      "region": "Europe",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 2.6256399639055013,
+        "WU_m3eq_per_unit": -1.771261027224421
+      },
+      "dqr": {
+        "TeR": 1.43,
+        "GR": 1.82,
+        "TiR": 1.0,
+        "P": 1.84,
+        "PEF_DQR": 1.52
+      }
+    },
+    "308685e7-15fe-417e-a016-1f6060a0ff10": {
+      "process_name": "Recycling, cardboard",
+      "dataset_name": "Recycling paper and cardboard, waste management, technology mix, at plant {EU+EFTA+UK} | collection, sorting, transport, recycling | production mix, at plant | paper waste, efficiency 90,9% | LCI result",
+      "region": "Europe",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 0.1478650561598943,
+        "WU_m3eq_per_unit": 0.09068886623812852
+      },
+      "dqr": {
+        "TeR": 2.0,
+        "GR": 2.0,
+        "TiR": 2.0,
+        "P": 2.0,
+        "PEF_DQR": 2.0
+      }
+    },
+    "b6ce954d-deb4-4c16-907a-c67b71e1e862": {
+      "process_name": "Incineration, cardboard",
+      "dataset_name": "Waste incineration of paper and board {EU+EFTA+UK} | waste-to-energy plant with dry flue gas treatment, including transport and pre-treatment | production mix, at consumer | paper waste | LCI result",
+      "region": "Europe",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": -0.31057289360736684,
+        "WU_m3eq_per_unit": 0.128208938381526
+      },
+      "dqr": {
+        "TeR": 2.0,
+        "GR": 1.0,
+        "TiR": 1.0,
+        "P": 2.0,
+        "PEF_DQR": 1.5
+      }
+    },
+    "86034c65-32b3-4a85-9241-1930c5c2495a": {
+      "process_name": "Recycling, LDPE",
+      "dataset_name": "Recycling of post-industrial waste polyethylene (PE) {EU+EFTA+UK} | collection, sorting, transport, washing, granulation, pelletization | production mix, at plant | 91.2% recycling rate | Partly terminated system",
+      "region": "Europe",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 0.2965915016896398,
+        "WU_m3eq_per_unit": 0.07195305502947226
+      },
+      "dqr": {
+        "TeR": 1.0,
+        "GR": 1.0,
+        "TiR": 2.0,
+        "P": 2.0,
+        "PEF_DQR": 1.5
+      }
+    },
+    "0370baaf-8923-4e26-b3b8-abcebb89f974": {
+      "process_name": "Incineration, LDPE",
+      "dataset_name": "Waste incineration of PE {EU+EFTA+UK} | waste-to-energy plant with dry flue gas treatment, including transport and pre-treatment | production mix, at consumer | polyethylene waste | LCI result",
+      "region": "Europe",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 1.2186205304718916,
+        "WU_m3eq_per_unit": 0.136790351632304
+      },
+      "dqr": {
+        "TeR": 2.0,
+        "GR": 1.0,
+        "TiR": 1.0,
+        "P": 2.0,
+        "PEF_DQR": 1.5
+      }
+    },
+    "f2bea0f5-e4b7-4a2c-9f34-4eb32495cbc6": {
+      "process_name": "Landfill, LDPE",
+      "dataset_name": "Landfill of plastic waste {EU+EFTA+UK} | landfill including leachate treatment and with transport without collection and pre-treatment | production mix (region specific sites), at landfill site | The carbon and water content are respectively of 62%C and and 0% Water (in weight %) | LCI result",
+      "region": "Europe",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 0.03418202897263979,
+        "WU_m3eq_per_unit": 0.00366949167589555
+      },
+      "dqr": {
+        "TeR": 2.0,
+        "GR": 2.0,
+        "TiR": 2.0,
+        "P": 2.0,
+        "PEF_DQR": 2.0
+      }
+    },
+    "034b2afb-2aa4-4d64-99b5-f39f700f3d44": {
+      "process_name": "Incineration, pallet",
+      "dataset_name": "Waste incineration of processed wood {EU+EFTA+UK} | waste-to-energy plant with dry flue gas treatment, including transport and pre-treatment | production mix, at consumer | wood waste | LCI result",
+      "region": "Europe",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": -0.27357918470596204,
+        "WU_m3eq_per_unit": 0.134121320956526
+      },
+      "dqr": {
+        "TeR": 2.0,
+        "GR": 1.0,
+        "TiR": 1.0,
+        "P": 2.0,
+        "PEF_DQR": 1.5
+      }
+    },
+    "0907b969-c8a5-4317-84b3-04ad0a04447e": {
+      "process_name": "Landfill, pallet",
+      "dataset_name": "Landfill of processed wood {EU+EFTA+UK} | landfill including leachate treatment and with transport without collection and pre-treatment | production mix (region specific sites), at landfill site | The carbon and water content are respectively of 45%C and and 8% Water (in weight %) | LCI result",
+      "region": "Europe",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 1.4718327613782594,
+        "WU_m3eq_per_unit": -0.0102779359206601
+      },
+      "dqr": {
+        "TeR": 2.0,
+        "GR": 2.0,
+        "TiR": 2.0,
+        "P": 2.0,
+        "PEF_DQR": 2.0
+      }
+    },
+    "86ff0001-4794-4a1d4-083a9d986b62": {
+      "process_name": "Landfill, cardboard",
+      "dataset_name": "Landfill of paper and paperboard waste {EU+EFTA+UK} | LCI result",
+      "region": "Europe",
+      "unit": "kg",
+      "source": "EF Database 3.1",
+      "indicators": {
+        "CC_kgCO2e_per_unit": 0.9769422340108832,
+        "WU_m3eq_per_unit": -0.00674875220815675
+      },
+      "dqr": {
+        "TeR": 2.0,
+        "GR": 2.0,
+        "TiR": 2.0,
+        "P": 2.0,
+        "PEF_DQR": 2.0
+      }
     }
-  },
-  "weight_volume_rules_per_leg": {
-    "volume_limited_legs": ["[4b1]", "[4b2]", "[4b3]"],
-    "weight_limited_legs": ["[1a1]", "[1a2]", "[1a3]", "[2a1]", "[2a2]", "[3a]", "[3b1]", "[3b2]", "[3b3]", "[4a]"]
   }
 }
