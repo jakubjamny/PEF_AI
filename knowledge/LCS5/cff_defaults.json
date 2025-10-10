@@ -1,177 +1,92 @@
-// ========== CONFIG ==========
-const OWNER  = pm.environment.get("GITHUB_OWNER")  || "jakubjamny";
-const REPO   = pm.environment.get("GITHUB_REPO")   || "PEF_AI";
-const BRANCH = pm.environment.get("GITHUB_BRANCH") || "feature/ef31-pefcr";
-const DEFAULT_BASE_URL = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}`;
-const BASE_URL = pm.environment.get("BASE_URL") || DEFAULT_BASE_URL;
-pm.environment.set("BASE_URL", BASE_URL);
-
-
-// ========== FILE MAP ==========
-const files = [
- ["LCS5_CFF",   "/knowledge/LCS5/cff_defaults.json"],
- ["LCS5_EF31",  "/knowledge/LCS5/ef31_LCS5.json"],
- ["LCS5_EOTR",  "/knowledge/LCS5/eol_transport_defaults.json"],
- ["LCS5_ENSUB", "/knowledge/LCS5/energy_substitution.json"],
- ["LCS5_LHV",   "/knowledge/LCS5/lhv.json"],
- ["LCS5_DISR",  "/knowledge/LCS5/disruptors.json"],
- ["LCS5_PACK",  "/knowledge/LCS5/packaging_eol_defaults.json"],
- ["LCS5_AFACT", "/knowledge/LCS5/a_factors.json"]
-];
-
-
-// ========== AUTH HEADER (optional private repo) ==========
-const TOKEN  = pm.environment.get("GITHUB_TOKEN")  || "";
-if (TOKEN) pm.request.headers.upsert({ key: "Authorization", value: `token ${TOKEN}` });
-
-
-// ========== HELPERS ==========
-function fetchJSON(name, url) {
- return new Promise((resolve, reject) => {
-   pm.sendRequest({ url, method: "GET" }, (err, res) => {
-     if (err) return reject(new Error(`${name}: network error: ${err}`));
-     if (!res || res.code >= 400) return reject(new Error(`${name}: HTTP ${res && res.code}`));
-     const txt = res.text();
-     try {
-       JSON.parse(txt); // validate
-       pm.environment.set(name, txt);
-       resolve(name);
-     } catch (e) {
-       reject(new Error(`${name}: invalid JSON (${e.message})`));
-     }
-   });
- });
+{
+  "version": "EF 3.1",
+  "scope": "LCS5 (End-of-Life) – Circular Footprint Formula defaults for Apparel & Footwear",
+  "source_document": "A&FW_PEFCR_v3.1.pdf",
+  "last_update": "2025-10-10",
+  "method_defaults": {
+    "B_factor_energy_recovery": 0.0,
+    "R1_default_recycled_content": 0.0,
+    "quality_ratio_cap_QS_over_Qp": 1.0,
+    "A_factor_reference": "Defined by pathway/material per PEFCR. See A_factor_selection_rules.",
+    "A_factor_selection_rules": {
+      "textile_to_textile": 0.8,
+      "other_feedstock": 0.5,
+      "downcycling": 0.5
+    },
+    "A_fallback_default": 0.5
+  },
+  "end_of_life": {
+    "general_notes": {
+      "percentages_scaled_excluding_reuse": true,
+      "landfill_no_energy_is_1_minus_R2_minus_R3": true
+    },
+    "apparel": {
+      "R3_share_incineration_with_energy": 0.39,
+      "recycling": {
+        "total_R2_share": 0.169,
+        "pathways": {
+          "mechanical_wipers": {
+            "R2_share": 0.0,
+            "Ev_scope": "Production of wipers from virgin cotton",
+            "QSout_over_Qp": 0.3,
+            "Erec_scope": "Collection, sorting, clothes preparation for recycling and production of wipers from used clothes"
+          },
+          "mechanical_insulation": {
+            "R2_share": 0.0,
+            "Ev_scope": "Production of virgin mineral wool",
+            "QSout_over_Qp": 1.0,
+            "Erec_scope": "Collection, sorting, clothes preparation for recycling and production of insulation from used clothes"
+          },
+          "mechanical_textile_to_textile": {
+            "R2_share": 0.0,
+            "Ev_scope": "Virgin fibres (which are replaced)",
+            "QSout_over_Qp": 0.5,
+            "Erec_scope": "Collection, sorting, clothes preparation for recycling and production of recycled fibres through mechanical recycling"
+          },
+          "chemical_textile_to_textile_synthetics": {
+            "R2_share": 0.0,
+            "Ev_scope": "Virgin synthetic fibres",
+            "QSout_over_Qp": 1.0,
+            "Erec_scope": "Collection, sorting, clothes preparation for recycling and production of recycled fibres through chemical recycling"
+          },
+          "chemical_textile_to_textile_manmade_cellulosics": {
+            "R2_share": 1.0,
+            "Ev_scope": "Virgin manmade cellulosics",
+            "QSout_over_Qp": 0.5,
+            "Erec_scope": "Collection, sorting, clothes preparation for recycling and production of recycled fibres through chemical recycling"
+          }
+        }
+      },
+      "disposal_share_landfill_or_no_energy": 0.441
+    },
+    "footwear": {
+      "collection_rate": 0.12,
+      "reuse_rate": 0.1,
+      "R3_share_incineration_with_energy": 0.46,
+      "recycling": {
+        "total_R2_share": 0.0,
+        "pathways": {
+          "thermoplastic_material": {
+            "R2_share": 0.0,
+            "Ev_scope": "Thermoplastic material",
+            "QSout_over_Qp": 0.9,
+            "Erec_scope": "Collection, sorting, preparation of shoes for recycling, grinding and extrusion"
+          },
+          "reticulated_materials_PU_foam": {
+            "R2_share": 0.0,
+            "Ev_scope": "PU foam and other reticulated materials",
+            "QSout_over_Qp": 0.9,
+            "Erec_scope": "Collection, sorting, preparation of shoes for recycling, recycling process"
+          }
+        }
+      },
+      "disposal_share_landfill_or_no_energy": 0.54
+    }
+  },
+  "recyclability_disruptors_note": "Where recyclability disruptors apply (see Tables 24–26), set R2 for the affected pathway to 0 for that product.",
+  "units": {
+    "shares": "fraction of 1.0 (i.e., 0.169 = 16.9%)",
+    "ratios": "dimensionless",
+    "rates": "fraction of 1.0"
+  }
 }
-
-
-const stripJsonComments = s => s.replace(/\/\*[\s\S]*?\*\//g, '').replace(/(^|\s)\/\/.*$/gm, '');
-
-
-// ========== RUN ==========
-pm.environment.set("LCS5_READY", "false");
-
-
-Promise.all(
- files.map(([key, path]) => fetchJSON(key, `${BASE_URL}${path}`))
-).then(() => {
- // A-faktor fallbacky (bezpečné defaulty)
- try {
-   const af = JSON.parse(pm.environment.get("LCS5_AFACT"));
-   af.pathways = af.pathways || {};
-   af.pathways.apparel = af.pathways.apparel || {};
-   if (!af.pathways.apparel.mechanical_insulation) {
-     af.pathways.apparel.mechanical_insulation = { A: 0.5, QSout_over_Qp: 1.0 };
-   }
-   if (!af.pathways.apparel.mechanical_wipers) {
-     af.pathways.apparel.mechanical_wipers = { A: 0.5, QSout_over_Qp: 0.3 };
-   }
-   pm.environment.set("LCS5_AFACT", JSON.stringify(af));
- } catch (_) { /* fallback v post-response */ }
-
-
- // ========== NORMALIZACE PRODUKTU Z BODY ==========
- const bodyRaw = pm.request.body && pm.request.body.raw ? pm.request.body.raw : "{}";
- let rawProduct;
- try { rawProduct = JSON.parse(bodyRaw); }
- catch(_) { rawProduct = JSON.parse(stripJsonComments(bodyRaw)); }
-
-
- // --- Canonicalizace názvů vláken (aliasy, case-insensitive) ---------------
- const FIBER_CANON = {
-   // přírodní
-   cotton: "Cotton", co: "Cotton",
-   wool: "Wool", wo: "Wool",
-   linen: "Linen", flax: "Linen",
-   hemp: "Hemp",
-   silk: "Silk",
-   // syntetika
-   elastane: "Elastane", spandex: "Elastane", elas: "Elastane",
-   polyester: "Polyester", pes: "Polyester",
-   polyamide: "Polyamide", nylon: "Polyamide", pa: "Polyamide",
-   polyurethane: "Polyurethane", pu: "Polyurethane",
-   // MMCF
-   viscose: "Viscose", rayon: "Viscose",
-   modal: "Modal",
-   lyocell: "Lyocell", tencel: "Lyocell",
-   acetate: "Acetate", triacetate: "Triacetate",
-   cupro: "Cupro"
- };
- function canonFiberName(s){
-   if(!s) return null;
-   const k = String(s).toLowerCase().trim();
-   return FIBER_CANON[k] || s; // když neznáme, zachováme původní
- }
-
-
- function buildFibersMap(materials) {
-   const fibers = {};
-   if (!Array.isArray(materials) || !materials.length) return fibers;
-   materials.forEach(m => {
-     const raw = m.fiber_type || m.code || m.name;
-     const canon = canonFiberName(raw);
-     const frac = +m.mass_fraction || 0;
-     if (!canon || frac <= 0) return;
-     fibers[canon] = (fibers[canon] || 0) + frac;
-   });
-   return fibers;
- }
-
-
- // Detekce category z reference_code nebo category_hierarchy
- function inferCategory(product) {
-   if (product.lcs5?.category) return product.lcs5.category;
-   const refCode = (product.product?.reference_code || '').toLowerCase();
-   const catSub  = (product.product?.category_hierarchy?.sub || '').toLowerCase();
-   if (refCode.includes('jacket') || refCode.includes('coat')) return 'jackets_and_coats';
-   if (refCode.includes('tshirt') || refCode === 'rp1_tshirt' || catSub.includes('t_shirt') || catSub.includes('tshirt')) return 't_shirts';
-   if (refCode.includes('shirt') || refCode.includes('blouse')) return 'shirts_and_blouses';
-   if (refCode.includes('sweater') || refCode.includes('jumper')) return 'sweaters_and_cardigans';
-   if (refCode.includes('trouser') || refCode.includes('short')) return 'trousers_and_shorts';
-   if (refCode.includes('dress') || refCode.includes('skirt')) return 'dresses_and_skirts';
-   if (refCode.includes('underwear') || refCode.includes('sock')) return 'underwear_and_socks';
-   return 't_shirts'; // default konzervativně
- }
-
-
- // Normalizace do formátu očekávaného LCS5
- const normalized = {
-   product_id: rawProduct.product?.id || rawProduct.product_id || '',
-   product_type: rawProduct.product?.type || rawProduct.product_type || 'apparel',
-   category: inferCategory(rawProduct),
-   region: rawProduct.lcs5?.region || rawProduct.region || 'EU+EFTA+UK',
-   mass_kg: rawProduct.physical?.mass?.kg || rawProduct.mass_kg || 0,
-   short_staple_or_fibre_damage: !!rawProduct.lcs5?.short_staple_or_fibre_damage,
-
-
-   // Fibers z composition (kanon.)
-   fibers: rawProduct.lcs5?.fibers || rawProduct.fibers || buildFibersMap(rawProduct.composition?.materials) || {},
-
-
-   // Disruptory (bezpečné defaulty)
-   has_electronics: !!rawProduct.lcs5?.has_electronics,
-   has_coating_or_lamination: !!rawProduct.lcs5?.has_coating_or_lamination,
-   has_metallic_yarns: !!rawProduct.lcs5?.has_metallic_yarns,
-   has_all_over_prints: !!rawProduct.lcs5?.has_all_over_prints,
-   placed_print_area_cm2: rawProduct.lcs5?.placed_print_area_cm2 || 0,
-   non_fibre_trim_mass_share: rawProduct.lcs5?.non_fibre_trim_mass_share || 0.01,
-   disassemblable: rawProduct.lcs5?.disassemblable !== false,
-
-
-   // Packaging (defaults; lze přepsat v request body)
-   packaging: rawProduct.lcs5?.packaging || {
-     polybag_LDPE_kg: 0.008, // pokud chceš retail PEF default, zvedni na 0.03
-     hangtag_paper_kg: 0.002,
-     shares: {
-       LDPE:  { recycling: 0.25, incineration: 0.65, landfill: 0.10 },
-       paper: { recycling: 0.85, incineration: 0.10, landfill: 0.05 }
-     }
-   }
- };
-
-
- pm.environment.set('NORMALIZED_PRODUCT_LCS5', JSON.stringify(normalized));
- pm.environment.set("LCS5_READY", "true");
-}).catch(err => {
- pm.environment.set("LCS5_READY", "false");
- throw err;
-});
