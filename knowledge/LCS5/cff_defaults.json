@@ -2,6 +2,7 @@
   "version": "EF 3.1",
   "scope": "LCS5 (End-of-Life) – Circular Footprint Formula defaults for Apparel & Footwear",
   "source_document": "A&FW_PEFCR_v3.1.pdf",
+  "last_update": "2025-10-10",
   "method_defaults": {
     "B_factor_energy_recovery": 0.0,
     "R1_default_recycled_content": 0.0,
@@ -11,7 +12,7 @@
       "textile_to_textile": 0.8,
       "other_feedstock": 0.5,
       "downcycling": 0.5
-     },
+    },
     "A_fallback_default": 0.5
   },
   "end_of_life": {
@@ -22,16 +23,16 @@
     "apparel": {
       "R3_share_incineration_with_energy": 0.39,
       "recycling": {
-        "total_R2_share": 0.17,
+        "total_R2_share": 0.169,
         "pathways": {
           "mechanical_wipers": {
-            "R2_share": 0.05,
+            "R2_share": 0.0,
             "Ev_scope": "Production of wipers from virgin cotton",
             "QSout_over_Qp": 0.3,
             "Erec_scope": "Collection, sorting, clothes preparation for recycling and production of wipers from used clothes"
           },
           "mechanical_insulation": {
-            "R2_share": 0.12,
+            "R2_share": 0.0,
             "Ev_scope": "Production of virgin mineral wool",
             "QSout_over_Qp": 1.0,
             "Erec_scope": "Collection, sorting, clothes preparation for recycling and production of insulation from used clothes"
@@ -49,14 +50,14 @@
             "Erec_scope": "Collection, sorting, clothes preparation for recycling and production of recycled fibres through chemical recycling"
           },
           "chemical_textile_to_textile_manmade_cellulosics": {
-            "R2_share": 0.0,
+            "R2_share": 1.0,
             "Ev_scope": "Virgin manmade cellulosics",
             "QSout_over_Qp": 0.5,
             "Erec_scope": "Collection, sorting, clothes preparation for recycling and production of recycled fibres through chemical recycling"
           }
         }
       },
-      "disposal_share_landfill_or_no_energy": 0.44
+      "disposal_share_landfill_or_no_energy": 0.441
     },
     "footwear": {
       "collection_rate": 0.12,
@@ -84,7 +85,7 @@
   },
   "recyclability_disruptors_note": "Where recyclability disruptors apply (see Tables 24–26), set R2 for the affected pathway to 0 for that product.",
   "units": {
-    "shares": "fraction of 1.0 (i.e., 0.17 = 17%)",
+    "shares": "fraction of 1.0 (i.e., 0.169 = 16.9%)",
     "ratios": "dimensionless",
     "rates": "fraction of 1.0"
   }
