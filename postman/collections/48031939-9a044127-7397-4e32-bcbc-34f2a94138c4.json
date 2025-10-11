@@ -6366,7 +6366,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "c09986d3-d892-4e37-b947-62b42a87fffc",
+						"id": "5c2f96e5-921c-4857-84e3-9ac849d42be6",
 						"exec": [
 							"/*************************************************",
 							" * UNIFIED LCS (1–5) — PRE-REQUEST",
@@ -6710,6 +6710,10 @@
 							"      use_defaults: bodyObj.lcs2?.use_defaults !== false,",
 							"      route_id: bodyObj.lcs2?.route_id || null,",
 							"      processing_loss_pct: bodyObj.lcs2?.processing_loss_pct ?? null,",
+							"      losses_mode: bodyObj.lcs2?.losses_mode || null,",
+							"      overall_processing_loss_pct: (bodyObj.lcs2?.overall_processing_loss_pct != null",
+							"        ? Number(bodyObj.lcs2.overall_processing_loss_pct)",
+							"         : null),",
 							"      leftovers_pct: bodyObj.lcs2?.leftovers_pct ?? null,",
 							"      unsold_products_pct: bodyObj.lifecycle_parameters?.losses?.unsold ?? bodyObj.lcs2?.unsold_products_pct ?? null,",
 							"      distribution_losses_pct: bodyObj.lifecycle_parameters?.losses?.distribution ?? bodyObj.lcs2?.distribution_losses_pct ?? null,",
@@ -6973,7 +6977,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "2f4363f2-af56-4d6a-a003-c40433df3c01",
+						"id": "b5e2807f-57ff-435f-9e38-648d0d48d6c7",
 						"exec": [
 							"/*************************************************",
 							" * UNIFIED LCS (1–5) — POST-RESPONSE",
@@ -8862,7 +8866,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"product\": {\n    \"id\": \"TSHIRT-COTTON-001\",\n    \"reference_code\": \"RP1_T-shirt\",\n    \"type\": \"apparel\",\n    \"category_hierarchy\": {\n      \"main\": \"apparel_knit_top_cellulosic\",\n      \"sub\": \"t_shirt\"\n    }\n  },\n  \"physical\": {\n    \"mass\": {\n      \"kg\": 0.18,\n      \"g\": 180\n    }\n  },\n  \"composition\": {\n    \"materials\": [\n      {\n        \"name\": \"Cotton fibre\",\n        \"code\": \"cotton\",\n        \"uuid\": \"71cae2e1-a84f-5b1d-b386-ee1f86ec78db\",\n        \"dataset_name\": \"Cotton fibre {GLO} | technology mix | production mix, at farm\",\n        \"unit\": \"kg\",\n        \"mass_kg\": 0.17,\n        \"origin\": \"outside_continent_ship\"\n      },\n      {\n        \"name\": \"Elastane fibre\",\n        \"code\": \"elastane\",\n        \"uuid\": \"686e526f-cc4e-50a8-9922-490c1e98d746\",\n        \"dataset_name\": \"Elastane fibre / spandex {GLO} | dry spinning, extrusion, texturising\",\n        \"unit\": \"kg\",\n        \"mass_kg\": 0.01,\n        \"origin\": \"outside_continent_ship\"\n      }\n    ]\n  },\n\n  \"lifecycle_parameters\": {\n    \"losses\": {\n      \"preprocessing\": 0.0,\n      \"manufacturing_leftovers\": 0.0,\n      \"manufacturing\": 0.0,\n      \"assembly\": 0.0,\n      \"unsold\": 0.0,\n      \"distribution\": 0.0\n    }\n  },\n\n  \"lcs2\": {\n    \"use_defaults\": true,\n    \"transport_scenario\": \"same_continent_truck\",\n    \"msw_region_code\": \"EU27_2020\",\n    \"include_sfip_transport\": true,\n    \"include_sfip_packaging\": true,\n    \"include_losses_eol\": true\n  },\n\n  \"lcs3\": {\n    \"origin\": \"outside_continent_ship\"\n  },\n\n  \"lcs4\": {\n    \"material_class\": \"cotton\",\n    \"sport\": false,\n    \"delicates\": false,\n    \"ironing_mode\": \"per_wash\"\n  },\n\n  \"lcs5\": {\n    \"region\": \"EU+EFTA+UK\",\n    \"fibers\": { \"Cotton\": 0.9444, \"Elastane\": 0.0556 },\n    \"has_electronics\": false,\n    \"has_coating_or_lamination\": false,\n    \"has_metallic_yarns\": false,\n    \"has_all_over_prints\": false,\n    \"placed_print_area_cm2\": 0,\n    \"non_fibre_trim_mass_share\": 0.01,\n    \"disassemblable\": true,\n    \"packaging\": {\n      \"polybag_LDPE_kg\": 0.008,\n      \"hangtag_paper_kg\": 0.002,\n      \"shares\": {\n        \"LDPE\":  { \"recycling\": 0.25, \"incineration\": 0.65, \"landfill\": 0.10 },\n        \"paper\": { \"recycling\": 0.85, \"incineration\": 0.10, \"landfill\": 0.05 }\n      }\n    }\n  }\n}",
+					"raw": "{\n  \"product\": {\n    \"id\": \"TSHIRT-COTTON-001\",\n    \"reference_code\": \"RP1_TSHIRT\",\n    \"type\": \"apparel\",\n    \"category_hierarchy\": {\n      \"main\": \"apparel_knit_top_cellulosic\",\n      \"sub\": \"t_shirt\"\n    }\n  },\n  \"physical\": {\n    \"mass\": {\n      \"kg\": 0.18,\n      \"g\": 180\n    }\n  },\n  \"composition\": {\n    \"materials\": [\n      {\n        \"name\": \"Cotton fibre\",\n        \"code\": \"cotton\",\n        \"uuid\": \"71cae2e1-a84f-5b1d-b386-ee1f86ec78db\",\n        \"dataset_name\": \"Cotton fibre {GLO} | technology mix | production mix, at farm\",\n        \"unit\": \"kg\",\n        \"mass_kg\": 0.17,\n        \"origin\": \"outside_continent_ship\"\n      },\n      {\n        \"name\": \"Elastane fibre\",\n        \"code\": \"elastane\",\n        \"uuid\": \"686e526f-cc4e-50a8-9922-490c1e98d746\",\n        \"dataset_name\": \"Elastane fibre / spandex {GLO} | dry spinning, extrusion, texturising\",\n        \"unit\": \"kg\",\n        \"mass_kg\": 0.01,\n        \"origin\": \"outside_continent_ship\"\n      }\n    ]\n  },\n\n  \"lifecycle_parameters\": {\n    \"losses\": {\n      \"preprocessing\": 0.0,\n      \"manufacturing_leftovers\": 0.0,\n      \"manufacturing\": 0.0,\n      \"assembly\": 0.0,\n      \"unsold\": 0.0,\n      \"distribution\": 0.0\n    }\n  },\n\n\"lcs2\": {\n  \"use_defaults\": true,\n  \"transport_scenario\": \"same_continent_truck\",\n  \"msw_region_code\": \"EU27_2020\",\n  \"include_sfip_transport\": true,\n  \"include_sfip_packaging\": true,\n  \"include_losses_eol\": true,\n  \"losses_mode\": \"total\",\n  \"overall_processing_loss_pct\": 0.15,\n  \"processing_loss_pct\": null,\n  \"gsm_g_per_m2\": 160\n},\n\n  \"lcs3\": {\n    \"origin\": \"outside_continent_ship\"\n  },\n\n  \"lcs4\": {\n    \"material_class\": \"cotton\",\n    \"sport\": false,\n    \"delicates\": false,\n    \"ironing_mode\": \"per_wash\"\n  },\n\n  \"lcs5\": {\n    \"region\": \"EU+EFTA+UK\",\n    \"fibers\": { \"Cotton\": 0.9444, \"Elastane\": 0.0556 },\n    \"has_electronics\": false,\n    \"has_coating_or_lamination\": false,\n    \"has_metallic_yarns\": false,\n    \"has_all_over_prints\": false,\n    \"placed_print_area_cm2\": 0,\n    \"non_fibre_trim_mass_share\": 0.01,\n    \"disassemblable\": true,\n    \"packaging\": {\n      \"polybag_LDPE_kg\": 0.008,\n      \"hangtag_paper_kg\": 0.002,\n      \"shares\": {\n        \"LDPE\":  { \"recycling\": 0.25, \"incineration\": 0.65, \"landfill\": 0.10 },\n        \"paper\": { \"recycling\": 0.85, \"incineration\": 0.10, \"landfill\": 0.05 }\n      }\n    }\n  }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
