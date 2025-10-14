@@ -711,6 +711,117 @@
         { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
       ]
     },
+    "apparel_woven_dobby_cellulosic": {
+      "steps": [
+        { "label": "Spinning, cotton, for woven, ring-spun (150 dtex)", "ref": "spin_cotton_woven_ring_150dtex" },
+        { "label": "Weaving, rapier (dobby proxy)", "ref": "weaving_rapier" },
+        { "label": "Bleaching, conventional", "ref": "bleaching_conventional" },
+        { "label": "Dyeing, batch (cellulosics)", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_woven_dobby_manmade_cellulosic": {
+      "steps": [
+        { "label": "Spinning, continuous filament (dry) – MMC proxy", "ref": "spin_filament_dry" },
+        { "label": "Weaving, rapier (dobby proxy)", "ref": "weaving_rapier" },
+        { "label": "Dyeing, batch (cellulosics)", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_woven_dobby_synthetic": {
+      "steps": [
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Weaving, rapier (dobby proxy)", "ref": "weaving_rapier" },
+        { "label": "Dyeing, batch (disperse/cationic)", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_woven_dobby_protein": {
+      "steps": [
+        { "label": "Spinning, wool, for woven (120 dtex)", "ref": "spin_wool_woven_120dtex" },
+        { "label": "Weaving, rapier (dobby proxy)", "ref": "weaving_rapier" },
+        { "label": "Dyeing, batch (acid dyes)", "ref": "dye_batch_acid" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_woven_dobby_mixed": {
+      "steps": [
+        { "label": "Spinning (dominant chemistry proxy: ring-spun)", "ref": "spin_cotton_woven_ring_150dtex" },
+        { "label": "Weaving, rapier (dobby proxy)", "ref": "weaving_rapier" },
+        { "label": "Dyeing, batch (per dominant chemistry – cellulosics proxy)", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_nonwoven_synthetic": {
+      "steps": [
+        { "label": "Spinning, continuous filament (dry) – for nonwoven", "ref": "spin_filament_dry" },
+        { "label": "Bonding, thermal, calendering (nonwoven)", "ref": "nonwoven_bonding_thermal_calendering" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_nonwoven_cellulosic": {
+      "steps": [
+        { "label": "Spinning, cotton, for knit (nonwoven proxy)", "ref": "spin_cotton_knit_ring_150dtex" },
+        { "label": "Bonding, thermal, calendering (nonwoven)", "ref": "nonwoven_bonding_thermal_calendering" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_nonwoven_manmade_cellulosic": {
+      "steps": [
+        { "label": "Spinning, continuous filament (dry) – MMC proxy", "ref": "spin_filament_dry" },
+        { "label": "Bonding, thermal, calendering (nonwoven)", "ref": "nonwoven_bonding_thermal_calendering" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_nonwoven_mixed": {
+      "steps": [
+        { "label": "Spinning (dominant chemistry proxy)", "ref": "spin_filament_dry" },
+        { "label": "Bonding, thermal, calendering (nonwoven)", "ref": "nonwoven_bonding_thermal_calendering" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_nonwoven_protective_synthetic": {
+      "steps": [
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Bonding, thermal, calendering (nonwoven)", "ref": "nonwoven_bonding_thermal_calendering" },
+        { "label": "Finishing, antimicrobial (protective)", "ref": "finishing_antimicrobial_pad_dry" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_nonwoven_medical_synthetic": {
+      "steps": [
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Bonding, thermal, calendering (nonwoven)", "ref": "nonwoven_bonding_thermal_calendering" },
+        { "label": "Finishing, antimicrobial (medical)", "ref": "finishing_antimicrobial_pad_dry" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
     "apparel_woven_synthetic": {
       "steps": [
         { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
@@ -1725,6 +1836,28 @@
     "apparel_woven_jacquard_bottom_synthetic":          { "ref": "apparel_woven_jacquard_synthetic" },
     "apparel_woven_jacquard_bottom_protein":            { "ref": "apparel_woven_jacquard_protein" },
     "apparel_woven_jacquard_bottom_mixed":              { "ref": "apparel_woven_jacquard_mixed" },
+    "apparel_woven_dobby_top_cellulosic":         { "ref": "apparel_woven_dobby_cellulosic" },
+    "apparel_woven_dobby_top_manmade_cellulosic": { "ref": "apparel_woven_dobby_manmade_cellulosic" },
+    "apparel_woven_dobby_top_synthetic":          { "ref": "apparel_woven_dobby_synthetic" },
+    "apparel_woven_dobby_top_protein":            { "ref": "apparel_woven_dobby_protein" },
+    "apparel_woven_dobby_top_mixed":              { "ref": "apparel_woven_dobby_mixed" },
+
+    "apparel_woven_dobby_bottom_cellulosic":         { "ref": "apparel_woven_dobby_cellulosic" },
+    "apparel_woven_dobby_bottom_manmade_cellulosic": { "ref": "apparel_woven_dobby_manmade_cellulosic" },
+    "apparel_woven_dobby_bottom_synthetic":          { "ref": "apparel_woven_dobby_synthetic" },
+    "apparel_woven_dobby_bottom_protein":            { "ref": "apparel_woven_dobby_protein" },
+    "apparel_woven_dobby_bottom_mixed":              { "ref": "apparel_woven_dobby_mixed" },
+
+    "apparel_nonwoven_top_synthetic":          { "ref": "apparel_nonwoven_synthetic" },
+    "apparel_nonwoven_top_cellulosic":         { "ref": "apparel_nonwoven_cellulosic" },
+    "apparel_nonwoven_top_manmade_cellulosic": { "ref": "apparel_nonwoven_manmade_cellulosic" },
+    "apparel_nonwoven_top_mixed":              { "ref": "apparel_nonwoven_mixed" },
+
+    "apparel_nonwoven_bottom_synthetic":  { "ref": "apparel_nonwoven_synthetic" },
+    "apparel_nonwoven_bottom_cellulosic": { "ref": "apparel_nonwoven_cellulosic" },
+
+    "apparel_nonwoven_protective_synthetic": { "ref": "apparel_nonwoven_protective_synthetic" },
+    "apparel_nonwoven_medical_synthetic":    { "ref": "apparel" },
 
       "apparel_knit_warp_bottom_cellulosic":         { "ref": "apparel_knit_warp_cellulosic" },
       "apparel_knit_warp_bottom_manmade_cellulosic": { "ref": "apparel_knit_warp_manmade_cellulosic" },
