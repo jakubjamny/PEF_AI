@@ -3425,23 +3425,32 @@
 
   "groups_regex": {
     "pre_treatments": "(Scouring|Carding|Combing|Hackling)",
-    "yarn_production": "(Spinning|Filament)",
-    "fabric_manufacturing": "(Knitting|Weaving)",
-    "dyeing_and_preparation": "(Pre-dye|Bleaching|Dyeing)",
-    "printing_and_finishing": "(Printing|Finishing|Coating|Lamination|Waterproofing)",
-    "assembly_apparel": "(Cutting|Sewing(?!.*pair))",
-    "component_manufacturing": "(Injection|Molding|Moulding|Delasting|Lasting|Stockfitting|Insole|Cutting \\(pair\\))",
-    "product_assembly": "(Cementing|Vulcanizing|Vulcanising|Coating|Waterproofing)",
+    "yarn_production": "(Spinning|Filament|synthetic staple)",
+    "fabric_manufacturing": "(Knitting|Weaving|Bonding.*nonwoven|Calendering.*nonwoven|Non[- ]?woven)",
+    "dyeing_and_preparation": "(Pre-?dye|Bleaching|Dyeing)",
+    "printing_and_finishing": "(Printing|Finishing|Coating|Lamination|Waterproofing|Raising|Brushing|Sueding|Sanding|Quilt)",
+    "assembly_apparel": "(Cutting(?!.*pair)|Sewing(?!.*pair))",
+    "component_manufacturing": "(Injection|Mold|Mould|Compression.*Mold|Delasting|Lasting|Stockfitting|Insole|Cutting \\(pair\\))",
+    "product_assembly": "(Cementing|Vulcaniz|Autoclav|Stitching|Coating|Waterproofing)",
     "transport_sfip": "^(Transport|Transportation.*train|Barge|Ship|Cargo plane|Air freight)",
     "packaging_eol_sfip": "(Recycling, (paper|cardboard|LDPE)|Incineration, (paper|board|cardboard|LDPE)|Landfill, (paper|cardboard|LDPE))",
-    "manufacturing_losses_eol": "(Incineration|Landfill|Processing for recycling|Recycling.*wipers|Stone wool)"
+    "manufacturing_losses_eol": "(Incineration|Landfill|Processing for recycling|Recycling.*wipers|Recycling, downcycling|Stone wool)"
   },
 
   "notes": [
     "Všechny názvy kroků jsou zarovnány na Process_name v processes_master pro bezchybný matching.",
     "U obuvi se volí procesy v jednotkách 'pair'.",
-    "Printed routy vkládají 'Screen printing' před finální 'Finishing'.",
-    "Flax (len) přidává 'Combing, flax' a používá celulózové barvení (dye_batch_cellulosics).",
-    "DQR hodnoty jsou doplněny z ef31_perunit_impacts.json podle UUID shody. Procesy bez shody mají dqr: null."
+    "Printed routy vkládají 'Screen printing' nebo 'Digital printing' před finální 'Finishing'.",
+    "Flax (len) přidává 'Combing' a používá celulózové barvení (dye_batch_cellulosics).",
+    "Jute (espadrilles) používá 'Spinning, bast fiber' jako proxy.",
+    "DQR hodnoty jsou doplněny z ef31_perunit_impacts.json podle UUID shody. Procesy bez shody mají dqr: null.",
+    "Nonwoven materiály používají 'Bonding, thermal, calendering' namísto weaving/knitting.",
+    "Felted materiály zahrnují 'Brushing/felting' jako speciální finishing krok.",
+    "Technical textilie (waterproof/breathable) kombinují coating + waterproofing finishing.",
+    "Leather finishing (patent/suede) používá coating nebo sueding/sanding procesy.",
+    "Footwear stitched konstrukce (Blake, Goodyear, Norwegian) rozlišeny počtem sewing kroků.",
+    "Injection molded footwear (clogs, flip-flops) mají jediný manufacturing krok.",
+    "Safety a technical footwear předpokládá protective features (toe caps, membrány) v LCS1.",
+    "Manufacturing losses EoL zahrnuje downcycling pathways: wipers, insulation, MSW (incineration/landfill)."
   ]
 }
