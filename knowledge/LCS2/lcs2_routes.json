@@ -1224,6 +1224,134 @@
         { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
       ]
     },
+    "apparel_felted_protein": {
+      "steps": [
+        { "label": "Spinning, wool, for knit (200 dtex)", "ref": "spin_wool_knit_200dtex" },
+        { "label": "Knitting, circular (pre-felting fabric)", "ref": "knit_circular" },
+        { "label": "Dyeing, batch (acid dyes)", "ref": "dye_batch_acid" },
+        { "label": "Brushing/felting (mechanical)", "ref": "brushing_textiles" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_felted_synthetic": {
+      "steps": [
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Knitting, circular (pre-felting fabric)", "ref": "knit_circular" },
+        { "label": "Dyeing, batch (disperse/cationic)", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Brushing/felting (mechanical)", "ref": "brushing_textiles" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_felted_mixed": {
+      "steps": [
+        { "label": "Spinning (dominant chemistry proxy: wool)", "ref": "spin_wool_knit_200dtex" },
+        { "label": "Knitting, circular (pre-felting fabric)", "ref": "knit_circular" },
+        { "label": "Dyeing, batch (per dominant chemistry)", "ref": "dye_batch_acid" },
+        { "label": "Brushing/felting (mechanical)", "ref": "brushing_textiles" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "accessories_braided_cellulosic": {
+      "steps": [
+        { "label": "Spinning, cotton, for woven, ring-spun (150 dtex)", "ref": "spin_cotton_woven_ring_150dtex" },
+        { "label": "Dyeing, batch (cellulosics)", "ref": "dye_batch_cellulosics" },
+        { "label": "Cutting (braiding preparation)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (braiding/assembly proxy)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "accessories_braided_synthetic": {
+      "steps": [
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Dyeing, batch (disperse/cationic)", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Cutting (braiding preparation)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (braiding/assembly proxy)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "accessories_braided_protein": {
+      "steps": [
+        { "label": "Spinning, wool, for woven (120 dtex)", "ref": "spin_wool_woven_120dtex" },
+        { "label": "Dyeing, batch (acid dyes)", "ref": "dye_batch_acid" },
+        { "label": "Cutting (braiding preparation)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (braiding/assembly proxy)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "accessories_braided_mixed": {
+      "steps": [
+        { "label": "Spinning (dominant chemistry proxy)", "ref": "spin_cotton_woven_ring_150dtex" },
+        { "label": "Dyeing, batch (per dominant chemistry)", "ref": "dye_batch_cellulosics" },
+        { "label": "Cutting (braiding preparation)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (braiding/assembly proxy)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_braided_cellulosic": {
+      "steps": [
+        { "label": "Spinning, cotton, for woven, ring-spun (150 dtex)", "ref": "spin_cotton_woven_ring_150dtex" },
+        { "label": "Dyeing, batch (cellulosics)", "ref": "dye_batch_cellulosics" },
+        { "label": "Cutting (braiding preparation)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (braiding/assembly)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_braided_synthetic": {
+      "steps": [
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Dyeing, batch (disperse/cationic)", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Cutting (braiding preparation)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (braiding/assembly)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_leather": {
+      "steps": [
+        { "label": "Cutting (leather)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (leather assembly)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_leather_embroidered": {
+      "steps": [
+        { "label": "Cutting (leather base)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (embroidery proxy)", "ref": "sewing_mix_incl_thread" },
+        { "label": "Sewing (final assembly)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_leather_quilted": {
+      "steps": [
+        { "label": "Cutting (leather)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (quilting)", "ref": "sewing_mix_incl_thread" },
+        { "label": "Sewing (final assembly)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_leather_printed": {
+      "steps": [
+        { "label": "Printing, digital, direct to product", "ref": "printing_digital_direct" },
+        { "label": "Cutting (leather)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (leather assembly)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_leather_bonded": {
+      "steps": [
+        { "label": "Coating/bonding (PUR proxy)", "ref": "coating_pur" },
+        { "label": "Cutting (bonded leather)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (assembly)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
     "apparel_knit_flat_bast_fibers": {
       "steps": [
         { "label": "Combing (bast fibres)", "ref": "combing_mix" },
@@ -1792,6 +1920,26 @@
     "apparel_knit_circular_top_bonded":             { "ref": "apparel_knit_circular_bonded" },
     "apparel_knit_circular_top_quilted_down":       { "ref": "apparel_knit_circular_quilted_down" },
     "apparel_knit_circular_top_mixed":              { "ref": "apparel_knit_circular_mixed" },
+    "apparel_felted_top_protein":   { "ref": "apparel_felted_protein" },
+    "apparel_felted_top_synthetic": { "ref": "apparel_felted_synthetic" },
+    "apparel_felted_top_mixed":     { "ref": "apparel_felted_mixed" },
+
+    "accessories_braided_cellulosic": { "ref": "accessories_braided_cellulosic" },
+    "accessories_braided_synthetic":  { "ref": "accessories_braided_synthetic" },
+    "accessories_braided_protein":    { "ref": "accessories_braided_protein" },
+    "accessories_braided_mixed":      { "ref": "accessories_braided_mixed" },
+
+    "apparel_braided_top_cellulosic":    { "ref": "apparel_braided_cellulosic" },
+    "apparel_braided_top_synthetic":     { "ref": "apparel_braided_synthetic" },
+    "apparel_braided_bottom_cellulosic": { "ref": "apparel_braided_cellulosic" },
+    "apparel_braided_bottom_synthetic":  { "ref": "apparel_braided_synthetic" },
+
+    "apparel_leather_top":             { "ref": "apparel_leather" },
+    "apparel_leather_bottom":          { "ref": "apparel_leather" },
+    "apparel_leather_top_embroidered": { "ref": "apparel_leather_embroidered" },
+    "apparel_leather_top_quilted":     { "ref": "apparel_leather_quilted" },
+    "apparel_leather_top_printed":     { "ref": "apparel_leather_printed" },
+    "apparel_leather_top_bonded":      { "ref": "apparel_leather_bonded" },
 
     "apparel_knit_circular_bottom_cellulosic":         { "ref": "apparel_knit_circular_cellulosic" },
     "apparel_knit_circular_bottom_manmade_cellulosic": { "ref": "apparel_knit_circular_manmade_cellulosic" },
