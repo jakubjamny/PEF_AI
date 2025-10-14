@@ -789,6 +789,143 @@
         { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
       ]
     },
+     "apparel_knit_circular_cellulosic": {
+      "steps": [
+        { "label": "Spinning, cotton (for knit), ring-spun", "ref": "spin_cotton_knit_ring_150dtex" },
+        { "label": "Knitting, circular", "ref": "knit_circular" },
+        { "label": "Pre-dye preparation, knit, natural fibers", "ref": "predye_knit_natural" },
+        { "label": "Dyeing, batch (reactive/sulfur/vat) – cellulosics", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, spray/pad dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_knit_circular_manmade_cellulosic": {
+      "steps": [
+        { "label": "Spinning (MMCF proxy)", "ref": "spin_filament_dry" },
+        { "label": "Knitting, circular", "ref": "knit_circular" },
+        { "label": "Dyeing, batch – cellulosics", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, spray/pad dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_knit_circular_synthetic": {
+      "steps": [
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Knitting, circular", "ref": "knit_circular" },
+        { "label": "Dyeing, batch – disperse/cationic", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Finishing, spray/pad dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_knit_circular_protein": {
+      "steps": [
+        { "label": "Spinning, wool (for knit)", "ref": "spin_wool_knit_200dtex" },
+        { "label": "Knitting, circular", "ref": "knit_circular" },
+        { "label": "Dyeing, batch – acid", "ref": "dye_batch_acid" },
+        { "label": "Finishing, spray/pad dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_knit_circular_flax": {
+      "steps": [
+        { "label": "Combing (flax/linen)", "ref": "combing_mix" },
+        { "label": "Spinning, bast fiber (linen proxy)", "ref": "spin_bast_fiber" },
+        { "label": "Knitting, circular (linen knit proxy)", "ref": "knit_circular" },
+        { "label": "Bleaching, conventional (optional)", "ref": "bleaching_conventional" },
+        { "label": "Dyeing, batch – cellulosics", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, spray/pad dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_knit_circular_bast_fibers": {
+      "steps": [
+        { "label": "Spinning, bast fiber", "ref": "spin_bast_fiber" },
+        { "label": "Knitting, circular (bast knit proxy)", "ref": "knit_circular" },
+        { "label": "Dyeing, batch – cellulosics", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, spray/pad dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_knit_circular_synthetic_staple": {
+      "steps": [
+        { "label": "Spinning (synthetic staple proxy)", "ref": "spin_filament_dry" },
+        { "label": "Knitting, circular", "ref": "knit_circular" },
+        { "label": "Dyeing, batch – disperse/cationic", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Finishing, spray/pad dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_knit_circular_pile_cellulosic": {
+      "steps": [
+        { "label": "Spinning, cotton (for knit), ring-spun", "ref": "spin_cotton_knit_ring_150dtex" },
+        { "label": "Knitting, circular (pile/loop)", "ref": "knit_circular" },
+        { "label": "Pre-dye preparation, knit, natural fibers", "ref": "predye_knit_natural" },
+        { "label": "Raising (pile creation)", "ref": "raising_generic" },
+        { "label": "Brushing", "ref": "brushing_textiles" },
+        { "label": "Dyeing, batch – cellulosics", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, spray/pad dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_knit_circular_pile_synthetic": {
+      "steps": [
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Knitting, circular (pile/loop)", "ref": "knit_circular" },
+        { "label": "Raising (pile creation)", "ref": "raising_generic" },
+        { "label": "Sueding / sanding", "ref": "sueding_sanding" },
+        { "label": "Dyeing, batch – disperse/cationic", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Finishing, spray/pad dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_knit_circular_bonded": {
+      "steps": [
+        { "label": "Knitting, circular (base fabric)", "ref": "knit_circular" },
+        { "label": "Lamination (energy proxy)", "ref": "extrusion_monofilament_offline" },
+        { "label": "Finishing (if applicable)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_knit_circular_quilted_down": {
+      "steps": [
+        { "label": "Knitting, circular (shell/liner)", "ref": "knit_circular" },
+        { "label": "Quilting (insulated proxy)", "ref": "spin_alpaca_woven_150dtex" },
+        { "label": "Finishing (if applicable)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_knit_circular_mixed": {
+      "steps": [
+        { "label": "Spinning (resolver → dominant chemistry)", "ref": "spin_filament_dry" },
+        { "label": "Knitting, circular", "ref": "knit_circular" },
+        { "label": "Dyeing (resolver → cellulosic/disperse/acid)", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, spray/pad dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
     "apparel_printed_woven_synthetic": {
       "steps": [
         { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
@@ -897,6 +1034,30 @@
     "footwear_vulcanized":         { "ref": "footwear_vulcanized" },
     "footwear_leather":            { "ref": "footwear_leather_cemented" },
     "footwear_sandal":             { "ref": "footwear_sandal_cemented" }
+    "apparel_knit_circular_top_cellulosic":         { "ref": "apparel_knit_circular_cellulosic" },
+    "apparel_knit_circular_top_manmade_cellulosic": { "ref": "apparel_knit_circular_manmade_cellulosic" },
+    "apparel_knit_circular_top_synthetic":          { "ref": "apparel_knit_circular_synthetic" },
+    "apparel_knit_circular_top_protein":            { "ref": "apparel_knit_circular_protein" },
+    "apparel_knit_circular_top_flax":               { "ref": "apparel_knit_circular_flax" },
+    "apparel_knit_circular_top_bast_fibers":        { "ref": "apparel_knit_circular_bast_fibers" },
+    "apparel_knit_circular_top_synthetic_staple":   { "ref": "apparel_knit_circular_synthetic_staple" },
+    "apparel_knit_circular_top_pile_cellulosic":    { "ref": "apparel_knit_circular_pile_cellulosic" },
+    "apparel_knit_circular_top_pile_synthetic":     { "ref": "apparel_knit_circular_pile_synthetic" },
+    "apparel_knit_circular_top_bonded":             { "ref": "apparel_knit_circular_bonded" },
+    "apparel_knit_circular_top_quilted_down":       { "ref": "apparel_knit_circular_quilted_down" },
+    "apparel_knit_circular_top_mixed":              { "ref": "apparel_knit_circular_mixed" },
+
+    "apparel_knit_circular_bottom_cellulosic":         { "ref": "apparel_knit_circular_cellulosic" },
+    "apparel_knit_circular_bottom_manmade_cellulosic": { "ref": "apparel_knit_circular_manmade_cellulosic" },
+    "apparel_knit_circular_bottom_synthetic":          { "ref": "apparel_knit_circular_synthetic" },
+    "apparel_knit_circular_bottom_protein":            { "ref": "apparel_knit_circular_protein" },
+    "apparel_knit_circular_bottom_flax":               { "ref": "apparel_knit_circular_flax" },
+    "apparel_knit_circular_bottom_bast_fibers":        { "ref": "apparel_knit_circular_bast_fibers" },
+    "apparel_knit_circular_bottom_synthetic_staple":   { "ref": "apparel_knit_circular_synthetic_staple" },
+    "apparel_knit_circular_bottom_pile_cellulosic":    { "ref": "apparel_knit_circular_pile_cellulosic" },
+    "apparel_knit_circular_bottom_pile_synthetic":     { "ref": "apparel_knit_circular_pile_synthetic" },
+    "apparel_knit_circular_bottom_bonded":             { "ref": "apparel_knit_circular_bonded" },
+    "apparel_knit_circular_bottom_mixed":              { "ref": "apparel_knit_circular_mixed" }
   },
 
   "groups_order": {
