@@ -1,0 +1,403 @@
+{
+  "by_subcategory": {
+
+    "_meta_notes": "PRINT TYPE (screen|digital|sublimation|none), DYE_METHOD (piece|yarn|dope|garment), ELASTANE_PCT are handled as attributes/flags in routing resolver. No separate printed/elastomeric/dope-dyed routes needed.",
+    "_meta_mixed": "Use *_mixed variants. Resolver maps to base chemistry (cellulosic|synthetic|protein|mmc|flax|bast) by mass share.",
+
+    "apparel_knit_circular_top_cellulosic":         { "ref": "apparel_knit_circular_cellulosic" },
+    "apparel_knit_circular_top_manmade_cellulosic": { "ref": "apparel_knit_circular_manmade_cellulosic" },
+    "apparel_knit_circular_top_synthetic":          { "ref": "apparel_knit_circular_synthetic" },
+    "apparel_knit_circular_top_protein":            { "ref": "apparel_knit_circular_protein" },
+    "apparel_knit_circular_top_flax":               { "ref": "apparel_knit_circular_flax" },
+    "apparel_knit_circular_top_bast_fibers":        { "ref": "apparel_knit_circular_bast_fibers" },
+    "apparel_knit_circular_top_synthetic_staple":   { "ref": "apparel_knit_circular_synthetic_staple" },
+    "apparel_knit_circular_top_pile_cellulosic":    { "ref": "apparel_knit_circular_pile_cellulosic" },
+    "apparel_knit_circular_top_pile_synthetic":     { "ref": "apparel_knit_circular_pile_synthetic" },
+    "apparel_knit_circular_top_bonded":             { "ref": "apparel_knit_circular_bonded" },
+    "apparel_knit_circular_top_quilted_down":       { "ref": "apparel_knit_circular_quilted_down" },
+    "apparel_knit_circular_top_mixed":              { "ref": "apparel_knit_circular_mixed" },
+
+    "apparel_knit_circular_bottom_cellulosic":         { "ref": "apparel_knit_circular_cellulosic" },
+    "apparel_knit_circular_bottom_manmade_cellulosic": { "ref": "apparel_knit_circular_manmade_cellulosic" },
+    "apparel_knit_circular_bottom_synthetic":          { "ref": "apparel_knit_circular_synthetic" },
+    "apparel_knit_circular_bottom_protein":            { "ref": "apparel_knit_circular_protein" },
+    "apparel_knit_circular_bottom_flax":               { "ref": "apparel_knit_circular_flax" },
+    "apparel_knit_circular_bottom_bast_fibers":        { "ref": "apparel_knit_circular_bast_fibers" },
+    "apparel_knit_circular_bottom_synthetic_staple":   { "ref": "apparel_knit_circular_synthetic_staple" },
+    "apparel_knit_circular_bottom_pile_cellulosic":    { "ref": "apparel_knit_circular_pile_cellulosic" },
+    "apparel_knit_circular_bottom_pile_synthetic":     { "ref": "apparel_knit_circular_pile_synthetic" },
+    "apparel_knit_circular_bottom_bonded":             { "ref": "apparel_knit_circular_bonded" },
+    "apparel_knit_circular_bottom_mixed":              { "ref": "apparel_knit_circular_mixed" },
+
+    "apparel_knit_circular_underwear_cellulosic":         { "ref": "apparel_knit_circular_underwear_cellulosic" },
+    "apparel_knit_circular_underwear_manmade_cellulosic": { "ref": "apparel_knit_circular_underwear_manmade_cellulosic" },
+    "apparel_knit_circular_underwear_synthetic":          { "ref": "apparel_knit_circular_underwear_synthetic" },
+    "apparel_knit_circular_underwear_protein":            { "ref": "apparel_knit_circular_underwear_protein" },
+    "apparel_knit_circular_underwear_mixed":              { "ref": "apparel_knit_circular_underwear_mixed" },
+
+    "apparel_knit_circular_swimwear_synthetic": { "ref": "apparel_knit_circular_swimwear_synthetic" },
+    "apparel_knit_circular_swimwear_mixed":     { "ref": "apparel_knit_circular_swimwear_mixed" },
+
+
+    "apparel_knit_flat_top_cellulosic":         { "ref": "apparel_knit_flat_cellulosic" },
+    "apparel_knit_flat_top_manmade_cellulosic": { "ref": "apparel_knit_flat_manmade_cellulosic" },
+    "apparel_knit_flat_top_synthetic":          { "ref": "apparel_knit_flat_synthetic" },
+    "apparel_knit_flat_top_protein":            { "ref": "apparel_knit_flat_protein" },
+    "apparel_knit_flat_top_flax":               { "ref": "apparel_knit_flat_flax" },
+    "apparel_knit_flat_top_bast_fibers":        { "ref": "apparel_knit_flat_bast_fibers" },
+    "apparel_knit_flat_top_synthetic_staple":   { "ref": "apparel_knit_flat_synthetic_staple" },
+    "apparel_knit_flat_top_jacquard_cellulosic":{ "ref": "apparel_knit_flat_jacquard_cellulosic" },
+    "apparel_knit_flat_top_jacquard_synthetic": { "ref": "apparel_knit_flat_jacquard_synthetic" },
+    "apparel_knit_flat_top_jacquard_protein":   { "ref": "apparel_knit_flat_jacquard_protein" },
+    "apparel_knit_flat_top_pile_cellulosic":    { "ref": "apparel_knit_flat_pile_cellulosic" },
+    "apparel_knit_flat_top_pile_synthetic":     { "ref": "apparel_knit_flat_pile_synthetic" },
+    "apparel_knit_flat_top_bonded":             { "ref": "apparel_knit_flat_bonded" },
+    "apparel_knit_flat_top_quilted_down":       { "ref": "apparel_knit_flat_quilted_down" },
+    "apparel_knit_flat_top_mixed":              { "ref": "apparel_knit_flat_mixed" },
+
+    "apparel_knit_flat_bottom_cellulosic":         { "ref": "apparel_knit_flat_cellulosic" },
+    "apparel_knit_flat_bottom_manmade_cellulosic": { "ref": "apparel_knit_flat_manmade_cellulosic" },
+    "apparel_knit_flat_bottom_synthetic":          { "ref": "apparel_knit_flat_synthetic" },
+    "apparel_knit_flat_bottom_protein":            { "ref": "apparel_knit_flat_protein" },
+    "apparel_knit_flat_bottom_flax":               { "ref": "apparel_knit_flat_flax" },
+    "apparel_knit_flat_bottom_bast_fibers":        { "ref": "apparel_knit_flat_bast_fibers" },
+    "apparel_knit_flat_bottom_synthetic_staple":   { "ref": "apparel_knit_flat_synthetic_staple" },
+    "apparel_knit_flat_bottom_pile_cellulosic":    { "ref": "apparel_knit_flat_pile_cellulosic" },
+    "apparel_knit_flat_bottom_pile_synthetic":     { "ref": "apparel_knit_flat_pile_synthetic" },
+    "apparel_knit_flat_bottom_bonded":             { "ref": "apparel_knit_flat_bonded" },
+    "apparel_knit_flat_bottom_mixed":              { "ref": "apparel_knit_flat_mixed" },
+
+
+
+    "apparel_knit_warp_top_cellulosic":         { "ref": "apparel_knit_warp_cellulosic" },
+    "apparel_knit_warp_top_manmade_cellulosic": { "ref": "apparel_knit_warp_manmade_cellulosic" },
+    "apparel_knit_warp_top_synthetic":          { "ref": "apparel_knit_warp_synthetic" },
+    "apparel_knit_warp_top_protein":            { "ref": "apparel_knit_warp_protein" },
+    "apparel_knit_warp_top_synthetic_staple":   { "ref": "apparel_knit_warp_synthetic_staple" },
+    "apparel_knit_warp_top_bonded":             { "ref": "apparel_knit_warp_bonded" },
+    "apparel_knit_warp_top_mixed":              { "ref": "apparel_knit_warp_mixed" },
+
+    "apparel_knit_warp_bottom_cellulosic":         { "ref": "apparel_knit_warp_cellulosic" },
+    "apparel_knit_warp_bottom_manmade_cellulosic": { "ref": "apparel_knit_warp_manmade_cellulosic" },
+    "apparel_knit_warp_bottom_synthetic":          { "ref": "apparel_knit_warp_synthetic" },
+    "apparel_knit_warp_bottom_protein":            { "ref": "apparel_knit_warp_protein" },
+    "apparel_knit_warp_bottom_synthetic_staple":   { "ref": "apparel_knit_warp_synthetic_staple" },
+    "apparel_knit_warp_bottom_mixed":              { "ref": "apparel_knit_warp_mixed" },
+
+    "apparel_knit_warp_underwear_cellulosic":         { "ref": "apparel_knit_warp_underwear_cellulosic" },
+    "apparel_knit_warp_underwear_manmade_cellulosic": { "ref": "apparel_knit_warp_underwear_manmade_cellulosic" },
+    "apparel_knit_warp_underwear_synthetic":          { "ref": "apparel_knit_warp_underwear_synthetic" },
+    "apparel_knit_warp_underwear_protein":            { "ref": "apparel_knit_warp_underwear_protein" },
+    "apparel_knit_warp_underwear_mixed":              { "ref": "apparel_knit_warp_underwear_mixed" },
+
+
+
+    "apparel_woven_plain_top_cellulosic":         { "ref": "apparel_woven_plain_cellulosic" },
+    "apparel_woven_plain_top_manmade_cellulosic": { "ref": "apparel_woven_plain_manmade_cellulosic" },
+    "apparel_woven_plain_top_synthetic":          { "ref": "apparel_woven_plain_synthetic" },
+    "apparel_woven_plain_top_protein":            { "ref": "apparel_woven_plain_protein" },
+    "apparel_woven_plain_top_flax":               { "ref": "apparel_woven_plain_flax" },
+    "apparel_woven_plain_top_bast_fibers":        { "ref": "apparel_woven_plain_bast_fibers" },
+    "apparel_woven_plain_top_synthetic_staple":   { "ref": "apparel_woven_plain_synthetic_staple" },
+    "apparel_woven_plain_top_denim_cellulosic":   { "ref": "apparel_woven_plain_denim_cellulosic" },
+    "apparel_woven_plain_top_bonded":             { "ref": "apparel_woven_plain_bonded" },
+    "apparel_woven_plain_top_quilted_down":       { "ref": "apparel_woven_plain_quilted_down" },
+    "apparel_woven_plain_top_mixed":              { "ref": "apparel_woven_plain_mixed" },
+
+    "apparel_woven_plain_bottom_cellulosic":         { "ref": "apparel_woven_plain_cellulosic" },
+    "apparel_woven_plain_bottom_manmade_cellulosic": { "ref": "apparel_woven_plain_manmade_cellulosic" },
+    "apparel_woven_plain_bottom_synthetic":          { "ref": "apparel_woven_plain_synthetic" },
+    "apparel_woven_plain_bottom_protein":            { "ref": "apparel_woven_plain_protein" },
+    "apparel_woven_plain_bottom_flax":               { "ref": "apparel_woven_plain_flax" },
+    "apparel_woven_plain_bottom_bast_fibers":        { "ref": "apparel_woven_plain_bast_fibers" },
+    "apparel_woven_plain_bottom_synthetic_staple":   { "ref": "apparel_woven_plain_synthetic_staple" },
+    "apparel_woven_plain_bottom_denim_cellulosic":   { "ref": "apparel_woven_plain_denim_cellulosic" },
+    "apparel_woven_plain_bottom_bonded":             { "ref": "apparel_woven_plain_bonded" },
+    "apparel_woven_plain_bottom_mixed":              { "ref": "apparel_woven_plain_mixed" },
+
+
+
+    "apparel_woven_twill_top_cellulosic":         { "ref": "apparel_woven_twill_cellulosic" },
+    "apparel_woven_twill_top_manmade_cellulosic": { "ref": "apparel_woven_twill_manmade_cellulosic" },
+    "apparel_woven_twill_top_synthetic":          { "ref": "apparel_woven_twill_synthetic" },
+    "apparel_woven_twill_top_protein":            { "ref": "apparel_woven_twill_protein" },
+    "apparel_woven_twill_top_flax":               { "ref": "apparel_woven_twill_flax" },
+    "apparel_woven_twill_top_synthetic_staple":   { "ref": "apparel_woven_twill_synthetic_staple" },
+    "apparel_woven_twill_top_denim_cellulosic":   { "ref": "apparel_woven_twill_denim_cellulosic" },
+    "apparel_woven_twill_top_bonded":             { "ref": "apparel_woven_twill_bonded" },
+    "apparel_woven_twill_top_quilted_down":       { "ref": "apparel_woven_twill_quilted_down" },
+    "apparel_woven_twill_top_mixed":              { "ref": "apparel_woven_twill_mixed" },
+
+    "apparel_woven_twill_bottom_cellulosic":         { "ref": "apparel_woven_twill_cellulosic" },
+    "apparel_woven_twill_bottom_manmade_cellulosic": { "ref": "apparel_woven_twill_manmade_cellulosic" },
+    "apparel_woven_twill_bottom_synthetic":          { "ref": "apparel_woven_twill_synthetic" },
+    "apparel_woven_twill_bottom_protein":            { "ref": "apparel_woven_twill_protein" },
+    "apparel_woven_twill_bottom_flax":               { "ref": "apparel_woven_twill_flax" },
+    "apparel_woven_twill_bottom_synthetic_staple":   { "ref": "apparel_woven_twill_synthetic_staple" },
+    "apparel_woven_twill_bottom_denim_cellulosic":   { "ref": "apparel_woven_twill_denim_cellulosic" },
+    "apparel_woven_twill_bottom_bonded":             { "ref": "apparel_woven_twill_bonded" },
+    "apparel_woven_twill_bottom_mixed":              { "ref": "apparel_woven_twill_mixed" },
+
+
+
+    "apparel_woven_satin_top_cellulosic":         { "ref": "apparel_woven_satin_cellulosic" },
+    "apparel_woven_satin_top_manmade_cellulosic": { "ref": "apparel_woven_satin_manmade_cellulosic" },
+    "apparel_woven_satin_top_synthetic":          { "ref": "apparel_woven_satin_synthetic" },
+    "apparel_woven_satin_top_protein":            { "ref": "apparel_woven_satin_protein" },
+    "apparel_woven_satin_top_bonded":             { "ref": "apparel_woven_satin_bonded" },
+    "apparel_woven_satin_top_mixed":              { "ref": "apparel_woven_satin_mixed" },
+
+    "apparel_woven_satin_bottom_cellulosic":         { "ref": "apparel_woven_satin_cellulosic" },
+    "apparel_woven_satin_bottom_manmade_cellulosic": { "ref": "apparel_woven_satin_manmade_cellulosic" },
+    "apparel_woven_satin_bottom_synthetic":          { "ref": "apparel_woven_satin_synthetic" },
+    "apparel_woven_satin_bottom_protein":            { "ref": "apparel_woven_satin_protein" },
+    "apparel_woven_satin_bottom_mixed":              { "ref": "apparel_woven_satin_mixed" },
+
+
+
+    "apparel_woven_jacquard_top_cellulosic":         { "ref": "apparel_woven_jacquard_cellulosic" },
+    "apparel_woven_jacquard_top_manmade_cellulosic": { "ref": "apparel_woven_jacquard_manmade_cellulosic" },
+    "apparel_woven_jacquard_top_synthetic":          { "ref": "apparel_woven_jacquard_synthetic" },
+    "apparel_woven_jacquard_top_protein":            { "ref": "apparel_woven_jacquard_protein" },
+    "apparel_woven_jacquard_top_bonded":             { "ref": "apparel_woven_jacquard_bonded" },
+    "apparel_woven_jacquard_top_mixed":              { "ref": "apparel_woven_jacquard_mixed" },
+
+    "apparel_woven_jacquard_bottom_cellulosic":         { "ref": "apparel_woven_jacquard_cellulosic" },
+    "apparel_woven_jacquard_bottom_manmade_cellulosic": { "ref": "apparel_woven_jacquard_manmade_cellulosic" },
+    "apparel_woven_jacquard_bottom_synthetic":          { "ref": "apparel_woven_jacquard_synthetic" },
+    "apparel_woven_jacquard_bottom_protein":            { "ref": "apparel_woven_jacquard_protein" },
+    "apparel_woven_jacquard_bottom_mixed":              { "ref": "apparel_woven_jacquard_mixed" },
+
+
+
+    "apparel_woven_dobby_top_cellulosic":         { "ref": "apparel_woven_dobby_cellulosic" },
+    "apparel_woven_dobby_top_manmade_cellulosic": { "ref": "apparel_woven_dobby_manmade_cellulosic" },
+    "apparel_woven_dobby_top_synthetic":          { "ref": "apparel_woven_dobby_synthetic" },
+    "apparel_woven_dobby_top_protein":            { "ref": "apparel_woven_dobby_protein" },
+    "apparel_woven_dobby_top_mixed":              { "ref": "apparel_woven_dobby_mixed" },
+
+    "apparel_woven_dobby_bottom_cellulosic":         { "ref": "apparel_woven_dobby_cellulosic" },
+    "apparel_woven_dobby_bottom_manmade_cellulosic": { "ref": "apparel_woven_dobby_manmade_cellulosic" },
+    "apparel_woven_dobby_bottom_synthetic":          { "ref": "apparel_woven_dobby_synthetic" },
+    "apparel_woven_dobby_bottom_protein":            { "ref": "apparel_woven_dobby_protein" },
+    "apparel_woven_dobby_bottom_mixed":              { "ref": "apparel_woven_dobby_mixed" },
+
+
+
+    "apparel_nonwoven_top_synthetic":          { "ref": "apparel_nonwoven_synthetic" },
+    "apparel_nonwoven_top_cellulosic":         { "ref": "apparel_nonwoven_cellulosic" },
+    "apparel_nonwoven_top_manmade_cellulosic": { "ref": "apparel_nonwoven_manmade_cellulosic" },
+    "apparel_nonwoven_top_mixed":              { "ref": "apparel_nonwoven_mixed" },
+
+    "apparel_nonwoven_bottom_synthetic":  { "ref": "apparel_nonwoven_synthetic" },
+    "apparel_nonwoven_bottom_cellulosic": { "ref": "apparel_nonwoven_cellulosic" },
+
+    "apparel_nonwoven_protective_synthetic": { "ref": "apparel_nonwoven_protective_synthetic" },
+    "apparel_nonwoven_medical_synthetic":    { "ref": "apparel_nonwoven_medical_synthetic" },
+
+
+
+    "apparel_felted_top_protein": { "ref": "apparel_felted_protein" },
+    "apparel_felted_top_synthetic": { "ref": "apparel_felted_synthetic" },
+    "apparel_felted_top_mixed": { "ref": "apparel_felted_mixed" },
+
+
+
+    "accessories_braided_cellulosic": { "ref": "accessories_braided_cellulosic" },
+    "accessories_braided_synthetic":  { "ref": "accessories_braided_synthetic" },
+    "accessories_braided_protein":    { "ref": "accessories_braided_protein" },
+    "accessories_braided_mixed":      { "ref": "accessories_braided_mixed" },
+
+    "apparel_braided_top_cellulosic":    { "ref": "apparel_braided_cellulosic" },
+    "apparel_braided_top_synthetic":     { "ref": "apparel_braided_synthetic" },
+    "apparel_braided_bottom_cellulosic": { "ref": "apparel_braided_cellulosic" },
+    "apparel_braided_bottom_synthetic":  { "ref": "apparel_braided_synthetic" },
+
+
+
+    "apparel_leather_top":               { "ref": "apparel_leather" },
+    "apparel_leather_bottom":            { "ref": "apparel_leather" },
+    "apparel_leather_top_embroidered":   { "ref": "apparel_leather_embroidered" },
+    "apparel_leather_top_quilted":       { "ref": "apparel_leather_quilted" },
+    "apparel_leather_top_printed":       { "ref": "apparel_leather_printed" },
+    "apparel_leather_top_bonded":        { "ref": "apparel_leather_bonded" },
+
+    "apparel_pu_synthetic_leather_top":             { "ref": "apparel_pu_synthetic_leather" },
+    "apparel_pu_synthetic_leather_bottom":          { "ref": "apparel_pu_synthetic_leather" },
+    "apparel_pu_synthetic_leather_top_embroidered": { "ref": "apparel_pu_synthetic_leather_embroidered" },
+    "apparel_pu_synthetic_leather_top_quilted":     { "ref": "apparel_pu_synthetic_leather_quilted" },
+    "apparel_pu_synthetic_leather_top_printed":     { "ref": "apparel_pu_synthetic_leather_printed" },
+
+    "apparel_suede_leather_top":    { "ref": "apparel_suede_leather" },
+    "apparel_suede_leather_bottom": { "ref": "apparel_suede_leather" },
+
+    "accessories_leather":                    { "ref": "accessories_leather" },
+    "accessories_pu_synthetic_leather":      { "ref": "accessories_pu_synthetic_leather" },
+    "accessories_leather_embroidered":       { "ref": "accessories_leather_embroidered" },
+    "accessories_pu_synthetic_leather_embroidered": { "ref": "accessories_pu_synthetic_leather_embroidered" },
+
+
+
+    "apparel_technical_knit_circular_top_synthetic":    { "ref": "apparel_technical_knit_circular_synthetic" },
+    "apparel_technical_knit_circular_bottom_synthetic": { "ref": "apparel_technical_knit_circular_synthetic" },
+    "apparel_technical_knit_circular_top_bonded":       { "ref": "apparel_technical_knit_circular_bonded" },
+    "apparel_technical_knit_circular_bottom_bonded":    { "ref": "apparel_technical_knit_circular_bonded" },
+    "apparel_technical_knit_circular_top_waterproof_breathable":    { "ref": "apparel_technical_knit_circular_waterproof_breathable" },
+
+    "apparel_technical_woven_plain_top_synthetic":      { "ref": "apparel_technical_woven_plain_synthetic" },
+    "apparel_technical_woven_plain_bottom_synthetic":   { "ref": "apparel_technical_woven_plain_synthetic" },
+    "apparel_technical_woven_plain_top_bonded":         { "ref": "apparel_technical_woven_plain_bonded" },
+    "apparel_technical_woven_plain_bottom_bonded":      { "ref": "apparel_technical_woven_plain_bonded" },
+    "apparel_technical_woven_plain_top_waterproof_breathable":      { "ref": "apparel_technical_woven_plain_waterproof_breathable" },
+    "apparel_technical_woven_plain_bottom_waterproof_breathable":   { "ref": "apparel_technical_woven_plain_waterproof_breathable" },
+
+    "apparel_technical_knit_circular_top_reflective": { "ref": "apparel_technical_knit_circular_reflective" },
+    "apparel_technical_woven_plain_top_reflective":   { "ref": "apparel_technical_woven_plain_reflective" },
+
+
+
+    "apparel_workwear_knit_circular_top_cellulosic":    { "ref": "apparel_workwear_knit_circular_cellulosic" },
+    "apparel_workwear_knit_circular_bottom_cellulosic": { "ref": "apparel_workwear_knit_circular_cellulosic" },
+    "apparel_workwear_knit_circular_top_synthetic":     { "ref": "apparel_workwear_knit_circular_synthetic" },
+    "apparel_workwear_knit_circular_bottom_synthetic":  { "ref": "apparel_workwear_knit_circular_synthetic" },
+
+    "apparel_workwear_woven_plain_top_cellulosic":      { "ref": "apparel_workwear_woven_plain_cellulosic" },
+    "apparel_workwear_woven_plain_bottom_cellulosic":   { "ref": "apparel_workwear_woven_plain_cellulosic" },
+    "apparel_workwear_woven_plain_top_synthetic":       { "ref": "apparel_workwear_woven_plain_synthetic" },
+    "apparel_workwear_woven_plain_bottom_synthetic":    { "ref": "apparel_workwear_woven_plain_synthetic" },
+
+    "apparel_workwear_top_flame_retardant_cellulosic":  { "ref": "apparel_workwear_flame_retardant_cellulosic" },
+    "apparel_workwear_bottom_flame_retardant_cellulosic": { "ref": "apparel_workwear_flame_retardant_cellulosic" },
+    "apparel_workwear_top_flame_retardant_synthetic":   { "ref": "apparel_workwear_flame_retardant_synthetic" },
+    "apparel_workwear_bottom_flame_retardant_synthetic": { "ref": "apparel_workwear_flame_retardant_synthetic" },
+
+    "apparel_workwear_top_high_visibility": { "ref": "apparel_workwear_high_visibility" },
+    "apparel_workwear_bottom_high_visibility": { "ref": "apparel_workwear_high_visibility" },
+    "apparel_workwear_top_arc_flash_protection": { "ref": "apparel_workwear_arc_flash_protection" },
+    "apparel_workwear_top_chemical_resistant":   { "ref": "apparel_workwear_chemical_resistant" },
+    "apparel_workwear_top_cut_resistant":        { "ref": "apparel_workwear_cut_resistant" },
+
+
+
+    "accessories_knit_circular_cellulosic": { "ref": "accessories_knit_circular_cellulosic" },
+    "accessories_knit_circular_synthetic":  { "ref": "accessories_knit_circular_synthetic" },
+    "accessories_knit_circular_protein":    { "ref": "accessories_knit_circular_protein" },
+    "accessories_knit_circular_mixed":      { "ref": "accessories_knit_circular_mixed" },
+
+    "accessories_knit_flat_cellulosic": { "ref": "accessories_knit_flat_cellulosic" },
+    "accessories_knit_flat_synthetic":  { "ref": "accessories_knit_flat_synthetic" },
+    "accessories_knit_flat_protein":    { "ref": "accessories_knit_flat_protein" },
+    "accessories_knit_flat_mixed":      { "ref": "accessories_knit_flat_mixed" },
+
+    "accessories_woven_plain_cellulosic": { "ref": "accessories_woven_plain_cellulosic" },
+    "accessories_woven_plain_synthetic":  { "ref": "accessories_woven_plain_synthetic" },
+    "accessories_woven_plain_protein":    { "ref": "accessories_woven_plain_protein" },
+    "accessories_woven_plain_mixed":      { "ref": "accessories_woven_plain_mixed" },
+
+    "accessories_woven_satin_cellulosic": { "ref": "accessories_woven_satin_cellulosic" },
+    "accessories_woven_satin_synthetic":  { "ref": "accessories_woven_satin_synthetic" },
+    "accessories_woven_satin_protein":    { "ref": "accessories_woven_satin_protein" },
+    "accessories_woven_satin_mixed":      { "ref": "accessories_woven_satin_mixed" },
+
+    "accessories_woven_jacquard_cellulosic": { "ref": "accessories_woven_jacquard_cellulosic" },
+    "accessories_woven_jacquard_synthetic":  { "ref": "accessories_woven_jacquard_synthetic" },
+    "accessories_woven_jacquard_protein":    { "ref": "accessories_woven_jacquard_protein" },
+    "accessories_woven_jacquard_mixed":      { "ref": "accessories_woven_jacquard_mixed" },
+
+
+
+    "footwear_generic": { "ref": "default_footwear" },
+
+    "footwear_athletic_cemented_mesh_synthetic":  { "ref": "footwear_athletic_cemented_mesh_synthetic" },
+    "footwear_athletic_cemented_knit_synthetic":  { "ref": "footwear_athletic_cemented_knit_synthetic" },
+    "footwear_athletic_cemented_woven_synthetic": { "ref": "footwear_athletic_cemented_woven_synthetic" },
+
+    "footwear_athletic_vulcanized_canvas_cellulosic": { "ref": "footwear_athletic_vulcanized_canvas_cellulosic" },
+    "footwear_athletic_vulcanized_synthetic":         { "ref": "footwear_athletic_vulcanized_synthetic" },
+
+    "footwear_athletic_stitched_leather":            { "ref": "footwear_athletic_stitched_leather" },
+    "footwear_athletic_stitched_pu_synthetic_leather": { "ref": "footwear_athletic_stitched_pu_synthetic_leather" },
+
+    "footwear_boots_cemented_leather":             { "ref": "footwear_boots_cemented_leather" },
+    "footwear_boots_cemented_pu_synthetic_leather":{ "ref": "footwear_boots_cemented_pu_synthetic_leather" },
+    "footwear_boots_cemented_synthetic":           { "ref": "footwear_boots_cemented_synthetic" },
+
+    "footwear_boots_vulcanized_rubber":   { "ref": "footwear_boots_vulcanized_rubber" },
+    "footwear_boots_vulcanized_synthetic":{ "ref": "footwear_boots_vulcanized_synthetic" },
+
+    "footwear_boots_stitched_leather":        { "ref": "footwear_boots_stitched_leather" },
+    "footwear_boots_stitched_goodyear_leather": { "ref": "footwear_boots_stitched_goodyear_leather" },
+    "footwear_boots_stitched_blake_leather":    { "ref": "footwear_boots_stitched_blake_leather" },
+    "footwear_boots_stitched_norvegese_leather":{ "ref": "footwear_boots_stitched_norvegese_leather" },
+
+    "footwear_boots_injection_molded_rubber": { "ref": "footwear_boots_injection_molded_rubber" },
+    "footwear_boots_injection_molded_pvc":    { "ref": "footwear_boots_injection_molded_pvc" },
+    "footwear_boots_injection_molded_pu":     { "ref": "footwear_boots_injection_molded_pu" },
+
+    "footwear_formal_cemented_leather":              { "ref": "footwear_formal_cemented_leather" },
+    "footwear_formal_cemented_pu_synthetic_leather": { "ref": "footwear_formal_cemented_pu_synthetic_leather" },
+    "footwear_formal_cemented_patent_leather":       { "ref": "footwear_formal_cemented_patent_leather" },
+    "footwear_formal_cemented_suede_leather":        { "ref": "footwear_formal_cemented_suede_leather" },
+
+    "footwear_formal_stitched_leather":              { "ref": "footwear_formal_stitched_leather" },
+    "footwear_formal_stitched_goodyear_leather":     { "ref": "footwear_formal_stitched_goodyear_leather" },
+    "footwear_formal_stitched_blake_leather":        { "ref": "footwear_formal_stitched_blake_leather" },
+    "footwear_formal_stitched_norvegese_leather":    { "ref": "footwear_formal_stitched_norvegese_leather" },
+    "footwear_formal_stitched_patent_leather":       { "ref": "footwear_formal_stitched_patent_leather" },
+    "footwear_formal_stitched_suede_leather":        { "ref": "footwear_formal_stitched_suede_leather" },
+
+    "footwear_sandal_cemented_leather":               { "ref": "footwear_sandal_cemented_leather" },
+    "footwear_sandal_cemented_pu_synthetic_leather":  { "ref": "footwear_sandal_cemented_pu_synthetic_leather" },
+    "footwear_sandal_cemented_synthetic":             { "ref": "footwear_sandal_cemented_synthetic" },
+    "footwear_sandal_cemented_cork":                  { "ref": "footwear_sandal_cemented_cork" },
+    "footwear_sandal_cemented_eva_foam":              { "ref": "footwear_sandal_cemented_eva_foam" },
+
+    "footwear_sandal_stitched_leather":            { "ref": "footwear_sandal_stitched_leather" },
+
+    "footwear_sandal_injection_molded_eva":    { "ref": "footwear_sandal_injection_molded_eva" },
+    "footwear_sandal_injection_molded_pu":     { "ref": "footwear_sandal_injection_molded_pu" },
+    "footwear_sandal_injection_molded_rubber": { "ref": "footwear_sandal_injection_molded_rubber" },
+
+    "footwear_slippers_cemented_synthetic":          { "ref": "footwear_slippers_cemented_synthetic" },
+    "footwear_slippers_cemented_felt_protein":       { "ref": "footwear_slippers_cemented_felt_protein" },
+    "footwear_slippers_cemented_knit_cellulosic":    { "ref": "footwear_slippers_cemented_knit_cellulosic" },
+    "footwear_slippers_cemented_knit_synthetic":     { "ref": "footwear_slippers_cemented_knit_synthetic" },
+    "footwear_slippers_cemented_woven_cellulosic":   { "ref": "footwear_slippers_cemented_woven_cellulosic" },
+    "footwear_slippers_cemented_leather":            { "ref": "footwear_slippers_cemented_leather" },
+    "footwear_slippers_cemented_pu_synthetic_leather": { "ref": "footwear_slippers_cemented_pu_synthetic_leather" },
+
+    "footwear_moccasin_stitched_leather":        { "ref": "footwear_moccasin_stitched_leather" },
+    "footwear_moccasin_stitched_suede_leather": { "ref": "footwear_moccasin_stitched_suede_leather" },
+    "footwear_moccasin_cemented_leather":       { "ref": "footwear_moccasin_cemented_leather" },
+
+    "footwear_espadrille_cemented_canvas_cellulosic": { "ref": "footwear_espadrille_cemented_canvas_cellulosic" },
+    "footwear_espadrille_cemented_jute":              { "ref": "footwear_espadrille_cemented_jute" },
+    "footwear_espadrille_stitched_canvas_cellulosic": { "ref": "footwear_espadrille_stitched_canvas_cellulosic" },
+
+    "footwear_clog_injection_molded_pu":  { "ref": "footwear_clog_injection_molded_pu" },
+    "footwear_clog_injection_molded_eva": { "ref": "footwear_clog_injection_molded_eva" },
+    "footwear_clog_cemented_leather":     { "ref": "footwear_clog_cemented_leather" },
+    "footwear_clog_cemented_synthetic":   { "ref": "footwear_clog_cemented_synthetic" },
+
+    "footwear_flip_flop_injection_molded_eva":    { "ref": "footwear_flip_flop_injection_molded_eva" },
+    "footwear_flip_flop_injection_molded_rubber": { "ref": "footwear_flip_flop_injection_molded_rubber" },
+    "footwear_flip_flop_injection_molded_pu":     { "ref": "footwear_flip_flop_injection_molded_pu" },
+
+    "footwear_technical_hiking_cemented_leather":           { "ref": "footwear_technical_hiking_cemented_leather" },
+    "footwear_technical_hiking_stitched_leather":           { "ref": "footwear_technical_hiking_stitched_leather" },
+    "footwear_technical_hiking_cemented_synthetic":         { "ref": "footwear_technical_hiking_cemented_synthetic" },
+    "footwear_technical_hiking_cemented_mixed_leather_synthetic": { "ref": "footwear_technical_hiking_cemented_leather" },
+
+    "footwear_technical_climbing_cemented_synthetic": { "ref": "footwear_technical_climbing_cemented_synthetic" },
+    "footwear_technical_climbing_stitched_leather":   { "ref": "footwear_technical_climbing_stitched_leather" },
+
+    "footwear_safety_cemented_leather":   { "ref": "footwear_safety_cemented_leather" },
+    "footwear_safety_cemented_synthetic": { "ref": "footwear_safety_cemented_synthetic" },
+    "footwear_safety_stitched_leather":   { "ref": "footwear_safety_stitched_leather" },
+    "footwear_safety_injection_molded_pu": { "ref": "footwear_safety_injection_molded_pu" },
+
+    "footwear_vulcanized": { "ref": "footwear_vulcanized" },
+    "footwear_leather":    { "ref": "footwear_leather_cemented" },
+    "footwear_sandal":     { "ref": "footwear_sandal_cemented" }
+  }
+}
