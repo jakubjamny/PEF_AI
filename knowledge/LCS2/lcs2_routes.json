@@ -865,6 +865,139 @@
         { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
       ]
     },
+    "apparel_woven_satin_cellulosic": {
+      "steps": [
+        { "label": "Spinning, for woven, ring-spun (cellulosic)", "ref": "spin_cotton_woven_ring_150dtex" },
+        { "label": "Weaving (satin) – rapier loom (proxy)", "ref": "weaving_rapier" },
+        { "label": "Dyeing, batch (cellulosics/MMC)", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_woven_satin_manmade_cellulosic": {
+      "steps": [
+        { "label": "Spinning (MMC proxy via ring-spun)", "ref": "spin_cotton_woven_ring_150dtex" },
+        { "label": "Weaving (satin) – rapier loom (proxy)", "ref": "weaving_rapier" },
+        { "label": "Dyeing, batch (cellulosics/MMC)", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_woven_satin_synthetic": {
+      "steps": [
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Weaving (satin) – rapier loom (proxy)", "ref": "weaving_rapier" },
+        { "label": "Dyeing, batch (disperse/cationic)", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_woven_satin_protein": {
+      "steps": [
+        { "label": "Spinning, wool, for woven (protein proxy)", "ref": "spin_wool_woven_120dtex" },
+        { "label": "Weaving (satin) – rapier loom (proxy)", "ref": "weaving_rapier" },
+        { "label": "Dyeing, batch (acid, protein)", "ref": "dye_batch_acid" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_woven_satin_bonded": {
+      "steps": [
+        { "label": "Base fabric: spinning (cellulosic proxy)", "ref": "spin_cotton_woven_ring_150dtex" },
+        { "label": "Weaving (satin) – rapier loom (proxy)", "ref": "weaving_rapier" },
+        { "label": "Lamination/coating (proxy)", "ref": "extrusion_monofilament_offline" },
+        { "label": "Finishing after lamination (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_woven_satin_mixed": {
+      "steps": [
+        { "label": "Spinning (dominant chemistry proxy: ring-spun)", "ref": "spin_cotton_woven_ring_150dtex" },
+        { "label": "Weaving (satin) – rapier loom (proxy)", "ref": "weaving_rapier" },
+        { "label": "Dyeing (per dominant chemistry) – proxy cellulosics", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+
+
+    "apparel_woven_jacquard_cellulosic": {
+      "steps": [
+        { "label": "Spinning, for woven, ring-spun (cellulosic)", "ref": "spin_cotton_woven_ring_150dtex" },
+        { "label": "Weaving (jacquard) – rapier loom (proxy)", "ref": "weaving_rapier" },
+        { "label": "Dyeing, batch (cellulosics/MMC)", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_woven_jacquard_manmade_cellulosic": {
+      "steps": [
+        { "label": "Spinning (MMC proxy via ring-spun)", "ref": "spin_cotton_woven_ring_150dtex" },
+        { "label": "Weaving (jacquard) – rapier loom (proxy)", "ref": "weaving_rapier" },
+        { "label": "Dyeing, batch (cellulosics/MMC)", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_woven_jacquard_synthetic": {
+      "steps": [
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Weaving (jacquard) – rapier loom (proxy)", "ref": "weaving_rapier" },
+        { "label": "Dyeing, batch (disperse/cationic)", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_woven_jacquard_protein": {
+      "steps": [
+        { "label": "Spinning, wool, for woven (protein)", "ref": "spin_wool_woven_120dtex" },
+        { "label": "Weaving (jacquard) – rapier loom (proxy)", "ref": "weaving_rapier" },
+        { "label": "Dyeing, batch (acid, protein)", "ref": "dye_batch_acid" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_woven_jacquard_bonded": {
+      "steps": [
+        { "label": "Base fabric: spinning (cellulosic proxy)", "ref": "spin_cotton_woven_ring_150dtex" },
+        { "label": "Weaving (jacquard) – rapier loom (proxy)", "ref": "weaving_rapier" },
+        { "label": "Lamination/coating (proxy)", "ref": "extrusion_monofilament_offline" },
+        { "label": "Finishing after lamination (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_woven_jacquard_mixed": {
+      "steps": [
+        { "label": "Spinning (dominant chemistry proxy: ring-spun)", "ref": "spin_cotton_woven_ring_150dtex" },
+        { "label": "Weaving (jacquard) – rapier loom (proxy)", "ref": "weaving_rapier" },
+        { "label": "Dyeing (per dominant chemistry) – proxy cellulosics", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
     "apparel_knit_circular_underwear_manmade_cellulosic": {
       "steps": [
         { "label": "Spinning (MMC proxy via ring-spun)", "ref": "spin_cotton_knit_ring_150dtex" },
@@ -1567,6 +1700,31 @@
       "apparel_knit_warp_top_synthetic_staple":   { "ref": "apparel_knit_warp_synthetic_staple" },
       "apparel_knit_warp_top_bonded":             { "ref": "apparel_knit_warp_bonded" },
       "apparel_knit_warp_top_mixed":              { "ref": "apparel_knit_warp_mixed" },
+    "apparel_woven_satin_top_cellulosic":         { "ref": "apparel_woven_satin_cellulosic" },
+    "apparel_woven_satin_top_manmade_cellulosic": { "ref": "apparel_woven_satin_manmade_cellulosic" },
+    "apparel_woven_satin_top_synthetic":          { "ref": "apparel_woven_satin_synthetic" },
+    "apparel_woven_satin_top_protein":            { "ref": "apparel_woven_satin_protein" },
+    "apparel_woven_satin_top_bonded":             { "ref": "apparel_woven_satin_bonded" },
+    "apparel_woven_satin_top_mixed":              { "ref": "apparel_woven_satin_mixed" },
+
+    "apparel_woven_satin_bottom_cellulosic":         { "ref": "apparel_woven_satin_cellulosic" },
+    "apparel_woven_satin_bottom_manmade_cellulosic": { "ref": "apparel_woven_satin_manmade_cellulosic" },
+    "apparel_woven_satin_bottom_synthetic":          { "ref": "apparel_woven_satin_synthetic" },
+    "apparel_woven_satin_bottom_protein":            { "ref": "apparel_woven_satin_protein" },
+    "apparel_woven_satin_bottom_mixed":              { "ref": "apparel_woven_satin_mixed" },
+
+    "apparel_woven_jacquard_top_cellulosic":         { "ref": "apparel_woven_jacquard_cellulosic" },
+    "apparel_woven_jacquard_top_manmade_cellulosic": { "ref": "apparel_woven_jacquard_manmade_cellulosic" },
+    "apparel_woven_jacquard_top_synthetic":          { "ref": "apparel_woven_jacquard_synthetic" },
+    "apparel_woven_jacquard_top_protein":            { "ref": "apparel_woven_jacquard_protein" },
+    "apparel_woven_jacquard_top_bonded":             { "ref": "apparel_woven_jacquard_bonded" },
+    "apparel_woven_jacquard_top_mixed":              { "ref": "apparel_woven_jacquard_mixed" },
+
+    "apparel_woven_jacquard_bottom_cellulosic":         { "ref": "apparel_woven_jacquard_cellulosic" },
+    "apparel_woven_jacquard_bottom_manmade_cellulosic": { "ref": "apparel_woven_jacquard_manmade_cellulosic" },
+    "apparel_woven_jacquard_bottom_synthetic":          { "ref": "apparel_woven_jacquard_synthetic" },
+    "apparel_woven_jacquard_bottom_protein":            { "ref": "apparel_woven_jacquard_protein" },
+    "apparel_woven_jacquard_bottom_mixed":              { "ref": "apparel_woven_jacquard_mixed" },
 
       "apparel_knit_warp_bottom_cellulosic":         { "ref": "apparel_knit_warp_cellulosic" },
       "apparel_knit_warp_bottom_manmade_cellulosic": { "ref": "apparel_knit_warp_manmade_cellulosic" },
