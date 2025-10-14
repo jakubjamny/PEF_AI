@@ -1978,6 +1978,254 @@
         { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
       ]
     },
+    "default_footwear": {
+      "steps": [
+        { "label": "Cutting (footwear)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (footwear)", "ref": "sewing_pair" },
+        { "label": "Cementing/gluing", "ref": "cementing_pair" },
+        { "label": "Lasting, strobel", "ref": "lasting_strobel_pair" }
+      ]
+    },
+
+    "footwear_athletic_cemented_mesh_synthetic": {
+      "steps": [
+        { "label": "Knitting, flat (mesh structure)", "ref": "knit_flat" },
+        { "label": "Cutting (footwear)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (footwear)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Cementing/gluing", "ref": "cementing_pair" },
+        { "label": "Lasting, strobel", "ref": "lasting_strobel_pair" }
+      ]
+    },
+
+    "footwear_athletic_cemented_knit_synthetic": {
+      "steps": [
+        { "label": "Knitting, flat (knit upper)", "ref": "knit_flat" },
+        { "label": "Cutting (footwear)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (footwear)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Cementing/gluing", "ref": "cementing_pair" },
+        { "label": "Lasting, strobel", "ref": "lasting_strobel_pair" }
+      ]
+    },
+
+    "footwear_athletic_cemented_woven_synthetic": {
+      "steps": [
+        { "label": "Weaving, rapier (woven upper)", "ref": "weaving_rapier" },
+        { "label": "Cutting (footwear)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (footwear)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Cementing/gluing", "ref": "cementing_pair" },
+        { "label": "Lasting, strobel", "ref": "lasting_strobel_pair" }
+      ]
+    },
+
+    "footwear_athletic_vulcanized_canvas_cellulosic": {
+      "steps": [
+        { "label": "Weaving, rapier (canvas)", "ref": "weaving_rapier" },
+        { "label": "Cutting (footwear)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (footwear)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Autoclaving (vulcanization)", "ref": "vulcanizing_autoclave_pair" }
+      ]
+    },
+
+    "footwear_athletic_vulcanized_synthetic": {
+      "steps": [
+        { "label": "Knitting, flat (synthetic upper)", "ref": "knit_flat" },
+        { "label": "Cutting (footwear)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (footwear)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Autoclaving (vulcanization)", "ref": "vulcanizing_autoclave_pair" }
+      ]
+    },
+
+    "footwear_athletic_stitched_leather": {
+      "steps": [
+        { "label": "Cutting (leather)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (footwear)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Lasting, strobel", "ref": "lasting_strobel_pair" },
+        { "label": "Stitching (direct attach)", "ref": "sewing_pair" }
+      ]
+    },
+
+    "footwear_athletic_stitched_pu_synthetic_leather": {
+      "steps": [
+        { "label": "Knitting, flat (base fabric)", "ref": "knit_flat" },
+        { "label": "Coating, PUR (synthetic leather)", "ref": "coating_pur" },
+        { "label": "Cutting (footwear)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (footwear)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Lasting, strobel", "ref": "lasting_strobel_pair" },
+        { "label": "Stitching (direct attach)", "ref": "sewing_pair" }
+      ]
+    },
+
+    "footwear_boots_cemented_leather": {
+      "steps": [
+        { "label": "Cutting (leather)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (footwear)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Cementing/gluing", "ref": "cementing_pair" },
+        { "label": "Lasting, strobel", "ref": "lasting_strobel_pair" }
+      ]
+    },
+
+    "footwear_boots_cemented_pu_synthetic_leather": {
+      "steps": [
+        { "label": "Knitting, flat (base fabric)", "ref": "knit_flat" },
+        { "label": "Coating, PUR (synthetic leather)", "ref": "coating_pur" },
+        { "label": "Cutting (footwear)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (footwear)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Cementing/gluing", "ref": "cementing_pair" },
+        { "label": "Lasting, strobel", "ref": "lasting_strobel_pair" }
+      ]
+    },
+
+    "footwear_boots_cemented_synthetic": {
+      "steps": [
+        { "label": "Knitting, flat (synthetic upper)", "ref": "knit_flat" },
+        { "label": "Cutting (footwear)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (footwear)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Cementing/gluing", "ref": "cementing_pair" },
+        { "label": "Lasting, strobel", "ref": "lasting_strobel_pair" }
+      ]
+    },
+
+    "footwear_boots_vulcanized_rubber": {
+      "steps": [
+        { "label": "Cutting (rubber)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (footwear)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Autoclaving (vulcanization)", "ref": "vulcanizing_autoclave_pair" }
+      ]
+    },
+
+    "footwear_boots_vulcanized_synthetic": {
+      "steps": [
+        { "label": "Knitting, flat (synthetic upper)", "ref": "knit_flat" },
+        { "label": "Cutting (footwear)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (footwear)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Autoclaving (vulcanization)", "ref": "vulcanizing_autoclave_pair" }
+      ]
+    },
+
+    "footwear_boots_stitched_leather": {
+      "steps": [
+        { "label": "Cutting (leather)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (footwear)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Lasting, strobel", "ref": "lasting_strobel_pair" },
+        { "label": "Stitching (welt construction)", "ref": "sewing_pair" }
+      ]
+    },
+
+    "footwear_boots_stitched_goodyear_leather": {
+      "steps": [
+        { "label": "Cutting (leather)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (upper)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Lasting, strobel", "ref": "lasting_strobel_pair" },
+        { "label": "Stitching (Goodyear welt)", "ref": "sewing_pair" },
+        { "label": "Stitching (outsole attach)", "ref": "sewing_pair" }
+      ]
+    },
+
+    "footwear_boots_stitched_blake_leather": {
+      "steps": [
+        { "label": "Cutting (leather)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (upper)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Lasting, strobel", "ref": "lasting_strobel_pair" },
+        { "label": "Stitching (Blake stitch – direct insole-outsole)", "ref": "sewing_pair" }
+      ]
+    },
+
+    "footwear_boots_stitched_norvegese_leather": {
+      "steps": [
+        { "label": "Cutting (leather)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (upper)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Lasting, strobel", "ref": "lasting_strobel_pair" },
+        { "label": "Stitching (Norwegian welt)", "ref": "sewing_pair" },
+        { "label": "Stitching (outsole attach)", "ref": "sewing_pair" }
+      ]
+    },
+
+    "footwear_boots_injection_molded_rubber": {
+      "steps": [
+        { "label": "Cutting (upper)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (footwear)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Injection molding (rubber sole)", "ref": "inj_molding_foam_pair" }
+      ]
+    },
+
+    "footwear_boots_injection_molded_pvc": {
+      "steps": [
+        { "label": "Cutting (upper)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (footwear)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Injection molding (PVC sole)", "ref": "inj_molding_foam_pair" }
+      ]
+    },
+
+    "footwear_boots_injection_molded_pu": {
+      "steps": [
+        { "label": "Cutting (upper)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (footwear)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Injection molding (PU sole)", "ref": "inj_molding_foam_pair" }
+      ]
+    },
+
+    "footwear_formal_cemented_leather": {
+      "steps": [
+        { "label": "Cutting (leather)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (footwear)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Cementing/gluing", "ref": "cementing_pair" },
+        { "label": "Lasting, strobel", "ref": "lasting_strobel_pair" }
+      ]
+    },
+
+    "footwear_formal_cemented_pu_synthetic_leather": {
+      "steps": [
+        { "label": "Knitting, flat (base fabric)", "ref": "knit_flat" },
+        { "label": "Coating, PUR (synthetic leather)", "ref": "coating_pur" },
+        { "label": "Cutting (footwear)", "ref": "cutting_pair_mix" },
+        { "label": "Sewing (footwear)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Cementing/gluing", "ref": "cementing_pair" },
+        { "label": "Lasting, strobel", "ref": "lasting_strobel_pair" }
+      ]
+    },
+
+    "footwear_formal_cemented_patent_leather": {
+      "steps": [
+        { "label": "Cutting (leather)", "ref": "cutting_pair_mix" },
+        { "label": "Coating, PUR (patent finish)", "ref": "coating_pur" },
+        { "label": "Sewing (footwear)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Cementing/gluing", "ref": "cementing_pair" },
+        { "label": "Lasting, strobel", "ref": "lasting_strobel_pair" }
+      ]
+    },
+
+    "footwear_formal_cemented_suede_leather": {
+      "steps": [
+        { "label": "Cutting (leather)", "ref": "cutting_pair_mix" },
+        { "label": "Sueding/sanding (suede finish)", "ref": "sueding_sanding" },
+        { "label": "Sewing (footwear)", "ref": "sewing_pair" },
+        { "label": "Insole assembly", "ref": "insole_assembly" },
+        { "label": "Cementing/gluing", "ref": "cementing_pair" },
+        { "label": "Lasting, strobel", "ref": "lasting_strobel_pair" }
+      ]
+    },
     "apparel_printed_knit_protein": {
       "steps": [
         { "label": "Spinning, for knit, ring-spun", "ref": "spin_wool_knit_200dtex" },
@@ -2457,6 +2705,33 @@
     "apparel_felted_top_protein":   { "ref": "apparel_felted_protein" },
     "apparel_felted_top_synthetic": { "ref": "apparel_felted_synthetic" },
     "apparel_felted_top_mixed":     { "ref": "apparel_felted_mixed" },
+    "footwear_generic": { "ref": "default_footwear" },
+
+    "footwear_athletic_cemented_mesh_synthetic":  { "ref": "footwear_athletic_cemented_mesh_synthetic" },
+    "footwear_athletic_cemented_knit_synthetic":  { "ref": "footwear_athletic_cemented_knit_synthetic" },
+    "footwear_athletic_cemented_woven_synthetic": { "ref": "footwear_athletic_cemented_woven_synthetic" },
+    "footwear_athletic_vulcanized_canvas_cellulosic": { "ref": "footwear_athletic_vulcanized_canvas_cellulosic" },
+    "footwear_athletic_vulcanized_synthetic":         { "ref": "footwear_athletic_vulcanized_synthetic" },
+    "footwear_athletic_stitched_leather":            { "ref": "footwear_athletic_stitched_leather" },
+    "footwear_athletic_stitched_pu_synthetic_leather": { "ref": "footwear_athletic_stitched_pu_synthetic_leather" },
+
+    "footwear_boots_cemented_leather":             { "ref": "footwear_boots_cemented_leather" },
+    "footwear_boots_cemented_pu_synthetic_leather":{ "ref": "footwear_boots_cemented_pu_synthetic_leather" },
+    "footwear_boots_cemented_synthetic":           { "ref": "footwear_boots_cemented_synthetic" },
+    "footwear_boots_vulcanized_rubber":   { "ref": "footwear_boots_vulcanized_rubber" },
+    "footwear_boots_vulcanized_synthetic":{ "ref": "footwear_boots_vulcanized_synthetic" },
+    "footwear_boots_stitched_leather":        { "ref": "footwear_boots_stitched_leather" },
+    "footwear_boots_stitched_goodyear_leather": { "ref": "footwear_boots_stitched_goodyear_leather" },
+    "footwear_boots_stitched_blake_leather":    { "ref": "footwear_boots_stitched_blake_leather" },
+    "footwear_boots_stitched_norvegese_leather":{ "ref": "footwear_boots_stitched_norvegese_leather" },
+    "footwear_boots_injection_molded_rubber": { "ref": "footwear_boots_injection_molded_rubber" },
+    "footwear_boots_injection_molded_pvc":    { "ref": "footwear_boots_injection_molded_pvc" },
+    "footwear_boots_injection_molded_pu":     { "ref": "footwear_boots_injection_molded_pu" },
+
+    "footwear_formal_cemented_leather":              { "ref": "footwear_formal_cemented_leather" },
+    "footwear_formal_cemented_pu_synthetic_leather": { "ref": "footwear_formal_cemented_pu_synthetic_leather" },
+    "footwear_formal_cemented_patent_leather":       { "ref": "footwear_formal_cemented_patent_leather" },
+    "footwear_formal_cemented_suede_leather":        { "ref": "footwear_formal_cemented_suede_leather" },
 
     "accessories_braided_cellulosic": { "ref": "accessories_braided_cellulosic" },
     "accessories_braided_synthetic":  { "ref": "accessories_braided_synthetic" },
