@@ -997,6 +997,156 @@
         { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
       ]
     },
+    "apparel_pu_synthetic_leather": {
+      "steps": [
+        { "label": "Knitting, circular (base fabric)", "ref": "knit_circular" },
+        { "label": "Coating, PUR (synthetic leather)", "ref": "coating_pur" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_pu_synthetic_leather_embroidered": {
+      "steps": [
+        { "label": "Knitting, circular (base fabric)", "ref": "knit_circular" },
+        { "label": "Coating, PUR (synthetic leather)", "ref": "coating_pur" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing (embroidery)", "ref": "sewing_mix_incl_thread" },
+        { "label": "Sewing (final assembly)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_pu_synthetic_leather_quilted": {
+      "steps": [
+        { "label": "Knitting, circular (base fabric)", "ref": "knit_circular" },
+        { "label": "Coating, PUR (synthetic leather)", "ref": "coating_pur" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing (quilting)", "ref": "sewing_mix_incl_thread" },
+        { "label": "Sewing (final assembly)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_pu_synthetic_leather_printed": {
+      "steps": [
+        { "label": "Knitting, circular (base fabric)", "ref": "knit_circular" },
+        { "label": "Coating, PUR (synthetic leather)", "ref": "coating_pur" },
+        { "label": "Printing, digital, direct to product", "ref": "printing_digital_direct" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_suede_leather": {
+      "steps": [
+        { "label": "Sueding/sanding (leather finishing)", "ref": "sueding_sanding" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "accessories_leather": {
+      "steps": [
+        { "label": "Cutting (leather)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (assembly)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "accessories_pu_synthetic_leather": {
+      "steps": [
+        { "label": "Knitting, circular (base fabric)", "ref": "knit_circular" },
+        { "label": "Coating, PUR (synthetic leather)", "ref": "coating_pur" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "accessories_leather_embroidered": {
+      "steps": [
+        { "label": "Cutting (leather)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (embroidery)", "ref": "sewing_mix_incl_thread" },
+        { "label": "Sewing (final assembly)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "accessories_pu_synthetic_leather_embroidered": {
+      "steps": [
+        { "label": "Knitting, circular (base fabric)", "ref": "knit_circular" },
+        { "label": "Coating, PUR (synthetic leather)", "ref": "coating_pur" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing (embroidery)", "ref": "sewing_mix_incl_thread" },
+        { "label": "Sewing (final assembly)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_technical_knit_circular_synthetic": {
+      "steps": [
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Knitting, circular", "ref": "knit_circular" },
+        { "label": "Dyeing, batch (disperse/cationic)", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_technical_knit_circular_bonded": {
+      "steps": [
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Knitting, circular", "ref": "knit_circular" },
+        { "label": "Dyeing, batch (disperse/cationic)", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Coating/bonding (technical)", "ref": "coating_pur" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_technical_knit_circular_waterproof_breathable": {
+      "steps": [
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Knitting, circular", "ref": "knit_circular" },
+        { "label": "Dyeing, batch (disperse/cationic)", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Coating/membrane lamination (waterproof)", "ref": "coating_pur" },
+        { "label": "Waterproofing, apparel", "ref": "waterproofing_apparel_silicone" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_technical_woven_plain_synthetic": {
+      "steps": [
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Weaving, rapier", "ref": "weaving_rapier" },
+        { "label": "Dyeing, batch (disperse/cationic)", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_technical_woven_plain_bonded": {
+      "steps": [
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Weaving, rapier", "ref": "weaving_rapier" },
+        { "label": "Dyeing, batch (disperse/cationic)", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Coating/bonding (technical)", "ref": "coating_pur" },
+        { "label": "Finishing, spray-dry-cure", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_technical_woven_plain_waterproof_breathable": {
+      "steps": [
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Weaving, rapier", "ref": "weaving_rapier" },
+        { "label": "Dyeing, batch (disperse/cationic)", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Coating/membrane lamination (waterproof)", "ref": "coating_pur" },
+        { "label": "Waterproofing, apparel", "ref": "waterproofing_apparel_silicone" },
+        { "label": "Cutting", "ref": "cutting_service_kg" },
+        { "label": "Sewing", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
 
     "apparel_woven_satin_synthetic": {
       "steps": [
@@ -1940,6 +2090,32 @@
     "apparel_leather_top_quilted":     { "ref": "apparel_leather_quilted" },
     "apparel_leather_top_printed":     { "ref": "apparel_leather_printed" },
     "apparel_leather_top_bonded":      { "ref": "apparel_leather_bonded" },
+    "apparel_pu_synthetic_leather_top":             { "ref": "apparel_pu_synthetic_leather" },
+    "apparel_pu_synthetic_leather_bottom":          { "ref": "apparel_pu_synthetic_leather" },
+    "apparel_pu_synthetic_leather_top_embroidered": { "ref": "apparel_pu_synthetic_leather_embroidered" },
+    "apparel_pu_synthetic_leather_top_quilted":     { "ref": "apparel_pu_synthetic_leather_quilted" },
+    "apparel_pu_synthetic_leather_top_printed":     { "ref": "apparel_pu_synthetic_leather_printed" },
+
+    "apparel_suede_leather_top":    { "ref": "apparel_suede_leather" },
+    "apparel_suede_leather_bottom": { "ref": "apparel_suede_leather" },
+
+    "accessories_leather":                              { "ref": "accessories_leather" },
+    "accessories_pu_synthetic_leather":                 { "ref": "accessories_pu_synthetic_leather" },
+    "accessories_leather_embroidered":                  { "ref": "accessories_leather_embroidered" },
+    "accessories_pu_synthetic_leather_embroidered":     { "ref": "accessories_pu_synthetic_leather_embroidered" },
+
+    "apparel_technical_knit_circular_top_synthetic":    { "ref": "apparel_technical_knit_circular_synthetic" },
+    "apparel_technical_knit_circular_bottom_synthetic": { "ref": "apparel_technical_knit_circular_synthetic" },
+    "apparel_technical_knit_circular_top_bonded":       { "ref": "apparel_technical_knit_circular_bonded" },
+    "apparel_technical_knit_circular_bottom_bonded":    { "ref": "apparel_technical_knit_circular_bonded" },
+    "apparel_technical_knit_circular_top_waterproof_breathable": { "ref": "apparel_technical_knit_circular_waterproof_breathable" },
+
+    "apparel_technical_woven_plain_top_synthetic":    { "ref": "apparel_technical_woven_plain_synthetic" },
+    "apparel_technical_woven_plain_bottom_synthetic": { "ref": "apparel_technical_woven_plain_synthetic" },
+    "apparel_technical_woven_plain_top_bonded":       { "ref": "apparel_technical_woven_plain_bonded" },
+    "apparel_technical_woven_plain_bottom_bonded":    { "ref": "apparel_technical_woven_plain_bonded" },
+    "apparel_technical_woven_plain_top_waterproof_breathable":    { "ref": "apparel_technical_woven_plain_waterproof_breathable" },
+    "apparel_technical_woven_plain_bottom_waterproof_breathable": { "ref": "apparel_technical_woven_plain_waterproof_breathable" },
 
     "apparel_knit_circular_bottom_cellulosic":         { "ref": "apparel_knit_circular_cellulosic" },
     "apparel_knit_circular_bottom_manmade_cellulosic": { "ref": "apparel_knit_circular_manmade_cellulosic" },
