@@ -935,6 +935,128 @@
         { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
       ]
     },
+    "apparel_knit_warp_cellulosic": {
+      "steps": [
+        { "label": "Spinning, for knit, ring-spun", "ref": "spin_cotton_knit_ring_150dtex" },
+        { "label": "Knitting, warp", "ref": "knit_warp" },
+        { "label": "Pre-dye preparation, knit, natural fibres", "ref": "predye_knit_natural" },
+        { "label": "Dyeing, batch (cellulosics)", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+    "apparel_knit_warp_manmade_cellulosic": {
+      "steps": [
+        { "label": "Spinning (MMC proxy via ring-spun)", "ref": "spin_cotton_knit_ring_150dtex" },
+        { "label": "Knitting, warp", "ref": "knit_warp" },
+        { "label": "Dyeing, batch (cellulosics/MMC)", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+    "apparel_knit_warp_synthetic": {
+      "steps": [
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Knitting, warp", "ref": "knit_warp" },
+        { "label": "Dyeing, batch (disperse/cationic)", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+    "apparel_knit_warp_protein": {
+      "steps": [
+        { "label": "Spinning, wool, for knit", "ref": "spin_wool_knit_200dtex" },
+        { "label": "Knitting, warp", "ref": "knit_warp" },
+        { "label": "Dyeing, batch (acid, protein)", "ref": "dye_batch_acid" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+    "apparel_knit_warp_synthetic_staple": {
+      "steps": [
+        { "label": "Spinning, synthetic staple (proxy via filament dry)", "ref": "spin_filament_dry" },
+        { "label": "Knitting, warp", "ref": "knit_warp" },
+        { "label": "Dyeing, batch (disperse/cationic)", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+    "apparel_knit_warp_bonded": {
+      "steps": [
+        { "label": "Base knit (warp) — proxy", "ref": "knit_warp" },
+        { "label": "Lamination / coating (proxy)", "ref": "extrusion_monofilament_offline" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+    "apparel_knit_warp_mixed": {
+      "steps": [
+        { "label": "Spinning (dominant fibre route)", "ref": "spin_cotton_knit_ring_150dtex" },
+        { "label": "Knitting, warp", "ref": "knit_warp" },
+        { "label": "Dyeing (per dominant chemistry)", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+
+    "apparel_knit_warp_underwear_cellulosic": {
+      "steps": [
+        { "label": "Spinning, for knit, ring-spun", "ref": "spin_cotton_knit_ring_150dtex" },
+        { "label": "Knitting, warp", "ref": "knit_warp" },
+        { "label": "Pre-dye preparation, knit, natural fibres", "ref": "predye_knit_natural" },
+        { "label": "Dyeing, batch (cellulosics)", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+    "apparel_knit_warp_underwear_manmade_cellulosic": {
+      "steps": [
+        { "label": "Spinning (MMC proxy via ring-spun)", "ref": "spin_cotton_knit_ring_150dtex" },
+        { "label": "Knitting, warp", "ref": "knit_warp" },
+        { "label": "Dyeing, batch (cellulosics/MMC)", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+    "apparel_knit_warp_underwear_synthetic": {
+      "steps": [
+        { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
+        { "label": "Knitting, warp", "ref": "knit_warp" },
+        { "label": "Dyeing, batch (disperse/cationic)", "ref": "dye_batch_disperse_cationic" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+    "apparel_knit_warp_underwear_protein": {
+      "steps": [
+        { "label": "Spinning, wool, for knit", "ref": "spin_wool_knit_200dtex" },
+        { "label": "Knitting, warp", "ref": "knit_warp" },
+        { "label": "Dyeing, batch (acid, protein)", "ref": "dye_batch_acid" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
+    "apparel_knit_warp_underwear_mixed": {
+      "steps": [
+        { "label": "Spinning (dominant fibre route)", "ref": "spin_cotton_knit_ring_150dtex" },
+        { "label": "Knitting, warp", "ref": "knit_warp" },
+        { "label": "Dyeing (per dominant chemistry)", "ref": "dye_batch_cellulosics" },
+        { "label": "Finishing, pad-dry-cure (generic)", "ref": "finish_spray_dry_cure" },
+        { "label": "Cutting (kg)", "ref": "cutting_service_kg" },
+        { "label": "Sewing (incl. thread)", "ref": "sewing_mix_incl_thread" }
+      ]
+    },
     "apparel_knit_flat_pile_synthetic": {
       "steps": [
         { "label": "Spinning, continuous filament (dry)", "ref": "spin_filament_dry" },
@@ -1326,7 +1448,21 @@
     "apparel_knit_circular_bottom_pile_cellulosic":    { "ref": "apparel_knit_circular_pile_cellulosic" },
     "apparel_knit_circular_bottom_pile_synthetic":     { "ref": "apparel_knit_circular_pile_synthetic" },
     "apparel_knit_circular_bottom_bonded":             { "ref": "apparel_knit_circular_bonded" },
-    "apparel_knit_circular_bottom_mixed":              { "ref": "apparel_knit_circular_mixed" }
+    "apparel_knit_circular_bottom_mixed":              { "ref": "apparel_knit_circular_mixed" },
+    "apparel_knit_warp_top_cellulosic":         { "ref": "apparel_knit_warp_cellulosic" },
+      "apparel_knit_warp_top_manmade_cellulosic": { "ref": "apparel_knit_warp_manmade_cellulosic" },
+      "apparel_knit_warp_top_synthetic":          { "ref": "apparel_knit_warp_synthetic" },
+      "apparel_knit_warp_top_protein":            { "ref": "apparel_knit_warp_protein" },
+      "apparel_knit_warp_top_synthetic_staple":   { "ref": "apparel_knit_warp_synthetic_staple" },
+      "apparel_knit_warp_top_bonded":             { "ref": "apparel_knit_warp_bonded" },
+      "apparel_knit_warp_top_mixed":              { "ref": "apparel_knit_warp_mixed" },
+
+      "apparel_knit_warp_bottom_cellulosic":         { "ref": "apparel_knit_warp_cellulosic" },
+      "apparel_knit_warp_bottom_manmade_cellulosic": { "ref": "apparel_knit_warp_manmade_cellulosic" },
+      "apparel_knit_warp_bottom_synthetic":          { "ref": "apparel_knit_warp_synthetic" },
+      "apparel_knit_warp_bottom_protein":            { "ref": "apparel_knit_warp_protein" },
+      "apparel_knit_warp_bottom_synthetic_staple":   { "ref": "apparel_knit_warp_synthetic_staple" },
+      "apparel_knit_warp_bottom_mixed":              { "ref": "apparel_knit_warp_mixed" },
   },
 
   "groups_order": {
